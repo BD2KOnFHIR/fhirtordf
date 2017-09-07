@@ -1,0 +1,98 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/owl#> .
+@prefix observation-category: <http://hl7.org/fhir/observation-category> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix w5: <http://hl7.org/fhir/w5#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://sb-fhir-dstu2.smarthealthit.org/api/smartdstu2/open/Observation/SMART-Observation-1098667-gestage> a fhir:Observation ;
+    fhir:nodeRole fhir:treeRoot ;
+    fhir:DomainResource.text [
+        fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">1953-10-27: Gestational age at birth = 43.4 weeks</div>" ;
+        fhir:Narrative.status [
+            fhir:value "generated"
+        ]
+    ] ;
+    fhir:Observation.category [
+        fhir:CodeableConcept.coding [
+            a <http://hl7.org/fhir/observation-category/exam> ;
+            fhir:index "0"^^xsd:integer ;
+            fhir:Coding.code [
+                fhir:value "exam"
+            ] ;
+            fhir:Coding.display [
+                fhir:value "Exam"
+            ] ;
+            fhir:Coding.system [
+                fhir:value "http://hl7.org/fhir/observation-category"
+            ]
+        ] ;
+        fhir:CodeableConcept.text [
+            fhir:value "Exam"
+        ]
+    ] ;
+    fhir:Observation.code [
+        fhir:CodeableConcept.coding [
+            a loinc:18185-9 ;
+            fhir:index "0"^^xsd:integer ;
+            fhir:Coding.code [
+                fhir:value "18185-9"
+            ] ;
+            fhir:Coding.display [
+                fhir:value "Gestational age at birth"
+            ] ;
+            fhir:Coding.system [
+                fhir:value "http://loinc.org"
+            ]
+        ] ;
+        fhir:CodeableConcept.text [
+            fhir:value "Gestational age at birth"
+        ]
+    ] ;
+    fhir:Observation.effectiveDateTime [
+        fhir:value "1953-10-27"^^xsd:date
+    ] ;
+    fhir:Observation.status [
+        fhir:value "final"
+    ] ;
+    fhir:Observation.subject [
+        fhir:link <https://sb-fhir-dstu2.smarthealthit.org/api/smartdstu2/open/Patient/SMART-1098667> ;
+        fhir:Reference.reference [
+            fhir:value "Patient/SMART-1098667"
+        ]
+    ] ;
+    fhir:Observation.valueQuantity [
+        fhir:Quantity.code [
+            fhir:value "wk"
+        ] ;
+        fhir:Quantity.system [
+            fhir:value "http://unitsofmeasure.org"
+        ] ;
+        fhir:Quantity.unit [
+            fhir:value "weeks"
+        ] ;
+        fhir:Quantity.value [
+            fhir:value "43.4"^^xsd:decimal
+        ]
+    ] ;
+    fhir:Resource.id [
+        fhir:value "SMART-Observation-1098667-gestage"
+    ] ;
+    fhir:Resource.meta [
+        fhir:Meta.lastUpdated [
+            fhir:value "2017-03-23T15:39:38+00:00"^^xsd:dateTime
+        ] ;
+        fhir:Meta.versionId [
+            fhir:value "3"
+        ]
+    ] .
+
+<https://sb-fhir-dstu2.smarthealthit.org/api/smartdstu2/open/Observation/SMART-Observation-1098667-gestage.ttl> a owl:Ontology ;
+    owl:imports fhir:fhir.ttl ;
+    owl:versionIRI <https://sb-fhir-dstu2.smarthealthit.org/api/smartdstu2/open/Observation/SMART-Observation-1098667-gestage.ttl/_history/3> .
+
+<https://sb-fhir-dstu2.smarthealthit.org/api/smartdstu2/open/Patient/SMART-1098667> a fhir:Patient .
+

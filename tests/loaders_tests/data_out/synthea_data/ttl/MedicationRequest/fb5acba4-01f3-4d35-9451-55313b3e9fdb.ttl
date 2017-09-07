@@ -1,0 +1,51 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix w5: <http://hl7.org/fhir/w5#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://standardhealthrecord.org/fhir/MedicationRequest/fb5acba4-01f3-4d35-9451-55313b3e9fdb> a fhir:MedicationRequest ;
+    fhir:nodeRole fhir:treeRoot ;
+    fhir:MedicationRequest.context [
+        fhir:link <http://standardhealthrecord.org/fhir/urn%3Auuid%3Aff4f9269-5036-45dc-b0fb-d8133ae13c76> ;
+        fhir:Reference.reference [
+            fhir:value "urn:uuid:ff4f9269-5036-45dc-b0fb-d8133ae13c76"
+        ]
+    ] ;
+    fhir:MedicationRequest.dosageInstruction [
+        fhir:index "0"^^xsd:integer
+    ] ;
+    fhir:MedicationRequest.medicationCodeableConcept [
+        fhir:CodeableConcept.coding [
+            fhir:index "0"^^xsd:integer ;
+            fhir:Coding.code [
+                fhir:value "575971"
+            ] ;
+            fhir:Coding.display [
+                fhir:value "oxaliplatin 5 MG/ML [Eloxatin]"
+            ] ;
+            fhir:Coding.system [
+                fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm"
+            ]
+        ]
+    ] ;
+    fhir:MedicationRequest.status [
+        fhir:value "active"
+    ] ;
+    fhir:Resource.id [
+        fhir:value "fb5acba4-01f3-4d35-9451-55313b3e9fdb"
+    ] ;
+    fhir:Resource.meta [
+        fhir:Meta.profile [
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "http://standardhealthrecord.org/fhir/StructureDefinition/shr-medication-MedicationPrescription"
+        ]
+    ] .
+
+<http://standardhealthrecord.org/fhir/MedicationRequest/fb5acba4-01f3-4d35-9451-55313b3e9fdb.ttl> a owl:Ontology ;
+    owl:imports fhir:fhir.ttl .
+
+<http://standardhealthrecord.org/fhir/urn%3Auuid%3Aff4f9269-5036-45dc-b0fb-d8133ae13c76> a fhir:Resource .
+

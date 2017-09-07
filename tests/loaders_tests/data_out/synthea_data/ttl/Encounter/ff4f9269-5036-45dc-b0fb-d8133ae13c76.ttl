@@ -1,0 +1,64 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix w5: <http://hl7.org/fhir/w5#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://standardhealthrecord.org/fhir/Encounter/ff4f9269-5036-45dc-b0fb-d8133ae13c76> a fhir:Encounter ;
+    fhir:nodeRole fhir:treeRoot ;
+    fhir:Encounter.class [
+        fhir:Coding.code [
+            fhir:value "ambulatory"
+        ]
+    ] ;
+    fhir:Encounter.period [
+        fhir:Period.end [
+            fhir:value "1991-10-02T13:14:14-05:00"^^xsd:dateTime
+        ] ;
+        fhir:Period.start [
+            fhir:value "1991-10-02T12:59:14-05:00"^^xsd:dateTime
+        ]
+    ] ;
+    fhir:Encounter.serviceProvider [
+        fhir:link <http://standardhealthrecord.org/fhir/urn%3Auuid%3A9c00d82c-8deb-4e3c-80ee-2e9221addbc0> ;
+        fhir:Reference.reference [
+            fhir:value "urn:uuid:9c00d82c-8deb-4e3c-80ee-2e9221addbc0"
+        ]
+    ] ;
+    fhir:Encounter.status [
+        fhir:value "finished"
+    ] ;
+    fhir:Encounter.type [
+        fhir:index "0"^^xsd:integer ;
+        fhir:CodeableConcept.coding [
+            a sct:308646001 ;
+            fhir:index "0"^^xsd:integer ;
+            fhir:Coding.code [
+                fhir:value "308646001"
+            ] ;
+            fhir:Coding.system [
+                fhir:value "http://snomed.info/sct"
+            ]
+        ] ;
+        fhir:CodeableConcept.text [
+            fhir:value "Death Certification"
+        ]
+    ] ;
+    fhir:Resource.id [
+        fhir:value "ff4f9269-5036-45dc-b0fb-d8133ae13c76"
+    ] ;
+    fhir:Resource.meta [
+        fhir:Meta.profile [
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "http://standardhealthrecord.org/fhir/StructureDefinition/shr-encounter-Encounter"
+        ]
+    ] .
+
+<http://standardhealthrecord.org/fhir/Encounter/ff4f9269-5036-45dc-b0fb-d8133ae13c76.ttl> a owl:Ontology ;
+    owl:imports fhir:fhir.ttl .
+
+<http://standardhealthrecord.org/fhir/urn%3Auuid%3A9c00d82c-8deb-4e3c-80ee-2e9221addbc0> a fhir:Resource .
+

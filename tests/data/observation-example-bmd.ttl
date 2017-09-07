@@ -1,0 +1,93 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://hl7.org/fhir/Observation/bmd> a fhir:Observation ;
+    fhir:nodeRole fhir:treeRoot ;
+    fhir:DomainResource.text [
+        fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: bmd</p><p><b>status</b>: final</p><p><b>code</b>: BMD - Left Femur <span>(Details : {LOINC code '24701-5' = 'Femur DXA Bone density', given as 'Femur DXA Bone density'})</span></p><p><b>subject</b>: <a>Patient/pat2</a></p><p><b>performer</b>: <a>Acme Imaging Diagnostics</a></p><p><b>value</b>: 0.887 g/cm²<span> (Details: UCUM code g/cm-2 = 'g/cm-2')</span></p><p><b>bodySite</b>: Left Femur <span>(Details : {SNOMED CT code '71341001:272741003=7771000' = 'Femur where Laterality = Left)</span></p></div>" ;
+        fhir:Narrative.status [
+            fhir:value "generated"
+        ]
+    ] ;
+    fhir:Observation.bodySite [
+        fhir:CodeableConcept.coding [
+            fhir:Coding.code [
+                fhir:value "71341001:272741003=7771000"
+            ] ;
+            fhir:Coding.system [
+                fhir:value "http://snomed.info/sct"
+            ] ;
+            fhir:index 0
+        ] ;
+        fhir:CodeableConcept.text [
+            fhir:value "Left Femur"
+        ]
+    ] ;
+    fhir:Observation.code [
+        fhir:CodeableConcept.coding [
+            a loinc:24701-5 ;
+            fhir:Coding.code [
+                fhir:value "24701-5"
+            ] ;
+            fhir:Coding.display [
+                fhir:value "Femur DXA Bone density"
+            ] ;
+            fhir:Coding.system [
+                fhir:value "http://loinc.org"
+            ] ;
+            fhir:index 0
+        ] ;
+        fhir:CodeableConcept.text [
+            fhir:value "BMD - Left Femur"
+        ]
+    ] ;
+    fhir:Observation.performer [
+        fhir:link <http://hl7.org/fhir/Organization/1832473e-2fe0-452d-abe9-3cdb9879522f> ;
+        fhir:Reference.display [
+            fhir:value "Acme Imaging Diagnostics"
+        ] ;
+        fhir:Reference.reference [
+            fhir:value "Organization/1832473e-2fe0-452d-abe9-3cdb9879522f"
+        ] ;
+        fhir:index 0
+    ] ;
+    fhir:Observation.status [
+        fhir:value "final"
+    ] ;
+    fhir:Observation.subject [
+        fhir:link <http://hl7.org/fhir/Patient/pat2> ;
+        fhir:Reference.reference [
+            fhir:value "Patient/pat2"
+        ]
+    ] ;
+    fhir:Observation.valueQuantity [
+        fhir:Quantity.code [
+            fhir:value "g/cm-2"
+        ] ;
+        fhir:Quantity.system [
+            fhir:value "http://unitsofmeasure.org"
+        ] ;
+        fhir:Quantity.unit [
+            fhir:value "g/cm²"
+        ] ;
+        fhir:Quantity.value [
+            fhir:value 0.887
+        ]
+    ] ;
+    fhir:Resource.id [
+        fhir:value "bmd"
+    ] .
+
+<http://hl7.org/fhir/Observation/bmd.ttl> a owl:Ontology ;
+    owl:imports fhir:fhir.ttl .
+
+<http://hl7.org/fhir/Organization/1832473e-2fe0-452d-abe9-3cdb9879522f> a fhir:Organization .
+
+<http://hl7.org/fhir/Patient/pat2> a fhir:Patient .
+

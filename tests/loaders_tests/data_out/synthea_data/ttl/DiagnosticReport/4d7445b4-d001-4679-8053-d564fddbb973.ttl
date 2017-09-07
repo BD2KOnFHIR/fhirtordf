@@ -1,0 +1,74 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix w5: <http://hl7.org/fhir/w5#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://standardhealthrecord.org/fhir/DiagnosticReport/4d7445b4-d001-4679-8053-d564fddbb973> a fhir:DiagnosticReport ;
+    fhir:nodeRole fhir:treeRoot ;
+    fhir:DiagnosticReport.code [
+        fhir:CodeableConcept.coding [
+            a loinc:69409-1 ;
+            fhir:index "0"^^xsd:integer ;
+            fhir:Coding.code [
+                fhir:value "69409-1"
+            ] ;
+            fhir:Coding.display [
+                fhir:value "U.S. standard certificate of death - 2003 revision"
+            ] ;
+            fhir:Coding.system [
+                fhir:value "http://loinc.org"
+            ]
+        ]
+    ] ;
+    fhir:DiagnosticReport.effectiveDateTime [
+        fhir:value "1991-10-02T12:59:14-05:00"^^xsd:dateTime
+    ] ;
+    fhir:DiagnosticReport.issued [
+        fhir:value "1991-10-02T12:59:14-05:00"^^xsd:dateTime
+    ] ;
+    fhir:DiagnosticReport.performer [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Reference.display [
+            fhir:value "Hospital Lab"
+        ]
+    ] ;
+    fhir:DiagnosticReport.result [
+        fhir:index "0"^^xsd:integer ;
+        fhir:link <http://standardhealthrecord.org/fhir/urn%3Auuid%3A1d52ae90-6721-476c-ad4c-ec978eac4a34> ;
+        fhir:Reference.display [
+            fhir:value "Cause of Death [US Standard Certificate of Death]"
+        ] ;
+        fhir:Reference.reference [
+            fhir:value "urn:uuid:1d52ae90-6721-476c-ad4c-ec978eac4a34"
+        ]
+    ] ;
+    fhir:DiagnosticReport.status [
+        fhir:value "final"
+    ] ;
+    fhir:DiagnosticReport.subject [
+        fhir:link <http://standardhealthrecord.org/fhir/urn%3Auuid%3A526238ef-dec3-401d-a1c1-2974962df23f> ;
+        fhir:Reference.reference [
+            fhir:value "urn:uuid:526238ef-dec3-401d-a1c1-2974962df23f"
+        ]
+    ] ;
+    fhir:Resource.id [
+        fhir:value "4d7445b4-d001-4679-8053-d564fddbb973"
+    ] ;
+    fhir:Resource.meta [
+        fhir:Meta.profile [
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "http://standardhealthrecord.org/fhir/StructureDefinition/shr-encounter-Encounter"
+        ]
+    ] .
+
+<http://standardhealthrecord.org/fhir/DiagnosticReport/4d7445b4-d001-4679-8053-d564fddbb973.ttl> a owl:Ontology ;
+    owl:imports fhir:fhir.ttl .
+
+<http://standardhealthrecord.org/fhir/urn%3Auuid%3A1d52ae90-6721-476c-ad4c-ec978eac4a34> a fhir:Resource .
+
+<http://standardhealthrecord.org/fhir/urn%3Auuid%3A526238ef-dec3-401d-a1c1-2974962df23f> a fhir:Resource .
+

@@ -1,0 +1,100 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/owl#> .
+@prefix observation-category: <http://hl7.org/fhir/observation-category> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix w5: <http://hl7.org/fhir/w5#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://sb-fhir-dstu2.smarthealthit.org/api/smartdstu2/open/Observation/SMART-Observation-6-smokingstatus> a fhir:Observation ;
+    fhir:nodeRole fhir:treeRoot ;
+    fhir:DomainResource.text [
+        fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Tobacco smoking status: Former smoker</div>" ;
+        fhir:Narrative.status [
+            fhir:value "generated"
+        ]
+    ] ;
+    fhir:Observation.category [
+        fhir:CodeableConcept.coding [
+            a <http://hl7.org/fhir/observation-category/social-history> ;
+            fhir:index "0"^^xsd:integer ;
+            fhir:Coding.code [
+                fhir:value "social-history"
+            ] ;
+            fhir:Coding.display [
+                fhir:value "Social History"
+            ] ;
+            fhir:Coding.system [
+                fhir:value "http://hl7.org/fhir/observation-category"
+            ]
+        ] ;
+        fhir:CodeableConcept.text [
+            fhir:value "Social History"
+        ]
+    ] ;
+    fhir:Observation.code [
+        fhir:CodeableConcept.coding [
+            a loinc:72166-2 ;
+            fhir:index "0"^^xsd:integer ;
+            fhir:Coding.code [
+                fhir:value "72166-2"
+            ] ;
+            fhir:Coding.display [
+                fhir:value "Tobacco smoking status"
+            ] ;
+            fhir:Coding.system [
+                fhir:value "http://loinc.org"
+            ]
+        ] ;
+        fhir:CodeableConcept.text [
+            fhir:value "Tobacco smoking status"
+        ]
+    ] ;
+    fhir:Observation.status [
+        fhir:value "final"
+    ] ;
+    fhir:Observation.subject [
+        fhir:link <https://sb-fhir-dstu2.smarthealthit.org/api/smartdstu2/open/Patient/SMART-1081332> ;
+        fhir:Reference.reference [
+            fhir:value "Patient/SMART-1081332"
+        ]
+    ] ;
+    fhir:Observation.valueCodeableConcept [
+        fhir:CodeableConcept.coding [
+            a sct:8517006 ;
+            fhir:index "0"^^xsd:integer ;
+            fhir:Coding.code [
+                fhir:value "8517006"
+            ] ;
+            fhir:Coding.display [
+                fhir:value "Former smoker"
+            ] ;
+            fhir:Coding.system [
+                fhir:value "http://snomed.info/sct"
+            ]
+        ] ;
+        fhir:CodeableConcept.text [
+            fhir:value "Former smoker"
+        ]
+    ] ;
+    fhir:Resource.id [
+        fhir:value "SMART-Observation-6-smokingstatus"
+    ] ;
+    fhir:Resource.meta [
+        fhir:Meta.lastUpdated [
+            fhir:value "2017-03-23T15:39:37+00:00"^^xsd:dateTime
+        ] ;
+        fhir:Meta.versionId [
+            fhir:value "3"
+        ]
+    ] .
+
+<https://sb-fhir-dstu2.smarthealthit.org/api/smartdstu2/open/Observation/SMART-Observation-6-smokingstatus.ttl> a owl:Ontology ;
+    owl:imports fhir:fhir.ttl ;
+    owl:versionIRI <https://sb-fhir-dstu2.smarthealthit.org/api/smartdstu2/open/Observation/SMART-Observation-6-smokingstatus.ttl/_history/3> .
+
+<https://sb-fhir-dstu2.smarthealthit.org/api/smartdstu2/open/Patient/SMART-1081332> a fhir:Patient .
+

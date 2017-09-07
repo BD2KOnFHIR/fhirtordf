@@ -1,0 +1,268 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix v2-0131: <http://hl7.org/fhir/v2/0131> .
+@prefix v3-MaritalStatus: <http://hl7.org/fhir/v3/MaritalStatus> .
+@prefix v3-RoleCode: <http://hl7.org/fhir/v3/RoleCode> .
+@prefix w5: <http://hl7.org/fhir/w5#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://hl7.org/fhir/Patient/f201> a fhir:Patient ;
+    fhir:nodeRole fhir:treeRoot ;
+    fhir:DomainResource.text [
+        fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: f201</p><p><b>identifier</b>: BSN = 123456789 (OFFICIAL), BSN = 123456789 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Roel(OFFICIAL)</p><p><b>telecom</b>: ph: +31612345678(MOBILE), ph: +31201234567(HOME)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 13/03/1960</p><p><b>deceased</b>: false</p><p><b>address</b>: Bos en Lommerplein 280 Amsterdam 1055RW NLD (HOME)</p><p><b>maritalStatus</b>: Legally married <span>(Details : {SNOMED CT code '36629006' = 'Legal marriage', given as 'Legally married'}; {http://hl7.org/fhir/v3/MaritalStatus code 'M' = 'Married)</span></p><p><b>multipleBirth</b>: false</p><p><b>photo</b>: </p><h3>Contacts</h3><table><tr><td>-</td><td><b>Relationship</b></td><td><b>Name</b></td><td><b>Telecom</b></td></tr><tr><td>*</td><td>Wife <span>(Details : {SNOMED CT code '127850001' = 'Wife', given as 'Wife'}; {http://hl7.org/fhir/v2/0131 code 'N' = 'Next-of-Kin; {http://hl7.org/fhir/v3/RoleCode code 'WIFE' = 'wife)</span></td><td>Ariadne Bor-Jansma</td><td>ph: +31201234567(HOME)</td></tr></table><h3>Communications</h3><table><tr><td>-</td><td><b>Language</b></td><td><b>Preferred</b></td></tr><tr><td>*</td><td>Dutch <span>(Details : {urn:ietf:bcp:47 code 'nl-NL' = 'Dutch (Region=Netherlands)', given as 'Dutch'})</span></td><td>true</td></tr></table><p><b>managingOrganization</b>: <a>AUMC</a></p></div>" ;
+        fhir:Narrative.status [
+            fhir:value "generated"
+        ]
+    ] ;
+    fhir:Patient.active [
+        fhir:value "true"^^xsd:boolean
+    ] ;
+    fhir:Patient.address [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Address.city [
+            fhir:value "Amsterdam"
+        ] ;
+        fhir:Address.country [
+            fhir:value "NLD"
+        ] ;
+        fhir:Address.line [
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "Bos en Lommerplein 280"
+        ] ;
+        fhir:Address.postalCode [
+            fhir:value "1055RW"
+        ] ;
+        fhir:Address.use [
+            fhir:value "home"
+        ]
+    ] ;
+    fhir:Patient.birthDate [
+        fhir:value "1960-03-13"^^xsd:date
+    ] ;
+    fhir:Patient.communication [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Patient.communication.language [
+            fhir:CodeableConcept.coding [
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "nl-NL"
+                ] ;
+                fhir:Coding.display [
+                    fhir:value "Dutch"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "urn:ietf:bcp:47"
+                ]
+            ]
+        ] ;
+        fhir:Patient.communication.preferred [
+            fhir:value "true"^^xsd:boolean
+        ]
+    ] ;
+    fhir:Patient.contact [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Patient.contact.name [
+            fhir:HumanName.text [
+                fhir:value "Ariadne Bor-Jansma"
+            ] ;
+            fhir:HumanName.use [
+                fhir:value "usual"
+            ]
+        ] ;
+        fhir:Patient.contact.relationship [
+            fhir:index "0"^^xsd:integer ;
+            fhir:CodeableConcept.coding [
+                a sct:127850001 ;
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "127850001"
+                ] ;
+                fhir:Coding.display [
+                    fhir:value "Wife"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://snomed.info/sct"
+                ]
+            ],
+                [
+                a <http://hl7.org/fhir/v2/0131/N> ;
+                fhir:index "1"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "N"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://hl7.org/fhir/v2/0131"
+                ]
+            ],
+                [
+                a <http://hl7.org/fhir/v3/RoleCode/WIFE> ;
+                fhir:index "2"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "WIFE"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://hl7.org/fhir/v3/RoleCode"
+                ]
+            ]
+        ] ;
+        fhir:Patient.contact.telecom [
+            fhir:index "0"^^xsd:integer ;
+            fhir:ContactPoint.system [
+                fhir:value "phone"
+            ] ;
+            fhir:ContactPoint.use [
+                fhir:value "home"
+            ] ;
+            fhir:ContactPoint.value [
+                fhir:value "+31201234567"
+            ]
+        ]
+    ] ;
+    fhir:Patient.deceasedBoolean [
+        fhir:value "false"^^xsd:boolean
+    ] ;
+    fhir:Patient.gender [
+        fhir:value "male"
+    ] ;
+    fhir:Patient.identifier [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Identifier.system [
+            fhir:value "urn:oid:2.16.840.1.113883.2.4.6.3"
+        ] ;
+        fhir:Identifier.type [
+            fhir:CodeableConcept.text [
+                fhir:value "BSN"
+            ]
+        ] ;
+        fhir:Identifier.use [
+            fhir:value "official"
+        ] ;
+        fhir:Identifier.value [
+            fhir:value "123456789"
+        ]
+    ],
+        [
+        fhir:index "1"^^xsd:integer ;
+        fhir:Identifier.system [
+            fhir:value "urn:oid:2.16.840.1.113883.2.4.6.3"
+        ] ;
+        fhir:Identifier.type [
+            fhir:CodeableConcept.text [
+                fhir:value "BSN"
+            ]
+        ] ;
+        fhir:Identifier.use [
+            fhir:value "official"
+        ] ;
+        fhir:Identifier.value [
+            fhir:value "123456789"
+        ]
+    ] ;
+    fhir:Patient.managingOrganization [
+        fhir:link <http://hl7.org/fhir/Organization/f201> ;
+        fhir:Reference.display [
+            fhir:value "AUMC"
+        ] ;
+        fhir:Reference.reference [
+            fhir:value "Organization/f201"
+        ]
+    ] ;
+    fhir:Patient.maritalStatus [
+        fhir:CodeableConcept.coding [
+            a sct:36629006 ;
+            fhir:index "0"^^xsd:integer ;
+            fhir:Coding.code [
+                fhir:value "36629006"
+            ] ;
+            fhir:Coding.display [
+                fhir:value "Legally married"
+            ] ;
+            fhir:Coding.system [
+                fhir:value "http://snomed.info/sct"
+            ]
+        ],
+            [
+            a <http://hl7.org/fhir/v3/MaritalStatus/M> ;
+            fhir:index "1"^^xsd:integer ;
+            fhir:Coding.code [
+                fhir:value "M"
+            ] ;
+            fhir:Coding.system [
+                fhir:value "http://hl7.org/fhir/v3/MaritalStatus"
+            ]
+        ]
+    ] ;
+    fhir:Patient.multipleBirthBoolean [
+        fhir:value "false"^^xsd:boolean
+    ] ;
+    fhir:Patient.name [
+        fhir:index "0"^^xsd:integer ;
+        fhir:HumanName.family [
+            fhir:value "Bor"
+        ] ;
+        fhir:HumanName.given [
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "Roelof Olaf"
+        ] ;
+        fhir:HumanName.prefix [
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "Drs."
+        ] ;
+        fhir:HumanName.suffix [
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "PDEng."
+        ] ;
+        fhir:HumanName.text [
+            fhir:value "Roel"
+        ] ;
+        fhir:HumanName.use [
+            fhir:value "official"
+        ]
+    ] ;
+    fhir:Patient.photo [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Attachment.contentType [
+            fhir:value "image/jpeg"
+        ] ;
+        fhir:Attachment.url [
+            fhir:value "Binary/f006"
+        ]
+    ] ;
+    fhir:Patient.telecom [
+        fhir:index "1"^^xsd:integer ;
+        fhir:ContactPoint.system [
+            fhir:value "phone"
+        ] ;
+        fhir:ContactPoint.use [
+            fhir:value "home"
+        ] ;
+        fhir:ContactPoint.value [
+            fhir:value "+31201234567"
+        ]
+    ],
+        [
+        fhir:index "0"^^xsd:integer ;
+        fhir:ContactPoint.system [
+            fhir:value "phone"
+        ] ;
+        fhir:ContactPoint.use [
+            fhir:value "mobile"
+        ] ;
+        fhir:ContactPoint.value [
+            fhir:value "+31612345678"
+        ]
+    ] ;
+    fhir:Resource.id [
+        fhir:value "f201"
+    ] .
+
+<http://hl7.org/fhir/Patient/f201.ttl> a owl:Ontology ;
+    owl:imports fhir:fhir.ttl .
+
+<http://hl7.org/fhir/Organization/f201> a fhir:Organization .
+
+

@@ -1,0 +1,577 @@
+{"entry":[
+  {
+    "search": {
+      "mode": "match"
+    },
+    "resource": {
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http:\/\/snomed.info\/sct",
+            "code": "428041000124106",
+            "display": "Current some day smoker"
+          }
+        ],
+        "text": "Current some day smoker"
+      },
+      "code": {
+        "coding": [
+          {
+            "system": "http:\/\/loinc.org",
+            "code": "72166-2",
+            "display": "Tobacco smoking status"
+          }
+        ],
+        "text": "Tobacco smoking status"
+      },
+      "meta": {
+        "lastUpdated": "2017-03-23T15:39:37.000+00:00",
+        "versionId": "3"
+      },
+      "subject": {
+        "reference": "Patient\/SMART-1032702"
+      },
+      "id": "SMART-Observation-5-smokingstatus",
+      "text": {
+        "div": "<div xmlns=\"http:\/\/www.w3.org\/1999\/xhtml\">Tobacco smoking status: Current some day smoker<\/div>",
+        "status": "generated"
+      },
+      "category": {
+        "coding": [
+          {
+            "system": "http:\/\/hl7.org\/fhir\/observation-category",
+            "code": "social-history",
+            "display": "Social History"
+          }
+        ],
+        "text": "Social History"
+      },
+      "resourceType": "Observation",
+      "status": "final"
+    },
+    "fullUrl": "https:\/\/sb-fhir-dstu2.smarthealthit.org\/api\/smartdstu2\/open\/Observation\/SMART-Observation-5-smokingstatus"
+  },
+  {
+    "search": {
+      "mode": "match"
+    },
+    "resource": {
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http:\/\/snomed.info\/sct",
+            "code": "8517006",
+            "display": "Former smoker"
+          }
+        ],
+        "text": "Former smoker"
+      },
+      "code": {
+        "coding": [
+          {
+            "system": "http:\/\/loinc.org",
+            "code": "72166-2",
+            "display": "Tobacco smoking status"
+          }
+        ],
+        "text": "Tobacco smoking status"
+      },
+      "meta": {
+        "lastUpdated": "2017-03-23T15:39:37.000+00:00",
+        "versionId": "3"
+      },
+      "subject": {
+        "reference": "Patient\/SMART-1081332"
+      },
+      "id": "SMART-Observation-6-smokingstatus",
+      "text": {
+        "div": "<div xmlns=\"http:\/\/www.w3.org\/1999\/xhtml\">Tobacco smoking status: Former smoker<\/div>",
+        "status": "generated"
+      },
+      "category": {
+        "coding": [
+          {
+            "system": "http:\/\/hl7.org\/fhir\/observation-category",
+            "code": "social-history",
+            "display": "Social History"
+          }
+        ],
+        "text": "Social History"
+      },
+      "resourceType": "Observation",
+      "status": "final"
+    },
+    "fullUrl": "https:\/\/sb-fhir-dstu2.smarthealthit.org\/api\/smartdstu2\/open\/Observation\/SMART-Observation-6-smokingstatus"
+  },
+  {
+    "search": {
+      "mode": "match"
+    },
+    "resource": {
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http:\/\/snomed.info\/sct",
+            "code": "266927001",
+            "display": "Unknown if ever smoked"
+          }
+        ],
+        "text": "Unknown if ever smoked"
+      },
+      "code": {
+        "coding": [
+          {
+            "system": "http:\/\/loinc.org",
+            "code": "72166-2",
+            "display": "Tobacco smoking status"
+          }
+        ],
+        "text": "Tobacco smoking status"
+      },
+      "meta": {
+        "lastUpdated": "2017-03-23T15:39:38.000+00:00",
+        "versionId": "3"
+      },
+      "subject": {
+        "reference": "Patient\/SMART-1098667"
+      },
+      "id": "SMART-Observation-18-smokingstatus",
+      "text": {
+        "div": "<div xmlns=\"http:\/\/www.w3.org\/1999\/xhtml\">Tobacco smoking status: Unknown if ever smoked<\/div>",
+        "status": "generated"
+      },
+      "category": {
+        "coding": [
+          {
+            "system": "http:\/\/hl7.org\/fhir\/observation-category",
+            "code": "social-history",
+            "display": "Social History"
+          }
+        ],
+        "text": "Social History"
+      },
+      "resourceType": "Observation",
+      "status": "final"
+    },
+    "fullUrl": "https:\/\/sb-fhir-dstu2.smarthealthit.org\/api\/smartdstu2\/open\/Observation\/SMART-Observation-18-smokingstatus"
+  },
+  {
+    "search": {
+      "mode": "match"
+    },
+    "resource": {
+      "code": {
+        "coding": [
+          {
+            "system": "http:\/\/loinc.org",
+            "code": "18185-9",
+            "display": "Gestational age at birth"
+          }
+        ],
+        "text": "Gestational age at birth"
+      },
+      "effectiveDateTime": "1953-10-27",
+      "meta": {
+        "lastUpdated": "2017-03-23T15:39:38.000+00:00",
+        "versionId": "3"
+      },
+      "subject": {
+        "reference": "Patient\/SMART-1098667"
+      },
+      "id": "SMART-Observation-1098667-gestage",
+      "text": {
+        "div": "<div xmlns=\"http:\/\/www.w3.org\/1999\/xhtml\">1953-10-27: Gestational age at birth = 43.4 weeks<\/div>",
+        "status": "generated"
+      },
+      "category": {
+        "coding": [
+          {
+            "system": "http:\/\/hl7.org\/fhir\/observation-category",
+            "code": "exam",
+            "display": "Exam"
+          }
+        ],
+        "text": "Exam"
+      },
+      "resourceType": "Observation",
+      "status": "final",
+      "valueQuantity": {
+        "unit": "weeks",
+        "system": "http:\/\/unitsofmeasure.org",
+        "code": "wk",
+        "value": 43.4
+      }
+    },
+    "fullUrl": "https:\/\/sb-fhir-dstu2.smarthealthit.org\/api\/smartdstu2\/open\/Observation\/SMART-Observation-1098667-gestage"
+  },
+  {
+    "search": {
+      "mode": "match"
+    },
+    "resource": {
+      "referenceRange": [
+        {
+          "high": {
+            "unit": "mmol\/L",
+            "system": "http:\/\/unitsofmeasure.org",
+            "code": "mmol\/L",
+            "value": 0.0
+          },
+          "low": {
+            "unit": "mmol\/L",
+            "system": "http:\/\/unitsofmeasure.org",
+            "code": "mmol\/L",
+            "value": 0.0
+          },
+          "meaning": {
+            "coding": [
+              {
+                "system": "http:\/\/hl7.org\/fhir\/referencerange-meaning",
+                "code": "normal",
+                "display": "Normal Range"
+              }
+            ],
+            "text": "Normal Range"
+          }
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "system": "http:\/\/loinc.org",
+            "code": "11555-0",
+            "display": "Base excess Bld-sCnc"
+          }
+        ],
+        "text": "Base excess Bld-sCnc"
+      },
+      "effectiveDateTime": "2005-07-04",
+      "meta": {
+        "lastUpdated": "2017-03-23T15:39:39.000+00:00",
+        "versionId": "3"
+      },
+      "subject": {
+        "reference": "Patient\/SMART-1134281"
+      },
+      "id": "SMART-Observation-1681-lab",
+      "text": {
+        "div": "<div xmlns=\"http:\/\/www.w3.org\/1999\/xhtml\">2005-07-04: Base excess Bld-sCnc = -6 mmol\/L<\/div>",
+        "status": "generated"
+      },
+      "category": {
+        "coding": [
+          {
+            "system": "http:\/\/hl7.org\/fhir\/observation-category",
+            "code": "laboratory",
+            "display": "Laboratory"
+          }
+        ],
+        "text": "Laboratory"
+      },
+      "resourceType": "Observation",
+      "status": "final",
+      "valueQuantity": {
+        "unit": "mmol\/L",
+        "system": "http:\/\/unitsofmeasure.org",
+        "value": -6.0
+      }
+    },
+    "fullUrl": "https:\/\/sb-fhir-dstu2.smarthealthit.org\/api\/smartdstu2\/open\/Observation\/SMART-Observation-1681-lab"
+  },
+  {
+    "search": {
+      "mode": "match"
+    },
+    "resource": {
+      "referenceRange": [
+        {
+          "high": {
+            "unit": "mmol\/L",
+            "system": "http:\/\/unitsofmeasure.org",
+            "code": "mmol\/L",
+            "value": 29.0
+          },
+          "low": {
+            "unit": "mmol\/L",
+            "system": "http:\/\/unitsofmeasure.org",
+            "code": "mmol\/L",
+            "value": 22.0
+          },
+          "meaning": {
+            "coding": [
+              {
+                "system": "http:\/\/hl7.org\/fhir\/referencerange-meaning",
+                "code": "normal",
+                "display": "Normal Range"
+              }
+            ],
+            "text": "Normal Range"
+          }
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "system": "http:\/\/loinc.org",
+            "code": "20565-8",
+            "display": "CO2 Bld-sCnc"
+          }
+        ],
+        "text": "CO2 Bld-sCnc"
+      },
+      "effectiveDateTime": "2005-07-04",
+      "meta": {
+        "lastUpdated": "2017-03-23T15:39:39.000+00:00",
+        "versionId": "3"
+      },
+      "subject": {
+        "reference": "Patient\/SMART-1134281"
+      },
+      "id": "SMART-Observation-1682-lab",
+      "text": {
+        "div": "<div xmlns=\"http:\/\/www.w3.org\/1999\/xhtml\">2005-07-04: CO2 Bld-sCnc = 24 mmol\/L<\/div>",
+        "status": "generated"
+      },
+      "category": {
+        "coding": [
+          {
+            "system": "http:\/\/hl7.org\/fhir\/observation-category",
+            "code": "laboratory",
+            "display": "Laboratory"
+          }
+        ],
+        "text": "Laboratory"
+      },
+      "resourceType": "Observation",
+      "status": "final",
+      "valueQuantity": {
+        "unit": "mmol\/L",
+        "system": "http:\/\/unitsofmeasure.org",
+        "value": 24.0
+      }
+    },
+    "fullUrl": "https:\/\/sb-fhir-dstu2.smarthealthit.org\/api\/smartdstu2\/open\/Observation\/SMART-Observation-1682-lab"
+  },
+  {
+    "search": {
+      "mode": "match"
+    },
+    "resource": {
+      "referenceRange": [
+        {
+          "high": {
+            "unit": "%",
+            "system": "http:\/\/unitsofmeasure.org",
+            "code": "%",
+            "value": 98.0
+          },
+          "low": {
+            "unit": "%",
+            "system": "http:\/\/unitsofmeasure.org",
+            "code": "%",
+            "value": 95.0
+          },
+          "meaning": {
+            "coding": [
+              {
+                "system": "http:\/\/hl7.org\/fhir\/referencerange-meaning",
+                "code": "normal",
+                "display": "Normal Range"
+              }
+            ],
+            "text": "Normal Range"
+          }
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "system": "http:\/\/loinc.org",
+            "code": "2713-6",
+            "display": "SaO2% from pO2 Bld"
+          }
+        ],
+        "text": "SaO2% from pO2 Bld"
+      },
+      "effectiveDateTime": "2005-07-04",
+      "meta": {
+        "lastUpdated": "2017-03-23T15:39:39.000+00:00",
+        "versionId": "3"
+      },
+      "subject": {
+        "reference": "Patient\/SMART-1134281"
+      },
+      "id": "SMART-Observation-1683-lab",
+      "text": {
+        "div": "<div xmlns=\"http:\/\/www.w3.org\/1999\/xhtml\">2005-07-04: SaO2% from pO2 Bld = 92 %<\/div>",
+        "status": "generated"
+      },
+      "category": {
+        "coding": [
+          {
+            "system": "http:\/\/hl7.org\/fhir\/observation-category",
+            "code": "laboratory",
+            "display": "Laboratory"
+          }
+        ],
+        "text": "Laboratory"
+      },
+      "resourceType": "Observation",
+      "status": "final",
+      "valueQuantity": {
+        "unit": "%",
+        "system": "http:\/\/unitsofmeasure.org",
+        "value": 92.0
+      }
+    },
+    "fullUrl": "https:\/\/sb-fhir-dstu2.smarthealthit.org\/api\/smartdstu2\/open\/Observation\/SMART-Observation-1683-lab"
+  },
+  {
+    "search": {
+      "mode": "match"
+    },
+    "resource": {
+      "referenceRange": [
+        {
+          "high": {
+            "unit": "%",
+            "system": "http:\/\/unitsofmeasure.org",
+            "code": "%",
+            "value": 98.0
+          },
+          "low": {
+            "unit": "%",
+            "system": "http:\/\/unitsofmeasure.org",
+            "code": "%",
+            "value": 95.0
+          },
+          "meaning": {
+            "coding": [
+              {
+                "system": "http:\/\/hl7.org\/fhir\/referencerange-meaning",
+                "code": "normal",
+                "display": "Normal Range"
+              }
+            ],
+            "text": "Normal Range"
+          }
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "system": "http:\/\/loinc.org",
+            "code": "2713-6",
+            "display": "SaO2% from pO2 Bld"
+          }
+        ],
+        "text": "SaO2% from pO2 Bld"
+      },
+      "effectiveDateTime": "2005-07-04",
+      "meta": {
+        "lastUpdated": "2017-03-23T15:39:39.000+00:00",
+        "versionId": "3"
+      },
+      "subject": {
+        "reference": "Patient\/SMART-1134281"
+      },
+      "id": "SMART-Observation-1684-lab",
+      "text": {
+        "div": "<div xmlns=\"http:\/\/www.w3.org\/1999\/xhtml\">2005-07-04: SaO2% from pO2 Bld = 89 %<\/div>",
+        "status": "generated"
+      },
+      "category": {
+        "coding": [
+          {
+            "system": "http:\/\/hl7.org\/fhir\/observation-category",
+            "code": "laboratory",
+            "display": "Laboratory"
+          }
+        ],
+        "text": "Laboratory"
+      },
+      "resourceType": "Observation",
+      "status": "final",
+      "valueQuantity": {
+        "unit": "%",
+        "system": "http:\/\/unitsofmeasure.org",
+        "value": 89.0
+      }
+    },
+    "fullUrl": "https:\/\/sb-fhir-dstu2.smarthealthit.org\/api\/smartdstu2\/open\/Observation\/SMART-Observation-1684-lab"
+  },
+  {
+    "search": {
+      "mode": "match"
+    },
+    "resource": {
+      "referenceRange": [
+        {
+          "high": {
+            "unit": "mg\/dL",
+            "system": "http:\/\/unitsofmeasure.org",
+            "code": "mg\/dL",
+            "value": 109.0
+          },
+          "low": {
+            "unit": "mg\/dL",
+            "system": "http:\/\/unitsofmeasure.org",
+            "code": "mg\/dL",
+            "value": 40.0
+          },
+          "meaning": {
+            "coding": [
+              {
+                "system": "http:\/\/hl7.org\/fhir\/referencerange-meaning",
+                "code": "normal",
+                "display": "Normal Range"
+              }
+            ],
+            "text": "Normal Range"
+          }
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "system": "http:\/\/loinc.org",
+            "code": "2339-0",
+            "display": "Glucose Bld-mCnc"
+          }
+        ],
+        "text": "Glucose Bld-mCnc"
+      },
+      "effectiveDateTime": "2005-07-04",
+      "meta": {
+        "lastUpdated": "2017-03-23T15:39:39.000+00:00",
+        "versionId": "3"
+      },
+      "subject": {
+        "reference": "Patient\/SMART-1134281"
+      },
+      "id": "SMART-Observation-1685-lab",
+      "text": {
+        "div": "<div xmlns=\"http:\/\/www.w3.org\/1999\/xhtml\">2005-07-04: Glucose Bld-mCnc = 71 mg\/dL<\/div>",
+        "status": "generated"
+      },
+      "category": {
+        "coding": [
+          {
+            "system": "http:\/\/hl7.org\/fhir\/observation-category",
+            "code": "laboratory",
+            "display": "Laboratory"
+          }
+        ],
+        "text": "Laboratory"
+      },
+      "resourceType": "Observation",
+      "status": "final",
+      "valueQuantity": {
+        "unit": "mg\/dL",
+        "system": "http:\/\/unitsofmeasure.org",
+        "value": 71.0
+      }
+    },
+    "fullUrl": "https:\/\/sb-fhir-dstu2.smarthealthit.org\/api\/smartdstu2\/open\/Observation\/SMART-Observation-1685-lab"
+  }
+]}

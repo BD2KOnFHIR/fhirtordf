@@ -1,0 +1,67 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix w5: <http://hl7.org/fhir/w5#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://standardhealthrecord.org/fhir/Condition/0b901fad-ecc3-4135-9ee8-ff4534010c44> a fhir:Condition ;
+    fhir:nodeRole fhir:treeRoot ;
+    fhir:Condition.assertedDate [
+        fhir:value "1978-09-01"^^xsd:date
+    ] ;
+    fhir:Condition.clinicalStatus [
+        fhir:value "active"
+    ] ;
+    fhir:Condition.code [
+        fhir:CodeableConcept.coding [
+            a sct:713197008 ;
+            fhir:index "0"^^xsd:integer ;
+            fhir:Coding.code [
+                fhir:value "713197008"
+            ] ;
+            fhir:Coding.display [
+                fhir:value "Recurrent rectal polyp"
+            ] ;
+            fhir:Coding.system [
+                fhir:value "http://snomed.info/sct"
+            ]
+        ]
+    ] ;
+    fhir:Condition.context [
+        fhir:link <http://standardhealthrecord.org/fhir/urn%3Auuid%3Aff4f9269-5036-45dc-b0fb-d8133ae13c76> ;
+        fhir:Reference.reference [
+            fhir:value "urn:uuid:ff4f9269-5036-45dc-b0fb-d8133ae13c76"
+        ]
+    ] ;
+    fhir:Condition.onsetDateTime [
+        fhir:value "1978-09-01T21:35:00-05:00"^^xsd:dateTime
+    ] ;
+    fhir:Condition.subject [
+        fhir:link <http://standardhealthrecord.org/fhir/urn%3Auuid%3A526238ef-dec3-401d-a1c1-2974962df23f> ;
+        fhir:Reference.reference [
+            fhir:value "urn:uuid:526238ef-dec3-401d-a1c1-2974962df23f"
+        ]
+    ] ;
+    fhir:Condition.verificationStatus [
+        fhir:value "confirmed"
+    ] ;
+    fhir:Resource.id [
+        fhir:value "0b901fad-ecc3-4135-9ee8-ff4534010c44"
+    ] ;
+    fhir:Resource.meta [
+        fhir:Meta.profile [
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "http://standardhealthrecord.org/fhir/StructureDefinition/shr-problem-Problem"
+        ]
+    ] .
+
+<http://standardhealthrecord.org/fhir/Condition/0b901fad-ecc3-4135-9ee8-ff4534010c44.ttl> a owl:Ontology ;
+    owl:imports fhir:fhir.ttl .
+
+<http://standardhealthrecord.org/fhir/urn%3Auuid%3A526238ef-dec3-401d-a1c1-2974962df23f> a fhir:Resource .
+
+<http://standardhealthrecord.org/fhir/urn%3Auuid%3Aff4f9269-5036-45dc-b0fb-d8133ae13c76> a fhir:Resource .
+

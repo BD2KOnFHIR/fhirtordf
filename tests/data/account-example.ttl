@@ -1,0 +1,80 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/Account/example> a fhir:Account;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "example"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">HACC Funded Billing for Peter James Chalmers</div>"
+  ];
+  fhir:Account.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "urn:oid:0.1.2.3.4.5.6.7" ];
+     fhir:Identifier.value [ fhir:value "654321" ]
+  ];
+  fhir:Account.status [ fhir:value "active"];
+  fhir:Account.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a <http://hl7.org/fhir/v3/ActCode/PBILLACCT>;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/v3/ActCode" ];
+       fhir:Coding.code [ fhir:value "PBILLACCT" ];
+       fhir:Coding.display [ fhir:value "patient billing account" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "patient" ]
+  ];
+  fhir:Account.name [ fhir:value "HACC Funded Billing for Peter James Chalmers"];
+  fhir:Account.subject [
+     fhir:link <http://hl7.org/fhir/Patient/example>;
+     fhir:Reference.reference [ fhir:value "Patient/example" ];
+     fhir:Reference.display [ fhir:value "Peter James Chalmers" ]
+  ];
+  fhir:Account.period [
+     fhir:Period.start [ fhir:value "2016-01-01"^^xsd:date ];
+     fhir:Period.end [ fhir:value "2016-06-30"^^xsd:date ]
+  ];
+  fhir:Account.active [
+     fhir:Period.start [ fhir:value "2016-01-01"^^xsd:date ];
+     fhir:Period.end [ fhir:value "2016-06-30"^^xsd:date ]
+  ];
+  fhir:Account.balance [
+     fhir:Quantity.value [ fhir:value "-1200"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "USD" ];
+     fhir:Quantity.system [ fhir:value "urn:iso:std:iso:4217" ];
+     fhir:Quantity.code [ fhir:value "USD" ]
+  ];
+  fhir:Account.coverage [
+     fhir:index 0;
+     fhir:Account.coverage.coverage [
+       fhir:link <http://hl7.org/fhir/Coverage/7546D>;
+       fhir:Reference.reference [ fhir:value "Coverage/7546D" ]
+     ];
+     fhir:Account.coverage.priority [ fhir:value "1"^^xsd:positiveInteger ]
+  ];
+  fhir:Account.owner [
+     fhir:link <http://hl7.org/fhir/Organization/hl7>;
+     fhir:Reference.reference [ fhir:value "Organization/hl7" ]
+  ];
+  fhir:Account.description [ fhir:value "Hospital charges"];
+  fhir:Resource.meta [ fhir:Meta.lastUpdated [ fhir:value "2017-03-23T15:39:37+00:00"^^xsd:dateTime ] ;
+     fhir:Meta.versionId [ fhir:value "3" ] ] .
+
+<http://hl7.org/fhir/Patient/example> a fhir:Patient .
+
+<http://hl7.org/fhir/Coverage/7546D> a fhir:Coverage .
+
+<http://hl7.org/fhir/Organization/hl7> a fhir:Organization .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/Account/example.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://hl7.org/fhir/Account/example.ttl/_history/3> .
+
+# -------------------------------------------------------------------------------------
+
