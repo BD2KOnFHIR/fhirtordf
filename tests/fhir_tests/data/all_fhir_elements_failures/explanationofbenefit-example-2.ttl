@@ -1,0 +1,310 @@
+
+
+Subject http://hl7.org/fhir/ExplanationOfBenefit/EB3501 DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/ExplanationOfBenefit/EB3501.ExplanationOfBenefit.totalBenefit.Quantity.value> <http://hl7.org/fhir/value> "0.00"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+	----> Second: 
+<http://hl7.org/fhir/ExplanationOfBenefit/EB3501.ExplanationOfBenefit.totalBenefit.Quantity.value> <http://hl7.org/fhir/value> "0.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .----------------------------------------
+
+========================================
+@prefix ex-claimsubtype: <http://hl7.org/fhir/ex-claimsubtype> .
+@prefix ex-claimtype: <http://hl7.org/fhir/ex-claimtype> .
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix forms-codes: <http://hl7.org/fhir/forms-codes> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sid_ex-icd-10-procedures: <http://hl7.org/fhir/sid/ex-icd-10-procedures> .
+@prefix v3-ActCode: <http://hl7.org/fhir/v3/ActCode> .
+@prefix w5: <http://hl7.org/fhir/w5#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://hl7.org/fhir/ExplanationOfBenefit/EB3501> a fhir:ExplanationOfBenefit ;
+    fhir:nodeRole fhir:treeRoot ;
+    fhir:DomainResource.text [
+        fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">A human-readable rendering of the ExplanationOfBenefit for a cliam that had errors, various other attributes (such as accident and hospitaliztion) are also completed.</div>" ;
+        fhir:Narrative.status [
+            fhir:value "generated"
+        ]
+    ] ;
+    fhir:ExplanationOfBenefit.accident [
+        fhir:ExplanationOfBenefit.accident.date [
+            fhir:value "2014-02-14"^^xsd:date
+        ] ;
+        fhir:ExplanationOfBenefit.accident.locationReference [
+            fhir:link <http://hl7.org/fhir/Location/ph> ;
+            fhir:Reference.reference [
+                fhir:value "Location/ph"
+            ]
+        ] ;
+        fhir:ExplanationOfBenefit.accident.type [
+            fhir:CodeableConcept.coding [
+                a <http://hl7.org/fhir/v3/ActCode/SPT> ;
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "SPT"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://hl7.org/fhir/v3/ActCode"
+                ]
+            ]
+        ]
+    ] ;
+    fhir:ExplanationOfBenefit.billablePeriod [
+        fhir:Period.end [
+            fhir:value "2014-03-01"^^xsd:date
+        ] ;
+        fhir:Period.start [
+            fhir:value "2014-02-01"^^xsd:date
+        ]
+    ] ;
+    fhir:ExplanationOfBenefit.claim [
+        fhir:link <http://hl7.org/fhir/Claim/100150> ;
+        fhir:Reference.reference [
+            fhir:value "Claim/100150"
+        ]
+    ] ;
+    fhir:ExplanationOfBenefit.claimResponse [
+        fhir:link <http://hl7.org/fhir/ClaimResponse/R3500> ;
+        fhir:Reference.reference [
+            fhir:value "ClaimResponse/R3500"
+        ]
+    ] ;
+    fhir:ExplanationOfBenefit.created [
+        fhir:value "2014-08-16"^^xsd:date
+    ] ;
+    fhir:ExplanationOfBenefit.disposition [
+        fhir:value "Could not process."
+    ] ;
+    fhir:ExplanationOfBenefit.employmentImpacted [
+        fhir:Period.end [
+            fhir:value "2014-02-28"^^xsd:date
+        ] ;
+        fhir:Period.start [
+            fhir:value "2014-02-14"^^xsd:date
+        ]
+    ] ;
+    fhir:ExplanationOfBenefit.enterer [
+        fhir:link <http://hl7.org/fhir/Practitioner/1> ;
+        fhir:Reference.reference [
+            fhir:value "Practitioner/1"
+        ]
+    ] ;
+    fhir:ExplanationOfBenefit.facility [
+        fhir:link <http://hl7.org/fhir/Location/1> ;
+        fhir:Reference.reference [
+            fhir:value "Location/1"
+        ]
+    ] ;
+    fhir:ExplanationOfBenefit.form [
+        fhir:CodeableConcept.coding [
+            a <http://hl7.org/fhir/forms-codes/2> ;
+            fhir:index "0"^^xsd:integer ;
+            fhir:Coding.code [
+                fhir:value "2"
+            ] ;
+            fhir:Coding.system [
+                fhir:value "http://hl7.org/fhir/forms-codes"
+            ]
+        ]
+    ] ;
+    fhir:ExplanationOfBenefit.hospitalization [
+        fhir:Period.end [
+            fhir:value "2014-02-16"^^xsd:date
+        ] ;
+        fhir:Period.start [
+            fhir:value "2014-02-14"^^xsd:date
+        ]
+    ] ;
+    fhir:ExplanationOfBenefit.identifier [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Identifier.system [
+            fhir:value "http://www.BenefitsInc.com/fhir/explanationofbenefit"
+        ] ;
+        fhir:Identifier.value [
+            fhir:value "error-1"
+        ]
+    ] ;
+    fhir:ExplanationOfBenefit.insurance [
+        fhir:ExplanationOfBenefit.insurance.coverage [
+            fhir:link <http://hl7.org/fhir/Coverage/9876B1> ;
+            fhir:Reference.reference [
+                fhir:value "Coverage/9876B1"
+            ]
+        ]
+    ] ;
+    fhir:ExplanationOfBenefit.insurer [
+        fhir:link <http://hl7.org/fhir/Organization/2> ;
+        fhir:Reference.reference [
+            fhir:value "Organization/2"
+        ]
+    ] ;
+    fhir:ExplanationOfBenefit.organization [
+        fhir:link <http://hl7.org/fhir/Organization/2> ;
+        fhir:Reference.reference [
+            fhir:value "Organization/2"
+        ]
+    ] ;
+    fhir:ExplanationOfBenefit.originalPrescription [
+        fhir:link <http://hl7.org/fhir/MedicationRequest/medrx0301> ;
+        fhir:Reference.reference [
+            fhir:value "MedicationRequest/medrx0301"
+        ]
+    ] ;
+    fhir:ExplanationOfBenefit.outcome [
+        fhir:value "error"
+    ] ;
+    fhir:ExplanationOfBenefit.patient [
+        fhir:link <http://hl7.org/fhir/Patient/pat1> ;
+        fhir:Reference.reference [
+            fhir:value "Patient/pat1"
+        ]
+    ] ;
+    fhir:ExplanationOfBenefit.precedence [
+        fhir:value "2"^^xsd:positiveInteger
+    ] ;
+    fhir:ExplanationOfBenefit.prescription [
+        fhir:link <http://hl7.org/fhir/MedicationRequest/medrx002> ;
+        fhir:Reference.reference [
+            fhir:value "MedicationRequest/medrx002"
+        ]
+    ] ;
+    fhir:ExplanationOfBenefit.procedure [
+        fhir:index "0"^^xsd:integer ;
+        fhir:ExplanationOfBenefit.procedure.date [
+            fhir:value "2014-02-14"^^xsd:date
+        ] ;
+        fhir:ExplanationOfBenefit.procedure.procedureCodeableConcept [
+            fhir:CodeableConcept.coding [
+                a <http://hl7.org/fhir/sid/ex-icd-10-procedures/123001> ;
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "123001"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://hl7.org/fhir/sid/ex-icd-10-procedures"
+                ]
+            ]
+        ] ;
+        fhir:ExplanationOfBenefit.procedure.sequence [
+            fhir:value "1"^^xsd:positiveInteger
+        ]
+    ] ;
+    fhir:ExplanationOfBenefit.processNote [
+        fhir:index "0"^^xsd:integer ;
+        fhir:ExplanationOfBenefit.processNote.language [
+            fhir:CodeableConcept.coding [
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "en-CA"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "urn:ietf:bcp:47"
+                ]
+            ]
+        ] ;
+        fhir:ExplanationOfBenefit.processNote.number [
+            fhir:value "1"^^xsd:positiveInteger
+        ] ;
+        fhir:ExplanationOfBenefit.processNote.text [
+            fhir:value "Invalid claim"
+        ] ;
+        fhir:ExplanationOfBenefit.processNote.type [
+            fhir:value "display"
+        ]
+    ] ;
+    fhir:ExplanationOfBenefit.provider [
+        fhir:link <http://hl7.org/fhir/Practitioner/1> ;
+        fhir:Reference.reference [
+            fhir:value "Practitioner/1"
+        ]
+    ] ;
+    fhir:ExplanationOfBenefit.related [
+        fhir:index "0"^^xsd:integer ;
+        fhir:ExplanationOfBenefit.related.reference [
+            fhir:Identifier.system [
+                fhir:value "http://www.BenefitsInc.com/case-number"
+            ] ;
+            fhir:Identifier.value [
+                fhir:value "23-56Tu-XX-47-20150M14"
+            ]
+        ]
+    ] ;
+    fhir:ExplanationOfBenefit.status [
+        fhir:value "active"
+    ] ;
+    fhir:ExplanationOfBenefit.subType [
+        fhir:index "0"^^xsd:integer ;
+        fhir:CodeableConcept.coding [
+            a <http://hl7.org/fhir/ex-claimsubtype/emergency> ;
+            fhir:index "0"^^xsd:integer ;
+            fhir:Coding.code [
+                fhir:value "emergency"
+            ] ;
+            fhir:Coding.system [
+                fhir:value "http://hl7.org/fhir/ex-claimsubtype"
+            ]
+        ]
+    ] ;
+    fhir:ExplanationOfBenefit.totalBenefit [
+        fhir:Quantity.code [
+            fhir:value "USD"
+        ] ;
+        fhir:Quantity.system [
+            fhir:value "urn:iso:std:iso:4217"
+        ] ;
+        fhir:Quantity.value [
+            fhir:value "0.0"^^xsd:decimal
+        ]
+    ] ;
+    fhir:ExplanationOfBenefit.totalCost [
+        fhir:Quantity.code [
+            fhir:value "USD"
+        ] ;
+        fhir:Quantity.system [
+            fhir:value "urn:iso:std:iso:4217"
+        ] ;
+        fhir:Quantity.value [
+            fhir:value "2478.57"^^xsd:decimal
+        ]
+    ] ;
+    fhir:ExplanationOfBenefit.type [
+        fhir:CodeableConcept.coding [
+            a <http://hl7.org/fhir/ex-claimtype/oral> ;
+            fhir:index "0"^^xsd:integer ;
+            fhir:Coding.code [
+                fhir:value "oral"
+            ] ;
+            fhir:Coding.system [
+                fhir:value "http://hl7.org/fhir/ex-claimtype"
+            ]
+        ]
+    ] ;
+    fhir:Resource.id [
+        fhir:value "EB3501"
+    ] .
+
+<http://hl7.org/fhir/ExplanationOfBenefit/EB3501.ttl> a owl:Ontology ;
+    owl:imports fhir:fhir.ttl .
+
+<http://hl7.org/fhir/Claim/100150> a fhir:Claim .
+
+<http://hl7.org/fhir/ClaimResponse/R3500> a fhir:ClaimResponse .
+
+<http://hl7.org/fhir/Coverage/9876B1> a fhir:Coverage .
+
+<http://hl7.org/fhir/Location/1> a fhir:Location .
+
+<http://hl7.org/fhir/Location/ph> a fhir:Location .
+
+<http://hl7.org/fhir/MedicationRequest/medrx002> a fhir:MedicationRequest .
+
+<http://hl7.org/fhir/MedicationRequest/medrx0301> a fhir:MedicationRequest .
+
+<http://hl7.org/fhir/Patient/pat1> a fhir:Patient .
+
+<http://hl7.org/fhir/Organization/2> a fhir:Organization .
+
+<http://hl7.org/fhir/Practitioner/1> a fhir:Practitioner .
+

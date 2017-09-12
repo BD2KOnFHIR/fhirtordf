@@ -26,8 +26,11 @@
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
 # OF THE POSSIBILITY OF SUCH DAMAGE.
 import os
+import io as sio
 import unittest
+from typing import io
 
+import sys
 from rdflib import Graph, URIRef
 
 from fhirtordf.rdfsupport.rdfcompare import rdf_compare
@@ -37,6 +40,20 @@ save_output = False
 
 
 class JSONToRDFTestCase(unittest.TestCase):
+    save_stdout = []
+
+    def _push_stdout(self) -> io:
+        self.save_stdout.append(sys.stdout)
+        output = sio.StringIO()
+        sys.stdout = output
+        return output
+
+    def _pop_stdout(self) -> None:
+        if self.save_stdout:
+            sys.stdout = self.save_stdout.pop()
+
+    def tearDown(self):
+        self._pop_stdout()
 
     def test_patient_example(self):
         from fhirtordf.fhirtordf import fhirtordf
@@ -91,7 +108,8 @@ class JSONToRDFTestCase(unittest.TestCase):
 
         test_directory = os.path.join(os.path.split(os.path.abspath(__file__))[0], 'data')
         outfname = os.path.join(test_directory, "patlist1.ttl")
-        url = "http://fhirtest.uhn.ca/baseDstu3/Patient?_format=json&gender=male"
+        # The following query returned 310 entries on Sep 10, 2017
+        url = "http://fhirtest.uhn.ca/baseDstu3/Patient?_format=json&gender=male&birthdate=gt2013-01-01"
         args = "-i {} -o {} -nc".format(url, outfname)
         self.assertTrue(fhirtordf(args.split()))
         out_graph = Graph()
@@ -101,8 +119,28 @@ class JSONToRDFTestCase(unittest.TestCase):
         self.assertTrue(fhirtordf(args.split()))
         out_graph = Graph()
         out_graph.load(outfname, format="turtle")
-        self.assertTrue(len([s for s in set(out_graph.subjects()) if isinstance(s, URIRef)]) > 3000)
+        self.assertTrue(len([s for s in set(out_graph.subjects()) if isinstance(s, URIRef)]) > 300)
 
+    def test_two_infiles(self):
+        from fhirtordf.fhirtordf import fhirtordf
+
+        test_directory = os.path.join(os.path.split(os.path.abspath(__file__))[0], '..', 'data')
+        tf1 = os.path.join(test_directory, "activitydefinition-example.json")
+        tf2 = os.path.join(test_directory, "activitydefinition-predecessor-example.json")
+        args = "-i {} {}".format(tf1, tf2)
+        output = self._push_stdout()
+        fhirtordf(args.split())
+        self._pop_stdout()
+        print(output.getvalue())
+
+    def test_two_uris(self):
+        from fhirtordf.fhirtordf import fhirtordf
+
+        args = "-i http://hl7.org/fhir/Patient/f201 http://hl7.org/fhir/Patient/pat1"
+        output = self._push_stdout()
+        fhirtordf(args.split())
+        self._pop_stdout()
+        print(output.getvalue())
 
 if __name__ == '__main__':
     unittest.main()

@@ -1,0 +1,179 @@
+
+
+Subject http://hl7.org/fhir/GuidanceResponse/example DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/GuidanceResponse/example.DomainResource.contained_0.Parameters.parameter_0.Parameters.parameter.valueDecimal> <http://hl7.org/fhir/value> "7"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://hl7.org/fhir/GuidanceResponse/example.DomainResource.contained_0.Parameters.parameter_0> <http://hl7.org/fhir/Parameters.parameter.valueDecimal> <http://hl7.org/fhir/GuidanceResponse/example.DomainResource.contained_0.Parameters.parameter_0.Parameters.parameter.valueDecimal> .
+<http://hl7.org/fhir/GuidanceResponse/example.DomainResource.contained_0.Parameters.parameter_1.Parameters.parameter.valueCodeableConcept.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "70450" .
+<http://hl7.org/fhir/GuidanceResponse/example.DomainResource.contained_0.Parameters.parameter_1.Parameters.parameter.valueCodeableConcept.CodeableConcept.coding_0.Coding.display> <http://hl7.org/fhir/value> "CT, head, wo iv contrast" .
+<http://hl7.org/fhir/GuidanceResponse/example.DomainResource.contained_0.Parameters.parameter_1.Parameters.parameter.valueCodeableConcept.CodeableConcept.coding_0.Coding.system> <http://hl7.org/fhir/value> "http://www.ama-assn.org/go/cpt" .
+<http://hl7.org/fhir/GuidanceResponse/example.DomainResource.contained_0.Parameters.parameter_1.Parameters.parameter.valueCodeableConcept.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/GuidanceResponse/example.DomainResource.contained_0.Parameters.parameter_1.Parameters.parameter.valueCodeableConcept.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/GuidanceResponse/example.DomainResource.contained_0.Parameters.parameter_1.Parameters.parameter.valueCodeableConcept.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.display> <http://hl7.org/fhir/GuidanceResponse/example.DomainResource.contained_0.Parameters.parameter_1.Parameters.parameter.valueCodeableConcept.CodeableConcept.coding_0.Coding.display> .
+<http://hl7.org/fhir/GuidanceResponse/example.DomainResource.contained_0.Parameters.parameter_1.Parameters.parameter.valueCodeableConcept.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/GuidanceResponse/example.DomainResource.contained_0.Parameters.parameter_1.Parameters.parameter.valueCodeableConcept.CodeableConcept.coding_0.Coding.system> .
+<http://hl7.org/fhir/GuidanceResponse/example.DomainResource.contained_0.Parameters.parameter_1.Parameters.parameter.valueCodeableConcept.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/GuidanceResponse/example.DomainResource.contained_0.Parameters.parameter_1.Parameters.parameter.valueCodeableConcept> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/GuidanceResponse/example.DomainResource.contained_0.Parameters.parameter_1.Parameters.parameter.valueCodeableConcept.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/GuidanceResponse/example.DomainResource.contained_0.Parameters.parameter_1> <http://hl7.org/fhir/Parameters.parameter.valueCodeableConcept> <http://hl7.org/fhir/GuidanceResponse/example.DomainResource.contained_0.Parameters.parameter_1.Parameters.parameter.valueCodeableConcept> .
+<http://hl7.org/fhir/GuidanceResponse/example.DomainResource.contained_0.Parameters.parameter_2.Parameters.parameter.valueReference.Reference.reference> <http://hl7.org/fhir/value> "Device/software" .
+<http://hl7.org/fhir/GuidanceResponse/example.DomainResource.contained_0.Parameters.parameter_2.Parameters.parameter.valueReference> <http://hl7.org/fhir/Reference.reference> <http://hl7.org/fhir/GuidanceResponse/example.DomainResource.contained_0.Parameters.parameter_2.Parameters.parameter.valueReference.Reference.reference> .
+<http://hl7.org/fhir/GuidanceResponse/example.DomainResource.contained_0.Parameters.parameter_2.Parameters.parameter.valueReference> <http://hl7.org/fhir/link> <http://hl7.org/fhir/Device/software> .
+<http://hl7.org/fhir/GuidanceResponse/example.DomainResource.contained_0.Parameters.parameter_2> <http://hl7.org/fhir/Parameters.parameter.valueReference> <http://hl7.org/fhir/GuidanceResponse/example.DomainResource.contained_0.Parameters.parameter_2.Parameters.parameter.valueReference> .
+<http://hl7.org/fhir/GuidanceResponse/example.DomainResource.contained_0.Parameters.parameter_3.Parameters.parameter.valueUri> <http://hl7.org/fhir/value> "http://someguidelineprovider.org/radiology-appropriateness-guidelines.html" .
+<http://hl7.org/fhir/GuidanceResponse/example.DomainResource.contained_0.Parameters.parameter_3> <http://hl7.org/fhir/Parameters.parameter.valueUri> <http://hl7.org/fhir/GuidanceResponse/example.DomainResource.contained_0.Parameters.parameter_3.Parameters.parameter.valueUri> .
+	----> Second: 
+<http://hl7.org/fhir/GuidanceResponse/example.DomainResource.contained_0.Parameters.parameter_0.Extension.valueDecimal> <http://hl7.org/fhir/value> "7"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://hl7.org/fhir/GuidanceResponse/example.DomainResource.contained_0.Parameters.parameter_0> <http://hl7.org/fhir/Extension.valueDecimal> <http://hl7.org/fhir/GuidanceResponse/example.DomainResource.contained_0.Parameters.parameter_0.Extension.valueDecimal> .
+<http://hl7.org/fhir/GuidanceResponse/example.DomainResource.contained_0.Parameters.parameter_1.Extension.valueCodeableConcept.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "70450" .
+<http://hl7.org/fhir/GuidanceResponse/example.DomainResource.contained_0.Parameters.parameter_1.Extension.valueCodeableConcept.CodeableConcept.coding_0.Coding.display> <http://hl7.org/fhir/value> "CT, head, wo iv contrast" .
+<http://hl7.org/fhir/GuidanceResponse/example.DomainResource.contained_0.Parameters.parameter_1.Extension.valueCodeableConcept.CodeableConcept.coding_0.Coding.system> <http://hl7.org/fhir/value> "http://www.ama-assn.org/go/cpt" .
+<http://hl7.org/fhir/GuidanceResponse/example.DomainResource.contained_0.Parameters.parameter_1.Extension.valueCodeableConcept.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/GuidanceResponse/example.DomainResource.contained_0.Parameters.parameter_1.Extension.valueCodeableConcept.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/GuidanceResponse/example.DomainResource.contained_0.Parameters.parameter_1.Extension.valueCodeableConcept.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.display> <http://hl7.org/fhir/GuidanceResponse/example.DomainResource.contained_0.Parameters.parameter_1.Extension.valueCodeableConcept.CodeableConcept.coding_0.Coding.display> .
+<http://hl7.org/fhir/GuidanceResponse/example.DomainResource.contained_0.Parameters.parameter_1.Extension.valueCodeableConcept.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/GuidanceResponse/example.DomainResource.contained_0.Parameters.parameter_1.Extension.valueCodeableConcept.CodeableConcept.coding_0.Coding.system> .
+<http://hl7.org/fhir/GuidanceResponse/example.DomainResource.contained_0.Parameters.parameter_1.Extension.valueCodeableConcept.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/GuidanceResponse/example.DomainResource.contained_0.Parameters.parameter_1.Extension.valueCodeableConcept> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/GuidanceResponse/example.DomainResource.contained_0.Parameters.parameter_1.Extension.valueCodeableConcept.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/GuidanceResponse/example.DomainResource.contained_0.Parameters.parameter_1> <http://hl7.org/fhir/Extension.valueCodeableConcept> <http://hl7.org/fhir/GuidanceResponse/example.DomainResource.contained_0.Parameters.parameter_1.Extension.valueCodeableConcept> .
+<http://hl7.org/fhir/GuidanceResponse/example.DomainResource.contained_0.Parameters.parameter_2.Extension.valueReference.Reference.reference> <http://hl7.org/fhir/value> "Device/software" .
+<http://hl7.org/fhir/GuidanceResponse/example.DomainResource.contained_0.Parameters.parameter_2.Extension.valueReference> <http://hl7.org/fhir/Reference.reference> <http://hl7.org/fhir/GuidanceResponse/example.DomainResource.contained_0.Parameters.parameter_2.Extension.valueReference.Reference.reference> .
+<http://hl7.org/fhir/GuidanceResponse/example.DomainResource.contained_0.Parameters.parameter_2.Extension.valueReference> <http://hl7.org/fhir/link> <http://hl7.org/fhir/Device/software> .
+<http://hl7.org/fhir/GuidanceResponse/example.DomainResource.contained_0.Parameters.parameter_2> <http://hl7.org/fhir/Extension.valueReference> <http://hl7.org/fhir/GuidanceResponse/example.DomainResource.contained_0.Parameters.parameter_2.Extension.valueReference> .
+<http://hl7.org/fhir/GuidanceResponse/example.DomainResource.contained_0.Parameters.parameter_3.Extension.valueUri> <http://hl7.org/fhir/value> "http://someguidelineprovider.org/radiology-appropriateness-guidelines.html" .
+<http://hl7.org/fhir/GuidanceResponse/example.DomainResource.contained_0.Parameters.parameter_3> <http://hl7.org/fhir/Extension.valueUri> <http://hl7.org/fhir/GuidanceResponse/example.DomainResource.contained_0.Parameters.parameter_3.Extension.valueUri> .----------------------------------------
+
+========================================
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix w5: <http://hl7.org/fhir/w5#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://hl7.org/fhir/GuidanceResponse/example> a fhir:GuidanceResponse ;
+    fhir:nodeRole fhir:treeRoot ;
+    fhir:DomainResource.contained [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Parameters.parameter [
+            fhir:index "1"^^xsd:integer ;
+            fhir:Extension.valueCodeableConcept [
+                fhir:CodeableConcept.coding [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "70450"
+                    ] ;
+                    fhir:Coding.display [
+                        fhir:value "CT, head, wo iv contrast"
+                    ] ;
+                    fhir:Coding.system [
+                        fhir:value "http://www.ama-assn.org/go/cpt"
+                    ]
+                ]
+            ] ;
+            fhir:Parameters.parameter.name [
+                fhir:value "item-assessed"
+            ]
+        ],
+            [
+            fhir:index "2"^^xsd:integer ;
+            fhir:Extension.valueReference [
+                fhir:link <http://hl7.org/fhir/Device/software> ;
+                fhir:Reference.reference [
+                    fhir:value "Device/software"
+                ]
+            ] ;
+            fhir:Parameters.parameter.name [
+                fhir:value "device"
+            ]
+        ],
+            [
+            fhir:index "3"^^xsd:integer ;
+            fhir:Extension.valueUri [
+                fhir:value "http://someguidelineprovider.org/radiology-appropriateness-guidelines.html"
+            ] ;
+            fhir:Parameters.parameter.name [
+                fhir:value "guideline-followed"
+            ]
+        ],
+            [
+            fhir:index "0"^^xsd:integer ;
+            fhir:Extension.valueDecimal [
+                fhir:value "7"^^xsd:decimal
+            ] ;
+            fhir:Parameters.parameter.name [
+                fhir:value "score"
+            ]
+        ] ;
+        fhir:Resource.id [
+            fhir:value "outputParameters1"
+        ]
+    ] ;
+    fhir:DomainResource.text [
+        fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example</p><p><b>contained</b>: </p><p><b>requestId</b>: guidanceRequest1</p><p><b>identifier</b>: guidanceResponse1</p><p><b>module</b>: <a>ServiceDefinition/example</a></p><p><b>status</b>: success</p><p><b>subject</b>: <a>Patient/example</a></p><p><b>context</b>: <a>Encounter/example</a></p><p><b>occurrenceDateTime</b>: Mar 10, 2017 4:02:00 PM</p><p><b>performer</b>: <a>Device/software</a></p><p><b>reason</b>: Guideline Appropriate Ordering Assessment <span>(Details )</span></p><p><b>outputParameters</b>: id: outputParameters1</p></div>" ;
+        fhir:Narrative.status [
+            fhir:value "generated"
+        ]
+    ] ;
+    fhir:GuidanceResponse.context [
+        fhir:link <http://hl7.org/fhir/Encounter/example> ;
+        fhir:Reference.reference [
+            fhir:value "Encounter/example"
+        ]
+    ] ;
+    fhir:GuidanceResponse.identifier [
+        fhir:Identifier.system [
+            fhir:value "http://example.org"
+        ] ;
+        fhir:Identifier.value [
+            fhir:value "guidanceResponse1"
+        ]
+    ] ;
+    fhir:GuidanceResponse.module [
+        fhir:link <http://hl7.org/fhir/ServiceDefinition/example> ;
+        fhir:Reference.reference [
+            fhir:value "ServiceDefinition/example"
+        ]
+    ] ;
+    fhir:GuidanceResponse.occurrenceDateTime [
+        fhir:value "2017-03-10T16:02:00+00:00"^^xsd:dateTime
+    ] ;
+    fhir:GuidanceResponse.outputParameters [
+        fhir:Reference.reference [
+            fhir:value "#outputParameters1"
+        ]
+    ] ;
+    fhir:GuidanceResponse.performer [
+        fhir:link <http://hl7.org/fhir/Device/software> ;
+        fhir:Reference.reference [
+            fhir:value "Device/software"
+        ]
+    ] ;
+    fhir:GuidanceResponse.reasonCodeableConcept [
+        fhir:CodeableConcept.text [
+            fhir:value "Guideline Appropriate Ordering Assessment"
+        ]
+    ] ;
+    fhir:GuidanceResponse.requestId [
+        fhir:value "guidanceRequest1"
+    ] ;
+    fhir:GuidanceResponse.status [
+        fhir:value "success"
+    ] ;
+    fhir:GuidanceResponse.subject [
+        fhir:link <http://hl7.org/fhir/Patient/example> ;
+        fhir:Reference.reference [
+            fhir:value "Patient/example"
+        ]
+    ] ;
+    fhir:Resource.id [
+        fhir:value "example"
+    ] .
+
+<http://hl7.org/fhir/GuidanceResponse/example.ttl> a owl:Ontology ;
+    owl:imports fhir:fhir.ttl .
+
+<http://hl7.org/fhir/Encounter/example> a fhir:Encounter .
+
+<http://hl7.org/fhir/Patient/example> a fhir:Patient .
+
+<http://hl7.org/fhir/ServiceDefinition/example> a fhir:ServiceDefinition .
+
+<http://hl7.org/fhir/Device/software> a fhir:Device .
+

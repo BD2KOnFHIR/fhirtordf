@@ -1,0 +1,1684 @@
+
+
+Subject http://hl7.org/fhir/Endpoint/77 DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/Endpoint/77.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
+<http://hl7.org/fhir/Endpoint/77.DomainResource.text> <http://hl7.org/fhir/Narrative.div> "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n              v2 referral Requests, REF-I12<br/>\n              Address: 127.0.0.1</div>" .
+<http://hl7.org/fhir/Endpoint/77.DomainResource.text> <http://hl7.org/fhir/Narrative.status> <http://hl7.org/fhir/Endpoint/77.DomainResource.text.Narrative.status> .
+<http://hl7.org/fhir/Endpoint/77.Endpoint.address> <http://hl7.org/fhir/value> "127.0.0.1" .
+<http://hl7.org/fhir/Endpoint/77.Endpoint.connectionType.Coding.code> <http://hl7.org/fhir/value> "hl7v2-mllp" .
+<http://hl7.org/fhir/Endpoint/77.Endpoint.connectionType.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/endpoint-connection-type" .
+<http://hl7.org/fhir/Endpoint/77.Endpoint.connectionType> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Endpoint/77.Endpoint.connectionType.Coding.code> .
+<http://hl7.org/fhir/Endpoint/77.Endpoint.connectionType> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Endpoint/77.Endpoint.connectionType.Coding.system> .
+<http://hl7.org/fhir/Endpoint/77.Endpoint.managingOrganization.Reference.display> <http://hl7.org/fhir/value> "Epic demo organization" .
+<http://hl7.org/fhir/Endpoint/77.Endpoint.managingOrganization> <http://hl7.org/fhir/Reference.display> <http://hl7.org/fhir/Endpoint/77.Endpoint.managingOrganization.Reference.display> .
+<http://hl7.org/fhir/Endpoint/77.Endpoint.name> <http://hl7.org/fhir/value> "v2 referral Requests" .
+<http://hl7.org/fhir/Endpoint/77.Endpoint.payloadMimeType_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Endpoint/77.Endpoint.payloadMimeType_0> <http://hl7.org/fhir/value> "HL7v2" .
+<http://hl7.org/fhir/Endpoint/77.Endpoint.payloadType_0.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "REF-I12" .
+<http://hl7.org/fhir/Endpoint/77.Endpoint.payloadType_0.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Endpoint/77.Endpoint.payloadType_0.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/Endpoint/77.Endpoint.payloadType_0.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Endpoint/77.Endpoint.payloadType_0> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Endpoint/77.Endpoint.payloadType_0.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/Endpoint/77.Endpoint.payloadType_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Endpoint/77.Endpoint.status> <http://hl7.org/fhir/value> "active" .
+<http://hl7.org/fhir/Endpoint/77.Resource.id> <http://hl7.org/fhir/value> "77" .
+<http://hl7.org/fhir/Endpoint/77> <http://hl7.org/fhir/DomainResource.text> <http://hl7.org/fhir/Endpoint/77.DomainResource.text> .
+<http://hl7.org/fhir/Endpoint/77> <http://hl7.org/fhir/Endpoint.address> <http://hl7.org/fhir/Endpoint/77.Endpoint.address> .
+<http://hl7.org/fhir/Endpoint/77> <http://hl7.org/fhir/Endpoint.connectionType> <http://hl7.org/fhir/Endpoint/77.Endpoint.connectionType> .
+<http://hl7.org/fhir/Endpoint/77> <http://hl7.org/fhir/Endpoint.managingOrganization> <http://hl7.org/fhir/Endpoint/77.Endpoint.managingOrganization> .
+<http://hl7.org/fhir/Endpoint/77> <http://hl7.org/fhir/Endpoint.name> <http://hl7.org/fhir/Endpoint/77.Endpoint.name> .
+<http://hl7.org/fhir/Endpoint/77> <http://hl7.org/fhir/Endpoint.payloadMimeType> <http://hl7.org/fhir/Endpoint/77.Endpoint.payloadMimeType_0> .
+<http://hl7.org/fhir/Endpoint/77> <http://hl7.org/fhir/Endpoint.payloadType> <http://hl7.org/fhir/Endpoint/77.Endpoint.payloadType_0> .
+<http://hl7.org/fhir/Endpoint/77> <http://hl7.org/fhir/Endpoint.status> <http://hl7.org/fhir/Endpoint/77.Endpoint.status> .
+<http://hl7.org/fhir/Endpoint/77> <http://hl7.org/fhir/Resource.id> <http://hl7.org/fhir/Endpoint/77.Resource.id> .
+<http://hl7.org/fhir/Endpoint/77> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/Endpoint> .----------------------------------------
+
+Subject http://hl7.org/fhir/Endpoint/84 DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/Endpoint/84.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
+<http://hl7.org/fhir/Endpoint/84.DomainResource.text> <http://hl7.org/fhir/Narrative.div> "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n              Enterprise Image Archive, varies (application/dicom, application/dicom+xml, image/jpeg, and many more)<br/>\n              Address: https://pacs.hospital.org/IHEInvokeImageDisplay</div>" .
+<http://hl7.org/fhir/Endpoint/84.DomainResource.text> <http://hl7.org/fhir/Narrative.status> <http://hl7.org/fhir/Endpoint/84.DomainResource.text.Narrative.status> .
+<http://hl7.org/fhir/Endpoint/84.Endpoint.address> <http://hl7.org/fhir/value> "https://pacs.hospital.org/IHEInvokeImageDisplay" .
+<http://hl7.org/fhir/Endpoint/84.Endpoint.connectionType.Coding.code> <http://hl7.org/fhir/value> "ihe-iid" .
+<http://hl7.org/fhir/Endpoint/84.Endpoint.connectionType.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/endpoint-connection-type" .
+<http://hl7.org/fhir/Endpoint/84.Endpoint.connectionType> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Endpoint/84.Endpoint.connectionType.Coding.code> .
+<http://hl7.org/fhir/Endpoint/84.Endpoint.connectionType> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Endpoint/84.Endpoint.connectionType.Coding.system> .
+<http://hl7.org/fhir/Endpoint/84.Endpoint.managingOrganization.Reference.display> <http://hl7.org/fhir/value> "Multi-site Co." .
+<http://hl7.org/fhir/Endpoint/84.Endpoint.managingOrganization> <http://hl7.org/fhir/Reference.display> <http://hl7.org/fhir/Endpoint/84.Endpoint.managingOrganization.Reference.display> .
+<http://hl7.org/fhir/Endpoint/84.Endpoint.name> <http://hl7.org/fhir/value> "Enterprise Image Archive" .
+<http://hl7.org/fhir/Endpoint/84.Endpoint.payloadMimeType_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Endpoint/84.Endpoint.payloadMimeType_0> <http://hl7.org/fhir/value> "IHE IID" .
+<http://hl7.org/fhir/Endpoint/84.Endpoint.payloadType_0.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "varies (application/dicom, application/dicom+xml, image/jpeg, and many more)" .
+<http://hl7.org/fhir/Endpoint/84.Endpoint.payloadType_0.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Endpoint/84.Endpoint.payloadType_0.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/Endpoint/84.Endpoint.payloadType_0.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Endpoint/84.Endpoint.payloadType_0> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Endpoint/84.Endpoint.payloadType_0.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/Endpoint/84.Endpoint.payloadType_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Endpoint/84.Endpoint.status> <http://hl7.org/fhir/value> "active" .
+<http://hl7.org/fhir/Endpoint/84.Resource.id> <http://hl7.org/fhir/value> "84" .
+<http://hl7.org/fhir/Endpoint/84> <http://hl7.org/fhir/DomainResource.text> <http://hl7.org/fhir/Endpoint/84.DomainResource.text> .
+<http://hl7.org/fhir/Endpoint/84> <http://hl7.org/fhir/Endpoint.address> <http://hl7.org/fhir/Endpoint/84.Endpoint.address> .
+<http://hl7.org/fhir/Endpoint/84> <http://hl7.org/fhir/Endpoint.connectionType> <http://hl7.org/fhir/Endpoint/84.Endpoint.connectionType> .
+<http://hl7.org/fhir/Endpoint/84> <http://hl7.org/fhir/Endpoint.managingOrganization> <http://hl7.org/fhir/Endpoint/84.Endpoint.managingOrganization> .
+<http://hl7.org/fhir/Endpoint/84> <http://hl7.org/fhir/Endpoint.name> <http://hl7.org/fhir/Endpoint/84.Endpoint.name> .
+<http://hl7.org/fhir/Endpoint/84> <http://hl7.org/fhir/Endpoint.payloadMimeType> <http://hl7.org/fhir/Endpoint/84.Endpoint.payloadMimeType_0> .
+<http://hl7.org/fhir/Endpoint/84> <http://hl7.org/fhir/Endpoint.payloadType> <http://hl7.org/fhir/Endpoint/84.Endpoint.payloadType_0> .
+<http://hl7.org/fhir/Endpoint/84> <http://hl7.org/fhir/Endpoint.status> <http://hl7.org/fhir/Endpoint/84.Endpoint.status> .
+<http://hl7.org/fhir/Endpoint/84> <http://hl7.org/fhir/Resource.id> <http://hl7.org/fhir/Endpoint/84.Resource.id> .
+<http://hl7.org/fhir/Endpoint/84> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/Endpoint> .----------------------------------------
+
+Subject http://hl7.org/fhir/Endpoint/73 DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/Endpoint/73.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
+<http://hl7.org/fhir/Endpoint/73.DomainResource.text> <http://hl7.org/fhir/Narrative.div> "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n              Referral Requests, ProcedureRequest<br/>\n              Address: https://sqlonfhir-dstu2.azurewebsites.net/fhir</div>" .
+<http://hl7.org/fhir/Endpoint/73.DomainResource.text> <http://hl7.org/fhir/Narrative.status> <http://hl7.org/fhir/Endpoint/73.DomainResource.text.Narrative.status> .
+<http://hl7.org/fhir/Endpoint/73.Endpoint.address> <http://hl7.org/fhir/value> "https://sqlonfhir-dstu2.azurewebsites.net/fhir" .
+<http://hl7.org/fhir/Endpoint/73.Endpoint.connectionType.Coding.code> <http://hl7.org/fhir/value> "hl7-fhir-rest" .
+<http://hl7.org/fhir/Endpoint/73.Endpoint.connectionType.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/endpoint-connection-type" .
+<http://hl7.org/fhir/Endpoint/73.Endpoint.connectionType> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Endpoint/73.Endpoint.connectionType.Coding.code> .
+<http://hl7.org/fhir/Endpoint/73.Endpoint.connectionType> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Endpoint/73.Endpoint.connectionType.Coding.system> .
+<http://hl7.org/fhir/Endpoint/73.Endpoint.managingOrganization.Reference.display> <http://hl7.org/fhir/value> "Telstra Health" .
+<http://hl7.org/fhir/Endpoint/73.Endpoint.managingOrganization> <http://hl7.org/fhir/Reference.display> <http://hl7.org/fhir/Endpoint/73.Endpoint.managingOrganization.Reference.display> .
+<http://hl7.org/fhir/Endpoint/73.Endpoint.name> <http://hl7.org/fhir/value> "Referral Requests" .
+<http://hl7.org/fhir/Endpoint/73.Endpoint.payloadMimeType_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Endpoint/73.Endpoint.payloadMimeType_0> <http://hl7.org/fhir/value> "application/fhir+xml" .
+<http://hl7.org/fhir/Endpoint/73.Endpoint.payloadType_0.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "ProcedureRequest" .
+<http://hl7.org/fhir/Endpoint/73.Endpoint.payloadType_0.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Endpoint/73.Endpoint.payloadType_0.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/Endpoint/73.Endpoint.payloadType_0.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Endpoint/73.Endpoint.payloadType_0> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Endpoint/73.Endpoint.payloadType_0.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/Endpoint/73.Endpoint.payloadType_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Endpoint/73.Endpoint.status> <http://hl7.org/fhir/value> "active" .
+<http://hl7.org/fhir/Endpoint/73.Resource.id> <http://hl7.org/fhir/value> "73" .
+<http://hl7.org/fhir/Endpoint/73> <http://hl7.org/fhir/DomainResource.text> <http://hl7.org/fhir/Endpoint/73.DomainResource.text> .
+<http://hl7.org/fhir/Endpoint/73> <http://hl7.org/fhir/Endpoint.address> <http://hl7.org/fhir/Endpoint/73.Endpoint.address> .
+<http://hl7.org/fhir/Endpoint/73> <http://hl7.org/fhir/Endpoint.connectionType> <http://hl7.org/fhir/Endpoint/73.Endpoint.connectionType> .
+<http://hl7.org/fhir/Endpoint/73> <http://hl7.org/fhir/Endpoint.managingOrganization> <http://hl7.org/fhir/Endpoint/73.Endpoint.managingOrganization> .
+<http://hl7.org/fhir/Endpoint/73> <http://hl7.org/fhir/Endpoint.name> <http://hl7.org/fhir/Endpoint/73.Endpoint.name> .
+<http://hl7.org/fhir/Endpoint/73> <http://hl7.org/fhir/Endpoint.payloadMimeType> <http://hl7.org/fhir/Endpoint/73.Endpoint.payloadMimeType_0> .
+<http://hl7.org/fhir/Endpoint/73> <http://hl7.org/fhir/Endpoint.payloadType> <http://hl7.org/fhir/Endpoint/73.Endpoint.payloadType_0> .
+<http://hl7.org/fhir/Endpoint/73> <http://hl7.org/fhir/Endpoint.status> <http://hl7.org/fhir/Endpoint/73.Endpoint.status> .
+<http://hl7.org/fhir/Endpoint/73> <http://hl7.org/fhir/Resource.id> <http://hl7.org/fhir/Endpoint/73.Resource.id> .
+<http://hl7.org/fhir/Endpoint/73> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/Endpoint> .----------------------------------------
+
+Subject http://hl7.org/fhir/Endpoint/80 DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/Endpoint/80.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
+<http://hl7.org/fhir/Endpoint/80.DomainResource.text> <http://hl7.org/fhir/Narrative.div> "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n              Enterprise Image Archive, varies (application/dicom, application/dicom+xml, image/jpeg, and many more)<br/>\n              Address: https://pacs.hospital.org/dicomweb</div>" .
+<http://hl7.org/fhir/Endpoint/80.DomainResource.text> <http://hl7.org/fhir/Narrative.status> <http://hl7.org/fhir/Endpoint/80.DomainResource.text.Narrative.status> .
+<http://hl7.org/fhir/Endpoint/80.Endpoint.address> <http://hl7.org/fhir/value> "https://pacs.hospital.org/dicomweb" .
+<http://hl7.org/fhir/Endpoint/80.Endpoint.connectionType.Coding.code> <http://hl7.org/fhir/value> "dicom-qido-rs" .
+<http://hl7.org/fhir/Endpoint/80.Endpoint.connectionType.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/endpoint-connection-type" .
+<http://hl7.org/fhir/Endpoint/80.Endpoint.connectionType> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Endpoint/80.Endpoint.connectionType.Coding.code> .
+<http://hl7.org/fhir/Endpoint/80.Endpoint.connectionType> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Endpoint/80.Endpoint.connectionType.Coding.system> .
+<http://hl7.org/fhir/Endpoint/80.Endpoint.managingOrganization.Reference.display> <http://hl7.org/fhir/value> "Multi-site Co." .
+<http://hl7.org/fhir/Endpoint/80.Endpoint.managingOrganization> <http://hl7.org/fhir/Reference.display> <http://hl7.org/fhir/Endpoint/80.Endpoint.managingOrganization.Reference.display> .
+<http://hl7.org/fhir/Endpoint/80.Endpoint.name> <http://hl7.org/fhir/value> "Enterprise Image Archive" .
+<http://hl7.org/fhir/Endpoint/80.Endpoint.payloadMimeType_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Endpoint/80.Endpoint.payloadMimeType_0> <http://hl7.org/fhir/value> "DICOM QIDO-RS" .
+<http://hl7.org/fhir/Endpoint/80.Endpoint.payloadType_0.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "varies (application/dicom, application/dicom+xml, image/jpeg, and many more)" .
+<http://hl7.org/fhir/Endpoint/80.Endpoint.payloadType_0.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Endpoint/80.Endpoint.payloadType_0.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/Endpoint/80.Endpoint.payloadType_0.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Endpoint/80.Endpoint.payloadType_0> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Endpoint/80.Endpoint.payloadType_0.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/Endpoint/80.Endpoint.payloadType_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Endpoint/80.Endpoint.status> <http://hl7.org/fhir/value> "active" .
+<http://hl7.org/fhir/Endpoint/80.Resource.id> <http://hl7.org/fhir/value> "80" .
+<http://hl7.org/fhir/Endpoint/80> <http://hl7.org/fhir/DomainResource.text> <http://hl7.org/fhir/Endpoint/80.DomainResource.text> .
+<http://hl7.org/fhir/Endpoint/80> <http://hl7.org/fhir/Endpoint.address> <http://hl7.org/fhir/Endpoint/80.Endpoint.address> .
+<http://hl7.org/fhir/Endpoint/80> <http://hl7.org/fhir/Endpoint.connectionType> <http://hl7.org/fhir/Endpoint/80.Endpoint.connectionType> .
+<http://hl7.org/fhir/Endpoint/80> <http://hl7.org/fhir/Endpoint.managingOrganization> <http://hl7.org/fhir/Endpoint/80.Endpoint.managingOrganization> .
+<http://hl7.org/fhir/Endpoint/80> <http://hl7.org/fhir/Endpoint.name> <http://hl7.org/fhir/Endpoint/80.Endpoint.name> .
+<http://hl7.org/fhir/Endpoint/80> <http://hl7.org/fhir/Endpoint.payloadMimeType> <http://hl7.org/fhir/Endpoint/80.Endpoint.payloadMimeType_0> .
+<http://hl7.org/fhir/Endpoint/80> <http://hl7.org/fhir/Endpoint.payloadType> <http://hl7.org/fhir/Endpoint/80.Endpoint.payloadType_0> .
+<http://hl7.org/fhir/Endpoint/80> <http://hl7.org/fhir/Endpoint.status> <http://hl7.org/fhir/Endpoint/80.Endpoint.status> .
+<http://hl7.org/fhir/Endpoint/80> <http://hl7.org/fhir/Resource.id> <http://hl7.org/fhir/Endpoint/80.Resource.id> .
+<http://hl7.org/fhir/Endpoint/80> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/Endpoint> .----------------------------------------
+
+Subject http://hl7.org/fhir/Endpoint/76 DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/Endpoint/76.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
+<http://hl7.org/fhir/Endpoint/76.DomainResource.text> <http://hl7.org/fhir/Narrative.div> "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n              valid usecase?, CDA-EventSummary<br/>\n              Address: https://sqlonfhir-dstu2.azurewebsites.net/fhir</div>" .
+<http://hl7.org/fhir/Endpoint/76.DomainResource.text> <http://hl7.org/fhir/Narrative.status> <http://hl7.org/fhir/Endpoint/76.DomainResource.text.Narrative.status> .
+<http://hl7.org/fhir/Endpoint/76.Endpoint.address> <http://hl7.org/fhir/value> "https://sqlonfhir-dstu2.azurewebsites.net/fhir" .
+<http://hl7.org/fhir/Endpoint/76.Endpoint.connectionType.Coding.code> <http://hl7.org/fhir/value> "hl7-fhir-msg" .
+<http://hl7.org/fhir/Endpoint/76.Endpoint.connectionType.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/endpoint-connection-type" .
+<http://hl7.org/fhir/Endpoint/76.Endpoint.connectionType> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Endpoint/76.Endpoint.connectionType.Coding.code> .
+<http://hl7.org/fhir/Endpoint/76.Endpoint.connectionType> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Endpoint/76.Endpoint.connectionType.Coding.system> .
+<http://hl7.org/fhir/Endpoint/76.Endpoint.managingOrganization.Reference.display> <http://hl7.org/fhir/value> "Telstra Health" .
+<http://hl7.org/fhir/Endpoint/76.Endpoint.managingOrganization> <http://hl7.org/fhir/Reference.display> <http://hl7.org/fhir/Endpoint/76.Endpoint.managingOrganization.Reference.display> .
+<http://hl7.org/fhir/Endpoint/76.Endpoint.name> <http://hl7.org/fhir/value> "valid usecase?" .
+<http://hl7.org/fhir/Endpoint/76.Endpoint.payloadMimeType_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Endpoint/76.Endpoint.payloadMimeType_0> <http://hl7.org/fhir/value> "PDF" .
+<http://hl7.org/fhir/Endpoint/76.Endpoint.payloadType_0.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "CDA-EventSummary" .
+<http://hl7.org/fhir/Endpoint/76.Endpoint.payloadType_0.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Endpoint/76.Endpoint.payloadType_0.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/Endpoint/76.Endpoint.payloadType_0.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Endpoint/76.Endpoint.payloadType_0> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Endpoint/76.Endpoint.payloadType_0.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/Endpoint/76.Endpoint.payloadType_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Endpoint/76.Endpoint.status> <http://hl7.org/fhir/value> "active" .
+<http://hl7.org/fhir/Endpoint/76.Resource.id> <http://hl7.org/fhir/value> "76" .
+<http://hl7.org/fhir/Endpoint/76> <http://hl7.org/fhir/DomainResource.text> <http://hl7.org/fhir/Endpoint/76.DomainResource.text> .
+<http://hl7.org/fhir/Endpoint/76> <http://hl7.org/fhir/Endpoint.address> <http://hl7.org/fhir/Endpoint/76.Endpoint.address> .
+<http://hl7.org/fhir/Endpoint/76> <http://hl7.org/fhir/Endpoint.connectionType> <http://hl7.org/fhir/Endpoint/76.Endpoint.connectionType> .
+<http://hl7.org/fhir/Endpoint/76> <http://hl7.org/fhir/Endpoint.managingOrganization> <http://hl7.org/fhir/Endpoint/76.Endpoint.managingOrganization> .
+<http://hl7.org/fhir/Endpoint/76> <http://hl7.org/fhir/Endpoint.name> <http://hl7.org/fhir/Endpoint/76.Endpoint.name> .
+<http://hl7.org/fhir/Endpoint/76> <http://hl7.org/fhir/Endpoint.payloadMimeType> <http://hl7.org/fhir/Endpoint/76.Endpoint.payloadMimeType_0> .
+<http://hl7.org/fhir/Endpoint/76> <http://hl7.org/fhir/Endpoint.payloadType> <http://hl7.org/fhir/Endpoint/76.Endpoint.payloadType_0> .
+<http://hl7.org/fhir/Endpoint/76> <http://hl7.org/fhir/Endpoint.status> <http://hl7.org/fhir/Endpoint/76.Endpoint.status> .
+<http://hl7.org/fhir/Endpoint/76> <http://hl7.org/fhir/Resource.id> <http://hl7.org/fhir/Endpoint/76.Resource.id> .
+<http://hl7.org/fhir/Endpoint/76> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/Endpoint> .----------------------------------------
+
+Subject http://hl7.org/fhir/Endpoint/83 DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/Endpoint/83.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
+<http://hl7.org/fhir/Endpoint/83.DomainResource.text> <http://hl7.org/fhir/Narrative.div> "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n              Enterprise Image Archive, varies (application/dicom, application/dicom+xml, image/jpeg, and many more)<br/>\n              Address: https://pacs.hospital.org/wadoUri</div>" .
+<http://hl7.org/fhir/Endpoint/83.DomainResource.text> <http://hl7.org/fhir/Narrative.status> <http://hl7.org/fhir/Endpoint/83.DomainResource.text.Narrative.status> .
+<http://hl7.org/fhir/Endpoint/83.Endpoint.address> <http://hl7.org/fhir/value> "https://pacs.hospital.org/wadoUri" .
+<http://hl7.org/fhir/Endpoint/83.Endpoint.connectionType.Coding.code> <http://hl7.org/fhir/value> "dicom-wado-uri" .
+<http://hl7.org/fhir/Endpoint/83.Endpoint.connectionType.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/endpoint-connection-type" .
+<http://hl7.org/fhir/Endpoint/83.Endpoint.connectionType> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Endpoint/83.Endpoint.connectionType.Coding.code> .
+<http://hl7.org/fhir/Endpoint/83.Endpoint.connectionType> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Endpoint/83.Endpoint.connectionType.Coding.system> .
+<http://hl7.org/fhir/Endpoint/83.Endpoint.managingOrganization.Reference.display> <http://hl7.org/fhir/value> "Multi-site Co." .
+<http://hl7.org/fhir/Endpoint/83.Endpoint.managingOrganization> <http://hl7.org/fhir/Reference.display> <http://hl7.org/fhir/Endpoint/83.Endpoint.managingOrganization.Reference.display> .
+<http://hl7.org/fhir/Endpoint/83.Endpoint.name> <http://hl7.org/fhir/value> "Enterprise Image Archive" .
+<http://hl7.org/fhir/Endpoint/83.Endpoint.payloadMimeType_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Endpoint/83.Endpoint.payloadMimeType_0> <http://hl7.org/fhir/value> "DICOM WADO-URI" .
+<http://hl7.org/fhir/Endpoint/83.Endpoint.payloadType_0.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "varies (application/dicom, application/dicom+xml, image/jpeg, and many more)" .
+<http://hl7.org/fhir/Endpoint/83.Endpoint.payloadType_0.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Endpoint/83.Endpoint.payloadType_0.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/Endpoint/83.Endpoint.payloadType_0.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Endpoint/83.Endpoint.payloadType_0> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Endpoint/83.Endpoint.payloadType_0.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/Endpoint/83.Endpoint.payloadType_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Endpoint/83.Endpoint.status> <http://hl7.org/fhir/value> "active" .
+<http://hl7.org/fhir/Endpoint/83.Resource.id> <http://hl7.org/fhir/value> "83" .
+<http://hl7.org/fhir/Endpoint/83> <http://hl7.org/fhir/DomainResource.text> <http://hl7.org/fhir/Endpoint/83.DomainResource.text> .
+<http://hl7.org/fhir/Endpoint/83> <http://hl7.org/fhir/Endpoint.address> <http://hl7.org/fhir/Endpoint/83.Endpoint.address> .
+<http://hl7.org/fhir/Endpoint/83> <http://hl7.org/fhir/Endpoint.connectionType> <http://hl7.org/fhir/Endpoint/83.Endpoint.connectionType> .
+<http://hl7.org/fhir/Endpoint/83> <http://hl7.org/fhir/Endpoint.managingOrganization> <http://hl7.org/fhir/Endpoint/83.Endpoint.managingOrganization> .
+<http://hl7.org/fhir/Endpoint/83> <http://hl7.org/fhir/Endpoint.name> <http://hl7.org/fhir/Endpoint/83.Endpoint.name> .
+<http://hl7.org/fhir/Endpoint/83> <http://hl7.org/fhir/Endpoint.payloadMimeType> <http://hl7.org/fhir/Endpoint/83.Endpoint.payloadMimeType_0> .
+<http://hl7.org/fhir/Endpoint/83> <http://hl7.org/fhir/Endpoint.payloadType> <http://hl7.org/fhir/Endpoint/83.Endpoint.payloadType_0> .
+<http://hl7.org/fhir/Endpoint/83> <http://hl7.org/fhir/Endpoint.status> <http://hl7.org/fhir/Endpoint/83.Endpoint.status> .
+<http://hl7.org/fhir/Endpoint/83> <http://hl7.org/fhir/Resource.id> <http://hl7.org/fhir/Endpoint/83.Resource.id> .
+<http://hl7.org/fhir/Endpoint/83> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/Endpoint> .----------------------------------------
+
+Subject http://hl7.org/fhir/Endpoint/71 DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/Endpoint/71.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
+<http://hl7.org/fhir/Endpoint/71.DomainResource.text> <http://hl7.org/fhir/Narrative.div> "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n              CarePlan repository, CarePlan<br/>\n              Address: https://sqlonfhir-dstu2.azurewebsites.net/fhir</div>" .
+<http://hl7.org/fhir/Endpoint/71.DomainResource.text> <http://hl7.org/fhir/Narrative.status> <http://hl7.org/fhir/Endpoint/71.DomainResource.text.Narrative.status> .
+<http://hl7.org/fhir/Endpoint/71.Endpoint.address> <http://hl7.org/fhir/value> "https://sqlonfhir-dstu2.azurewebsites.net/fhir" .
+<http://hl7.org/fhir/Endpoint/71.Endpoint.connectionType.Coding.code> <http://hl7.org/fhir/value> "hl7-fhir-rest" .
+<http://hl7.org/fhir/Endpoint/71.Endpoint.connectionType.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/endpoint-connection-type" .
+<http://hl7.org/fhir/Endpoint/71.Endpoint.connectionType> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Endpoint/71.Endpoint.connectionType.Coding.code> .
+<http://hl7.org/fhir/Endpoint/71.Endpoint.connectionType> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Endpoint/71.Endpoint.connectionType.Coding.system> .
+<http://hl7.org/fhir/Endpoint/71.Endpoint.managingOrganization.Reference.display> <http://hl7.org/fhir/value> "Telstra Health" .
+<http://hl7.org/fhir/Endpoint/71.Endpoint.managingOrganization> <http://hl7.org/fhir/Reference.display> <http://hl7.org/fhir/Endpoint/71.Endpoint.managingOrganization.Reference.display> .
+<http://hl7.org/fhir/Endpoint/71.Endpoint.name> <http://hl7.org/fhir/value> "CarePlan repository" .
+<http://hl7.org/fhir/Endpoint/71.Endpoint.payloadMimeType_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Endpoint/71.Endpoint.payloadMimeType_0> <http://hl7.org/fhir/value> "application/fhir+xml" .
+<http://hl7.org/fhir/Endpoint/71.Endpoint.payloadType_0.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "CarePlan" .
+<http://hl7.org/fhir/Endpoint/71.Endpoint.payloadType_0.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Endpoint/71.Endpoint.payloadType_0.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/Endpoint/71.Endpoint.payloadType_0.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Endpoint/71.Endpoint.payloadType_0> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Endpoint/71.Endpoint.payloadType_0.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/Endpoint/71.Endpoint.payloadType_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Endpoint/71.Endpoint.status> <http://hl7.org/fhir/value> "active" .
+<http://hl7.org/fhir/Endpoint/71.Resource.id> <http://hl7.org/fhir/value> "71" .
+<http://hl7.org/fhir/Endpoint/71> <http://hl7.org/fhir/DomainResource.text> <http://hl7.org/fhir/Endpoint/71.DomainResource.text> .
+<http://hl7.org/fhir/Endpoint/71> <http://hl7.org/fhir/Endpoint.address> <http://hl7.org/fhir/Endpoint/71.Endpoint.address> .
+<http://hl7.org/fhir/Endpoint/71> <http://hl7.org/fhir/Endpoint.connectionType> <http://hl7.org/fhir/Endpoint/71.Endpoint.connectionType> .
+<http://hl7.org/fhir/Endpoint/71> <http://hl7.org/fhir/Endpoint.managingOrganization> <http://hl7.org/fhir/Endpoint/71.Endpoint.managingOrganization> .
+<http://hl7.org/fhir/Endpoint/71> <http://hl7.org/fhir/Endpoint.name> <http://hl7.org/fhir/Endpoint/71.Endpoint.name> .
+<http://hl7.org/fhir/Endpoint/71> <http://hl7.org/fhir/Endpoint.payloadMimeType> <http://hl7.org/fhir/Endpoint/71.Endpoint.payloadMimeType_0> .
+<http://hl7.org/fhir/Endpoint/71> <http://hl7.org/fhir/Endpoint.payloadType> <http://hl7.org/fhir/Endpoint/71.Endpoint.payloadType_0> .
+<http://hl7.org/fhir/Endpoint/71> <http://hl7.org/fhir/Endpoint.status> <http://hl7.org/fhir/Endpoint/71.Endpoint.status> .
+<http://hl7.org/fhir/Endpoint/71> <http://hl7.org/fhir/Resource.id> <http://hl7.org/fhir/Endpoint/71.Resource.id> .
+<http://hl7.org/fhir/Endpoint/71> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/Endpoint> .----------------------------------------
+
+Subject http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_0> <http://hl7.org/fhir/Bundle.entry.resource> <http://hl7.org/fhir/Endpoint/71> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_10> <http://hl7.org/fhir/Bundle.entry.resource> <http://hl7.org/fhir/Endpoint/81> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_11> <http://hl7.org/fhir/Bundle.entry.resource> <http://hl7.org/fhir/Endpoint/82> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_12> <http://hl7.org/fhir/Bundle.entry.resource> <http://hl7.org/fhir/Endpoint/83> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_13> <http://hl7.org/fhir/Bundle.entry.resource> <http://hl7.org/fhir/Endpoint/84> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_1> <http://hl7.org/fhir/Bundle.entry.resource> <http://hl7.org/fhir/Endpoint/72> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_2> <http://hl7.org/fhir/Bundle.entry.resource> <http://hl7.org/fhir/Endpoint/73> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_3> <http://hl7.org/fhir/Bundle.entry.resource> <http://hl7.org/fhir/Endpoint/74> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_4> <http://hl7.org/fhir/Bundle.entry.resource> <http://hl7.org/fhir/Endpoint/75> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_5> <http://hl7.org/fhir/Bundle.entry.resource> <http://hl7.org/fhir/Endpoint/76> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_6> <http://hl7.org/fhir/Bundle.entry.resource> <http://hl7.org/fhir/Endpoint/77> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_7> <http://hl7.org/fhir/Bundle.entry.resource> <http://hl7.org/fhir/Endpoint/78> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_8> <http://hl7.org/fhir/Bundle.entry.resource> <http://hl7.org/fhir/Endpoint/79> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_9> <http://hl7.org/fhir/Bundle.entry.resource> <http://hl7.org/fhir/Endpoint/80> .
+	----> Second: 
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_0.Bundle.entry.resource.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_0.Bundle.entry.resource.DomainResource.text> <http://hl7.org/fhir/Narrative.div> "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n              CarePlan repository, CarePlan<br/>\n              Address: https://sqlonfhir-dstu2.azurewebsites.net/fhir</div>" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_0.Bundle.entry.resource.DomainResource.text> <http://hl7.org/fhir/Narrative.status> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_0.Bundle.entry.resource.DomainResource.text.Narrative.status> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_0.Bundle.entry.resource.Endpoint.address> <http://hl7.org/fhir/value> "https://sqlonfhir-dstu2.azurewebsites.net/fhir" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_0.Bundle.entry.resource.Endpoint.connectionType.Coding.code> <http://hl7.org/fhir/value> "hl7-fhir-rest" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_0.Bundle.entry.resource.Endpoint.connectionType.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/endpoint-connection-type" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_0.Bundle.entry.resource.Endpoint.connectionType> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_0.Bundle.entry.resource.Endpoint.connectionType.Coding.code> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_0.Bundle.entry.resource.Endpoint.connectionType> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_0.Bundle.entry.resource.Endpoint.connectionType.Coding.system> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_0.Bundle.entry.resource.Endpoint.managingOrganization.Reference.display> <http://hl7.org/fhir/value> "Telstra Health" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_0.Bundle.entry.resource.Endpoint.managingOrganization> <http://hl7.org/fhir/Reference.display> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_0.Bundle.entry.resource.Endpoint.managingOrganization.Reference.display> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_0.Bundle.entry.resource.Endpoint.name> <http://hl7.org/fhir/value> "CarePlan repository" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_0.Bundle.entry.resource.Endpoint.payloadMimeType_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_0.Bundle.entry.resource.Endpoint.payloadMimeType_0> <http://hl7.org/fhir/value> "application/fhir+xml" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_0.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "CarePlan" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_0.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_0.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_0.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_0.Bundle.entry.resource.Endpoint.payloadType_0> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_0.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_0.Bundle.entry.resource.Endpoint.payloadType_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_0.Bundle.entry.resource.Endpoint.status> <http://hl7.org/fhir/value> "active" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_0.Bundle.entry.resource.Resource.id> <http://hl7.org/fhir/value> "71" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_0.Bundle.entry.resource> <http://hl7.org/fhir/DomainResource.text> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_0.Bundle.entry.resource.DomainResource.text> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_0.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.address> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_0.Bundle.entry.resource.Endpoint.address> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_0.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.connectionType> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_0.Bundle.entry.resource.Endpoint.connectionType> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_0.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.managingOrganization> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_0.Bundle.entry.resource.Endpoint.managingOrganization> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_0.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.name> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_0.Bundle.entry.resource.Endpoint.name> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_0.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.payloadMimeType> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_0.Bundle.entry.resource.Endpoint.payloadMimeType_0> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_0.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.payloadType> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_0.Bundle.entry.resource.Endpoint.payloadType_0> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_0.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.status> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_0.Bundle.entry.resource.Endpoint.status> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_0.Bundle.entry.resource> <http://hl7.org/fhir/Resource.id> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_0.Bundle.entry.resource.Resource.id> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_0> <http://hl7.org/fhir/Bundle.entry.resource> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_0.Bundle.entry.resource> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_1.Bundle.entry.resource.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_1.Bundle.entry.resource.DomainResource.text> <http://hl7.org/fhir/Narrative.div> "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n              Questionnaire Destination, QuestionnaireResponse<br/>\n              Address: https://sqlonfhir-dstu2.azurewebsites.net/fhir</div>" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_1.Bundle.entry.resource.DomainResource.text> <http://hl7.org/fhir/Narrative.status> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_1.Bundle.entry.resource.DomainResource.text.Narrative.status> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_1.Bundle.entry.resource.Endpoint.address> <http://hl7.org/fhir/value> "https://sqlonfhir-dstu2.azurewebsites.net/fhir" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_1.Bundle.entry.resource.Endpoint.connectionType.Coding.code> <http://hl7.org/fhir/value> "hl7-fhir-rest" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_1.Bundle.entry.resource.Endpoint.connectionType.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/endpoint-connection-type" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_1.Bundle.entry.resource.Endpoint.connectionType> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_1.Bundle.entry.resource.Endpoint.connectionType.Coding.code> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_1.Bundle.entry.resource.Endpoint.connectionType> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_1.Bundle.entry.resource.Endpoint.connectionType.Coding.system> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_1.Bundle.entry.resource.Endpoint.managingOrganization.Reference.display> <http://hl7.org/fhir/value> "Telstra Health" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_1.Bundle.entry.resource.Endpoint.managingOrganization> <http://hl7.org/fhir/Reference.display> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_1.Bundle.entry.resource.Endpoint.managingOrganization.Reference.display> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_1.Bundle.entry.resource.Endpoint.name> <http://hl7.org/fhir/value> "Questionnaire Destination" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_1.Bundle.entry.resource.Endpoint.payloadMimeType_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_1.Bundle.entry.resource.Endpoint.payloadMimeType_0> <http://hl7.org/fhir/value> "application/fhir+xml" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_1.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "QuestionnaireResponse" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_1.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_1.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_1.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_1.Bundle.entry.resource.Endpoint.payloadType_0> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_1.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_1.Bundle.entry.resource.Endpoint.payloadType_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_1.Bundle.entry.resource.Endpoint.status> <http://hl7.org/fhir/value> "active" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_1.Bundle.entry.resource.Resource.id> <http://hl7.org/fhir/value> "72" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_1.Bundle.entry.resource> <http://hl7.org/fhir/DomainResource.text> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_1.Bundle.entry.resource.DomainResource.text> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_1.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.address> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_1.Bundle.entry.resource.Endpoint.address> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_1.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.connectionType> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_1.Bundle.entry.resource.Endpoint.connectionType> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_1.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.managingOrganization> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_1.Bundle.entry.resource.Endpoint.managingOrganization> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_1.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.name> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_1.Bundle.entry.resource.Endpoint.name> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_1.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.payloadMimeType> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_1.Bundle.entry.resource.Endpoint.payloadMimeType_0> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_1.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.payloadType> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_1.Bundle.entry.resource.Endpoint.payloadType_0> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_1.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.status> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_1.Bundle.entry.resource.Endpoint.status> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_1.Bundle.entry.resource> <http://hl7.org/fhir/Resource.id> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_1.Bundle.entry.resource.Resource.id> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_10.Bundle.entry.resource.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_10.Bundle.entry.resource.DomainResource.text> <http://hl7.org/fhir/Narrative.div> "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n              Enterprise Image Archive, varies (application/dicom, application/dicom+xml, image/jpeg, and many more)<br/>\n              Address: https://pacs.hospital.org/dicomweb</div>" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_10.Bundle.entry.resource.DomainResource.text> <http://hl7.org/fhir/Narrative.status> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_10.Bundle.entry.resource.DomainResource.text.Narrative.status> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_10.Bundle.entry.resource.Endpoint.address> <http://hl7.org/fhir/value> "https://pacs.hospital.org/dicomweb" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_10.Bundle.entry.resource.Endpoint.connectionType.Coding.code> <http://hl7.org/fhir/value> "dicom-stow-rs" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_10.Bundle.entry.resource.Endpoint.connectionType.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/endpoint-connection-type" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_10.Bundle.entry.resource.Endpoint.connectionType> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_10.Bundle.entry.resource.Endpoint.connectionType.Coding.code> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_10.Bundle.entry.resource.Endpoint.connectionType> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_10.Bundle.entry.resource.Endpoint.connectionType.Coding.system> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_10.Bundle.entry.resource.Endpoint.managingOrganization.Reference.display> <http://hl7.org/fhir/value> "Multi-site Co." .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_10.Bundle.entry.resource.Endpoint.managingOrganization> <http://hl7.org/fhir/Reference.display> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_10.Bundle.entry.resource.Endpoint.managingOrganization.Reference.display> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_10.Bundle.entry.resource.Endpoint.name> <http://hl7.org/fhir/value> "Enterprise Image Archive" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_10.Bundle.entry.resource.Endpoint.payloadMimeType_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_10.Bundle.entry.resource.Endpoint.payloadMimeType_0> <http://hl7.org/fhir/value> "DICOM STOW-RS" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_10.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "varies (application/dicom, application/dicom+xml, image/jpeg, and many more)" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_10.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_10.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_10.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_10.Bundle.entry.resource.Endpoint.payloadType_0> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_10.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_10.Bundle.entry.resource.Endpoint.payloadType_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_10.Bundle.entry.resource.Endpoint.status> <http://hl7.org/fhir/value> "active" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_10.Bundle.entry.resource.Resource.id> <http://hl7.org/fhir/value> "81" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_10.Bundle.entry.resource> <http://hl7.org/fhir/DomainResource.text> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_10.Bundle.entry.resource.DomainResource.text> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_10.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.address> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_10.Bundle.entry.resource.Endpoint.address> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_10.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.connectionType> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_10.Bundle.entry.resource.Endpoint.connectionType> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_10.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.managingOrganization> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_10.Bundle.entry.resource.Endpoint.managingOrganization> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_10.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.name> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_10.Bundle.entry.resource.Endpoint.name> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_10.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.payloadMimeType> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_10.Bundle.entry.resource.Endpoint.payloadMimeType_0> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_10.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.payloadType> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_10.Bundle.entry.resource.Endpoint.payloadType_0> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_10.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.status> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_10.Bundle.entry.resource.Endpoint.status> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_10.Bundle.entry.resource> <http://hl7.org/fhir/Resource.id> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_10.Bundle.entry.resource.Resource.id> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_10> <http://hl7.org/fhir/Bundle.entry.resource> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_10.Bundle.entry.resource> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_11.Bundle.entry.resource.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_11.Bundle.entry.resource.DomainResource.text> <http://hl7.org/fhir/Narrative.div> "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n              Enterprise Image Archive, varies (application/dicom, application/dicom+xml, image/jpeg, and many more)<br/>\n              Address: https://pacs.hospital.org/dicomweb</div>" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_11.Bundle.entry.resource.DomainResource.text> <http://hl7.org/fhir/Narrative.status> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_11.Bundle.entry.resource.DomainResource.text.Narrative.status> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_11.Bundle.entry.resource.Endpoint.address> <http://hl7.org/fhir/value> "https://pacs.hospital.org/dicomweb" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_11.Bundle.entry.resource.Endpoint.connectionType.Coding.code> <http://hl7.org/fhir/value> "dicom-stow-rs" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_11.Bundle.entry.resource.Endpoint.connectionType.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/endpoint-connection-type" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_11.Bundle.entry.resource.Endpoint.connectionType> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_11.Bundle.entry.resource.Endpoint.connectionType.Coding.code> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_11.Bundle.entry.resource.Endpoint.connectionType> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_11.Bundle.entry.resource.Endpoint.connectionType.Coding.system> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_11.Bundle.entry.resource.Endpoint.managingOrganization.Reference.display> <http://hl7.org/fhir/value> "Multi-site Co." .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_11.Bundle.entry.resource.Endpoint.managingOrganization> <http://hl7.org/fhir/Reference.display> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_11.Bundle.entry.resource.Endpoint.managingOrganization.Reference.display> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_11.Bundle.entry.resource.Endpoint.name> <http://hl7.org/fhir/value> "Enterprise Image Archive" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_11.Bundle.entry.resource.Endpoint.payloadMimeType_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_11.Bundle.entry.resource.Endpoint.payloadMimeType_0> <http://hl7.org/fhir/value> "DICOM STOW-RS" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_11.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "varies (application/dicom, application/dicom+xml, image/jpeg, and many more)" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_11.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_11.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_11.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_11.Bundle.entry.resource.Endpoint.payloadType_0> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_11.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_11.Bundle.entry.resource.Endpoint.payloadType_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_11.Bundle.entry.resource.Endpoint.status> <http://hl7.org/fhir/value> "active" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_11.Bundle.entry.resource.Resource.id> <http://hl7.org/fhir/value> "82" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_11.Bundle.entry.resource> <http://hl7.org/fhir/DomainResource.text> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_11.Bundle.entry.resource.DomainResource.text> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_11.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.address> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_11.Bundle.entry.resource.Endpoint.address> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_11.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.connectionType> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_11.Bundle.entry.resource.Endpoint.connectionType> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_11.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.managingOrganization> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_11.Bundle.entry.resource.Endpoint.managingOrganization> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_11.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.name> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_11.Bundle.entry.resource.Endpoint.name> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_11.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.payloadMimeType> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_11.Bundle.entry.resource.Endpoint.payloadMimeType_0> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_11.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.payloadType> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_11.Bundle.entry.resource.Endpoint.payloadType_0> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_11.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.status> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_11.Bundle.entry.resource.Endpoint.status> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_11.Bundle.entry.resource> <http://hl7.org/fhir/Resource.id> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_11.Bundle.entry.resource.Resource.id> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_11> <http://hl7.org/fhir/Bundle.entry.resource> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_11.Bundle.entry.resource> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_12.Bundle.entry.resource.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_12.Bundle.entry.resource.DomainResource.text> <http://hl7.org/fhir/Narrative.div> "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n              Enterprise Image Archive, varies (application/dicom, application/dicom+xml, image/jpeg, and many more)<br/>\n              Address: https://pacs.hospital.org/wadoUri</div>" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_12.Bundle.entry.resource.DomainResource.text> <http://hl7.org/fhir/Narrative.status> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_12.Bundle.entry.resource.DomainResource.text.Narrative.status> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_12.Bundle.entry.resource.Endpoint.address> <http://hl7.org/fhir/value> "https://pacs.hospital.org/wadoUri" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_12.Bundle.entry.resource.Endpoint.connectionType.Coding.code> <http://hl7.org/fhir/value> "dicom-wado-uri" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_12.Bundle.entry.resource.Endpoint.connectionType.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/endpoint-connection-type" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_12.Bundle.entry.resource.Endpoint.connectionType> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_12.Bundle.entry.resource.Endpoint.connectionType.Coding.code> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_12.Bundle.entry.resource.Endpoint.connectionType> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_12.Bundle.entry.resource.Endpoint.connectionType.Coding.system> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_12.Bundle.entry.resource.Endpoint.managingOrganization.Reference.display> <http://hl7.org/fhir/value> "Multi-site Co." .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_12.Bundle.entry.resource.Endpoint.managingOrganization> <http://hl7.org/fhir/Reference.display> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_12.Bundle.entry.resource.Endpoint.managingOrganization.Reference.display> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_12.Bundle.entry.resource.Endpoint.name> <http://hl7.org/fhir/value> "Enterprise Image Archive" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_12.Bundle.entry.resource.Endpoint.payloadMimeType_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_12.Bundle.entry.resource.Endpoint.payloadMimeType_0> <http://hl7.org/fhir/value> "DICOM WADO-URI" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_12.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "varies (application/dicom, application/dicom+xml, image/jpeg, and many more)" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_12.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_12.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_12.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_12.Bundle.entry.resource.Endpoint.payloadType_0> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_12.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_12.Bundle.entry.resource.Endpoint.payloadType_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_12.Bundle.entry.resource.Endpoint.status> <http://hl7.org/fhir/value> "active" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_12.Bundle.entry.resource.Resource.id> <http://hl7.org/fhir/value> "83" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_12.Bundle.entry.resource> <http://hl7.org/fhir/DomainResource.text> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_12.Bundle.entry.resource.DomainResource.text> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_12.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.address> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_12.Bundle.entry.resource.Endpoint.address> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_12.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.connectionType> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_12.Bundle.entry.resource.Endpoint.connectionType> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_12.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.managingOrganization> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_12.Bundle.entry.resource.Endpoint.managingOrganization> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_12.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.name> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_12.Bundle.entry.resource.Endpoint.name> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_12.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.payloadMimeType> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_12.Bundle.entry.resource.Endpoint.payloadMimeType_0> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_12.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.payloadType> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_12.Bundle.entry.resource.Endpoint.payloadType_0> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_12.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.status> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_12.Bundle.entry.resource.Endpoint.status> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_12.Bundle.entry.resource> <http://hl7.org/fhir/Resource.id> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_12.Bundle.entry.resource.Resource.id> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_12> <http://hl7.org/fhir/Bundle.entry.resource> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_12.Bundle.entry.resource> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_13.Bundle.entry.resource.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_13.Bundle.entry.resource.DomainResource.text> <http://hl7.org/fhir/Narrative.div> "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n              Enterprise Image Archive, varies (application/dicom, application/dicom+xml, image/jpeg, and many more)<br/>\n              Address: https://pacs.hospital.org/IHEInvokeImageDisplay</div>" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_13.Bundle.entry.resource.DomainResource.text> <http://hl7.org/fhir/Narrative.status> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_13.Bundle.entry.resource.DomainResource.text.Narrative.status> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_13.Bundle.entry.resource.Endpoint.address> <http://hl7.org/fhir/value> "https://pacs.hospital.org/IHEInvokeImageDisplay" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_13.Bundle.entry.resource.Endpoint.connectionType.Coding.code> <http://hl7.org/fhir/value> "ihe-iid" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_13.Bundle.entry.resource.Endpoint.connectionType.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/endpoint-connection-type" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_13.Bundle.entry.resource.Endpoint.connectionType> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_13.Bundle.entry.resource.Endpoint.connectionType.Coding.code> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_13.Bundle.entry.resource.Endpoint.connectionType> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_13.Bundle.entry.resource.Endpoint.connectionType.Coding.system> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_13.Bundle.entry.resource.Endpoint.managingOrganization.Reference.display> <http://hl7.org/fhir/value> "Multi-site Co." .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_13.Bundle.entry.resource.Endpoint.managingOrganization> <http://hl7.org/fhir/Reference.display> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_13.Bundle.entry.resource.Endpoint.managingOrganization.Reference.display> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_13.Bundle.entry.resource.Endpoint.name> <http://hl7.org/fhir/value> "Enterprise Image Archive" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_13.Bundle.entry.resource.Endpoint.payloadMimeType_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_13.Bundle.entry.resource.Endpoint.payloadMimeType_0> <http://hl7.org/fhir/value> "IHE IID" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_13.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "varies (application/dicom, application/dicom+xml, image/jpeg, and many more)" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_13.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_13.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_13.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_13.Bundle.entry.resource.Endpoint.payloadType_0> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_13.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_13.Bundle.entry.resource.Endpoint.payloadType_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_13.Bundle.entry.resource.Endpoint.status> <http://hl7.org/fhir/value> "active" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_13.Bundle.entry.resource.Resource.id> <http://hl7.org/fhir/value> "84" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_13.Bundle.entry.resource> <http://hl7.org/fhir/DomainResource.text> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_13.Bundle.entry.resource.DomainResource.text> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_13.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.address> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_13.Bundle.entry.resource.Endpoint.address> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_13.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.connectionType> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_13.Bundle.entry.resource.Endpoint.connectionType> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_13.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.managingOrganization> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_13.Bundle.entry.resource.Endpoint.managingOrganization> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_13.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.name> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_13.Bundle.entry.resource.Endpoint.name> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_13.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.payloadMimeType> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_13.Bundle.entry.resource.Endpoint.payloadMimeType_0> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_13.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.payloadType> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_13.Bundle.entry.resource.Endpoint.payloadType_0> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_13.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.status> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_13.Bundle.entry.resource.Endpoint.status> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_13.Bundle.entry.resource> <http://hl7.org/fhir/Resource.id> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_13.Bundle.entry.resource.Resource.id> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_13> <http://hl7.org/fhir/Bundle.entry.resource> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_13.Bundle.entry.resource> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_1> <http://hl7.org/fhir/Bundle.entry.resource> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_1.Bundle.entry.resource> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_2.Bundle.entry.resource.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_2.Bundle.entry.resource.DomainResource.text> <http://hl7.org/fhir/Narrative.div> "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n              Referral Requests, ProcedureRequest<br/>\n              Address: https://sqlonfhir-dstu2.azurewebsites.net/fhir</div>" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_2.Bundle.entry.resource.DomainResource.text> <http://hl7.org/fhir/Narrative.status> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_2.Bundle.entry.resource.DomainResource.text.Narrative.status> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_2.Bundle.entry.resource.Endpoint.address> <http://hl7.org/fhir/value> "https://sqlonfhir-dstu2.azurewebsites.net/fhir" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_2.Bundle.entry.resource.Endpoint.connectionType.Coding.code> <http://hl7.org/fhir/value> "hl7-fhir-rest" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_2.Bundle.entry.resource.Endpoint.connectionType.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/endpoint-connection-type" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_2.Bundle.entry.resource.Endpoint.connectionType> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_2.Bundle.entry.resource.Endpoint.connectionType.Coding.code> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_2.Bundle.entry.resource.Endpoint.connectionType> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_2.Bundle.entry.resource.Endpoint.connectionType.Coding.system> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_2.Bundle.entry.resource.Endpoint.managingOrganization.Reference.display> <http://hl7.org/fhir/value> "Telstra Health" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_2.Bundle.entry.resource.Endpoint.managingOrganization> <http://hl7.org/fhir/Reference.display> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_2.Bundle.entry.resource.Endpoint.managingOrganization.Reference.display> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_2.Bundle.entry.resource.Endpoint.name> <http://hl7.org/fhir/value> "Referral Requests" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_2.Bundle.entry.resource.Endpoint.payloadMimeType_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_2.Bundle.entry.resource.Endpoint.payloadMimeType_0> <http://hl7.org/fhir/value> "application/fhir+xml" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_2.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "ProcedureRequest" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_2.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_2.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_2.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_2.Bundle.entry.resource.Endpoint.payloadType_0> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_2.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_2.Bundle.entry.resource.Endpoint.payloadType_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_2.Bundle.entry.resource.Endpoint.status> <http://hl7.org/fhir/value> "active" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_2.Bundle.entry.resource.Resource.id> <http://hl7.org/fhir/value> "73" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_2.Bundle.entry.resource> <http://hl7.org/fhir/DomainResource.text> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_2.Bundle.entry.resource.DomainResource.text> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_2.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.address> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_2.Bundle.entry.resource.Endpoint.address> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_2.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.connectionType> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_2.Bundle.entry.resource.Endpoint.connectionType> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_2.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.managingOrganization> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_2.Bundle.entry.resource.Endpoint.managingOrganization> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_2.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.name> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_2.Bundle.entry.resource.Endpoint.name> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_2.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.payloadMimeType> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_2.Bundle.entry.resource.Endpoint.payloadMimeType_0> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_2.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.payloadType> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_2.Bundle.entry.resource.Endpoint.payloadType_0> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_2.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.status> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_2.Bundle.entry.resource.Endpoint.status> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_2.Bundle.entry.resource> <http://hl7.org/fhir/Resource.id> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_2.Bundle.entry.resource.Resource.id> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_2> <http://hl7.org/fhir/Bundle.entry.resource> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_2.Bundle.entry.resource> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_3.Bundle.entry.resource.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_3.Bundle.entry.resource.DomainResource.text> <http://hl7.org/fhir/Narrative.div> "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n              Referral Requests, ProcedureRequest QuestionnaireResponse<br/>\n              Address: https://open.epic.com/Interface/FHIR</div>" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_3.Bundle.entry.resource.DomainResource.text> <http://hl7.org/fhir/Narrative.status> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_3.Bundle.entry.resource.DomainResource.text.Narrative.status> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_3.Bundle.entry.resource.Endpoint.address> <http://hl7.org/fhir/value> "https://open.epic.com/Interface/FHIR" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_3.Bundle.entry.resource.Endpoint.connectionType.Coding.code> <http://hl7.org/fhir/value> "hl7-fhir-rest" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_3.Bundle.entry.resource.Endpoint.connectionType.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/endpoint-connection-type" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_3.Bundle.entry.resource.Endpoint.connectionType> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_3.Bundle.entry.resource.Endpoint.connectionType.Coding.code> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_3.Bundle.entry.resource.Endpoint.connectionType> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_3.Bundle.entry.resource.Endpoint.connectionType.Coding.system> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_3.Bundle.entry.resource.Endpoint.managingOrganization.Reference.display> <http://hl7.org/fhir/value> "Epic demo organization" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_3.Bundle.entry.resource.Endpoint.managingOrganization> <http://hl7.org/fhir/Reference.display> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_3.Bundle.entry.resource.Endpoint.managingOrganization.Reference.display> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_3.Bundle.entry.resource.Endpoint.name> <http://hl7.org/fhir/value> "Referral Requests" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_3.Bundle.entry.resource.Endpoint.payloadMimeType_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_3.Bundle.entry.resource.Endpoint.payloadMimeType_0> <http://hl7.org/fhir/value> "application/fhir+json" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_3.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "ProcedureRequest QuestionnaireResponse" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_3.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_3.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_3.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_3.Bundle.entry.resource.Endpoint.payloadType_0> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_3.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_3.Bundle.entry.resource.Endpoint.payloadType_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_3.Bundle.entry.resource.Endpoint.status> <http://hl7.org/fhir/value> "active" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_3.Bundle.entry.resource.Resource.id> <http://hl7.org/fhir/value> "74" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_3.Bundle.entry.resource> <http://hl7.org/fhir/DomainResource.text> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_3.Bundle.entry.resource.DomainResource.text> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_3.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.address> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_3.Bundle.entry.resource.Endpoint.address> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_3.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.connectionType> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_3.Bundle.entry.resource.Endpoint.connectionType> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_3.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.managingOrganization> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_3.Bundle.entry.resource.Endpoint.managingOrganization> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_3.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.name> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_3.Bundle.entry.resource.Endpoint.name> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_3.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.payloadMimeType> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_3.Bundle.entry.resource.Endpoint.payloadMimeType_0> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_3.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.payloadType> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_3.Bundle.entry.resource.Endpoint.payloadType_0> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_3.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.status> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_3.Bundle.entry.resource.Endpoint.status> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_3.Bundle.entry.resource> <http://hl7.org/fhir/Resource.id> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_3.Bundle.entry.resource.Resource.id> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_3> <http://hl7.org/fhir/Bundle.entry.resource> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_3.Bundle.entry.resource> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_4.Bundle.entry.resource.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_4.Bundle.entry.resource.DomainResource.text> <http://hl7.org/fhir/Narrative.div> "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n              Subscription receiver, ProcedureRequest<br/>\n              Address: mailto:subscriptions@example.org</div>" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_4.Bundle.entry.resource.DomainResource.text> <http://hl7.org/fhir/Narrative.status> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_4.Bundle.entry.resource.DomainResource.text.Narrative.status> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_4.Bundle.entry.resource.Endpoint.address> <http://hl7.org/fhir/value> "mailto:subscriptions@example.org" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_4.Bundle.entry.resource.Endpoint.connectionType.Coding.code> <http://hl7.org/fhir/value> "secure-email" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_4.Bundle.entry.resource.Endpoint.connectionType.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/endpoint-connection-type" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_4.Bundle.entry.resource.Endpoint.connectionType> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_4.Bundle.entry.resource.Endpoint.connectionType.Coding.code> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_4.Bundle.entry.resource.Endpoint.connectionType> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_4.Bundle.entry.resource.Endpoint.connectionType.Coding.system> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_4.Bundle.entry.resource.Endpoint.managingOrganization.Reference.display> <http://hl7.org/fhir/value> "Telstra Health" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_4.Bundle.entry.resource.Endpoint.managingOrganization> <http://hl7.org/fhir/Reference.display> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_4.Bundle.entry.resource.Endpoint.managingOrganization.Reference.display> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_4.Bundle.entry.resource.Endpoint.name> <http://hl7.org/fhir/value> "Subscription receiver" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_4.Bundle.entry.resource.Endpoint.payloadMimeType_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_4.Bundle.entry.resource.Endpoint.payloadMimeType_0> <http://hl7.org/fhir/value> "application/fhir+xml" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_4.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "ProcedureRequest" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_4.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_4.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_4.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_4.Bundle.entry.resource.Endpoint.payloadType_0> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_4.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_4.Bundle.entry.resource.Endpoint.payloadType_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_4.Bundle.entry.resource.Endpoint.status> <http://hl7.org/fhir/value> "active" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_4.Bundle.entry.resource.Resource.id> <http://hl7.org/fhir/value> "75" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_4.Bundle.entry.resource> <http://hl7.org/fhir/DomainResource.text> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_4.Bundle.entry.resource.DomainResource.text> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_4.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.address> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_4.Bundle.entry.resource.Endpoint.address> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_4.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.connectionType> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_4.Bundle.entry.resource.Endpoint.connectionType> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_4.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.managingOrganization> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_4.Bundle.entry.resource.Endpoint.managingOrganization> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_4.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.name> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_4.Bundle.entry.resource.Endpoint.name> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_4.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.payloadMimeType> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_4.Bundle.entry.resource.Endpoint.payloadMimeType_0> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_4.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.payloadType> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_4.Bundle.entry.resource.Endpoint.payloadType_0> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_4.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.status> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_4.Bundle.entry.resource.Endpoint.status> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_4.Bundle.entry.resource> <http://hl7.org/fhir/Resource.id> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_4.Bundle.entry.resource.Resource.id> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_4> <http://hl7.org/fhir/Bundle.entry.resource> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_4.Bundle.entry.resource> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_5.Bundle.entry.resource.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_5.Bundle.entry.resource.DomainResource.text> <http://hl7.org/fhir/Narrative.div> "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n              valid usecase?, CDA-EventSummary<br/>\n              Address: https://sqlonfhir-dstu2.azurewebsites.net/fhir</div>" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_5.Bundle.entry.resource.DomainResource.text> <http://hl7.org/fhir/Narrative.status> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_5.Bundle.entry.resource.DomainResource.text.Narrative.status> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_5.Bundle.entry.resource.Endpoint.address> <http://hl7.org/fhir/value> "https://sqlonfhir-dstu2.azurewebsites.net/fhir" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_5.Bundle.entry.resource.Endpoint.connectionType.Coding.code> <http://hl7.org/fhir/value> "hl7-fhir-msg" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_5.Bundle.entry.resource.Endpoint.connectionType.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/endpoint-connection-type" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_5.Bundle.entry.resource.Endpoint.connectionType> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_5.Bundle.entry.resource.Endpoint.connectionType.Coding.code> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_5.Bundle.entry.resource.Endpoint.connectionType> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_5.Bundle.entry.resource.Endpoint.connectionType.Coding.system> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_5.Bundle.entry.resource.Endpoint.managingOrganization.Reference.display> <http://hl7.org/fhir/value> "Telstra Health" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_5.Bundle.entry.resource.Endpoint.managingOrganization> <http://hl7.org/fhir/Reference.display> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_5.Bundle.entry.resource.Endpoint.managingOrganization.Reference.display> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_5.Bundle.entry.resource.Endpoint.name> <http://hl7.org/fhir/value> "valid usecase?" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_5.Bundle.entry.resource.Endpoint.payloadMimeType_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_5.Bundle.entry.resource.Endpoint.payloadMimeType_0> <http://hl7.org/fhir/value> "PDF" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_5.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "CDA-EventSummary" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_5.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_5.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_5.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_5.Bundle.entry.resource.Endpoint.payloadType_0> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_5.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_5.Bundle.entry.resource.Endpoint.payloadType_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_5.Bundle.entry.resource.Endpoint.status> <http://hl7.org/fhir/value> "active" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_5.Bundle.entry.resource.Resource.id> <http://hl7.org/fhir/value> "76" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_5.Bundle.entry.resource> <http://hl7.org/fhir/DomainResource.text> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_5.Bundle.entry.resource.DomainResource.text> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_5.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.address> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_5.Bundle.entry.resource.Endpoint.address> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_5.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.connectionType> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_5.Bundle.entry.resource.Endpoint.connectionType> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_5.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.managingOrganization> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_5.Bundle.entry.resource.Endpoint.managingOrganization> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_5.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.name> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_5.Bundle.entry.resource.Endpoint.name> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_5.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.payloadMimeType> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_5.Bundle.entry.resource.Endpoint.payloadMimeType_0> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_5.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.payloadType> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_5.Bundle.entry.resource.Endpoint.payloadType_0> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_5.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.status> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_5.Bundle.entry.resource.Endpoint.status> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_5.Bundle.entry.resource> <http://hl7.org/fhir/Resource.id> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_5.Bundle.entry.resource.Resource.id> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_5> <http://hl7.org/fhir/Bundle.entry.resource> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_5.Bundle.entry.resource> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_6.Bundle.entry.resource.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_6.Bundle.entry.resource.DomainResource.text> <http://hl7.org/fhir/Narrative.div> "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n              v2 referral Requests, REF-I12<br/>\n              Address: 127.0.0.1</div>" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_6.Bundle.entry.resource.DomainResource.text> <http://hl7.org/fhir/Narrative.status> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_6.Bundle.entry.resource.DomainResource.text.Narrative.status> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_6.Bundle.entry.resource.Endpoint.address> <http://hl7.org/fhir/value> "127.0.0.1" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_6.Bundle.entry.resource.Endpoint.connectionType.Coding.code> <http://hl7.org/fhir/value> "hl7v2-mllp" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_6.Bundle.entry.resource.Endpoint.connectionType.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/endpoint-connection-type" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_6.Bundle.entry.resource.Endpoint.connectionType> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_6.Bundle.entry.resource.Endpoint.connectionType.Coding.code> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_6.Bundle.entry.resource.Endpoint.connectionType> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_6.Bundle.entry.resource.Endpoint.connectionType.Coding.system> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_6.Bundle.entry.resource.Endpoint.managingOrganization.Reference.display> <http://hl7.org/fhir/value> "Epic demo organization" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_6.Bundle.entry.resource.Endpoint.managingOrganization> <http://hl7.org/fhir/Reference.display> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_6.Bundle.entry.resource.Endpoint.managingOrganization.Reference.display> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_6.Bundle.entry.resource.Endpoint.name> <http://hl7.org/fhir/value> "v2 referral Requests" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_6.Bundle.entry.resource.Endpoint.payloadMimeType_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_6.Bundle.entry.resource.Endpoint.payloadMimeType_0> <http://hl7.org/fhir/value> "HL7v2" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_6.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "REF-I12" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_6.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_6.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_6.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_6.Bundle.entry.resource.Endpoint.payloadType_0> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_6.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_6.Bundle.entry.resource.Endpoint.payloadType_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_6.Bundle.entry.resource.Endpoint.status> <http://hl7.org/fhir/value> "active" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_6.Bundle.entry.resource.Resource.id> <http://hl7.org/fhir/value> "77" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_6.Bundle.entry.resource> <http://hl7.org/fhir/DomainResource.text> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_6.Bundle.entry.resource.DomainResource.text> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_6.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.address> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_6.Bundle.entry.resource.Endpoint.address> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_6.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.connectionType> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_6.Bundle.entry.resource.Endpoint.connectionType> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_6.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.managingOrganization> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_6.Bundle.entry.resource.Endpoint.managingOrganization> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_6.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.name> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_6.Bundle.entry.resource.Endpoint.name> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_6.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.payloadMimeType> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_6.Bundle.entry.resource.Endpoint.payloadMimeType_0> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_6.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.payloadType> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_6.Bundle.entry.resource.Endpoint.payloadType_0> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_6.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.status> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_6.Bundle.entry.resource.Endpoint.status> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_6.Bundle.entry.resource> <http://hl7.org/fhir/Resource.id> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_6.Bundle.entry.resource.Resource.id> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_6> <http://hl7.org/fhir/Bundle.entry.resource> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_6.Bundle.entry.resource> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_7.Bundle.entry.resource.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_7.Bundle.entry.resource.DomainResource.text> <http://hl7.org/fhir/Narrative.div> "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n              xds event summaries, CDA-EventSummary<br/>\n              Address: https://open.epic.com/Interface/XDS.b</div>" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_7.Bundle.entry.resource.DomainResource.text> <http://hl7.org/fhir/Narrative.status> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_7.Bundle.entry.resource.DomainResource.text.Narrative.status> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_7.Bundle.entry.resource.Endpoint.address> <http://hl7.org/fhir/value> "https://open.epic.com/Interface/XDS.b" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_7.Bundle.entry.resource.Endpoint.connectionType.Coding.code> <http://hl7.org/fhir/value> "ihe-xds" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_7.Bundle.entry.resource.Endpoint.connectionType.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/endpoint-connection-type" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_7.Bundle.entry.resource.Endpoint.connectionType> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_7.Bundle.entry.resource.Endpoint.connectionType.Coding.code> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_7.Bundle.entry.resource.Endpoint.connectionType> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_7.Bundle.entry.resource.Endpoint.connectionType.Coding.system> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_7.Bundle.entry.resource.Endpoint.managingOrganization.Reference.display> <http://hl7.org/fhir/value> "Epic demo organization" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_7.Bundle.entry.resource.Endpoint.managingOrganization> <http://hl7.org/fhir/Reference.display> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_7.Bundle.entry.resource.Endpoint.managingOrganization.Reference.display> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_7.Bundle.entry.resource.Endpoint.name> <http://hl7.org/fhir/value> "xds event summaries" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_7.Bundle.entry.resource.Endpoint.payloadMimeType_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_7.Bundle.entry.resource.Endpoint.payloadMimeType_0> <http://hl7.org/fhir/value> "XDA/XDS" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_7.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "CDA-EventSummary" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_7.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_7.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_7.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_7.Bundle.entry.resource.Endpoint.payloadType_0> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_7.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_7.Bundle.entry.resource.Endpoint.payloadType_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_7.Bundle.entry.resource.Endpoint.status> <http://hl7.org/fhir/value> "active" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_7.Bundle.entry.resource.Resource.id> <http://hl7.org/fhir/value> "78" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_7.Bundle.entry.resource> <http://hl7.org/fhir/DomainResource.text> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_7.Bundle.entry.resource.DomainResource.text> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_7.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.address> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_7.Bundle.entry.resource.Endpoint.address> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_7.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.connectionType> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_7.Bundle.entry.resource.Endpoint.connectionType> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_7.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.managingOrganization> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_7.Bundle.entry.resource.Endpoint.managingOrganization> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_7.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.name> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_7.Bundle.entry.resource.Endpoint.name> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_7.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.payloadMimeType> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_7.Bundle.entry.resource.Endpoint.payloadMimeType_0> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_7.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.payloadType> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_7.Bundle.entry.resource.Endpoint.payloadType_0> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_7.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.status> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_7.Bundle.entry.resource.Endpoint.status> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_7.Bundle.entry.resource> <http://hl7.org/fhir/Resource.id> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_7.Bundle.entry.resource.Resource.id> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_7> <http://hl7.org/fhir/Bundle.entry.resource> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_7.Bundle.entry.resource> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_8.Bundle.entry.resource.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_8.Bundle.entry.resource.DomainResource.text> <http://hl7.org/fhir/Narrative.div> "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n              Enterprise Image Archive, varies (application/dicom, application/dicom+xml, image/jpeg, and many more)<br/>\n              Address: https://pacs.hospital.org/dicomweb</div>" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_8.Bundle.entry.resource.DomainResource.text> <http://hl7.org/fhir/Narrative.status> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_8.Bundle.entry.resource.DomainResource.text.Narrative.status> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_8.Bundle.entry.resource.Endpoint.address> <http://hl7.org/fhir/value> "https://pacs.hospital.org/dicomweb" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_8.Bundle.entry.resource.Endpoint.connectionType.Coding.code> <http://hl7.org/fhir/value> "dicom-wado-rs" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_8.Bundle.entry.resource.Endpoint.connectionType.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/endpoint-connection-type" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_8.Bundle.entry.resource.Endpoint.connectionType> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_8.Bundle.entry.resource.Endpoint.connectionType.Coding.code> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_8.Bundle.entry.resource.Endpoint.connectionType> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_8.Bundle.entry.resource.Endpoint.connectionType.Coding.system> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_8.Bundle.entry.resource.Endpoint.managingOrganization.Reference.display> <http://hl7.org/fhir/value> "Multi-site Co." .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_8.Bundle.entry.resource.Endpoint.managingOrganization> <http://hl7.org/fhir/Reference.display> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_8.Bundle.entry.resource.Endpoint.managingOrganization.Reference.display> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_8.Bundle.entry.resource.Endpoint.name> <http://hl7.org/fhir/value> "Enterprise Image Archive" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_8.Bundle.entry.resource.Endpoint.payloadMimeType_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_8.Bundle.entry.resource.Endpoint.payloadMimeType_0> <http://hl7.org/fhir/value> "DICOM WADO-RS" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_8.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "varies (application/dicom, application/dicom+xml, image/jpeg, and many more)" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_8.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_8.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_8.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_8.Bundle.entry.resource.Endpoint.payloadType_0> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_8.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_8.Bundle.entry.resource.Endpoint.payloadType_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_8.Bundle.entry.resource.Endpoint.status> <http://hl7.org/fhir/value> "active" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_8.Bundle.entry.resource.Resource.id> <http://hl7.org/fhir/value> "79" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_8.Bundle.entry.resource> <http://hl7.org/fhir/DomainResource.text> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_8.Bundle.entry.resource.DomainResource.text> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_8.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.address> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_8.Bundle.entry.resource.Endpoint.address> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_8.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.connectionType> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_8.Bundle.entry.resource.Endpoint.connectionType> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_8.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.managingOrganization> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_8.Bundle.entry.resource.Endpoint.managingOrganization> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_8.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.name> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_8.Bundle.entry.resource.Endpoint.name> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_8.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.payloadMimeType> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_8.Bundle.entry.resource.Endpoint.payloadMimeType_0> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_8.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.payloadType> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_8.Bundle.entry.resource.Endpoint.payloadType_0> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_8.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.status> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_8.Bundle.entry.resource.Endpoint.status> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_8.Bundle.entry.resource> <http://hl7.org/fhir/Resource.id> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_8.Bundle.entry.resource.Resource.id> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_8> <http://hl7.org/fhir/Bundle.entry.resource> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_8.Bundle.entry.resource> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_9.Bundle.entry.resource.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_9.Bundle.entry.resource.DomainResource.text> <http://hl7.org/fhir/Narrative.div> "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n              Enterprise Image Archive, varies (application/dicom, application/dicom+xml, image/jpeg, and many more)<br/>\n              Address: https://pacs.hospital.org/dicomweb</div>" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_9.Bundle.entry.resource.DomainResource.text> <http://hl7.org/fhir/Narrative.status> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_9.Bundle.entry.resource.DomainResource.text.Narrative.status> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_9.Bundle.entry.resource.Endpoint.address> <http://hl7.org/fhir/value> "https://pacs.hospital.org/dicomweb" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_9.Bundle.entry.resource.Endpoint.connectionType.Coding.code> <http://hl7.org/fhir/value> "dicom-qido-rs" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_9.Bundle.entry.resource.Endpoint.connectionType.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/endpoint-connection-type" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_9.Bundle.entry.resource.Endpoint.connectionType> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_9.Bundle.entry.resource.Endpoint.connectionType.Coding.code> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_9.Bundle.entry.resource.Endpoint.connectionType> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_9.Bundle.entry.resource.Endpoint.connectionType.Coding.system> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_9.Bundle.entry.resource.Endpoint.managingOrganization.Reference.display> <http://hl7.org/fhir/value> "Multi-site Co." .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_9.Bundle.entry.resource.Endpoint.managingOrganization> <http://hl7.org/fhir/Reference.display> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_9.Bundle.entry.resource.Endpoint.managingOrganization.Reference.display> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_9.Bundle.entry.resource.Endpoint.name> <http://hl7.org/fhir/value> "Enterprise Image Archive" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_9.Bundle.entry.resource.Endpoint.payloadMimeType_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_9.Bundle.entry.resource.Endpoint.payloadMimeType_0> <http://hl7.org/fhir/value> "DICOM QIDO-RS" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_9.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "varies (application/dicom, application/dicom+xml, image/jpeg, and many more)" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_9.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_9.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_9.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_9.Bundle.entry.resource.Endpoint.payloadType_0> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_9.Bundle.entry.resource.Endpoint.payloadType_0.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_9.Bundle.entry.resource.Endpoint.payloadType_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_9.Bundle.entry.resource.Endpoint.status> <http://hl7.org/fhir/value> "active" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_9.Bundle.entry.resource.Resource.id> <http://hl7.org/fhir/value> "80" .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_9.Bundle.entry.resource> <http://hl7.org/fhir/DomainResource.text> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_9.Bundle.entry.resource.DomainResource.text> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_9.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.address> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_9.Bundle.entry.resource.Endpoint.address> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_9.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.connectionType> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_9.Bundle.entry.resource.Endpoint.connectionType> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_9.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.managingOrganization> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_9.Bundle.entry.resource.Endpoint.managingOrganization> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_9.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.name> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_9.Bundle.entry.resource.Endpoint.name> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_9.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.payloadMimeType> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_9.Bundle.entry.resource.Endpoint.payloadMimeType_0> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_9.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.payloadType> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_9.Bundle.entry.resource.Endpoint.payloadType_0> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_9.Bundle.entry.resource> <http://hl7.org/fhir/Endpoint.status> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_9.Bundle.entry.resource.Endpoint.status> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_9.Bundle.entry.resource> <http://hl7.org/fhir/Resource.id> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_9.Bundle.entry.resource.Resource.id> .
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_9> <http://hl7.org/fhir/Bundle.entry.resource> <http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.Bundle.entry_9.Bundle.entry.resource> .----------------------------------------
+
+Subject http://hl7.org/fhir/Endpoint/79 DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/Endpoint/79.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
+<http://hl7.org/fhir/Endpoint/79.DomainResource.text> <http://hl7.org/fhir/Narrative.div> "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n              Enterprise Image Archive, varies (application/dicom, application/dicom+xml, image/jpeg, and many more)<br/>\n              Address: https://pacs.hospital.org/dicomweb</div>" .
+<http://hl7.org/fhir/Endpoint/79.DomainResource.text> <http://hl7.org/fhir/Narrative.status> <http://hl7.org/fhir/Endpoint/79.DomainResource.text.Narrative.status> .
+<http://hl7.org/fhir/Endpoint/79.Endpoint.address> <http://hl7.org/fhir/value> "https://pacs.hospital.org/dicomweb" .
+<http://hl7.org/fhir/Endpoint/79.Endpoint.connectionType.Coding.code> <http://hl7.org/fhir/value> "dicom-wado-rs" .
+<http://hl7.org/fhir/Endpoint/79.Endpoint.connectionType.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/endpoint-connection-type" .
+<http://hl7.org/fhir/Endpoint/79.Endpoint.connectionType> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Endpoint/79.Endpoint.connectionType.Coding.code> .
+<http://hl7.org/fhir/Endpoint/79.Endpoint.connectionType> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Endpoint/79.Endpoint.connectionType.Coding.system> .
+<http://hl7.org/fhir/Endpoint/79.Endpoint.managingOrganization.Reference.display> <http://hl7.org/fhir/value> "Multi-site Co." .
+<http://hl7.org/fhir/Endpoint/79.Endpoint.managingOrganization> <http://hl7.org/fhir/Reference.display> <http://hl7.org/fhir/Endpoint/79.Endpoint.managingOrganization.Reference.display> .
+<http://hl7.org/fhir/Endpoint/79.Endpoint.name> <http://hl7.org/fhir/value> "Enterprise Image Archive" .
+<http://hl7.org/fhir/Endpoint/79.Endpoint.payloadMimeType_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Endpoint/79.Endpoint.payloadMimeType_0> <http://hl7.org/fhir/value> "DICOM WADO-RS" .
+<http://hl7.org/fhir/Endpoint/79.Endpoint.payloadType_0.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "varies (application/dicom, application/dicom+xml, image/jpeg, and many more)" .
+<http://hl7.org/fhir/Endpoint/79.Endpoint.payloadType_0.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Endpoint/79.Endpoint.payloadType_0.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/Endpoint/79.Endpoint.payloadType_0.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Endpoint/79.Endpoint.payloadType_0> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Endpoint/79.Endpoint.payloadType_0.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/Endpoint/79.Endpoint.payloadType_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Endpoint/79.Endpoint.status> <http://hl7.org/fhir/value> "active" .
+<http://hl7.org/fhir/Endpoint/79.Resource.id> <http://hl7.org/fhir/value> "79" .
+<http://hl7.org/fhir/Endpoint/79> <http://hl7.org/fhir/DomainResource.text> <http://hl7.org/fhir/Endpoint/79.DomainResource.text> .
+<http://hl7.org/fhir/Endpoint/79> <http://hl7.org/fhir/Endpoint.address> <http://hl7.org/fhir/Endpoint/79.Endpoint.address> .
+<http://hl7.org/fhir/Endpoint/79> <http://hl7.org/fhir/Endpoint.connectionType> <http://hl7.org/fhir/Endpoint/79.Endpoint.connectionType> .
+<http://hl7.org/fhir/Endpoint/79> <http://hl7.org/fhir/Endpoint.managingOrganization> <http://hl7.org/fhir/Endpoint/79.Endpoint.managingOrganization> .
+<http://hl7.org/fhir/Endpoint/79> <http://hl7.org/fhir/Endpoint.name> <http://hl7.org/fhir/Endpoint/79.Endpoint.name> .
+<http://hl7.org/fhir/Endpoint/79> <http://hl7.org/fhir/Endpoint.payloadMimeType> <http://hl7.org/fhir/Endpoint/79.Endpoint.payloadMimeType_0> .
+<http://hl7.org/fhir/Endpoint/79> <http://hl7.org/fhir/Endpoint.payloadType> <http://hl7.org/fhir/Endpoint/79.Endpoint.payloadType_0> .
+<http://hl7.org/fhir/Endpoint/79> <http://hl7.org/fhir/Endpoint.status> <http://hl7.org/fhir/Endpoint/79.Endpoint.status> .
+<http://hl7.org/fhir/Endpoint/79> <http://hl7.org/fhir/Resource.id> <http://hl7.org/fhir/Endpoint/79.Resource.id> .
+<http://hl7.org/fhir/Endpoint/79> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/Endpoint> .----------------------------------------
+
+Subject http://hl7.org/fhir/Endpoint/82 DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/Endpoint/82.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
+<http://hl7.org/fhir/Endpoint/82.DomainResource.text> <http://hl7.org/fhir/Narrative.div> "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n              Enterprise Image Archive, varies (application/dicom, application/dicom+xml, image/jpeg, and many more)<br/>\n              Address: https://pacs.hospital.org/dicomweb</div>" .
+<http://hl7.org/fhir/Endpoint/82.DomainResource.text> <http://hl7.org/fhir/Narrative.status> <http://hl7.org/fhir/Endpoint/82.DomainResource.text.Narrative.status> .
+<http://hl7.org/fhir/Endpoint/82.Endpoint.address> <http://hl7.org/fhir/value> "https://pacs.hospital.org/dicomweb" .
+<http://hl7.org/fhir/Endpoint/82.Endpoint.connectionType.Coding.code> <http://hl7.org/fhir/value> "dicom-stow-rs" .
+<http://hl7.org/fhir/Endpoint/82.Endpoint.connectionType.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/endpoint-connection-type" .
+<http://hl7.org/fhir/Endpoint/82.Endpoint.connectionType> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Endpoint/82.Endpoint.connectionType.Coding.code> .
+<http://hl7.org/fhir/Endpoint/82.Endpoint.connectionType> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Endpoint/82.Endpoint.connectionType.Coding.system> .
+<http://hl7.org/fhir/Endpoint/82.Endpoint.managingOrganization.Reference.display> <http://hl7.org/fhir/value> "Multi-site Co." .
+<http://hl7.org/fhir/Endpoint/82.Endpoint.managingOrganization> <http://hl7.org/fhir/Reference.display> <http://hl7.org/fhir/Endpoint/82.Endpoint.managingOrganization.Reference.display> .
+<http://hl7.org/fhir/Endpoint/82.Endpoint.name> <http://hl7.org/fhir/value> "Enterprise Image Archive" .
+<http://hl7.org/fhir/Endpoint/82.Endpoint.payloadMimeType_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Endpoint/82.Endpoint.payloadMimeType_0> <http://hl7.org/fhir/value> "DICOM STOW-RS" .
+<http://hl7.org/fhir/Endpoint/82.Endpoint.payloadType_0.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "varies (application/dicom, application/dicom+xml, image/jpeg, and many more)" .
+<http://hl7.org/fhir/Endpoint/82.Endpoint.payloadType_0.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Endpoint/82.Endpoint.payloadType_0.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/Endpoint/82.Endpoint.payloadType_0.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Endpoint/82.Endpoint.payloadType_0> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Endpoint/82.Endpoint.payloadType_0.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/Endpoint/82.Endpoint.payloadType_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Endpoint/82.Endpoint.status> <http://hl7.org/fhir/value> "active" .
+<http://hl7.org/fhir/Endpoint/82.Resource.id> <http://hl7.org/fhir/value> "82" .
+<http://hl7.org/fhir/Endpoint/82> <http://hl7.org/fhir/DomainResource.text> <http://hl7.org/fhir/Endpoint/82.DomainResource.text> .
+<http://hl7.org/fhir/Endpoint/82> <http://hl7.org/fhir/Endpoint.address> <http://hl7.org/fhir/Endpoint/82.Endpoint.address> .
+<http://hl7.org/fhir/Endpoint/82> <http://hl7.org/fhir/Endpoint.connectionType> <http://hl7.org/fhir/Endpoint/82.Endpoint.connectionType> .
+<http://hl7.org/fhir/Endpoint/82> <http://hl7.org/fhir/Endpoint.managingOrganization> <http://hl7.org/fhir/Endpoint/82.Endpoint.managingOrganization> .
+<http://hl7.org/fhir/Endpoint/82> <http://hl7.org/fhir/Endpoint.name> <http://hl7.org/fhir/Endpoint/82.Endpoint.name> .
+<http://hl7.org/fhir/Endpoint/82> <http://hl7.org/fhir/Endpoint.payloadMimeType> <http://hl7.org/fhir/Endpoint/82.Endpoint.payloadMimeType_0> .
+<http://hl7.org/fhir/Endpoint/82> <http://hl7.org/fhir/Endpoint.payloadType> <http://hl7.org/fhir/Endpoint/82.Endpoint.payloadType_0> .
+<http://hl7.org/fhir/Endpoint/82> <http://hl7.org/fhir/Endpoint.status> <http://hl7.org/fhir/Endpoint/82.Endpoint.status> .
+<http://hl7.org/fhir/Endpoint/82> <http://hl7.org/fhir/Resource.id> <http://hl7.org/fhir/Endpoint/82.Resource.id> .
+<http://hl7.org/fhir/Endpoint/82> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/Endpoint> .----------------------------------------
+
+Subject http://hl7.org/fhir/Endpoint/74 DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/Endpoint/74.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
+<http://hl7.org/fhir/Endpoint/74.DomainResource.text> <http://hl7.org/fhir/Narrative.div> "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n              Referral Requests, ProcedureRequest QuestionnaireResponse<br/>\n              Address: https://open.epic.com/Interface/FHIR</div>" .
+<http://hl7.org/fhir/Endpoint/74.DomainResource.text> <http://hl7.org/fhir/Narrative.status> <http://hl7.org/fhir/Endpoint/74.DomainResource.text.Narrative.status> .
+<http://hl7.org/fhir/Endpoint/74.Endpoint.address> <http://hl7.org/fhir/value> "https://open.epic.com/Interface/FHIR" .
+<http://hl7.org/fhir/Endpoint/74.Endpoint.connectionType.Coding.code> <http://hl7.org/fhir/value> "hl7-fhir-rest" .
+<http://hl7.org/fhir/Endpoint/74.Endpoint.connectionType.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/endpoint-connection-type" .
+<http://hl7.org/fhir/Endpoint/74.Endpoint.connectionType> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Endpoint/74.Endpoint.connectionType.Coding.code> .
+<http://hl7.org/fhir/Endpoint/74.Endpoint.connectionType> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Endpoint/74.Endpoint.connectionType.Coding.system> .
+<http://hl7.org/fhir/Endpoint/74.Endpoint.managingOrganization.Reference.display> <http://hl7.org/fhir/value> "Epic demo organization" .
+<http://hl7.org/fhir/Endpoint/74.Endpoint.managingOrganization> <http://hl7.org/fhir/Reference.display> <http://hl7.org/fhir/Endpoint/74.Endpoint.managingOrganization.Reference.display> .
+<http://hl7.org/fhir/Endpoint/74.Endpoint.name> <http://hl7.org/fhir/value> "Referral Requests" .
+<http://hl7.org/fhir/Endpoint/74.Endpoint.payloadMimeType_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Endpoint/74.Endpoint.payloadMimeType_0> <http://hl7.org/fhir/value> "application/fhir+json" .
+<http://hl7.org/fhir/Endpoint/74.Endpoint.payloadType_0.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "ProcedureRequest QuestionnaireResponse" .
+<http://hl7.org/fhir/Endpoint/74.Endpoint.payloadType_0.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Endpoint/74.Endpoint.payloadType_0.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/Endpoint/74.Endpoint.payloadType_0.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Endpoint/74.Endpoint.payloadType_0> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Endpoint/74.Endpoint.payloadType_0.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/Endpoint/74.Endpoint.payloadType_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Endpoint/74.Endpoint.status> <http://hl7.org/fhir/value> "active" .
+<http://hl7.org/fhir/Endpoint/74.Resource.id> <http://hl7.org/fhir/value> "74" .
+<http://hl7.org/fhir/Endpoint/74> <http://hl7.org/fhir/DomainResource.text> <http://hl7.org/fhir/Endpoint/74.DomainResource.text> .
+<http://hl7.org/fhir/Endpoint/74> <http://hl7.org/fhir/Endpoint.address> <http://hl7.org/fhir/Endpoint/74.Endpoint.address> .
+<http://hl7.org/fhir/Endpoint/74> <http://hl7.org/fhir/Endpoint.connectionType> <http://hl7.org/fhir/Endpoint/74.Endpoint.connectionType> .
+<http://hl7.org/fhir/Endpoint/74> <http://hl7.org/fhir/Endpoint.managingOrganization> <http://hl7.org/fhir/Endpoint/74.Endpoint.managingOrganization> .
+<http://hl7.org/fhir/Endpoint/74> <http://hl7.org/fhir/Endpoint.name> <http://hl7.org/fhir/Endpoint/74.Endpoint.name> .
+<http://hl7.org/fhir/Endpoint/74> <http://hl7.org/fhir/Endpoint.payloadMimeType> <http://hl7.org/fhir/Endpoint/74.Endpoint.payloadMimeType_0> .
+<http://hl7.org/fhir/Endpoint/74> <http://hl7.org/fhir/Endpoint.payloadType> <http://hl7.org/fhir/Endpoint/74.Endpoint.payloadType_0> .
+<http://hl7.org/fhir/Endpoint/74> <http://hl7.org/fhir/Endpoint.status> <http://hl7.org/fhir/Endpoint/74.Endpoint.status> .
+<http://hl7.org/fhir/Endpoint/74> <http://hl7.org/fhir/Resource.id> <http://hl7.org/fhir/Endpoint/74.Resource.id> .
+<http://hl7.org/fhir/Endpoint/74> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/Endpoint> .----------------------------------------
+
+Subject http://hl7.org/fhir/Endpoint/72 DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/Endpoint/72.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
+<http://hl7.org/fhir/Endpoint/72.DomainResource.text> <http://hl7.org/fhir/Narrative.div> "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n              Questionnaire Destination, QuestionnaireResponse<br/>\n              Address: https://sqlonfhir-dstu2.azurewebsites.net/fhir</div>" .
+<http://hl7.org/fhir/Endpoint/72.DomainResource.text> <http://hl7.org/fhir/Narrative.status> <http://hl7.org/fhir/Endpoint/72.DomainResource.text.Narrative.status> .
+<http://hl7.org/fhir/Endpoint/72.Endpoint.address> <http://hl7.org/fhir/value> "https://sqlonfhir-dstu2.azurewebsites.net/fhir" .
+<http://hl7.org/fhir/Endpoint/72.Endpoint.connectionType.Coding.code> <http://hl7.org/fhir/value> "hl7-fhir-rest" .
+<http://hl7.org/fhir/Endpoint/72.Endpoint.connectionType.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/endpoint-connection-type" .
+<http://hl7.org/fhir/Endpoint/72.Endpoint.connectionType> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Endpoint/72.Endpoint.connectionType.Coding.code> .
+<http://hl7.org/fhir/Endpoint/72.Endpoint.connectionType> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Endpoint/72.Endpoint.connectionType.Coding.system> .
+<http://hl7.org/fhir/Endpoint/72.Endpoint.managingOrganization.Reference.display> <http://hl7.org/fhir/value> "Telstra Health" .
+<http://hl7.org/fhir/Endpoint/72.Endpoint.managingOrganization> <http://hl7.org/fhir/Reference.display> <http://hl7.org/fhir/Endpoint/72.Endpoint.managingOrganization.Reference.display> .
+<http://hl7.org/fhir/Endpoint/72.Endpoint.name> <http://hl7.org/fhir/value> "Questionnaire Destination" .
+<http://hl7.org/fhir/Endpoint/72.Endpoint.payloadMimeType_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Endpoint/72.Endpoint.payloadMimeType_0> <http://hl7.org/fhir/value> "application/fhir+xml" .
+<http://hl7.org/fhir/Endpoint/72.Endpoint.payloadType_0.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "QuestionnaireResponse" .
+<http://hl7.org/fhir/Endpoint/72.Endpoint.payloadType_0.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Endpoint/72.Endpoint.payloadType_0.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/Endpoint/72.Endpoint.payloadType_0.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Endpoint/72.Endpoint.payloadType_0> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Endpoint/72.Endpoint.payloadType_0.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/Endpoint/72.Endpoint.payloadType_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Endpoint/72.Endpoint.status> <http://hl7.org/fhir/value> "active" .
+<http://hl7.org/fhir/Endpoint/72.Resource.id> <http://hl7.org/fhir/value> "72" .
+<http://hl7.org/fhir/Endpoint/72> <http://hl7.org/fhir/DomainResource.text> <http://hl7.org/fhir/Endpoint/72.DomainResource.text> .
+<http://hl7.org/fhir/Endpoint/72> <http://hl7.org/fhir/Endpoint.address> <http://hl7.org/fhir/Endpoint/72.Endpoint.address> .
+<http://hl7.org/fhir/Endpoint/72> <http://hl7.org/fhir/Endpoint.connectionType> <http://hl7.org/fhir/Endpoint/72.Endpoint.connectionType> .
+<http://hl7.org/fhir/Endpoint/72> <http://hl7.org/fhir/Endpoint.managingOrganization> <http://hl7.org/fhir/Endpoint/72.Endpoint.managingOrganization> .
+<http://hl7.org/fhir/Endpoint/72> <http://hl7.org/fhir/Endpoint.name> <http://hl7.org/fhir/Endpoint/72.Endpoint.name> .
+<http://hl7.org/fhir/Endpoint/72> <http://hl7.org/fhir/Endpoint.payloadMimeType> <http://hl7.org/fhir/Endpoint/72.Endpoint.payloadMimeType_0> .
+<http://hl7.org/fhir/Endpoint/72> <http://hl7.org/fhir/Endpoint.payloadType> <http://hl7.org/fhir/Endpoint/72.Endpoint.payloadType_0> .
+<http://hl7.org/fhir/Endpoint/72> <http://hl7.org/fhir/Endpoint.status> <http://hl7.org/fhir/Endpoint/72.Endpoint.status> .
+<http://hl7.org/fhir/Endpoint/72> <http://hl7.org/fhir/Resource.id> <http://hl7.org/fhir/Endpoint/72.Resource.id> .
+<http://hl7.org/fhir/Endpoint/72> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/Endpoint> .----------------------------------------
+
+Subject http://hl7.org/fhir/Endpoint/81 DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/Endpoint/81.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
+<http://hl7.org/fhir/Endpoint/81.DomainResource.text> <http://hl7.org/fhir/Narrative.div> "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n              Enterprise Image Archive, varies (application/dicom, application/dicom+xml, image/jpeg, and many more)<br/>\n              Address: https://pacs.hospital.org/dicomweb</div>" .
+<http://hl7.org/fhir/Endpoint/81.DomainResource.text> <http://hl7.org/fhir/Narrative.status> <http://hl7.org/fhir/Endpoint/81.DomainResource.text.Narrative.status> .
+<http://hl7.org/fhir/Endpoint/81.Endpoint.address> <http://hl7.org/fhir/value> "https://pacs.hospital.org/dicomweb" .
+<http://hl7.org/fhir/Endpoint/81.Endpoint.connectionType.Coding.code> <http://hl7.org/fhir/value> "dicom-stow-rs" .
+<http://hl7.org/fhir/Endpoint/81.Endpoint.connectionType.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/endpoint-connection-type" .
+<http://hl7.org/fhir/Endpoint/81.Endpoint.connectionType> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Endpoint/81.Endpoint.connectionType.Coding.code> .
+<http://hl7.org/fhir/Endpoint/81.Endpoint.connectionType> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Endpoint/81.Endpoint.connectionType.Coding.system> .
+<http://hl7.org/fhir/Endpoint/81.Endpoint.managingOrganization.Reference.display> <http://hl7.org/fhir/value> "Multi-site Co." .
+<http://hl7.org/fhir/Endpoint/81.Endpoint.managingOrganization> <http://hl7.org/fhir/Reference.display> <http://hl7.org/fhir/Endpoint/81.Endpoint.managingOrganization.Reference.display> .
+<http://hl7.org/fhir/Endpoint/81.Endpoint.name> <http://hl7.org/fhir/value> "Enterprise Image Archive" .
+<http://hl7.org/fhir/Endpoint/81.Endpoint.payloadMimeType_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Endpoint/81.Endpoint.payloadMimeType_0> <http://hl7.org/fhir/value> "DICOM STOW-RS" .
+<http://hl7.org/fhir/Endpoint/81.Endpoint.payloadType_0.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "varies (application/dicom, application/dicom+xml, image/jpeg, and many more)" .
+<http://hl7.org/fhir/Endpoint/81.Endpoint.payloadType_0.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Endpoint/81.Endpoint.payloadType_0.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/Endpoint/81.Endpoint.payloadType_0.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Endpoint/81.Endpoint.payloadType_0> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Endpoint/81.Endpoint.payloadType_0.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/Endpoint/81.Endpoint.payloadType_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Endpoint/81.Endpoint.status> <http://hl7.org/fhir/value> "active" .
+<http://hl7.org/fhir/Endpoint/81.Resource.id> <http://hl7.org/fhir/value> "81" .
+<http://hl7.org/fhir/Endpoint/81> <http://hl7.org/fhir/DomainResource.text> <http://hl7.org/fhir/Endpoint/81.DomainResource.text> .
+<http://hl7.org/fhir/Endpoint/81> <http://hl7.org/fhir/Endpoint.address> <http://hl7.org/fhir/Endpoint/81.Endpoint.address> .
+<http://hl7.org/fhir/Endpoint/81> <http://hl7.org/fhir/Endpoint.connectionType> <http://hl7.org/fhir/Endpoint/81.Endpoint.connectionType> .
+<http://hl7.org/fhir/Endpoint/81> <http://hl7.org/fhir/Endpoint.managingOrganization> <http://hl7.org/fhir/Endpoint/81.Endpoint.managingOrganization> .
+<http://hl7.org/fhir/Endpoint/81> <http://hl7.org/fhir/Endpoint.name> <http://hl7.org/fhir/Endpoint/81.Endpoint.name> .
+<http://hl7.org/fhir/Endpoint/81> <http://hl7.org/fhir/Endpoint.payloadMimeType> <http://hl7.org/fhir/Endpoint/81.Endpoint.payloadMimeType_0> .
+<http://hl7.org/fhir/Endpoint/81> <http://hl7.org/fhir/Endpoint.payloadType> <http://hl7.org/fhir/Endpoint/81.Endpoint.payloadType_0> .
+<http://hl7.org/fhir/Endpoint/81> <http://hl7.org/fhir/Endpoint.status> <http://hl7.org/fhir/Endpoint/81.Endpoint.status> .
+<http://hl7.org/fhir/Endpoint/81> <http://hl7.org/fhir/Resource.id> <http://hl7.org/fhir/Endpoint/81.Resource.id> .
+<http://hl7.org/fhir/Endpoint/81> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/Endpoint> .----------------------------------------
+
+Subject http://hl7.org/fhir/Endpoint/78 DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/Endpoint/78.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
+<http://hl7.org/fhir/Endpoint/78.DomainResource.text> <http://hl7.org/fhir/Narrative.div> "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n              xds event summaries, CDA-EventSummary<br/>\n              Address: https://open.epic.com/Interface/XDS.b</div>" .
+<http://hl7.org/fhir/Endpoint/78.DomainResource.text> <http://hl7.org/fhir/Narrative.status> <http://hl7.org/fhir/Endpoint/78.DomainResource.text.Narrative.status> .
+<http://hl7.org/fhir/Endpoint/78.Endpoint.address> <http://hl7.org/fhir/value> "https://open.epic.com/Interface/XDS.b" .
+<http://hl7.org/fhir/Endpoint/78.Endpoint.connectionType.Coding.code> <http://hl7.org/fhir/value> "ihe-xds" .
+<http://hl7.org/fhir/Endpoint/78.Endpoint.connectionType.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/endpoint-connection-type" .
+<http://hl7.org/fhir/Endpoint/78.Endpoint.connectionType> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Endpoint/78.Endpoint.connectionType.Coding.code> .
+<http://hl7.org/fhir/Endpoint/78.Endpoint.connectionType> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Endpoint/78.Endpoint.connectionType.Coding.system> .
+<http://hl7.org/fhir/Endpoint/78.Endpoint.managingOrganization.Reference.display> <http://hl7.org/fhir/value> "Epic demo organization" .
+<http://hl7.org/fhir/Endpoint/78.Endpoint.managingOrganization> <http://hl7.org/fhir/Reference.display> <http://hl7.org/fhir/Endpoint/78.Endpoint.managingOrganization.Reference.display> .
+<http://hl7.org/fhir/Endpoint/78.Endpoint.name> <http://hl7.org/fhir/value> "xds event summaries" .
+<http://hl7.org/fhir/Endpoint/78.Endpoint.payloadMimeType_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Endpoint/78.Endpoint.payloadMimeType_0> <http://hl7.org/fhir/value> "XDA/XDS" .
+<http://hl7.org/fhir/Endpoint/78.Endpoint.payloadType_0.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "CDA-EventSummary" .
+<http://hl7.org/fhir/Endpoint/78.Endpoint.payloadType_0.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Endpoint/78.Endpoint.payloadType_0.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/Endpoint/78.Endpoint.payloadType_0.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Endpoint/78.Endpoint.payloadType_0> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Endpoint/78.Endpoint.payloadType_0.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/Endpoint/78.Endpoint.payloadType_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Endpoint/78.Endpoint.status> <http://hl7.org/fhir/value> "active" .
+<http://hl7.org/fhir/Endpoint/78.Resource.id> <http://hl7.org/fhir/value> "78" .
+<http://hl7.org/fhir/Endpoint/78> <http://hl7.org/fhir/DomainResource.text> <http://hl7.org/fhir/Endpoint/78.DomainResource.text> .
+<http://hl7.org/fhir/Endpoint/78> <http://hl7.org/fhir/Endpoint.address> <http://hl7.org/fhir/Endpoint/78.Endpoint.address> .
+<http://hl7.org/fhir/Endpoint/78> <http://hl7.org/fhir/Endpoint.connectionType> <http://hl7.org/fhir/Endpoint/78.Endpoint.connectionType> .
+<http://hl7.org/fhir/Endpoint/78> <http://hl7.org/fhir/Endpoint.managingOrganization> <http://hl7.org/fhir/Endpoint/78.Endpoint.managingOrganization> .
+<http://hl7.org/fhir/Endpoint/78> <http://hl7.org/fhir/Endpoint.name> <http://hl7.org/fhir/Endpoint/78.Endpoint.name> .
+<http://hl7.org/fhir/Endpoint/78> <http://hl7.org/fhir/Endpoint.payloadMimeType> <http://hl7.org/fhir/Endpoint/78.Endpoint.payloadMimeType_0> .
+<http://hl7.org/fhir/Endpoint/78> <http://hl7.org/fhir/Endpoint.payloadType> <http://hl7.org/fhir/Endpoint/78.Endpoint.payloadType_0> .
+<http://hl7.org/fhir/Endpoint/78> <http://hl7.org/fhir/Endpoint.status> <http://hl7.org/fhir/Endpoint/78.Endpoint.status> .
+<http://hl7.org/fhir/Endpoint/78> <http://hl7.org/fhir/Resource.id> <http://hl7.org/fhir/Endpoint/78.Resource.id> .
+<http://hl7.org/fhir/Endpoint/78> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/Endpoint> .----------------------------------------
+
+Subject http://hl7.org/fhir/Endpoint/75 DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/Endpoint/75.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
+<http://hl7.org/fhir/Endpoint/75.DomainResource.text> <http://hl7.org/fhir/Narrative.div> "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n              Subscription receiver, ProcedureRequest<br/>\n              Address: mailto:subscriptions@example.org</div>" .
+<http://hl7.org/fhir/Endpoint/75.DomainResource.text> <http://hl7.org/fhir/Narrative.status> <http://hl7.org/fhir/Endpoint/75.DomainResource.text.Narrative.status> .
+<http://hl7.org/fhir/Endpoint/75.Endpoint.address> <http://hl7.org/fhir/value> "mailto:subscriptions@example.org" .
+<http://hl7.org/fhir/Endpoint/75.Endpoint.connectionType.Coding.code> <http://hl7.org/fhir/value> "secure-email" .
+<http://hl7.org/fhir/Endpoint/75.Endpoint.connectionType.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/endpoint-connection-type" .
+<http://hl7.org/fhir/Endpoint/75.Endpoint.connectionType> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Endpoint/75.Endpoint.connectionType.Coding.code> .
+<http://hl7.org/fhir/Endpoint/75.Endpoint.connectionType> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Endpoint/75.Endpoint.connectionType.Coding.system> .
+<http://hl7.org/fhir/Endpoint/75.Endpoint.managingOrganization.Reference.display> <http://hl7.org/fhir/value> "Telstra Health" .
+<http://hl7.org/fhir/Endpoint/75.Endpoint.managingOrganization> <http://hl7.org/fhir/Reference.display> <http://hl7.org/fhir/Endpoint/75.Endpoint.managingOrganization.Reference.display> .
+<http://hl7.org/fhir/Endpoint/75.Endpoint.name> <http://hl7.org/fhir/value> "Subscription receiver" .
+<http://hl7.org/fhir/Endpoint/75.Endpoint.payloadMimeType_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Endpoint/75.Endpoint.payloadMimeType_0> <http://hl7.org/fhir/value> "application/fhir+xml" .
+<http://hl7.org/fhir/Endpoint/75.Endpoint.payloadType_0.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "ProcedureRequest" .
+<http://hl7.org/fhir/Endpoint/75.Endpoint.payloadType_0.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Endpoint/75.Endpoint.payloadType_0.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/Endpoint/75.Endpoint.payloadType_0.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Endpoint/75.Endpoint.payloadType_0> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Endpoint/75.Endpoint.payloadType_0.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/Endpoint/75.Endpoint.payloadType_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Endpoint/75.Endpoint.status> <http://hl7.org/fhir/value> "active" .
+<http://hl7.org/fhir/Endpoint/75.Resource.id> <http://hl7.org/fhir/value> "75" .
+<http://hl7.org/fhir/Endpoint/75> <http://hl7.org/fhir/DomainResource.text> <http://hl7.org/fhir/Endpoint/75.DomainResource.text> .
+<http://hl7.org/fhir/Endpoint/75> <http://hl7.org/fhir/Endpoint.address> <http://hl7.org/fhir/Endpoint/75.Endpoint.address> .
+<http://hl7.org/fhir/Endpoint/75> <http://hl7.org/fhir/Endpoint.connectionType> <http://hl7.org/fhir/Endpoint/75.Endpoint.connectionType> .
+<http://hl7.org/fhir/Endpoint/75> <http://hl7.org/fhir/Endpoint.managingOrganization> <http://hl7.org/fhir/Endpoint/75.Endpoint.managingOrganization> .
+<http://hl7.org/fhir/Endpoint/75> <http://hl7.org/fhir/Endpoint.name> <http://hl7.org/fhir/Endpoint/75.Endpoint.name> .
+<http://hl7.org/fhir/Endpoint/75> <http://hl7.org/fhir/Endpoint.payloadMimeType> <http://hl7.org/fhir/Endpoint/75.Endpoint.payloadMimeType_0> .
+<http://hl7.org/fhir/Endpoint/75> <http://hl7.org/fhir/Endpoint.payloadType> <http://hl7.org/fhir/Endpoint/75.Endpoint.payloadType_0> .
+<http://hl7.org/fhir/Endpoint/75> <http://hl7.org/fhir/Endpoint.status> <http://hl7.org/fhir/Endpoint/75.Endpoint.status> .
+<http://hl7.org/fhir/Endpoint/75> <http://hl7.org/fhir/Resource.id> <http://hl7.org/fhir/Endpoint/75.Resource.id> .
+<http://hl7.org/fhir/Endpoint/75> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/Endpoint> .----------------------------------------
+
+========================================
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix w5: <http://hl7.org/fhir/w5#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f> a fhir:Bundle ;
+    fhir:nodeRole fhir:treeRoot ;
+    fhir:Bundle.entry [
+        fhir:index "6"^^xsd:integer ;
+        fhir:Bundle.entry.fullUrl [
+            fhir:value "http://hl7.org/fhir/Endpoint/77"
+        ] ;
+        fhir:Bundle.entry.resource [
+            fhir:DomainResource.text [
+                fhir:Narrative.div """<div xmlns="http://www.w3.org/1999/xhtml">
+              v2 referral Requests, REF-I12<br/>
+              Address: 127.0.0.1</div>""" ;
+                fhir:Narrative.status [
+                    fhir:value "generated"
+                ]
+            ] ;
+            fhir:Endpoint.address [
+                fhir:value "127.0.0.1"
+            ] ;
+            fhir:Endpoint.connectionType [
+                fhir:Coding.code [
+                    fhir:value "hl7v2-mllp"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://hl7.org/fhir/endpoint-connection-type"
+                ]
+            ] ;
+            fhir:Endpoint.managingOrganization [
+                fhir:Reference.display [
+                    fhir:value "Epic demo organization"
+                ]
+            ] ;
+            fhir:Endpoint.name [
+                fhir:value "v2 referral Requests"
+            ] ;
+            fhir:Endpoint.payloadMimeType [
+                fhir:index "0"^^xsd:integer ;
+                fhir:value "HL7v2"
+            ] ;
+            fhir:Endpoint.payloadType [
+                fhir:index "0"^^xsd:integer ;
+                fhir:CodeableConcept.coding [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "REF-I12"
+                    ]
+                ]
+            ] ;
+            fhir:Endpoint.status [
+                fhir:value "active"
+            ] ;
+            fhir:Resource.id [
+                fhir:value "77"
+            ]
+        ]
+    ],
+        [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Bundle.entry.fullUrl [
+            fhir:value "http://hl7.org/fhir/Endpoint/71"
+        ] ;
+        fhir:Bundle.entry.resource [
+            fhir:DomainResource.text [
+                fhir:Narrative.div """<div xmlns="http://www.w3.org/1999/xhtml">
+              CarePlan repository, CarePlan<br/>
+              Address: https://sqlonfhir-dstu2.azurewebsites.net/fhir</div>""" ;
+                fhir:Narrative.status [
+                    fhir:value "generated"
+                ]
+            ] ;
+            fhir:Endpoint.address [
+                fhir:value "https://sqlonfhir-dstu2.azurewebsites.net/fhir"
+            ] ;
+            fhir:Endpoint.connectionType [
+                fhir:Coding.code [
+                    fhir:value "hl7-fhir-rest"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://hl7.org/fhir/endpoint-connection-type"
+                ]
+            ] ;
+            fhir:Endpoint.managingOrganization [
+                fhir:Reference.display [
+                    fhir:value "Telstra Health"
+                ]
+            ] ;
+            fhir:Endpoint.name [
+                fhir:value "CarePlan repository"
+            ] ;
+            fhir:Endpoint.payloadMimeType [
+                fhir:index "0"^^xsd:integer ;
+                fhir:value "application/fhir+xml"
+            ] ;
+            fhir:Endpoint.payloadType [
+                fhir:index "0"^^xsd:integer ;
+                fhir:CodeableConcept.coding [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "CarePlan"
+                    ]
+                ]
+            ] ;
+            fhir:Endpoint.status [
+                fhir:value "active"
+            ] ;
+            fhir:Resource.id [
+                fhir:value "71"
+            ]
+        ]
+    ],
+        [
+        fhir:index "9"^^xsd:integer ;
+        fhir:Bundle.entry.fullUrl [
+            fhir:value "http://hl7.org/fhir/Endpoint/80"
+        ] ;
+        fhir:Bundle.entry.resource [
+            fhir:DomainResource.text [
+                fhir:Narrative.div """<div xmlns="http://www.w3.org/1999/xhtml">
+              Enterprise Image Archive, varies (application/dicom, application/dicom+xml, image/jpeg, and many more)<br/>
+              Address: https://pacs.hospital.org/dicomweb</div>""" ;
+                fhir:Narrative.status [
+                    fhir:value "generated"
+                ]
+            ] ;
+            fhir:Endpoint.address [
+                fhir:value "https://pacs.hospital.org/dicomweb"
+            ] ;
+            fhir:Endpoint.connectionType [
+                fhir:Coding.code [
+                    fhir:value "dicom-qido-rs"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://hl7.org/fhir/endpoint-connection-type"
+                ]
+            ] ;
+            fhir:Endpoint.managingOrganization [
+                fhir:Reference.display [
+                    fhir:value "Multi-site Co."
+                ]
+            ] ;
+            fhir:Endpoint.name [
+                fhir:value "Enterprise Image Archive"
+            ] ;
+            fhir:Endpoint.payloadMimeType [
+                fhir:index "0"^^xsd:integer ;
+                fhir:value "DICOM QIDO-RS"
+            ] ;
+            fhir:Endpoint.payloadType [
+                fhir:index "0"^^xsd:integer ;
+                fhir:CodeableConcept.coding [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "varies (application/dicom, application/dicom+xml, image/jpeg, and many more)"
+                    ]
+                ]
+            ] ;
+            fhir:Endpoint.status [
+                fhir:value "active"
+            ] ;
+            fhir:Resource.id [
+                fhir:value "80"
+            ]
+        ]
+    ],
+        [
+        fhir:index "4"^^xsd:integer ;
+        fhir:Bundle.entry.fullUrl [
+            fhir:value "http://hl7.org/fhir/Endpoint/75"
+        ] ;
+        fhir:Bundle.entry.resource [
+            fhir:DomainResource.text [
+                fhir:Narrative.div """<div xmlns="http://www.w3.org/1999/xhtml">
+              Subscription receiver, ProcedureRequest<br/>
+              Address: mailto:subscriptions@example.org</div>""" ;
+                fhir:Narrative.status [
+                    fhir:value "generated"
+                ]
+            ] ;
+            fhir:Endpoint.address [
+                fhir:value "mailto:subscriptions@example.org"
+            ] ;
+            fhir:Endpoint.connectionType [
+                fhir:Coding.code [
+                    fhir:value "secure-email"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://hl7.org/fhir/endpoint-connection-type"
+                ]
+            ] ;
+            fhir:Endpoint.managingOrganization [
+                fhir:Reference.display [
+                    fhir:value "Telstra Health"
+                ]
+            ] ;
+            fhir:Endpoint.name [
+                fhir:value "Subscription receiver"
+            ] ;
+            fhir:Endpoint.payloadMimeType [
+                fhir:index "0"^^xsd:integer ;
+                fhir:value "application/fhir+xml"
+            ] ;
+            fhir:Endpoint.payloadType [
+                fhir:index "0"^^xsd:integer ;
+                fhir:CodeableConcept.coding [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "ProcedureRequest"
+                    ]
+                ]
+            ] ;
+            fhir:Endpoint.status [
+                fhir:value "active"
+            ] ;
+            fhir:Resource.id [
+                fhir:value "75"
+            ]
+        ]
+    ],
+        [
+        fhir:index "1"^^xsd:integer ;
+        fhir:Bundle.entry.fullUrl [
+            fhir:value "http://hl7.org/fhir/Endpoint/72"
+        ] ;
+        fhir:Bundle.entry.resource [
+            fhir:DomainResource.text [
+                fhir:Narrative.div """<div xmlns="http://www.w3.org/1999/xhtml">
+              Questionnaire Destination, QuestionnaireResponse<br/>
+              Address: https://sqlonfhir-dstu2.azurewebsites.net/fhir</div>""" ;
+                fhir:Narrative.status [
+                    fhir:value "generated"
+                ]
+            ] ;
+            fhir:Endpoint.address [
+                fhir:value "https://sqlonfhir-dstu2.azurewebsites.net/fhir"
+            ] ;
+            fhir:Endpoint.connectionType [
+                fhir:Coding.code [
+                    fhir:value "hl7-fhir-rest"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://hl7.org/fhir/endpoint-connection-type"
+                ]
+            ] ;
+            fhir:Endpoint.managingOrganization [
+                fhir:Reference.display [
+                    fhir:value "Telstra Health"
+                ]
+            ] ;
+            fhir:Endpoint.name [
+                fhir:value "Questionnaire Destination"
+            ] ;
+            fhir:Endpoint.payloadMimeType [
+                fhir:index "0"^^xsd:integer ;
+                fhir:value "application/fhir+xml"
+            ] ;
+            fhir:Endpoint.payloadType [
+                fhir:index "0"^^xsd:integer ;
+                fhir:CodeableConcept.coding [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "QuestionnaireResponse"
+                    ]
+                ]
+            ] ;
+            fhir:Endpoint.status [
+                fhir:value "active"
+            ] ;
+            fhir:Resource.id [
+                fhir:value "72"
+            ]
+        ]
+    ],
+        [
+        fhir:index "3"^^xsd:integer ;
+        fhir:Bundle.entry.fullUrl [
+            fhir:value "http://hl7.org/fhir/Endpoint/74"
+        ] ;
+        fhir:Bundle.entry.resource [
+            fhir:DomainResource.text [
+                fhir:Narrative.div """<div xmlns="http://www.w3.org/1999/xhtml">
+              Referral Requests, ProcedureRequest QuestionnaireResponse<br/>
+              Address: https://open.epic.com/Interface/FHIR</div>""" ;
+                fhir:Narrative.status [
+                    fhir:value "generated"
+                ]
+            ] ;
+            fhir:Endpoint.address [
+                fhir:value "https://open.epic.com/Interface/FHIR"
+            ] ;
+            fhir:Endpoint.connectionType [
+                fhir:Coding.code [
+                    fhir:value "hl7-fhir-rest"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://hl7.org/fhir/endpoint-connection-type"
+                ]
+            ] ;
+            fhir:Endpoint.managingOrganization [
+                fhir:Reference.display [
+                    fhir:value "Epic demo organization"
+                ]
+            ] ;
+            fhir:Endpoint.name [
+                fhir:value "Referral Requests"
+            ] ;
+            fhir:Endpoint.payloadMimeType [
+                fhir:index "0"^^xsd:integer ;
+                fhir:value "application/fhir+json"
+            ] ;
+            fhir:Endpoint.payloadType [
+                fhir:index "0"^^xsd:integer ;
+                fhir:CodeableConcept.coding [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "ProcedureRequest QuestionnaireResponse"
+                    ]
+                ]
+            ] ;
+            fhir:Endpoint.status [
+                fhir:value "active"
+            ] ;
+            fhir:Resource.id [
+                fhir:value "74"
+            ]
+        ]
+    ],
+        [
+        fhir:index "5"^^xsd:integer ;
+        fhir:Bundle.entry.fullUrl [
+            fhir:value "http://hl7.org/fhir/Endpoint/76"
+        ] ;
+        fhir:Bundle.entry.resource [
+            fhir:DomainResource.text [
+                fhir:Narrative.div """<div xmlns="http://www.w3.org/1999/xhtml">
+              valid usecase?, CDA-EventSummary<br/>
+              Address: https://sqlonfhir-dstu2.azurewebsites.net/fhir</div>""" ;
+                fhir:Narrative.status [
+                    fhir:value "generated"
+                ]
+            ] ;
+            fhir:Endpoint.address [
+                fhir:value "https://sqlonfhir-dstu2.azurewebsites.net/fhir"
+            ] ;
+            fhir:Endpoint.connectionType [
+                fhir:Coding.code [
+                    fhir:value "hl7-fhir-msg"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://hl7.org/fhir/endpoint-connection-type"
+                ]
+            ] ;
+            fhir:Endpoint.managingOrganization [
+                fhir:Reference.display [
+                    fhir:value "Telstra Health"
+                ]
+            ] ;
+            fhir:Endpoint.name [
+                fhir:value "valid usecase?"
+            ] ;
+            fhir:Endpoint.payloadMimeType [
+                fhir:index "0"^^xsd:integer ;
+                fhir:value "PDF"
+            ] ;
+            fhir:Endpoint.payloadType [
+                fhir:index "0"^^xsd:integer ;
+                fhir:CodeableConcept.coding [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "CDA-EventSummary"
+                    ]
+                ]
+            ] ;
+            fhir:Endpoint.status [
+                fhir:value "active"
+            ] ;
+            fhir:Resource.id [
+                fhir:value "76"
+            ]
+        ]
+    ],
+        [
+        fhir:index "13"^^xsd:integer ;
+        fhir:Bundle.entry.fullUrl [
+            fhir:value "http://hl7.org/fhir/Endpoint/84"
+        ] ;
+        fhir:Bundle.entry.resource [
+            fhir:DomainResource.text [
+                fhir:Narrative.div """<div xmlns="http://www.w3.org/1999/xhtml">
+              Enterprise Image Archive, varies (application/dicom, application/dicom+xml, image/jpeg, and many more)<br/>
+              Address: https://pacs.hospital.org/IHEInvokeImageDisplay</div>""" ;
+                fhir:Narrative.status [
+                    fhir:value "generated"
+                ]
+            ] ;
+            fhir:Endpoint.address [
+                fhir:value "https://pacs.hospital.org/IHEInvokeImageDisplay"
+            ] ;
+            fhir:Endpoint.connectionType [
+                fhir:Coding.code [
+                    fhir:value "ihe-iid"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://hl7.org/fhir/endpoint-connection-type"
+                ]
+            ] ;
+            fhir:Endpoint.managingOrganization [
+                fhir:Reference.display [
+                    fhir:value "Multi-site Co."
+                ]
+            ] ;
+            fhir:Endpoint.name [
+                fhir:value "Enterprise Image Archive"
+            ] ;
+            fhir:Endpoint.payloadMimeType [
+                fhir:index "0"^^xsd:integer ;
+                fhir:value "IHE IID"
+            ] ;
+            fhir:Endpoint.payloadType [
+                fhir:index "0"^^xsd:integer ;
+                fhir:CodeableConcept.coding [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "varies (application/dicom, application/dicom+xml, image/jpeg, and many more)"
+                    ]
+                ]
+            ] ;
+            fhir:Endpoint.status [
+                fhir:value "active"
+            ] ;
+            fhir:Resource.id [
+                fhir:value "84"
+            ]
+        ]
+    ],
+        [
+        fhir:index "10"^^xsd:integer ;
+        fhir:Bundle.entry.fullUrl [
+            fhir:value "http://hl7.org/fhir/Endpoint/81"
+        ] ;
+        fhir:Bundle.entry.resource [
+            fhir:DomainResource.text [
+                fhir:Narrative.div """<div xmlns="http://www.w3.org/1999/xhtml">
+              Enterprise Image Archive, varies (application/dicom, application/dicom+xml, image/jpeg, and many more)<br/>
+              Address: https://pacs.hospital.org/dicomweb</div>""" ;
+                fhir:Narrative.status [
+                    fhir:value "generated"
+                ]
+            ] ;
+            fhir:Endpoint.address [
+                fhir:value "https://pacs.hospital.org/dicomweb"
+            ] ;
+            fhir:Endpoint.connectionType [
+                fhir:Coding.code [
+                    fhir:value "dicom-stow-rs"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://hl7.org/fhir/endpoint-connection-type"
+                ]
+            ] ;
+            fhir:Endpoint.managingOrganization [
+                fhir:Reference.display [
+                    fhir:value "Multi-site Co."
+                ]
+            ] ;
+            fhir:Endpoint.name [
+                fhir:value "Enterprise Image Archive"
+            ] ;
+            fhir:Endpoint.payloadMimeType [
+                fhir:index "0"^^xsd:integer ;
+                fhir:value "DICOM STOW-RS"
+            ] ;
+            fhir:Endpoint.payloadType [
+                fhir:index "0"^^xsd:integer ;
+                fhir:CodeableConcept.coding [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "varies (application/dicom, application/dicom+xml, image/jpeg, and many more)"
+                    ]
+                ]
+            ] ;
+            fhir:Endpoint.status [
+                fhir:value "active"
+            ] ;
+            fhir:Resource.id [
+                fhir:value "81"
+            ]
+        ]
+    ],
+        [
+        fhir:index "7"^^xsd:integer ;
+        fhir:Bundle.entry.fullUrl [
+            fhir:value "http://hl7.org/fhir/Endpoint/78"
+        ] ;
+        fhir:Bundle.entry.resource [
+            fhir:DomainResource.text [
+                fhir:Narrative.div """<div xmlns="http://www.w3.org/1999/xhtml">
+              xds event summaries, CDA-EventSummary<br/>
+              Address: https://open.epic.com/Interface/XDS.b</div>""" ;
+                fhir:Narrative.status [
+                    fhir:value "generated"
+                ]
+            ] ;
+            fhir:Endpoint.address [
+                fhir:value "https://open.epic.com/Interface/XDS.b"
+            ] ;
+            fhir:Endpoint.connectionType [
+                fhir:Coding.code [
+                    fhir:value "ihe-xds"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://hl7.org/fhir/endpoint-connection-type"
+                ]
+            ] ;
+            fhir:Endpoint.managingOrganization [
+                fhir:Reference.display [
+                    fhir:value "Epic demo organization"
+                ]
+            ] ;
+            fhir:Endpoint.name [
+                fhir:value "xds event summaries"
+            ] ;
+            fhir:Endpoint.payloadMimeType [
+                fhir:index "0"^^xsd:integer ;
+                fhir:value "XDA/XDS"
+            ] ;
+            fhir:Endpoint.payloadType [
+                fhir:index "0"^^xsd:integer ;
+                fhir:CodeableConcept.coding [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "CDA-EventSummary"
+                    ]
+                ]
+            ] ;
+            fhir:Endpoint.status [
+                fhir:value "active"
+            ] ;
+            fhir:Resource.id [
+                fhir:value "78"
+            ]
+        ]
+    ],
+        [
+        fhir:index "8"^^xsd:integer ;
+        fhir:Bundle.entry.fullUrl [
+            fhir:value "http://hl7.org/fhir/Endpoint/79"
+        ] ;
+        fhir:Bundle.entry.resource [
+            fhir:DomainResource.text [
+                fhir:Narrative.div """<div xmlns="http://www.w3.org/1999/xhtml">
+              Enterprise Image Archive, varies (application/dicom, application/dicom+xml, image/jpeg, and many more)<br/>
+              Address: https://pacs.hospital.org/dicomweb</div>""" ;
+                fhir:Narrative.status [
+                    fhir:value "generated"
+                ]
+            ] ;
+            fhir:Endpoint.address [
+                fhir:value "https://pacs.hospital.org/dicomweb"
+            ] ;
+            fhir:Endpoint.connectionType [
+                fhir:Coding.code [
+                    fhir:value "dicom-wado-rs"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://hl7.org/fhir/endpoint-connection-type"
+                ]
+            ] ;
+            fhir:Endpoint.managingOrganization [
+                fhir:Reference.display [
+                    fhir:value "Multi-site Co."
+                ]
+            ] ;
+            fhir:Endpoint.name [
+                fhir:value "Enterprise Image Archive"
+            ] ;
+            fhir:Endpoint.payloadMimeType [
+                fhir:index "0"^^xsd:integer ;
+                fhir:value "DICOM WADO-RS"
+            ] ;
+            fhir:Endpoint.payloadType [
+                fhir:index "0"^^xsd:integer ;
+                fhir:CodeableConcept.coding [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "varies (application/dicom, application/dicom+xml, image/jpeg, and many more)"
+                    ]
+                ]
+            ] ;
+            fhir:Endpoint.status [
+                fhir:value "active"
+            ] ;
+            fhir:Resource.id [
+                fhir:value "79"
+            ]
+        ]
+    ],
+        [
+        fhir:index "2"^^xsd:integer ;
+        fhir:Bundle.entry.fullUrl [
+            fhir:value "http://hl7.org/fhir/Endpoint/73"
+        ] ;
+        fhir:Bundle.entry.resource [
+            fhir:DomainResource.text [
+                fhir:Narrative.div """<div xmlns="http://www.w3.org/1999/xhtml">
+              Referral Requests, ProcedureRequest<br/>
+              Address: https://sqlonfhir-dstu2.azurewebsites.net/fhir</div>""" ;
+                fhir:Narrative.status [
+                    fhir:value "generated"
+                ]
+            ] ;
+            fhir:Endpoint.address [
+                fhir:value "https://sqlonfhir-dstu2.azurewebsites.net/fhir"
+            ] ;
+            fhir:Endpoint.connectionType [
+                fhir:Coding.code [
+                    fhir:value "hl7-fhir-rest"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://hl7.org/fhir/endpoint-connection-type"
+                ]
+            ] ;
+            fhir:Endpoint.managingOrganization [
+                fhir:Reference.display [
+                    fhir:value "Telstra Health"
+                ]
+            ] ;
+            fhir:Endpoint.name [
+                fhir:value "Referral Requests"
+            ] ;
+            fhir:Endpoint.payloadMimeType [
+                fhir:index "0"^^xsd:integer ;
+                fhir:value "application/fhir+xml"
+            ] ;
+            fhir:Endpoint.payloadType [
+                fhir:index "0"^^xsd:integer ;
+                fhir:CodeableConcept.coding [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "ProcedureRequest"
+                    ]
+                ]
+            ] ;
+            fhir:Endpoint.status [
+                fhir:value "active"
+            ] ;
+            fhir:Resource.id [
+                fhir:value "73"
+            ]
+        ]
+    ],
+        [
+        fhir:index "11"^^xsd:integer ;
+        fhir:Bundle.entry.fullUrl [
+            fhir:value "http://hl7.org/fhir/Endpoint/82"
+        ] ;
+        fhir:Bundle.entry.resource [
+            fhir:DomainResource.text [
+                fhir:Narrative.div """<div xmlns="http://www.w3.org/1999/xhtml">
+              Enterprise Image Archive, varies (application/dicom, application/dicom+xml, image/jpeg, and many more)<br/>
+              Address: https://pacs.hospital.org/dicomweb</div>""" ;
+                fhir:Narrative.status [
+                    fhir:value "generated"
+                ]
+            ] ;
+            fhir:Endpoint.address [
+                fhir:value "https://pacs.hospital.org/dicomweb"
+            ] ;
+            fhir:Endpoint.connectionType [
+                fhir:Coding.code [
+                    fhir:value "dicom-stow-rs"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://hl7.org/fhir/endpoint-connection-type"
+                ]
+            ] ;
+            fhir:Endpoint.managingOrganization [
+                fhir:Reference.display [
+                    fhir:value "Multi-site Co."
+                ]
+            ] ;
+            fhir:Endpoint.name [
+                fhir:value "Enterprise Image Archive"
+            ] ;
+            fhir:Endpoint.payloadMimeType [
+                fhir:index "0"^^xsd:integer ;
+                fhir:value "DICOM STOW-RS"
+            ] ;
+            fhir:Endpoint.payloadType [
+                fhir:index "0"^^xsd:integer ;
+                fhir:CodeableConcept.coding [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "varies (application/dicom, application/dicom+xml, image/jpeg, and many more)"
+                    ]
+                ]
+            ] ;
+            fhir:Endpoint.status [
+                fhir:value "active"
+            ] ;
+            fhir:Resource.id [
+                fhir:value "82"
+            ]
+        ]
+    ],
+        [
+        fhir:index "12"^^xsd:integer ;
+        fhir:Bundle.entry.fullUrl [
+            fhir:value "http://hl7.org/fhir/Endpoint/83"
+        ] ;
+        fhir:Bundle.entry.resource [
+            fhir:DomainResource.text [
+                fhir:Narrative.div """<div xmlns="http://www.w3.org/1999/xhtml">
+              Enterprise Image Archive, varies (application/dicom, application/dicom+xml, image/jpeg, and many more)<br/>
+              Address: https://pacs.hospital.org/wadoUri</div>""" ;
+                fhir:Narrative.status [
+                    fhir:value "generated"
+                ]
+            ] ;
+            fhir:Endpoint.address [
+                fhir:value "https://pacs.hospital.org/wadoUri"
+            ] ;
+            fhir:Endpoint.connectionType [
+                fhir:Coding.code [
+                    fhir:value "dicom-wado-uri"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://hl7.org/fhir/endpoint-connection-type"
+                ]
+            ] ;
+            fhir:Endpoint.managingOrganization [
+                fhir:Reference.display [
+                    fhir:value "Multi-site Co."
+                ]
+            ] ;
+            fhir:Endpoint.name [
+                fhir:value "Enterprise Image Archive"
+            ] ;
+            fhir:Endpoint.payloadMimeType [
+                fhir:index "0"^^xsd:integer ;
+                fhir:value "DICOM WADO-URI"
+            ] ;
+            fhir:Endpoint.payloadType [
+                fhir:index "0"^^xsd:integer ;
+                fhir:CodeableConcept.coding [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "varies (application/dicom, application/dicom+xml, image/jpeg, and many more)"
+                    ]
+                ]
+            ] ;
+            fhir:Endpoint.status [
+                fhir:value "active"
+            ] ;
+            fhir:Resource.id [
+                fhir:value "83"
+            ]
+        ]
+    ] ;
+    fhir:Bundle.type [
+        fhir:value "collection"
+    ] ;
+    fhir:Resource.id [
+        fhir:value "b0a5e4277-83c4-4adb-87e2-e3efe3369b6f"
+    ] ;
+    fhir:Resource.meta [
+        fhir:Meta.lastUpdated [
+            fhir:value "2012-05-29T23:45:32+00:00"^^xsd:dateTime
+        ]
+    ] .
+
+<http://hl7.org/fhir/Bundle/b0a5e4277-83c4-4adb-87e2-e3efe3369b6f.ttl> a owl:Ontology ;
+    owl:imports fhir:fhir.ttl .
+

@@ -1,0 +1,188 @@
+
+
+Subject http://hl7.org/fhir/Person/pp DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/Person/pp.Person.link_1.Person.link.target> <http://hl7.org/fhir/link> <http://www.acme-medical.com/Patient/ab34d> .
+	----> Second: 
+<http://hl7.org/fhir/Person/pp.Person.link_1.Person.link.target> <http://hl7.org/fhir/link> <http://hl7.org/fhir/http%3A//www.acme-medical.com/Patient/ab34d> .----------------------------------------
+
+========================================
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix v2-0203: <http://hl7.org/fhir/v2/0203> .
+@prefix w5: <http://hl7.org/fhir/w5#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://hl7.org/fhir/Person/pp> a fhir:Person ;
+    fhir:nodeRole fhir:treeRoot ;
+    fhir:DomainResource.text [
+        fhir:Narrative.div """<div xmlns="http://www.w3.org/1999/xhtml">
+      <table>
+        <tbody>
+          <tr>
+            <td>Name</td>
+            <td>Eve Marie <b>Everywoman</b></td>
+          </tr>
+          <tr>
+            <td>Address</td>
+            <td>2086 College St, Sandusky, OH, 44870</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>""" ;
+        fhir:Narrative.status [
+            fhir:value "generated"
+        ]
+    ] ;
+    fhir:Person.active [
+        fhir:value "true"^^xsd:boolean
+    ] ;
+    fhir:Person.address [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Address.city [
+            fhir:value "Sandusky"
+        ] ;
+        fhir:Address.country [
+            fhir:value "USA"
+        ] ;
+        fhir:Address.line [
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "2086 College St"
+        ] ;
+        fhir:Address.postalCode [
+            fhir:value "44870"
+        ] ;
+        fhir:Address.state [
+            fhir:value "OH"
+        ] ;
+        fhir:Address.use [
+            fhir:value "home"
+        ]
+    ] ;
+    fhir:Person.birthDate [
+        fhir:value "1974-03-07"^^xsd:date
+    ] ;
+    fhir:Person.gender [
+        fhir:value "female"
+    ] ;
+    fhir:Person.identifier [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Identifier.assigner [
+            fhir:Reference.display [
+                fhir:value "Ohio Bureau of Motor Vehicles"
+            ]
+        ] ;
+        fhir:Identifier.period [
+            fhir:Period.start [
+                fhir:value "2041-09-23"^^xsd:date
+            ]
+        ] ;
+        fhir:Identifier.system [
+            fhir:value "urn:oid:2.16.840.1.113883.4.3.39"
+        ] ;
+        fhir:Identifier.type [
+            fhir:CodeableConcept.coding [
+                a <http://hl7.org/fhir/v2/0203/DL> ;
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "DL"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://hl7.org/fhir/v2/0203"
+                ]
+            ] ;
+            fhir:CodeableConcept.text [
+                fhir:value "Ohio driver license"
+            ]
+        ] ;
+        fhir:Identifier.use [
+            fhir:value "official"
+        ] ;
+        fhir:Identifier.value [
+            fhir:value "TL545786"
+        ]
+    ] ;
+    fhir:Person.link [
+        fhir:index "1"^^xsd:integer ;
+        fhir:Person.link.assurance [
+            fhir:value "level2"
+        ] ;
+        fhir:Person.link.target [
+            fhir:link <http://hl7.org/fhir/http%3A//www.acme-medical.com/Patient/ab34d> ;
+            fhir:Reference.display [
+                fhir:value "Eve Marie Everywoman"
+            ] ;
+            fhir:Reference.reference [
+                fhir:value "http://www.acme-medical.com/Patient/ab34d"
+            ]
+        ]
+    ],
+        [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Person.link.assurance [
+            fhir:value "level3"
+        ] ;
+        fhir:Person.link.target [
+            fhir:link <http://www.goodhealth.com/Patient/98574> ;
+            fhir:Reference.display [
+                fhir:value "Eve Everywoman"
+            ] ;
+            fhir:Reference.reference [
+                fhir:value "http://www.goodhealth.com/Patient/98574"
+            ]
+        ]
+    ] ;
+    fhir:Person.managingOrganization [
+        fhir:link <http://www.goodhealth.com/Organization/12> ;
+        fhir:Reference.display [
+            fhir:value "Goodhealth Patient Portal"
+        ] ;
+        fhir:Reference.reference [
+            fhir:value "http://www.goodhealth.com/Organization/12"
+        ]
+    ] ;
+    fhir:Person.name [
+        fhir:index "0"^^xsd:integer ;
+        fhir:HumanName.family [
+            fhir:value "Everywoman"
+        ] ;
+        fhir:HumanName.given [
+            fhir:index "1"^^xsd:integer ;
+            fhir:value "Marie"
+        ],
+            [
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "Eve"
+        ] ;
+        fhir:HumanName.use [
+            fhir:value "official"
+        ]
+    ] ;
+    fhir:Person.telecom [
+        fhir:index "0"^^xsd:integer ;
+        fhir:ContactPoint.system [
+            fhir:value "phone"
+        ] ;
+        fhir:ContactPoint.use [
+            fhir:value "home"
+        ] ;
+        fhir:ContactPoint.value [
+            fhir:value "(621)-479-9743"
+        ]
+    ] ;
+    fhir:Resource.id [
+        fhir:value "pp"
+    ] .
+
+<http://hl7.org/fhir/Person/pp.ttl> a owl:Ontology ;
+    owl:imports fhir:fhir.ttl .
+
+<http://hl7.org/fhir/http%3A//www.acme-medical.com/Patient/ab34d> a <http://hl7.org/fhir/http:> .
+
+<http://www.goodhealth.com/Organization/12> a fhir:Organization .
+
+<http://www.goodhealth.com/Patient/98574> a fhir:Patient .
+

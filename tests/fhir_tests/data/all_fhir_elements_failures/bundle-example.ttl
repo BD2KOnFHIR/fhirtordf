@@ -72,6 +72,28 @@ Subject https://example.com/base/Medication/example DIFFERENCE: ================
 <http://hl7.org/fhir/Bundle/bundle-example> a fhir:Bundle ;
     fhir:nodeRole fhir:treeRoot ;
     fhir:Bundle.entry [
+        fhir:index "1"^^xsd:integer ;
+        fhir:Bundle.entry.fullUrl [
+            fhir:value "https://example.com/base/Medication/example"
+        ] ;
+        fhir:Bundle.entry.resource [
+            fhir:DomainResource.text [
+                fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example</p></div>" ;
+                fhir:Narrative.status [
+                    fhir:value "generated"
+                ]
+            ] ;
+            fhir:Resource.id [
+                fhir:value "example"
+            ]
+        ] ;
+        fhir:Bundle.entry.search [
+            fhir:Bundle.entry.search.mode [
+                fhir:value "include"
+            ]
+        ]
+    ],
+        [
         fhir:index "0"^^xsd:integer ;
         fhir:Bundle.entry.fullUrl [
             fhir:value "https://example.com/base/MedicationRequest/3123"
@@ -108,28 +130,6 @@ Subject https://example.com/base/Medication/example DIFFERENCE: ================
             ] ;
             fhir:Bundle.entry.search.score [
                 fhir:value "1"^^xsd:decimal
-            ]
-        ]
-    ],
-        [
-        fhir:index "1"^^xsd:integer ;
-        fhir:Bundle.entry.fullUrl [
-            fhir:value "https://example.com/base/Medication/example"
-        ] ;
-        fhir:Bundle.entry.resource [
-            fhir:DomainResource.text [
-                fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example</p></div>" ;
-                fhir:Narrative.status [
-                    fhir:value "generated"
-                ]
-            ] ;
-            fhir:Resource.id [
-                fhir:value "example"
-            ]
-        ] ;
-        fhir:Bundle.entry.search [
-            fhir:Bundle.entry.search.mode [
-                fhir:value "include"
             ]
         ]
     ] ;

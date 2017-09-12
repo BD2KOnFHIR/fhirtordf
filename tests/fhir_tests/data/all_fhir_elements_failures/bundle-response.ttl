@@ -1,0 +1,328 @@
+
+
+Subject http://example.org/fhir/Patient/12423 DIFFERENCE: ==============================
+	----> First: 
+<http://example.org/fhir/Patient/12423.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
+<http://example.org/fhir/Patient/12423.DomainResource.text> <http://hl7.org/fhir/Narrative.div> "<div xmlns=\"http://www.w3.org/1999/xhtml\">Some narrative</div>" .
+<http://example.org/fhir/Patient/12423.DomainResource.text> <http://hl7.org/fhir/Narrative.status> <http://example.org/fhir/Patient/12423.DomainResource.text.Narrative.status> .
+<http://example.org/fhir/Patient/12423.Patient.active> <http://hl7.org/fhir/value> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://example.org/fhir/Patient/12423.Patient.birthDate> <http://hl7.org/fhir/value> "1974-12-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://example.org/fhir/Patient/12423.Patient.gender> <http://hl7.org/fhir/value> "male" .
+<http://example.org/fhir/Patient/12423.Patient.name_0.HumanName.family> <http://hl7.org/fhir/value> "Chalmers" .
+<http://example.org/fhir/Patient/12423.Patient.name_0.HumanName.given_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/fhir/Patient/12423.Patient.name_0.HumanName.given_0> <http://hl7.org/fhir/value> "Peter" .
+<http://example.org/fhir/Patient/12423.Patient.name_0.HumanName.given_1> <http://hl7.org/fhir/index> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/fhir/Patient/12423.Patient.name_0.HumanName.given_1> <http://hl7.org/fhir/value> "James" .
+<http://example.org/fhir/Patient/12423.Patient.name_0.HumanName.use> <http://hl7.org/fhir/value> "official" .
+<http://example.org/fhir/Patient/12423.Patient.name_0> <http://hl7.org/fhir/HumanName.family> <http://example.org/fhir/Patient/12423.Patient.name_0.HumanName.family> .
+<http://example.org/fhir/Patient/12423.Patient.name_0> <http://hl7.org/fhir/HumanName.given> <http://example.org/fhir/Patient/12423.Patient.name_0.HumanName.given_0> .
+<http://example.org/fhir/Patient/12423.Patient.name_0> <http://hl7.org/fhir/HumanName.given> <http://example.org/fhir/Patient/12423.Patient.name_0.HumanName.given_1> .
+<http://example.org/fhir/Patient/12423.Patient.name_0> <http://hl7.org/fhir/HumanName.use> <http://example.org/fhir/Patient/12423.Patient.name_0.HumanName.use> .
+<http://example.org/fhir/Patient/12423.Patient.name_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://example.org/fhir/Patient/12423.Resource.id> <http://hl7.org/fhir/value> "12423" .
+<http://example.org/fhir/Patient/12423.Resource.meta.Meta.lastUpdated> <http://hl7.org/fhir/value> "2014-08-18T01:43:31+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://example.org/fhir/Patient/12423.Resource.meta.Meta.versionId> <http://hl7.org/fhir/value> "1" .
+<http://example.org/fhir/Patient/12423.Resource.meta> <http://hl7.org/fhir/Meta.lastUpdated> <http://example.org/fhir/Patient/12423.Resource.meta.Meta.lastUpdated> .
+<http://example.org/fhir/Patient/12423.Resource.meta> <http://hl7.org/fhir/Meta.versionId> <http://example.org/fhir/Patient/12423.Resource.meta.Meta.versionId> .
+<http://example.org/fhir/Patient/12423> <http://hl7.org/fhir/DomainResource.text> <http://example.org/fhir/Patient/12423.DomainResource.text> .
+<http://example.org/fhir/Patient/12423> <http://hl7.org/fhir/Patient.active> <http://example.org/fhir/Patient/12423.Patient.active> .
+<http://example.org/fhir/Patient/12423> <http://hl7.org/fhir/Patient.birthDate> <http://example.org/fhir/Patient/12423.Patient.birthDate> .
+<http://example.org/fhir/Patient/12423> <http://hl7.org/fhir/Patient.gender> <http://example.org/fhir/Patient/12423.Patient.gender> .
+<http://example.org/fhir/Patient/12423> <http://hl7.org/fhir/Patient.name> <http://example.org/fhir/Patient/12423.Patient.name_0> .
+<http://example.org/fhir/Patient/12423> <http://hl7.org/fhir/Resource.id> <http://example.org/fhir/Patient/12423.Resource.id> .
+<http://example.org/fhir/Patient/12423> <http://hl7.org/fhir/Resource.meta> <http://example.org/fhir/Patient/12423.Resource.meta> .
+<http://example.org/fhir/Patient/12423> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/Patient> .----------------------------------------
+
+Subject urn:uuid:e7bcef8e-5ef9-4d2b-87d5-b42b1eec9125 DIFFERENCE: ==============================
+	----> First: 
+<urn:uuid:e7bcef8e-5ef9-4d2b-87d5-b42b1eec9125.Bundle.type> <http://hl7.org/fhir/value> "searchset" .
+<urn:uuid:e7bcef8e-5ef9-4d2b-87d5-b42b1eec9125.Resource.id> <http://hl7.org/fhir/value> "fb6ed6cb-324e-4588-87cd-0c92c68986ca" .
+<urn:uuid:e7bcef8e-5ef9-4d2b-87d5-b42b1eec9125> <http://hl7.org/fhir/Bundle.type> <urn:uuid:e7bcef8e-5ef9-4d2b-87d5-b42b1eec9125.Bundle.type> .
+<urn:uuid:e7bcef8e-5ef9-4d2b-87d5-b42b1eec9125> <http://hl7.org/fhir/Resource.id> <urn:uuid:e7bcef8e-5ef9-4d2b-87d5-b42b1eec9125.Resource.id> .
+<urn:uuid:e7bcef8e-5ef9-4d2b-87d5-b42b1eec9125> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/Bundle> .----------------------------------------
+
+Subject urn:uuid:7f9724ed-ef8d-4434-aacb-41869db83233 DIFFERENCE: ==============================
+	----> First: 
+<urn:uuid:7f9724ed-ef8d-4434-aacb-41869db83233.Parameters.parameter_0.Parameters.parameter.name> <http://hl7.org/fhir/value> "name" .
+<urn:uuid:7f9724ed-ef8d-4434-aacb-41869db83233.Parameters.parameter_0.Parameters.parameter.valueString> <http://hl7.org/fhir/value> "LOINC" .
+<urn:uuid:7f9724ed-ef8d-4434-aacb-41869db83233.Parameters.parameter_0> <http://hl7.org/fhir/Parameters.parameter.name> <urn:uuid:7f9724ed-ef8d-4434-aacb-41869db83233.Parameters.parameter_0.Parameters.parameter.name> .
+<urn:uuid:7f9724ed-ef8d-4434-aacb-41869db83233.Parameters.parameter_0> <http://hl7.org/fhir/Parameters.parameter.valueString> <urn:uuid:7f9724ed-ef8d-4434-aacb-41869db83233.Parameters.parameter_0.Parameters.parameter.valueString> .
+<urn:uuid:7f9724ed-ef8d-4434-aacb-41869db83233.Parameters.parameter_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:uuid:7f9724ed-ef8d-4434-aacb-41869db83233> <http://hl7.org/fhir/Parameters.parameter> <urn:uuid:7f9724ed-ef8d-4434-aacb-41869db83233.Parameters.parameter_0> .
+<urn:uuid:7f9724ed-ef8d-4434-aacb-41869db83233> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/Parameters> .----------------------------------------
+
+Subject http://hl7.org/fhir/Bundle/bundle-response DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_0> <http://hl7.org/fhir/Bundle.entry.resource> <http://example.org/fhir/Patient/12423> .
+<http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_7> <http://hl7.org/fhir/Bundle.entry.resource> <urn:uuid:7f9724ed-ef8d-4434-aacb-41869db83233> .
+<http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_8> <http://hl7.org/fhir/Bundle.entry.resource> <urn:uuid:e7bcef8e-5ef9-4d2b-87d5-b42b1eec9125> .
+	----> Second: 
+<http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_0.Bundle.entry.resource.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
+<http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_0.Bundle.entry.resource.DomainResource.text> <http://hl7.org/fhir/Narrative.div> "<div xmlns=\"http://www.w3.org/1999/xhtml\">Some narrative</div>" .
+<http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_0.Bundle.entry.resource.DomainResource.text> <http://hl7.org/fhir/Narrative.status> <http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_0.Bundle.entry.resource.DomainResource.text.Narrative.status> .
+<http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_0.Bundle.entry.resource.Patient.active> <http://hl7.org/fhir/value> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_0.Bundle.entry.resource.Patient.birthDate> <http://hl7.org/fhir/value> "1974-12-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_0.Bundle.entry.resource.Patient.gender> <http://hl7.org/fhir/value> "male" .
+<http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_0.Bundle.entry.resource.Patient.name_0.HumanName.family> <http://hl7.org/fhir/value> "Chalmers" .
+<http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_0.Bundle.entry.resource.Patient.name_0.HumanName.given_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_0.Bundle.entry.resource.Patient.name_0.HumanName.given_0> <http://hl7.org/fhir/value> "Peter" .
+<http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_0.Bundle.entry.resource.Patient.name_0.HumanName.given_1> <http://hl7.org/fhir/index> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_0.Bundle.entry.resource.Patient.name_0.HumanName.given_1> <http://hl7.org/fhir/value> "James" .
+<http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_0.Bundle.entry.resource.Patient.name_0.HumanName.use> <http://hl7.org/fhir/value> "official" .
+<http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_0.Bundle.entry.resource.Patient.name_0> <http://hl7.org/fhir/HumanName.family> <http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_0.Bundle.entry.resource.Patient.name_0.HumanName.family> .
+<http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_0.Bundle.entry.resource.Patient.name_0> <http://hl7.org/fhir/HumanName.given> <http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_0.Bundle.entry.resource.Patient.name_0.HumanName.given_0> .
+<http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_0.Bundle.entry.resource.Patient.name_0> <http://hl7.org/fhir/HumanName.given> <http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_0.Bundle.entry.resource.Patient.name_0.HumanName.given_1> .
+<http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_0.Bundle.entry.resource.Patient.name_0> <http://hl7.org/fhir/HumanName.use> <http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_0.Bundle.entry.resource.Patient.name_0.HumanName.use> .
+<http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_0.Bundle.entry.resource.Patient.name_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_0.Bundle.entry.resource.Resource.id> <http://hl7.org/fhir/value> "12423" .
+<http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_0.Bundle.entry.resource.Resource.meta.Meta.lastUpdated> <http://hl7.org/fhir/value> "2014-08-18T01:43:31+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_0.Bundle.entry.resource.Resource.meta.Meta.versionId> <http://hl7.org/fhir/value> "1" .
+<http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_0.Bundle.entry.resource.Resource.meta> <http://hl7.org/fhir/Meta.lastUpdated> <http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_0.Bundle.entry.resource.Resource.meta.Meta.lastUpdated> .
+<http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_0.Bundle.entry.resource.Resource.meta> <http://hl7.org/fhir/Meta.versionId> <http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_0.Bundle.entry.resource.Resource.meta.Meta.versionId> .
+<http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_0.Bundle.entry.resource> <http://hl7.org/fhir/DomainResource.text> <http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_0.Bundle.entry.resource.DomainResource.text> .
+<http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_0.Bundle.entry.resource> <http://hl7.org/fhir/Patient.active> <http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_0.Bundle.entry.resource.Patient.active> .
+<http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_0.Bundle.entry.resource> <http://hl7.org/fhir/Patient.birthDate> <http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_0.Bundle.entry.resource.Patient.birthDate> .
+<http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_0.Bundle.entry.resource> <http://hl7.org/fhir/Patient.gender> <http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_0.Bundle.entry.resource.Patient.gender> .
+<http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_0.Bundle.entry.resource> <http://hl7.org/fhir/Patient.name> <http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_0.Bundle.entry.resource.Patient.name_0> .
+<http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_0.Bundle.entry.resource> <http://hl7.org/fhir/Resource.id> <http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_0.Bundle.entry.resource.Resource.id> .
+<http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_0.Bundle.entry.resource> <http://hl7.org/fhir/Resource.meta> <http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_0.Bundle.entry.resource.Resource.meta> .
+<http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_0> <http://hl7.org/fhir/Bundle.entry.resource> <http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_0.Bundle.entry.resource> .
+<http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_7.Bundle.entry.resource.Parameters.parameter_0.Extension.valueString> <http://hl7.org/fhir/value> "LOINC" .
+<http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_7.Bundle.entry.resource.Parameters.parameter_0.Parameters.parameter.name> <http://hl7.org/fhir/value> "name" .
+<http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_7.Bundle.entry.resource.Parameters.parameter_0> <http://hl7.org/fhir/Extension.valueString> <http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_7.Bundle.entry.resource.Parameters.parameter_0.Extension.valueString> .
+<http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_7.Bundle.entry.resource.Parameters.parameter_0> <http://hl7.org/fhir/Parameters.parameter.name> <http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_7.Bundle.entry.resource.Parameters.parameter_0.Parameters.parameter.name> .
+<http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_7.Bundle.entry.resource.Parameters.parameter_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_7.Bundle.entry.resource> <http://hl7.org/fhir/Parameters.parameter> <http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_7.Bundle.entry.resource.Parameters.parameter_0> .
+<http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_7> <http://hl7.org/fhir/Bundle.entry.resource> <http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_7.Bundle.entry.resource> .
+<http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_8.Bundle.entry.resource.Bundle.type> <http://hl7.org/fhir/value> "searchset" .
+<http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_8.Bundle.entry.resource.Resource.id> <http://hl7.org/fhir/value> "fb6ed6cb-324e-4588-87cd-0c92c68986ca" .
+<http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_8.Bundle.entry.resource> <http://hl7.org/fhir/Bundle.type> <http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_8.Bundle.entry.resource.Bundle.type> .
+<http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_8.Bundle.entry.resource> <http://hl7.org/fhir/Resource.id> <http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_8.Bundle.entry.resource.Resource.id> .
+<http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_8> <http://hl7.org/fhir/Bundle.entry.resource> <http://hl7.org/fhir/Bundle/bundle-response.Bundle.entry_8.Bundle.entry.resource> .----------------------------------------
+
+========================================
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix w5: <http://hl7.org/fhir/w5#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://hl7.org/fhir/Bundle/bundle-response> a fhir:Bundle ;
+    fhir:nodeRole fhir:treeRoot ;
+    fhir:Bundle.entry [
+        fhir:index "2"^^xsd:integer ;
+        fhir:Bundle.entry.response [
+            fhir:Bundle.entry.response.etag [
+                fhir:value "W/\"4\""
+            ] ;
+            fhir:Bundle.entry.response.location [
+                fhir:value "Patient/123/_history/4"
+            ] ;
+            fhir:Bundle.entry.response.status [
+                fhir:value "200 OK"
+            ]
+        ]
+    ],
+        [
+        fhir:index "1"^^xsd:integer ;
+        fhir:Bundle.entry.response [
+            fhir:Bundle.entry.response.status [
+                fhir:value "200 OK"
+            ]
+        ]
+    ],
+        [
+        fhir:index "5"^^xsd:integer ;
+        fhir:Bundle.entry.response [
+            fhir:Bundle.entry.response.status [
+                fhir:value "202 Accepted"
+            ]
+        ]
+    ],
+        [
+        fhir:index "9"^^xsd:integer ;
+        fhir:Bundle.entry.response [
+            fhir:Bundle.entry.response.status [
+                fhir:value "304 Not Modified"
+            ]
+        ]
+    ],
+        [
+        fhir:index "7"^^xsd:integer ;
+        fhir:Bundle.entry.fullUrl [
+            fhir:value "urn:uuid:7f9724ed-ef8d-4434-aacb-41869db83233"
+        ] ;
+        fhir:Bundle.entry.resource [
+            fhir:Parameters.parameter [
+                fhir:index "0"^^xsd:integer ;
+                fhir:Extension.valueString [
+                    fhir:value "LOINC"
+                ] ;
+                fhir:Parameters.parameter.name [
+                    fhir:value "name"
+                ]
+            ]
+        ] ;
+        fhir:Bundle.entry.response [
+            fhir:Bundle.entry.response.status [
+                fhir:value "200 ok"
+            ]
+        ]
+    ],
+        [
+        fhir:index "4"^^xsd:integer ;
+        fhir:Bundle.entry.response [
+            fhir:Bundle.entry.response.etag [
+                fhir:value "W/\"3\""
+            ] ;
+            fhir:Bundle.entry.response.location [
+                fhir:value "Patient/123a/_history/3"
+            ] ;
+            fhir:Bundle.entry.response.status [
+                fhir:value "200 ok"
+            ]
+        ]
+    ],
+        [
+        fhir:index "3"^^xsd:integer ;
+        fhir:Bundle.entry.response [
+            fhir:Bundle.entry.response.etag [
+                fhir:value "W/\"1\""
+            ] ;
+            fhir:Bundle.entry.response.location [
+                fhir:value "Patient/12424/_history/1"
+            ] ;
+            fhir:Bundle.entry.response.status [
+                fhir:value "201 Created"
+            ]
+        ]
+    ],
+        [
+        fhir:index "6"^^xsd:integer ;
+        fhir:Bundle.entry.response [
+            fhir:Bundle.entry.response.status [
+                fhir:value "DELETE"
+            ]
+        ]
+    ],
+        [
+        fhir:index "8"^^xsd:integer ;
+        fhir:Bundle.entry.fullUrl [
+            fhir:value "urn:uuid:e7bcef8e-5ef9-4d2b-87d5-b42b1eec9125"
+        ] ;
+        fhir:Bundle.entry.resource [
+            fhir:Bundle.type [
+                fhir:value "searchset"
+            ] ;
+            fhir:Resource.id [
+                fhir:value "fb6ed6cb-324e-4588-87cd-0c92c68986ca"
+            ]
+        ] ;
+        fhir:Bundle.entry.response [
+            fhir:Bundle.entry.response.status [
+                fhir:value "200 OK"
+            ]
+        ]
+    ],
+        [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Bundle.entry.fullUrl [
+            fhir:value "http://example.org/fhir/Patient/12423"
+        ] ;
+        fhir:Bundle.entry.resource [
+            fhir:DomainResource.text [
+                fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Some narrative</div>" ;
+                fhir:Narrative.status [
+                    fhir:value "generated"
+                ]
+            ] ;
+            fhir:Patient.active [
+                fhir:value "true"^^xsd:boolean
+            ] ;
+            fhir:Patient.birthDate [
+                fhir:value "1974-12-25"^^xsd:date
+            ] ;
+            fhir:Patient.gender [
+                fhir:value "male"
+            ] ;
+            fhir:Patient.name [
+                fhir:index "0"^^xsd:integer ;
+                fhir:HumanName.family [
+                    fhir:value "Chalmers"
+                ] ;
+                fhir:HumanName.given [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:value "Peter"
+                ],
+                    [
+                    fhir:index "1"^^xsd:integer ;
+                    fhir:value "James"
+                ] ;
+                fhir:HumanName.use [
+                    fhir:value "official"
+                ]
+            ] ;
+            fhir:Resource.id [
+                fhir:value "12423"
+            ] ;
+            fhir:Resource.meta [
+                fhir:Meta.lastUpdated [
+                    fhir:value "2014-08-18T01:43:31+00:00"^^xsd:dateTime
+                ] ;
+                fhir:Meta.versionId [
+                    fhir:value "1"
+                ]
+            ]
+        ] ;
+        fhir:Bundle.entry.response [
+            fhir:Bundle.entry.response.etag [
+                fhir:value "W/\"1\""
+            ] ;
+            fhir:Bundle.entry.response.lastModified [
+                fhir:value "2014-08-18T01:43:33+00:00"^^xsd:dateTime
+            ] ;
+            fhir:Bundle.entry.response.location [
+                fhir:value "Patient/12423/_history/1"
+            ] ;
+            fhir:Bundle.entry.response.outcome [
+                fhir:OperationOutcome.issue [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:OperationOutcome.issue.code [
+                        fhir:value "not-found"
+                    ] ;
+                    fhir:OperationOutcome.issue.details [
+                        fhir:CodeableConcept.text [
+                            fhir:value "The Managing organization was not known and was deleted"
+                        ]
+                    ] ;
+                    fhir:OperationOutcome.issue.expression [
+                        fhir:index "0"^^xsd:integer ;
+                        fhir:value "Patient.managingOrganization"
+                    ] ;
+                    fhir:OperationOutcome.issue.severity [
+                        fhir:value "warning"
+                    ]
+                ]
+            ] ;
+            fhir:Bundle.entry.response.status [
+                fhir:value "201 Created"
+            ]
+        ]
+    ] ;
+    fhir:Bundle.type [
+        fhir:value "transaction-response"
+    ] ;
+    fhir:Resource.id [
+        fhir:value "bundle-response"
+    ] ;
+    fhir:Resource.meta [
+        fhir:Meta.lastUpdated [
+            fhir:value "2014-08-18T01:43:33+00:00"^^xsd:dateTime
+        ]
+    ] .
+
+<http://hl7.org/fhir/Bundle/bundle-response.ttl> a owl:Ontology ;
+    owl:imports fhir:fhir.ttl .
+

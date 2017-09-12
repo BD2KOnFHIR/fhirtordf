@@ -36,6 +36,7 @@ from rdflib import Graph
 from fhirtordf.fhir.fhirmetavoc import FHIRMetaVoc
 from fhirtordf.fhir.picklejar import picklejarfactory
 from fhirtordf.loaders.fhirjsonloader import fhir_json_to_rdf
+from fhirtordf import __version__
 
 # TODO: bad output directory results in errors. A
 dirname, _ = os.path.split(os.path.abspath(__file__))
@@ -70,26 +71,29 @@ def add_argument(parser: ArgumentParser, *args, **kwargs):
 
 def proc_file(infile: str, outfile: str, opts: Namespace) -> bool:
     """
-    Process infile
-    :param infile:
-    :param outfile:
+    Process infile.  Note that there
+    :param infile: input file to be processed
+    :param outfile: target output file.
     :param opts:
     :return:
     """
     g = fhir_json_to_rdf(opts.fhir_metavoc, infile, opts.uribase, opts.graph, add_ontology_header=not opts.noontology,
                          do_continuations=not opts.nocontinuation, replace_narrative_text=opts.nonarrative)
+
+    # If we aren't carrying graph in opts, we're doing a file by file transformation
     if g:
-        if opts.outfile:
-            print("{} ---> {}".format(infile, opts.outfile))
-            g.serialize(outfile, format="turtle")
-        else:
-            print(g.serialize(format="turtle").decode())
+        if not opts.graph:
+            serialize_graph(g, outfile, opts)
         return True
     print("{} : Not a FHIR collection or resource".format(infile))
     return False
 
-skip_dir_names = ['/v2/', '/v3/']
-skip_file_names = ['.cs.', '.vs.', '.profile.', '.canonical.', '.schema.', '.diff.']
+
+def serialize_graph(g: Graph, outfile: str, _: Namespace) -> None:
+    if outfile:
+        g.serialize(outfile, format="turtle")
+    else:
+        print(g.serialize(format="turtle").decode())
 
 
 def file_filter(ifn: str, indir: str, opts: Namespace) -> bool:
@@ -103,10 +107,17 @@ def file_filter(ifn: str, indir: str, opts: Namespace) -> bool:
     :param opts: argparse options
     :return: True if to be processed, false if to be skipped
     """
-    if indir.startswith("_") or "/_" in indir or any(dn in indir for dn in skip_dir_names):
+    # If it looks like we're processing a URL as an input file, skip the suffix check
+    if '://' in ifn:
+        return True
+
+    if not ifn.endswith('.json'):
         return False
 
-    if any(sfn in ifn for sfn in skip_file_names):
+    if indir.startswith("_") or "/_" in indir or any(dn in indir for dn in opts.skipdirs):
+        return False
+
+    if any(sfn in ifn for sfn in opts.skipfns):
         return False
 
     infile = os.path.join(indir, ifn)
@@ -118,6 +129,7 @@ def file_filter(ifn: str, indir: str, opts: Namespace) -> bool:
 
 def addargs(parser: ArgumentParser) -> None:
     parser.prog = os.path.basename(__file__).split(".")[0]
+    add_argument(parser, "-v", "--version", help="Current version number", action="store_true")
     add_argument(parser, "-u", "--uribase", help="Base URI for RDF identifiers", default=DEFAULT_FHIR_URI)
     add_argument(parser, "-mv", "--metadatavoc", help="FHIR metadata vocabulary", default=DEFAULT_FHIR_MV)
     add_argument(parser, "-no", "--noontology", help="Omit owl ontology header", action="store_true")
@@ -128,6 +140,8 @@ def addargs(parser: ArgumentParser) -> None:
                  default=DEFAULT_FMV_CACHE_DIR)
     add_argument(parser, "--maxsize", help="Maximum sensible file size in KB.  0 means no size check",
                  type=int, default=800)
+    add_argument(parser, "-sd", "--skipdirs", help="Skip directories", nargs='*')
+    add_argument(parser, "-sf", "--skipfns", help="Skip file names containing text", nargs='*')
     parser.fromfile_prefix_chars = "@"
 
 
@@ -150,12 +164,24 @@ def fhirtordf(argv: List[str], default_exit: bool = True) -> bool:
     if not dlp.successful_parse:
         return False
 
+    # Version
+    if dlp.opts.version:
+        print("FHIR to RDF Conversion Tool -- Version {}".format(__version__))
+
     # We either have to have an input file or an input directory
     if not dlp.opts.infile and not dlp.opts.indir:
-        print("Either an input file or an input directory must be supplied")
-        return False
+        if not dlp.opts.version:
+            print("Either an input file or an input directory must be supplied")
+        return dlp.opts.version
 
-    postparse(dlp.opts)
+    # Create the output directory if needed
+    if dlp.opts.outdir and not os.path.exists(dlp.opts.outdir):
+        os.makedirs(dlp.opts.outdir)
+
+    # If we are going to a single output file or stdout, gather all the input
+    dlp.opts.graph = Graph() if (not dlp.opts.outfile and not dlp.opts.outdir) or\
+                                (dlp.opts.outfile and len(dlp.opts.outfile) == 1) else None
+    dlp.opts.fhir_metavoc = load_fhir_ontology(dlp.opts)
 
     # If it looks like we're processing a URL as an input file, skip the suffix check
     if dlp.opts.infile and len(dlp.opts.infile) == 1 and not dlp.opts.indir and "://" in dlp.opts.infile[0]:
@@ -163,9 +189,7 @@ def fhirtordf(argv: List[str], default_exit: bool = True) -> bool:
     nfiles, nsuccess = dlp.run(proc=proc_file, file_filter_2=file_filter)
     if nfiles:
         if dlp.opts.graph:
-            outfile = os.path.join(dlp.opts.outdir, dlp.opts.outfile[0]) if dlp.opts.outdir else dlp.opts.outfile[0]
-            print(" (all files) ---> {}".format(outfile))
-            dlp.opts.graph.serialize(outfile, format="turtle")
+            serialize_graph(dlp.opts.graph, dlp.opts.outfile[0] if dlp.opts.outfile else None, dlp.opts)
         return nsuccess > 0
     return False
 

@@ -1,0 +1,446 @@
+
+
+Subject http://hl7.org/fhir/TestReport/testreport-example DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.teardown.TestReport.teardown.action_0.TestReport.teardown.action.operation.TestReport.setup.action.operation.detail> <http://hl7.org/fhir/value> "http://projectcrucible.org/permalink/3" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.teardown.TestReport.teardown.action_0.TestReport.teardown.action.operation.TestReport.setup.action.operation.message> <http://hl7.org/fhir/value> "DELETE Patient/fixture-patient-create." .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.teardown.TestReport.teardown.action_0.TestReport.teardown.action.operation.TestReport.setup.action.operation.result> <http://hl7.org/fhir/value> "pass" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.teardown.TestReport.teardown.action_0.TestReport.teardown.action.operation> <http://hl7.org/fhir/TestReport.setup.action.operation.detail> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.teardown.TestReport.teardown.action_0.TestReport.teardown.action.operation.TestReport.setup.action.operation.detail> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.teardown.TestReport.teardown.action_0.TestReport.teardown.action.operation> <http://hl7.org/fhir/TestReport.setup.action.operation.message> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.teardown.TestReport.teardown.action_0.TestReport.teardown.action.operation.TestReport.setup.action.operation.message> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.teardown.TestReport.teardown.action_0.TestReport.teardown.action.operation> <http://hl7.org/fhir/TestReport.setup.action.operation.result> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.teardown.TestReport.teardown.action_0.TestReport.teardown.action.operation.TestReport.setup.action.operation.result> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_0.TestReport.test.action.operation.TestReport.setup.action.operation.detail> <http://hl7.org/fhir/value> "http://projectcrucible.org/permalink/2" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_0.TestReport.test.action.operation.TestReport.setup.action.operation.message> <http://hl7.org/fhir/value> "GET Patient/fixture-patient-create" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_0.TestReport.test.action.operation.TestReport.setup.action.operation.result> <http://hl7.org/fhir/value> "pass" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_0.TestReport.test.action.operation> <http://hl7.org/fhir/TestReport.setup.action.operation.detail> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_0.TestReport.test.action.operation.TestReport.setup.action.operation.detail> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_0.TestReport.test.action.operation> <http://hl7.org/fhir/TestReport.setup.action.operation.message> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_0.TestReport.test.action.operation.TestReport.setup.action.operation.message> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_0.TestReport.test.action.operation> <http://hl7.org/fhir/TestReport.setup.action.operation.result> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_0.TestReport.test.action.operation.TestReport.setup.action.operation.result> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_1.TestReport.test.action.assert.TestReport.setup.action.assert.detail> <http://hl7.org/fhir/value> "http://projectcrucible.org/permalink/2" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_1.TestReport.test.action.assert.TestReport.setup.action.assert.message> <http://hl7.org/fhir/value> "HTTP 200" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_1.TestReport.test.action.assert.TestReport.setup.action.assert.result> <http://hl7.org/fhir/value> "pass" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_1.TestReport.test.action.assert> <http://hl7.org/fhir/TestReport.setup.action.assert.detail> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_1.TestReport.test.action.assert.TestReport.setup.action.assert.detail> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_1.TestReport.test.action.assert> <http://hl7.org/fhir/TestReport.setup.action.assert.message> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_1.TestReport.test.action.assert.TestReport.setup.action.assert.message> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_1.TestReport.test.action.assert> <http://hl7.org/fhir/TestReport.setup.action.assert.result> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_1.TestReport.test.action.assert.TestReport.setup.action.assert.result> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_2.TestReport.test.action.assert.TestReport.setup.action.assert.detail> <http://hl7.org/fhir/value> "http://projectcrucible.org/permalink/2" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_2.TestReport.test.action.assert.TestReport.setup.action.assert.message> <http://hl7.org/fhir/value> "Last-Modified Present" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_2.TestReport.test.action.assert.TestReport.setup.action.assert.result> <http://hl7.org/fhir/value> "pass" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_2.TestReport.test.action.assert> <http://hl7.org/fhir/TestReport.setup.action.assert.detail> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_2.TestReport.test.action.assert.TestReport.setup.action.assert.detail> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_2.TestReport.test.action.assert> <http://hl7.org/fhir/TestReport.setup.action.assert.message> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_2.TestReport.test.action.assert.TestReport.setup.action.assert.message> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_2.TestReport.test.action.assert> <http://hl7.org/fhir/TestReport.setup.action.assert.result> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_2.TestReport.test.action.assert.TestReport.setup.action.assert.result> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_3.TestReport.test.action.assert.TestReport.setup.action.assert.detail> <http://hl7.org/fhir/value> "http://projectcrucible.org/permalink/2" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_3.TestReport.test.action.assert.TestReport.setup.action.assert.message> <http://hl7.org/fhir/value> "Response is Patient" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_3.TestReport.test.action.assert.TestReport.setup.action.assert.result> <http://hl7.org/fhir/value> "pass" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_3.TestReport.test.action.assert> <http://hl7.org/fhir/TestReport.setup.action.assert.detail> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_3.TestReport.test.action.assert.TestReport.setup.action.assert.detail> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_3.TestReport.test.action.assert> <http://hl7.org/fhir/TestReport.setup.action.assert.message> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_3.TestReport.test.action.assert.TestReport.setup.action.assert.message> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_3.TestReport.test.action.assert> <http://hl7.org/fhir/TestReport.setup.action.assert.result> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_3.TestReport.test.action.assert.TestReport.setup.action.assert.result> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_4.TestReport.test.action.assert.TestReport.setup.action.assert.detail> <http://hl7.org/fhir/value> "http://projectcrucible.org/permalink/2" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_4.TestReport.test.action.assert.TestReport.setup.action.assert.message> <http://hl7.org/fhir/value> "Response validates" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_4.TestReport.test.action.assert.TestReport.setup.action.assert.result> <http://hl7.org/fhir/value> "pass" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_4.TestReport.test.action.assert> <http://hl7.org/fhir/TestReport.setup.action.assert.detail> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_4.TestReport.test.action.assert.TestReport.setup.action.assert.detail> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_4.TestReport.test.action.assert> <http://hl7.org/fhir/TestReport.setup.action.assert.message> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_4.TestReport.test.action.assert.TestReport.setup.action.assert.message> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_4.TestReport.test.action.assert> <http://hl7.org/fhir/TestReport.setup.action.assert.result> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_4.TestReport.test.action.assert.TestReport.setup.action.assert.result> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_5.TestReport.test.action.assert.TestReport.setup.action.assert.detail> <http://hl7.org/fhir/value> "http://projectcrucible.org/permalink/2" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_5.TestReport.test.action.assert.TestReport.setup.action.assert.message> <http://hl7.org/fhir/value> "Patient.name.family 'Chalmers'" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_5.TestReport.test.action.assert.TestReport.setup.action.assert.result> <http://hl7.org/fhir/value> "pass" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_5.TestReport.test.action.assert> <http://hl7.org/fhir/TestReport.setup.action.assert.detail> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_5.TestReport.test.action.assert.TestReport.setup.action.assert.detail> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_5.TestReport.test.action.assert> <http://hl7.org/fhir/TestReport.setup.action.assert.message> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_5.TestReport.test.action.assert.TestReport.setup.action.assert.message> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_5.TestReport.test.action.assert> <http://hl7.org/fhir/TestReport.setup.action.assert.result> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_5.TestReport.test.action.assert.TestReport.setup.action.assert.result> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_6.TestReport.test.action.assert.TestReport.setup.action.assert.detail> <http://hl7.org/fhir/value> "http://projectcrucible.org/permalink/2" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_6.TestReport.test.action.assert.TestReport.setup.action.assert.message> <http://hl7.org/fhir/value> "Patient.name.given 'Peter'" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_6.TestReport.test.action.assert.TestReport.setup.action.assert.result> <http://hl7.org/fhir/value> "pass" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_6.TestReport.test.action.assert> <http://hl7.org/fhir/TestReport.setup.action.assert.detail> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_6.TestReport.test.action.assert.TestReport.setup.action.assert.detail> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_6.TestReport.test.action.assert> <http://hl7.org/fhir/TestReport.setup.action.assert.message> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_6.TestReport.test.action.assert.TestReport.setup.action.assert.message> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_6.TestReport.test.action.assert> <http://hl7.org/fhir/TestReport.setup.action.assert.result> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_6.TestReport.test.action.assert.TestReport.setup.action.assert.result> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_7.TestReport.test.action.assert.TestReport.setup.action.assert.detail> <http://hl7.org/fhir/value> "http://projectcrucible.org/permalink/2" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_7.TestReport.test.action.assert.TestReport.setup.action.assert.message> <http://hl7.org/fhir/value> "Patient.name.family 'Chalmers'" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_7.TestReport.test.action.assert.TestReport.setup.action.assert.result> <http://hl7.org/fhir/value> "pass" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_7.TestReport.test.action.assert> <http://hl7.org/fhir/TestReport.setup.action.assert.detail> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_7.TestReport.test.action.assert.TestReport.setup.action.assert.detail> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_7.TestReport.test.action.assert> <http://hl7.org/fhir/TestReport.setup.action.assert.message> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_7.TestReport.test.action.assert.TestReport.setup.action.assert.message> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_7.TestReport.test.action.assert> <http://hl7.org/fhir/TestReport.setup.action.assert.result> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_7.TestReport.test.action.assert.TestReport.setup.action.assert.result> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_8.TestReport.test.action.assert.TestReport.setup.action.assert.detail> <http://hl7.org/fhir/value> "http://projectcrucible.org/permalink/2" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_8.TestReport.test.action.assert.TestReport.setup.action.assert.message> <http://hl7.org/fhir/value> "Patient.name.family 'Chalmers'" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_8.TestReport.test.action.assert.TestReport.setup.action.assert.result> <http://hl7.org/fhir/value> "pass" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_8.TestReport.test.action.assert> <http://hl7.org/fhir/TestReport.setup.action.assert.detail> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_8.TestReport.test.action.assert.TestReport.setup.action.assert.detail> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_8.TestReport.test.action.assert> <http://hl7.org/fhir/TestReport.setup.action.assert.message> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_8.TestReport.test.action.assert.TestReport.setup.action.assert.message> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_8.TestReport.test.action.assert> <http://hl7.org/fhir/TestReport.setup.action.assert.result> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_8.TestReport.test.action.assert.TestReport.setup.action.assert.result> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_9.TestReport.test.action.assert.TestReport.setup.action.assert.detail> <http://hl7.org/fhir/value> "http://projectcrucible.org/permalink/2" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_9.TestReport.test.action.assert.TestReport.setup.action.assert.message> <http://hl7.org/fhir/value> "Patient expected values." .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_9.TestReport.test.action.assert.TestReport.setup.action.assert.result> <http://hl7.org/fhir/value> "pass" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_9.TestReport.test.action.assert> <http://hl7.org/fhir/TestReport.setup.action.assert.detail> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_9.TestReport.test.action.assert.TestReport.setup.action.assert.detail> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_9.TestReport.test.action.assert> <http://hl7.org/fhir/TestReport.setup.action.assert.message> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_9.TestReport.test.action.assert.TestReport.setup.action.assert.message> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_9.TestReport.test.action.assert> <http://hl7.org/fhir/TestReport.setup.action.assert.result> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_9.TestReport.test.action.assert.TestReport.setup.action.assert.result> .
+	----> Second: 
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.teardown.TestReport.teardown.action_0.TestReport.teardown.action.operation.TestReport.teardown.action.operation.detail> <http://hl7.org/fhir/value> "http://projectcrucible.org/permalink/3" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.teardown.TestReport.teardown.action_0.TestReport.teardown.action.operation.TestReport.teardown.action.operation.message> <http://hl7.org/fhir/value> "DELETE Patient/fixture-patient-create." .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.teardown.TestReport.teardown.action_0.TestReport.teardown.action.operation.TestReport.teardown.action.operation.result> <http://hl7.org/fhir/value> "pass" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.teardown.TestReport.teardown.action_0.TestReport.teardown.action.operation> <http://hl7.org/fhir/TestReport.teardown.action.operation.detail> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.teardown.TestReport.teardown.action_0.TestReport.teardown.action.operation.TestReport.teardown.action.operation.detail> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.teardown.TestReport.teardown.action_0.TestReport.teardown.action.operation> <http://hl7.org/fhir/TestReport.teardown.action.operation.message> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.teardown.TestReport.teardown.action_0.TestReport.teardown.action.operation.TestReport.teardown.action.operation.message> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.teardown.TestReport.teardown.action_0.TestReport.teardown.action.operation> <http://hl7.org/fhir/TestReport.teardown.action.operation.result> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.teardown.TestReport.teardown.action_0.TestReport.teardown.action.operation.TestReport.teardown.action.operation.result> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_0.TestReport.test.action.operation.TestReport.test.action.operation.detail> <http://hl7.org/fhir/value> "http://projectcrucible.org/permalink/2" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_0.TestReport.test.action.operation.TestReport.test.action.operation.message> <http://hl7.org/fhir/value> "GET Patient/fixture-patient-create" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_0.TestReport.test.action.operation.TestReport.test.action.operation.result> <http://hl7.org/fhir/value> "pass" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_0.TestReport.test.action.operation> <http://hl7.org/fhir/TestReport.test.action.operation.detail> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_0.TestReport.test.action.operation.TestReport.test.action.operation.detail> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_0.TestReport.test.action.operation> <http://hl7.org/fhir/TestReport.test.action.operation.message> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_0.TestReport.test.action.operation.TestReport.test.action.operation.message> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_0.TestReport.test.action.operation> <http://hl7.org/fhir/TestReport.test.action.operation.result> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_0.TestReport.test.action.operation.TestReport.test.action.operation.result> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_1.TestReport.test.action.assert.TestReport.test.action.assert.detail> <http://hl7.org/fhir/value> "http://projectcrucible.org/permalink/2" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_1.TestReport.test.action.assert.TestReport.test.action.assert.message> <http://hl7.org/fhir/value> "HTTP 200" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_1.TestReport.test.action.assert.TestReport.test.action.assert.result> <http://hl7.org/fhir/value> "pass" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_1.TestReport.test.action.assert> <http://hl7.org/fhir/TestReport.test.action.assert.detail> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_1.TestReport.test.action.assert.TestReport.test.action.assert.detail> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_1.TestReport.test.action.assert> <http://hl7.org/fhir/TestReport.test.action.assert.message> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_1.TestReport.test.action.assert.TestReport.test.action.assert.message> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_1.TestReport.test.action.assert> <http://hl7.org/fhir/TestReport.test.action.assert.result> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_1.TestReport.test.action.assert.TestReport.test.action.assert.result> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_2.TestReport.test.action.assert.TestReport.test.action.assert.detail> <http://hl7.org/fhir/value> "http://projectcrucible.org/permalink/2" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_2.TestReport.test.action.assert.TestReport.test.action.assert.message> <http://hl7.org/fhir/value> "Last-Modified Present" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_2.TestReport.test.action.assert.TestReport.test.action.assert.result> <http://hl7.org/fhir/value> "pass" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_2.TestReport.test.action.assert> <http://hl7.org/fhir/TestReport.test.action.assert.detail> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_2.TestReport.test.action.assert.TestReport.test.action.assert.detail> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_2.TestReport.test.action.assert> <http://hl7.org/fhir/TestReport.test.action.assert.message> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_2.TestReport.test.action.assert.TestReport.test.action.assert.message> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_2.TestReport.test.action.assert> <http://hl7.org/fhir/TestReport.test.action.assert.result> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_2.TestReport.test.action.assert.TestReport.test.action.assert.result> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_3.TestReport.test.action.assert.TestReport.test.action.assert.detail> <http://hl7.org/fhir/value> "http://projectcrucible.org/permalink/2" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_3.TestReport.test.action.assert.TestReport.test.action.assert.message> <http://hl7.org/fhir/value> "Response is Patient" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_3.TestReport.test.action.assert.TestReport.test.action.assert.result> <http://hl7.org/fhir/value> "pass" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_3.TestReport.test.action.assert> <http://hl7.org/fhir/TestReport.test.action.assert.detail> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_3.TestReport.test.action.assert.TestReport.test.action.assert.detail> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_3.TestReport.test.action.assert> <http://hl7.org/fhir/TestReport.test.action.assert.message> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_3.TestReport.test.action.assert.TestReport.test.action.assert.message> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_3.TestReport.test.action.assert> <http://hl7.org/fhir/TestReport.test.action.assert.result> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_3.TestReport.test.action.assert.TestReport.test.action.assert.result> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_4.TestReport.test.action.assert.TestReport.test.action.assert.detail> <http://hl7.org/fhir/value> "http://projectcrucible.org/permalink/2" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_4.TestReport.test.action.assert.TestReport.test.action.assert.message> <http://hl7.org/fhir/value> "Response validates" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_4.TestReport.test.action.assert.TestReport.test.action.assert.result> <http://hl7.org/fhir/value> "pass" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_4.TestReport.test.action.assert> <http://hl7.org/fhir/TestReport.test.action.assert.detail> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_4.TestReport.test.action.assert.TestReport.test.action.assert.detail> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_4.TestReport.test.action.assert> <http://hl7.org/fhir/TestReport.test.action.assert.message> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_4.TestReport.test.action.assert.TestReport.test.action.assert.message> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_4.TestReport.test.action.assert> <http://hl7.org/fhir/TestReport.test.action.assert.result> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_4.TestReport.test.action.assert.TestReport.test.action.assert.result> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_5.TestReport.test.action.assert.TestReport.test.action.assert.detail> <http://hl7.org/fhir/value> "http://projectcrucible.org/permalink/2" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_5.TestReport.test.action.assert.TestReport.test.action.assert.message> <http://hl7.org/fhir/value> "Patient.name.family 'Chalmers'" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_5.TestReport.test.action.assert.TestReport.test.action.assert.result> <http://hl7.org/fhir/value> "pass" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_5.TestReport.test.action.assert> <http://hl7.org/fhir/TestReport.test.action.assert.detail> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_5.TestReport.test.action.assert.TestReport.test.action.assert.detail> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_5.TestReport.test.action.assert> <http://hl7.org/fhir/TestReport.test.action.assert.message> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_5.TestReport.test.action.assert.TestReport.test.action.assert.message> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_5.TestReport.test.action.assert> <http://hl7.org/fhir/TestReport.test.action.assert.result> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_5.TestReport.test.action.assert.TestReport.test.action.assert.result> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_6.TestReport.test.action.assert.TestReport.test.action.assert.detail> <http://hl7.org/fhir/value> "http://projectcrucible.org/permalink/2" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_6.TestReport.test.action.assert.TestReport.test.action.assert.message> <http://hl7.org/fhir/value> "Patient.name.given 'Peter'" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_6.TestReport.test.action.assert.TestReport.test.action.assert.result> <http://hl7.org/fhir/value> "pass" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_6.TestReport.test.action.assert> <http://hl7.org/fhir/TestReport.test.action.assert.detail> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_6.TestReport.test.action.assert.TestReport.test.action.assert.detail> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_6.TestReport.test.action.assert> <http://hl7.org/fhir/TestReport.test.action.assert.message> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_6.TestReport.test.action.assert.TestReport.test.action.assert.message> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_6.TestReport.test.action.assert> <http://hl7.org/fhir/TestReport.test.action.assert.result> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_6.TestReport.test.action.assert.TestReport.test.action.assert.result> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_7.TestReport.test.action.assert.TestReport.test.action.assert.detail> <http://hl7.org/fhir/value> "http://projectcrucible.org/permalink/2" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_7.TestReport.test.action.assert.TestReport.test.action.assert.message> <http://hl7.org/fhir/value> "Patient.name.family 'Chalmers'" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_7.TestReport.test.action.assert.TestReport.test.action.assert.result> <http://hl7.org/fhir/value> "pass" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_7.TestReport.test.action.assert> <http://hl7.org/fhir/TestReport.test.action.assert.detail> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_7.TestReport.test.action.assert.TestReport.test.action.assert.detail> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_7.TestReport.test.action.assert> <http://hl7.org/fhir/TestReport.test.action.assert.message> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_7.TestReport.test.action.assert.TestReport.test.action.assert.message> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_7.TestReport.test.action.assert> <http://hl7.org/fhir/TestReport.test.action.assert.result> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_7.TestReport.test.action.assert.TestReport.test.action.assert.result> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_8.TestReport.test.action.assert.TestReport.test.action.assert.detail> <http://hl7.org/fhir/value> "http://projectcrucible.org/permalink/2" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_8.TestReport.test.action.assert.TestReport.test.action.assert.message> <http://hl7.org/fhir/value> "Patient.name.family 'Chalmers'" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_8.TestReport.test.action.assert.TestReport.test.action.assert.result> <http://hl7.org/fhir/value> "pass" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_8.TestReport.test.action.assert> <http://hl7.org/fhir/TestReport.test.action.assert.detail> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_8.TestReport.test.action.assert.TestReport.test.action.assert.detail> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_8.TestReport.test.action.assert> <http://hl7.org/fhir/TestReport.test.action.assert.message> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_8.TestReport.test.action.assert.TestReport.test.action.assert.message> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_8.TestReport.test.action.assert> <http://hl7.org/fhir/TestReport.test.action.assert.result> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_8.TestReport.test.action.assert.TestReport.test.action.assert.result> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_9.TestReport.test.action.assert.TestReport.test.action.assert.detail> <http://hl7.org/fhir/value> "http://projectcrucible.org/permalink/2" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_9.TestReport.test.action.assert.TestReport.test.action.assert.message> <http://hl7.org/fhir/value> "Patient expected values." .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_9.TestReport.test.action.assert.TestReport.test.action.assert.result> <http://hl7.org/fhir/value> "pass" .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_9.TestReport.test.action.assert> <http://hl7.org/fhir/TestReport.test.action.assert.detail> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_9.TestReport.test.action.assert.TestReport.test.action.assert.detail> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_9.TestReport.test.action.assert> <http://hl7.org/fhir/TestReport.test.action.assert.message> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_9.TestReport.test.action.assert.TestReport.test.action.assert.message> .
+<http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_9.TestReport.test.action.assert> <http://hl7.org/fhir/TestReport.test.action.assert.result> <http://hl7.org/fhir/TestReport/testreport-example.TestReport.test_0.TestReport.test.action_9.TestReport.test.action.assert.TestReport.test.action.assert.result> .----------------------------------------
+
+========================================
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix w5: <http://hl7.org/fhir/w5#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://hl7.org/fhir/TestReport/testreport-example> a fhir:TestReport ;
+    fhir:nodeRole fhir:treeRoot ;
+    fhir:DomainResource.text [
+        fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: testreport-example</p><p><b>identifier</b>: urn:oid:1.3.6.1.4.1.21367.2005.3.7.9878</p><p><b>name</b>: TestReport Example for TestScript Example</p><p><b>status</b>: completed</p><p><b>testScript</b>: <a>TestScript/testscript-example</a></p><p><b>result</b>: pass</p><p><b>score</b>: 100.0</p><p><b>tester</b>: HL7 Execution Engine</p><p><b>issued</b>: Oct 7, 2016 8:25:34 AM</p><blockquote><p><b>participant</b></p><p><b>type</b>: test-engine</p><p><b>uri</b>: <a>http://projectcrucible.org</a></p><p><b>display</b>: Crucible</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: server</p><p><b>uri</b>: <a>http://fhir3.healthintersections.com.au/open</a></p><p><b>display</b>: HealthIntersections STU3</p></blockquote><blockquote><p><b>setup</b></p><blockquote><p><b>action</b></p><h3>Operations</h3><table><tr><td>-</td><td><b>Result</b></td><td><b>Message</b></td><td><b>Detail</b></td></tr><tr><td>*</td><td>pass</td><td>DELETE Patient</td><td><a>http://projectcrucible.org/permalink/1</a></td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table><tr><td>-</td><td><b>Result</b></td><td><b>Message</b></td><td><b>Detail</b></td></tr><tr><td>*</td><td>pass</td><td>HTTP 204</td><td>http://projectcrucible.org/permalink/1</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Operations</h3><table><tr><td>-</td><td><b>Result</b></td><td><b>Message</b></td><td><b>Detail</b></td></tr><tr><td>*</td><td>pass</td><td>POST Patient/fixture-patient-create</td><td><a>http://projectcrucible.org/permalink/1</a></td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table><tr><td>-</td><td><b>Result</b></td><td><b>Message</b></td><td><b>Detail</b></td></tr><tr><td>*</td><td>pass</td><td>HTTP 201</td><td>http://projectcrucible.org/permalink/1</td></tr></table></blockquote></blockquote><blockquote><p><b>test</b></p><p><b>name</b>: Read Patient</p><p><b>description</b>: Read a Patient and validate response.</p><blockquote><p><b>action</b></p><h3>Operations</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></blockquote><blockquote><p><b>teardown</b></p><blockquote><p><b>action</b></p><h3>Operations</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></blockquote></div>" ;
+        fhir:Narrative.status [
+            fhir:value "generated"
+        ]
+    ] ;
+    fhir:Resource.id [
+        fhir:value "testreport-example"
+    ] ;
+    fhir:TestReport.identifier [
+        fhir:Identifier.system [
+            fhir:value "urn:ietf:rfc:3986"
+        ] ;
+        fhir:Identifier.value [
+            fhir:value "urn:oid:1.3.6.1.4.1.21367.2005.3.7.9878"
+        ]
+    ] ;
+    fhir:TestReport.issued [
+        fhir:value "2016-10-07T08:25:34-05:00"^^xsd:dateTime
+    ] ;
+    fhir:TestReport.name [
+        fhir:value "TestReport Example for TestScript Example"
+    ] ;
+    fhir:TestReport.participant [
+        fhir:index "1"^^xsd:integer ;
+        fhir:TestReport.participant.display [
+            fhir:value "HealthIntersections STU3"
+        ] ;
+        fhir:TestReport.participant.type [
+            fhir:value "server"
+        ] ;
+        fhir:TestReport.participant.uri [
+            fhir:value "http://fhir3.healthintersections.com.au/open"
+        ]
+    ],
+        [
+        fhir:index "0"^^xsd:integer ;
+        fhir:TestReport.participant.display [
+            fhir:value "Crucible"
+        ] ;
+        fhir:TestReport.participant.type [
+            fhir:value "test-engine"
+        ] ;
+        fhir:TestReport.participant.uri [
+            fhir:value "http://projectcrucible.org"
+        ]
+    ] ;
+    fhir:TestReport.result [
+        fhir:value "pass"
+    ] ;
+    fhir:TestReport.score [
+        fhir:value "100.0"^^xsd:decimal
+    ] ;
+    fhir:TestReport.setup [
+        fhir:TestReport.setup.action [
+            fhir:index "3"^^xsd:integer ;
+            fhir:TestReport.setup.action.assert [
+                fhir:TestReport.setup.action.assert.detail [
+                    fhir:value "http://projectcrucible.org/permalink/1"
+                ] ;
+                fhir:TestReport.setup.action.assert.message [
+                    fhir:value "HTTP 201"
+                ] ;
+                fhir:TestReport.setup.action.assert.result [
+                    fhir:value "pass"
+                ]
+            ]
+        ],
+            [
+            fhir:index "0"^^xsd:integer ;
+            fhir:TestReport.setup.action.operation [
+                fhir:TestReport.setup.action.operation.detail [
+                    fhir:value "http://projectcrucible.org/permalink/1"
+                ] ;
+                fhir:TestReport.setup.action.operation.message [
+                    fhir:value "DELETE Patient"
+                ] ;
+                fhir:TestReport.setup.action.operation.result [
+                    fhir:value "pass"
+                ]
+            ]
+        ],
+            [
+            fhir:index "2"^^xsd:integer ;
+            fhir:TestReport.setup.action.operation [
+                fhir:TestReport.setup.action.operation.detail [
+                    fhir:value "http://projectcrucible.org/permalink/1"
+                ] ;
+                fhir:TestReport.setup.action.operation.message [
+                    fhir:value "POST Patient/fixture-patient-create"
+                ] ;
+                fhir:TestReport.setup.action.operation.result [
+                    fhir:value "pass"
+                ]
+            ]
+        ],
+            [
+            fhir:index "1"^^xsd:integer ;
+            fhir:TestReport.setup.action.assert [
+                fhir:TestReport.setup.action.assert.detail [
+                    fhir:value "http://projectcrucible.org/permalink/1"
+                ] ;
+                fhir:TestReport.setup.action.assert.message [
+                    fhir:value "HTTP 204"
+                ] ;
+                fhir:TestReport.setup.action.assert.result [
+                    fhir:value "pass"
+                ]
+            ]
+        ]
+    ] ;
+    fhir:TestReport.status [
+        fhir:value "completed"
+    ] ;
+    fhir:TestReport.teardown [
+        fhir:TestReport.teardown.action [
+            fhir:index "0"^^xsd:integer ;
+            fhir:TestReport.teardown.action.operation [
+                fhir:TestReport.teardown.action.operation.detail [
+                    fhir:value "http://projectcrucible.org/permalink/3"
+                ] ;
+                fhir:TestReport.teardown.action.operation.message [
+                    fhir:value "DELETE Patient/fixture-patient-create."
+                ] ;
+                fhir:TestReport.teardown.action.operation.result [
+                    fhir:value "pass"
+                ]
+            ]
+        ]
+    ] ;
+    fhir:TestReport.test [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Element.id [
+            fhir:value "01-ReadPatient"
+        ] ;
+        fhir:TestReport.test.action [
+            fhir:index "3"^^xsd:integer ;
+            fhir:TestReport.test.action.assert [
+                fhir:TestReport.test.action.assert.detail [
+                    fhir:value "http://projectcrucible.org/permalink/2"
+                ] ;
+                fhir:TestReport.test.action.assert.message [
+                    fhir:value "Response is Patient"
+                ] ;
+                fhir:TestReport.test.action.assert.result [
+                    fhir:value "pass"
+                ]
+            ]
+        ],
+            [
+            fhir:index "7"^^xsd:integer ;
+            fhir:TestReport.test.action.assert [
+                fhir:TestReport.test.action.assert.detail [
+                    fhir:value "http://projectcrucible.org/permalink/2"
+                ] ;
+                fhir:TestReport.test.action.assert.message [
+                    fhir:value "Patient.name.family 'Chalmers'"
+                ] ;
+                fhir:TestReport.test.action.assert.result [
+                    fhir:value "pass"
+                ]
+            ]
+        ],
+            [
+            fhir:index "8"^^xsd:integer ;
+            fhir:TestReport.test.action.assert [
+                fhir:TestReport.test.action.assert.detail [
+                    fhir:value "http://projectcrucible.org/permalink/2"
+                ] ;
+                fhir:TestReport.test.action.assert.message [
+                    fhir:value "Patient.name.family 'Chalmers'"
+                ] ;
+                fhir:TestReport.test.action.assert.result [
+                    fhir:value "pass"
+                ]
+            ]
+        ],
+            [
+            fhir:index "5"^^xsd:integer ;
+            fhir:TestReport.test.action.assert [
+                fhir:TestReport.test.action.assert.detail [
+                    fhir:value "http://projectcrucible.org/permalink/2"
+                ] ;
+                fhir:TestReport.test.action.assert.message [
+                    fhir:value "Patient.name.family 'Chalmers'"
+                ] ;
+                fhir:TestReport.test.action.assert.result [
+                    fhir:value "pass"
+                ]
+            ]
+        ],
+            [
+            fhir:index "9"^^xsd:integer ;
+            fhir:TestReport.test.action.assert [
+                fhir:TestReport.test.action.assert.detail [
+                    fhir:value "http://projectcrucible.org/permalink/2"
+                ] ;
+                fhir:TestReport.test.action.assert.message [
+                    fhir:value "Patient expected values."
+                ] ;
+                fhir:TestReport.test.action.assert.result [
+                    fhir:value "pass"
+                ]
+            ]
+        ],
+            [
+            fhir:index "6"^^xsd:integer ;
+            fhir:TestReport.test.action.assert [
+                fhir:TestReport.test.action.assert.detail [
+                    fhir:value "http://projectcrucible.org/permalink/2"
+                ] ;
+                fhir:TestReport.test.action.assert.message [
+                    fhir:value "Patient.name.given 'Peter'"
+                ] ;
+                fhir:TestReport.test.action.assert.result [
+                    fhir:value "pass"
+                ]
+            ]
+        ],
+            [
+            fhir:index "4"^^xsd:integer ;
+            fhir:TestReport.test.action.assert [
+                fhir:TestReport.test.action.assert.detail [
+                    fhir:value "http://projectcrucible.org/permalink/2"
+                ] ;
+                fhir:TestReport.test.action.assert.message [
+                    fhir:value "Response validates"
+                ] ;
+                fhir:TestReport.test.action.assert.result [
+                    fhir:value "pass"
+                ]
+            ]
+        ],
+            [
+            fhir:index "1"^^xsd:integer ;
+            fhir:TestReport.test.action.assert [
+                fhir:TestReport.test.action.assert.detail [
+                    fhir:value "http://projectcrucible.org/permalink/2"
+                ] ;
+                fhir:TestReport.test.action.assert.message [
+                    fhir:value "HTTP 200"
+                ] ;
+                fhir:TestReport.test.action.assert.result [
+                    fhir:value "pass"
+                ]
+            ]
+        ],
+            [
+            fhir:index "2"^^xsd:integer ;
+            fhir:TestReport.test.action.assert [
+                fhir:TestReport.test.action.assert.detail [
+                    fhir:value "http://projectcrucible.org/permalink/2"
+                ] ;
+                fhir:TestReport.test.action.assert.message [
+                    fhir:value "Last-Modified Present"
+                ] ;
+                fhir:TestReport.test.action.assert.result [
+                    fhir:value "pass"
+                ]
+            ]
+        ],
+            [
+            fhir:index "0"^^xsd:integer ;
+            fhir:TestReport.test.action.operation [
+                fhir:TestReport.test.action.operation.detail [
+                    fhir:value "http://projectcrucible.org/permalink/2"
+                ] ;
+                fhir:TestReport.test.action.operation.message [
+                    fhir:value "GET Patient/fixture-patient-create"
+                ] ;
+                fhir:TestReport.test.action.operation.result [
+                    fhir:value "pass"
+                ]
+            ]
+        ] ;
+        fhir:TestReport.test.description [
+            fhir:value "Read a Patient and validate response."
+        ] ;
+        fhir:TestReport.test.name [
+            fhir:value "Read Patient"
+        ]
+    ] ;
+    fhir:TestReport.testScript [
+        fhir:link <http://hl7.org/fhir/TestScript/testscript-example> ;
+        fhir:Reference.reference [
+            fhir:value "TestScript/testscript-example"
+        ]
+    ] ;
+    fhir:TestReport.tester [
+        fhir:value "HL7 Execution Engine"
+    ] .
+
+<http://hl7.org/fhir/TestReport/testreport-example.ttl> a owl:Ontology ;
+    owl:imports fhir:fhir.ttl .
+
+<http://hl7.org/fhir/TestScript/testscript-example> a fhir:TestScript .
+

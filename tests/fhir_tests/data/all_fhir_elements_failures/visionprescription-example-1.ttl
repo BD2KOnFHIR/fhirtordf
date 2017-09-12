@@ -1,0 +1,207 @@
+
+
+Subject http://hl7.org/fhir/VisionPrescription/33124 DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/VisionPrescription/33124.VisionPrescription.dispense_1.VisionPrescription.dispense.cylinder> <http://hl7.org/fhir/value> "-3.50"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+	----> Second: 
+<http://hl7.org/fhir/VisionPrescription/33124.VisionPrescription.dispense_1.VisionPrescription.dispense.cylinder> <http://hl7.org/fhir/value> "-3.5"^^<http://www.w3.org/2001/XMLSchema#decimal> .----------------------------------------
+
+========================================
+@prefix ex-visionprescriptionproduct: <http://hl7.org/fhir/ex-visionprescriptionproduct> .
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix w5: <http://hl7.org/fhir/w5#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://hl7.org/fhir/VisionPrescription/33124> a fhir:VisionPrescription ;
+    fhir:nodeRole fhir:treeRoot ;
+    fhir:DomainResource.text [
+        fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Sample Contract Lens prescription</div>" ;
+        fhir:Narrative.status [
+            fhir:value "generated"
+        ]
+    ] ;
+    fhir:Resource.id [
+        fhir:value "33124"
+    ] ;
+    fhir:VisionPrescription.dateWritten [
+        fhir:value "2014-06-15"^^xsd:date
+    ] ;
+    fhir:VisionPrescription.dispense [
+        fhir:index "1"^^xsd:integer ;
+        fhir:VisionPrescription.dispense.add [
+            fhir:value "1.75"^^xsd:decimal
+        ] ;
+        fhir:VisionPrescription.dispense.axis [
+            fhir:value "160"^^xsd:integer
+        ] ;
+        fhir:VisionPrescription.dispense.backCurve [
+            fhir:value "8.7"^^xsd:decimal
+        ] ;
+        fhir:VisionPrescription.dispense.brand [
+            fhir:value "OphthaGuard"
+        ] ;
+        fhir:VisionPrescription.dispense.color [
+            fhir:value "green"
+        ] ;
+        fhir:VisionPrescription.dispense.cylinder [
+            fhir:value "-3.5"^^xsd:decimal
+        ] ;
+        fhir:VisionPrescription.dispense.diameter [
+            fhir:value "14.0"^^xsd:decimal
+        ] ;
+        fhir:VisionPrescription.dispense.duration [
+            fhir:Quantity.code [
+                fhir:value "month"
+            ] ;
+            fhir:Quantity.system [
+                fhir:value "http://unitsofmeasure.org"
+            ] ;
+            fhir:Quantity.unit [
+                fhir:value "month"
+            ] ;
+            fhir:Quantity.value [
+                fhir:value "1"^^xsd:decimal
+            ]
+        ] ;
+        fhir:VisionPrescription.dispense.eye [
+            fhir:value "left"
+        ] ;
+        fhir:VisionPrescription.dispense.note [
+            fhir:index "0"^^xsd:integer ;
+            fhir:Annotation.text [
+                fhir:value "Shade treatment for extreme light sensitivity"
+            ]
+        ] ;
+        fhir:VisionPrescription.dispense.power [
+            fhir:value "-2.75"^^xsd:decimal
+        ] ;
+        fhir:VisionPrescription.dispense.product [
+            fhir:CodeableConcept.coding [
+                a <http://hl7.org/fhir/ex-visionprescriptionproduct/contact> ;
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "contact"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://hl7.org/fhir/ex-visionprescriptionproduct"
+                ]
+            ]
+        ]
+    ],
+        [
+        fhir:index "0"^^xsd:integer ;
+        fhir:VisionPrescription.dispense.add [
+            fhir:value "1.75"^^xsd:decimal
+        ] ;
+        fhir:VisionPrescription.dispense.axis [
+            fhir:value "160"^^xsd:integer
+        ] ;
+        fhir:VisionPrescription.dispense.backCurve [
+            fhir:value "8.7"^^xsd:decimal
+        ] ;
+        fhir:VisionPrescription.dispense.brand [
+            fhir:value "OphthaGuard"
+        ] ;
+        fhir:VisionPrescription.dispense.color [
+            fhir:value "green"
+        ] ;
+        fhir:VisionPrescription.dispense.cylinder [
+            fhir:value "-2.25"^^xsd:decimal
+        ] ;
+        fhir:VisionPrescription.dispense.diameter [
+            fhir:value "14.0"^^xsd:decimal
+        ] ;
+        fhir:VisionPrescription.dispense.duration [
+            fhir:Quantity.code [
+                fhir:value "month"
+            ] ;
+            fhir:Quantity.system [
+                fhir:value "http://unitsofmeasure.org"
+            ] ;
+            fhir:Quantity.unit [
+                fhir:value "month"
+            ] ;
+            fhir:Quantity.value [
+                fhir:value "1"^^xsd:decimal
+            ]
+        ] ;
+        fhir:VisionPrescription.dispense.eye [
+            fhir:value "right"
+        ] ;
+        fhir:VisionPrescription.dispense.note [
+            fhir:index "0"^^xsd:integer ;
+            fhir:Annotation.text [
+                fhir:value "Shade treatment for extreme light sensitivity"
+            ]
+        ] ;
+        fhir:VisionPrescription.dispense.power [
+            fhir:value "-2.75"^^xsd:decimal
+        ] ;
+        fhir:VisionPrescription.dispense.product [
+            fhir:CodeableConcept.coding [
+                a <http://hl7.org/fhir/ex-visionprescriptionproduct/contact> ;
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "contact"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://hl7.org/fhir/ex-visionprescriptionproduct"
+                ]
+            ]
+        ]
+    ] ;
+    fhir:VisionPrescription.encounter [
+        fhir:link <http://hl7.org/fhir/Encounter/f001> ;
+        fhir:Reference.reference [
+            fhir:value "Encounter/f001"
+        ]
+    ] ;
+    fhir:VisionPrescription.identifier [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Identifier.system [
+            fhir:value "http://www.happysight.com/prescription"
+        ] ;
+        fhir:Identifier.value [
+            fhir:value "15014"
+        ]
+    ] ;
+    fhir:VisionPrescription.patient [
+        fhir:link <http://hl7.org/fhir/Patient/example> ;
+        fhir:Reference.reference [
+            fhir:value "Patient/example"
+        ]
+    ] ;
+    fhir:VisionPrescription.prescriber [
+        fhir:link <http://hl7.org/fhir/Practitioner/example> ;
+        fhir:Reference.reference [
+            fhir:value "Practitioner/example"
+        ]
+    ] ;
+    fhir:VisionPrescription.reasonCodeableConcept [
+        fhir:CodeableConcept.coding [
+            fhir:index "0"^^xsd:integer ;
+            fhir:Coding.code [
+                fhir:value "myopia"
+            ] ;
+            fhir:Coding.system [
+                fhir:value "http://samplevisionreasoncodes.com"
+            ]
+        ]
+    ] ;
+    fhir:VisionPrescription.status [
+        fhir:value "active"
+    ] .
+
+<http://hl7.org/fhir/VisionPrescription/33124.ttl> a owl:Ontology ;
+    owl:imports fhir:fhir.ttl .
+
+<http://hl7.org/fhir/Encounter/f001> a fhir:Encounter .
+
+<http://hl7.org/fhir/Patient/example> a fhir:Patient .
+
+<http://hl7.org/fhir/Practitioner/example> a fhir:Practitioner .
+

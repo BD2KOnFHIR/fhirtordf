@@ -1,0 +1,109 @@
+
+
+Subject http://hl7.org/fhir/PaymentNotice/77654 DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/PaymentNotice/77654.PaymentNotice.request> <http://hl7.org/fhir/link> <http://benefitsinc.com/fhir/claim/12345> .
+<http://hl7.org/fhir/PaymentNotice/77654.PaymentNotice.response> <http://hl7.org/fhir/link> <http://benefitsinc.com/fhir/claimresponse/CR12345> .
+	----> Second: 
+<http://hl7.org/fhir/PaymentNotice/77654.PaymentNotice.request> <http://hl7.org/fhir/link> <http://hl7.org/fhir/http%3A//benefitsinc.com/fhir/claim/12345> .
+<http://hl7.org/fhir/PaymentNotice/77654.PaymentNotice.response> <http://hl7.org/fhir/link> <http://hl7.org/fhir/http%3A//benefitsinc.com/fhir/claimresponse/CR12345> .----------------------------------------
+
+========================================
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix paymentstatus: <http://hl7.org/fhir/paymentstatus> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix w5: <http://hl7.org/fhir/w5#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://hl7.org/fhir/PaymentNotice/77654> a fhir:PaymentNotice ;
+    fhir:nodeRole fhir:treeRoot ;
+    fhir:DomainResource.text [
+        fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">A human-readable rendering of the PaymentNotice</div>" ;
+        fhir:Narrative.status [
+            fhir:value "generated"
+        ]
+    ] ;
+    fhir:PaymentNotice.created [
+        fhir:value "2014-08-16"^^xsd:date
+    ] ;
+    fhir:PaymentNotice.identifier [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Identifier.system [
+            fhir:value "http://benefitsinc.com/paymentnotice"
+        ] ;
+        fhir:Identifier.value [
+            fhir:value "776543"
+        ]
+    ] ;
+    fhir:PaymentNotice.organization [
+        fhir:link <http://hl7.org/fhir/Organization/1> ;
+        fhir:Reference.reference [
+            fhir:value "Organization/1"
+        ]
+    ] ;
+    fhir:PaymentNotice.paymentStatus [
+        fhir:CodeableConcept.coding [
+            a <http://hl7.org/fhir/paymentstatus/paid> ;
+            fhir:index "0"^^xsd:integer ;
+            fhir:Coding.code [
+                fhir:value "paid"
+            ] ;
+            fhir:Coding.system [
+                fhir:value "http://hl7.org/fhir/paymentstatus"
+            ]
+        ]
+    ] ;
+    fhir:PaymentNotice.provider [
+        fhir:Reference.identifier [
+            fhir:Identifier.system [
+                fhir:value "http://npid.org/provider"
+            ] ;
+            fhir:Identifier.value [
+                fhir:value "PR957857"
+            ]
+        ]
+    ] ;
+    fhir:PaymentNotice.request [
+        fhir:link <http://hl7.org/fhir/http%3A//benefitsinc.com/fhir/claim/12345> ;
+        fhir:Reference.reference [
+            fhir:value "http://benefitsinc.com/fhir/claim/12345"
+        ]
+    ] ;
+    fhir:PaymentNotice.response [
+        fhir:link <http://hl7.org/fhir/http%3A//benefitsinc.com/fhir/claimresponse/CR12345> ;
+        fhir:Reference.reference [
+            fhir:value "http://benefitsinc.com/fhir/claimresponse/CR12345"
+        ]
+    ] ;
+    fhir:PaymentNotice.status [
+        fhir:value "active"
+    ] ;
+    fhir:PaymentNotice.statusDate [
+        fhir:value "2014-08-15"^^xsd:date
+    ] ;
+    fhir:PaymentNotice.target [
+        fhir:Reference.identifier [
+            fhir:Identifier.system [
+                fhir:value "http://regulators.gov"
+            ] ;
+            fhir:Identifier.value [
+                fhir:value "AB123"
+            ]
+        ]
+    ] ;
+    fhir:Resource.id [
+        fhir:value "77654"
+    ] .
+
+<http://hl7.org/fhir/PaymentNotice/77654.ttl> a owl:Ontology ;
+    owl:imports fhir:fhir.ttl .
+
+<http://hl7.org/fhir/Organization/1> a fhir:Organization .
+
+<http://hl7.org/fhir/http%3A//benefitsinc.com/fhir/claim/12345> a <http://hl7.org/fhir/http:> .
+
+<http://hl7.org/fhir/http%3A//benefitsinc.com/fhir/claimresponse/CR12345> a <http://hl7.org/fhir/http:> .
+

@@ -1,0 +1,153 @@
+
+
+Subject http://hl7.org/fhir/ImagingManifest/example DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_0.ImagingManifest.study.series.instance_0.ImagingManifest.study.series.instance.sopClass> <http://hl7.org/fhir/value> "urn:oid:1.2.840.10008.5.1.4.1.1.7" .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_0.ImagingManifest.study.series.instance_0.ImagingManifest.study.series.instance.uid> <http://hl7.org/fhir/value> "urn:oid:2.16.124.113543.6003.189642796.63084.16748.2599092902" .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_0.ImagingManifest.study.series.uid> <http://hl7.org/fhir/value> "urn:oid:2.16.124.113543.6003.189642796.63084.16750.2599092901" .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_1.ImagingManifest.study.series.instance_0.ImagingManifest.study.series.instance.sopClass> <http://hl7.org/fhir/value> "urn:oid:1.2.840.10008.5.1.4.1.1.2" .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_1.ImagingManifest.study.series.instance_0.ImagingManifest.study.series.instance.uid> <http://hl7.org/fhir/value> "urn:oid:2.16.124.113543.6003.189642796.63084.16748.2599092903" .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_1.ImagingManifest.study.series.instance_1.ImagingManifest.study.series.instance.sopClass> <http://hl7.org/fhir/value> "urn:oid:1.2.840.10008.5.1.4.1.1.2" .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_1.ImagingManifest.study.series.instance_1.ImagingManifest.study.series.instance.uid> <http://hl7.org/fhir/value> "urn:oid:2.16.124.113543.6003.189642796.63084.16748.2599092904" .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_1.ImagingManifest.study.series.uid> <http://hl7.org/fhir/value> "urn:oid:2.16.124.113543.6003.189642796.63084.16750.2599092902" .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.uid> <http://hl7.org/fhir/value> "urn:oid:2.16.124.113543.6003.189642796.63084.16749.2599092904" .
+	----> Second: 
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_0.ImagingManifest.study.series.instance_0.ImagingManifest.study.series.instance.sopClass> <http://hl7.org/fhir/value> "urn:oid:1.2.840.10008.5.1.4.1.1.7"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_0.ImagingManifest.study.series.instance_0.ImagingManifest.study.series.instance.uid> <http://hl7.org/fhir/value> "urn:oid:2.16.124.113543.6003.189642796.63084.16748.2599092902"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_0.ImagingManifest.study.series.uid> <http://hl7.org/fhir/value> "urn:oid:2.16.124.113543.6003.189642796.63084.16750.2599092901"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_1.ImagingManifest.study.series.instance_0.ImagingManifest.study.series.instance.sopClass> <http://hl7.org/fhir/value> "urn:oid:1.2.840.10008.5.1.4.1.1.2"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_1.ImagingManifest.study.series.instance_0.ImagingManifest.study.series.instance.uid> <http://hl7.org/fhir/value> "urn:oid:2.16.124.113543.6003.189642796.63084.16748.2599092903"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_1.ImagingManifest.study.series.instance_1.ImagingManifest.study.series.instance.sopClass> <http://hl7.org/fhir/value> "urn:oid:1.2.840.10008.5.1.4.1.1.2"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_1.ImagingManifest.study.series.instance_1.ImagingManifest.study.series.instance.uid> <http://hl7.org/fhir/value> "urn:oid:2.16.124.113543.6003.189642796.63084.16748.2599092904"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_1.ImagingManifest.study.series.uid> <http://hl7.org/fhir/value> "urn:oid:2.16.124.113543.6003.189642796.63084.16750.2599092902"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.uid> <http://hl7.org/fhir/value> "urn:oid:2.16.124.113543.6003.189642796.63084.16749.2599092904"^^<http://www.w3.org/2001/XMLSchema#anyURI> .----------------------------------------
+
+========================================
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix w5: <http://hl7.org/fhir/w5#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://hl7.org/fhir/ImagingManifest/example> a fhir:ImagingManifest ;
+    fhir:nodeRole fhir:treeRoot ;
+    fhir:DomainResource.text [
+        fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">A set of images to share accompanying an report document, including one SC image and two CT image</div>" ;
+        fhir:Narrative.status [
+            fhir:value "generated"
+        ]
+    ] ;
+    fhir:ImagingManifest.author [
+        fhir:link <http://hl7.org/fhir/Practitioner/example> ;
+        fhir:Reference.reference [
+            fhir:value "Practitioner/example"
+        ]
+    ] ;
+    fhir:ImagingManifest.authoringTime [
+        fhir:value "2014-11-20T11:01:20-08:00"^^xsd:dateTime
+    ] ;
+    fhir:ImagingManifest.description [
+        fhir:value "1 SC image (screen snapshot) and 2 CT images to share a chest CT exam"
+    ] ;
+    fhir:ImagingManifest.identifier [
+        fhir:Identifier.value [
+            fhir:value "urn:oid:2.16.124.113543.6003.189642796.63084.16748.2599092901"
+        ]
+    ] ;
+    fhir:ImagingManifest.patient [
+        fhir:link <http://hl7.org/fhir/Patient/dicom> ;
+        fhir:Reference.reference [
+            fhir:value "Patient/dicom"
+        ]
+    ] ;
+    fhir:ImagingManifest.study [
+        fhir:index "0"^^xsd:integer ;
+        fhir:ImagingManifest.study.endpoint [
+            fhir:index "1"^^xsd:integer ;
+            fhir:link <http://hl7.org/fhir/Endpoint/example-wadors> ;
+            fhir:Reference.reference [
+                fhir:value "Endpoint/example-wadors"
+            ]
+        ],
+            [
+            fhir:index "0"^^xsd:integer ;
+            fhir:link <http://hl7.org/fhir/Endpoint/example-iid> ;
+            fhir:Reference.reference [
+                fhir:value "Endpoint/example-iid"
+            ]
+        ] ;
+        fhir:ImagingManifest.study.imagingStudy [
+            fhir:link <http://hl7.org/fhir/ImagingStudy/example> ;
+            fhir:Reference.reference [
+                fhir:value "ImagingStudy/example"
+            ]
+        ] ;
+        fhir:ImagingManifest.study.series [
+            fhir:index "0"^^xsd:integer ;
+            fhir:ImagingManifest.study.series.endpoint [
+                fhir:index "0"^^xsd:integer ;
+                fhir:link <http://hl7.org/fhir/Endpoint/example-wadors> ;
+                fhir:Reference.reference [
+                    fhir:value "Endpoint/example-wadors"
+                ]
+            ] ;
+            fhir:ImagingManifest.study.series.instance [
+                fhir:index "0"^^xsd:integer ;
+                fhir:ImagingManifest.study.series.instance.sopClass [
+                    fhir:value "urn:oid:1.2.840.10008.5.1.4.1.1.7"^^xsd:anyURI
+                ] ;
+                fhir:ImagingManifest.study.series.instance.uid [
+                    fhir:value "urn:oid:2.16.124.113543.6003.189642796.63084.16748.2599092902"^^xsd:anyURI
+                ]
+            ] ;
+            fhir:ImagingManifest.study.series.uid [
+                fhir:value "urn:oid:2.16.124.113543.6003.189642796.63084.16750.2599092901"^^xsd:anyURI
+            ]
+        ],
+            [
+            fhir:index "1"^^xsd:integer ;
+            fhir:ImagingManifest.study.series.instance [
+                fhir:index "1"^^xsd:integer ;
+                fhir:ImagingManifest.study.series.instance.sopClass [
+                    fhir:value "urn:oid:1.2.840.10008.5.1.4.1.1.2"^^xsd:anyURI
+                ] ;
+                fhir:ImagingManifest.study.series.instance.uid [
+                    fhir:value "urn:oid:2.16.124.113543.6003.189642796.63084.16748.2599092904"^^xsd:anyURI
+                ]
+            ],
+                [
+                fhir:index "0"^^xsd:integer ;
+                fhir:ImagingManifest.study.series.instance.sopClass [
+                    fhir:value "urn:oid:1.2.840.10008.5.1.4.1.1.2"^^xsd:anyURI
+                ] ;
+                fhir:ImagingManifest.study.series.instance.uid [
+                    fhir:value "urn:oid:2.16.124.113543.6003.189642796.63084.16748.2599092903"^^xsd:anyURI
+                ]
+            ] ;
+            fhir:ImagingManifest.study.series.uid [
+                fhir:value "urn:oid:2.16.124.113543.6003.189642796.63084.16750.2599092902"^^xsd:anyURI
+            ]
+        ] ;
+        fhir:ImagingManifest.study.uid [
+            fhir:value "urn:oid:2.16.124.113543.6003.189642796.63084.16749.2599092904"^^xsd:anyURI
+        ]
+    ] ;
+    fhir:Resource.id [
+        fhir:value "example"
+    ] .
+
+<http://hl7.org/fhir/ImagingManifest/example.ttl> a owl:Ontology ;
+    owl:imports fhir:fhir.ttl .
+
+<http://hl7.org/fhir/Endpoint/example-iid> a fhir:Endpoint .
+
+<http://hl7.org/fhir/ImagingStudy/example> a fhir:ImagingStudy .
+
+<http://hl7.org/fhir/Patient/dicom> a fhir:Patient .
+
+<http://hl7.org/fhir/Practitioner/example> a fhir:Practitioner .
+
+<http://hl7.org/fhir/Endpoint/example-wadors> a fhir:Endpoint .
+

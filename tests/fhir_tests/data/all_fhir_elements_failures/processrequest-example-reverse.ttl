@@ -1,0 +1,69 @@
+
+
+Subject http://hl7.org/fhir/ProcessRequest/87654 DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/ProcessRequest/87654.ProcessRequest.request> <http://hl7.org/fhir/link> <http://BenefitsInc.com/fhir/claim/12345> .
+	----> Second: 
+<http://hl7.org/fhir/ProcessRequest/87654.ProcessRequest.request> <http://hl7.org/fhir/link> <http://hl7.org/fhir/http%3A//BenefitsInc.com/fhir/claim/12345> .----------------------------------------
+
+========================================
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix w5: <http://hl7.org/fhir/w5#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://hl7.org/fhir/ProcessRequest/87654> a fhir:ProcessRequest ;
+    fhir:nodeRole fhir:treeRoot ;
+    fhir:DomainResource.text [
+        fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">A human-readable rendering of the Reversal ProcessRequest</div>" ;
+        fhir:Narrative.status [
+            fhir:value "generated"
+        ]
+    ] ;
+    fhir:ProcessRequest.action [
+        fhir:value "cancel"
+    ] ;
+    fhir:ProcessRequest.created [
+        fhir:value "2014-08-16"^^xsd:date
+    ] ;
+    fhir:ProcessRequest.identifier [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Identifier.system [
+            fhir:value "http://happyvalley.com/processrequest"
+        ] ;
+        fhir:Identifier.value [
+            fhir:value "76543"
+        ]
+    ] ;
+    fhir:ProcessRequest.nullify [
+        fhir:value "false"^^xsd:boolean
+    ] ;
+    fhir:ProcessRequest.organization [
+        fhir:link <http://hl7.org/fhir/Organization/1> ;
+        fhir:Reference.reference [
+            fhir:value "Organization/1"
+        ]
+    ] ;
+    fhir:ProcessRequest.request [
+        fhir:link <http://hl7.org/fhir/http%3A//BenefitsInc.com/fhir/claim/12345> ;
+        fhir:Reference.reference [
+            fhir:value "http://BenefitsInc.com/fhir/claim/12345"
+        ]
+    ] ;
+    fhir:ProcessRequest.status [
+        fhir:value "active"
+    ] ;
+    fhir:Resource.id [
+        fhir:value "87654"
+    ] .
+
+<http://hl7.org/fhir/ProcessRequest/87654.ttl> a owl:Ontology ;
+    owl:imports fhir:fhir.ttl .
+
+<http://hl7.org/fhir/Organization/1> a fhir:Organization .
+
+<http://hl7.org/fhir/http%3A//BenefitsInc.com/fhir/claim/12345> a <http://hl7.org/fhir/http:> .
+

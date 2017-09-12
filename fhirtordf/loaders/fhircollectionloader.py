@@ -25,7 +25,7 @@
 # LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
 # OF THE POSSIBILITY OF SUCH DAMAGE.
-from typing import Optional
+from typing import Optional, List
 
 from jsonasobj import JsonObj, load
 from rdflib import Graph
@@ -51,13 +51,11 @@ class FHIRCollection:
         :param replace_narrative_text: Replace long narrative text with REPLACED_NARRATIVE_TEXT
         :param target: Target graph -- load everything into this if present
         """
-        if json_fname:
-            collection = load(json_fname)
-        else:
-            collection = data
-        if 'type' in collection and collection.type not in ["collection", "searchset"]:
-            raise TypeError("{} is not a FHIR collection".format(json_fname))
-        self.entries = [FHIRResource(vocabulary, None, base_uri, data=entry.resource,
-                                     add_ontology_header=add_ontology_header,
-                                     replace_narrative_text=replace_narrative_text, target=target)
-                        for entry in collection.entry]
+        collection = load(json_fname) if json_fname else data
+
+        self.entries = []           # type: List[FHIRResource]
+        for entry in collection.entry:
+            if 'resource' in entry:
+                self.entries.append(FHIRResource(vocabulary, None, base_uri, data=entry.resource,
+                                                 add_ontology_header=add_ontology_header,
+                                                 replace_narrative_text=replace_narrative_text, target=target))

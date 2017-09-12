@@ -202,7 +202,7 @@ class FHIRResource:
         if "system" in val and "code" in val:
             for k in codesystem_maps.keys():
                 if (isinstance(k, str) and k == val.system) or (not isinstance(k, str) and k.match(val.system)):
-                    type_uri = codesystem_maps[k](val.system, val.code, self._addl_namespaces)
+                    type_uri = codesystem_maps[k](val.system, urllib.parse.quote(val.code), self._addl_namespaces)
                     if type_uri:
                         self.add(subj, RDF.type, type_uri)
                     break

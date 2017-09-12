@@ -1,0 +1,256 @@
+
+
+Subject http://hl7.org/fhir/Claim/960150 DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/Claim/960150.Claim.item_0.Claim.item.net.Quantity.value> <http://hl7.org/fhir/value> "125.00"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://hl7.org/fhir/Claim/960150.Claim.item_0.Claim.item.unitPrice.Quantity.value> <http://hl7.org/fhir/value> "125.00"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://hl7.org/fhir/Claim/960150.Claim.total.Quantity.value> <http://hl7.org/fhir/value> "125.00"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+	----> Second: 
+<http://hl7.org/fhir/Claim/960150.Claim.item_0.Claim.item.net.Quantity.value> <http://hl7.org/fhir/value> "125.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://hl7.org/fhir/Claim/960150.Claim.item_0.Claim.item.unitPrice.Quantity.value> <http://hl7.org/fhir/value> "125.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://hl7.org/fhir/Claim/960150.Claim.total.Quantity.value> <http://hl7.org/fhir/value> "125.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .----------------------------------------
+
+========================================
+@prefix ex-claimsubtype: <http://hl7.org/fhir/ex-claimsubtype> .
+@prefix ex-claimtype: <http://hl7.org/fhir/ex-claimtype> .
+@prefix ex-serviceproduct: <http://hl7.org/fhir/ex-serviceproduct> .
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix w5: <http://hl7.org/fhir/w5#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://hl7.org/fhir/Claim/960150> a fhir:Claim ;
+    fhir:nodeRole fhir:treeRoot ;
+    fhir:Claim.careTeam [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Claim.careTeam.provider [
+            fhir:link <http://hl7.org/fhir/Practitioner/example> ;
+            fhir:Reference.reference [
+                fhir:value "Practitioner/example"
+            ]
+        ] ;
+        fhir:Claim.careTeam.sequence [
+            fhir:value "1"^^xsd:positiveInteger
+        ]
+    ] ;
+    fhir:Claim.created [
+        fhir:value "2014-08-16"^^xsd:date
+    ] ;
+    fhir:Claim.diagnosis [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Claim.diagnosis.diagnosisCodeableConcept [
+            fhir:CodeableConcept.coding [
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "654456"
+                ]
+            ]
+        ] ;
+        fhir:Claim.diagnosis.sequence [
+            fhir:value "1"^^xsd:positiveInteger
+        ]
+    ] ;
+    fhir:Claim.enterer [
+        fhir:Reference.identifier [
+            fhir:Identifier.system [
+                fhir:value "http://jurisdiction.org/facilities/HOSP1234/users"
+            ] ;
+            fhir:Identifier.value [
+                fhir:value "UC1234"
+            ]
+        ]
+    ] ;
+    fhir:Claim.facility [
+        fhir:Reference.identifier [
+            fhir:Identifier.system [
+                fhir:value "http://jurisdiction.org/facilities"
+            ] ;
+            fhir:Identifier.value [
+                fhir:value "HOSP1234"
+            ]
+        ]
+    ] ;
+    fhir:Claim.identifier [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Identifier.system [
+            fhir:value "http://happyhospital.com/claim"
+        ] ;
+        fhir:Identifier.value [
+            fhir:value "9612345"
+        ]
+    ] ;
+    fhir:Claim.insurance [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Claim.insurance.coverage [
+            fhir:link <http://hl7.org/fhir/Coverage/9876B1> ;
+            fhir:Reference.reference [
+                fhir:value "Coverage/9876B1"
+            ]
+        ] ;
+        fhir:Claim.insurance.focal [
+            fhir:value "true"^^xsd:boolean
+        ] ;
+        fhir:Claim.insurance.sequence [
+            fhir:value "1"^^xsd:positiveInteger
+        ]
+    ] ;
+    fhir:Claim.insurer [
+        fhir:link <http://hl7.org/fhir/Organization/2> ;
+        fhir:Reference.reference [
+            fhir:value "Organization/2"
+        ]
+    ] ;
+    fhir:Claim.item [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Claim.item.careTeamLinkId [
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "1"^^xsd:positiveInteger
+        ] ;
+        fhir:Claim.item.encounter [
+            fhir:index "0"^^xsd:integer ;
+            fhir:link <http://hl7.org/fhir/Encounter/example> ;
+            fhir:Reference.reference [
+                fhir:value "Encounter/example"
+            ]
+        ] ;
+        fhir:Claim.item.net [
+            fhir:Quantity.code [
+                fhir:value "USD"
+            ] ;
+            fhir:Quantity.system [
+                fhir:value "urn:iso:std:iso:4217"
+            ] ;
+            fhir:Quantity.value [
+                fhir:value "125.0"^^xsd:decimal
+            ]
+        ] ;
+        fhir:Claim.item.sequence [
+            fhir:value "1"^^xsd:positiveInteger
+        ] ;
+        fhir:Claim.item.service [
+            fhir:CodeableConcept.coding [
+                a <http://hl7.org/fhir/ex-serviceproduct/exam> ;
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "exam"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://hl7.org/fhir/ex-serviceproduct"
+                ]
+            ]
+        ] ;
+        fhir:Claim.item.servicedDate [
+            fhir:value "2014-08-16"^^xsd:date
+        ] ;
+        fhir:Claim.item.unitPrice [
+            fhir:Quantity.code [
+                fhir:value "USD"
+            ] ;
+            fhir:Quantity.system [
+                fhir:value "urn:iso:std:iso:4217"
+            ] ;
+            fhir:Quantity.value [
+                fhir:value "125.0"^^xsd:decimal
+            ]
+        ]
+    ] ;
+    fhir:Claim.organization [
+        fhir:link <http://hl7.org/fhir/Organization/1> ;
+        fhir:Reference.reference [
+            fhir:value "Organization/1"
+        ]
+    ] ;
+    fhir:Claim.patient [
+        fhir:link <http://hl7.org/fhir/Patient/1> ;
+        fhir:Reference.reference [
+            fhir:value "Patient/1"
+        ]
+    ] ;
+    fhir:Claim.payee [
+        fhir:Claim.payee.type [
+            fhir:CodeableConcept.coding [
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "provider"
+                ]
+            ]
+        ]
+    ] ;
+    fhir:Claim.priority [
+        fhir:CodeableConcept.coding [
+            fhir:index "0"^^xsd:integer ;
+            fhir:Coding.code [
+                fhir:value "normal"
+            ]
+        ]
+    ] ;
+    fhir:Claim.status [
+        fhir:value "active"
+    ] ;
+    fhir:Claim.subType [
+        fhir:index "0"^^xsd:integer ;
+        fhir:CodeableConcept.coding [
+            a <http://hl7.org/fhir/ex-claimsubtype/emergency> ;
+            fhir:index "0"^^xsd:integer ;
+            fhir:Coding.code [
+                fhir:value "emergency"
+            ] ;
+            fhir:Coding.system [
+                fhir:value "http://hl7.org/fhir/ex-claimsubtype"
+            ]
+        ]
+    ] ;
+    fhir:Claim.total [
+        fhir:Quantity.code [
+            fhir:value "USD"
+        ] ;
+        fhir:Quantity.system [
+            fhir:value "urn:iso:std:iso:4217"
+        ] ;
+        fhir:Quantity.value [
+            fhir:value "125.0"^^xsd:decimal
+        ]
+    ] ;
+    fhir:Claim.type [
+        fhir:CodeableConcept.coding [
+            a <http://hl7.org/fhir/ex-claimtype/institutional> ;
+            fhir:index "0"^^xsd:integer ;
+            fhir:Coding.code [
+                fhir:value "institutional"
+            ] ;
+            fhir:Coding.system [
+                fhir:value "http://hl7.org/fhir/ex-claimtype"
+            ]
+        ]
+    ] ;
+    fhir:Claim.use [
+        fhir:value "complete"
+    ] ;
+    fhir:DomainResource.text [
+        fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">A human-readable rendering of the Claim</div>" ;
+        fhir:Narrative.status [
+            fhir:value "generated"
+        ]
+    ] ;
+    fhir:Resource.id [
+        fhir:value "960150"
+    ] .
+
+<http://hl7.org/fhir/Claim/960150.ttl> a owl:Ontology ;
+    owl:imports fhir:fhir.ttl .
+
+<http://hl7.org/fhir/Coverage/9876B1> a fhir:Coverage .
+
+<http://hl7.org/fhir/Encounter/example> a fhir:Encounter .
+
+<http://hl7.org/fhir/Organization/1> a fhir:Organization .
+
+<http://hl7.org/fhir/Organization/2> a fhir:Organization .
+
+<http://hl7.org/fhir/Patient/1> a fhir:Patient .
+
+<http://hl7.org/fhir/Practitioner/example> a fhir:Practitioner .
+

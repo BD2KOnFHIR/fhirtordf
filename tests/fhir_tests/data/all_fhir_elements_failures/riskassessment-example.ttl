@@ -1,0 +1,416 @@
+
+
+Subject http://hl7.org/fhir/RiskAssessment/genetic DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/RiskAssessment/genetic.RiskAssessment.prediction_6.RiskAssessment.prediction.probabilityDecimal> <http://hl7.org/fhir/value> "0.001530"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+	----> Second: 
+<http://hl7.org/fhir/RiskAssessment/genetic.RiskAssessment.prediction_6.RiskAssessment.prediction.probabilityDecimal> <http://hl7.org/fhir/value> "0.00153"^^<http://www.w3.org/2001/XMLSchema#decimal> .----------------------------------------
+
+========================================
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix w5: <http://hl7.org/fhir/w5#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://hl7.org/fhir/RiskAssessment/genetic> a fhir:RiskAssessment ;
+    fhir:nodeRole fhir:treeRoot ;
+    fhir:DomainResource.text [
+        fhir:Narrative.div """<div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Probability of developing breast cancer before the age indicated:</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Age</th>
+            <th>Probability (%)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>current-53</td>
+            <td>0.0168</td>
+          </tr>
+          <tr>
+            <td>54-57</td>
+            <td>0.0368</td>
+          </tr>
+          <tr>
+            <td>58-62</td>
+            <td>0.0594</td>
+          </tr>
+          <tr>
+            <td>63-67</td>
+            <td>0.0838</td>
+          </tr>
+          <tr>
+            <td>68-72</td>
+            <td>0.1089</td>
+          </tr>
+          <tr>
+            <td>73-77</td>
+            <td>0.1327</td>
+          </tr>
+          <tr>
+            <td>78-82</td>
+            <td>0.1530</td>
+          </tr>
+          <tr>
+            <td>83-87</td>
+            <td>0.1663</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>""" ;
+        fhir:Narrative.status [
+            fhir:value "generated"
+        ]
+    ] ;
+    fhir:Resource.id [
+        fhir:value "genetic"
+    ] ;
+    fhir:RiskAssessment.basis [
+        fhir:index "0"^^xsd:integer ;
+        fhir:link <http://hl7.org/fhir/List/prognosis> ;
+        fhir:Reference.reference [
+            fhir:value "List/prognosis"
+        ]
+    ] ;
+    fhir:RiskAssessment.comment [
+        fhir:value "High degree of certainty"
+    ] ;
+    fhir:RiskAssessment.method [
+        fhir:CodeableConcept.coding [
+            fhir:index "0"^^xsd:integer ;
+            fhir:Coding.code [
+                fhir:value "BRCAPRO"
+            ]
+        ]
+    ] ;
+    fhir:RiskAssessment.occurrenceDateTime [
+        fhir:value "2006-01-13T23:01:00+00:00"^^xsd:dateTime
+    ] ;
+    fhir:RiskAssessment.prediction [
+        fhir:index "0"^^xsd:integer ;
+        fhir:RiskAssessment.prediction.outcome [
+            fhir:CodeableConcept.text [
+                fhir:value "Breast Cancer"
+            ]
+        ] ;
+        fhir:RiskAssessment.prediction.probabilityDecimal [
+            fhir:value "0.000168"^^xsd:decimal
+        ] ;
+        fhir:RiskAssessment.prediction.whenRange [
+            fhir:Range.high [
+                fhir:Quantity.code [
+                    fhir:value "a"
+                ] ;
+                fhir:Quantity.system [
+                    fhir:value "http://unitsofmeasure.org"
+                ] ;
+                fhir:Quantity.unit [
+                    fhir:value "years"
+                ] ;
+                fhir:Quantity.value [
+                    fhir:value "53"^^xsd:decimal
+                ]
+            ]
+        ]
+    ],
+        [
+        fhir:index "2"^^xsd:integer ;
+        fhir:RiskAssessment.prediction.outcome [
+            fhir:CodeableConcept.text [
+                fhir:value "Breast Cancer"
+            ]
+        ] ;
+        fhir:RiskAssessment.prediction.probabilityDecimal [
+            fhir:value "0.000594"^^xsd:decimal
+        ] ;
+        fhir:RiskAssessment.prediction.whenRange [
+            fhir:Range.high [
+                fhir:Quantity.code [
+                    fhir:value "a"
+                ] ;
+                fhir:Quantity.system [
+                    fhir:value "http://unitsofmeasure.org"
+                ] ;
+                fhir:Quantity.unit [
+                    fhir:value "years"
+                ] ;
+                fhir:Quantity.value [
+                    fhir:value "62"^^xsd:decimal
+                ]
+            ] ;
+            fhir:Range.low [
+                fhir:Quantity.code [
+                    fhir:value "a"
+                ] ;
+                fhir:Quantity.system [
+                    fhir:value "http://unitsofmeasure.org"
+                ] ;
+                fhir:Quantity.unit [
+                    fhir:value "years"
+                ] ;
+                fhir:Quantity.value [
+                    fhir:value "58"^^xsd:decimal
+                ]
+            ]
+        ]
+    ],
+        [
+        fhir:index "7"^^xsd:integer ;
+        fhir:RiskAssessment.prediction.outcome [
+            fhir:CodeableConcept.text [
+                fhir:value "Breast Cancer"
+            ]
+        ] ;
+        fhir:RiskAssessment.prediction.probabilityDecimal [
+            fhir:value "0.001663"^^xsd:decimal
+        ] ;
+        fhir:RiskAssessment.prediction.whenRange [
+            fhir:Range.high [
+                fhir:Quantity.code [
+                    fhir:value "a"
+                ] ;
+                fhir:Quantity.system [
+                    fhir:value "http://unitsofmeasure.org"
+                ] ;
+                fhir:Quantity.unit [
+                    fhir:value "years"
+                ] ;
+                fhir:Quantity.value [
+                    fhir:value "88"^^xsd:decimal
+                ]
+            ] ;
+            fhir:Range.low [
+                fhir:Quantity.code [
+                    fhir:value "a"
+                ] ;
+                fhir:Quantity.system [
+                    fhir:value "http://unitsofmeasure.org"
+                ] ;
+                fhir:Quantity.unit [
+                    fhir:value "years"
+                ] ;
+                fhir:Quantity.value [
+                    fhir:value "83"^^xsd:decimal
+                ]
+            ]
+        ]
+    ],
+        [
+        fhir:index "6"^^xsd:integer ;
+        fhir:RiskAssessment.prediction.outcome [
+            fhir:CodeableConcept.text [
+                fhir:value "Breast Cancer"
+            ]
+        ] ;
+        fhir:RiskAssessment.prediction.probabilityDecimal [
+            fhir:value "0.00153"^^xsd:decimal
+        ] ;
+        fhir:RiskAssessment.prediction.whenRange [
+            fhir:Range.high [
+                fhir:Quantity.code [
+                    fhir:value "a"
+                ] ;
+                fhir:Quantity.system [
+                    fhir:value "http://unitsofmeasure.org"
+                ] ;
+                fhir:Quantity.unit [
+                    fhir:value "years"
+                ] ;
+                fhir:Quantity.value [
+                    fhir:value "82"^^xsd:decimal
+                ]
+            ] ;
+            fhir:Range.low [
+                fhir:Quantity.code [
+                    fhir:value "a"
+                ] ;
+                fhir:Quantity.system [
+                    fhir:value "http://unitsofmeasure.org"
+                ] ;
+                fhir:Quantity.unit [
+                    fhir:value "years"
+                ] ;
+                fhir:Quantity.value [
+                    fhir:value "78"^^xsd:decimal
+                ]
+            ]
+        ]
+    ],
+        [
+        fhir:index "3"^^xsd:integer ;
+        fhir:RiskAssessment.prediction.outcome [
+            fhir:CodeableConcept.text [
+                fhir:value "Breast Cancer"
+            ]
+        ] ;
+        fhir:RiskAssessment.prediction.probabilityDecimal [
+            fhir:value "0.000838"^^xsd:decimal
+        ] ;
+        fhir:RiskAssessment.prediction.whenRange [
+            fhir:Range.high [
+                fhir:Quantity.code [
+                    fhir:value "a"
+                ] ;
+                fhir:Quantity.system [
+                    fhir:value "http://unitsofmeasure.org"
+                ] ;
+                fhir:Quantity.unit [
+                    fhir:value "years"
+                ] ;
+                fhir:Quantity.value [
+                    fhir:value "67"^^xsd:decimal
+                ]
+            ] ;
+            fhir:Range.low [
+                fhir:Quantity.code [
+                    fhir:value "a"
+                ] ;
+                fhir:Quantity.system [
+                    fhir:value "http://unitsofmeasure.org"
+                ] ;
+                fhir:Quantity.unit [
+                    fhir:value "years"
+                ] ;
+                fhir:Quantity.value [
+                    fhir:value "63"^^xsd:decimal
+                ]
+            ]
+        ]
+    ],
+        [
+        fhir:index "4"^^xsd:integer ;
+        fhir:RiskAssessment.prediction.outcome [
+            fhir:CodeableConcept.text [
+                fhir:value "Breast Cancer"
+            ]
+        ] ;
+        fhir:RiskAssessment.prediction.probabilityDecimal [
+            fhir:value "0.001089"^^xsd:decimal
+        ] ;
+        fhir:RiskAssessment.prediction.whenRange [
+            fhir:Range.high [
+                fhir:Quantity.code [
+                    fhir:value "a"
+                ] ;
+                fhir:Quantity.system [
+                    fhir:value "http://unitsofmeasure.org"
+                ] ;
+                fhir:Quantity.unit [
+                    fhir:value "years"
+                ] ;
+                fhir:Quantity.value [
+                    fhir:value "72"^^xsd:decimal
+                ]
+            ] ;
+            fhir:Range.low [
+                fhir:Quantity.code [
+                    fhir:value "a"
+                ] ;
+                fhir:Quantity.system [
+                    fhir:value "http://unitsofmeasure.org"
+                ] ;
+                fhir:Quantity.unit [
+                    fhir:value "years"
+                ] ;
+                fhir:Quantity.value [
+                    fhir:value "68"^^xsd:decimal
+                ]
+            ]
+        ]
+    ],
+        [
+        fhir:index "5"^^xsd:integer ;
+        fhir:RiskAssessment.prediction.outcome [
+            fhir:CodeableConcept.text [
+                fhir:value "Breast Cancer"
+            ]
+        ] ;
+        fhir:RiskAssessment.prediction.probabilityDecimal [
+            fhir:value "0.001327"^^xsd:decimal
+        ] ;
+        fhir:RiskAssessment.prediction.whenRange [
+            fhir:Range.high [
+                fhir:Quantity.code [
+                    fhir:value "a"
+                ] ;
+                fhir:Quantity.system [
+                    fhir:value "http://unitsofmeasure.org"
+                ] ;
+                fhir:Quantity.unit [
+                    fhir:value "years"
+                ] ;
+                fhir:Quantity.value [
+                    fhir:value "77"^^xsd:decimal
+                ]
+            ] ;
+            fhir:Range.low [
+                fhir:Quantity.code [
+                    fhir:value "a"
+                ] ;
+                fhir:Quantity.system [
+                    fhir:value "http://unitsofmeasure.org"
+                ] ;
+                fhir:Quantity.unit [
+                    fhir:value "years"
+                ] ;
+                fhir:Quantity.value [
+                    fhir:value "73"^^xsd:decimal
+                ]
+            ]
+        ]
+    ],
+        [
+        fhir:index "1"^^xsd:integer ;
+        fhir:RiskAssessment.prediction.outcome [
+            fhir:CodeableConcept.text [
+                fhir:value "Breast Cancer"
+            ]
+        ] ;
+        fhir:RiskAssessment.prediction.probabilityDecimal [
+            fhir:value "0.000368"^^xsd:decimal
+        ] ;
+        fhir:RiskAssessment.prediction.whenRange [
+            fhir:Range.high [
+                fhir:Quantity.code [
+                    fhir:value "a"
+                ] ;
+                fhir:Quantity.system [
+                    fhir:value "http://unitsofmeasure.org"
+                ] ;
+                fhir:Quantity.unit [
+                    fhir:value "years"
+                ] ;
+                fhir:Quantity.value [
+                    fhir:value "57"^^xsd:decimal
+                ]
+            ] ;
+            fhir:Range.low [
+                fhir:Quantity.code [
+                    fhir:value "a"
+                ] ;
+                fhir:Quantity.system [
+                    fhir:value "http://unitsofmeasure.org"
+                ] ;
+                fhir:Quantity.unit [
+                    fhir:value "years"
+                ] ;
+                fhir:Quantity.value [
+                    fhir:value "54"^^xsd:decimal
+                ]
+            ]
+        ]
+    ] ;
+    fhir:RiskAssessment.status [
+        fhir:value "final"
+    ] .
+
+<http://hl7.org/fhir/RiskAssessment/genetic.ttl> a owl:Ontology ;
+    owl:imports fhir:fhir.ttl .
+
+<http://hl7.org/fhir/List/prognosis> a fhir:List .
+

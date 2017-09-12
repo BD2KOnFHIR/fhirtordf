@@ -1,0 +1,169 @@
+
+
+Subject http://hl7.org/fhir/Person/pd DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/Person/pd.Person.link_1.Person.link.target> <http://hl7.org/fhir/link> <http://www.acme-medical.com/Practitioner/ab34d> .
+<http://hl7.org/fhir/Person/pd.Person.managingOrganization> <http://hl7.org/fhir/link> <http://www.northfield-regional.com/Organization/2> .
+	----> Second: 
+<http://hl7.org/fhir/Person/pd.Person.link_1.Person.link.target> <http://hl7.org/fhir/link> <http://hl7.org/fhir/http%3A//www.acme-medical.com/Practitioner/ab34d> .
+<http://hl7.org/fhir/Person/pd.Person.managingOrganization> <http://hl7.org/fhir/link> <http://hl7.org/fhir/http%3A//www.northfield-regional.com/Organization/2> .----------------------------------------
+
+========================================
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix v2-0203: <http://hl7.org/fhir/v2/0203> .
+@prefix w5: <http://hl7.org/fhir/w5#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://hl7.org/fhir/Person/pd> a fhir:Person ;
+    fhir:nodeRole fhir:treeRoot ;
+    fhir:DomainResource.text [
+        fhir:Narrative.div """<div xmlns="http://www.w3.org/1999/xhtml">
+      <table>
+        <tbody>
+          <tr>
+            <td>Name</td>
+            <td>
+              Harold <b>Hippocrates</b>
+            </td>
+          </tr>
+          <tr>
+            <td>Address</td>
+            <td>1003 Healthcare Drive, Northfield, MN</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>""" ;
+        fhir:Narrative.status [
+            fhir:value "generated"
+        ]
+    ] ;
+    fhir:Person.active [
+        fhir:value "true"^^xsd:boolean
+    ] ;
+    fhir:Person.address [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Address.city [
+            fhir:value "Northfield"
+        ] ;
+        fhir:Address.line [
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "1003 Healthcare Drive"
+        ] ;
+        fhir:Address.state [
+            fhir:value "MN"
+        ] ;
+        fhir:Address.use [
+            fhir:value "home"
+        ]
+    ] ;
+    fhir:Person.birthDate [
+        fhir:value "1959-04-22"^^xsd:date
+    ] ;
+    fhir:Person.gender [
+        fhir:value "male"
+    ] ;
+    fhir:Person.identifier [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Identifier.system [
+            fhir:value "http://hl7.org/fhir/sid/us-ssn"
+        ] ;
+        fhir:Identifier.type [
+            fhir:CodeableConcept.coding [
+                a <http://hl7.org/fhir/v2/0203/SS> ;
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "SS"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://hl7.org/fhir/v2/0203"
+                ]
+            ]
+        ] ;
+        fhir:Identifier.use [
+            fhir:value "official"
+        ] ;
+        fhir:Identifier.value [
+            fhir:value "444444444"
+        ]
+    ] ;
+    fhir:Person.link [
+        fhir:index "1"^^xsd:integer ;
+        fhir:Person.link.assurance [
+            fhir:value "level2"
+        ] ;
+        fhir:Person.link.target [
+            fhir:link <http://hl7.org/fhir/http%3A//www.acme-medical.com/Practitioner/ab34d> ;
+            fhir:Reference.display [
+                fhir:value "Harold Hippocrates, MD"
+            ] ;
+            fhir:Reference.reference [
+                fhir:value "http://www.acme-medical.com/Practitioner/ab34d"
+            ]
+        ]
+    ],
+        [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Person.link.assurance [
+            fhir:value "level2"
+        ] ;
+        fhir:Person.link.target [
+            fhir:link <http://www.goodhealth.com/Practitioner/98574> ;
+            fhir:Reference.display [
+                fhir:value "Dr. Harold Hippocrates"
+            ] ;
+            fhir:Reference.reference [
+                fhir:value "http://www.goodhealth.com/Practitioner/98574"
+            ]
+        ]
+    ] ;
+    fhir:Person.managingOrganization [
+        fhir:link <http://hl7.org/fhir/http%3A//www.northfield-regional.com/Organization/2> ;
+        fhir:Reference.display [
+            fhir:value "Northfield Regional Physician Directory"
+        ] ;
+        fhir:Reference.reference [
+            fhir:value "http://www.northfield-regional.com/Organization/2"
+        ]
+    ] ;
+    fhir:Person.name [
+        fhir:index "0"^^xsd:integer ;
+        fhir:HumanName.family [
+            fhir:value "Hippocrates"
+        ] ;
+        fhir:HumanName.given [
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "Harold"
+        ] ;
+        fhir:HumanName.use [
+            fhir:value "official"
+        ]
+    ] ;
+    fhir:Person.telecom [
+        fhir:index "0"^^xsd:integer ;
+        fhir:ContactPoint.system [
+            fhir:value "phone"
+        ] ;
+        fhir:ContactPoint.use [
+            fhir:value "work"
+        ] ;
+        fhir:ContactPoint.value [
+            fhir:value "555-555-1003"
+        ]
+    ] ;
+    fhir:Resource.id [
+        fhir:value "pd"
+    ] .
+
+<http://hl7.org/fhir/Person/pd.ttl> a owl:Ontology ;
+    owl:imports fhir:fhir.ttl .
+
+<http://hl7.org/fhir/http%3A//www.acme-medical.com/Practitioner/ab34d> a <http://hl7.org/fhir/http:> .
+
+<http://hl7.org/fhir/http%3A//www.northfield-regional.com/Organization/2> a <http://hl7.org/fhir/http:> .
+
+<http://www.goodhealth.com/Practitioner/98574> a fhir:Practitioner .
+

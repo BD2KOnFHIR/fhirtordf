@@ -1,0 +1,85 @@
+
+
+Subject http://hl7.org/fhir/EnrollmentResponse/ER2500 DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/EnrollmentResponse/ER2500.EnrollmentResponse.request> <http://hl7.org/fhir/link> <http://www.BenefitsInc.com/fhir/eligibility/225476332402> .
+	----> Second: 
+<http://hl7.org/fhir/EnrollmentResponse/ER2500.EnrollmentResponse.request> <http://hl7.org/fhir/link> <http://hl7.org/fhir/http%3A//www.BenefitsInc.com/fhir/eligibility/225476332402> .----------------------------------------
+
+========================================
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix w5: <http://hl7.org/fhir/w5#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://hl7.org/fhir/EnrollmentResponse/ER2500> a fhir:EnrollmentResponse ;
+    fhir:nodeRole fhir:treeRoot ;
+    fhir:DomainResource.text [
+        fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">A human-readable rendering of the EnrollmentResponse</div>" ;
+        fhir:Narrative.status [
+            fhir:value "generated"
+        ]
+    ] ;
+    fhir:EnrollmentResponse.created [
+        fhir:value "2014-08-16"^^xsd:date
+    ] ;
+    fhir:EnrollmentResponse.disposition [
+        fhir:value "Dependant added to policy."
+    ] ;
+    fhir:EnrollmentResponse.identifier [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Identifier.system [
+            fhir:value "http://www.BenefitsInc.com/fhir/enrollmentresponse"
+        ] ;
+        fhir:Identifier.value [
+            fhir:value "781234"
+        ]
+    ] ;
+    fhir:EnrollmentResponse.organization [
+        fhir:link <http://hl7.org/fhir/Organization/2> ;
+        fhir:Reference.reference [
+            fhir:value "Organization/2"
+        ]
+    ] ;
+    fhir:EnrollmentResponse.outcome [
+        fhir:value "complete"
+    ] ;
+    fhir:EnrollmentResponse.request [
+        fhir:link <http://hl7.org/fhir/http%3A//www.BenefitsInc.com/fhir/eligibility/225476332402> ;
+        fhir:Reference.reference [
+            fhir:value "http://www.BenefitsInc.com/fhir/eligibility/225476332402"
+        ]
+    ] ;
+    fhir:EnrollmentResponse.requestOrganization [
+        fhir:link <http://hl7.org/fhir/Organization/1> ;
+        fhir:Reference.reference [
+            fhir:value "Organization/1"
+        ]
+    ] ;
+    fhir:EnrollmentResponse.requestProvider [
+        fhir:link <http://hl7.org/fhir/Practitioner/f201> ;
+        fhir:Reference.reference [
+            fhir:value "Practitioner/f201"
+        ]
+    ] ;
+    fhir:EnrollmentResponse.status [
+        fhir:value "active"
+    ] ;
+    fhir:Resource.id [
+        fhir:value "ER2500"
+    ] .
+
+<http://hl7.org/fhir/EnrollmentResponse/ER2500.ttl> a owl:Ontology ;
+    owl:imports fhir:fhir.ttl .
+
+<http://hl7.org/fhir/Organization/1> a fhir:Organization .
+
+<http://hl7.org/fhir/Organization/2> a fhir:Organization .
+
+<http://hl7.org/fhir/Practitioner/f201> a fhir:Practitioner .
+
+<http://hl7.org/fhir/http%3A//www.BenefitsInc.com/fhir/eligibility/225476332402> a <http://hl7.org/fhir/http:> .
+

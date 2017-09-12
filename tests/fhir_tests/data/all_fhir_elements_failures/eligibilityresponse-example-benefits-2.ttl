@@ -1,0 +1,602 @@
+
+
+Subject http://hl7.org/fhir/EligibilityResponse/E2502 DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/EligibilityResponse/E2502.EligibilityResponse.insurance_0.EligibilityResponse.insurance.benefitBalance_0.EligibilityResponse.insurance.benefitBalance.financial_0.EligibilityResponse.insurance.benefitBalance.financial.usedMoney.Quantity.value> <http://hl7.org/fhir/value> "3748.00"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://hl7.org/fhir/EligibilityResponse/E2502.EligibilityResponse.insurance_0.EligibilityResponse.insurance.contract> <http://hl7.org/fhir/link> <http://www.BenefitsInc.com/fhir/contract/NBU22547> .
+<http://hl7.org/fhir/EligibilityResponse/E2502.EligibilityResponse.request> <http://hl7.org/fhir/link> <http://www.BenefitsInc.com/fhir/eligibility/225476332405> .
+	----> Second: 
+<http://hl7.org/fhir/EligibilityResponse/E2502.EligibilityResponse.insurance_0.EligibilityResponse.insurance.benefitBalance_0.EligibilityResponse.insurance.benefitBalance.financial_0.EligibilityResponse.insurance.benefitBalance.financial.usedMoney.Quantity.value> <http://hl7.org/fhir/value> "3748.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://hl7.org/fhir/EligibilityResponse/E2502.EligibilityResponse.insurance_0.EligibilityResponse.insurance.contract> <http://hl7.org/fhir/link> <http://hl7.org/fhir/http%3A//www.BenefitsInc.com/fhir/contract/NBU22547> .
+<http://hl7.org/fhir/EligibilityResponse/E2502.EligibilityResponse.request> <http://hl7.org/fhir/link> <http://hl7.org/fhir/http%3A//www.BenefitsInc.com/fhir/eligibility/225476332405> .----------------------------------------
+
+========================================
+@prefix benefit-category: <http://hl7.org/fhir/benefit-category> .
+@prefix benefit-network: <http://hl7.org/fhir/benefit-network> .
+@prefix benefit-subcategory: <http://hl7.org/fhir/benefit-subcategory> .
+@prefix benefit-term: <http://hl7.org/fhir/benefit-term> .
+@prefix benefit-unit: <http://hl7.org/fhir/benefit-unit> .
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix v3-ActCode: <http://hl7.org/fhir/v3/ActCode> .
+@prefix w5: <http://hl7.org/fhir/w5#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://hl7.org/fhir/EligibilityResponse/E2502> a fhir:EligibilityResponse ;
+    fhir:nodeRole fhir:treeRoot ;
+    fhir:DomainResource.contained [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Patient.address [
+            fhir:index "0"^^xsd:integer ;
+            fhir:Address.city [
+                fhir:value "Vancouver"
+            ] ;
+            fhir:Address.country [
+                fhir:value "CAD"
+            ] ;
+            fhir:Address.line [
+                fhir:index "0"^^xsd:integer ;
+                fhir:value "1234 Main Street"
+            ] ;
+            fhir:Address.postalCode [
+                fhir:value "V2H1Y3"
+            ] ;
+            fhir:Address.use [
+                fhir:value "home"
+            ]
+        ] ;
+        fhir:Patient.birthDate [
+            fhir:value "1986-05-17"^^xsd:date
+        ] ;
+        fhir:Patient.gender [
+            fhir:value "male"
+        ] ;
+        fhir:Patient.name [
+            fhir:index "0"^^xsd:integer ;
+            fhir:HumanName.family [
+                fhir:value "Donald"
+            ] ;
+            fhir:HumanName.given [
+                fhir:index "0"^^xsd:integer ;
+                fhir:value "Duck"
+            ] ;
+            fhir:HumanName.use [
+                fhir:value "official"
+            ]
+        ] ;
+        fhir:Resource.id [
+            fhir:value "patient-1"
+        ]
+    ],
+        [
+        fhir:index "1"^^xsd:integer ;
+        fhir:Coverage.beneficiary [
+            fhir:Reference.reference [
+                fhir:value "#patient-1"
+            ]
+        ] ;
+        fhir:Coverage.dependent [
+            fhir:value "1"
+        ] ;
+        fhir:Coverage.grouping [
+            fhir:Coverage.grouping.plan [
+                fhir:value "CBI35"
+            ] ;
+            fhir:Coverage.grouping.planDisplay [
+                fhir:value "Corporate Baker's Inc. Plan#35"
+            ] ;
+            fhir:Coverage.grouping.subPlan [
+                fhir:value "123"
+            ] ;
+            fhir:Coverage.grouping.subPlanDisplay [
+                fhir:value "Trainee Part-time Benefits"
+            ]
+        ] ;
+        fhir:Coverage.identifier [
+            fhir:index "0"^^xsd:integer ;
+            fhir:Identifier.system [
+                fhir:value "http://benefitsinc.com/certificate"
+            ] ;
+            fhir:Identifier.value [
+                fhir:value "12345"
+            ]
+        ] ;
+        fhir:Coverage.payor [
+            fhir:index "0"^^xsd:integer ;
+            fhir:Reference.identifier [
+                fhir:Identifier.system [
+                    fhir:value "http://www.bindb.com/bin"
+                ] ;
+                fhir:Identifier.value [
+                    fhir:value "123456"
+                ]
+            ]
+        ] ;
+        fhir:Coverage.relationship [
+            fhir:CodeableConcept.coding [
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "self"
+                ]
+            ]
+        ] ;
+        fhir:Coverage.sequence [
+            fhir:value "1"
+        ] ;
+        fhir:Coverage.status [
+            fhir:value "active"
+        ] ;
+        fhir:Coverage.subscriber [
+            fhir:Reference.reference [
+                fhir:value "#patient-1"
+            ]
+        ] ;
+        fhir:Coverage.type [
+            fhir:CodeableConcept.coding [
+                a <http://hl7.org/fhir/v3/ActCode/EHCPOL> ;
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "EHCPOL"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://hl7.org/fhir/v3/ActCode"
+                ]
+            ]
+        ] ;
+        fhir:Resource.id [
+            fhir:value "coverage-1"
+        ]
+    ] ;
+    fhir:DomainResource.text [
+        fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">A human-readable rendering of the EligibilityResponse.</div>" ;
+        fhir:Narrative.status [
+            fhir:value "generated"
+        ]
+    ] ;
+    fhir:EligibilityResponse.created [
+        fhir:value "2014-09-16"^^xsd:date
+    ] ;
+    fhir:EligibilityResponse.disposition [
+        fhir:value "Policy is currently in-force."
+    ] ;
+    fhir:EligibilityResponse.form [
+        fhir:CodeableConcept.coding [
+            fhir:index "0"^^xsd:integer ;
+            fhir:Coding.code [
+                fhir:value "ELRSP/2017/01"
+            ] ;
+            fhir:Coding.system [
+                fhir:value "http://national.org/form"
+            ]
+        ]
+    ] ;
+    fhir:EligibilityResponse.identifier [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Identifier.system [
+            fhir:value "http://www.BenefitsInc.com/fhir/eligibilityresponse"
+        ] ;
+        fhir:Identifier.value [
+            fhir:value "8812342"
+        ]
+    ] ;
+    fhir:EligibilityResponse.inforce [
+        fhir:value "true"^^xsd:boolean
+    ] ;
+    fhir:EligibilityResponse.insurance [
+        fhir:index "0"^^xsd:integer ;
+        fhir:EligibilityResponse.insurance.benefitBalance [
+            fhir:index "3"^^xsd:integer ;
+            fhir:EligibilityResponse.insurance.benefitBalance.category [
+                fhir:CodeableConcept.coding [
+                    a <http://hl7.org/fhir/benefit-category/vision> ;
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "vision"
+                    ] ;
+                    fhir:Coding.system [
+                        fhir:value "http://hl7.org/fhir/benefit-category"
+                    ]
+                ]
+            ] ;
+            fhir:EligibilityResponse.insurance.benefitBalance.description [
+                fhir:value "Vision products and services such as exams, glasses and contatc lenses."
+            ] ;
+            fhir:EligibilityResponse.insurance.benefitBalance.excluded [
+                fhir:value "true"^^xsd:boolean
+            ] ;
+            fhir:EligibilityResponse.insurance.benefitBalance.name [
+                fhir:value "Vision"
+            ] ;
+            fhir:EligibilityResponse.insurance.benefitBalance.subCategory [
+                fhir:CodeableConcept.coding [
+                    a <http://hl7.org/fhir/benefit-subcategory/F6> ;
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "F6"
+                    ] ;
+                    fhir:Coding.display [
+                        fhir:value "Vision Coverage"
+                    ] ;
+                    fhir:Coding.system [
+                        fhir:value "http://hl7.org/fhir/benefit-subcategory"
+                    ]
+                ]
+            ]
+        ],
+            [
+            fhir:index "1"^^xsd:integer ;
+            fhir:EligibilityResponse.insurance.benefitBalance.category [
+                fhir:CodeableConcept.coding [
+                    a <http://hl7.org/fhir/benefit-category/medical> ;
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "medical"
+                    ] ;
+                    fhir:Coding.system [
+                        fhir:value "http://hl7.org/fhir/benefit-category"
+                    ]
+                ]
+            ] ;
+            fhir:EligibilityResponse.insurance.benefitBalance.financial [
+                fhir:index "0"^^xsd:integer ;
+                fhir:EligibilityResponse.insurance.benefitBalance.financial.allowedMoney [
+                    fhir:Quantity.code [
+                        fhir:value "USD"
+                    ] ;
+                    fhir:Quantity.system [
+                        fhir:value "urn:iso:std:iso:4217"
+                    ] ;
+                    fhir:Quantity.value [
+                        fhir:value "15000"^^xsd:decimal
+                    ]
+                ] ;
+                fhir:EligibilityResponse.insurance.benefitBalance.financial.type [
+                    fhir:CodeableConcept.coding [
+                        fhir:index "0"^^xsd:integer ;
+                        fhir:Coding.code [
+                            fhir:value "benefit"
+                        ]
+                    ]
+                ]
+            ] ;
+            fhir:EligibilityResponse.insurance.benefitBalance.network [
+                fhir:CodeableConcept.coding [
+                    a <http://hl7.org/fhir/benefit-network/in> ;
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "in"
+                    ] ;
+                    fhir:Coding.system [
+                        fhir:value "http://hl7.org/fhir/benefit-network"
+                    ]
+                ]
+            ] ;
+            fhir:EligibilityResponse.insurance.benefitBalance.subCategory [
+                fhir:CodeableConcept.coding [
+                    a <http://hl7.org/fhir/benefit-subcategory/69> ;
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "69"
+                    ] ;
+                    fhir:Coding.display [
+                        fhir:value "Maternity"
+                    ] ;
+                    fhir:Coding.system [
+                        fhir:value "http://hl7.org/fhir/benefit-subcategory"
+                    ]
+                ]
+            ] ;
+            fhir:EligibilityResponse.insurance.benefitBalance.term [
+                fhir:CodeableConcept.coding [
+                    a <http://hl7.org/fhir/benefit-term/annual> ;
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "annual"
+                    ] ;
+                    fhir:Coding.system [
+                        fhir:value "http://hl7.org/fhir/benefit-term"
+                    ]
+                ]
+            ] ;
+            fhir:EligibilityResponse.insurance.benefitBalance.unit [
+                fhir:CodeableConcept.coding [
+                    a <http://hl7.org/fhir/benefit-unit/individual> ;
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "individual"
+                    ] ;
+                    fhir:Coding.system [
+                        fhir:value "http://hl7.org/fhir/benefit-unit"
+                    ]
+                ]
+            ]
+        ],
+            [
+            fhir:index "0"^^xsd:integer ;
+            fhir:EligibilityResponse.insurance.benefitBalance.category [
+                fhir:CodeableConcept.coding [
+                    a <http://hl7.org/fhir/benefit-category/medical> ;
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "medical"
+                    ] ;
+                    fhir:Coding.system [
+                        fhir:value "http://hl7.org/fhir/benefit-category"
+                    ]
+                ]
+            ] ;
+            fhir:EligibilityResponse.insurance.benefitBalance.financial [
+                fhir:index "2"^^xsd:integer ;
+                fhir:EligibilityResponse.insurance.benefitBalance.financial.allowedUnsignedInt [
+                    fhir:value "20"^^xsd:nonNegativeInteger
+                ] ;
+                fhir:EligibilityResponse.insurance.benefitBalance.financial.type [
+                    fhir:CodeableConcept.coding [
+                        fhir:index "0"^^xsd:integer ;
+                        fhir:Coding.code [
+                            fhir:value "copay-percent"
+                        ]
+                    ]
+                ]
+            ],
+                [
+                fhir:index "0"^^xsd:integer ;
+                fhir:EligibilityResponse.insurance.benefitBalance.financial.allowedMoney [
+                    fhir:Quantity.code [
+                        fhir:value "USD"
+                    ] ;
+                    fhir:Quantity.system [
+                        fhir:value "urn:iso:std:iso:4217"
+                    ] ;
+                    fhir:Quantity.value [
+                        fhir:value "500000"^^xsd:decimal
+                    ]
+                ] ;
+                fhir:EligibilityResponse.insurance.benefitBalance.financial.type [
+                    fhir:CodeableConcept.coding [
+                        fhir:index "0"^^xsd:integer ;
+                        fhir:Coding.code [
+                            fhir:value "benefit"
+                        ]
+                    ]
+                ] ;
+                fhir:EligibilityResponse.insurance.benefitBalance.financial.usedMoney [
+                    fhir:Quantity.code [
+                        fhir:value "USD"
+                    ] ;
+                    fhir:Quantity.system [
+                        fhir:value "urn:iso:std:iso:4217"
+                    ] ;
+                    fhir:Quantity.value [
+                        fhir:value "3748.0"^^xsd:decimal
+                    ]
+                ]
+            ],
+                [
+                fhir:index "1"^^xsd:integer ;
+                fhir:EligibilityResponse.insurance.benefitBalance.financial.allowedMoney [
+                    fhir:Quantity.code [
+                        fhir:value "USD"
+                    ] ;
+                    fhir:Quantity.system [
+                        fhir:value "urn:iso:std:iso:4217"
+                    ] ;
+                    fhir:Quantity.value [
+                        fhir:value "100"^^xsd:decimal
+                    ]
+                ] ;
+                fhir:EligibilityResponse.insurance.benefitBalance.financial.type [
+                    fhir:CodeableConcept.coding [
+                        fhir:index "0"^^xsd:integer ;
+                        fhir:Coding.code [
+                            fhir:value "copay-maximum"
+                        ]
+                    ]
+                ]
+            ] ;
+            fhir:EligibilityResponse.insurance.benefitBalance.network [
+                fhir:CodeableConcept.coding [
+                    a <http://hl7.org/fhir/benefit-network/in> ;
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "in"
+                    ] ;
+                    fhir:Coding.system [
+                        fhir:value "http://hl7.org/fhir/benefit-network"
+                    ]
+                ]
+            ] ;
+            fhir:EligibilityResponse.insurance.benefitBalance.subCategory [
+                fhir:CodeableConcept.coding [
+                    a <http://hl7.org/fhir/benefit-subcategory/30> ;
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "30"
+                    ] ;
+                    fhir:Coding.display [
+                        fhir:value "Health Benefit Plan Coverage"
+                    ] ;
+                    fhir:Coding.system [
+                        fhir:value "http://hl7.org/fhir/benefit-subcategory"
+                    ]
+                ]
+            ] ;
+            fhir:EligibilityResponse.insurance.benefitBalance.term [
+                fhir:CodeableConcept.coding [
+                    a <http://hl7.org/fhir/benefit-term/annual> ;
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "annual"
+                    ] ;
+                    fhir:Coding.system [
+                        fhir:value "http://hl7.org/fhir/benefit-term"
+                    ]
+                ]
+            ] ;
+            fhir:EligibilityResponse.insurance.benefitBalance.unit [
+                fhir:CodeableConcept.coding [
+                    a <http://hl7.org/fhir/benefit-unit/individual> ;
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "individual"
+                    ] ;
+                    fhir:Coding.system [
+                        fhir:value "http://hl7.org/fhir/benefit-unit"
+                    ]
+                ]
+            ]
+        ],
+            [
+            fhir:index "2"^^xsd:integer ;
+            fhir:EligibilityResponse.insurance.benefitBalance.category [
+                fhir:CodeableConcept.coding [
+                    a <http://hl7.org/fhir/benefit-category/oral> ;
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "oral"
+                    ] ;
+                    fhir:Coding.system [
+                        fhir:value "http://hl7.org/fhir/benefit-category"
+                    ]
+                ]
+            ] ;
+            fhir:EligibilityResponse.insurance.benefitBalance.financial [
+                fhir:index "0"^^xsd:integer ;
+                fhir:EligibilityResponse.insurance.benefitBalance.financial.allowedMoney [
+                    fhir:Quantity.code [
+                        fhir:value "USD"
+                    ] ;
+                    fhir:Quantity.system [
+                        fhir:value "urn:iso:std:iso:4217"
+                    ] ;
+                    fhir:Quantity.value [
+                        fhir:value "2000"^^xsd:decimal
+                    ]
+                ] ;
+                fhir:EligibilityResponse.insurance.benefitBalance.financial.type [
+                    fhir:CodeableConcept.coding [
+                        fhir:index "0"^^xsd:integer ;
+                        fhir:Coding.code [
+                            fhir:value "benefit"
+                        ]
+                    ]
+                ]
+            ] ;
+            fhir:EligibilityResponse.insurance.benefitBalance.network [
+                fhir:CodeableConcept.coding [
+                    a <http://hl7.org/fhir/benefit-network/in> ;
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "in"
+                    ] ;
+                    fhir:Coding.system [
+                        fhir:value "http://hl7.org/fhir/benefit-network"
+                    ]
+                ]
+            ] ;
+            fhir:EligibilityResponse.insurance.benefitBalance.subCategory [
+                fhir:CodeableConcept.coding [
+                    a <http://hl7.org/fhir/benefit-subcategory/F3> ;
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "F3"
+                    ] ;
+                    fhir:Coding.display [
+                        fhir:value "Dental Coverage"
+                    ] ;
+                    fhir:Coding.system [
+                        fhir:value "http://hl7.org/fhir/benefit-subcategory"
+                    ]
+                ]
+            ] ;
+            fhir:EligibilityResponse.insurance.benefitBalance.term [
+                fhir:CodeableConcept.coding [
+                    a <http://hl7.org/fhir/benefit-term/annual> ;
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "annual"
+                    ] ;
+                    fhir:Coding.system [
+                        fhir:value "http://hl7.org/fhir/benefit-term"
+                    ]
+                ]
+            ] ;
+            fhir:EligibilityResponse.insurance.benefitBalance.unit [
+                fhir:CodeableConcept.coding [
+                    a <http://hl7.org/fhir/benefit-unit/individual> ;
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "individual"
+                    ] ;
+                    fhir:Coding.system [
+                        fhir:value "http://hl7.org/fhir/benefit-unit"
+                    ]
+                ]
+            ]
+        ] ;
+        fhir:EligibilityResponse.insurance.contract [
+            fhir:link <http://hl7.org/fhir/http%3A//www.BenefitsInc.com/fhir/contract/NBU22547> ;
+            fhir:Reference.reference [
+                fhir:value "http://www.BenefitsInc.com/fhir/contract/NBU22547"
+            ]
+        ] ;
+        fhir:EligibilityResponse.insurance.coverage [
+            fhir:Reference.reference [
+                fhir:value "#coverage-1"
+            ]
+        ]
+    ] ;
+    fhir:EligibilityResponse.insurer [
+        fhir:link <http://hl7.org/fhir/Organization/2> ;
+        fhir:Reference.reference [
+            fhir:value "Organization/2"
+        ]
+    ] ;
+    fhir:EligibilityResponse.outcome [
+        fhir:value "complete"
+    ] ;
+    fhir:EligibilityResponse.request [
+        fhir:link <http://hl7.org/fhir/http%3A//www.BenefitsInc.com/fhir/eligibility/225476332405> ;
+        fhir:Reference.reference [
+            fhir:value "http://www.BenefitsInc.com/fhir/eligibility/225476332405"
+        ]
+    ] ;
+    fhir:EligibilityResponse.requestOrganization [
+        fhir:Reference.identifier [
+            fhir:Identifier.system [
+                fhir:value "http://national.org/clinic"
+            ] ;
+            fhir:Identifier.value [
+                fhir:value "OR1234"
+            ]
+        ]
+    ] ;
+    fhir:EligibilityResponse.requestProvider [
+        fhir:Reference.identifier [
+            fhir:Identifier.system [
+                fhir:value "http://national.org/provider"
+            ] ;
+            fhir:Identifier.value [
+                fhir:value "PR9876"
+            ]
+        ]
+    ] ;
+    fhir:EligibilityResponse.status [
+        fhir:value "active"
+    ] ;
+    fhir:Resource.id [
+        fhir:value "E2502"
+    ] .
+
+<http://hl7.org/fhir/EligibilityResponse/E2502.ttl> a owl:Ontology ;
+    owl:imports fhir:fhir.ttl .
+
+<http://hl7.org/fhir/Organization/2> a fhir:Organization .
+
+<http://hl7.org/fhir/http%3A//www.BenefitsInc.com/fhir/contract/NBU22547> a <http://hl7.org/fhir/http:> .
+
+<http://hl7.org/fhir/http%3A//www.BenefitsInc.com/fhir/eligibility/225476332405> a <http://hl7.org/fhir/http:> .
+

@@ -1,0 +1,77 @@
+
+
+Subject http://hl7.org/fhir/ProcessResponse/SR2500 DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/ProcessResponse/SR2500.ProcessResponse.request> <http://hl7.org/fhir/link> <http://happyvalley.com/fhir/claim/12345> .
+	----> Second: 
+<http://hl7.org/fhir/ProcessResponse/SR2500.ProcessResponse.request> <http://hl7.org/fhir/link> <http://hl7.org/fhir/http%3A//happyvalley.com/fhir/claim/12345> .----------------------------------------
+
+========================================
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix w5: <http://hl7.org/fhir/w5#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://hl7.org/fhir/ProcessResponse/SR2500> a fhir:ProcessResponse ;
+    fhir:nodeRole fhir:treeRoot ;
+    fhir:DomainResource.text [
+        fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">A human-readable rendering of the ProcessResponse</div>" ;
+        fhir:Narrative.status [
+            fhir:value "generated"
+        ]
+    ] ;
+    fhir:ProcessResponse.created [
+        fhir:value "2014-08-16"^^xsd:date
+    ] ;
+    fhir:ProcessResponse.disposition [
+        fhir:value "Adjudication processing completed, ClaimResponse and EOB ready for retrieval."
+    ] ;
+    fhir:ProcessResponse.identifier [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Identifier.system [
+            fhir:value "http://www.BenefitsInc.com/fhir/processresponse"
+        ] ;
+        fhir:Identifier.value [
+            fhir:value "881234"
+        ]
+    ] ;
+    fhir:ProcessResponse.organization [
+        fhir:link <http://hl7.org/fhir/Organization/2> ;
+        fhir:Reference.reference [
+            fhir:value "Organization/2"
+        ]
+    ] ;
+    fhir:ProcessResponse.outcome [
+        fhir:value "complete"
+    ] ;
+    fhir:ProcessResponse.request [
+        fhir:link <http://hl7.org/fhir/http%3A//happyvalley.com/fhir/claim/12345> ;
+        fhir:Reference.reference [
+            fhir:value "http://happyvalley.com/fhir/claim/12345"
+        ]
+    ] ;
+    fhir:ProcessResponse.requestOrganization [
+        fhir:link <http://hl7.org/fhir/Organization/1> ;
+        fhir:Reference.reference [
+            fhir:value "Organization/1"
+        ]
+    ] ;
+    fhir:ProcessResponse.status [
+        fhir:value "active"
+    ] ;
+    fhir:Resource.id [
+        fhir:value "SR2500"
+    ] .
+
+<http://hl7.org/fhir/ProcessResponse/SR2500.ttl> a owl:Ontology ;
+    owl:imports fhir:fhir.ttl .
+
+<http://hl7.org/fhir/Organization/1> a fhir:Organization .
+
+<http://hl7.org/fhir/Organization/2> a fhir:Organization .
+
+<http://hl7.org/fhir/http%3A//happyvalley.com/fhir/claim/12345> a <http://hl7.org/fhir/http:> .
+

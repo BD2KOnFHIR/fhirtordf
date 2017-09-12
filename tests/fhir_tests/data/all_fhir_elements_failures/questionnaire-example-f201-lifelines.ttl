@@ -1,0 +1,246 @@
+
+
+Subject http://hl7.org/fhir/Questionnaire/f201 DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_0.Questionnaire.item.linkId> <http://hl7.org/fhir/value> "2.1" .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_0.Questionnaire.item.text> <http://hl7.org/fhir/value> "What is your gender?" .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_0.Questionnaire.item.type> <http://hl7.org/fhir/value> "string" .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_0> <http://hl7.org/fhir/Questionnaire.item.linkId> <http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_0.Questionnaire.item.linkId> .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_0> <http://hl7.org/fhir/Questionnaire.item.text> <http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_0.Questionnaire.item.text> .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_0> <http://hl7.org/fhir/Questionnaire.item.type> <http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_0.Questionnaire.item.type> .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_1.Questionnaire.item.linkId> <http://hl7.org/fhir/value> "2.2" .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_1.Questionnaire.item.text> <http://hl7.org/fhir/value> "What is your date of birth?" .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_1.Questionnaire.item.type> <http://hl7.org/fhir/value> "date" .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_1> <http://hl7.org/fhir/Questionnaire.item.linkId> <http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_1.Questionnaire.item.linkId> .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_1> <http://hl7.org/fhir/Questionnaire.item.text> <http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_1.Questionnaire.item.text> .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_1> <http://hl7.org/fhir/Questionnaire.item.type> <http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_1.Questionnaire.item.type> .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_2.Questionnaire.item.linkId> <http://hl7.org/fhir/value> "2.3" .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_2.Questionnaire.item.text> <http://hl7.org/fhir/value> "What is your country of birth?" .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_2.Questionnaire.item.type> <http://hl7.org/fhir/value> "string" .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_2> <http://hl7.org/fhir/Questionnaire.item.linkId> <http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_2.Questionnaire.item.linkId> .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_2> <http://hl7.org/fhir/Questionnaire.item.text> <http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_2.Questionnaire.item.text> .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_2> <http://hl7.org/fhir/Questionnaire.item.type> <http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_2.Questionnaire.item.type> .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_3.Questionnaire.item.linkId> <http://hl7.org/fhir/value> "2.4" .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_3.Questionnaire.item.text> <http://hl7.org/fhir/value> "What is your marital status?" .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_3.Questionnaire.item.type> <http://hl7.org/fhir/value> "string" .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_3> <http://hl7.org/fhir/Questionnaire.item.linkId> <http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_3.Questionnaire.item.linkId> .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_3> <http://hl7.org/fhir/Questionnaire.item.text> <http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_3.Questionnaire.item.text> .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_3> <http://hl7.org/fhir/Questionnaire.item.type> <http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_3.Questionnaire.item.type> .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_2.Questionnaire.item.item_0.Questionnaire.item.linkId> <http://hl7.org/fhir/value> "3.1" .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_2.Questionnaire.item.item_0.Questionnaire.item.text> <http://hl7.org/fhir/value> "Do you smoke?" .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_2.Questionnaire.item.item_0.Questionnaire.item.type> <http://hl7.org/fhir/value> "boolean" .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_2.Questionnaire.item.item_0> <http://hl7.org/fhir/Questionnaire.item.linkId> <http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_2.Questionnaire.item.item_0.Questionnaire.item.linkId> .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_2.Questionnaire.item.item_0> <http://hl7.org/fhir/Questionnaire.item.text> <http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_2.Questionnaire.item.item_0.Questionnaire.item.text> .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_2.Questionnaire.item.item_0> <http://hl7.org/fhir/Questionnaire.item.type> <http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_2.Questionnaire.item.item_0.Questionnaire.item.type> .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_2.Questionnaire.item.item_1.Questionnaire.item.linkId> <http://hl7.org/fhir/value> "3.2" .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_2.Questionnaire.item.item_1.Questionnaire.item.text> <http://hl7.org/fhir/value> "Do you drink alchohol?" .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_2.Questionnaire.item.item_1.Questionnaire.item.type> <http://hl7.org/fhir/value> "boolean" .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_2.Questionnaire.item.item_1> <http://hl7.org/fhir/Questionnaire.item.linkId> <http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_2.Questionnaire.item.item_1.Questionnaire.item.linkId> .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_2.Questionnaire.item.item_1> <http://hl7.org/fhir/Questionnaire.item.text> <http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_2.Questionnaire.item.item_1.Questionnaire.item.text> .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_2.Questionnaire.item.item_1> <http://hl7.org/fhir/Questionnaire.item.type> <http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_2.Questionnaire.item.item_1.Questionnaire.item.type> .
+	----> Second: 
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_0.Questionnaire.item.item.linkId> <http://hl7.org/fhir/value> "2.1" .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_0.Questionnaire.item.item.text> <http://hl7.org/fhir/value> "What is your gender?" .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_0.Questionnaire.item.item.type> <http://hl7.org/fhir/value> "string" .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_0> <http://hl7.org/fhir/Questionnaire.item.item.linkId> <http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_0.Questionnaire.item.item.linkId> .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_0> <http://hl7.org/fhir/Questionnaire.item.item.text> <http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_0.Questionnaire.item.item.text> .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_0> <http://hl7.org/fhir/Questionnaire.item.item.type> <http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_0.Questionnaire.item.item.type> .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_1.Questionnaire.item.item.linkId> <http://hl7.org/fhir/value> "2.2" .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_1.Questionnaire.item.item.text> <http://hl7.org/fhir/value> "What is your date of birth?" .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_1.Questionnaire.item.item.type> <http://hl7.org/fhir/value> "date" .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_1> <http://hl7.org/fhir/Questionnaire.item.item.linkId> <http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_1.Questionnaire.item.item.linkId> .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_1> <http://hl7.org/fhir/Questionnaire.item.item.text> <http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_1.Questionnaire.item.item.text> .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_1> <http://hl7.org/fhir/Questionnaire.item.item.type> <http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_1.Questionnaire.item.item.type> .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_2.Questionnaire.item.item.linkId> <http://hl7.org/fhir/value> "2.3" .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_2.Questionnaire.item.item.text> <http://hl7.org/fhir/value> "What is your country of birth?" .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_2.Questionnaire.item.item.type> <http://hl7.org/fhir/value> "string" .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_2> <http://hl7.org/fhir/Questionnaire.item.item.linkId> <http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_2.Questionnaire.item.item.linkId> .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_2> <http://hl7.org/fhir/Questionnaire.item.item.text> <http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_2.Questionnaire.item.item.text> .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_2> <http://hl7.org/fhir/Questionnaire.item.item.type> <http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_2.Questionnaire.item.item.type> .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_3.Questionnaire.item.item.linkId> <http://hl7.org/fhir/value> "2.4" .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_3.Questionnaire.item.item.text> <http://hl7.org/fhir/value> "What is your marital status?" .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_3.Questionnaire.item.item.type> <http://hl7.org/fhir/value> "string" .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_3> <http://hl7.org/fhir/Questionnaire.item.item.linkId> <http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_3.Questionnaire.item.item.linkId> .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_3> <http://hl7.org/fhir/Questionnaire.item.item.text> <http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_3.Questionnaire.item.item.text> .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_3> <http://hl7.org/fhir/Questionnaire.item.item.type> <http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_1.Questionnaire.item.item_3.Questionnaire.item.item.type> .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_2.Questionnaire.item.item_0.Questionnaire.item.item.linkId> <http://hl7.org/fhir/value> "3.1" .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_2.Questionnaire.item.item_0.Questionnaire.item.item.text> <http://hl7.org/fhir/value> "Do you smoke?" .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_2.Questionnaire.item.item_0.Questionnaire.item.item.type> <http://hl7.org/fhir/value> "boolean" .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_2.Questionnaire.item.item_0> <http://hl7.org/fhir/Questionnaire.item.item.linkId> <http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_2.Questionnaire.item.item_0.Questionnaire.item.item.linkId> .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_2.Questionnaire.item.item_0> <http://hl7.org/fhir/Questionnaire.item.item.text> <http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_2.Questionnaire.item.item_0.Questionnaire.item.item.text> .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_2.Questionnaire.item.item_0> <http://hl7.org/fhir/Questionnaire.item.item.type> <http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_2.Questionnaire.item.item_0.Questionnaire.item.item.type> .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_2.Questionnaire.item.item_1.Questionnaire.item.item.linkId> <http://hl7.org/fhir/value> "3.2" .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_2.Questionnaire.item.item_1.Questionnaire.item.item.text> <http://hl7.org/fhir/value> "Do you drink alchohol?" .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_2.Questionnaire.item.item_1.Questionnaire.item.item.type> <http://hl7.org/fhir/value> "boolean" .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_2.Questionnaire.item.item_1> <http://hl7.org/fhir/Questionnaire.item.item.linkId> <http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_2.Questionnaire.item.item_1.Questionnaire.item.item.linkId> .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_2.Questionnaire.item.item_1> <http://hl7.org/fhir/Questionnaire.item.item.text> <http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_2.Questionnaire.item.item_1.Questionnaire.item.item.text> .
+<http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_2.Questionnaire.item.item_1> <http://hl7.org/fhir/Questionnaire.item.item.type> <http://hl7.org/fhir/Questionnaire/f201.Questionnaire.item_2.Questionnaire.item.item_1.Questionnaire.item.item.type> .----------------------------------------
+
+========================================
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix w5: <http://hl7.org/fhir/w5#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://hl7.org/fhir/Questionnaire/f201> a fhir:Questionnaire ;
+    fhir:nodeRole fhir:treeRoot ;
+    fhir:DomainResource.text [
+        fhir:Narrative.div """<div xmlns="http://www.w3.org/1999/xhtml">
+      <pre>Lifelines Questionnaire 1 part 1
+  1. Do you have allergies?
+  2. General Questions:
+    2.a) What is your gender?
+    2.b) What is your date of birth?
+    2.c) What is your country of birth?
+    2.d) What is your marital status?
+    3. Intoxications:
+      3.a) Do you smoke?
+      3.b) Do you drink alcohol?</pre>
+    </div>""" ;
+        fhir:Narrative.status [
+            fhir:value "generated"
+        ]
+    ] ;
+    fhir:Questionnaire.code [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Coding.code [
+            fhir:value "VL 1-1, 18-65_1.2.2"
+        ] ;
+        fhir:Coding.display [
+            fhir:value "Lifelines Questionnaire 1 part 1"
+        ] ;
+        fhir:Coding.system [
+            fhir:value "http://example.org/system/code/lifelines/nl"
+        ]
+    ] ;
+    fhir:Questionnaire.date [
+        fhir:value "2010-01-01"^^xsd:gYear
+    ] ;
+    fhir:Questionnaire.item [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Questionnaire.item.linkId [
+            fhir:value "1"
+        ] ;
+        fhir:Questionnaire.item.text [
+            fhir:value "Do you have allergies?"
+        ] ;
+        fhir:Questionnaire.item.type [
+            fhir:value "boolean"
+        ]
+    ],
+        [
+        fhir:index "1"^^xsd:integer ;
+        fhir:Questionnaire.item.item [
+            fhir:index "1"^^xsd:integer ;
+            fhir:Questionnaire.item.item.linkId [
+                fhir:value "2.2"
+            ] ;
+            fhir:Questionnaire.item.item.text [
+                fhir:value "What is your date of birth?"
+            ] ;
+            fhir:Questionnaire.item.item.type [
+                fhir:value "date"
+            ]
+        ],
+            [
+            fhir:index "0"^^xsd:integer ;
+            fhir:Questionnaire.item.item.linkId [
+                fhir:value "2.1"
+            ] ;
+            fhir:Questionnaire.item.item.text [
+                fhir:value "What is your gender?"
+            ] ;
+            fhir:Questionnaire.item.item.type [
+                fhir:value "string"
+            ]
+        ],
+            [
+            fhir:index "3"^^xsd:integer ;
+            fhir:Questionnaire.item.item.linkId [
+                fhir:value "2.4"
+            ] ;
+            fhir:Questionnaire.item.item.text [
+                fhir:value "What is your marital status?"
+            ] ;
+            fhir:Questionnaire.item.item.type [
+                fhir:value "string"
+            ]
+        ],
+            [
+            fhir:index "2"^^xsd:integer ;
+            fhir:Questionnaire.item.item.linkId [
+                fhir:value "2.3"
+            ] ;
+            fhir:Questionnaire.item.item.text [
+                fhir:value "What is your country of birth?"
+            ] ;
+            fhir:Questionnaire.item.item.type [
+                fhir:value "string"
+            ]
+        ] ;
+        fhir:Questionnaire.item.linkId [
+            fhir:value "2"
+        ] ;
+        fhir:Questionnaire.item.text [
+            fhir:value "General questions"
+        ] ;
+        fhir:Questionnaire.item.type [
+            fhir:value "group"
+        ]
+    ],
+        [
+        fhir:index "2"^^xsd:integer ;
+        fhir:Questionnaire.item.item [
+            fhir:index "0"^^xsd:integer ;
+            fhir:Questionnaire.item.item.linkId [
+                fhir:value "3.1"
+            ] ;
+            fhir:Questionnaire.item.item.text [
+                fhir:value "Do you smoke?"
+            ] ;
+            fhir:Questionnaire.item.item.type [
+                fhir:value "boolean"
+            ]
+        ],
+            [
+            fhir:index "1"^^xsd:integer ;
+            fhir:Questionnaire.item.item.linkId [
+                fhir:value "3.2"
+            ] ;
+            fhir:Questionnaire.item.item.text [
+                fhir:value "Do you drink alchohol?"
+            ] ;
+            fhir:Questionnaire.item.item.type [
+                fhir:value "boolean"
+            ]
+        ] ;
+        fhir:Questionnaire.item.linkId [
+            fhir:value "3"
+        ] ;
+        fhir:Questionnaire.item.text [
+            fhir:value "Intoxications"
+        ] ;
+        fhir:Questionnaire.item.type [
+            fhir:value "group"
+        ]
+    ] ;
+    fhir:Questionnaire.status [
+        fhir:value "active"
+    ] ;
+    fhir:Questionnaire.subjectType [
+        fhir:index "0"^^xsd:integer ;
+        fhir:value "Patient"
+    ] ;
+    fhir:Questionnaire.url [
+        fhir:value "http://hl7.org/fhir/Questionnaire/f201"
+    ] ;
+    fhir:Resource.id [
+        fhir:value "f201"
+    ] .
+
+<http://hl7.org/fhir/Questionnaire/f201.ttl> a owl:Ontology ;
+    owl:imports fhir:fhir.ttl .
+

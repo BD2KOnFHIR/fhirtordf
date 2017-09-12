@@ -263,6 +263,21 @@
         ]
     ] ;
     fhir:Patient.telecom [
+        fhir:index "1"^^xsd:integer ;
+        fhir:ContactPoint.rank [
+            fhir:value "1"^^xsd:positiveInteger
+        ] ;
+        fhir:ContactPoint.system [
+            fhir:value "phone"
+        ] ;
+        fhir:ContactPoint.use [
+            fhir:value "work"
+        ] ;
+        fhir:ContactPoint.value [
+            fhir:value "(03) 5555 6473"
+        ]
+    ],
+        [
         fhir:index "3"^^xsd:integer ;
         fhir:ContactPoint.period [
             fhir:Period.end [
@@ -277,21 +292,6 @@
         ] ;
         fhir:ContactPoint.value [
             fhir:value "(03) 5555 8834"
-        ]
-    ],
-        [
-        fhir:index "1"^^xsd:integer ;
-        fhir:ContactPoint.rank [
-            fhir:value "1"^^xsd:positiveInteger
-        ] ;
-        fhir:ContactPoint.system [
-            fhir:value "phone"
-        ] ;
-        fhir:ContactPoint.use [
-            fhir:value "work"
-        ] ;
-        fhir:ContactPoint.value [
-            fhir:value "(03) 5555 6473"
         ]
     ],
         [

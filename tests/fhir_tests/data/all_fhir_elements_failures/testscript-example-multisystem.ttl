@@ -1,0 +1,677 @@
+
+
+Subject http://hl7.org/fhir/TestScript/testscript-example-multisystem DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation.TestScript.setup.action.operation.accept> <http://hl7.org/fhir/value> "xml" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation.TestScript.setup.action.operation.contentType> <http://hl7.org/fhir/value> "xml" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation.TestScript.setup.action.operation.description> <http://hl7.org/fhir/value> "Read a Patient from the first destination test system and perform basic validation." .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation.TestScript.setup.action.operation.destination> <http://hl7.org/fhir/value> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation.TestScript.setup.action.operation.origin> <http://hl7.org/fhir/value> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation.TestScript.setup.action.operation.params> <http://hl7.org/fhir/value> "/${Dest1PatientResourceId}" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation.TestScript.setup.action.operation.requestId> <http://hl7.org/fhir/value> "request-read-patient-01" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation.TestScript.setup.action.operation.resource> <http://hl7.org/fhir/value> "Patient" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation.TestScript.setup.action.operation.type.Coding.code> <http://hl7.org/fhir/value> "read" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation.TestScript.setup.action.operation.type.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/testscript-operation-codes" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation.TestScript.setup.action.operation.type> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation.TestScript.setup.action.operation.type.Coding.code> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation.TestScript.setup.action.operation.type> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation.TestScript.setup.action.operation.type.Coding.system> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation> <http://hl7.org/fhir/TestScript.setup.action.operation.accept> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation.TestScript.setup.action.operation.accept> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation> <http://hl7.org/fhir/TestScript.setup.action.operation.contentType> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation.TestScript.setup.action.operation.contentType> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation> <http://hl7.org/fhir/TestScript.setup.action.operation.description> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation.TestScript.setup.action.operation.description> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation> <http://hl7.org/fhir/TestScript.setup.action.operation.destination> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation.TestScript.setup.action.operation.destination> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation> <http://hl7.org/fhir/TestScript.setup.action.operation.origin> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation.TestScript.setup.action.operation.origin> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation> <http://hl7.org/fhir/TestScript.setup.action.operation.params> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation.TestScript.setup.action.operation.params> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation> <http://hl7.org/fhir/TestScript.setup.action.operation.requestId> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation.TestScript.setup.action.operation.requestId> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation> <http://hl7.org/fhir/TestScript.setup.action.operation.resource> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation.TestScript.setup.action.operation.resource> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation> <http://hl7.org/fhir/TestScript.setup.action.operation.type> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation.TestScript.setup.action.operation.type> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_1.TestScript.test.action.assert.TestScript.setup.action.assert.description> <http://hl7.org/fhir/value> "Confirm that the request method GET was sent by the client system under test." .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_1.TestScript.test.action.assert.TestScript.setup.action.assert.requestMethod> <http://hl7.org/fhir/value> "get" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_1.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.setup.action.assert.description> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_1.TestScript.test.action.assert.TestScript.setup.action.assert.description> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_1.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.setup.action.assert.requestMethod> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_1.TestScript.test.action.assert.TestScript.setup.action.assert.requestMethod> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_2.TestScript.test.action.assert.TestScript.setup.action.assert.description> <http://hl7.org/fhir/value> "Confirm that the client requested an Accept of xml." .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_2.TestScript.test.action.assert.TestScript.setup.action.assert.direction> <http://hl7.org/fhir/value> "request" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_2.TestScript.test.action.assert.TestScript.setup.action.assert.headerField> <http://hl7.org/fhir/value> "Accept" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_2.TestScript.test.action.assert.TestScript.setup.action.assert.operator> <http://hl7.org/fhir/value> "contains" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_2.TestScript.test.action.assert.TestScript.setup.action.assert.value> <http://hl7.org/fhir/value> "xml" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_2.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.setup.action.assert.description> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_2.TestScript.test.action.assert.TestScript.setup.action.assert.description> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_2.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.setup.action.assert.direction> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_2.TestScript.test.action.assert.TestScript.setup.action.assert.direction> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_2.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.setup.action.assert.headerField> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_2.TestScript.test.action.assert.TestScript.setup.action.assert.headerField> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_2.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.setup.action.assert.operator> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_2.TestScript.test.action.assert.TestScript.setup.action.assert.operator> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_2.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.setup.action.assert.value> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_2.TestScript.test.action.assert.TestScript.setup.action.assert.value> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_3.TestScript.test.action.assert.TestScript.setup.action.assert.description> <http://hl7.org/fhir/value> "Confirm that the returned HTTP status is 200(OK)." .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_3.TestScript.test.action.assert.TestScript.setup.action.assert.direction> <http://hl7.org/fhir/value> "response" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_3.TestScript.test.action.assert.TestScript.setup.action.assert.response> <http://hl7.org/fhir/value> "okay" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_3.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.setup.action.assert.description> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_3.TestScript.test.action.assert.TestScript.setup.action.assert.description> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_3.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.setup.action.assert.direction> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_3.TestScript.test.action.assert.TestScript.setup.action.assert.direction> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_3.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.setup.action.assert.response> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_3.TestScript.test.action.assert.TestScript.setup.action.assert.response> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_4.TestScript.test.action.assert.TestScript.setup.action.assert.contentType> <http://hl7.org/fhir/value> "xml" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_4.TestScript.test.action.assert.TestScript.setup.action.assert.description> <http://hl7.org/fhir/value> "Confirm that the returned format is XML." .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_4.TestScript.test.action.assert.TestScript.setup.action.assert.direction> <http://hl7.org/fhir/value> "response" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_4.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.setup.action.assert.contentType> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_4.TestScript.test.action.assert.TestScript.setup.action.assert.contentType> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_4.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.setup.action.assert.description> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_4.TestScript.test.action.assert.TestScript.setup.action.assert.description> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_4.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.setup.action.assert.direction> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_4.TestScript.test.action.assert.TestScript.setup.action.assert.direction> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_5.TestScript.test.action.assert.TestScript.setup.action.assert.description> <http://hl7.org/fhir/value> "Confirm that the returned resource type is Patient." .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_5.TestScript.test.action.assert.TestScript.setup.action.assert.direction> <http://hl7.org/fhir/value> "response" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_5.TestScript.test.action.assert.TestScript.setup.action.assert.resource> <http://hl7.org/fhir/value> "Patient" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_5.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.setup.action.assert.description> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_5.TestScript.test.action.assert.TestScript.setup.action.assert.description> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_5.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.setup.action.assert.direction> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_5.TestScript.test.action.assert.TestScript.setup.action.assert.direction> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_5.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.setup.action.assert.resource> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_5.TestScript.test.action.assert.TestScript.setup.action.assert.resource> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.setup.action.operation.accept> <http://hl7.org/fhir/value> "xml" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.setup.action.operation.contentType> <http://hl7.org/fhir/value> "xml" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.setup.action.operation.description> <http://hl7.org/fhir/value> "Read a Patient from the second destination test system and perform basic validation." .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.setup.action.operation.destination> <http://hl7.org/fhir/value> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.setup.action.operation.origin> <http://hl7.org/fhir/value> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.setup.action.operation.params> <http://hl7.org/fhir/value> "/${Dest2PatientResourceId}" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.setup.action.operation.requestHeader_0.TestScript.setup.action.operation.requestHeader.field> <http://hl7.org/fhir/value> "Accept-Charset" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.setup.action.operation.requestHeader_0.TestScript.setup.action.operation.requestHeader.value> <http://hl7.org/fhir/value> "utf-8" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.setup.action.operation.requestHeader_0> <http://hl7.org/fhir/TestScript.setup.action.operation.requestHeader.field> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.setup.action.operation.requestHeader_0.TestScript.setup.action.operation.requestHeader.field> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.setup.action.operation.requestHeader_0> <http://hl7.org/fhir/TestScript.setup.action.operation.requestHeader.value> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.setup.action.operation.requestHeader_0.TestScript.setup.action.operation.requestHeader.value> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.setup.action.operation.requestHeader_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.setup.action.operation.resource> <http://hl7.org/fhir/value> "Patient" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.setup.action.operation.type.Coding.code> <http://hl7.org/fhir/value> "read" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.setup.action.operation.type.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/testscript-operation-codes" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.setup.action.operation.type> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.setup.action.operation.type.Coding.code> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.setup.action.operation.type> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.setup.action.operation.type.Coding.system> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation> <http://hl7.org/fhir/TestScript.setup.action.operation.accept> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.setup.action.operation.accept> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation> <http://hl7.org/fhir/TestScript.setup.action.operation.contentType> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.setup.action.operation.contentType> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation> <http://hl7.org/fhir/TestScript.setup.action.operation.description> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.setup.action.operation.description> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation> <http://hl7.org/fhir/TestScript.setup.action.operation.destination> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.setup.action.operation.destination> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation> <http://hl7.org/fhir/TestScript.setup.action.operation.origin> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.setup.action.operation.origin> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation> <http://hl7.org/fhir/TestScript.setup.action.operation.params> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.setup.action.operation.params> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation> <http://hl7.org/fhir/TestScript.setup.action.operation.requestHeader> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.setup.action.operation.requestHeader_0> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation> <http://hl7.org/fhir/TestScript.setup.action.operation.resource> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.setup.action.operation.resource> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation> <http://hl7.org/fhir/TestScript.setup.action.operation.type> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.setup.action.operation.type> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_1.TestScript.test.action.assert.TestScript.setup.action.assert.description> <http://hl7.org/fhir/value> "Confirm that the client requested an Accept of xml." .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_1.TestScript.test.action.assert.TestScript.setup.action.assert.direction> <http://hl7.org/fhir/value> "request" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_1.TestScript.test.action.assert.TestScript.setup.action.assert.headerField> <http://hl7.org/fhir/value> "Accept" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_1.TestScript.test.action.assert.TestScript.setup.action.assert.operator> <http://hl7.org/fhir/value> "contains" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_1.TestScript.test.action.assert.TestScript.setup.action.assert.value> <http://hl7.org/fhir/value> "xml" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_1.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.setup.action.assert.description> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_1.TestScript.test.action.assert.TestScript.setup.action.assert.description> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_1.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.setup.action.assert.direction> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_1.TestScript.test.action.assert.TestScript.setup.action.assert.direction> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_1.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.setup.action.assert.headerField> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_1.TestScript.test.action.assert.TestScript.setup.action.assert.headerField> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_1.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.setup.action.assert.operator> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_1.TestScript.test.action.assert.TestScript.setup.action.assert.operator> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_1.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.setup.action.assert.value> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_1.TestScript.test.action.assert.TestScript.setup.action.assert.value> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_2.TestScript.test.action.assert.TestScript.setup.action.assert.description> <http://hl7.org/fhir/value> "Confirm that the returned HTTP status is 200(OK)." .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_2.TestScript.test.action.assert.TestScript.setup.action.assert.direction> <http://hl7.org/fhir/value> "response" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_2.TestScript.test.action.assert.TestScript.setup.action.assert.response> <http://hl7.org/fhir/value> "okay" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_2.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.setup.action.assert.description> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_2.TestScript.test.action.assert.TestScript.setup.action.assert.description> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_2.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.setup.action.assert.direction> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_2.TestScript.test.action.assert.TestScript.setup.action.assert.direction> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_2.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.setup.action.assert.response> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_2.TestScript.test.action.assert.TestScript.setup.action.assert.response> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_3.TestScript.test.action.assert.TestScript.setup.action.assert.contentType> <http://hl7.org/fhir/value> "xml" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_3.TestScript.test.action.assert.TestScript.setup.action.assert.description> <http://hl7.org/fhir/value> "Confirm that the returned format is XML." .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_3.TestScript.test.action.assert.TestScript.setup.action.assert.direction> <http://hl7.org/fhir/value> "response" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_3.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.setup.action.assert.contentType> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_3.TestScript.test.action.assert.TestScript.setup.action.assert.contentType> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_3.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.setup.action.assert.description> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_3.TestScript.test.action.assert.TestScript.setup.action.assert.description> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_3.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.setup.action.assert.direction> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_3.TestScript.test.action.assert.TestScript.setup.action.assert.direction> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_4.TestScript.test.action.assert.TestScript.setup.action.assert.description> <http://hl7.org/fhir/value> "Confirm that the returned resource type is Patient." .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_4.TestScript.test.action.assert.TestScript.setup.action.assert.direction> <http://hl7.org/fhir/value> "response" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_4.TestScript.test.action.assert.TestScript.setup.action.assert.resource> <http://hl7.org/fhir/value> "Patient" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_4.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.setup.action.assert.description> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_4.TestScript.test.action.assert.TestScript.setup.action.assert.description> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_4.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.setup.action.assert.direction> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_4.TestScript.test.action.assert.TestScript.setup.action.assert.direction> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_4.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.setup.action.assert.resource> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_4.TestScript.test.action.assert.TestScript.setup.action.assert.resource> .
+	----> Second: 
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation.TestScript.test.action.operation.accept> <http://hl7.org/fhir/value> "xml" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation.TestScript.test.action.operation.contentType> <http://hl7.org/fhir/value> "xml" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation.TestScript.test.action.operation.description> <http://hl7.org/fhir/value> "Read a Patient from the first destination test system and perform basic validation." .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation.TestScript.test.action.operation.destination> <http://hl7.org/fhir/value> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation.TestScript.test.action.operation.origin> <http://hl7.org/fhir/value> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation.TestScript.test.action.operation.params> <http://hl7.org/fhir/value> "/${Dest1PatientResourceId}" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation.TestScript.test.action.operation.requestId> <http://hl7.org/fhir/value> "request-read-patient-01" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation.TestScript.test.action.operation.resource> <http://hl7.org/fhir/value> "Patient" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation.TestScript.test.action.operation.type.Coding.code> <http://hl7.org/fhir/value> "read" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation.TestScript.test.action.operation.type.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/testscript-operation-codes" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation.TestScript.test.action.operation.type> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation.TestScript.test.action.operation.type.Coding.code> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation.TestScript.test.action.operation.type> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation.TestScript.test.action.operation.type.Coding.system> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation> <http://hl7.org/fhir/TestScript.test.action.operation.accept> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation.TestScript.test.action.operation.accept> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation> <http://hl7.org/fhir/TestScript.test.action.operation.contentType> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation.TestScript.test.action.operation.contentType> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation> <http://hl7.org/fhir/TestScript.test.action.operation.description> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation.TestScript.test.action.operation.description> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation> <http://hl7.org/fhir/TestScript.test.action.operation.destination> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation.TestScript.test.action.operation.destination> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation> <http://hl7.org/fhir/TestScript.test.action.operation.origin> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation.TestScript.test.action.operation.origin> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation> <http://hl7.org/fhir/TestScript.test.action.operation.params> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation.TestScript.test.action.operation.params> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation> <http://hl7.org/fhir/TestScript.test.action.operation.requestId> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation.TestScript.test.action.operation.requestId> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation> <http://hl7.org/fhir/TestScript.test.action.operation.resource> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation.TestScript.test.action.operation.resource> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation> <http://hl7.org/fhir/TestScript.test.action.operation.type> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_0.TestScript.test.action.operation.TestScript.test.action.operation.type> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_1.TestScript.test.action.assert.TestScript.test.action.assert.description> <http://hl7.org/fhir/value> "Confirm that the request method GET was sent by the client system under test." .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_1.TestScript.test.action.assert.TestScript.test.action.assert.requestMethod> <http://hl7.org/fhir/value> "get" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_1.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.test.action.assert.description> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_1.TestScript.test.action.assert.TestScript.test.action.assert.description> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_1.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.test.action.assert.requestMethod> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_1.TestScript.test.action.assert.TestScript.test.action.assert.requestMethod> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_2.TestScript.test.action.assert.TestScript.test.action.assert.description> <http://hl7.org/fhir/value> "Confirm that the client requested an Accept of xml." .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_2.TestScript.test.action.assert.TestScript.test.action.assert.direction> <http://hl7.org/fhir/value> "request" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_2.TestScript.test.action.assert.TestScript.test.action.assert.headerField> <http://hl7.org/fhir/value> "Accept" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_2.TestScript.test.action.assert.TestScript.test.action.assert.operator> <http://hl7.org/fhir/value> "contains" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_2.TestScript.test.action.assert.TestScript.test.action.assert.value> <http://hl7.org/fhir/value> "xml" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_2.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.test.action.assert.description> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_2.TestScript.test.action.assert.TestScript.test.action.assert.description> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_2.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.test.action.assert.direction> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_2.TestScript.test.action.assert.TestScript.test.action.assert.direction> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_2.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.test.action.assert.headerField> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_2.TestScript.test.action.assert.TestScript.test.action.assert.headerField> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_2.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.test.action.assert.operator> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_2.TestScript.test.action.assert.TestScript.test.action.assert.operator> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_2.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.test.action.assert.value> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_2.TestScript.test.action.assert.TestScript.test.action.assert.value> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_3.TestScript.test.action.assert.TestScript.test.action.assert.description> <http://hl7.org/fhir/value> "Confirm that the returned HTTP status is 200(OK)." .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_3.TestScript.test.action.assert.TestScript.test.action.assert.direction> <http://hl7.org/fhir/value> "response" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_3.TestScript.test.action.assert.TestScript.test.action.assert.response> <http://hl7.org/fhir/value> "okay" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_3.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.test.action.assert.description> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_3.TestScript.test.action.assert.TestScript.test.action.assert.description> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_3.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.test.action.assert.direction> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_3.TestScript.test.action.assert.TestScript.test.action.assert.direction> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_3.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.test.action.assert.response> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_3.TestScript.test.action.assert.TestScript.test.action.assert.response> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_4.TestScript.test.action.assert.TestScript.test.action.assert.contentType> <http://hl7.org/fhir/value> "xml" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_4.TestScript.test.action.assert.TestScript.test.action.assert.description> <http://hl7.org/fhir/value> "Confirm that the returned format is XML." .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_4.TestScript.test.action.assert.TestScript.test.action.assert.direction> <http://hl7.org/fhir/value> "response" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_4.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.test.action.assert.contentType> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_4.TestScript.test.action.assert.TestScript.test.action.assert.contentType> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_4.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.test.action.assert.description> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_4.TestScript.test.action.assert.TestScript.test.action.assert.description> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_4.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.test.action.assert.direction> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_4.TestScript.test.action.assert.TestScript.test.action.assert.direction> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_5.TestScript.test.action.assert.TestScript.test.action.assert.description> <http://hl7.org/fhir/value> "Confirm that the returned resource type is Patient." .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_5.TestScript.test.action.assert.TestScript.test.action.assert.direction> <http://hl7.org/fhir/value> "response" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_5.TestScript.test.action.assert.TestScript.test.action.assert.resource> <http://hl7.org/fhir/value> "Patient" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_5.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.test.action.assert.description> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_5.TestScript.test.action.assert.TestScript.test.action.assert.description> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_5.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.test.action.assert.direction> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_5.TestScript.test.action.assert.TestScript.test.action.assert.direction> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_5.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.test.action.assert.resource> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_0.TestScript.test.action_5.TestScript.test.action.assert.TestScript.test.action.assert.resource> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.test.action.operation.accept> <http://hl7.org/fhir/value> "xml" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.test.action.operation.contentType> <http://hl7.org/fhir/value> "xml" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.test.action.operation.description> <http://hl7.org/fhir/value> "Read a Patient from the second destination test system and perform basic validation." .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.test.action.operation.destination> <http://hl7.org/fhir/value> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.test.action.operation.origin> <http://hl7.org/fhir/value> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.test.action.operation.params> <http://hl7.org/fhir/value> "/${Dest2PatientResourceId}" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.test.action.operation.requestHeader_0.TestScript.test.action.operation.requestHeader.field> <http://hl7.org/fhir/value> "Accept-Charset" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.test.action.operation.requestHeader_0.TestScript.test.action.operation.requestHeader.value> <http://hl7.org/fhir/value> "utf-8" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.test.action.operation.requestHeader_0> <http://hl7.org/fhir/TestScript.test.action.operation.requestHeader.field> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.test.action.operation.requestHeader_0.TestScript.test.action.operation.requestHeader.field> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.test.action.operation.requestHeader_0> <http://hl7.org/fhir/TestScript.test.action.operation.requestHeader.value> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.test.action.operation.requestHeader_0.TestScript.test.action.operation.requestHeader.value> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.test.action.operation.requestHeader_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.test.action.operation.resource> <http://hl7.org/fhir/value> "Patient" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.test.action.operation.type.Coding.code> <http://hl7.org/fhir/value> "read" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.test.action.operation.type.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/testscript-operation-codes" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.test.action.operation.type> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.test.action.operation.type.Coding.code> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.test.action.operation.type> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.test.action.operation.type.Coding.system> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation> <http://hl7.org/fhir/TestScript.test.action.operation.accept> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.test.action.operation.accept> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation> <http://hl7.org/fhir/TestScript.test.action.operation.contentType> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.test.action.operation.contentType> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation> <http://hl7.org/fhir/TestScript.test.action.operation.description> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.test.action.operation.description> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation> <http://hl7.org/fhir/TestScript.test.action.operation.destination> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.test.action.operation.destination> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation> <http://hl7.org/fhir/TestScript.test.action.operation.origin> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.test.action.operation.origin> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation> <http://hl7.org/fhir/TestScript.test.action.operation.params> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.test.action.operation.params> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation> <http://hl7.org/fhir/TestScript.test.action.operation.requestHeader> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.test.action.operation.requestHeader_0> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation> <http://hl7.org/fhir/TestScript.test.action.operation.resource> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.test.action.operation.resource> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation> <http://hl7.org/fhir/TestScript.test.action.operation.type> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_0.TestScript.test.action.operation.TestScript.test.action.operation.type> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_1.TestScript.test.action.assert.TestScript.test.action.assert.description> <http://hl7.org/fhir/value> "Confirm that the client requested an Accept of xml." .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_1.TestScript.test.action.assert.TestScript.test.action.assert.direction> <http://hl7.org/fhir/value> "request" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_1.TestScript.test.action.assert.TestScript.test.action.assert.headerField> <http://hl7.org/fhir/value> "Accept" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_1.TestScript.test.action.assert.TestScript.test.action.assert.operator> <http://hl7.org/fhir/value> "contains" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_1.TestScript.test.action.assert.TestScript.test.action.assert.value> <http://hl7.org/fhir/value> "xml" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_1.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.test.action.assert.description> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_1.TestScript.test.action.assert.TestScript.test.action.assert.description> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_1.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.test.action.assert.direction> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_1.TestScript.test.action.assert.TestScript.test.action.assert.direction> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_1.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.test.action.assert.headerField> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_1.TestScript.test.action.assert.TestScript.test.action.assert.headerField> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_1.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.test.action.assert.operator> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_1.TestScript.test.action.assert.TestScript.test.action.assert.operator> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_1.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.test.action.assert.value> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_1.TestScript.test.action.assert.TestScript.test.action.assert.value> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_2.TestScript.test.action.assert.TestScript.test.action.assert.description> <http://hl7.org/fhir/value> "Confirm that the returned HTTP status is 200(OK)." .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_2.TestScript.test.action.assert.TestScript.test.action.assert.direction> <http://hl7.org/fhir/value> "response" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_2.TestScript.test.action.assert.TestScript.test.action.assert.response> <http://hl7.org/fhir/value> "okay" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_2.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.test.action.assert.description> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_2.TestScript.test.action.assert.TestScript.test.action.assert.description> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_2.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.test.action.assert.direction> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_2.TestScript.test.action.assert.TestScript.test.action.assert.direction> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_2.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.test.action.assert.response> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_2.TestScript.test.action.assert.TestScript.test.action.assert.response> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_3.TestScript.test.action.assert.TestScript.test.action.assert.contentType> <http://hl7.org/fhir/value> "xml" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_3.TestScript.test.action.assert.TestScript.test.action.assert.description> <http://hl7.org/fhir/value> "Confirm that the returned format is XML." .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_3.TestScript.test.action.assert.TestScript.test.action.assert.direction> <http://hl7.org/fhir/value> "response" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_3.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.test.action.assert.contentType> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_3.TestScript.test.action.assert.TestScript.test.action.assert.contentType> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_3.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.test.action.assert.description> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_3.TestScript.test.action.assert.TestScript.test.action.assert.description> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_3.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.test.action.assert.direction> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_3.TestScript.test.action.assert.TestScript.test.action.assert.direction> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_4.TestScript.test.action.assert.TestScript.test.action.assert.description> <http://hl7.org/fhir/value> "Confirm that the returned resource type is Patient." .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_4.TestScript.test.action.assert.TestScript.test.action.assert.direction> <http://hl7.org/fhir/value> "response" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_4.TestScript.test.action.assert.TestScript.test.action.assert.resource> <http://hl7.org/fhir/value> "Patient" .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_4.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.test.action.assert.description> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_4.TestScript.test.action.assert.TestScript.test.action.assert.description> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_4.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.test.action.assert.direction> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_4.TestScript.test.action.assert.TestScript.test.action.assert.direction> .
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_4.TestScript.test.action.assert> <http://hl7.org/fhir/TestScript.test.action.assert.resource> <http://hl7.org/fhir/TestScript/testscript-example-multisystem.TestScript.test_1.TestScript.test.action_4.TestScript.test.action.assert.TestScript.test.action.assert.resource> .----------------------------------------
+
+========================================
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix w5: <http://hl7.org/fhir/w5#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem> a fhir:TestScript ;
+    fhir:nodeRole fhir:treeRoot ;
+    fhir:DomainResource.text [
+        fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: testscript-example-multisystem</p><p><b>url</b>: <a>http://hl7.org/fhir/TestScript/testscript-example-multisystem</a></p><p><b>identifier</b>: urn:oid:1.3.6.1.4.1.21367.2005.3.7.9878</p><p><b>version</b>: 1.0</p><p><b>name</b>: testscript-example-multisystem</p><p><b>title</b>: Multisystem Test Script</p><p><b>status</b>: draft</p><p><b>experimental</b>: true</p><p><b>date</b>: Jan 18, 2017</p><p><b>publisher</b>: HL7</p><p><b>contact</b>: </p><p><b>description</b>: TestScript example resource showing use of origin and destination for multisystem support. The single origin will execute a Patient read against the two destination systems using user defined dynamic variables. The test engine will wait at each operation action with a defined origin and destination for the origin test system to send the expected FHIR operation to the destination test system. Once the expected request and response is observed, the test engine will continue with the test execution.</p><p><b>jurisdiction</b>: United States of America (the) <span>(Details : {urn:iso:std:iso:3166 code 'US' = 'United States Minor Outlying Islands (the)', given as 'United States of America (the)'})</span></p><p><b>purpose</b>: Patient Read Operation</p><p><b>copyright</b>: © HL7.org 2011+</p><h3>Origins</h3><table><tr><td>-</td><td><b>Index</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>1</td><td>FHIR-Client (Details: [not stated] code FHIR-Client = 'FHIR-Client', stated as 'null')</td></tr></table><blockquote><p><b>destination</b></p><p><b>index</b>: 1</p><p><b>profile</b>: FHIR-Server (Details: [not stated] code FHIR-Server = 'FHIR-Server', stated as 'null')</p></blockquote><blockquote><p><b>destination</b></p><p><b>index</b>: 2</p><p><b>profile</b>: FHIR-Server (Details: [not stated] code FHIR-Server = 'FHIR-Server', stated as 'null')</p></blockquote><blockquote><p><b>metadata</b></p><h3>Links</h3><table><tr><td>-</td><td><b>Url</b></td><td><b>Description</b></td></tr><tr><td>*</td><td><a>http://hl7.org/fhir/patient.html</a></td><td>Demographics and other administrative information about an individual or animal receiving care or other health-related services.</td></tr></table><blockquote><p><b>capability</b></p><p><b>required</b>: true</p><p><b>validated</b>: false</p><p><b>description</b>: Patient Read Operation</p><p><b>origin</b>: 1</p><p><b>destination</b>: 1</p><p><b>link</b>: <a>http://hl7.org/fhir/http.html#read</a></p><p><b>capabilities</b>: <a>CapabilityStatement/example</a></p></blockquote><blockquote><p><b>capability</b></p><p><b>required</b>: true</p><p><b>validated</b>: false</p><p><b>description</b>: Patient Read Operation</p><p><b>origin</b>: 1</p><p><b>destination</b>: 2</p><p><b>link</b>: <a>http://hl7.org/fhir/http.html#read</a></p><p><b>capabilities</b>: <a>CapabilityStatement/example</a></p></blockquote></blockquote><blockquote><p><b>variable</b></p><p><b>name</b>: Dest1PatientResourceId</p><p><b>defaultValue</b>: example</p></blockquote><blockquote><p><b>variable</b></p><p><b>name</b>: Dest2PatientResourceId</p><p><b>defaultValue</b>: example</p></blockquote><blockquote><p><b>test</b></p><p><b>name</b>: ReadPatient-Destination1</p><p><b>description</b>: Read a Patient from the first destination test system using the user defined dynamic variable ${Dest1PatientResourceId}. Perform basic validation.</p><blockquote><p><b>action</b></p><h3>Operations</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></blockquote><blockquote><p><b>test</b></p><p><b>name</b>: ReadPatient-Destination2</p><p><b>description</b>: Read a Patient from the second destination test system using the user defined dynamic variable ${Dest2PatientResourceId}. Perform basic validation.</p><blockquote><p><b>action</b></p><h3>Operations</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></blockquote></div>" ;
+        fhir:Narrative.status [
+            fhir:value "generated"
+        ]
+    ] ;
+    fhir:Resource.id [
+        fhir:value "testscript-example-multisystem"
+    ] ;
+    fhir:TestScript.contact [
+        fhir:index "0"^^xsd:integer ;
+        fhir:ContactDetail.name [
+            fhir:value "Support"
+        ] ;
+        fhir:ContactDetail.telecom [
+            fhir:index "0"^^xsd:integer ;
+            fhir:ContactPoint.system [
+                fhir:value "email"
+            ] ;
+            fhir:ContactPoint.use [
+                fhir:value "work"
+            ] ;
+            fhir:ContactPoint.value [
+                fhir:value "support@HL7.org"
+            ]
+        ]
+    ] ;
+    fhir:TestScript.copyright [
+        fhir:value "© HL7.org 2011+"
+    ] ;
+    fhir:TestScript.date [
+        fhir:value "2017-01-18"^^xsd:date
+    ] ;
+    fhir:TestScript.description [
+        fhir:value "TestScript example resource showing use of origin and destination for multisystem support. The single origin will execute a Patient read against the two destination systems using user defined dynamic variables. The test engine will wait at each operation action with a defined origin and destination for the origin test system to send the expected FHIR operation to the destination test system. Once the expected request and response is observed, the test engine will continue with the test execution."
+    ] ;
+    fhir:TestScript.destination [
+        fhir:index "1"^^xsd:integer ;
+        fhir:TestScript.destination.index [
+            fhir:value "2"^^xsd:integer
+        ] ;
+        fhir:TestScript.destination.profile [
+            fhir:Coding.code [
+                fhir:value "FHIR-Server"
+            ]
+        ]
+    ],
+        [
+        fhir:index "0"^^xsd:integer ;
+        fhir:TestScript.destination.index [
+            fhir:value "1"^^xsd:integer
+        ] ;
+        fhir:TestScript.destination.profile [
+            fhir:Coding.code [
+                fhir:value "FHIR-Server"
+            ]
+        ]
+    ] ;
+    fhir:TestScript.experimental [
+        fhir:value "true"^^xsd:boolean
+    ] ;
+    fhir:TestScript.identifier [
+        fhir:Identifier.system [
+            fhir:value "urn:ietf:rfc:3986"
+        ] ;
+        fhir:Identifier.value [
+            fhir:value "urn:oid:1.3.6.1.4.1.21367.2005.3.7.9878"
+        ]
+    ] ;
+    fhir:TestScript.jurisdiction [
+        fhir:index "0"^^xsd:integer ;
+        fhir:CodeableConcept.coding [
+            fhir:index "0"^^xsd:integer ;
+            fhir:Coding.code [
+                fhir:value "US"
+            ] ;
+            fhir:Coding.display [
+                fhir:value "United States of America (the)"
+            ] ;
+            fhir:Coding.system [
+                fhir:value "urn:iso:std:iso:3166"
+            ]
+        ]
+    ] ;
+    fhir:TestScript.metadata [
+        fhir:TestScript.metadata.capability [
+            fhir:index "0"^^xsd:integer ;
+            fhir:TestScript.metadata.capability.capabilities [
+                fhir:link <http://hl7.org/fhir/CapabilityStatement/example> ;
+                fhir:Reference.reference [
+                    fhir:value "CapabilityStatement/example"
+                ]
+            ] ;
+            fhir:TestScript.metadata.capability.description [
+                fhir:value "Patient Read Operation"
+            ] ;
+            fhir:TestScript.metadata.capability.destination [
+                fhir:value "1"^^xsd:integer
+            ] ;
+            fhir:TestScript.metadata.capability.link [
+                fhir:index "0"^^xsd:integer ;
+                fhir:value "http://hl7.org/fhir/http.html#read"
+            ] ;
+            fhir:TestScript.metadata.capability.origin [
+                fhir:index "0"^^xsd:integer ;
+                fhir:value "1"^^xsd:integer
+            ] ;
+            fhir:TestScript.metadata.capability.required [
+                fhir:value "true"^^xsd:boolean
+            ] ;
+            fhir:TestScript.metadata.capability.validated [
+                fhir:value "false"^^xsd:boolean
+            ]
+        ],
+            [
+            fhir:index "1"^^xsd:integer ;
+            fhir:TestScript.metadata.capability.capabilities [
+                fhir:link <http://hl7.org/fhir/CapabilityStatement/example> ;
+                fhir:Reference.reference [
+                    fhir:value "CapabilityStatement/example"
+                ]
+            ] ;
+            fhir:TestScript.metadata.capability.description [
+                fhir:value "Patient Read Operation"
+            ] ;
+            fhir:TestScript.metadata.capability.destination [
+                fhir:value "2"^^xsd:integer
+            ] ;
+            fhir:TestScript.metadata.capability.link [
+                fhir:index "0"^^xsd:integer ;
+                fhir:value "http://hl7.org/fhir/http.html#read"
+            ] ;
+            fhir:TestScript.metadata.capability.origin [
+                fhir:index "0"^^xsd:integer ;
+                fhir:value "1"^^xsd:integer
+            ] ;
+            fhir:TestScript.metadata.capability.required [
+                fhir:value "true"^^xsd:boolean
+            ] ;
+            fhir:TestScript.metadata.capability.validated [
+                fhir:value "false"^^xsd:boolean
+            ]
+        ] ;
+        fhir:TestScript.metadata.link [
+            fhir:index "0"^^xsd:integer ;
+            fhir:TestScript.metadata.link.description [
+                fhir:value "Demographics and other administrative information about an individual or animal receiving care or other health-related services."
+            ] ;
+            fhir:TestScript.metadata.link.url [
+                fhir:value "http://hl7.org/fhir/patient.html"
+            ]
+        ]
+    ] ;
+    fhir:TestScript.name [
+        fhir:value "testscript-example-multisystem"
+    ] ;
+    fhir:TestScript.origin [
+        fhir:index "0"^^xsd:integer ;
+        fhir:TestScript.origin.index [
+            fhir:value "1"^^xsd:integer
+        ] ;
+        fhir:TestScript.origin.profile [
+            fhir:Coding.code [
+                fhir:value "FHIR-Client"
+            ]
+        ]
+    ] ;
+    fhir:TestScript.publisher [
+        fhir:value "HL7"
+    ] ;
+    fhir:TestScript.purpose [
+        fhir:value "Patient Read Operation"
+    ] ;
+    fhir:TestScript.status [
+        fhir:value "draft"
+    ] ;
+    fhir:TestScript.test [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Element.id [
+            fhir:value "01-ReadPatient-Destination1"
+        ] ;
+        fhir:TestScript.test.action [
+            fhir:index "0"^^xsd:integer ;
+            fhir:TestScript.test.action.operation [
+                fhir:TestScript.test.action.operation.accept [
+                    fhir:value "xml"
+                ] ;
+                fhir:TestScript.test.action.operation.contentType [
+                    fhir:value "xml"
+                ] ;
+                fhir:TestScript.test.action.operation.description [
+                    fhir:value "Read a Patient from the first destination test system and perform basic validation."
+                ] ;
+                fhir:TestScript.test.action.operation.destination [
+                    fhir:value "1"^^xsd:integer
+                ] ;
+                fhir:TestScript.test.action.operation.origin [
+                    fhir:value "1"^^xsd:integer
+                ] ;
+                fhir:TestScript.test.action.operation.params [
+                    fhir:value "/${Dest1PatientResourceId}"
+                ] ;
+                fhir:TestScript.test.action.operation.requestId [
+                    fhir:value "request-read-patient-01"
+                ] ;
+                fhir:TestScript.test.action.operation.resource [
+                    fhir:value "Patient"
+                ] ;
+                fhir:TestScript.test.action.operation.type [
+                    fhir:Coding.code [
+                        fhir:value "read"
+                    ] ;
+                    fhir:Coding.system [
+                        fhir:value "http://hl7.org/fhir/testscript-operation-codes"
+                    ]
+                ]
+            ]
+        ],
+            [
+            fhir:index "4"^^xsd:integer ;
+            fhir:TestScript.test.action.assert [
+                fhir:TestScript.test.action.assert.contentType [
+                    fhir:value "xml"
+                ] ;
+                fhir:TestScript.test.action.assert.description [
+                    fhir:value "Confirm that the returned format is XML."
+                ] ;
+                fhir:TestScript.test.action.assert.direction [
+                    fhir:value "response"
+                ]
+            ]
+        ],
+            [
+            fhir:index "3"^^xsd:integer ;
+            fhir:TestScript.test.action.assert [
+                fhir:TestScript.test.action.assert.description [
+                    fhir:value "Confirm that the returned HTTP status is 200(OK)."
+                ] ;
+                fhir:TestScript.test.action.assert.direction [
+                    fhir:value "response"
+                ] ;
+                fhir:TestScript.test.action.assert.response [
+                    fhir:value "okay"
+                ]
+            ]
+        ],
+            [
+            fhir:index "2"^^xsd:integer ;
+            fhir:TestScript.test.action.assert [
+                fhir:TestScript.test.action.assert.description [
+                    fhir:value "Confirm that the client requested an Accept of xml."
+                ] ;
+                fhir:TestScript.test.action.assert.direction [
+                    fhir:value "request"
+                ] ;
+                fhir:TestScript.test.action.assert.headerField [
+                    fhir:value "Accept"
+                ] ;
+                fhir:TestScript.test.action.assert.operator [
+                    fhir:value "contains"
+                ] ;
+                fhir:TestScript.test.action.assert.value [
+                    fhir:value "xml"
+                ]
+            ]
+        ],
+            [
+            fhir:index "1"^^xsd:integer ;
+            fhir:TestScript.test.action.assert [
+                fhir:TestScript.test.action.assert.description [
+                    fhir:value "Confirm that the request method GET was sent by the client system under test."
+                ] ;
+                fhir:TestScript.test.action.assert.requestMethod [
+                    fhir:value "get"
+                ]
+            ]
+        ],
+            [
+            fhir:index "5"^^xsd:integer ;
+            fhir:TestScript.test.action.assert [
+                fhir:TestScript.test.action.assert.description [
+                    fhir:value "Confirm that the returned resource type is Patient."
+                ] ;
+                fhir:TestScript.test.action.assert.direction [
+                    fhir:value "response"
+                ] ;
+                fhir:TestScript.test.action.assert.resource [
+                    fhir:value "Patient"
+                ]
+            ]
+        ] ;
+        fhir:TestScript.test.description [
+            fhir:value "Read a Patient from the first destination test system using the user defined dynamic variable ${Dest1PatientResourceId}. Perform basic validation."
+        ] ;
+        fhir:TestScript.test.name [
+            fhir:value "ReadPatient-Destination1"
+        ]
+    ],
+        [
+        fhir:index "1"^^xsd:integer ;
+        fhir:Element.id [
+            fhir:value "02-ReadPatient-Destination2"
+        ] ;
+        fhir:TestScript.test.action [
+            fhir:index "0"^^xsd:integer ;
+            fhir:TestScript.test.action.operation [
+                fhir:TestScript.test.action.operation.accept [
+                    fhir:value "xml"
+                ] ;
+                fhir:TestScript.test.action.operation.contentType [
+                    fhir:value "xml"
+                ] ;
+                fhir:TestScript.test.action.operation.description [
+                    fhir:value "Read a Patient from the second destination test system and perform basic validation."
+                ] ;
+                fhir:TestScript.test.action.operation.destination [
+                    fhir:value "2"^^xsd:integer
+                ] ;
+                fhir:TestScript.test.action.operation.origin [
+                    fhir:value "1"^^xsd:integer
+                ] ;
+                fhir:TestScript.test.action.operation.params [
+                    fhir:value "/${Dest2PatientResourceId}"
+                ] ;
+                fhir:TestScript.test.action.operation.requestHeader [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:TestScript.test.action.operation.requestHeader.field [
+                        fhir:value "Accept-Charset"
+                    ] ;
+                    fhir:TestScript.test.action.operation.requestHeader.value [
+                        fhir:value "utf-8"
+                    ]
+                ] ;
+                fhir:TestScript.test.action.operation.resource [
+                    fhir:value "Patient"
+                ] ;
+                fhir:TestScript.test.action.operation.type [
+                    fhir:Coding.code [
+                        fhir:value "read"
+                    ] ;
+                    fhir:Coding.system [
+                        fhir:value "http://hl7.org/fhir/testscript-operation-codes"
+                    ]
+                ]
+            ]
+        ],
+            [
+            fhir:index "2"^^xsd:integer ;
+            fhir:TestScript.test.action.assert [
+                fhir:TestScript.test.action.assert.description [
+                    fhir:value "Confirm that the returned HTTP status is 200(OK)."
+                ] ;
+                fhir:TestScript.test.action.assert.direction [
+                    fhir:value "response"
+                ] ;
+                fhir:TestScript.test.action.assert.response [
+                    fhir:value "okay"
+                ]
+            ]
+        ],
+            [
+            fhir:index "4"^^xsd:integer ;
+            fhir:TestScript.test.action.assert [
+                fhir:TestScript.test.action.assert.description [
+                    fhir:value "Confirm that the returned resource type is Patient."
+                ] ;
+                fhir:TestScript.test.action.assert.direction [
+                    fhir:value "response"
+                ] ;
+                fhir:TestScript.test.action.assert.resource [
+                    fhir:value "Patient"
+                ]
+            ]
+        ],
+            [
+            fhir:index "1"^^xsd:integer ;
+            fhir:TestScript.test.action.assert [
+                fhir:TestScript.test.action.assert.description [
+                    fhir:value "Confirm that the client requested an Accept of xml."
+                ] ;
+                fhir:TestScript.test.action.assert.direction [
+                    fhir:value "request"
+                ] ;
+                fhir:TestScript.test.action.assert.headerField [
+                    fhir:value "Accept"
+                ] ;
+                fhir:TestScript.test.action.assert.operator [
+                    fhir:value "contains"
+                ] ;
+                fhir:TestScript.test.action.assert.value [
+                    fhir:value "xml"
+                ]
+            ]
+        ],
+            [
+            fhir:index "3"^^xsd:integer ;
+            fhir:TestScript.test.action.assert [
+                fhir:TestScript.test.action.assert.contentType [
+                    fhir:value "xml"
+                ] ;
+                fhir:TestScript.test.action.assert.description [
+                    fhir:value "Confirm that the returned format is XML."
+                ] ;
+                fhir:TestScript.test.action.assert.direction [
+                    fhir:value "response"
+                ]
+            ]
+        ] ;
+        fhir:TestScript.test.description [
+            fhir:value "Read a Patient from the second destination test system using the user defined dynamic variable ${Dest2PatientResourceId}. Perform basic validation."
+        ] ;
+        fhir:TestScript.test.name [
+            fhir:value "ReadPatient-Destination2"
+        ]
+    ] ;
+    fhir:TestScript.title [
+        fhir:value "Multisystem Test Script"
+    ] ;
+    fhir:TestScript.url [
+        fhir:value "http://hl7.org/fhir/TestScript/testscript-example-multisystem"
+    ] ;
+    fhir:TestScript.variable [
+        fhir:index "0"^^xsd:integer ;
+        fhir:TestScript.variable.defaultValue [
+            fhir:value "example"
+        ] ;
+        fhir:TestScript.variable.name [
+            fhir:value "Dest1PatientResourceId"
+        ]
+    ],
+        [
+        fhir:index "1"^^xsd:integer ;
+        fhir:TestScript.variable.defaultValue [
+            fhir:value "example"
+        ] ;
+        fhir:TestScript.variable.name [
+            fhir:value "Dest2PatientResourceId"
+        ]
+    ] ;
+    fhir:TestScript.version [
+        fhir:value "1.0"
+    ] .
+
+<http://hl7.org/fhir/TestScript/testscript-example-multisystem.ttl> a owl:Ontology ;
+    owl:imports fhir:fhir.ttl .
+
+<http://hl7.org/fhir/CapabilityStatement/example> a fhir:CapabilityStatement .
+

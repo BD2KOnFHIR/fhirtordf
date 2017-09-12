@@ -30,18 +30,6 @@
     fhir:ActivityDefinition.contact [
         fhir:index "0"^^xsd:integer ;
         fhir:ContactDetail.telecom [
-            fhir:index "0"^^xsd:integer ;
-            fhir:ContactPoint.system [
-                fhir:value "phone"
-            ] ;
-            fhir:ContactPoint.use [
-                fhir:value "work"
-            ] ;
-            fhir:ContactPoint.value [
-                fhir:value "415-362-4007"
-            ]
-        ],
-            [
             fhir:index "1"^^xsd:integer ;
             fhir:ContactPoint.system [
                 fhir:value "email"
@@ -51,6 +39,18 @@
             ] ;
             fhir:ContactPoint.value [
                 fhir:value "info@motivemi.com"
+            ]
+        ],
+            [
+            fhir:index "0"^^xsd:integer ;
+            fhir:ContactPoint.system [
+                fhir:value "phone"
+            ] ;
+            fhir:ContactPoint.use [
+                fhir:value "work"
+            ] ;
+            fhir:ContactPoint.value [
+                fhir:value "415-362-4007"
             ]
         ]
     ] ;
@@ -156,18 +156,6 @@
         fhir:value "Defines a referral to a mental-health integrated care program for use in suicide risk order sets. The definition is independent of the order set in which it appears to allow reuse of the general definition of the referrral."
     ] ;
     fhir:ActivityDefinition.relatedArtifact [
-        fhir:index "0"^^xsd:integer ;
-        fhir:RelatedArtifact.display [
-            fhir:value "Practice Guideline for the Treatment of Patients with Major Depressive Disorder"
-        ] ;
-        fhir:RelatedArtifact.type [
-            fhir:value "citation"
-        ] ;
-        fhir:RelatedArtifact.url [
-            fhir:value "http://psychiatryonline.org/pb/assets/raw/sitewide/practice_guidelines/guidelines/mdd.pdf"
-        ]
-    ],
-        [
         fhir:index "1"^^xsd:integer ;
         fhir:RelatedArtifact.resource [
             fhir:link <http://hl7.org/fhir/ActivityDefinition/referralPrimaryCareMentalHealth-initial> ;
@@ -177,6 +165,18 @@
         ] ;
         fhir:RelatedArtifact.type [
             fhir:value "predecessor"
+        ]
+    ],
+        [
+        fhir:index "0"^^xsd:integer ;
+        fhir:RelatedArtifact.display [
+            fhir:value "Practice Guideline for the Treatment of Patients with Major Depressive Disorder"
+        ] ;
+        fhir:RelatedArtifact.type [
+            fhir:value "citation"
+        ] ;
+        fhir:RelatedArtifact.url [
+            fhir:value "http://psychiatryonline.org/pb/assets/raw/sitewide/practice_guidelines/guidelines/mdd.pdf"
         ]
     ] ;
     fhir:ActivityDefinition.status [
@@ -238,10 +238,10 @@
         ]
     ],
         [
-        fhir:index "4"^^xsd:integer ;
+        fhir:index "0"^^xsd:integer ;
         fhir:UsageContext.code [
             fhir:Coding.code [
-                fhir:value "focus"
+                fhir:value "age"
             ] ;
             fhir:Coding.system [
                 fhir:value "http://hl7.org/fhir/usage-context-type"
@@ -249,42 +249,15 @@
         ] ;
         fhir:UsageContext.valueCodeableConcept [
             fhir:CodeableConcept.coding [
-                a sct:306206005 ;
                 fhir:index "0"^^xsd:integer ;
                 fhir:Coding.code [
-                    fhir:value "306206005"
+                    fhir:value "D000328"
                 ] ;
                 fhir:Coding.display [
-                    fhir:value "Referral to service (procedure)"
+                    fhir:value "Adult"
                 ] ;
                 fhir:Coding.system [
-                    fhir:value "http://snomed.info/sct"
-                ]
-            ]
-        ]
-    ],
-        [
-        fhir:index "1"^^xsd:integer ;
-        fhir:UsageContext.code [
-            fhir:Coding.code [
-                fhir:value "focus"
-            ] ;
-            fhir:Coding.system [
-                fhir:value "http://hl7.org/fhir/usage-context-type"
-            ]
-        ] ;
-        fhir:UsageContext.valueCodeableConcept [
-            fhir:CodeableConcept.coding [
-                a sct:87512008 ;
-                fhir:index "0"^^xsd:integer ;
-                fhir:Coding.code [
-                    fhir:value "87512008"
-                ] ;
-                fhir:Coding.display [
-                    fhir:value "Mild major depression"
-                ] ;
-                fhir:Coding.system [
-                    fhir:value "http://snomed.info/sct"
+                    fhir:value "https://meshb.nlm.nih.gov"
                 ]
             ]
         ]
@@ -342,10 +315,10 @@
         ]
     ],
         [
-        fhir:index "0"^^xsd:integer ;
+        fhir:index "1"^^xsd:integer ;
         fhir:UsageContext.code [
             fhir:Coding.code [
-                fhir:value "age"
+                fhir:value "focus"
             ] ;
             fhir:Coding.system [
                 fhir:value "http://hl7.org/fhir/usage-context-type"
@@ -353,15 +326,42 @@
         ] ;
         fhir:UsageContext.valueCodeableConcept [
             fhir:CodeableConcept.coding [
+                a sct:87512008 ;
                 fhir:index "0"^^xsd:integer ;
                 fhir:Coding.code [
-                    fhir:value "D000328"
+                    fhir:value "87512008"
                 ] ;
                 fhir:Coding.display [
-                    fhir:value "Adult"
+                    fhir:value "Mild major depression"
                 ] ;
                 fhir:Coding.system [
-                    fhir:value "https://meshb.nlm.nih.gov"
+                    fhir:value "http://snomed.info/sct"
+                ]
+            ]
+        ]
+    ],
+        [
+        fhir:index "4"^^xsd:integer ;
+        fhir:UsageContext.code [
+            fhir:Coding.code [
+                fhir:value "focus"
+            ] ;
+            fhir:Coding.system [
+                fhir:value "http://hl7.org/fhir/usage-context-type"
+            ]
+        ] ;
+        fhir:UsageContext.valueCodeableConcept [
+            fhir:CodeableConcept.coding [
+                a sct:306206005 ;
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "306206005"
+                ] ;
+                fhir:Coding.display [
+                    fhir:value "Referral to service (procedure)"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://snomed.info/sct"
                 ]
             ]
         ]

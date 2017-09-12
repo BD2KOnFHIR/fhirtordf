@@ -45,7 +45,7 @@ def fhir_json_to_rdf(metavoc: Graph,
     def check_for_continuation(data_: JsonObj) -> Optional[str]:
         if do_continuations and 'link' in data_ and isinstance(data_.link, list):
             for link_e in data_.link:
-                if link_e.relation == 'next':
+                if 'relation' in link_e and link_e.relation == 'next':
                     return link_e.url
         return None
 
@@ -65,6 +65,6 @@ def fhir_json_to_rdf(metavoc: Graph,
                            replace_narrative_text=replace_narrative_text)
             page_fname = check_for_continuation(data)
         else:
-            print("File does not appear to be a FHIR resource")
             page_fname = None
+            target_graph = None
     return target_graph

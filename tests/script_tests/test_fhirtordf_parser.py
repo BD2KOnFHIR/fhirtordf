@@ -36,7 +36,7 @@ from rdflib import Graph
 from fhirtordf.rdfsupport.rdfcompare import rdf_compare
 
 help_text = """usage: fhirtordf [-h] [-i [INFILE [INFILE ...]]] [-id INDIR]
-                 [-o [OUTFILE [OUTFILE ...]]] [-od OUTDIR] [-f] [-s]
+                 [-o [OUTFILE [OUTFILE ...]]] [-od OUTDIR] [-f] [-s] [-v]
                  [-u URIBASE] [-mv METADATAVOC] [-no] [-nn] [-nc] [--nocache]
                  [--fmvcache FMVCACHE] [--maxsize MAXSIZE]
 
@@ -54,6 +54,7 @@ optional arguments:
                         Output directory
   -f, --flatten         Flatten output directory
   -s, --stoponerror     Stop on processing error
+  -v, --version         Current version number
   -u URIBASE, --uribase URIBASE
                         Base URI for RDF identifiers (default:
                         http://hl7.org/fhir/)
@@ -105,6 +106,7 @@ class FHIRToRDFParserTestCase(unittest.TestCase):
         output = self._push_stdout()
         fhirtordf(args.split(), default_exit=False)
         self._pop_stdout()
+        self.maxDiff = None
         self.assertEqual(help_text, output.getvalue())
 
     def bester_tester(self, args: str, test_fname: str):
@@ -135,6 +137,33 @@ class FHIRToRDFParserTestCase(unittest.TestCase):
         test_fname = os.path.join(os.path.split(os.path.abspath(__file__))[0], '..', 'data', 'patient-example-2.ttl')
         args = "-i http://hl7.org/fhir/Patient/f201"
         self.bester_tester(args, test_fname)
+
+    def test_version(self):
+        from fhirtordf.fhirtordf import fhirtordf
+        from fhirtordf import __version__
+        output = self._push_stdout()
+        fhirtordf(["-v"])
+        self._pop_stdout()
+        self.assertEqual("FHIR to RDF Conversion Tool -- Version {}".format(__version__), output.getvalue().strip())
+
+    def test_output_directory(self):
+        from fhirtordf.fhirtordf import fhirtordf
+        output_directory = os.path.abspath(os.path.join(os.path.split(os.path.abspath(__file__))[0], 'data', 'patlist'))
+
+        fhirtordf("-i http://fhirtest.uhn.ca/baseDstu3/Patient"
+                  "?_format=json&gender=male&birthdate=gt2013-01-01 -od {} -nn -nc".format(output_directory).split())
+        self.assertTrue(False)
+
+    def test_big_fhir_convert(self):
+        # This is a test of the complete FHIR directory conversion
+        from fhirtordf.fhirtordf import fhirtordf
+
+        input_directory = os.path.abspath('/Users/mrf7578/Development/fhir/build/publish')
+        output_directory = os.path.abspath(os.path.join(os.path.split(os.path.abspath(__file__))[0], 'data', 'publish'))
+        args = '-nc -nn -id {} -od {} -sd /v2/ /v3/ -sf .cs. .vs. .profile. .canonical. .schema. .diff.'.format(input_directory, output_directory)
+
+        fhirtordf(args.split(), default_exit=False)
+
 
 if __name__ == '__main__':
     unittest.main()

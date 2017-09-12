@@ -1,0 +1,261 @@
+
+
+Subject http://hl7.org/fhir/Contract/pcd-example-notLabs DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.offer.Contract.term.offer.text> <http://hl7.org/fhir/value> "Withhold orders from any provider." .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.offer> <http://hl7.org/fhir/Contract.term.offer.text> <http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.offer.Contract.term.offer.text> .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.subType.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "ProcedureRequest" .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.subType.CodeableConcept.coding_0.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/resource-types" .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.subType.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.subType.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.subType.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.subType.CodeableConcept.coding_0.Coding.system> .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.subType.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.subType> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.subType.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.type.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "withhold-object-type" .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.type.CodeableConcept.coding_0.Coding.system> <http://hl7.org/fhir/value> "http://example.org/fhir/consent-term-type-codes" .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.type.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.type.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.type.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.type.CodeableConcept.coding_0.Coding.system> .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.type.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.type> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.type.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0> <http://hl7.org/fhir/Contract.term.offer> <http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.offer> .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0> <http://hl7.org/fhir/Contract.term.subType> <http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.subType> .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0> <http://hl7.org/fhir/Contract.term.type> <http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.type> .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_1.Contract.term.offer.Contract.term.offer.text> <http://hl7.org/fhir/value> "Withhold order results from any provider." .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_1.Contract.term.offer> <http://hl7.org/fhir/Contract.term.offer.text> <http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_1.Contract.term.offer.Contract.term.offer.text> .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_1.Contract.term.subType.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "DiagnosticReport" .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_1.Contract.term.subType.CodeableConcept.coding_0.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/resource-types" .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_1.Contract.term.subType.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_1.Contract.term.subType.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_1.Contract.term.subType.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_1.Contract.term.subType.CodeableConcept.coding_0.Coding.system> .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_1.Contract.term.subType.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_1.Contract.term.subType> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_1.Contract.term.subType.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_1.Contract.term.type.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "withhold-object-type" .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_1.Contract.term.type.CodeableConcept.coding_0.Coding.system> <http://hl7.org/fhir/value> "http://example.org/fhir/consent-term-type-codes" .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_1.Contract.term.type.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_1.Contract.term.type.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_1.Contract.term.type.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_1.Contract.term.type.CodeableConcept.coding_0.Coding.system> .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_1.Contract.term.type.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_1.Contract.term.type> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_1.Contract.term.type.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_1> <http://hl7.org/fhir/Contract.term.offer> <http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_1.Contract.term.offer> .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_1> <http://hl7.org/fhir/Contract.term.subType> <http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_1.Contract.term.subType> .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_1> <http://hl7.org/fhir/Contract.term.type> <http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_1.Contract.term.type> .
+	----> Second: 
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.group.offer.Contract.term.group.offer.text> <http://hl7.org/fhir/value> "Withhold orders from any provider." .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.group.offer> <http://hl7.org/fhir/Contract.term.group.offer.text> <http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.group.offer.Contract.term.group.offer.text> .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.group.subType.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "ProcedureRequest" .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.group.subType.CodeableConcept.coding_0.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/resource-types" .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.group.subType.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.group.subType.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.group.subType.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.group.subType.CodeableConcept.coding_0.Coding.system> .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.group.subType.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.group.subType> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.group.subType.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.group.type.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "withhold-object-type" .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.group.type.CodeableConcept.coding_0.Coding.system> <http://hl7.org/fhir/value> "http://example.org/fhir/consent-term-type-codes" .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.group.type.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.group.type.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.group.type.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.group.type.CodeableConcept.coding_0.Coding.system> .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.group.type.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.group.type> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.group.type.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0> <http://hl7.org/fhir/Contract.term.group.offer> <http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.group.offer> .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0> <http://hl7.org/fhir/Contract.term.group.subType> <http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.group.subType> .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0> <http://hl7.org/fhir/Contract.term.group.type> <http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.group.type> .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_1.Contract.term.group.offer.Contract.term.group.offer.text> <http://hl7.org/fhir/value> "Withhold order results from any provider." .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_1.Contract.term.group.offer> <http://hl7.org/fhir/Contract.term.group.offer.text> <http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_1.Contract.term.group.offer.Contract.term.group.offer.text> .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_1.Contract.term.group.subType.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "DiagnosticReport" .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_1.Contract.term.group.subType.CodeableConcept.coding_0.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/resource-types" .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_1.Contract.term.group.subType.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_1.Contract.term.group.subType.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_1.Contract.term.group.subType.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_1.Contract.term.group.subType.CodeableConcept.coding_0.Coding.system> .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_1.Contract.term.group.subType.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_1.Contract.term.group.subType> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_1.Contract.term.group.subType.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_1.Contract.term.group.type.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "withhold-object-type" .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_1.Contract.term.group.type.CodeableConcept.coding_0.Coding.system> <http://hl7.org/fhir/value> "http://example.org/fhir/consent-term-type-codes" .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_1.Contract.term.group.type.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_1.Contract.term.group.type.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_1.Contract.term.group.type.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_1.Contract.term.group.type.CodeableConcept.coding_0.Coding.system> .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_1.Contract.term.group.type.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_1.Contract.term.group.type> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_1.Contract.term.group.type.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_1> <http://hl7.org/fhir/Contract.term.group.offer> <http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_1.Contract.term.group.offer> .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_1> <http://hl7.org/fhir/Contract.term.group.subType> <http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_1.Contract.term.group.subType> .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_1> <http://hl7.org/fhir/Contract.term.group.type> <http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_1.Contract.term.group.type> .----------------------------------------
+
+========================================
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix resource-types: <http://hl7.org/fhir/resource-types> .
+@prefix w5: <http://hl7.org/fhir/w5#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://hl7.org/fhir/Contract/pcd-example-notLabs> a fhir:Contract ;
+    fhir:nodeRole fhir:treeRoot ;
+    fhir:Contract.authority [
+        fhir:index "0"^^xsd:integer ;
+        fhir:link <http://hl7.org/fhir/Organization/3> ;
+        fhir:Reference.display [
+            fhir:value "Michigan Health"
+        ] ;
+        fhir:Reference.reference [
+            fhir:value "Organization/3"
+        ]
+    ] ;
+    fhir:Contract.domain [
+        fhir:index "0"^^xsd:integer ;
+        fhir:link <http://hl7.org/fhir/Location/ukp> ;
+        fhir:Reference.display [
+            fhir:value "UK Pharmacies"
+        ] ;
+        fhir:Reference.reference [
+            fhir:value "Location/ukp"
+        ]
+    ] ;
+    fhir:Contract.friendly [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Contract.friendly.contentAttachment [
+            fhir:Attachment.title [
+                fhir:value "The terms of the consent in friendly consumer speak."
+            ]
+        ]
+    ] ;
+    fhir:Contract.issued [
+        fhir:value "2014-08-17"^^xsd:date
+    ] ;
+    fhir:Contract.legal [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Contract.legal.contentAttachment [
+            fhir:Attachment.title [
+                fhir:value "The terms of the consent in lawyer speak."
+            ]
+        ]
+    ] ;
+    fhir:Contract.subType [
+        fhir:index "0"^^xsd:integer ;
+        fhir:CodeableConcept.coding [
+            fhir:index "0"^^xsd:integer ;
+            fhir:Coding.code [
+                fhir:value "Opt-In"
+            ] ;
+            fhir:Coding.display [
+                fhir:value "Default Authorization with exceptions."
+            ] ;
+            fhir:Coding.system [
+                fhir:value "http://www.infoway-inforoute.ca.org/Consent-subtype-codes"
+            ]
+        ]
+    ] ;
+    fhir:Contract.subject [
+        fhir:index "0"^^xsd:integer ;
+        fhir:link <http://hl7.org/fhir/Patient/f001> ;
+        fhir:Reference.display [
+            fhir:value "P. van de Heuvel"
+        ] ;
+        fhir:Reference.reference [
+            fhir:value "Patient/f001"
+        ]
+    ] ;
+    fhir:Contract.term [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Contract.term.group [
+            fhir:index "1"^^xsd:integer ;
+            fhir:Contract.term.group.offer [
+                fhir:Contract.term.group.offer.text [
+                    fhir:value "Withhold order results from any provider."
+                ]
+            ] ;
+            fhir:Contract.term.group.subType [
+                fhir:CodeableConcept.coding [
+                    a <http://hl7.org/fhir/resource-types/DiagnosticReport> ;
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "DiagnosticReport"
+                    ] ;
+                    fhir:Coding.system [
+                        fhir:value "http://hl7.org/fhir/resource-types"
+                    ]
+                ]
+            ] ;
+            fhir:Contract.term.group.type [
+                fhir:CodeableConcept.coding [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "withhold-object-type"
+                    ] ;
+                    fhir:Coding.system [
+                        fhir:value "http://example.org/fhir/consent-term-type-codes"
+                    ]
+                ]
+            ]
+        ],
+            [
+            fhir:index "0"^^xsd:integer ;
+            fhir:Contract.term.group.offer [
+                fhir:Contract.term.group.offer.text [
+                    fhir:value "Withhold orders from any provider."
+                ]
+            ] ;
+            fhir:Contract.term.group.subType [
+                fhir:CodeableConcept.coding [
+                    a <http://hl7.org/fhir/resource-types/ProcedureRequest> ;
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "ProcedureRequest"
+                    ] ;
+                    fhir:Coding.system [
+                        fhir:value "http://hl7.org/fhir/resource-types"
+                    ]
+                ]
+            ] ;
+            fhir:Contract.term.group.type [
+                fhir:CodeableConcept.coding [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "withhold-object-type"
+                    ] ;
+                    fhir:Coding.system [
+                        fhir:value "http://example.org/fhir/consent-term-type-codes"
+                    ]
+                ]
+            ]
+        ] ;
+        fhir:Contract.term.offer [
+            fhir:Contract.term.offer.text [
+                fhir:value "sample"
+            ]
+        ]
+    ] ;
+    fhir:Contract.type [
+        fhir:CodeableConcept.coding [
+            a loinc:57016-8 ;
+            fhir:index "0"^^xsd:integer ;
+            fhir:Coding.code [
+                fhir:value "57016-8"
+            ] ;
+            fhir:Coding.system [
+                fhir:value "http://loinc.org"
+            ]
+        ]
+    ] ;
+    fhir:DomainResource.text [
+        fhir:Narrative.div """<div xmlns="http://www.w3.org/1999/xhtml">The following scenario is based on existing
+      jurisdictional policy and are realized in existing systems in Canada. The default policy is
+      one of implied consent for the provision of care, so these scenarios all deal with withdrawal
+      or withholding consent for that purpose. In other jurisdictions, where an express consent
+      model is used (Opt-In), these would examples would contain the phrase &quot;consent to&quot; rather than
+      &quot;withhold&quot; or &quot;withdraw&quot; consent for. <p> specific to use-case 1. Withhold or withdraw consent
+        for disclosure of records related to specific domain (e.g. DI, LAB, etc.) </p><p> Patient
+        &quot;P. van de Heuvel&quot; wishes to withhold disclosure of all of her lab orders and results to any
+        provider. </p>
+    </div>""" ;
+        fhir:Narrative.status [
+            fhir:value "generated"
+        ]
+    ] ;
+    fhir:Resource.id [
+        fhir:value "pcd-example-notLabs"
+    ] .
+
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.ttl> a owl:Ontology ;
+    owl:imports fhir:fhir.ttl .
+
+<http://hl7.org/fhir/Location/ukp> a fhir:Location .
+
+<http://hl7.org/fhir/Organization/3> a fhir:Organization .
+
+<http://hl7.org/fhir/Patient/f001> a fhir:Patient .
+
