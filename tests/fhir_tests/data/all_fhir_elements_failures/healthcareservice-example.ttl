@@ -75,6 +75,10 @@ Subject http://hl7.org/fhir/HealthcareService/example DIFFERENCE: ==============
             fhir:value "08:30:00"
         ] ;
         fhir:HealthcareService.availableTime.daysOfWeek [
+            fhir:index "1"^^xsd:integer ;
+            fhir:value "tue"
+        ],
+            [
             fhir:index "0"^^xsd:integer ;
             fhir:value "mon"
         ],
@@ -85,10 +89,6 @@ Subject http://hl7.org/fhir/HealthcareService/example DIFFERENCE: ==============
             [
             fhir:index "2"^^xsd:integer ;
             fhir:value "thu"
-        ],
-            [
-            fhir:index "1"^^xsd:integer ;
-            fhir:value "tue"
         ]
     ],
         [
@@ -239,14 +239,14 @@ Subject http://hl7.org/fhir/HealthcareService/example DIFFERENCE: ==============
         ]
     ] ;
     fhir:HealthcareService.referralMethod [
-        fhir:index "3"^^xsd:integer ;
+        fhir:index "1"^^xsd:integer ;
         fhir:CodeableConcept.coding [
             fhir:index "0"^^xsd:integer ;
             fhir:Coding.code [
-                fhir:value "semail"
+                fhir:value "fax"
             ] ;
             fhir:Coding.display [
-                fhir:value "Secure Email"
+                fhir:value "Fax"
             ]
         ]
     ],
@@ -263,18 +263,6 @@ Subject http://hl7.org/fhir/HealthcareService/example DIFFERENCE: ==============
         ]
     ],
         [
-        fhir:index "1"^^xsd:integer ;
-        fhir:CodeableConcept.coding [
-            fhir:index "0"^^xsd:integer ;
-            fhir:Coding.code [
-                fhir:value "fax"
-            ] ;
-            fhir:Coding.display [
-                fhir:value "Fax"
-            ]
-        ]
-    ],
-        [
         fhir:index "2"^^xsd:integer ;
         fhir:CodeableConcept.coding [
             fhir:index "0"^^xsd:integer ;
@@ -283,6 +271,18 @@ Subject http://hl7.org/fhir/HealthcareService/example DIFFERENCE: ==============
             ] ;
             fhir:Coding.display [
                 fhir:value "Secure Messaging"
+            ]
+        ]
+    ],
+        [
+        fhir:index "3"^^xsd:integer ;
+        fhir:CodeableConcept.coding [
+            fhir:index "0"^^xsd:integer ;
+            fhir:Coding.code [
+                fhir:value "semail"
+            ] ;
+            fhir:Coding.display [
+                fhir:value "Secure Email"
             ]
         ]
     ] ;
@@ -319,18 +319,6 @@ Subject http://hl7.org/fhir/HealthcareService/example DIFFERENCE: ==============
         ]
     ] ;
     fhir:HealthcareService.telecom [
-        fhir:index "0"^^xsd:integer ;
-        fhir:ContactPoint.system [
-            fhir:value "phone"
-        ] ;
-        fhir:ContactPoint.use [
-            fhir:value "work"
-        ] ;
-        fhir:ContactPoint.value [
-            fhir:value "(555) silent"
-        ]
-    ],
-        [
         fhir:index "1"^^xsd:integer ;
         fhir:ContactPoint.system [
             fhir:value "email"
@@ -341,24 +329,20 @@ Subject http://hl7.org/fhir/HealthcareService/example DIFFERENCE: ==============
         fhir:ContactPoint.value [
             fhir:value "directaddress@example.com"
         ]
-    ] ;
-    fhir:HealthcareService.type [
-        fhir:index "0"^^xsd:integer ;
-        fhir:CodeableConcept.coding [
-            a sct:394913002 ;
-            fhir:index "0"^^xsd:integer ;
-            fhir:Coding.code [
-                fhir:value "394913002"
-            ] ;
-            fhir:Coding.display [
-                fhir:value "Psychotherapy"
-            ] ;
-            fhir:Coding.system [
-                fhir:value "http://snomed.info/sct"
-            ]
-        ]
     ],
         [
+        fhir:index "0"^^xsd:integer ;
+        fhir:ContactPoint.system [
+            fhir:value "phone"
+        ] ;
+        fhir:ContactPoint.use [
+            fhir:value "work"
+        ] ;
+        fhir:ContactPoint.value [
+            fhir:value "(555) silent"
+        ]
+    ] ;
+    fhir:HealthcareService.type [
         fhir:index "1"^^xsd:integer ;
         fhir:CodeableConcept.coding [
             a sct:394587001 ;
@@ -368,6 +352,22 @@ Subject http://hl7.org/fhir/HealthcareService/example DIFFERENCE: ==============
             ] ;
             fhir:Coding.display [
                 fhir:value "Psychiatry"
+            ] ;
+            fhir:Coding.system [
+                fhir:value "http://snomed.info/sct"
+            ]
+        ]
+    ],
+        [
+        fhir:index "0"^^xsd:integer ;
+        fhir:CodeableConcept.coding [
+            a sct:394913002 ;
+            fhir:index "0"^^xsd:integer ;
+            fhir:Coding.code [
+                fhir:value "394913002"
+            ] ;
+            fhir:Coding.display [
+                fhir:value "Psychotherapy"
             ] ;
             fhir:Coding.system [
                 fhir:value "http://snomed.info/sct"

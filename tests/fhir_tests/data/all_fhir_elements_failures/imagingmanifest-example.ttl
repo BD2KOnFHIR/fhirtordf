@@ -65,17 +65,17 @@ Subject http://hl7.org/fhir/ImagingManifest/example DIFFERENCE: ================
     fhir:ImagingManifest.study [
         fhir:index "0"^^xsd:integer ;
         fhir:ImagingManifest.study.endpoint [
-            fhir:index "1"^^xsd:integer ;
-            fhir:link <http://hl7.org/fhir/Endpoint/example-wadors> ;
-            fhir:Reference.reference [
-                fhir:value "Endpoint/example-wadors"
-            ]
-        ],
-            [
             fhir:index "0"^^xsd:integer ;
             fhir:link <http://hl7.org/fhir/Endpoint/example-iid> ;
             fhir:Reference.reference [
                 fhir:value "Endpoint/example-iid"
+            ]
+        ],
+            [
+            fhir:index "1"^^xsd:integer ;
+            fhir:link <http://hl7.org/fhir/Endpoint/example-wadors> ;
+            fhir:Reference.reference [
+                fhir:value "Endpoint/example-wadors"
             ]
         ] ;
         fhir:ImagingManifest.study.imagingStudy [
@@ -85,28 +85,6 @@ Subject http://hl7.org/fhir/ImagingManifest/example DIFFERENCE: ================
             ]
         ] ;
         fhir:ImagingManifest.study.series [
-            fhir:index "0"^^xsd:integer ;
-            fhir:ImagingManifest.study.series.endpoint [
-                fhir:index "0"^^xsd:integer ;
-                fhir:link <http://hl7.org/fhir/Endpoint/example-wadors> ;
-                fhir:Reference.reference [
-                    fhir:value "Endpoint/example-wadors"
-                ]
-            ] ;
-            fhir:ImagingManifest.study.series.instance [
-                fhir:index "0"^^xsd:integer ;
-                fhir:ImagingManifest.study.series.instance.sopClass [
-                    fhir:value "urn:oid:1.2.840.10008.5.1.4.1.1.7"^^xsd:anyURI
-                ] ;
-                fhir:ImagingManifest.study.series.instance.uid [
-                    fhir:value "urn:oid:2.16.124.113543.6003.189642796.63084.16748.2599092902"^^xsd:anyURI
-                ]
-            ] ;
-            fhir:ImagingManifest.study.series.uid [
-                fhir:value "urn:oid:2.16.124.113543.6003.189642796.63084.16750.2599092901"^^xsd:anyURI
-            ]
-        ],
-            [
             fhir:index "1"^^xsd:integer ;
             fhir:ImagingManifest.study.series.instance [
                 fhir:index "1"^^xsd:integer ;
@@ -128,6 +106,28 @@ Subject http://hl7.org/fhir/ImagingManifest/example DIFFERENCE: ================
             ] ;
             fhir:ImagingManifest.study.series.uid [
                 fhir:value "urn:oid:2.16.124.113543.6003.189642796.63084.16750.2599092902"^^xsd:anyURI
+            ]
+        ],
+            [
+            fhir:index "0"^^xsd:integer ;
+            fhir:ImagingManifest.study.series.endpoint [
+                fhir:index "0"^^xsd:integer ;
+                fhir:link <http://hl7.org/fhir/Endpoint/example-wadors> ;
+                fhir:Reference.reference [
+                    fhir:value "Endpoint/example-wadors"
+                ]
+            ] ;
+            fhir:ImagingManifest.study.series.instance [
+                fhir:index "0"^^xsd:integer ;
+                fhir:ImagingManifest.study.series.instance.sopClass [
+                    fhir:value "urn:oid:1.2.840.10008.5.1.4.1.1.7"^^xsd:anyURI
+                ] ;
+                fhir:ImagingManifest.study.series.instance.uid [
+                    fhir:value "urn:oid:2.16.124.113543.6003.189642796.63084.16748.2599092902"^^xsd:anyURI
+                ]
+            ] ;
+            fhir:ImagingManifest.study.series.uid [
+                fhir:value "urn:oid:2.16.124.113543.6003.189642796.63084.16750.2599092901"^^xsd:anyURI
             ]
         ] ;
         fhir:ImagingManifest.study.uid [

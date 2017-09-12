@@ -1,16 +1,10 @@
 
 
-Subject http://hl7.org/fhir/ConceptMap/103 DIFFERENCE: ==============================
-	----> First: 
-<http://hl7.org/fhir/ConceptMap/103.ConceptMap.sourceReference> <http://hl7.org/fhir/link> <http://snomed.info/id?fhir_vs> .
-<http://hl7.org/fhir/ConceptMap/103.ConceptMap.targetReference> <http://hl7.org/fhir/link> <http://hl7.org/fhir/sid/icd-10-us> .
-	----> Second: 
-<http://hl7.org/fhir/ConceptMap/103.ConceptMap.sourceReference> <http://hl7.org/fhir/link> <http://hl7.org/fhir/http%3A//snomed.info/id%3Ffhir_vs> .
-<http://hl7.org/fhir/ConceptMap/103.ConceptMap.targetReference> <http://hl7.org/fhir/link> <http://hl7.org/fhir/http%3A//hl7.org/fhir/sid/icd-10-us> .----------------------------------------
-
 Subject http://hl7.org/fhir/sid/icd-10-us DIFFERENCE: ==============================
 	----> First: 
-<http://hl7.org/fhir/sid/icd-10-us> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/sid> .----------------------------------------
+<http://hl7.org/fhir/sid/icd-10-us> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/sid> .
+	----> Second: 
+<http://hl7.org/fhir/sid/icd-10-us> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/Resource> .----------------------------------------
 
 ========================================
 @prefix fhir: <http://hl7.org/fhir/> .
@@ -131,7 +125,7 @@ Subject http://hl7.org/fhir/sid/icd-10-us DIFFERENCE: ==========================
         fhir:value "Show example rule based mappings"
     ] ;
     fhir:ConceptMap.sourceReference [
-        fhir:link <http://hl7.org/fhir/http%3A//snomed.info/id%3Ffhir_vs> ;
+        fhir:link <http://snomed.info/id?fhir_vs> ;
         fhir:Reference.reference [
             fhir:value "http://snomed.info/id?fhir_vs"
         ]
@@ -140,7 +134,7 @@ Subject http://hl7.org/fhir/sid/icd-10-us DIFFERENCE: ==========================
         fhir:value "draft"
     ] ;
     fhir:ConceptMap.targetReference [
-        fhir:link <http://hl7.org/fhir/http%3A//hl7.org/fhir/sid/icd-10-us> ;
+        fhir:link <http://hl7.org/fhir/sid/icd-10-us> ;
         fhir:Reference.reference [
             fhir:value "http://hl7.org/fhir/sid/icd-10-us"
         ]
@@ -203,7 +197,7 @@ Subject http://hl7.org/fhir/sid/icd-10-us DIFFERENCE: ==========================
 <http://hl7.org/fhir/ConceptMap/103.ttl> a owl:Ontology ;
     owl:imports fhir:fhir.ttl .
 
-<http://hl7.org/fhir/http%3A//hl7.org/fhir/sid/icd-10-us> a <http://hl7.org/fhir/http:> .
+<http://hl7.org/fhir/sid/icd-10-us> a fhir:Resource .
 
-<http://hl7.org/fhir/http%3A//snomed.info/id%3Ffhir_vs> a <http://hl7.org/fhir/http:> .
+<http://snomed.info/id?fhir_vs> a fhir:Resource .
 

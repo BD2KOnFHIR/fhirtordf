@@ -190,6 +190,9 @@ class FHIRResource:
         if match:
             ref_uri_str = val if match.group(FHIR_RE_BASE) else (self._base_uri + urllib.parse.quote(val))
             res_type = match.group(FHIR_RE_RESOURCE)
+        elif '://' in val:
+            ref_uri_str = val
+            res_type = "Resource"
         elif self._base_uri and not val.startswith('#') and not val.startswith('/'):
             ref_uri_str = self._base_uri + urllib.parse.quote(val)
             res_type = val.split('/', 1)[0] if '/' in val else "Resource"

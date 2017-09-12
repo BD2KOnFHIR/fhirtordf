@@ -77,6 +77,41 @@ Subject http://hl7.org/fhir/QuestionnaireResponse/3141 DIFFERENCE: =============
 <http://hl7.org/fhir/QuestionnaireResponse/3141> a fhir:QuestionnaireResponse ;
     fhir:nodeRole fhir:treeRoot ;
     fhir:DomainResource.contained [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Patient.birthDate [
+            fhir:value "1972-11-30"^^xsd:date
+        ] ;
+        fhir:Patient.gender [
+            fhir:value "male"
+        ] ;
+        fhir:Patient.identifier [
+            fhir:index "1"^^xsd:integer ;
+            fhir:Identifier.system [
+                fhir:value "urn:oid:2.16.840.1.113883.2.4.6.3"
+            ] ;
+            fhir:Identifier.type [
+                fhir:CodeableConcept.text [
+                    fhir:value "Dutch BSN"
+                ]
+            ] ;
+            fhir:Identifier.value [
+                fhir:value "188912345"
+            ]
+        ],
+            [
+            fhir:index "0"^^xsd:integer ;
+            fhir:Identifier.system [
+                fhir:value "http://cancer.questionnaire.org/systems/id/patientnr"
+            ] ;
+            fhir:Identifier.value [
+                fhir:value "A34442332"
+            ]
+        ] ;
+        fhir:Resource.id [
+            fhir:value "patsub"
+        ]
+    ],
+        [
         fhir:index "2"^^xsd:integer ;
         fhir:Practitioner.identifier [
             fhir:index "0"^^xsd:integer ;
@@ -119,41 +154,6 @@ Subject http://hl7.org/fhir/QuestionnaireResponse/3141 DIFFERENCE: =============
         ] ;
         fhir:Resource.id [
             fhir:value "order"
-        ]
-    ],
-        [
-        fhir:index "0"^^xsd:integer ;
-        fhir:Patient.birthDate [
-            fhir:value "1972-11-30"^^xsd:date
-        ] ;
-        fhir:Patient.gender [
-            fhir:value "male"
-        ] ;
-        fhir:Patient.identifier [
-            fhir:index "0"^^xsd:integer ;
-            fhir:Identifier.system [
-                fhir:value "http://cancer.questionnaire.org/systems/id/patientnr"
-            ] ;
-            fhir:Identifier.value [
-                fhir:value "A34442332"
-            ]
-        ],
-            [
-            fhir:index "1"^^xsd:integer ;
-            fhir:Identifier.system [
-                fhir:value "urn:oid:2.16.840.1.113883.2.4.6.3"
-            ] ;
-            fhir:Identifier.type [
-                fhir:CodeableConcept.text [
-                    fhir:value "Dutch BSN"
-                ]
-            ] ;
-            fhir:Identifier.value [
-                fhir:value "188912345"
-            ]
-        ] ;
-        fhir:Resource.id [
-            fhir:value "patsub"
         ]
     ] ;
     fhir:DomainResource.text [

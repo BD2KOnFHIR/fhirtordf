@@ -132,66 +132,6 @@ Subject http://hl7.org/fhir/Questionnaire/f201 DIFFERENCE: =====================
         ]
     ],
         [
-        fhir:index "1"^^xsd:integer ;
-        fhir:Questionnaire.item.item [
-            fhir:index "1"^^xsd:integer ;
-            fhir:Questionnaire.item.item.linkId [
-                fhir:value "2.2"
-            ] ;
-            fhir:Questionnaire.item.item.text [
-                fhir:value "What is your date of birth?"
-            ] ;
-            fhir:Questionnaire.item.item.type [
-                fhir:value "date"
-            ]
-        ],
-            [
-            fhir:index "0"^^xsd:integer ;
-            fhir:Questionnaire.item.item.linkId [
-                fhir:value "2.1"
-            ] ;
-            fhir:Questionnaire.item.item.text [
-                fhir:value "What is your gender?"
-            ] ;
-            fhir:Questionnaire.item.item.type [
-                fhir:value "string"
-            ]
-        ],
-            [
-            fhir:index "3"^^xsd:integer ;
-            fhir:Questionnaire.item.item.linkId [
-                fhir:value "2.4"
-            ] ;
-            fhir:Questionnaire.item.item.text [
-                fhir:value "What is your marital status?"
-            ] ;
-            fhir:Questionnaire.item.item.type [
-                fhir:value "string"
-            ]
-        ],
-            [
-            fhir:index "2"^^xsd:integer ;
-            fhir:Questionnaire.item.item.linkId [
-                fhir:value "2.3"
-            ] ;
-            fhir:Questionnaire.item.item.text [
-                fhir:value "What is your country of birth?"
-            ] ;
-            fhir:Questionnaire.item.item.type [
-                fhir:value "string"
-            ]
-        ] ;
-        fhir:Questionnaire.item.linkId [
-            fhir:value "2"
-        ] ;
-        fhir:Questionnaire.item.text [
-            fhir:value "General questions"
-        ] ;
-        fhir:Questionnaire.item.type [
-            fhir:value "group"
-        ]
-    ],
-        [
         fhir:index "2"^^xsd:integer ;
         fhir:Questionnaire.item.item [
             fhir:index "0"^^xsd:integer ;
@@ -222,6 +162,66 @@ Subject http://hl7.org/fhir/Questionnaire/f201 DIFFERENCE: =====================
         ] ;
         fhir:Questionnaire.item.text [
             fhir:value "Intoxications"
+        ] ;
+        fhir:Questionnaire.item.type [
+            fhir:value "group"
+        ]
+    ],
+        [
+        fhir:index "1"^^xsd:integer ;
+        fhir:Questionnaire.item.item [
+            fhir:index "0"^^xsd:integer ;
+            fhir:Questionnaire.item.item.linkId [
+                fhir:value "2.1"
+            ] ;
+            fhir:Questionnaire.item.item.text [
+                fhir:value "What is your gender?"
+            ] ;
+            fhir:Questionnaire.item.item.type [
+                fhir:value "string"
+            ]
+        ],
+            [
+            fhir:index "2"^^xsd:integer ;
+            fhir:Questionnaire.item.item.linkId [
+                fhir:value "2.3"
+            ] ;
+            fhir:Questionnaire.item.item.text [
+                fhir:value "What is your country of birth?"
+            ] ;
+            fhir:Questionnaire.item.item.type [
+                fhir:value "string"
+            ]
+        ],
+            [
+            fhir:index "1"^^xsd:integer ;
+            fhir:Questionnaire.item.item.linkId [
+                fhir:value "2.2"
+            ] ;
+            fhir:Questionnaire.item.item.text [
+                fhir:value "What is your date of birth?"
+            ] ;
+            fhir:Questionnaire.item.item.type [
+                fhir:value "date"
+            ]
+        ],
+            [
+            fhir:index "3"^^xsd:integer ;
+            fhir:Questionnaire.item.item.linkId [
+                fhir:value "2.4"
+            ] ;
+            fhir:Questionnaire.item.item.text [
+                fhir:value "What is your marital status?"
+            ] ;
+            fhir:Questionnaire.item.item.type [
+                fhir:value "string"
+            ]
+        ] ;
+        fhir:Questionnaire.item.linkId [
+            fhir:value "2"
+        ] ;
+        fhir:Questionnaire.item.text [
+            fhir:value "General questions"
         ] ;
         fhir:Questionnaire.item.type [
             fhir:value "group"

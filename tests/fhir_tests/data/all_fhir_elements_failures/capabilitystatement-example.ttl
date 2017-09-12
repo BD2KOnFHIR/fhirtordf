@@ -1,11 +1,5 @@
 
 
-Subject http://hl7.org/fhir/CapabilityStatement/example DIFFERENCE: ==============================
-	----> First: 
-<http://hl7.org/fhir/CapabilityStatement/example.CapabilityStatement.document_0.CapabilityStatement.document.profile> <http://hl7.org/fhir/link> <http://fhir.hl7.org/base/Profilebc054d23-75e1-4dc6-aca5-838b6b1ac81d/_history/b5fdd9fc-b021-4ea1-911a-721a60663796> .
-	----> Second: 
-<http://hl7.org/fhir/CapabilityStatement/example.CapabilityStatement.document_0.CapabilityStatement.document.profile> <http://hl7.org/fhir/link> <http://hl7.org/fhir/http%3A//fhir.hl7.org/base/Profilebc054d23-75e1-4dc6-aca5-838b6b1ac81d/_history/b5fdd9fc-b021-4ea1-911a-721a60663796> .----------------------------------------
-
 Subject http://hl7.org/fhir/us/core/StructureDefinition/familymemberhistory-genetic DIFFERENCE: ==============================
 	----> First: 
 <http://hl7.org/fhir/us/core/StructureDefinition/familymemberhistory-genetic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/us> .
@@ -61,7 +55,7 @@ Subject http://hl7.org/fhir/us/core/StructureDefinition/familymemberhistory-gene
             fhir:value "consumer"
         ] ;
         fhir:CapabilityStatement.document.profile [
-            fhir:link <http://hl7.org/fhir/http%3A//fhir.hl7.org/base/Profilebc054d23-75e1-4dc6-aca5-838b6b1ac81d/_history/b5fdd9fc-b021-4ea1-911a-721a60663796> ;
+            fhir:link <http://fhir.hl7.org/base/Profilebc054d23-75e1-4dc6-aca5-838b6b1ac81d/_history/b5fdd9fc-b021-4ea1-911a-721a60663796> ;
             fhir:Reference.reference [
                 fhir:value "http://fhir.hl7.org/base/Profilebc054d23-75e1-4dc6-aca5-838b6b1ac81d/_history/b5fdd9fc-b021-4ea1-911a-721a60663796"
             ]
@@ -74,12 +68,12 @@ Subject http://hl7.org/fhir/us/core/StructureDefinition/familymemberhistory-gene
         fhir:value "1.0.0"
     ] ;
     fhir:CapabilityStatement.format [
-        fhir:index "0"^^xsd:integer ;
-        fhir:value "xml"
-    ],
-        [
         fhir:index "1"^^xsd:integer ;
         fhir:value "json"
+    ],
+        [
+        fhir:index "0"^^xsd:integer ;
+        fhir:value "xml"
     ] ;
     fhir:CapabilityStatement.implementation [
         fhir:CapabilityStatement.implementation.description [
@@ -177,12 +171,12 @@ Subject http://hl7.org/fhir/us/core/StructureDefinition/familymemberhistory-gene
         fhir:value "ACME-EHR"
     ] ;
     fhir:CapabilityStatement.patchFormat [
-        fhir:index "0"^^xsd:integer ;
-        fhir:value "application/xml-patch+xml"
-    ],
-        [
         fhir:index "1"^^xsd:integer ;
         fhir:value "application/json-patch+json"
+    ],
+        [
+        fhir:index "0"^^xsd:integer ;
+        fhir:value "application/xml-patch+xml"
     ] ;
     fhir:CapabilityStatement.profile [
         fhir:index "0"^^xsd:integer ;
@@ -207,15 +201,15 @@ Subject http://hl7.org/fhir/us/core/StructureDefinition/familymemberhistory-gene
             fhir:value "Main FHIR endpoint for acem health"
         ] ;
         fhir:CapabilityStatement.rest.interaction [
-            fhir:index "0"^^xsd:integer ;
-            fhir:CapabilityStatement.rest.interaction.code [
-                fhir:value "transaction"
-            ]
-        ],
-            [
             fhir:index "1"^^xsd:integer ;
             fhir:CapabilityStatement.rest.interaction.code [
                 fhir:value "history-system"
+            ]
+        ],
+            [
+            fhir:index "0"^^xsd:integer ;
+            fhir:CapabilityStatement.rest.interaction.code [
+                fhir:value "transaction"
             ]
         ] ;
         fhir:CapabilityStatement.rest.mode [
@@ -239,24 +233,6 @@ Subject http://hl7.org/fhir/us/core/StructureDefinition/familymemberhistory-gene
                 fhir:value "This server does not let the clients create identities."
             ] ;
             fhir:CapabilityStatement.rest.resource.interaction [
-                fhir:index "4"^^xsd:integer ;
-                fhir:CapabilityStatement.rest.resource.interaction.code [
-                    fhir:value "create"
-                ]
-            ],
-                [
-                fhir:index "2"^^xsd:integer ;
-                fhir:CapabilityStatement.rest.resource.interaction.code [
-                    fhir:value "update"
-                ]
-            ],
-                [
-                fhir:index "0"^^xsd:integer ;
-                fhir:CapabilityStatement.rest.resource.interaction.code [
-                    fhir:value "read"
-                ]
-            ],
-                [
                 fhir:index "1"^^xsd:integer ;
                 fhir:CapabilityStatement.rest.resource.interaction.code [
                     fhir:value "vread"
@@ -272,9 +248,27 @@ Subject http://hl7.org/fhir/us/core/StructureDefinition/familymemberhistory-gene
                 ]
             ],
                 [
+                fhir:index "0"^^xsd:integer ;
+                fhir:CapabilityStatement.rest.resource.interaction.code [
+                    fhir:value "read"
+                ]
+            ],
+                [
                 fhir:index "5"^^xsd:integer ;
                 fhir:CapabilityStatement.rest.resource.interaction.code [
                     fhir:value "history-type"
+                ]
+            ],
+                [
+                fhir:index "2"^^xsd:integer ;
+                fhir:CapabilityStatement.rest.resource.interaction.code [
+                    fhir:value "update"
+                ]
+            ],
+                [
+                fhir:index "4"^^xsd:integer ;
+                fhir:CapabilityStatement.rest.resource.interaction.code [
+                    fhir:value "create"
                 ]
             ] ;
             fhir:CapabilityStatement.rest.resource.profile [
@@ -428,13 +422,13 @@ Subject http://hl7.org/fhir/us/core/StructureDefinition/familymemberhistory-gene
 <http://hl7.org/fhir/CapabilityStatement/example.ttl> a owl:Ontology ;
     owl:imports fhir:fhir.ttl .
 
+<http://fhir.hl7.org/base/Profilebc054d23-75e1-4dc6-aca5-838b6b1ac81d/_history/b5fdd9fc-b021-4ea1-911a-721a60663796> a fhir:Resource .
+
 <http://fhir.hl7.org/base/StructureDefinition/7896271d-57f6-4231-89dc-dcc91eab2416> a fhir:StructureDefinition .
 
 <http://hl7.org/fhir/StructureDefinition/MessageHeader> a fhir:StructureDefinition .
 
 <http://hl7.org/fhir/StructureDefinition/Patient> a fhir:StructureDefinition .
-
-<http://hl7.org/fhir/http%3A//fhir.hl7.org/base/Profilebc054d23-75e1-4dc6-aca5-838b6b1ac81d/_history/b5fdd9fc-b021-4ea1-911a-721a60663796> a <http://hl7.org/fhir/http:> .
 
 <http://hl7.org/fhir/us/core/StructureDefinition/familymemberhistory-genetic> a fhir:StructureDefinition .
 

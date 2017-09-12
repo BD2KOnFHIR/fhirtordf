@@ -118,6 +118,25 @@ Subject http://hl7.org/fhir/RequestGroup/example DIFFERENCE: ===================
     fhir:RequestGroup.action [
         fhir:index "0"^^xsd:integer ;
         fhir:RequestGroup.action.action [
+            fhir:index "0"^^xsd:integer ;
+            fhir:Element.id [
+                fhir:value "medication-action-1"
+            ] ;
+            fhir:RequestGroup.action.action.description [
+                fhir:value "Administer medication 1"
+            ] ;
+            fhir:RequestGroup.action.action.resource [
+                fhir:Reference.reference [
+                    fhir:value "#medicationrequest-1"
+                ]
+            ] ;
+            fhir:RequestGroup.action.action.type [
+                fhir:Coding.code [
+                    fhir:value "create"
+                ]
+            ]
+        ],
+            [
             fhir:index "1"^^xsd:integer ;
             fhir:Element.id [
                 fhir:value "medication-action-2"
@@ -145,25 +164,6 @@ Subject http://hl7.org/fhir/RequestGroup/example DIFFERENCE: ===================
             fhir:RequestGroup.action.action.resource [
                 fhir:Reference.reference [
                     fhir:value "#medicationrequest-2"
-                ]
-            ] ;
-            fhir:RequestGroup.action.action.type [
-                fhir:Coding.code [
-                    fhir:value "create"
-                ]
-            ]
-        ],
-            [
-            fhir:index "0"^^xsd:integer ;
-            fhir:Element.id [
-                fhir:value "medication-action-1"
-            ] ;
-            fhir:RequestGroup.action.action.description [
-                fhir:value "Administer medication 1"
-            ] ;
-            fhir:RequestGroup.action.action.resource [
-                fhir:Reference.reference [
-                    fhir:value "#medicationrequest-1"
                 ]
             ] ;
             fhir:RequestGroup.action.action.type [

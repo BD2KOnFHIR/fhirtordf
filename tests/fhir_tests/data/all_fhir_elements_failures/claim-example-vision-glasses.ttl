@@ -10,7 +10,6 @@ Subject http://hl7.org/fhir/Claim/660151 DIFFERENCE: ===========================
 <http://hl7.org/fhir/Claim/660151.Claim.item_0.Claim.item.detail_2.Claim.item.detail.unitPrice.Quantity.value> <http://hl7.org/fhir/value> "200.00"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 <http://hl7.org/fhir/Claim/660151.Claim.item_0.Claim.item.net.Quantity.value> <http://hl7.org/fhir/value> "214.00"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 <http://hl7.org/fhir/Claim/660151.Claim.item_0.Claim.item.unitPrice.Quantity.value> <http://hl7.org/fhir/value> "214.00"^^<http://www.w3.org/2001/XMLSchema#decimal> .
-<http://hl7.org/fhir/Claim/660151.Claim.prescription> <http://hl7.org/fhir/link> <http://www.optdocs.com/prescription/12345> .
 	----> Second: 
 <http://hl7.org/fhir/Claim/660151.Claim.item_0.Claim.item.detail_0.Claim.item.detail.net.Quantity.value> <http://hl7.org/fhir/value> "100.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 <http://hl7.org/fhir/Claim/660151.Claim.item_0.Claim.item.detail_0.Claim.item.detail.unitPrice.Quantity.value> <http://hl7.org/fhir/value> "100.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
@@ -19,8 +18,7 @@ Subject http://hl7.org/fhir/Claim/660151 DIFFERENCE: ===========================
 <http://hl7.org/fhir/Claim/660151.Claim.item_0.Claim.item.detail_2.Claim.item.detail.net.Quantity.value> <http://hl7.org/fhir/value> "14.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 <http://hl7.org/fhir/Claim/660151.Claim.item_0.Claim.item.detail_2.Claim.item.detail.unitPrice.Quantity.value> <http://hl7.org/fhir/value> "200.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 <http://hl7.org/fhir/Claim/660151.Claim.item_0.Claim.item.net.Quantity.value> <http://hl7.org/fhir/value> "214.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
-<http://hl7.org/fhir/Claim/660151.Claim.item_0.Claim.item.unitPrice.Quantity.value> <http://hl7.org/fhir/value> "214.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
-<http://hl7.org/fhir/Claim/660151.Claim.prescription> <http://hl7.org/fhir/link> <http://hl7.org/fhir/http%3A//www.optdocs.com/prescription/12345> .----------------------------------------
+<http://hl7.org/fhir/Claim/660151.Claim.item_0.Claim.item.unitPrice.Quantity.value> <http://hl7.org/fhir/value> "214.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .----------------------------------------
 
 ========================================
 @prefix ex-claimtype: <http://hl7.org/fhir/ex-claimtype> .
@@ -146,6 +144,46 @@ Subject http://hl7.org/fhir/Claim/660151 DIFFERENCE: ===========================
             ]
         ],
             [
+            fhir:index "0"^^xsd:integer ;
+            fhir:Claim.item.detail.net [
+                fhir:Quantity.code [
+                    fhir:value "USD"
+                ] ;
+                fhir:Quantity.system [
+                    fhir:value "urn:iso:std:iso:4217"
+                ] ;
+                fhir:Quantity.value [
+                    fhir:value "100.0"^^xsd:decimal
+                ]
+            ] ;
+            fhir:Claim.item.detail.sequence [
+                fhir:value "1"^^xsd:positiveInteger
+            ] ;
+            fhir:Claim.item.detail.service [
+                fhir:CodeableConcept.coding [
+                    a <http://hl7.org/fhir/ex-visionservice/frame> ;
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "frame"
+                    ] ;
+                    fhir:Coding.system [
+                        fhir:value "http://hl7.org/fhir/ex-visionservice"
+                    ]
+                ]
+            ] ;
+            fhir:Claim.item.detail.unitPrice [
+                fhir:Quantity.code [
+                    fhir:value "USD"
+                ] ;
+                fhir:Quantity.system [
+                    fhir:value "urn:iso:std:iso:4217"
+                ] ;
+                fhir:Quantity.value [
+                    fhir:value "100.0"^^xsd:decimal
+                ]
+            ]
+        ],
+            [
             fhir:index "2"^^xsd:integer ;
             fhir:Claim.item.detail.factor [
                 fhir:value "0.07"^^xsd:decimal
@@ -185,46 +223,6 @@ Subject http://hl7.org/fhir/Claim/660151 DIFFERENCE: ===========================
                 ] ;
                 fhir:Quantity.value [
                     fhir:value "200.0"^^xsd:decimal
-                ]
-            ]
-        ],
-            [
-            fhir:index "0"^^xsd:integer ;
-            fhir:Claim.item.detail.net [
-                fhir:Quantity.code [
-                    fhir:value "USD"
-                ] ;
-                fhir:Quantity.system [
-                    fhir:value "urn:iso:std:iso:4217"
-                ] ;
-                fhir:Quantity.value [
-                    fhir:value "100.0"^^xsd:decimal
-                ]
-            ] ;
-            fhir:Claim.item.detail.sequence [
-                fhir:value "1"^^xsd:positiveInteger
-            ] ;
-            fhir:Claim.item.detail.service [
-                fhir:CodeableConcept.coding [
-                    a <http://hl7.org/fhir/ex-visionservice/frame> ;
-                    fhir:index "0"^^xsd:integer ;
-                    fhir:Coding.code [
-                        fhir:value "frame"
-                    ] ;
-                    fhir:Coding.system [
-                        fhir:value "http://hl7.org/fhir/ex-visionservice"
-                    ]
-                ]
-            ] ;
-            fhir:Claim.item.detail.unitPrice [
-                fhir:Quantity.code [
-                    fhir:value "USD"
-                ] ;
-                fhir:Quantity.system [
-                    fhir:value "urn:iso:std:iso:4217"
-                ] ;
-                fhir:Quantity.value [
-                    fhir:value "100.0"^^xsd:decimal
                 ]
             ]
         ] ;
@@ -292,7 +290,7 @@ Subject http://hl7.org/fhir/Claim/660151 DIFFERENCE: ===========================
         ]
     ] ;
     fhir:Claim.prescription [
-        fhir:link <http://hl7.org/fhir/http%3A//www.optdocs.com/prescription/12345> ;
+        fhir:link <http://www.optdocs.com/prescription/12345> ;
         fhir:Reference.reference [
             fhir:value "http://www.optdocs.com/prescription/12345"
         ]
@@ -346,5 +344,5 @@ Subject http://hl7.org/fhir/Claim/660151 DIFFERENCE: ===========================
 
 <http://hl7.org/fhir/Practitioner/example> a fhir:Practitioner .
 
-<http://hl7.org/fhir/http%3A//www.optdocs.com/prescription/12345> a <http://hl7.org/fhir/http:> .
+<http://www.optdocs.com/prescription/12345> a fhir:Resource .
 

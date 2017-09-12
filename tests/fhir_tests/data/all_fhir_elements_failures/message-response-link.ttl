@@ -19,6 +19,112 @@ Subject urn:uuid:03f9aa7d-b395-47b9-84e0-053678b6e4e3 DIFFERENCE: ==============
 <urn:uuid:03f9aa7d-b395-47b9-84e0-053678b6e4e3> <http://hl7.org/fhir/Resource.id> <urn:uuid:03f9aa7d-b395-47b9-84e0-053678b6e4e3.Resource.id> .
 <urn:uuid:03f9aa7d-b395-47b9-84e0-053678b6e4e3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/OperationOutcome> .----------------------------------------
 
+Subject urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed DIFFERENCE: ==============================
+	----> First: 
+<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
+<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.DomainResource.text> <http://hl7.org/fhir/Narrative.div> "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n             \n            <p>This message is a request to link Patient records 654321 (Patient Donald DUCK @ Acme Healthcare, Inc) and 123456 (Patient Donald D DUCK @ Acme Healthcare, Inc)</p>\n           \n          </div>" .
+<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.DomainResource.text> <http://hl7.org/fhir/Narrative.status> <urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.DomainResource.text.Narrative.status> .
+<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.event.Coding.code> <http://hl7.org/fhir/value> "patient-link" .
+<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.event.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/message-events" .
+<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.event> <http://hl7.org/fhir/Coding.code> <urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.event.Coding.code> .
+<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.event> <http://hl7.org/fhir/Coding.system> <urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.event.Coding.system> .
+<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.focus_0.Reference.reference> <http://hl7.org/fhir/value> "http://acme.com/ehr/fhir/Patient/pat1" .
+<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.focus_0> <http://hl7.org/fhir/Reference.reference> <urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.focus_0.Reference.reference> .
+<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.focus_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.focus_0> <http://hl7.org/fhir/link> <http://acme.com/ehr/fhir/Patient/pat1> .
+<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.focus_1.Reference.reference> <http://hl7.org/fhir/value> "http://acme.com/ehr/fhir/Patient/pat12" .
+<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.focus_1> <http://hl7.org/fhir/Reference.reference> <urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.focus_1.Reference.reference> .
+<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.focus_1> <http://hl7.org/fhir/index> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.focus_1> <http://hl7.org/fhir/link> <http://acme.com/ehr/fhir/Patient/pat12> .
+<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.response.MessageHeader.response.code> <http://hl7.org/fhir/value> "ok" .
+<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.response.MessageHeader.response.details.Reference.reference> <http://hl7.org/fhir/value> "OperationOutcome/03f9aa7d-b395-47b9-84e0-053678b6e4e3" .
+<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.response.MessageHeader.response.details> <http://hl7.org/fhir/Reference.reference> <urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.response.MessageHeader.response.details.Reference.reference> .
+<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.response.MessageHeader.response.details> <http://hl7.org/fhir/link> <http://hl7.org/fhir/OperationOutcome/03f9aa7d-b395-47b9-84e0-053678b6e4e3> .
+<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.response.MessageHeader.response.identifier> <http://hl7.org/fhir/value> "efdd254b-0e09-4164-883e-35cf3871715f" .
+<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.response> <http://hl7.org/fhir/MessageHeader.response.code> <urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.response.MessageHeader.response.code> .
+<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.response> <http://hl7.org/fhir/MessageHeader.response.details> <urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.response.MessageHeader.response.details> .
+<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.response> <http://hl7.org/fhir/MessageHeader.response.identifier> <urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.response.MessageHeader.response.identifier> .
+<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.source.MessageHeader.source.endpoint> <http://hl7.org/fhir/value> "http://acme.com/ehr/fhir" .
+<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.source> <http://hl7.org/fhir/MessageHeader.source.endpoint> <urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.source.MessageHeader.source.endpoint> .
+<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.timestamp> <http://hl7.org/fhir/value> "2015-07-14T11:15:33+10:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.Resource.id> <http://hl7.org/fhir/value> "caf609cf-c3a7-4be3-a3aa-356b9bb69d4f" .
+<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed> <http://hl7.org/fhir/DomainResource.text> <urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.DomainResource.text> .
+<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed> <http://hl7.org/fhir/MessageHeader.event> <urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.event> .
+<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed> <http://hl7.org/fhir/MessageHeader.focus> <urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.focus_0> .
+<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed> <http://hl7.org/fhir/MessageHeader.focus> <urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.focus_1> .
+<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed> <http://hl7.org/fhir/MessageHeader.response> <urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.response> .
+<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed> <http://hl7.org/fhir/MessageHeader.source> <urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.source> .
+<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed> <http://hl7.org/fhir/MessageHeader.timestamp> <urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.timestamp> .
+<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed> <http://hl7.org/fhir/Resource.id> <urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.Resource.id> .
+<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/MessageHeader> .----------------------------------------
+
+Subject http://acme.com/ehr/fhir/Patient/pat12 DIFFERENCE: ==============================
+	----> First: 
+<http://acme.com/ehr/fhir/Patient/pat12.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
+<http://acme.com/ehr/fhir/Patient/pat12.DomainResource.text> <http://hl7.org/fhir/Narrative.div> "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            \n            <p>Patient Donald D DUCK @ Acme Healthcare, Inc. MR = 123456</p>\n          \n          </div>" .
+<http://acme.com/ehr/fhir/Patient/pat12.DomainResource.text> <http://hl7.org/fhir/Narrative.status> <http://acme.com/ehr/fhir/Patient/pat12.DomainResource.text.Narrative.status> .
+<http://acme.com/ehr/fhir/Patient/pat12.Patient.active> <http://hl7.org/fhir/value> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://acme.com/ehr/fhir/Patient/pat12.Patient.gender.Element.extension_0.Extension.url> <http://hl7.org/fhir/value> "http://example.org/Profile/administrative-status" .
+<http://acme.com/ehr/fhir/Patient/pat12.Patient.gender.Element.extension_0.Extension.valueCodeableConcept.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "A" .
+<http://acme.com/ehr/fhir/Patient/pat12.Patient.gender.Element.extension_0.Extension.valueCodeableConcept.CodeableConcept.coding_0.Coding.display> <http://hl7.org/fhir/value> "Ambiguous" .
+<http://acme.com/ehr/fhir/Patient/pat12.Patient.gender.Element.extension_0.Extension.valueCodeableConcept.CodeableConcept.coding_0.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/v2/0001" .
+<http://acme.com/ehr/fhir/Patient/pat12.Patient.gender.Element.extension_0.Extension.valueCodeableConcept.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://acme.com/ehr/fhir/Patient/pat12.Patient.gender.Element.extension_0.Extension.valueCodeableConcept.CodeableConcept.coding_0.Coding.code> .
+<http://acme.com/ehr/fhir/Patient/pat12.Patient.gender.Element.extension_0.Extension.valueCodeableConcept.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.display> <http://acme.com/ehr/fhir/Patient/pat12.Patient.gender.Element.extension_0.Extension.valueCodeableConcept.CodeableConcept.coding_0.Coding.display> .
+<http://acme.com/ehr/fhir/Patient/pat12.Patient.gender.Element.extension_0.Extension.valueCodeableConcept.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.system> <http://acme.com/ehr/fhir/Patient/pat12.Patient.gender.Element.extension_0.Extension.valueCodeableConcept.CodeableConcept.coding_0.Coding.system> .
+<http://acme.com/ehr/fhir/Patient/pat12.Patient.gender.Element.extension_0.Extension.valueCodeableConcept.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://acme.com/ehr/fhir/Patient/pat12.Patient.gender.Element.extension_0.Extension.valueCodeableConcept> <http://hl7.org/fhir/CodeableConcept.coding> <http://acme.com/ehr/fhir/Patient/pat12.Patient.gender.Element.extension_0.Extension.valueCodeableConcept.CodeableConcept.coding_0> .
+<http://acme.com/ehr/fhir/Patient/pat12.Patient.gender.Element.extension_0> <http://hl7.org/fhir/Extension.url> <http://acme.com/ehr/fhir/Patient/pat12.Patient.gender.Element.extension_0.Extension.url> .
+<http://acme.com/ehr/fhir/Patient/pat12.Patient.gender.Element.extension_0> <http://hl7.org/fhir/Extension.valueCodeableConcept> <http://acme.com/ehr/fhir/Patient/pat12.Patient.gender.Element.extension_0.Extension.valueCodeableConcept> .
+<http://acme.com/ehr/fhir/Patient/pat12.Patient.gender.Element.extension_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://acme.com/ehr/fhir/Patient/pat12.Patient.gender> <http://hl7.org/fhir/Element.extension> <http://acme.com/ehr/fhir/Patient/pat12.Patient.gender.Element.extension_0> .
+<http://acme.com/ehr/fhir/Patient/pat12.Patient.gender> <http://hl7.org/fhir/value> "other" .
+<http://acme.com/ehr/fhir/Patient/pat12.Patient.identifier_0.Identifier.system> <http://hl7.org/fhir/value> "urn:oid:0.1.2.3.4.5.6.7" .
+<http://acme.com/ehr/fhir/Patient/pat12.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "MR" .
+<http://acme.com/ehr/fhir/Patient/pat12.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/v2/0203" .
+<http://acme.com/ehr/fhir/Patient/pat12.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://acme.com/ehr/fhir/Patient/pat12.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.code> .
+<http://acme.com/ehr/fhir/Patient/pat12.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.system> <http://acme.com/ehr/fhir/Patient/pat12.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.system> .
+<http://acme.com/ehr/fhir/Patient/pat12.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://acme.com/ehr/fhir/Patient/pat12.Patient.identifier_0.Identifier.type> <http://hl7.org/fhir/CodeableConcept.coding> <http://acme.com/ehr/fhir/Patient/pat12.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> .
+<http://acme.com/ehr/fhir/Patient/pat12.Patient.identifier_0.Identifier.use> <http://hl7.org/fhir/value> "usual" .
+<http://acme.com/ehr/fhir/Patient/pat12.Patient.identifier_0.Identifier.value> <http://hl7.org/fhir/value> "123456" .
+<http://acme.com/ehr/fhir/Patient/pat12.Patient.identifier_0> <http://hl7.org/fhir/Identifier.system> <http://acme.com/ehr/fhir/Patient/pat12.Patient.identifier_0.Identifier.system> .
+<http://acme.com/ehr/fhir/Patient/pat12.Patient.identifier_0> <http://hl7.org/fhir/Identifier.type> <http://acme.com/ehr/fhir/Patient/pat12.Patient.identifier_0.Identifier.type> .
+<http://acme.com/ehr/fhir/Patient/pat12.Patient.identifier_0> <http://hl7.org/fhir/Identifier.use> <http://acme.com/ehr/fhir/Patient/pat12.Patient.identifier_0.Identifier.use> .
+<http://acme.com/ehr/fhir/Patient/pat12.Patient.identifier_0> <http://hl7.org/fhir/Identifier.value> <http://acme.com/ehr/fhir/Patient/pat12.Patient.identifier_0.Identifier.value> .
+<http://acme.com/ehr/fhir/Patient/pat12.Patient.identifier_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://acme.com/ehr/fhir/Patient/pat12.Patient.link_0.Patient.link.other.Reference.reference> <http://hl7.org/fhir/value> "Patient/pat1" .
+<http://acme.com/ehr/fhir/Patient/pat12.Patient.link_0.Patient.link.other> <http://hl7.org/fhir/Reference.reference> <http://acme.com/ehr/fhir/Patient/pat12.Patient.link_0.Patient.link.other.Reference.reference> .
+<http://acme.com/ehr/fhir/Patient/pat12.Patient.link_0.Patient.link.other> <http://hl7.org/fhir/link> <http://hl7.org/fhir/Patient/pat1> .
+<http://acme.com/ehr/fhir/Patient/pat12.Patient.link_0.Patient.link.type> <http://hl7.org/fhir/value> "seealso" .
+<http://acme.com/ehr/fhir/Patient/pat12.Patient.link_0> <http://hl7.org/fhir/Patient.link.other> <http://acme.com/ehr/fhir/Patient/pat12.Patient.link_0.Patient.link.other> .
+<http://acme.com/ehr/fhir/Patient/pat12.Patient.link_0> <http://hl7.org/fhir/Patient.link.type> <http://acme.com/ehr/fhir/Patient/pat12.Patient.link_0.Patient.link.type> .
+<http://acme.com/ehr/fhir/Patient/pat12.Patient.link_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://acme.com/ehr/fhir/Patient/pat12.Patient.managingOrganization.Reference.display> <http://hl7.org/fhir/value> "ACME Healthcare, Inc" .
+<http://acme.com/ehr/fhir/Patient/pat12.Patient.managingOrganization.Reference.reference> <http://hl7.org/fhir/value> "Organization/1" .
+<http://acme.com/ehr/fhir/Patient/pat12.Patient.managingOrganization> <http://hl7.org/fhir/Reference.display> <http://acme.com/ehr/fhir/Patient/pat12.Patient.managingOrganization.Reference.display> .
+<http://acme.com/ehr/fhir/Patient/pat12.Patient.managingOrganization> <http://hl7.org/fhir/Reference.reference> <http://acme.com/ehr/fhir/Patient/pat12.Patient.managingOrganization.Reference.reference> .
+<http://acme.com/ehr/fhir/Patient/pat12.Patient.managingOrganization> <http://hl7.org/fhir/link> <http://hl7.org/fhir/Organization/1> .
+<http://acme.com/ehr/fhir/Patient/pat12.Patient.name_0.HumanName.family> <http://hl7.org/fhir/value> "Donald" .
+<http://acme.com/ehr/fhir/Patient/pat12.Patient.name_0.HumanName.given_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://acme.com/ehr/fhir/Patient/pat12.Patient.name_0.HumanName.given_0> <http://hl7.org/fhir/value> "Duck" .
+<http://acme.com/ehr/fhir/Patient/pat12.Patient.name_0.HumanName.given_1> <http://hl7.org/fhir/index> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://acme.com/ehr/fhir/Patient/pat12.Patient.name_0.HumanName.given_1> <http://hl7.org/fhir/value> "D" .
+<http://acme.com/ehr/fhir/Patient/pat12.Patient.name_0.HumanName.use> <http://hl7.org/fhir/value> "official" .
+<http://acme.com/ehr/fhir/Patient/pat12.Patient.name_0> <http://hl7.org/fhir/HumanName.family> <http://acme.com/ehr/fhir/Patient/pat12.Patient.name_0.HumanName.family> .
+<http://acme.com/ehr/fhir/Patient/pat12.Patient.name_0> <http://hl7.org/fhir/HumanName.given> <http://acme.com/ehr/fhir/Patient/pat12.Patient.name_0.HumanName.given_0> .
+<http://acme.com/ehr/fhir/Patient/pat12.Patient.name_0> <http://hl7.org/fhir/HumanName.given> <http://acme.com/ehr/fhir/Patient/pat12.Patient.name_0.HumanName.given_1> .
+<http://acme.com/ehr/fhir/Patient/pat12.Patient.name_0> <http://hl7.org/fhir/HumanName.use> <http://acme.com/ehr/fhir/Patient/pat12.Patient.name_0.HumanName.use> .
+<http://acme.com/ehr/fhir/Patient/pat12.Patient.name_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://acme.com/ehr/fhir/Patient/pat12.Resource.id> <http://hl7.org/fhir/value> "pat2" .
+<http://acme.com/ehr/fhir/Patient/pat12> <http://hl7.org/fhir/DomainResource.text> <http://acme.com/ehr/fhir/Patient/pat12.DomainResource.text> .
+<http://acme.com/ehr/fhir/Patient/pat12> <http://hl7.org/fhir/Patient.active> <http://acme.com/ehr/fhir/Patient/pat12.Patient.active> .
+<http://acme.com/ehr/fhir/Patient/pat12> <http://hl7.org/fhir/Patient.gender> <http://acme.com/ehr/fhir/Patient/pat12.Patient.gender> .
+<http://acme.com/ehr/fhir/Patient/pat12> <http://hl7.org/fhir/Patient.identifier> <http://acme.com/ehr/fhir/Patient/pat12.Patient.identifier_0> .
+<http://acme.com/ehr/fhir/Patient/pat12> <http://hl7.org/fhir/Patient.link> <http://acme.com/ehr/fhir/Patient/pat12.Patient.link_0> .
+<http://acme.com/ehr/fhir/Patient/pat12> <http://hl7.org/fhir/Patient.managingOrganization> <http://acme.com/ehr/fhir/Patient/pat12.Patient.managingOrganization> .
+<http://acme.com/ehr/fhir/Patient/pat12> <http://hl7.org/fhir/Patient.name> <http://acme.com/ehr/fhir/Patient/pat12.Patient.name_0> .
+<http://acme.com/ehr/fhir/Patient/pat12> <http://hl7.org/fhir/Resource.id> <http://acme.com/ehr/fhir/Patient/pat12.Resource.id> .----------------------------------------
+
 Subject http://acme.com/ehr/fhir/Patient/pat1 DIFFERENCE: ==============================
 	----> First: 
 <http://acme.com/ehr/fhir/Patient/pat1.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
@@ -276,112 +382,6 @@ Subject http://hl7.org/fhir/Bundle/3a0707d3-549e-4467-b8b8-5a2ab3800efe DIFFEREN
 <http://hl7.org/fhir/Bundle/3a0707d3-549e-4467-b8b8-5a2ab3800efe.Bundle.entry_3.Bundle.entry.resource> <http://hl7.org/fhir/Resource.id> <http://hl7.org/fhir/Bundle/3a0707d3-549e-4467-b8b8-5a2ab3800efe.Bundle.entry_3.Bundle.entry.resource.Resource.id> .
 <http://hl7.org/fhir/Bundle/3a0707d3-549e-4467-b8b8-5a2ab3800efe.Bundle.entry_3> <http://hl7.org/fhir/Bundle.entry.resource> <http://hl7.org/fhir/Bundle/3a0707d3-549e-4467-b8b8-5a2ab3800efe.Bundle.entry_3.Bundle.entry.resource> .----------------------------------------
 
-Subject http://acme.com/ehr/fhir/Patient/pat12 DIFFERENCE: ==============================
-	----> First: 
-<http://acme.com/ehr/fhir/Patient/pat12.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
-<http://acme.com/ehr/fhir/Patient/pat12.DomainResource.text> <http://hl7.org/fhir/Narrative.div> "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            \n            <p>Patient Donald D DUCK @ Acme Healthcare, Inc. MR = 123456</p>\n          \n          </div>" .
-<http://acme.com/ehr/fhir/Patient/pat12.DomainResource.text> <http://hl7.org/fhir/Narrative.status> <http://acme.com/ehr/fhir/Patient/pat12.DomainResource.text.Narrative.status> .
-<http://acme.com/ehr/fhir/Patient/pat12.Patient.active> <http://hl7.org/fhir/value> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<http://acme.com/ehr/fhir/Patient/pat12.Patient.gender.Element.extension_0.Extension.url> <http://hl7.org/fhir/value> "http://example.org/Profile/administrative-status" .
-<http://acme.com/ehr/fhir/Patient/pat12.Patient.gender.Element.extension_0.Extension.valueCodeableConcept.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "A" .
-<http://acme.com/ehr/fhir/Patient/pat12.Patient.gender.Element.extension_0.Extension.valueCodeableConcept.CodeableConcept.coding_0.Coding.display> <http://hl7.org/fhir/value> "Ambiguous" .
-<http://acme.com/ehr/fhir/Patient/pat12.Patient.gender.Element.extension_0.Extension.valueCodeableConcept.CodeableConcept.coding_0.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/v2/0001" .
-<http://acme.com/ehr/fhir/Patient/pat12.Patient.gender.Element.extension_0.Extension.valueCodeableConcept.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://acme.com/ehr/fhir/Patient/pat12.Patient.gender.Element.extension_0.Extension.valueCodeableConcept.CodeableConcept.coding_0.Coding.code> .
-<http://acme.com/ehr/fhir/Patient/pat12.Patient.gender.Element.extension_0.Extension.valueCodeableConcept.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.display> <http://acme.com/ehr/fhir/Patient/pat12.Patient.gender.Element.extension_0.Extension.valueCodeableConcept.CodeableConcept.coding_0.Coding.display> .
-<http://acme.com/ehr/fhir/Patient/pat12.Patient.gender.Element.extension_0.Extension.valueCodeableConcept.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.system> <http://acme.com/ehr/fhir/Patient/pat12.Patient.gender.Element.extension_0.Extension.valueCodeableConcept.CodeableConcept.coding_0.Coding.system> .
-<http://acme.com/ehr/fhir/Patient/pat12.Patient.gender.Element.extension_0.Extension.valueCodeableConcept.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://acme.com/ehr/fhir/Patient/pat12.Patient.gender.Element.extension_0.Extension.valueCodeableConcept> <http://hl7.org/fhir/CodeableConcept.coding> <http://acme.com/ehr/fhir/Patient/pat12.Patient.gender.Element.extension_0.Extension.valueCodeableConcept.CodeableConcept.coding_0> .
-<http://acme.com/ehr/fhir/Patient/pat12.Patient.gender.Element.extension_0> <http://hl7.org/fhir/Extension.url> <http://acme.com/ehr/fhir/Patient/pat12.Patient.gender.Element.extension_0.Extension.url> .
-<http://acme.com/ehr/fhir/Patient/pat12.Patient.gender.Element.extension_0> <http://hl7.org/fhir/Extension.valueCodeableConcept> <http://acme.com/ehr/fhir/Patient/pat12.Patient.gender.Element.extension_0.Extension.valueCodeableConcept> .
-<http://acme.com/ehr/fhir/Patient/pat12.Patient.gender.Element.extension_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://acme.com/ehr/fhir/Patient/pat12.Patient.gender> <http://hl7.org/fhir/Element.extension> <http://acme.com/ehr/fhir/Patient/pat12.Patient.gender.Element.extension_0> .
-<http://acme.com/ehr/fhir/Patient/pat12.Patient.gender> <http://hl7.org/fhir/value> "other" .
-<http://acme.com/ehr/fhir/Patient/pat12.Patient.identifier_0.Identifier.system> <http://hl7.org/fhir/value> "urn:oid:0.1.2.3.4.5.6.7" .
-<http://acme.com/ehr/fhir/Patient/pat12.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "MR" .
-<http://acme.com/ehr/fhir/Patient/pat12.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/v2/0203" .
-<http://acme.com/ehr/fhir/Patient/pat12.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://acme.com/ehr/fhir/Patient/pat12.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.code> .
-<http://acme.com/ehr/fhir/Patient/pat12.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.system> <http://acme.com/ehr/fhir/Patient/pat12.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.system> .
-<http://acme.com/ehr/fhir/Patient/pat12.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://acme.com/ehr/fhir/Patient/pat12.Patient.identifier_0.Identifier.type> <http://hl7.org/fhir/CodeableConcept.coding> <http://acme.com/ehr/fhir/Patient/pat12.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> .
-<http://acme.com/ehr/fhir/Patient/pat12.Patient.identifier_0.Identifier.use> <http://hl7.org/fhir/value> "usual" .
-<http://acme.com/ehr/fhir/Patient/pat12.Patient.identifier_0.Identifier.value> <http://hl7.org/fhir/value> "123456" .
-<http://acme.com/ehr/fhir/Patient/pat12.Patient.identifier_0> <http://hl7.org/fhir/Identifier.system> <http://acme.com/ehr/fhir/Patient/pat12.Patient.identifier_0.Identifier.system> .
-<http://acme.com/ehr/fhir/Patient/pat12.Patient.identifier_0> <http://hl7.org/fhir/Identifier.type> <http://acme.com/ehr/fhir/Patient/pat12.Patient.identifier_0.Identifier.type> .
-<http://acme.com/ehr/fhir/Patient/pat12.Patient.identifier_0> <http://hl7.org/fhir/Identifier.use> <http://acme.com/ehr/fhir/Patient/pat12.Patient.identifier_0.Identifier.use> .
-<http://acme.com/ehr/fhir/Patient/pat12.Patient.identifier_0> <http://hl7.org/fhir/Identifier.value> <http://acme.com/ehr/fhir/Patient/pat12.Patient.identifier_0.Identifier.value> .
-<http://acme.com/ehr/fhir/Patient/pat12.Patient.identifier_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://acme.com/ehr/fhir/Patient/pat12.Patient.link_0.Patient.link.other.Reference.reference> <http://hl7.org/fhir/value> "Patient/pat1" .
-<http://acme.com/ehr/fhir/Patient/pat12.Patient.link_0.Patient.link.other> <http://hl7.org/fhir/Reference.reference> <http://acme.com/ehr/fhir/Patient/pat12.Patient.link_0.Patient.link.other.Reference.reference> .
-<http://acme.com/ehr/fhir/Patient/pat12.Patient.link_0.Patient.link.other> <http://hl7.org/fhir/link> <http://hl7.org/fhir/Patient/pat1> .
-<http://acme.com/ehr/fhir/Patient/pat12.Patient.link_0.Patient.link.type> <http://hl7.org/fhir/value> "seealso" .
-<http://acme.com/ehr/fhir/Patient/pat12.Patient.link_0> <http://hl7.org/fhir/Patient.link.other> <http://acme.com/ehr/fhir/Patient/pat12.Patient.link_0.Patient.link.other> .
-<http://acme.com/ehr/fhir/Patient/pat12.Patient.link_0> <http://hl7.org/fhir/Patient.link.type> <http://acme.com/ehr/fhir/Patient/pat12.Patient.link_0.Patient.link.type> .
-<http://acme.com/ehr/fhir/Patient/pat12.Patient.link_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://acme.com/ehr/fhir/Patient/pat12.Patient.managingOrganization.Reference.display> <http://hl7.org/fhir/value> "ACME Healthcare, Inc" .
-<http://acme.com/ehr/fhir/Patient/pat12.Patient.managingOrganization.Reference.reference> <http://hl7.org/fhir/value> "Organization/1" .
-<http://acme.com/ehr/fhir/Patient/pat12.Patient.managingOrganization> <http://hl7.org/fhir/Reference.display> <http://acme.com/ehr/fhir/Patient/pat12.Patient.managingOrganization.Reference.display> .
-<http://acme.com/ehr/fhir/Patient/pat12.Patient.managingOrganization> <http://hl7.org/fhir/Reference.reference> <http://acme.com/ehr/fhir/Patient/pat12.Patient.managingOrganization.Reference.reference> .
-<http://acme.com/ehr/fhir/Patient/pat12.Patient.managingOrganization> <http://hl7.org/fhir/link> <http://hl7.org/fhir/Organization/1> .
-<http://acme.com/ehr/fhir/Patient/pat12.Patient.name_0.HumanName.family> <http://hl7.org/fhir/value> "Donald" .
-<http://acme.com/ehr/fhir/Patient/pat12.Patient.name_0.HumanName.given_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://acme.com/ehr/fhir/Patient/pat12.Patient.name_0.HumanName.given_0> <http://hl7.org/fhir/value> "Duck" .
-<http://acme.com/ehr/fhir/Patient/pat12.Patient.name_0.HumanName.given_1> <http://hl7.org/fhir/index> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://acme.com/ehr/fhir/Patient/pat12.Patient.name_0.HumanName.given_1> <http://hl7.org/fhir/value> "D" .
-<http://acme.com/ehr/fhir/Patient/pat12.Patient.name_0.HumanName.use> <http://hl7.org/fhir/value> "official" .
-<http://acme.com/ehr/fhir/Patient/pat12.Patient.name_0> <http://hl7.org/fhir/HumanName.family> <http://acme.com/ehr/fhir/Patient/pat12.Patient.name_0.HumanName.family> .
-<http://acme.com/ehr/fhir/Patient/pat12.Patient.name_0> <http://hl7.org/fhir/HumanName.given> <http://acme.com/ehr/fhir/Patient/pat12.Patient.name_0.HumanName.given_0> .
-<http://acme.com/ehr/fhir/Patient/pat12.Patient.name_0> <http://hl7.org/fhir/HumanName.given> <http://acme.com/ehr/fhir/Patient/pat12.Patient.name_0.HumanName.given_1> .
-<http://acme.com/ehr/fhir/Patient/pat12.Patient.name_0> <http://hl7.org/fhir/HumanName.use> <http://acme.com/ehr/fhir/Patient/pat12.Patient.name_0.HumanName.use> .
-<http://acme.com/ehr/fhir/Patient/pat12.Patient.name_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://acme.com/ehr/fhir/Patient/pat12.Resource.id> <http://hl7.org/fhir/value> "pat2" .
-<http://acme.com/ehr/fhir/Patient/pat12> <http://hl7.org/fhir/DomainResource.text> <http://acme.com/ehr/fhir/Patient/pat12.DomainResource.text> .
-<http://acme.com/ehr/fhir/Patient/pat12> <http://hl7.org/fhir/Patient.active> <http://acme.com/ehr/fhir/Patient/pat12.Patient.active> .
-<http://acme.com/ehr/fhir/Patient/pat12> <http://hl7.org/fhir/Patient.gender> <http://acme.com/ehr/fhir/Patient/pat12.Patient.gender> .
-<http://acme.com/ehr/fhir/Patient/pat12> <http://hl7.org/fhir/Patient.identifier> <http://acme.com/ehr/fhir/Patient/pat12.Patient.identifier_0> .
-<http://acme.com/ehr/fhir/Patient/pat12> <http://hl7.org/fhir/Patient.link> <http://acme.com/ehr/fhir/Patient/pat12.Patient.link_0> .
-<http://acme.com/ehr/fhir/Patient/pat12> <http://hl7.org/fhir/Patient.managingOrganization> <http://acme.com/ehr/fhir/Patient/pat12.Patient.managingOrganization> .
-<http://acme.com/ehr/fhir/Patient/pat12> <http://hl7.org/fhir/Patient.name> <http://acme.com/ehr/fhir/Patient/pat12.Patient.name_0> .
-<http://acme.com/ehr/fhir/Patient/pat12> <http://hl7.org/fhir/Resource.id> <http://acme.com/ehr/fhir/Patient/pat12.Resource.id> .----------------------------------------
-
-Subject urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed DIFFERENCE: ==============================
-	----> First: 
-<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
-<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.DomainResource.text> <http://hl7.org/fhir/Narrative.div> "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n             \n            <p>This message is a request to link Patient records 654321 (Patient Donald DUCK @ Acme Healthcare, Inc) and 123456 (Patient Donald D DUCK @ Acme Healthcare, Inc)</p>\n           \n          </div>" .
-<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.DomainResource.text> <http://hl7.org/fhir/Narrative.status> <urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.DomainResource.text.Narrative.status> .
-<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.event.Coding.code> <http://hl7.org/fhir/value> "patient-link" .
-<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.event.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/message-events" .
-<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.event> <http://hl7.org/fhir/Coding.code> <urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.event.Coding.code> .
-<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.event> <http://hl7.org/fhir/Coding.system> <urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.event.Coding.system> .
-<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.focus_0.Reference.reference> <http://hl7.org/fhir/value> "http://acme.com/ehr/fhir/Patient/pat1" .
-<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.focus_0> <http://hl7.org/fhir/Reference.reference> <urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.focus_0.Reference.reference> .
-<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.focus_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.focus_0> <http://hl7.org/fhir/link> <http://acme.com/ehr/fhir/Patient/pat1> .
-<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.focus_1.Reference.reference> <http://hl7.org/fhir/value> "http://acme.com/ehr/fhir/Patient/pat12" .
-<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.focus_1> <http://hl7.org/fhir/Reference.reference> <urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.focus_1.Reference.reference> .
-<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.focus_1> <http://hl7.org/fhir/index> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.focus_1> <http://hl7.org/fhir/link> <http://acme.com/ehr/fhir/Patient/pat12> .
-<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.response.MessageHeader.response.code> <http://hl7.org/fhir/value> "ok" .
-<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.response.MessageHeader.response.details.Reference.reference> <http://hl7.org/fhir/value> "OperationOutcome/03f9aa7d-b395-47b9-84e0-053678b6e4e3" .
-<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.response.MessageHeader.response.details> <http://hl7.org/fhir/Reference.reference> <urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.response.MessageHeader.response.details.Reference.reference> .
-<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.response.MessageHeader.response.details> <http://hl7.org/fhir/link> <http://hl7.org/fhir/OperationOutcome/03f9aa7d-b395-47b9-84e0-053678b6e4e3> .
-<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.response.MessageHeader.response.identifier> <http://hl7.org/fhir/value> "efdd254b-0e09-4164-883e-35cf3871715f" .
-<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.response> <http://hl7.org/fhir/MessageHeader.response.code> <urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.response.MessageHeader.response.code> .
-<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.response> <http://hl7.org/fhir/MessageHeader.response.details> <urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.response.MessageHeader.response.details> .
-<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.response> <http://hl7.org/fhir/MessageHeader.response.identifier> <urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.response.MessageHeader.response.identifier> .
-<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.source.MessageHeader.source.endpoint> <http://hl7.org/fhir/value> "http://acme.com/ehr/fhir" .
-<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.source> <http://hl7.org/fhir/MessageHeader.source.endpoint> <urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.source.MessageHeader.source.endpoint> .
-<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.timestamp> <http://hl7.org/fhir/value> "2015-07-14T11:15:33+10:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.Resource.id> <http://hl7.org/fhir/value> "caf609cf-c3a7-4be3-a3aa-356b9bb69d4f" .
-<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed> <http://hl7.org/fhir/DomainResource.text> <urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.DomainResource.text> .
-<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed> <http://hl7.org/fhir/MessageHeader.event> <urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.event> .
-<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed> <http://hl7.org/fhir/MessageHeader.focus> <urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.focus_0> .
-<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed> <http://hl7.org/fhir/MessageHeader.focus> <urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.focus_1> .
-<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed> <http://hl7.org/fhir/MessageHeader.response> <urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.response> .
-<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed> <http://hl7.org/fhir/MessageHeader.source> <urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.source> .
-<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed> <http://hl7.org/fhir/MessageHeader.timestamp> <urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.MessageHeader.timestamp> .
-<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed> <http://hl7.org/fhir/Resource.id> <urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed.Resource.id> .
-<urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/MessageHeader> .----------------------------------------
-
 ========================================
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -397,39 +397,6 @@ Subject urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed DIFFERENCE: ==============
 <http://hl7.org/fhir/Bundle/3a0707d3-549e-4467-b8b8-5a2ab3800efe> a fhir:Bundle ;
     fhir:nodeRole fhir:treeRoot ;
     fhir:Bundle.entry [
-        fhir:index "1"^^xsd:integer ;
-        fhir:Bundle.entry.fullUrl [
-            fhir:value "urn:uuid:03f9aa7d-b395-47b9-84e0-053678b6e4e3"
-        ] ;
-        fhir:Bundle.entry.resource [
-            fhir:DomainResource.text [
-                fhir:Narrative.div """<div xmlns="http://www.w3.org/1999/xhtml">
-            MPI approval rating: 80%
-          </div>""" ;
-                fhir:Narrative.status [
-                    fhir:value "generated"
-                ]
-            ] ;
-            fhir:OperationOutcome.issue [
-                fhir:index "0"^^xsd:integer ;
-                fhir:OperationOutcome.issue.code [
-                    fhir:value "informational"
-                ] ;
-                fhir:OperationOutcome.issue.details [
-                    fhir:CodeableConcept.text [
-                        fhir:value "MPI approval rating: 80%"
-                    ]
-                ] ;
-                fhir:OperationOutcome.issue.severity [
-                    fhir:value "information"
-                ]
-            ] ;
-            fhir:Resource.id [
-                fhir:value "03f9aa7d-b395-47b9-84e0-053678b6e4e3"
-            ]
-        ]
-    ],
-        [
         fhir:index "0"^^xsd:integer ;
         fhir:Bundle.entry.fullUrl [
             fhir:value "urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed"
@@ -491,116 +458,6 @@ Subject urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed DIFFERENCE: ==============
             ] ;
             fhir:Resource.id [
                 fhir:value "caf609cf-c3a7-4be3-a3aa-356b9bb69d4f"
-            ]
-        ]
-    ],
-        [
-        fhir:index "3"^^xsd:integer ;
-        fhir:Bundle.entry.fullUrl [
-            fhir:value "http://acme.com/ehr/fhir/Patient/pat12"
-        ] ;
-        fhir:Bundle.entry.resource [
-            fhir:DomainResource.text [
-                fhir:Narrative.div """<div xmlns="http://www.w3.org/1999/xhtml">
-            
-            <p>Patient Donald D DUCK @ Acme Healthcare, Inc. MR = 123456</p>
-          
-          </div>""" ;
-                fhir:Narrative.status [
-                    fhir:value "generated"
-                ]
-            ] ;
-            fhir:Patient.active [
-                fhir:value "true"^^xsd:boolean
-            ] ;
-            fhir:Patient.gender [
-                fhir:Element.extension [
-                    fhir:index "0"^^xsd:integer ;
-                    fhir:Extension.url [
-                        fhir:value "http://example.org/Profile/administrative-status"
-                    ] ;
-                    fhir:Extension.valueCodeableConcept [
-                        fhir:CodeableConcept.coding [
-                            a <http://hl7.org/fhir/v2/0001/A> ;
-                            fhir:index "0"^^xsd:integer ;
-                            fhir:Coding.code [
-                                fhir:value "A"
-                            ] ;
-                            fhir:Coding.display [
-                                fhir:value "Ambiguous"
-                            ] ;
-                            fhir:Coding.system [
-                                fhir:value "http://hl7.org/fhir/v2/0001"
-                            ]
-                        ]
-                    ]
-                ] ;
-                fhir:value "other"
-            ] ;
-            fhir:Patient.identifier [
-                fhir:index "0"^^xsd:integer ;
-                fhir:Identifier.system [
-                    fhir:value "urn:oid:0.1.2.3.4.5.6.7"
-                ] ;
-                fhir:Identifier.type [
-                    fhir:CodeableConcept.coding [
-                        a <http://hl7.org/fhir/v2/0203/MR> ;
-                        fhir:index "0"^^xsd:integer ;
-                        fhir:Coding.code [
-                            fhir:value "MR"
-                        ] ;
-                        fhir:Coding.system [
-                            fhir:value "http://hl7.org/fhir/v2/0203"
-                        ]
-                    ]
-                ] ;
-                fhir:Identifier.use [
-                    fhir:value "usual"
-                ] ;
-                fhir:Identifier.value [
-                    fhir:value "123456"
-                ]
-            ] ;
-            fhir:Patient.link [
-                fhir:index "0"^^xsd:integer ;
-                fhir:Patient.link.other [
-                    fhir:link <http://hl7.org/fhir/Patient/pat1> ;
-                    fhir:Reference.reference [
-                        fhir:value "Patient/pat1"
-                    ]
-                ] ;
-                fhir:Patient.link.type [
-                    fhir:value "seealso"
-                ]
-            ] ;
-            fhir:Patient.managingOrganization [
-                fhir:link <http://hl7.org/fhir/Organization/1> ;
-                fhir:Reference.display [
-                    fhir:value "ACME Healthcare, Inc"
-                ] ;
-                fhir:Reference.reference [
-                    fhir:value "Organization/1"
-                ]
-            ] ;
-            fhir:Patient.name [
-                fhir:index "0"^^xsd:integer ;
-                fhir:HumanName.family [
-                    fhir:value "Donald"
-                ] ;
-                fhir:HumanName.given [
-                    fhir:index "1"^^xsd:integer ;
-                    fhir:value "D"
-                ],
-                    [
-                    fhir:index "0"^^xsd:integer ;
-                    fhir:value "Duck"
-                ] ;
-                fhir:HumanName.use [
-                    fhir:value "official"
-                ]
-            ] ;
-            fhir:Resource.id [
-                fhir:value "pat2"
             ]
         ]
     ],
@@ -711,6 +568,149 @@ Subject urn:uuid:d9d296d8-5afd-42e1-a0ce-3344e0e003ed DIFFERENCE: ==============
             ] ;
             fhir:Resource.id [
                 fhir:value "pat1"
+            ]
+        ]
+    ],
+        [
+        fhir:index "1"^^xsd:integer ;
+        fhir:Bundle.entry.fullUrl [
+            fhir:value "urn:uuid:03f9aa7d-b395-47b9-84e0-053678b6e4e3"
+        ] ;
+        fhir:Bundle.entry.resource [
+            fhir:DomainResource.text [
+                fhir:Narrative.div """<div xmlns="http://www.w3.org/1999/xhtml">
+            MPI approval rating: 80%
+          </div>""" ;
+                fhir:Narrative.status [
+                    fhir:value "generated"
+                ]
+            ] ;
+            fhir:OperationOutcome.issue [
+                fhir:index "0"^^xsd:integer ;
+                fhir:OperationOutcome.issue.code [
+                    fhir:value "informational"
+                ] ;
+                fhir:OperationOutcome.issue.details [
+                    fhir:CodeableConcept.text [
+                        fhir:value "MPI approval rating: 80%"
+                    ]
+                ] ;
+                fhir:OperationOutcome.issue.severity [
+                    fhir:value "information"
+                ]
+            ] ;
+            fhir:Resource.id [
+                fhir:value "03f9aa7d-b395-47b9-84e0-053678b6e4e3"
+            ]
+        ]
+    ],
+        [
+        fhir:index "3"^^xsd:integer ;
+        fhir:Bundle.entry.fullUrl [
+            fhir:value "http://acme.com/ehr/fhir/Patient/pat12"
+        ] ;
+        fhir:Bundle.entry.resource [
+            fhir:DomainResource.text [
+                fhir:Narrative.div """<div xmlns="http://www.w3.org/1999/xhtml">
+            
+            <p>Patient Donald D DUCK @ Acme Healthcare, Inc. MR = 123456</p>
+          
+          </div>""" ;
+                fhir:Narrative.status [
+                    fhir:value "generated"
+                ]
+            ] ;
+            fhir:Patient.active [
+                fhir:value "true"^^xsd:boolean
+            ] ;
+            fhir:Patient.gender [
+                fhir:Element.extension [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Extension.url [
+                        fhir:value "http://example.org/Profile/administrative-status"
+                    ] ;
+                    fhir:Extension.valueCodeableConcept [
+                        fhir:CodeableConcept.coding [
+                            a <http://hl7.org/fhir/v2/0001/A> ;
+                            fhir:index "0"^^xsd:integer ;
+                            fhir:Coding.code [
+                                fhir:value "A"
+                            ] ;
+                            fhir:Coding.display [
+                                fhir:value "Ambiguous"
+                            ] ;
+                            fhir:Coding.system [
+                                fhir:value "http://hl7.org/fhir/v2/0001"
+                            ]
+                        ]
+                    ]
+                ] ;
+                fhir:value "other"
+            ] ;
+            fhir:Patient.identifier [
+                fhir:index "0"^^xsd:integer ;
+                fhir:Identifier.system [
+                    fhir:value "urn:oid:0.1.2.3.4.5.6.7"
+                ] ;
+                fhir:Identifier.type [
+                    fhir:CodeableConcept.coding [
+                        a <http://hl7.org/fhir/v2/0203/MR> ;
+                        fhir:index "0"^^xsd:integer ;
+                        fhir:Coding.code [
+                            fhir:value "MR"
+                        ] ;
+                        fhir:Coding.system [
+                            fhir:value "http://hl7.org/fhir/v2/0203"
+                        ]
+                    ]
+                ] ;
+                fhir:Identifier.use [
+                    fhir:value "usual"
+                ] ;
+                fhir:Identifier.value [
+                    fhir:value "123456"
+                ]
+            ] ;
+            fhir:Patient.link [
+                fhir:index "0"^^xsd:integer ;
+                fhir:Patient.link.other [
+                    fhir:link <http://hl7.org/fhir/Patient/pat1> ;
+                    fhir:Reference.reference [
+                        fhir:value "Patient/pat1"
+                    ]
+                ] ;
+                fhir:Patient.link.type [
+                    fhir:value "seealso"
+                ]
+            ] ;
+            fhir:Patient.managingOrganization [
+                fhir:link <http://hl7.org/fhir/Organization/1> ;
+                fhir:Reference.display [
+                    fhir:value "ACME Healthcare, Inc"
+                ] ;
+                fhir:Reference.reference [
+                    fhir:value "Organization/1"
+                ]
+            ] ;
+            fhir:Patient.name [
+                fhir:index "0"^^xsd:integer ;
+                fhir:HumanName.family [
+                    fhir:value "Donald"
+                ] ;
+                fhir:HumanName.given [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:value "Duck"
+                ],
+                    [
+                    fhir:index "1"^^xsd:integer ;
+                    fhir:value "D"
+                ] ;
+                fhir:HumanName.use [
+                    fhir:value "official"
+                ]
+            ] ;
+            fhir:Resource.id [
+                fhir:value "pat2"
             ]
         ]
     ] ;

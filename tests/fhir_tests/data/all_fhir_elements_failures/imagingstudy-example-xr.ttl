@@ -203,21 +203,6 @@ Subject http://hl7.org/fhir/ImagingStudy/example-xr DIFFERENCE: ================
             ]
         ] ;
         fhir:ImagingStudy.series.instance [
-            fhir:index "0"^^xsd:integer ;
-            fhir:ImagingStudy.series.instance.number [
-                fhir:value "1"^^xsd:nonNegativeInteger
-            ] ;
-            fhir:ImagingStudy.series.instance.sopClass [
-                fhir:value "urn:oid:1.2.840.10008.5.1.4.1.1.2"^^xsd:anyURI
-            ] ;
-            fhir:ImagingStudy.series.instance.title [
-                fhir:value "PA VIEW"
-            ] ;
-            fhir:ImagingStudy.series.instance.uid [
-                fhir:value "urn:oid:2.16.124.113543.6003.1154777499.30246.19789.3503430045.1.1"^^xsd:anyURI
-            ]
-        ],
-            [
             fhir:index "1"^^xsd:integer ;
             fhir:ImagingStudy.series.instance.number [
                 fhir:value "2"^^xsd:nonNegativeInteger
@@ -230,6 +215,21 @@ Subject http://hl7.org/fhir/ImagingStudy/example-xr DIFFERENCE: ================
             ] ;
             fhir:ImagingStudy.series.instance.uid [
                 fhir:value "urn:oid:2.16.124.113543.6003.1154777499.30246.19789.3503430045.1.2"^^xsd:anyURI
+            ]
+        ],
+            [
+            fhir:index "0"^^xsd:integer ;
+            fhir:ImagingStudy.series.instance.number [
+                fhir:value "1"^^xsd:nonNegativeInteger
+            ] ;
+            fhir:ImagingStudy.series.instance.sopClass [
+                fhir:value "urn:oid:1.2.840.10008.5.1.4.1.1.2"^^xsd:anyURI
+            ] ;
+            fhir:ImagingStudy.series.instance.title [
+                fhir:value "PA VIEW"
+            ] ;
+            fhir:ImagingStudy.series.instance.uid [
+                fhir:value "urn:oid:2.16.124.113543.6003.1154777499.30246.19789.3503430045.1.1"^^xsd:anyURI
             ]
         ] ;
         fhir:ImagingStudy.series.laterality [

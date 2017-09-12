@@ -1,179 +1,5 @@
 
 
-Subject http://hl7.org/fhir/Patient/3 DIFFERENCE: ==============================
-	----> First: 
-<http://hl7.org/fhir/Patient/3.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
-<http://hl7.org/fhir/Patient/3.DomainResource.text> <http://hl7.org/fhir/Narrative.div> "<div xmlns=\"http://www.w3.org/1999/xhtml\">Kidd, Kari. SSN:\n            444555555</div>" .
-<http://hl7.org/fhir/Patient/3.DomainResource.text> <http://hl7.org/fhir/Narrative.status> <http://hl7.org/fhir/Patient/3.DomainResource.text.Narrative.status> .
-<http://hl7.org/fhir/Patient/3.Patient.active> <http://hl7.org/fhir/value> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<http://hl7.org/fhir/Patient/3.Patient.address_0.Address.line_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Patient/3.Patient.address_0.Address.line_0> <http://hl7.org/fhir/value> "2222 Home Street" .
-<http://hl7.org/fhir/Patient/3.Patient.address_0.Address.use> <http://hl7.org/fhir/value> "home" .
-<http://hl7.org/fhir/Patient/3.Patient.address_0> <http://hl7.org/fhir/Address.line> <http://hl7.org/fhir/Patient/3.Patient.address_0.Address.line_0> .
-<http://hl7.org/fhir/Patient/3.Patient.address_0> <http://hl7.org/fhir/Address.use> <http://hl7.org/fhir/Patient/3.Patient.address_0.Address.use> .
-<http://hl7.org/fhir/Patient/3.Patient.address_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Patient/3.Patient.gender> <http://hl7.org/fhir/value> "female" .
-<http://hl7.org/fhir/Patient/3.Patient.identifier_0.Identifier.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/sid/us-ssn" .
-<http://hl7.org/fhir/Patient/3.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "SS" .
-<http://hl7.org/fhir/Patient/3.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/v2/0203" .
-<http://hl7.org/fhir/Patient/3.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Patient/3.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.code> .
-<http://hl7.org/fhir/Patient/3.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Patient/3.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.system> .
-<http://hl7.org/fhir/Patient/3.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Patient/3.Patient.identifier_0.Identifier.type> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Patient/3.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> .
-<http://hl7.org/fhir/Patient/3.Patient.identifier_0.Identifier.value> <http://hl7.org/fhir/value> "444555555" .
-<http://hl7.org/fhir/Patient/3.Patient.identifier_0> <http://hl7.org/fhir/Identifier.system> <http://hl7.org/fhir/Patient/3.Patient.identifier_0.Identifier.system> .
-<http://hl7.org/fhir/Patient/3.Patient.identifier_0> <http://hl7.org/fhir/Identifier.type> <http://hl7.org/fhir/Patient/3.Patient.identifier_0.Identifier.type> .
-<http://hl7.org/fhir/Patient/3.Patient.identifier_0> <http://hl7.org/fhir/Identifier.value> <http://hl7.org/fhir/Patient/3.Patient.identifier_0.Identifier.value> .
-<http://hl7.org/fhir/Patient/3.Patient.identifier_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Patient/3.Patient.managingOrganization.Reference.reference> <http://hl7.org/fhir/value> "Organization/hl7" .
-<http://hl7.org/fhir/Patient/3.Patient.managingOrganization> <http://hl7.org/fhir/Reference.reference> <http://hl7.org/fhir/Patient/3.Patient.managingOrganization.Reference.reference> .
-<http://hl7.org/fhir/Patient/3.Patient.managingOrganization> <http://hl7.org/fhir/link> <http://hl7.org/fhir/Organization/hl7> .
-<http://hl7.org/fhir/Patient/3.Patient.name_0.HumanName.family> <http://hl7.org/fhir/value> "Kidd" .
-<http://hl7.org/fhir/Patient/3.Patient.name_0.HumanName.given_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Patient/3.Patient.name_0.HumanName.given_0> <http://hl7.org/fhir/value> "Kari" .
-<http://hl7.org/fhir/Patient/3.Patient.name_0.HumanName.use> <http://hl7.org/fhir/value> "official" .
-<http://hl7.org/fhir/Patient/3.Patient.name_0> <http://hl7.org/fhir/HumanName.family> <http://hl7.org/fhir/Patient/3.Patient.name_0.HumanName.family> .
-<http://hl7.org/fhir/Patient/3.Patient.name_0> <http://hl7.org/fhir/HumanName.given> <http://hl7.org/fhir/Patient/3.Patient.name_0.HumanName.given_0> .
-<http://hl7.org/fhir/Patient/3.Patient.name_0> <http://hl7.org/fhir/HumanName.use> <http://hl7.org/fhir/Patient/3.Patient.name_0.HumanName.use> .
-<http://hl7.org/fhir/Patient/3.Patient.name_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Patient/3.Patient.telecom_0.ContactPoint.system> <http://hl7.org/fhir/value> "phone" .
-<http://hl7.org/fhir/Patient/3.Patient.telecom_0.ContactPoint.use> <http://hl7.org/fhir/value> "work" .
-<http://hl7.org/fhir/Patient/3.Patient.telecom_0.ContactPoint.value> <http://hl7.org/fhir/value> "555-555-2005" .
-<http://hl7.org/fhir/Patient/3.Patient.telecom_0> <http://hl7.org/fhir/ContactPoint.system> <http://hl7.org/fhir/Patient/3.Patient.telecom_0.ContactPoint.system> .
-<http://hl7.org/fhir/Patient/3.Patient.telecom_0> <http://hl7.org/fhir/ContactPoint.use> <http://hl7.org/fhir/Patient/3.Patient.telecom_0.ContactPoint.use> .
-<http://hl7.org/fhir/Patient/3.Patient.telecom_0> <http://hl7.org/fhir/ContactPoint.value> <http://hl7.org/fhir/Patient/3.Patient.telecom_0.ContactPoint.value> .
-<http://hl7.org/fhir/Patient/3.Patient.telecom_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Patient/3.Resource.id> <http://hl7.org/fhir/value> "3" .
-<http://hl7.org/fhir/Patient/3.Resource.meta.Meta.lastUpdated> <http://hl7.org/fhir/value> "2012-05-29T23:45:32+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<http://hl7.org/fhir/Patient/3.Resource.meta> <http://hl7.org/fhir/Meta.lastUpdated> <http://hl7.org/fhir/Patient/3.Resource.meta.Meta.lastUpdated> .
-<http://hl7.org/fhir/Patient/3> <http://hl7.org/fhir/DomainResource.text> <http://hl7.org/fhir/Patient/3.DomainResource.text> .
-<http://hl7.org/fhir/Patient/3> <http://hl7.org/fhir/Patient.active> <http://hl7.org/fhir/Patient/3.Patient.active> .
-<http://hl7.org/fhir/Patient/3> <http://hl7.org/fhir/Patient.address> <http://hl7.org/fhir/Patient/3.Patient.address_0> .
-<http://hl7.org/fhir/Patient/3> <http://hl7.org/fhir/Patient.gender> <http://hl7.org/fhir/Patient/3.Patient.gender> .
-<http://hl7.org/fhir/Patient/3> <http://hl7.org/fhir/Patient.identifier> <http://hl7.org/fhir/Patient/3.Patient.identifier_0> .
-<http://hl7.org/fhir/Patient/3> <http://hl7.org/fhir/Patient.managingOrganization> <http://hl7.org/fhir/Patient/3.Patient.managingOrganization> .
-<http://hl7.org/fhir/Patient/3> <http://hl7.org/fhir/Patient.name> <http://hl7.org/fhir/Patient/3.Patient.name_0> .
-<http://hl7.org/fhir/Patient/3> <http://hl7.org/fhir/Patient.telecom> <http://hl7.org/fhir/Patient/3.Patient.telecom_0> .
-<http://hl7.org/fhir/Patient/3> <http://hl7.org/fhir/Resource.id> <http://hl7.org/fhir/Patient/3.Resource.id> .
-<http://hl7.org/fhir/Patient/3> <http://hl7.org/fhir/Resource.meta> <http://hl7.org/fhir/Patient/3.Resource.meta> .
-<http://hl7.org/fhir/Patient/3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/Patient> .----------------------------------------
-
-Subject http://hl7.org/fhir/Patient/7 DIFFERENCE: ==============================
-	----> First: 
-<http://hl7.org/fhir/Patient/7.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
-<http://hl7.org/fhir/Patient/7.DomainResource.text> <http://hl7.org/fhir/Narrative.div> "<div xmlns=\"http://www.w3.org/1999/xhtml\">Nuclear, Nelda. SSN:\n            444112345</div>" .
-<http://hl7.org/fhir/Patient/7.DomainResource.text> <http://hl7.org/fhir/Narrative.status> <http://hl7.org/fhir/Patient/7.DomainResource.text.Narrative.status> .
-<http://hl7.org/fhir/Patient/7.Patient.active> <http://hl7.org/fhir/value> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<http://hl7.org/fhir/Patient/7.Patient.address_0.Address.line_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Patient/7.Patient.address_0.Address.line_0> <http://hl7.org/fhir/value> "6666 Home Street" .
-<http://hl7.org/fhir/Patient/7.Patient.address_0.Address.use> <http://hl7.org/fhir/value> "home" .
-<http://hl7.org/fhir/Patient/7.Patient.address_0> <http://hl7.org/fhir/Address.line> <http://hl7.org/fhir/Patient/7.Patient.address_0.Address.line_0> .
-<http://hl7.org/fhir/Patient/7.Patient.address_0> <http://hl7.org/fhir/Address.use> <http://hl7.org/fhir/Patient/7.Patient.address_0.Address.use> .
-<http://hl7.org/fhir/Patient/7.Patient.address_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Patient/7.Patient.gender> <http://hl7.org/fhir/value> "female" .
-<http://hl7.org/fhir/Patient/7.Patient.identifier_0.Identifier.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/sid/us-ssn" .
-<http://hl7.org/fhir/Patient/7.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "SS" .
-<http://hl7.org/fhir/Patient/7.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/v2/0203" .
-<http://hl7.org/fhir/Patient/7.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Patient/7.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.code> .
-<http://hl7.org/fhir/Patient/7.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Patient/7.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.system> .
-<http://hl7.org/fhir/Patient/7.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Patient/7.Patient.identifier_0.Identifier.type> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Patient/7.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> .
-<http://hl7.org/fhir/Patient/7.Patient.identifier_0.Identifier.value> <http://hl7.org/fhir/value> "444112345" .
-<http://hl7.org/fhir/Patient/7.Patient.identifier_0> <http://hl7.org/fhir/Identifier.system> <http://hl7.org/fhir/Patient/7.Patient.identifier_0.Identifier.system> .
-<http://hl7.org/fhir/Patient/7.Patient.identifier_0> <http://hl7.org/fhir/Identifier.type> <http://hl7.org/fhir/Patient/7.Patient.identifier_0.Identifier.type> .
-<http://hl7.org/fhir/Patient/7.Patient.identifier_0> <http://hl7.org/fhir/Identifier.value> <http://hl7.org/fhir/Patient/7.Patient.identifier_0.Identifier.value> .
-<http://hl7.org/fhir/Patient/7.Patient.identifier_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Patient/7.Patient.managingOrganization.Reference.reference> <http://hl7.org/fhir/value> "Organization/hl7" .
-<http://hl7.org/fhir/Patient/7.Patient.managingOrganization> <http://hl7.org/fhir/Reference.reference> <http://hl7.org/fhir/Patient/7.Patient.managingOrganization.Reference.reference> .
-<http://hl7.org/fhir/Patient/7.Patient.managingOrganization> <http://hl7.org/fhir/link> <http://hl7.org/fhir/Organization/hl7> .
-<http://hl7.org/fhir/Patient/7.Patient.name_0.HumanName.family> <http://hl7.org/fhir/value> "Nuclear" .
-<http://hl7.org/fhir/Patient/7.Patient.name_0.HumanName.given_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Patient/7.Patient.name_0.HumanName.given_0> <http://hl7.org/fhir/value> "Nelda" .
-<http://hl7.org/fhir/Patient/7.Patient.name_0.HumanName.use> <http://hl7.org/fhir/value> "official" .
-<http://hl7.org/fhir/Patient/7.Patient.name_0> <http://hl7.org/fhir/HumanName.family> <http://hl7.org/fhir/Patient/7.Patient.name_0.HumanName.family> .
-<http://hl7.org/fhir/Patient/7.Patient.name_0> <http://hl7.org/fhir/HumanName.given> <http://hl7.org/fhir/Patient/7.Patient.name_0.HumanName.given_0> .
-<http://hl7.org/fhir/Patient/7.Patient.name_0> <http://hl7.org/fhir/HumanName.use> <http://hl7.org/fhir/Patient/7.Patient.name_0.HumanName.use> .
-<http://hl7.org/fhir/Patient/7.Patient.name_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Patient/7.Patient.telecom_0.ContactPoint.system> <http://hl7.org/fhir/value> "phone" .
-<http://hl7.org/fhir/Patient/7.Patient.telecom_0.ContactPoint.use> <http://hl7.org/fhir/value> "work" .
-<http://hl7.org/fhir/Patient/7.Patient.telecom_0.ContactPoint.value> <http://hl7.org/fhir/value> "555-555-5001" .
-<http://hl7.org/fhir/Patient/7.Patient.telecom_0> <http://hl7.org/fhir/ContactPoint.system> <http://hl7.org/fhir/Patient/7.Patient.telecom_0.ContactPoint.system> .
-<http://hl7.org/fhir/Patient/7.Patient.telecom_0> <http://hl7.org/fhir/ContactPoint.use> <http://hl7.org/fhir/Patient/7.Patient.telecom_0.ContactPoint.use> .
-<http://hl7.org/fhir/Patient/7.Patient.telecom_0> <http://hl7.org/fhir/ContactPoint.value> <http://hl7.org/fhir/Patient/7.Patient.telecom_0.ContactPoint.value> .
-<http://hl7.org/fhir/Patient/7.Patient.telecom_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Patient/7.Resource.id> <http://hl7.org/fhir/value> "7" .
-<http://hl7.org/fhir/Patient/7.Resource.meta.Meta.lastUpdated> <http://hl7.org/fhir/value> "2012-05-29T23:45:32+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<http://hl7.org/fhir/Patient/7.Resource.meta> <http://hl7.org/fhir/Meta.lastUpdated> <http://hl7.org/fhir/Patient/7.Resource.meta.Meta.lastUpdated> .
-<http://hl7.org/fhir/Patient/7> <http://hl7.org/fhir/DomainResource.text> <http://hl7.org/fhir/Patient/7.DomainResource.text> .
-<http://hl7.org/fhir/Patient/7> <http://hl7.org/fhir/Patient.active> <http://hl7.org/fhir/Patient/7.Patient.active> .
-<http://hl7.org/fhir/Patient/7> <http://hl7.org/fhir/Patient.address> <http://hl7.org/fhir/Patient/7.Patient.address_0> .
-<http://hl7.org/fhir/Patient/7> <http://hl7.org/fhir/Patient.gender> <http://hl7.org/fhir/Patient/7.Patient.gender> .
-<http://hl7.org/fhir/Patient/7> <http://hl7.org/fhir/Patient.identifier> <http://hl7.org/fhir/Patient/7.Patient.identifier_0> .
-<http://hl7.org/fhir/Patient/7> <http://hl7.org/fhir/Patient.managingOrganization> <http://hl7.org/fhir/Patient/7.Patient.managingOrganization> .
-<http://hl7.org/fhir/Patient/7> <http://hl7.org/fhir/Patient.name> <http://hl7.org/fhir/Patient/7.Patient.name_0> .
-<http://hl7.org/fhir/Patient/7> <http://hl7.org/fhir/Patient.telecom> <http://hl7.org/fhir/Patient/7.Patient.telecom_0> .
-<http://hl7.org/fhir/Patient/7> <http://hl7.org/fhir/Resource.id> <http://hl7.org/fhir/Patient/7.Resource.id> .
-<http://hl7.org/fhir/Patient/7> <http://hl7.org/fhir/Resource.meta> <http://hl7.org/fhir/Patient/7.Resource.meta> .
-<http://hl7.org/fhir/Patient/7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/Patient> .----------------------------------------
-
-Subject http://hl7.org/fhir/Patient/11 DIFFERENCE: ==============================
-	----> First: 
-<http://hl7.org/fhir/Patient/11.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
-<http://hl7.org/fhir/Patient/11.DomainResource.text> <http://hl7.org/fhir/Narrative.div> "<div xmlns=\"http://www.w3.org/1999/xhtml\">Relative, Ralph. SSN:\n            444999999</div>" .
-<http://hl7.org/fhir/Patient/11.DomainResource.text> <http://hl7.org/fhir/Narrative.status> <http://hl7.org/fhir/Patient/11.DomainResource.text.Narrative.status> .
-<http://hl7.org/fhir/Patient/11.Patient.active> <http://hl7.org/fhir/value> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<http://hl7.org/fhir/Patient/11.Patient.address_0.Address.line_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Patient/11.Patient.address_0.Address.line_0> <http://hl7.org/fhir/value> "4444 Home Street" .
-<http://hl7.org/fhir/Patient/11.Patient.address_0.Address.use> <http://hl7.org/fhir/value> "home" .
-<http://hl7.org/fhir/Patient/11.Patient.address_0> <http://hl7.org/fhir/Address.line> <http://hl7.org/fhir/Patient/11.Patient.address_0.Address.line_0> .
-<http://hl7.org/fhir/Patient/11.Patient.address_0> <http://hl7.org/fhir/Address.use> <http://hl7.org/fhir/Patient/11.Patient.address_0.Address.use> .
-<http://hl7.org/fhir/Patient/11.Patient.address_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Patient/11.Patient.gender> <http://hl7.org/fhir/value> "male" .
-<http://hl7.org/fhir/Patient/11.Patient.identifier_0.Identifier.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/sid/us-ssn" .
-<http://hl7.org/fhir/Patient/11.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "SS" .
-<http://hl7.org/fhir/Patient/11.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/v2/0203" .
-<http://hl7.org/fhir/Patient/11.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Patient/11.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.code> .
-<http://hl7.org/fhir/Patient/11.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Patient/11.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.system> .
-<http://hl7.org/fhir/Patient/11.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Patient/11.Patient.identifier_0.Identifier.type> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Patient/11.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> .
-<http://hl7.org/fhir/Patient/11.Patient.identifier_0.Identifier.value> <http://hl7.org/fhir/value> "444999999" .
-<http://hl7.org/fhir/Patient/11.Patient.identifier_0> <http://hl7.org/fhir/Identifier.system> <http://hl7.org/fhir/Patient/11.Patient.identifier_0.Identifier.system> .
-<http://hl7.org/fhir/Patient/11.Patient.identifier_0> <http://hl7.org/fhir/Identifier.type> <http://hl7.org/fhir/Patient/11.Patient.identifier_0.Identifier.type> .
-<http://hl7.org/fhir/Patient/11.Patient.identifier_0> <http://hl7.org/fhir/Identifier.value> <http://hl7.org/fhir/Patient/11.Patient.identifier_0.Identifier.value> .
-<http://hl7.org/fhir/Patient/11.Patient.identifier_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Patient/11.Patient.managingOrganization.Reference.reference> <http://hl7.org/fhir/value> "Organization/hl7" .
-<http://hl7.org/fhir/Patient/11.Patient.managingOrganization> <http://hl7.org/fhir/Reference.reference> <http://hl7.org/fhir/Patient/11.Patient.managingOrganization.Reference.reference> .
-<http://hl7.org/fhir/Patient/11.Patient.managingOrganization> <http://hl7.org/fhir/link> <http://hl7.org/fhir/Organization/hl7> .
-<http://hl7.org/fhir/Patient/11.Patient.name_0.HumanName.family> <http://hl7.org/fhir/value> "Relative" .
-<http://hl7.org/fhir/Patient/11.Patient.name_0.HumanName.given_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Patient/11.Patient.name_0.HumanName.given_0> <http://hl7.org/fhir/value> "Ralph" .
-<http://hl7.org/fhir/Patient/11.Patient.name_0.HumanName.use> <http://hl7.org/fhir/value> "official" .
-<http://hl7.org/fhir/Patient/11.Patient.name_0> <http://hl7.org/fhir/HumanName.family> <http://hl7.org/fhir/Patient/11.Patient.name_0.HumanName.family> .
-<http://hl7.org/fhir/Patient/11.Patient.name_0> <http://hl7.org/fhir/HumanName.given> <http://hl7.org/fhir/Patient/11.Patient.name_0.HumanName.given_0> .
-<http://hl7.org/fhir/Patient/11.Patient.name_0> <http://hl7.org/fhir/HumanName.use> <http://hl7.org/fhir/Patient/11.Patient.name_0.HumanName.use> .
-<http://hl7.org/fhir/Patient/11.Patient.name_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Patient/11.Patient.telecom_0.ContactPoint.system> <http://hl7.org/fhir/value> "phone" .
-<http://hl7.org/fhir/Patient/11.Patient.telecom_0.ContactPoint.use> <http://hl7.org/fhir/value> "work" .
-<http://hl7.org/fhir/Patient/11.Patient.telecom_0.ContactPoint.value> <http://hl7.org/fhir/value> "555-555-2009" .
-<http://hl7.org/fhir/Patient/11.Patient.telecom_0> <http://hl7.org/fhir/ContactPoint.system> <http://hl7.org/fhir/Patient/11.Patient.telecom_0.ContactPoint.system> .
-<http://hl7.org/fhir/Patient/11.Patient.telecom_0> <http://hl7.org/fhir/ContactPoint.use> <http://hl7.org/fhir/Patient/11.Patient.telecom_0.ContactPoint.use> .
-<http://hl7.org/fhir/Patient/11.Patient.telecom_0> <http://hl7.org/fhir/ContactPoint.value> <http://hl7.org/fhir/Patient/11.Patient.telecom_0.ContactPoint.value> .
-<http://hl7.org/fhir/Patient/11.Patient.telecom_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Patient/11.Resource.id> <http://hl7.org/fhir/value> "11" .
-<http://hl7.org/fhir/Patient/11.Resource.meta.Meta.lastUpdated> <http://hl7.org/fhir/value> "2012-05-29T23:45:32+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<http://hl7.org/fhir/Patient/11.Resource.meta> <http://hl7.org/fhir/Meta.lastUpdated> <http://hl7.org/fhir/Patient/11.Resource.meta.Meta.lastUpdated> .
-<http://hl7.org/fhir/Patient/11> <http://hl7.org/fhir/DomainResource.text> <http://hl7.org/fhir/Patient/11.DomainResource.text> .
-<http://hl7.org/fhir/Patient/11> <http://hl7.org/fhir/Patient.active> <http://hl7.org/fhir/Patient/11.Patient.active> .
-<http://hl7.org/fhir/Patient/11> <http://hl7.org/fhir/Patient.address> <http://hl7.org/fhir/Patient/11.Patient.address_0> .
-<http://hl7.org/fhir/Patient/11> <http://hl7.org/fhir/Patient.gender> <http://hl7.org/fhir/Patient/11.Patient.gender> .
-<http://hl7.org/fhir/Patient/11> <http://hl7.org/fhir/Patient.identifier> <http://hl7.org/fhir/Patient/11.Patient.identifier_0> .
-<http://hl7.org/fhir/Patient/11> <http://hl7.org/fhir/Patient.managingOrganization> <http://hl7.org/fhir/Patient/11.Patient.managingOrganization> .
-<http://hl7.org/fhir/Patient/11> <http://hl7.org/fhir/Patient.name> <http://hl7.org/fhir/Patient/11.Patient.name_0> .
-<http://hl7.org/fhir/Patient/11> <http://hl7.org/fhir/Patient.telecom> <http://hl7.org/fhir/Patient/11.Patient.telecom_0> .
-<http://hl7.org/fhir/Patient/11> <http://hl7.org/fhir/Resource.id> <http://hl7.org/fhir/Patient/11.Resource.id> .
-<http://hl7.org/fhir/Patient/11> <http://hl7.org/fhir/Resource.meta> <http://hl7.org/fhir/Patient/11.Resource.meta> .
-<http://hl7.org/fhir/Patient/11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/Patient> .----------------------------------------
-
 Subject http://hl7.org/fhir/Patient/9 DIFFERENCE: ==============================
 	----> First: 
 <http://hl7.org/fhir/Patient/9.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
@@ -247,121 +73,121 @@ Subject http://hl7.org/fhir/Patient/9 DIFFERENCE: ==============================
 <http://hl7.org/fhir/Patient/9> <http://hl7.org/fhir/Resource.meta> <http://hl7.org/fhir/Patient/9.Resource.meta> .
 <http://hl7.org/fhir/Patient/9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/Patient> .----------------------------------------
 
-Subject http://hl7.org/fhir/Patient/8 DIFFERENCE: ==============================
+Subject http://hl7.org/fhir/Patient/7 DIFFERENCE: ==============================
 	----> First: 
-<http://hl7.org/fhir/Patient/8.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
-<http://hl7.org/fhir/Patient/8.DomainResource.text> <http://hl7.org/fhir/Narrative.div> "<div xmlns=\"http://www.w3.org/1999/xhtml\">Mum, Martha. SSN:\n            444666666</div>" .
-<http://hl7.org/fhir/Patient/8.DomainResource.text> <http://hl7.org/fhir/Narrative.status> <http://hl7.org/fhir/Patient/8.DomainResource.text.Narrative.status> .
-<http://hl7.org/fhir/Patient/8.Patient.active> <http://hl7.org/fhir/value> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<http://hl7.org/fhir/Patient/8.Patient.address_0.Address.line_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Patient/8.Patient.address_0.Address.line_0> <http://hl7.org/fhir/value> "4444 Home Street" .
-<http://hl7.org/fhir/Patient/8.Patient.address_0.Address.use> <http://hl7.org/fhir/value> "home" .
-<http://hl7.org/fhir/Patient/8.Patient.address_0> <http://hl7.org/fhir/Address.line> <http://hl7.org/fhir/Patient/8.Patient.address_0.Address.line_0> .
-<http://hl7.org/fhir/Patient/8.Patient.address_0> <http://hl7.org/fhir/Address.use> <http://hl7.org/fhir/Patient/8.Patient.address_0.Address.use> .
-<http://hl7.org/fhir/Patient/8.Patient.address_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Patient/8.Patient.gender> <http://hl7.org/fhir/value> "female" .
-<http://hl7.org/fhir/Patient/8.Patient.identifier_0.Identifier.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/sid/us-ssn" .
-<http://hl7.org/fhir/Patient/8.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "SS" .
-<http://hl7.org/fhir/Patient/8.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/v2/0203" .
-<http://hl7.org/fhir/Patient/8.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Patient/8.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.code> .
-<http://hl7.org/fhir/Patient/8.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Patient/8.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.system> .
-<http://hl7.org/fhir/Patient/8.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Patient/8.Patient.identifier_0.Identifier.type> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Patient/8.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> .
-<http://hl7.org/fhir/Patient/8.Patient.identifier_0.Identifier.value> <http://hl7.org/fhir/value> "444666666" .
-<http://hl7.org/fhir/Patient/8.Patient.identifier_0> <http://hl7.org/fhir/Identifier.system> <http://hl7.org/fhir/Patient/8.Patient.identifier_0.Identifier.system> .
-<http://hl7.org/fhir/Patient/8.Patient.identifier_0> <http://hl7.org/fhir/Identifier.type> <http://hl7.org/fhir/Patient/8.Patient.identifier_0.Identifier.type> .
-<http://hl7.org/fhir/Patient/8.Patient.identifier_0> <http://hl7.org/fhir/Identifier.value> <http://hl7.org/fhir/Patient/8.Patient.identifier_0.Identifier.value> .
-<http://hl7.org/fhir/Patient/8.Patient.identifier_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Patient/8.Patient.managingOrganization.Reference.reference> <http://hl7.org/fhir/value> "Organization/hl7" .
-<http://hl7.org/fhir/Patient/8.Patient.managingOrganization> <http://hl7.org/fhir/Reference.reference> <http://hl7.org/fhir/Patient/8.Patient.managingOrganization.Reference.reference> .
-<http://hl7.org/fhir/Patient/8.Patient.managingOrganization> <http://hl7.org/fhir/link> <http://hl7.org/fhir/Organization/hl7> .
-<http://hl7.org/fhir/Patient/8.Patient.name_0.HumanName.family> <http://hl7.org/fhir/value> "Mum" .
-<http://hl7.org/fhir/Patient/8.Patient.name_0.HumanName.given_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Patient/8.Patient.name_0.HumanName.given_0> <http://hl7.org/fhir/value> "Martha" .
-<http://hl7.org/fhir/Patient/8.Patient.name_0.HumanName.use> <http://hl7.org/fhir/value> "official" .
-<http://hl7.org/fhir/Patient/8.Patient.name_0> <http://hl7.org/fhir/HumanName.family> <http://hl7.org/fhir/Patient/8.Patient.name_0.HumanName.family> .
-<http://hl7.org/fhir/Patient/8.Patient.name_0> <http://hl7.org/fhir/HumanName.given> <http://hl7.org/fhir/Patient/8.Patient.name_0.HumanName.given_0> .
-<http://hl7.org/fhir/Patient/8.Patient.name_0> <http://hl7.org/fhir/HumanName.use> <http://hl7.org/fhir/Patient/8.Patient.name_0.HumanName.use> .
-<http://hl7.org/fhir/Patient/8.Patient.name_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Patient/8.Patient.telecom_0.ContactPoint.system> <http://hl7.org/fhir/value> "phone" .
-<http://hl7.org/fhir/Patient/8.Patient.telecom_0.ContactPoint.use> <http://hl7.org/fhir/value> "work" .
-<http://hl7.org/fhir/Patient/8.Patient.telecom_0.ContactPoint.value> <http://hl7.org/fhir/value> "555-555-2006" .
-<http://hl7.org/fhir/Patient/8.Patient.telecom_0> <http://hl7.org/fhir/ContactPoint.system> <http://hl7.org/fhir/Patient/8.Patient.telecom_0.ContactPoint.system> .
-<http://hl7.org/fhir/Patient/8.Patient.telecom_0> <http://hl7.org/fhir/ContactPoint.use> <http://hl7.org/fhir/Patient/8.Patient.telecom_0.ContactPoint.use> .
-<http://hl7.org/fhir/Patient/8.Patient.telecom_0> <http://hl7.org/fhir/ContactPoint.value> <http://hl7.org/fhir/Patient/8.Patient.telecom_0.ContactPoint.value> .
-<http://hl7.org/fhir/Patient/8.Patient.telecom_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Patient/8.Resource.id> <http://hl7.org/fhir/value> "8" .
-<http://hl7.org/fhir/Patient/8.Resource.meta.Meta.lastUpdated> <http://hl7.org/fhir/value> "2012-05-29T23:45:32+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<http://hl7.org/fhir/Patient/8.Resource.meta> <http://hl7.org/fhir/Meta.lastUpdated> <http://hl7.org/fhir/Patient/8.Resource.meta.Meta.lastUpdated> .
-<http://hl7.org/fhir/Patient/8> <http://hl7.org/fhir/DomainResource.text> <http://hl7.org/fhir/Patient/8.DomainResource.text> .
-<http://hl7.org/fhir/Patient/8> <http://hl7.org/fhir/Patient.active> <http://hl7.org/fhir/Patient/8.Patient.active> .
-<http://hl7.org/fhir/Patient/8> <http://hl7.org/fhir/Patient.address> <http://hl7.org/fhir/Patient/8.Patient.address_0> .
-<http://hl7.org/fhir/Patient/8> <http://hl7.org/fhir/Patient.gender> <http://hl7.org/fhir/Patient/8.Patient.gender> .
-<http://hl7.org/fhir/Patient/8> <http://hl7.org/fhir/Patient.identifier> <http://hl7.org/fhir/Patient/8.Patient.identifier_0> .
-<http://hl7.org/fhir/Patient/8> <http://hl7.org/fhir/Patient.managingOrganization> <http://hl7.org/fhir/Patient/8.Patient.managingOrganization> .
-<http://hl7.org/fhir/Patient/8> <http://hl7.org/fhir/Patient.name> <http://hl7.org/fhir/Patient/8.Patient.name_0> .
-<http://hl7.org/fhir/Patient/8> <http://hl7.org/fhir/Patient.telecom> <http://hl7.org/fhir/Patient/8.Patient.telecom_0> .
-<http://hl7.org/fhir/Patient/8> <http://hl7.org/fhir/Resource.id> <http://hl7.org/fhir/Patient/8.Resource.id> .
-<http://hl7.org/fhir/Patient/8> <http://hl7.org/fhir/Resource.meta> <http://hl7.org/fhir/Patient/8.Resource.meta> .
-<http://hl7.org/fhir/Patient/8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/Patient> .----------------------------------------
+<http://hl7.org/fhir/Patient/7.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
+<http://hl7.org/fhir/Patient/7.DomainResource.text> <http://hl7.org/fhir/Narrative.div> "<div xmlns=\"http://www.w3.org/1999/xhtml\">Nuclear, Nelda. SSN:\n            444112345</div>" .
+<http://hl7.org/fhir/Patient/7.DomainResource.text> <http://hl7.org/fhir/Narrative.status> <http://hl7.org/fhir/Patient/7.DomainResource.text.Narrative.status> .
+<http://hl7.org/fhir/Patient/7.Patient.active> <http://hl7.org/fhir/value> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://hl7.org/fhir/Patient/7.Patient.address_0.Address.line_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Patient/7.Patient.address_0.Address.line_0> <http://hl7.org/fhir/value> "6666 Home Street" .
+<http://hl7.org/fhir/Patient/7.Patient.address_0.Address.use> <http://hl7.org/fhir/value> "home" .
+<http://hl7.org/fhir/Patient/7.Patient.address_0> <http://hl7.org/fhir/Address.line> <http://hl7.org/fhir/Patient/7.Patient.address_0.Address.line_0> .
+<http://hl7.org/fhir/Patient/7.Patient.address_0> <http://hl7.org/fhir/Address.use> <http://hl7.org/fhir/Patient/7.Patient.address_0.Address.use> .
+<http://hl7.org/fhir/Patient/7.Patient.address_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Patient/7.Patient.gender> <http://hl7.org/fhir/value> "female" .
+<http://hl7.org/fhir/Patient/7.Patient.identifier_0.Identifier.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/sid/us-ssn" .
+<http://hl7.org/fhir/Patient/7.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "SS" .
+<http://hl7.org/fhir/Patient/7.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/v2/0203" .
+<http://hl7.org/fhir/Patient/7.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Patient/7.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/Patient/7.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Patient/7.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.system> .
+<http://hl7.org/fhir/Patient/7.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Patient/7.Patient.identifier_0.Identifier.type> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Patient/7.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/Patient/7.Patient.identifier_0.Identifier.value> <http://hl7.org/fhir/value> "444112345" .
+<http://hl7.org/fhir/Patient/7.Patient.identifier_0> <http://hl7.org/fhir/Identifier.system> <http://hl7.org/fhir/Patient/7.Patient.identifier_0.Identifier.system> .
+<http://hl7.org/fhir/Patient/7.Patient.identifier_0> <http://hl7.org/fhir/Identifier.type> <http://hl7.org/fhir/Patient/7.Patient.identifier_0.Identifier.type> .
+<http://hl7.org/fhir/Patient/7.Patient.identifier_0> <http://hl7.org/fhir/Identifier.value> <http://hl7.org/fhir/Patient/7.Patient.identifier_0.Identifier.value> .
+<http://hl7.org/fhir/Patient/7.Patient.identifier_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Patient/7.Patient.managingOrganization.Reference.reference> <http://hl7.org/fhir/value> "Organization/hl7" .
+<http://hl7.org/fhir/Patient/7.Patient.managingOrganization> <http://hl7.org/fhir/Reference.reference> <http://hl7.org/fhir/Patient/7.Patient.managingOrganization.Reference.reference> .
+<http://hl7.org/fhir/Patient/7.Patient.managingOrganization> <http://hl7.org/fhir/link> <http://hl7.org/fhir/Organization/hl7> .
+<http://hl7.org/fhir/Patient/7.Patient.name_0.HumanName.family> <http://hl7.org/fhir/value> "Nuclear" .
+<http://hl7.org/fhir/Patient/7.Patient.name_0.HumanName.given_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Patient/7.Patient.name_0.HumanName.given_0> <http://hl7.org/fhir/value> "Nelda" .
+<http://hl7.org/fhir/Patient/7.Patient.name_0.HumanName.use> <http://hl7.org/fhir/value> "official" .
+<http://hl7.org/fhir/Patient/7.Patient.name_0> <http://hl7.org/fhir/HumanName.family> <http://hl7.org/fhir/Patient/7.Patient.name_0.HumanName.family> .
+<http://hl7.org/fhir/Patient/7.Patient.name_0> <http://hl7.org/fhir/HumanName.given> <http://hl7.org/fhir/Patient/7.Patient.name_0.HumanName.given_0> .
+<http://hl7.org/fhir/Patient/7.Patient.name_0> <http://hl7.org/fhir/HumanName.use> <http://hl7.org/fhir/Patient/7.Patient.name_0.HumanName.use> .
+<http://hl7.org/fhir/Patient/7.Patient.name_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Patient/7.Patient.telecom_0.ContactPoint.system> <http://hl7.org/fhir/value> "phone" .
+<http://hl7.org/fhir/Patient/7.Patient.telecom_0.ContactPoint.use> <http://hl7.org/fhir/value> "work" .
+<http://hl7.org/fhir/Patient/7.Patient.telecom_0.ContactPoint.value> <http://hl7.org/fhir/value> "555-555-5001" .
+<http://hl7.org/fhir/Patient/7.Patient.telecom_0> <http://hl7.org/fhir/ContactPoint.system> <http://hl7.org/fhir/Patient/7.Patient.telecom_0.ContactPoint.system> .
+<http://hl7.org/fhir/Patient/7.Patient.telecom_0> <http://hl7.org/fhir/ContactPoint.use> <http://hl7.org/fhir/Patient/7.Patient.telecom_0.ContactPoint.use> .
+<http://hl7.org/fhir/Patient/7.Patient.telecom_0> <http://hl7.org/fhir/ContactPoint.value> <http://hl7.org/fhir/Patient/7.Patient.telecom_0.ContactPoint.value> .
+<http://hl7.org/fhir/Patient/7.Patient.telecom_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Patient/7.Resource.id> <http://hl7.org/fhir/value> "7" .
+<http://hl7.org/fhir/Patient/7.Resource.meta.Meta.lastUpdated> <http://hl7.org/fhir/value> "2012-05-29T23:45:32+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://hl7.org/fhir/Patient/7.Resource.meta> <http://hl7.org/fhir/Meta.lastUpdated> <http://hl7.org/fhir/Patient/7.Resource.meta.Meta.lastUpdated> .
+<http://hl7.org/fhir/Patient/7> <http://hl7.org/fhir/DomainResource.text> <http://hl7.org/fhir/Patient/7.DomainResource.text> .
+<http://hl7.org/fhir/Patient/7> <http://hl7.org/fhir/Patient.active> <http://hl7.org/fhir/Patient/7.Patient.active> .
+<http://hl7.org/fhir/Patient/7> <http://hl7.org/fhir/Patient.address> <http://hl7.org/fhir/Patient/7.Patient.address_0> .
+<http://hl7.org/fhir/Patient/7> <http://hl7.org/fhir/Patient.gender> <http://hl7.org/fhir/Patient/7.Patient.gender> .
+<http://hl7.org/fhir/Patient/7> <http://hl7.org/fhir/Patient.identifier> <http://hl7.org/fhir/Patient/7.Patient.identifier_0> .
+<http://hl7.org/fhir/Patient/7> <http://hl7.org/fhir/Patient.managingOrganization> <http://hl7.org/fhir/Patient/7.Patient.managingOrganization> .
+<http://hl7.org/fhir/Patient/7> <http://hl7.org/fhir/Patient.name> <http://hl7.org/fhir/Patient/7.Patient.name_0> .
+<http://hl7.org/fhir/Patient/7> <http://hl7.org/fhir/Patient.telecom> <http://hl7.org/fhir/Patient/7.Patient.telecom_0> .
+<http://hl7.org/fhir/Patient/7> <http://hl7.org/fhir/Resource.id> <http://hl7.org/fhir/Patient/7.Resource.id> .
+<http://hl7.org/fhir/Patient/7> <http://hl7.org/fhir/Resource.meta> <http://hl7.org/fhir/Patient/7.Resource.meta> .
+<http://hl7.org/fhir/Patient/7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/Patient> .----------------------------------------
 
-Subject http://hl7.org/fhir/Patient/5 DIFFERENCE: ==============================
+Subject http://hl7.org/fhir/Patient/6 DIFFERENCE: ==============================
 	----> First: 
-<http://hl7.org/fhir/Patient/5.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
-<http://hl7.org/fhir/Patient/5.DomainResource.text> <http://hl7.org/fhir/Narrative.div> "<div xmlns=\"http://www.w3.org/1999/xhtml\">Nuclear, Neville. SSN:\n            444111234</div>" .
-<http://hl7.org/fhir/Patient/5.DomainResource.text> <http://hl7.org/fhir/Narrative.status> <http://hl7.org/fhir/Patient/5.DomainResource.text.Narrative.status> .
-<http://hl7.org/fhir/Patient/5.Patient.active> <http://hl7.org/fhir/value> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<http://hl7.org/fhir/Patient/5.Patient.address_0.Address.line_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Patient/5.Patient.address_0.Address.line_0> <http://hl7.org/fhir/value> "6666 Home Street" .
-<http://hl7.org/fhir/Patient/5.Patient.address_0.Address.use> <http://hl7.org/fhir/value> "home" .
-<http://hl7.org/fhir/Patient/5.Patient.address_0> <http://hl7.org/fhir/Address.line> <http://hl7.org/fhir/Patient/5.Patient.address_0.Address.line_0> .
-<http://hl7.org/fhir/Patient/5.Patient.address_0> <http://hl7.org/fhir/Address.use> <http://hl7.org/fhir/Patient/5.Patient.address_0.Address.use> .
-<http://hl7.org/fhir/Patient/5.Patient.address_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Patient/5.Patient.gender> <http://hl7.org/fhir/value> "male" .
-<http://hl7.org/fhir/Patient/5.Patient.identifier_0.Identifier.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/sid/us-ssn" .
-<http://hl7.org/fhir/Patient/5.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "SS" .
-<http://hl7.org/fhir/Patient/5.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/v2/0203" .
-<http://hl7.org/fhir/Patient/5.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Patient/5.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.code> .
-<http://hl7.org/fhir/Patient/5.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Patient/5.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.system> .
-<http://hl7.org/fhir/Patient/5.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Patient/5.Patient.identifier_0.Identifier.type> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Patient/5.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> .
-<http://hl7.org/fhir/Patient/5.Patient.identifier_0.Identifier.value> <http://hl7.org/fhir/value> "444111234" .
-<http://hl7.org/fhir/Patient/5.Patient.identifier_0> <http://hl7.org/fhir/Identifier.system> <http://hl7.org/fhir/Patient/5.Patient.identifier_0.Identifier.system> .
-<http://hl7.org/fhir/Patient/5.Patient.identifier_0> <http://hl7.org/fhir/Identifier.type> <http://hl7.org/fhir/Patient/5.Patient.identifier_0.Identifier.type> .
-<http://hl7.org/fhir/Patient/5.Patient.identifier_0> <http://hl7.org/fhir/Identifier.value> <http://hl7.org/fhir/Patient/5.Patient.identifier_0.Identifier.value> .
-<http://hl7.org/fhir/Patient/5.Patient.identifier_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Patient/5.Patient.managingOrganization.Reference.reference> <http://hl7.org/fhir/value> "Organization/hl7" .
-<http://hl7.org/fhir/Patient/5.Patient.managingOrganization> <http://hl7.org/fhir/Reference.reference> <http://hl7.org/fhir/Patient/5.Patient.managingOrganization.Reference.reference> .
-<http://hl7.org/fhir/Patient/5.Patient.managingOrganization> <http://hl7.org/fhir/link> <http://hl7.org/fhir/Organization/hl7> .
-<http://hl7.org/fhir/Patient/5.Patient.name_0.HumanName.family> <http://hl7.org/fhir/value> "Nuclear" .
-<http://hl7.org/fhir/Patient/5.Patient.name_0.HumanName.given_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Patient/5.Patient.name_0.HumanName.given_0> <http://hl7.org/fhir/value> "Neville" .
-<http://hl7.org/fhir/Patient/5.Patient.name_0.HumanName.use> <http://hl7.org/fhir/value> "official" .
-<http://hl7.org/fhir/Patient/5.Patient.name_0> <http://hl7.org/fhir/HumanName.family> <http://hl7.org/fhir/Patient/5.Patient.name_0.HumanName.family> .
-<http://hl7.org/fhir/Patient/5.Patient.name_0> <http://hl7.org/fhir/HumanName.given> <http://hl7.org/fhir/Patient/5.Patient.name_0.HumanName.given_0> .
-<http://hl7.org/fhir/Patient/5.Patient.name_0> <http://hl7.org/fhir/HumanName.use> <http://hl7.org/fhir/Patient/5.Patient.name_0.HumanName.use> .
-<http://hl7.org/fhir/Patient/5.Patient.name_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Patient/5.Patient.telecom_0.ContactPoint.system> <http://hl7.org/fhir/value> "phone" .
-<http://hl7.org/fhir/Patient/5.Patient.telecom_0.ContactPoint.use> <http://hl7.org/fhir/value> "work" .
-<http://hl7.org/fhir/Patient/5.Patient.telecom_0.ContactPoint.value> <http://hl7.org/fhir/value> "555-555-5001" .
-<http://hl7.org/fhir/Patient/5.Patient.telecom_0> <http://hl7.org/fhir/ContactPoint.system> <http://hl7.org/fhir/Patient/5.Patient.telecom_0.ContactPoint.system> .
-<http://hl7.org/fhir/Patient/5.Patient.telecom_0> <http://hl7.org/fhir/ContactPoint.use> <http://hl7.org/fhir/Patient/5.Patient.telecom_0.ContactPoint.use> .
-<http://hl7.org/fhir/Patient/5.Patient.telecom_0> <http://hl7.org/fhir/ContactPoint.value> <http://hl7.org/fhir/Patient/5.Patient.telecom_0.ContactPoint.value> .
-<http://hl7.org/fhir/Patient/5.Patient.telecom_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Patient/5.Resource.id> <http://hl7.org/fhir/value> "5" .
-<http://hl7.org/fhir/Patient/5.Resource.meta.Meta.lastUpdated> <http://hl7.org/fhir/value> "2012-05-29T23:45:32+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<http://hl7.org/fhir/Patient/5.Resource.meta> <http://hl7.org/fhir/Meta.lastUpdated> <http://hl7.org/fhir/Patient/5.Resource.meta.Meta.lastUpdated> .
-<http://hl7.org/fhir/Patient/5> <http://hl7.org/fhir/DomainResource.text> <http://hl7.org/fhir/Patient/5.DomainResource.text> .
-<http://hl7.org/fhir/Patient/5> <http://hl7.org/fhir/Patient.active> <http://hl7.org/fhir/Patient/5.Patient.active> .
-<http://hl7.org/fhir/Patient/5> <http://hl7.org/fhir/Patient.address> <http://hl7.org/fhir/Patient/5.Patient.address_0> .
-<http://hl7.org/fhir/Patient/5> <http://hl7.org/fhir/Patient.gender> <http://hl7.org/fhir/Patient/5.Patient.gender> .
-<http://hl7.org/fhir/Patient/5> <http://hl7.org/fhir/Patient.identifier> <http://hl7.org/fhir/Patient/5.Patient.identifier_0> .
-<http://hl7.org/fhir/Patient/5> <http://hl7.org/fhir/Patient.managingOrganization> <http://hl7.org/fhir/Patient/5.Patient.managingOrganization> .
-<http://hl7.org/fhir/Patient/5> <http://hl7.org/fhir/Patient.name> <http://hl7.org/fhir/Patient/5.Patient.name_0> .
-<http://hl7.org/fhir/Patient/5> <http://hl7.org/fhir/Patient.telecom> <http://hl7.org/fhir/Patient/5.Patient.telecom_0> .
-<http://hl7.org/fhir/Patient/5> <http://hl7.org/fhir/Resource.id> <http://hl7.org/fhir/Patient/5.Resource.id> .
-<http://hl7.org/fhir/Patient/5> <http://hl7.org/fhir/Resource.meta> <http://hl7.org/fhir/Patient/5.Resource.meta> .
-<http://hl7.org/fhir/Patient/5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/Patient> .----------------------------------------
+<http://hl7.org/fhir/Patient/6.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
+<http://hl7.org/fhir/Patient/6.DomainResource.text> <http://hl7.org/fhir/Narrative.div> "<div xmlns=\"http://www.w3.org/1999/xhtml\">Nuclear, Ned. SSN:\n            444113456</div>" .
+<http://hl7.org/fhir/Patient/6.DomainResource.text> <http://hl7.org/fhir/Narrative.status> <http://hl7.org/fhir/Patient/6.DomainResource.text.Narrative.status> .
+<http://hl7.org/fhir/Patient/6.Patient.active> <http://hl7.org/fhir/value> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://hl7.org/fhir/Patient/6.Patient.address_0.Address.line_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Patient/6.Patient.address_0.Address.line_0> <http://hl7.org/fhir/value> "6666 Home Street" .
+<http://hl7.org/fhir/Patient/6.Patient.address_0.Address.use> <http://hl7.org/fhir/value> "home" .
+<http://hl7.org/fhir/Patient/6.Patient.address_0> <http://hl7.org/fhir/Address.line> <http://hl7.org/fhir/Patient/6.Patient.address_0.Address.line_0> .
+<http://hl7.org/fhir/Patient/6.Patient.address_0> <http://hl7.org/fhir/Address.use> <http://hl7.org/fhir/Patient/6.Patient.address_0.Address.use> .
+<http://hl7.org/fhir/Patient/6.Patient.address_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Patient/6.Patient.gender> <http://hl7.org/fhir/value> "male" .
+<http://hl7.org/fhir/Patient/6.Patient.identifier_0.Identifier.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/sid/us-ssn" .
+<http://hl7.org/fhir/Patient/6.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "SS" .
+<http://hl7.org/fhir/Patient/6.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/v2/0203" .
+<http://hl7.org/fhir/Patient/6.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Patient/6.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/Patient/6.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Patient/6.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.system> .
+<http://hl7.org/fhir/Patient/6.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Patient/6.Patient.identifier_0.Identifier.type> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Patient/6.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/Patient/6.Patient.identifier_0.Identifier.value> <http://hl7.org/fhir/value> "444113456" .
+<http://hl7.org/fhir/Patient/6.Patient.identifier_0> <http://hl7.org/fhir/Identifier.system> <http://hl7.org/fhir/Patient/6.Patient.identifier_0.Identifier.system> .
+<http://hl7.org/fhir/Patient/6.Patient.identifier_0> <http://hl7.org/fhir/Identifier.type> <http://hl7.org/fhir/Patient/6.Patient.identifier_0.Identifier.type> .
+<http://hl7.org/fhir/Patient/6.Patient.identifier_0> <http://hl7.org/fhir/Identifier.value> <http://hl7.org/fhir/Patient/6.Patient.identifier_0.Identifier.value> .
+<http://hl7.org/fhir/Patient/6.Patient.identifier_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Patient/6.Patient.managingOrganization.Reference.reference> <http://hl7.org/fhir/value> "Organization/hl7" .
+<http://hl7.org/fhir/Patient/6.Patient.managingOrganization> <http://hl7.org/fhir/Reference.reference> <http://hl7.org/fhir/Patient/6.Patient.managingOrganization.Reference.reference> .
+<http://hl7.org/fhir/Patient/6.Patient.managingOrganization> <http://hl7.org/fhir/link> <http://hl7.org/fhir/Organization/hl7> .
+<http://hl7.org/fhir/Patient/6.Patient.name_0.HumanName.family> <http://hl7.org/fhir/value> "Nuclear" .
+<http://hl7.org/fhir/Patient/6.Patient.name_0.HumanName.given_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Patient/6.Patient.name_0.HumanName.given_0> <http://hl7.org/fhir/value> "Ned" .
+<http://hl7.org/fhir/Patient/6.Patient.name_0.HumanName.use> <http://hl7.org/fhir/value> "official" .
+<http://hl7.org/fhir/Patient/6.Patient.name_0> <http://hl7.org/fhir/HumanName.family> <http://hl7.org/fhir/Patient/6.Patient.name_0.HumanName.family> .
+<http://hl7.org/fhir/Patient/6.Patient.name_0> <http://hl7.org/fhir/HumanName.given> <http://hl7.org/fhir/Patient/6.Patient.name_0.HumanName.given_0> .
+<http://hl7.org/fhir/Patient/6.Patient.name_0> <http://hl7.org/fhir/HumanName.use> <http://hl7.org/fhir/Patient/6.Patient.name_0.HumanName.use> .
+<http://hl7.org/fhir/Patient/6.Patient.name_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Patient/6.Patient.telecom_0.ContactPoint.system> <http://hl7.org/fhir/value> "phone" .
+<http://hl7.org/fhir/Patient/6.Patient.telecom_0.ContactPoint.use> <http://hl7.org/fhir/value> "work" .
+<http://hl7.org/fhir/Patient/6.Patient.telecom_0.ContactPoint.value> <http://hl7.org/fhir/value> "555-555-5001" .
+<http://hl7.org/fhir/Patient/6.Patient.telecom_0> <http://hl7.org/fhir/ContactPoint.system> <http://hl7.org/fhir/Patient/6.Patient.telecom_0.ContactPoint.system> .
+<http://hl7.org/fhir/Patient/6.Patient.telecom_0> <http://hl7.org/fhir/ContactPoint.use> <http://hl7.org/fhir/Patient/6.Patient.telecom_0.ContactPoint.use> .
+<http://hl7.org/fhir/Patient/6.Patient.telecom_0> <http://hl7.org/fhir/ContactPoint.value> <http://hl7.org/fhir/Patient/6.Patient.telecom_0.ContactPoint.value> .
+<http://hl7.org/fhir/Patient/6.Patient.telecom_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Patient/6.Resource.id> <http://hl7.org/fhir/value> "6" .
+<http://hl7.org/fhir/Patient/6.Resource.meta.Meta.lastUpdated> <http://hl7.org/fhir/value> "2012-05-29T23:45:32+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://hl7.org/fhir/Patient/6.Resource.meta> <http://hl7.org/fhir/Meta.lastUpdated> <http://hl7.org/fhir/Patient/6.Resource.meta.Meta.lastUpdated> .
+<http://hl7.org/fhir/Patient/6> <http://hl7.org/fhir/DomainResource.text> <http://hl7.org/fhir/Patient/6.DomainResource.text> .
+<http://hl7.org/fhir/Patient/6> <http://hl7.org/fhir/Patient.active> <http://hl7.org/fhir/Patient/6.Patient.active> .
+<http://hl7.org/fhir/Patient/6> <http://hl7.org/fhir/Patient.address> <http://hl7.org/fhir/Patient/6.Patient.address_0> .
+<http://hl7.org/fhir/Patient/6> <http://hl7.org/fhir/Patient.gender> <http://hl7.org/fhir/Patient/6.Patient.gender> .
+<http://hl7.org/fhir/Patient/6> <http://hl7.org/fhir/Patient.identifier> <http://hl7.org/fhir/Patient/6.Patient.identifier_0> .
+<http://hl7.org/fhir/Patient/6> <http://hl7.org/fhir/Patient.managingOrganization> <http://hl7.org/fhir/Patient/6.Patient.managingOrganization> .
+<http://hl7.org/fhir/Patient/6> <http://hl7.org/fhir/Patient.name> <http://hl7.org/fhir/Patient/6.Patient.name_0> .
+<http://hl7.org/fhir/Patient/6> <http://hl7.org/fhir/Patient.telecom> <http://hl7.org/fhir/Patient/6.Patient.telecom_0> .
+<http://hl7.org/fhir/Patient/6> <http://hl7.org/fhir/Resource.id> <http://hl7.org/fhir/Patient/6.Resource.id> .
+<http://hl7.org/fhir/Patient/6> <http://hl7.org/fhir/Resource.meta> <http://hl7.org/fhir/Patient/6.Resource.meta> .
+<http://hl7.org/fhir/Patient/6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/Patient> .----------------------------------------
 
 Subject http://hl7.org/fhir/Patient/1 DIFFERENCE: ==============================
 	----> First: 
@@ -423,63 +249,63 @@ Subject http://hl7.org/fhir/Patient/1 DIFFERENCE: ==============================
 <http://hl7.org/fhir/Patient/1> <http://hl7.org/fhir/Resource.meta> <http://hl7.org/fhir/Patient/1.Resource.meta> .
 <http://hl7.org/fhir/Patient/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/Patient> .----------------------------------------
 
-Subject http://hl7.org/fhir/Patient/12 DIFFERENCE: ==============================
+Subject http://hl7.org/fhir/Patient/5 DIFFERENCE: ==============================
 	----> First: 
-<http://hl7.org/fhir/Patient/12.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
-<http://hl7.org/fhir/Patient/12.DomainResource.text> <http://hl7.org/fhir/Narrative.div> "<div xmlns=\"http://www.w3.org/1999/xhtml\">Contact, Carrie. SSN:\n            555222222</div>" .
-<http://hl7.org/fhir/Patient/12.DomainResource.text> <http://hl7.org/fhir/Narrative.status> <http://hl7.org/fhir/Patient/12.DomainResource.text.Narrative.status> .
-<http://hl7.org/fhir/Patient/12.Patient.active> <http://hl7.org/fhir/value> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<http://hl7.org/fhir/Patient/12.Patient.address_0.Address.line_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Patient/12.Patient.address_0.Address.line_0> <http://hl7.org/fhir/value> "5555 Home Street" .
-<http://hl7.org/fhir/Patient/12.Patient.address_0.Address.use> <http://hl7.org/fhir/value> "home" .
-<http://hl7.org/fhir/Patient/12.Patient.address_0> <http://hl7.org/fhir/Address.line> <http://hl7.org/fhir/Patient/12.Patient.address_0.Address.line_0> .
-<http://hl7.org/fhir/Patient/12.Patient.address_0> <http://hl7.org/fhir/Address.use> <http://hl7.org/fhir/Patient/12.Patient.address_0.Address.use> .
-<http://hl7.org/fhir/Patient/12.Patient.address_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Patient/12.Patient.gender> <http://hl7.org/fhir/value> "female" .
-<http://hl7.org/fhir/Patient/12.Patient.identifier_0.Identifier.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/sid/us-ssn" .
-<http://hl7.org/fhir/Patient/12.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "SS" .
-<http://hl7.org/fhir/Patient/12.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/v2/0203" .
-<http://hl7.org/fhir/Patient/12.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Patient/12.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.code> .
-<http://hl7.org/fhir/Patient/12.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Patient/12.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.system> .
-<http://hl7.org/fhir/Patient/12.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Patient/12.Patient.identifier_0.Identifier.type> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Patient/12.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> .
-<http://hl7.org/fhir/Patient/12.Patient.identifier_0.Identifier.value> <http://hl7.org/fhir/value> "555222222" .
-<http://hl7.org/fhir/Patient/12.Patient.identifier_0> <http://hl7.org/fhir/Identifier.system> <http://hl7.org/fhir/Patient/12.Patient.identifier_0.Identifier.system> .
-<http://hl7.org/fhir/Patient/12.Patient.identifier_0> <http://hl7.org/fhir/Identifier.type> <http://hl7.org/fhir/Patient/12.Patient.identifier_0.Identifier.type> .
-<http://hl7.org/fhir/Patient/12.Patient.identifier_0> <http://hl7.org/fhir/Identifier.value> <http://hl7.org/fhir/Patient/12.Patient.identifier_0.Identifier.value> .
-<http://hl7.org/fhir/Patient/12.Patient.identifier_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Patient/12.Patient.managingOrganization.Reference.reference> <http://hl7.org/fhir/value> "Organization/hl7" .
-<http://hl7.org/fhir/Patient/12.Patient.managingOrganization> <http://hl7.org/fhir/Reference.reference> <http://hl7.org/fhir/Patient/12.Patient.managingOrganization.Reference.reference> .
-<http://hl7.org/fhir/Patient/12.Patient.managingOrganization> <http://hl7.org/fhir/link> <http://hl7.org/fhir/Organization/hl7> .
-<http://hl7.org/fhir/Patient/12.Patient.name_0.HumanName.family> <http://hl7.org/fhir/value> "Contact" .
-<http://hl7.org/fhir/Patient/12.Patient.name_0.HumanName.given_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Patient/12.Patient.name_0.HumanName.given_0> <http://hl7.org/fhir/value> "Carrie" .
-<http://hl7.org/fhir/Patient/12.Patient.name_0.HumanName.use> <http://hl7.org/fhir/value> "official" .
-<http://hl7.org/fhir/Patient/12.Patient.name_0> <http://hl7.org/fhir/HumanName.family> <http://hl7.org/fhir/Patient/12.Patient.name_0.HumanName.family> .
-<http://hl7.org/fhir/Patient/12.Patient.name_0> <http://hl7.org/fhir/HumanName.given> <http://hl7.org/fhir/Patient/12.Patient.name_0.HumanName.given_0> .
-<http://hl7.org/fhir/Patient/12.Patient.name_0> <http://hl7.org/fhir/HumanName.use> <http://hl7.org/fhir/Patient/12.Patient.name_0.HumanName.use> .
-<http://hl7.org/fhir/Patient/12.Patient.name_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Patient/12.Patient.telecom_0.ContactPoint.system> <http://hl7.org/fhir/value> "phone" .
-<http://hl7.org/fhir/Patient/12.Patient.telecom_0.ContactPoint.use> <http://hl7.org/fhir/value> "work" .
-<http://hl7.org/fhir/Patient/12.Patient.telecom_0.ContactPoint.value> <http://hl7.org/fhir/value> "555-555-2010" .
-<http://hl7.org/fhir/Patient/12.Patient.telecom_0> <http://hl7.org/fhir/ContactPoint.system> <http://hl7.org/fhir/Patient/12.Patient.telecom_0.ContactPoint.system> .
-<http://hl7.org/fhir/Patient/12.Patient.telecom_0> <http://hl7.org/fhir/ContactPoint.use> <http://hl7.org/fhir/Patient/12.Patient.telecom_0.ContactPoint.use> .
-<http://hl7.org/fhir/Patient/12.Patient.telecom_0> <http://hl7.org/fhir/ContactPoint.value> <http://hl7.org/fhir/Patient/12.Patient.telecom_0.ContactPoint.value> .
-<http://hl7.org/fhir/Patient/12.Patient.telecom_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Patient/12.Resource.id> <http://hl7.org/fhir/value> "12" .
-<http://hl7.org/fhir/Patient/12.Resource.meta.Meta.lastUpdated> <http://hl7.org/fhir/value> "2012-05-29T23:45:32+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<http://hl7.org/fhir/Patient/12.Resource.meta> <http://hl7.org/fhir/Meta.lastUpdated> <http://hl7.org/fhir/Patient/12.Resource.meta.Meta.lastUpdated> .
-<http://hl7.org/fhir/Patient/12> <http://hl7.org/fhir/DomainResource.text> <http://hl7.org/fhir/Patient/12.DomainResource.text> .
-<http://hl7.org/fhir/Patient/12> <http://hl7.org/fhir/Patient.active> <http://hl7.org/fhir/Patient/12.Patient.active> .
-<http://hl7.org/fhir/Patient/12> <http://hl7.org/fhir/Patient.address> <http://hl7.org/fhir/Patient/12.Patient.address_0> .
-<http://hl7.org/fhir/Patient/12> <http://hl7.org/fhir/Patient.gender> <http://hl7.org/fhir/Patient/12.Patient.gender> .
-<http://hl7.org/fhir/Patient/12> <http://hl7.org/fhir/Patient.identifier> <http://hl7.org/fhir/Patient/12.Patient.identifier_0> .
-<http://hl7.org/fhir/Patient/12> <http://hl7.org/fhir/Patient.managingOrganization> <http://hl7.org/fhir/Patient/12.Patient.managingOrganization> .
-<http://hl7.org/fhir/Patient/12> <http://hl7.org/fhir/Patient.name> <http://hl7.org/fhir/Patient/12.Patient.name_0> .
-<http://hl7.org/fhir/Patient/12> <http://hl7.org/fhir/Patient.telecom> <http://hl7.org/fhir/Patient/12.Patient.telecom_0> .
-<http://hl7.org/fhir/Patient/12> <http://hl7.org/fhir/Resource.id> <http://hl7.org/fhir/Patient/12.Resource.id> .
-<http://hl7.org/fhir/Patient/12> <http://hl7.org/fhir/Resource.meta> <http://hl7.org/fhir/Patient/12.Resource.meta> .
-<http://hl7.org/fhir/Patient/12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/Patient> .----------------------------------------
+<http://hl7.org/fhir/Patient/5.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
+<http://hl7.org/fhir/Patient/5.DomainResource.text> <http://hl7.org/fhir/Narrative.div> "<div xmlns=\"http://www.w3.org/1999/xhtml\">Nuclear, Neville. SSN:\n            444111234</div>" .
+<http://hl7.org/fhir/Patient/5.DomainResource.text> <http://hl7.org/fhir/Narrative.status> <http://hl7.org/fhir/Patient/5.DomainResource.text.Narrative.status> .
+<http://hl7.org/fhir/Patient/5.Patient.active> <http://hl7.org/fhir/value> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://hl7.org/fhir/Patient/5.Patient.address_0.Address.line_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Patient/5.Patient.address_0.Address.line_0> <http://hl7.org/fhir/value> "6666 Home Street" .
+<http://hl7.org/fhir/Patient/5.Patient.address_0.Address.use> <http://hl7.org/fhir/value> "home" .
+<http://hl7.org/fhir/Patient/5.Patient.address_0> <http://hl7.org/fhir/Address.line> <http://hl7.org/fhir/Patient/5.Patient.address_0.Address.line_0> .
+<http://hl7.org/fhir/Patient/5.Patient.address_0> <http://hl7.org/fhir/Address.use> <http://hl7.org/fhir/Patient/5.Patient.address_0.Address.use> .
+<http://hl7.org/fhir/Patient/5.Patient.address_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Patient/5.Patient.gender> <http://hl7.org/fhir/value> "male" .
+<http://hl7.org/fhir/Patient/5.Patient.identifier_0.Identifier.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/sid/us-ssn" .
+<http://hl7.org/fhir/Patient/5.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "SS" .
+<http://hl7.org/fhir/Patient/5.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/v2/0203" .
+<http://hl7.org/fhir/Patient/5.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Patient/5.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/Patient/5.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Patient/5.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.system> .
+<http://hl7.org/fhir/Patient/5.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Patient/5.Patient.identifier_0.Identifier.type> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Patient/5.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/Patient/5.Patient.identifier_0.Identifier.value> <http://hl7.org/fhir/value> "444111234" .
+<http://hl7.org/fhir/Patient/5.Patient.identifier_0> <http://hl7.org/fhir/Identifier.system> <http://hl7.org/fhir/Patient/5.Patient.identifier_0.Identifier.system> .
+<http://hl7.org/fhir/Patient/5.Patient.identifier_0> <http://hl7.org/fhir/Identifier.type> <http://hl7.org/fhir/Patient/5.Patient.identifier_0.Identifier.type> .
+<http://hl7.org/fhir/Patient/5.Patient.identifier_0> <http://hl7.org/fhir/Identifier.value> <http://hl7.org/fhir/Patient/5.Patient.identifier_0.Identifier.value> .
+<http://hl7.org/fhir/Patient/5.Patient.identifier_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Patient/5.Patient.managingOrganization.Reference.reference> <http://hl7.org/fhir/value> "Organization/hl7" .
+<http://hl7.org/fhir/Patient/5.Patient.managingOrganization> <http://hl7.org/fhir/Reference.reference> <http://hl7.org/fhir/Patient/5.Patient.managingOrganization.Reference.reference> .
+<http://hl7.org/fhir/Patient/5.Patient.managingOrganization> <http://hl7.org/fhir/link> <http://hl7.org/fhir/Organization/hl7> .
+<http://hl7.org/fhir/Patient/5.Patient.name_0.HumanName.family> <http://hl7.org/fhir/value> "Nuclear" .
+<http://hl7.org/fhir/Patient/5.Patient.name_0.HumanName.given_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Patient/5.Patient.name_0.HumanName.given_0> <http://hl7.org/fhir/value> "Neville" .
+<http://hl7.org/fhir/Patient/5.Patient.name_0.HumanName.use> <http://hl7.org/fhir/value> "official" .
+<http://hl7.org/fhir/Patient/5.Patient.name_0> <http://hl7.org/fhir/HumanName.family> <http://hl7.org/fhir/Patient/5.Patient.name_0.HumanName.family> .
+<http://hl7.org/fhir/Patient/5.Patient.name_0> <http://hl7.org/fhir/HumanName.given> <http://hl7.org/fhir/Patient/5.Patient.name_0.HumanName.given_0> .
+<http://hl7.org/fhir/Patient/5.Patient.name_0> <http://hl7.org/fhir/HumanName.use> <http://hl7.org/fhir/Patient/5.Patient.name_0.HumanName.use> .
+<http://hl7.org/fhir/Patient/5.Patient.name_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Patient/5.Patient.telecom_0.ContactPoint.system> <http://hl7.org/fhir/value> "phone" .
+<http://hl7.org/fhir/Patient/5.Patient.telecom_0.ContactPoint.use> <http://hl7.org/fhir/value> "work" .
+<http://hl7.org/fhir/Patient/5.Patient.telecom_0.ContactPoint.value> <http://hl7.org/fhir/value> "555-555-5001" .
+<http://hl7.org/fhir/Patient/5.Patient.telecom_0> <http://hl7.org/fhir/ContactPoint.system> <http://hl7.org/fhir/Patient/5.Patient.telecom_0.ContactPoint.system> .
+<http://hl7.org/fhir/Patient/5.Patient.telecom_0> <http://hl7.org/fhir/ContactPoint.use> <http://hl7.org/fhir/Patient/5.Patient.telecom_0.ContactPoint.use> .
+<http://hl7.org/fhir/Patient/5.Patient.telecom_0> <http://hl7.org/fhir/ContactPoint.value> <http://hl7.org/fhir/Patient/5.Patient.telecom_0.ContactPoint.value> .
+<http://hl7.org/fhir/Patient/5.Patient.telecom_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Patient/5.Resource.id> <http://hl7.org/fhir/value> "5" .
+<http://hl7.org/fhir/Patient/5.Resource.meta.Meta.lastUpdated> <http://hl7.org/fhir/value> "2012-05-29T23:45:32+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://hl7.org/fhir/Patient/5.Resource.meta> <http://hl7.org/fhir/Meta.lastUpdated> <http://hl7.org/fhir/Patient/5.Resource.meta.Meta.lastUpdated> .
+<http://hl7.org/fhir/Patient/5> <http://hl7.org/fhir/DomainResource.text> <http://hl7.org/fhir/Patient/5.DomainResource.text> .
+<http://hl7.org/fhir/Patient/5> <http://hl7.org/fhir/Patient.active> <http://hl7.org/fhir/Patient/5.Patient.active> .
+<http://hl7.org/fhir/Patient/5> <http://hl7.org/fhir/Patient.address> <http://hl7.org/fhir/Patient/5.Patient.address_0> .
+<http://hl7.org/fhir/Patient/5> <http://hl7.org/fhir/Patient.gender> <http://hl7.org/fhir/Patient/5.Patient.gender> .
+<http://hl7.org/fhir/Patient/5> <http://hl7.org/fhir/Patient.identifier> <http://hl7.org/fhir/Patient/5.Patient.identifier_0> .
+<http://hl7.org/fhir/Patient/5> <http://hl7.org/fhir/Patient.managingOrganization> <http://hl7.org/fhir/Patient/5.Patient.managingOrganization> .
+<http://hl7.org/fhir/Patient/5> <http://hl7.org/fhir/Patient.name> <http://hl7.org/fhir/Patient/5.Patient.name_0> .
+<http://hl7.org/fhir/Patient/5> <http://hl7.org/fhir/Patient.telecom> <http://hl7.org/fhir/Patient/5.Patient.telecom_0> .
+<http://hl7.org/fhir/Patient/5> <http://hl7.org/fhir/Resource.id> <http://hl7.org/fhir/Patient/5.Resource.id> .
+<http://hl7.org/fhir/Patient/5> <http://hl7.org/fhir/Resource.meta> <http://hl7.org/fhir/Patient/5.Resource.meta> .
+<http://hl7.org/fhir/Patient/5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/Patient> .----------------------------------------
 
 Subject http://hl7.org/fhir/Patient/4 DIFFERENCE: ==============================
 	----> First: 
@@ -538,6 +364,296 @@ Subject http://hl7.org/fhir/Patient/4 DIFFERENCE: ==============================
 <http://hl7.org/fhir/Patient/4> <http://hl7.org/fhir/Resource.id> <http://hl7.org/fhir/Patient/4.Resource.id> .
 <http://hl7.org/fhir/Patient/4> <http://hl7.org/fhir/Resource.meta> <http://hl7.org/fhir/Patient/4.Resource.meta> .
 <http://hl7.org/fhir/Patient/4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/Patient> .----------------------------------------
+
+Subject http://hl7.org/fhir/Patient/11 DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/Patient/11.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
+<http://hl7.org/fhir/Patient/11.DomainResource.text> <http://hl7.org/fhir/Narrative.div> "<div xmlns=\"http://www.w3.org/1999/xhtml\">Relative, Ralph. SSN:\n            444999999</div>" .
+<http://hl7.org/fhir/Patient/11.DomainResource.text> <http://hl7.org/fhir/Narrative.status> <http://hl7.org/fhir/Patient/11.DomainResource.text.Narrative.status> .
+<http://hl7.org/fhir/Patient/11.Patient.active> <http://hl7.org/fhir/value> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://hl7.org/fhir/Patient/11.Patient.address_0.Address.line_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Patient/11.Patient.address_0.Address.line_0> <http://hl7.org/fhir/value> "4444 Home Street" .
+<http://hl7.org/fhir/Patient/11.Patient.address_0.Address.use> <http://hl7.org/fhir/value> "home" .
+<http://hl7.org/fhir/Patient/11.Patient.address_0> <http://hl7.org/fhir/Address.line> <http://hl7.org/fhir/Patient/11.Patient.address_0.Address.line_0> .
+<http://hl7.org/fhir/Patient/11.Patient.address_0> <http://hl7.org/fhir/Address.use> <http://hl7.org/fhir/Patient/11.Patient.address_0.Address.use> .
+<http://hl7.org/fhir/Patient/11.Patient.address_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Patient/11.Patient.gender> <http://hl7.org/fhir/value> "male" .
+<http://hl7.org/fhir/Patient/11.Patient.identifier_0.Identifier.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/sid/us-ssn" .
+<http://hl7.org/fhir/Patient/11.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "SS" .
+<http://hl7.org/fhir/Patient/11.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/v2/0203" .
+<http://hl7.org/fhir/Patient/11.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Patient/11.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/Patient/11.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Patient/11.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.system> .
+<http://hl7.org/fhir/Patient/11.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Patient/11.Patient.identifier_0.Identifier.type> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Patient/11.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/Patient/11.Patient.identifier_0.Identifier.value> <http://hl7.org/fhir/value> "444999999" .
+<http://hl7.org/fhir/Patient/11.Patient.identifier_0> <http://hl7.org/fhir/Identifier.system> <http://hl7.org/fhir/Patient/11.Patient.identifier_0.Identifier.system> .
+<http://hl7.org/fhir/Patient/11.Patient.identifier_0> <http://hl7.org/fhir/Identifier.type> <http://hl7.org/fhir/Patient/11.Patient.identifier_0.Identifier.type> .
+<http://hl7.org/fhir/Patient/11.Patient.identifier_0> <http://hl7.org/fhir/Identifier.value> <http://hl7.org/fhir/Patient/11.Patient.identifier_0.Identifier.value> .
+<http://hl7.org/fhir/Patient/11.Patient.identifier_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Patient/11.Patient.managingOrganization.Reference.reference> <http://hl7.org/fhir/value> "Organization/hl7" .
+<http://hl7.org/fhir/Patient/11.Patient.managingOrganization> <http://hl7.org/fhir/Reference.reference> <http://hl7.org/fhir/Patient/11.Patient.managingOrganization.Reference.reference> .
+<http://hl7.org/fhir/Patient/11.Patient.managingOrganization> <http://hl7.org/fhir/link> <http://hl7.org/fhir/Organization/hl7> .
+<http://hl7.org/fhir/Patient/11.Patient.name_0.HumanName.family> <http://hl7.org/fhir/value> "Relative" .
+<http://hl7.org/fhir/Patient/11.Patient.name_0.HumanName.given_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Patient/11.Patient.name_0.HumanName.given_0> <http://hl7.org/fhir/value> "Ralph" .
+<http://hl7.org/fhir/Patient/11.Patient.name_0.HumanName.use> <http://hl7.org/fhir/value> "official" .
+<http://hl7.org/fhir/Patient/11.Patient.name_0> <http://hl7.org/fhir/HumanName.family> <http://hl7.org/fhir/Patient/11.Patient.name_0.HumanName.family> .
+<http://hl7.org/fhir/Patient/11.Patient.name_0> <http://hl7.org/fhir/HumanName.given> <http://hl7.org/fhir/Patient/11.Patient.name_0.HumanName.given_0> .
+<http://hl7.org/fhir/Patient/11.Patient.name_0> <http://hl7.org/fhir/HumanName.use> <http://hl7.org/fhir/Patient/11.Patient.name_0.HumanName.use> .
+<http://hl7.org/fhir/Patient/11.Patient.name_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Patient/11.Patient.telecom_0.ContactPoint.system> <http://hl7.org/fhir/value> "phone" .
+<http://hl7.org/fhir/Patient/11.Patient.telecom_0.ContactPoint.use> <http://hl7.org/fhir/value> "work" .
+<http://hl7.org/fhir/Patient/11.Patient.telecom_0.ContactPoint.value> <http://hl7.org/fhir/value> "555-555-2009" .
+<http://hl7.org/fhir/Patient/11.Patient.telecom_0> <http://hl7.org/fhir/ContactPoint.system> <http://hl7.org/fhir/Patient/11.Patient.telecom_0.ContactPoint.system> .
+<http://hl7.org/fhir/Patient/11.Patient.telecom_0> <http://hl7.org/fhir/ContactPoint.use> <http://hl7.org/fhir/Patient/11.Patient.telecom_0.ContactPoint.use> .
+<http://hl7.org/fhir/Patient/11.Patient.telecom_0> <http://hl7.org/fhir/ContactPoint.value> <http://hl7.org/fhir/Patient/11.Patient.telecom_0.ContactPoint.value> .
+<http://hl7.org/fhir/Patient/11.Patient.telecom_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Patient/11.Resource.id> <http://hl7.org/fhir/value> "11" .
+<http://hl7.org/fhir/Patient/11.Resource.meta.Meta.lastUpdated> <http://hl7.org/fhir/value> "2012-05-29T23:45:32+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://hl7.org/fhir/Patient/11.Resource.meta> <http://hl7.org/fhir/Meta.lastUpdated> <http://hl7.org/fhir/Patient/11.Resource.meta.Meta.lastUpdated> .
+<http://hl7.org/fhir/Patient/11> <http://hl7.org/fhir/DomainResource.text> <http://hl7.org/fhir/Patient/11.DomainResource.text> .
+<http://hl7.org/fhir/Patient/11> <http://hl7.org/fhir/Patient.active> <http://hl7.org/fhir/Patient/11.Patient.active> .
+<http://hl7.org/fhir/Patient/11> <http://hl7.org/fhir/Patient.address> <http://hl7.org/fhir/Patient/11.Patient.address_0> .
+<http://hl7.org/fhir/Patient/11> <http://hl7.org/fhir/Patient.gender> <http://hl7.org/fhir/Patient/11.Patient.gender> .
+<http://hl7.org/fhir/Patient/11> <http://hl7.org/fhir/Patient.identifier> <http://hl7.org/fhir/Patient/11.Patient.identifier_0> .
+<http://hl7.org/fhir/Patient/11> <http://hl7.org/fhir/Patient.managingOrganization> <http://hl7.org/fhir/Patient/11.Patient.managingOrganization> .
+<http://hl7.org/fhir/Patient/11> <http://hl7.org/fhir/Patient.name> <http://hl7.org/fhir/Patient/11.Patient.name_0> .
+<http://hl7.org/fhir/Patient/11> <http://hl7.org/fhir/Patient.telecom> <http://hl7.org/fhir/Patient/11.Patient.telecom_0> .
+<http://hl7.org/fhir/Patient/11> <http://hl7.org/fhir/Resource.id> <http://hl7.org/fhir/Patient/11.Resource.id> .
+<http://hl7.org/fhir/Patient/11> <http://hl7.org/fhir/Resource.meta> <http://hl7.org/fhir/Patient/11.Resource.meta> .
+<http://hl7.org/fhir/Patient/11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/Patient> .----------------------------------------
+
+Subject http://hl7.org/fhir/Patient/2 DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/Patient/2.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
+<http://hl7.org/fhir/Patient/2.DomainResource.text> <http://hl7.org/fhir/Narrative.div> "<div xmlns=\"http://www.w3.org/1999/xhtml\">Everyman, Adam. SSN:\n            444333333</div>" .
+<http://hl7.org/fhir/Patient/2.DomainResource.text> <http://hl7.org/fhir/Narrative.status> <http://hl7.org/fhir/Patient/2.DomainResource.text.Narrative.status> .
+<http://hl7.org/fhir/Patient/2.Patient.active> <http://hl7.org/fhir/value> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://hl7.org/fhir/Patient/2.Patient.address_0.Address.line_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Patient/2.Patient.address_0.Address.line_0> <http://hl7.org/fhir/value> "2222 Home Street" .
+<http://hl7.org/fhir/Patient/2.Patient.address_0.Address.use> <http://hl7.org/fhir/value> "home" .
+<http://hl7.org/fhir/Patient/2.Patient.address_0> <http://hl7.org/fhir/Address.line> <http://hl7.org/fhir/Patient/2.Patient.address_0.Address.line_0> .
+<http://hl7.org/fhir/Patient/2.Patient.address_0> <http://hl7.org/fhir/Address.use> <http://hl7.org/fhir/Patient/2.Patient.address_0.Address.use> .
+<http://hl7.org/fhir/Patient/2.Patient.address_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Patient/2.Patient.gender> <http://hl7.org/fhir/value> "male" .
+<http://hl7.org/fhir/Patient/2.Patient.identifier_0.Identifier.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/sid/us-ssn" .
+<http://hl7.org/fhir/Patient/2.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "SS" .
+<http://hl7.org/fhir/Patient/2.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/v2/0203" .
+<http://hl7.org/fhir/Patient/2.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Patient/2.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/Patient/2.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Patient/2.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.system> .
+<http://hl7.org/fhir/Patient/2.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Patient/2.Patient.identifier_0.Identifier.type> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Patient/2.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/Patient/2.Patient.identifier_0.Identifier.value> <http://hl7.org/fhir/value> "444333333" .
+<http://hl7.org/fhir/Patient/2.Patient.identifier_0> <http://hl7.org/fhir/Identifier.system> <http://hl7.org/fhir/Patient/2.Patient.identifier_0.Identifier.system> .
+<http://hl7.org/fhir/Patient/2.Patient.identifier_0> <http://hl7.org/fhir/Identifier.type> <http://hl7.org/fhir/Patient/2.Patient.identifier_0.Identifier.type> .
+<http://hl7.org/fhir/Patient/2.Patient.identifier_0> <http://hl7.org/fhir/Identifier.value> <http://hl7.org/fhir/Patient/2.Patient.identifier_0.Identifier.value> .
+<http://hl7.org/fhir/Patient/2.Patient.identifier_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Patient/2.Patient.managingOrganization.Reference.reference> <http://hl7.org/fhir/value> "Organization/hl7" .
+<http://hl7.org/fhir/Patient/2.Patient.managingOrganization> <http://hl7.org/fhir/Reference.reference> <http://hl7.org/fhir/Patient/2.Patient.managingOrganization.Reference.reference> .
+<http://hl7.org/fhir/Patient/2.Patient.managingOrganization> <http://hl7.org/fhir/link> <http://hl7.org/fhir/Organization/hl7> .
+<http://hl7.org/fhir/Patient/2.Patient.name_0.HumanName.family> <http://hl7.org/fhir/value> "Everyman" .
+<http://hl7.org/fhir/Patient/2.Patient.name_0.HumanName.given_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Patient/2.Patient.name_0.HumanName.given_0> <http://hl7.org/fhir/value> "Adam" .
+<http://hl7.org/fhir/Patient/2.Patient.name_0.HumanName.use> <http://hl7.org/fhir/value> "official" .
+<http://hl7.org/fhir/Patient/2.Patient.name_0> <http://hl7.org/fhir/HumanName.family> <http://hl7.org/fhir/Patient/2.Patient.name_0.HumanName.family> .
+<http://hl7.org/fhir/Patient/2.Patient.name_0> <http://hl7.org/fhir/HumanName.given> <http://hl7.org/fhir/Patient/2.Patient.name_0.HumanName.given_0> .
+<http://hl7.org/fhir/Patient/2.Patient.name_0> <http://hl7.org/fhir/HumanName.use> <http://hl7.org/fhir/Patient/2.Patient.name_0.HumanName.use> .
+<http://hl7.org/fhir/Patient/2.Patient.name_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Patient/2.Patient.telecom_0.ContactPoint.system> <http://hl7.org/fhir/value> "phone" .
+<http://hl7.org/fhir/Patient/2.Patient.telecom_0.ContactPoint.use> <http://hl7.org/fhir/value> "work" .
+<http://hl7.org/fhir/Patient/2.Patient.telecom_0.ContactPoint.value> <http://hl7.org/fhir/value> "555-555-2004" .
+<http://hl7.org/fhir/Patient/2.Patient.telecom_0> <http://hl7.org/fhir/ContactPoint.system> <http://hl7.org/fhir/Patient/2.Patient.telecom_0.ContactPoint.system> .
+<http://hl7.org/fhir/Patient/2.Patient.telecom_0> <http://hl7.org/fhir/ContactPoint.use> <http://hl7.org/fhir/Patient/2.Patient.telecom_0.ContactPoint.use> .
+<http://hl7.org/fhir/Patient/2.Patient.telecom_0> <http://hl7.org/fhir/ContactPoint.value> <http://hl7.org/fhir/Patient/2.Patient.telecom_0.ContactPoint.value> .
+<http://hl7.org/fhir/Patient/2.Patient.telecom_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Patient/2.Resource.id> <http://hl7.org/fhir/value> "2" .
+<http://hl7.org/fhir/Patient/2.Resource.meta.Meta.lastUpdated> <http://hl7.org/fhir/value> "2012-05-29T23:45:32+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://hl7.org/fhir/Patient/2.Resource.meta> <http://hl7.org/fhir/Meta.lastUpdated> <http://hl7.org/fhir/Patient/2.Resource.meta.Meta.lastUpdated> .
+<http://hl7.org/fhir/Patient/2> <http://hl7.org/fhir/DomainResource.text> <http://hl7.org/fhir/Patient/2.DomainResource.text> .
+<http://hl7.org/fhir/Patient/2> <http://hl7.org/fhir/Patient.active> <http://hl7.org/fhir/Patient/2.Patient.active> .
+<http://hl7.org/fhir/Patient/2> <http://hl7.org/fhir/Patient.address> <http://hl7.org/fhir/Patient/2.Patient.address_0> .
+<http://hl7.org/fhir/Patient/2> <http://hl7.org/fhir/Patient.gender> <http://hl7.org/fhir/Patient/2.Patient.gender> .
+<http://hl7.org/fhir/Patient/2> <http://hl7.org/fhir/Patient.identifier> <http://hl7.org/fhir/Patient/2.Patient.identifier_0> .
+<http://hl7.org/fhir/Patient/2> <http://hl7.org/fhir/Patient.managingOrganization> <http://hl7.org/fhir/Patient/2.Patient.managingOrganization> .
+<http://hl7.org/fhir/Patient/2> <http://hl7.org/fhir/Patient.name> <http://hl7.org/fhir/Patient/2.Patient.name_0> .
+<http://hl7.org/fhir/Patient/2> <http://hl7.org/fhir/Patient.telecom> <http://hl7.org/fhir/Patient/2.Patient.telecom_0> .
+<http://hl7.org/fhir/Patient/2> <http://hl7.org/fhir/Resource.id> <http://hl7.org/fhir/Patient/2.Resource.id> .
+<http://hl7.org/fhir/Patient/2> <http://hl7.org/fhir/Resource.meta> <http://hl7.org/fhir/Patient/2.Resource.meta> .
+<http://hl7.org/fhir/Patient/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/Patient> .----------------------------------------
+
+Subject http://hl7.org/fhir/Patient/12 DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/Patient/12.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
+<http://hl7.org/fhir/Patient/12.DomainResource.text> <http://hl7.org/fhir/Narrative.div> "<div xmlns=\"http://www.w3.org/1999/xhtml\">Contact, Carrie. SSN:\n            555222222</div>" .
+<http://hl7.org/fhir/Patient/12.DomainResource.text> <http://hl7.org/fhir/Narrative.status> <http://hl7.org/fhir/Patient/12.DomainResource.text.Narrative.status> .
+<http://hl7.org/fhir/Patient/12.Patient.active> <http://hl7.org/fhir/value> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://hl7.org/fhir/Patient/12.Patient.address_0.Address.line_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Patient/12.Patient.address_0.Address.line_0> <http://hl7.org/fhir/value> "5555 Home Street" .
+<http://hl7.org/fhir/Patient/12.Patient.address_0.Address.use> <http://hl7.org/fhir/value> "home" .
+<http://hl7.org/fhir/Patient/12.Patient.address_0> <http://hl7.org/fhir/Address.line> <http://hl7.org/fhir/Patient/12.Patient.address_0.Address.line_0> .
+<http://hl7.org/fhir/Patient/12.Patient.address_0> <http://hl7.org/fhir/Address.use> <http://hl7.org/fhir/Patient/12.Patient.address_0.Address.use> .
+<http://hl7.org/fhir/Patient/12.Patient.address_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Patient/12.Patient.gender> <http://hl7.org/fhir/value> "female" .
+<http://hl7.org/fhir/Patient/12.Patient.identifier_0.Identifier.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/sid/us-ssn" .
+<http://hl7.org/fhir/Patient/12.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "SS" .
+<http://hl7.org/fhir/Patient/12.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/v2/0203" .
+<http://hl7.org/fhir/Patient/12.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Patient/12.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/Patient/12.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Patient/12.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.system> .
+<http://hl7.org/fhir/Patient/12.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Patient/12.Patient.identifier_0.Identifier.type> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Patient/12.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/Patient/12.Patient.identifier_0.Identifier.value> <http://hl7.org/fhir/value> "555222222" .
+<http://hl7.org/fhir/Patient/12.Patient.identifier_0> <http://hl7.org/fhir/Identifier.system> <http://hl7.org/fhir/Patient/12.Patient.identifier_0.Identifier.system> .
+<http://hl7.org/fhir/Patient/12.Patient.identifier_0> <http://hl7.org/fhir/Identifier.type> <http://hl7.org/fhir/Patient/12.Patient.identifier_0.Identifier.type> .
+<http://hl7.org/fhir/Patient/12.Patient.identifier_0> <http://hl7.org/fhir/Identifier.value> <http://hl7.org/fhir/Patient/12.Patient.identifier_0.Identifier.value> .
+<http://hl7.org/fhir/Patient/12.Patient.identifier_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Patient/12.Patient.managingOrganization.Reference.reference> <http://hl7.org/fhir/value> "Organization/hl7" .
+<http://hl7.org/fhir/Patient/12.Patient.managingOrganization> <http://hl7.org/fhir/Reference.reference> <http://hl7.org/fhir/Patient/12.Patient.managingOrganization.Reference.reference> .
+<http://hl7.org/fhir/Patient/12.Patient.managingOrganization> <http://hl7.org/fhir/link> <http://hl7.org/fhir/Organization/hl7> .
+<http://hl7.org/fhir/Patient/12.Patient.name_0.HumanName.family> <http://hl7.org/fhir/value> "Contact" .
+<http://hl7.org/fhir/Patient/12.Patient.name_0.HumanName.given_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Patient/12.Patient.name_0.HumanName.given_0> <http://hl7.org/fhir/value> "Carrie" .
+<http://hl7.org/fhir/Patient/12.Patient.name_0.HumanName.use> <http://hl7.org/fhir/value> "official" .
+<http://hl7.org/fhir/Patient/12.Patient.name_0> <http://hl7.org/fhir/HumanName.family> <http://hl7.org/fhir/Patient/12.Patient.name_0.HumanName.family> .
+<http://hl7.org/fhir/Patient/12.Patient.name_0> <http://hl7.org/fhir/HumanName.given> <http://hl7.org/fhir/Patient/12.Patient.name_0.HumanName.given_0> .
+<http://hl7.org/fhir/Patient/12.Patient.name_0> <http://hl7.org/fhir/HumanName.use> <http://hl7.org/fhir/Patient/12.Patient.name_0.HumanName.use> .
+<http://hl7.org/fhir/Patient/12.Patient.name_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Patient/12.Patient.telecom_0.ContactPoint.system> <http://hl7.org/fhir/value> "phone" .
+<http://hl7.org/fhir/Patient/12.Patient.telecom_0.ContactPoint.use> <http://hl7.org/fhir/value> "work" .
+<http://hl7.org/fhir/Patient/12.Patient.telecom_0.ContactPoint.value> <http://hl7.org/fhir/value> "555-555-2010" .
+<http://hl7.org/fhir/Patient/12.Patient.telecom_0> <http://hl7.org/fhir/ContactPoint.system> <http://hl7.org/fhir/Patient/12.Patient.telecom_0.ContactPoint.system> .
+<http://hl7.org/fhir/Patient/12.Patient.telecom_0> <http://hl7.org/fhir/ContactPoint.use> <http://hl7.org/fhir/Patient/12.Patient.telecom_0.ContactPoint.use> .
+<http://hl7.org/fhir/Patient/12.Patient.telecom_0> <http://hl7.org/fhir/ContactPoint.value> <http://hl7.org/fhir/Patient/12.Patient.telecom_0.ContactPoint.value> .
+<http://hl7.org/fhir/Patient/12.Patient.telecom_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Patient/12.Resource.id> <http://hl7.org/fhir/value> "12" .
+<http://hl7.org/fhir/Patient/12.Resource.meta.Meta.lastUpdated> <http://hl7.org/fhir/value> "2012-05-29T23:45:32+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://hl7.org/fhir/Patient/12.Resource.meta> <http://hl7.org/fhir/Meta.lastUpdated> <http://hl7.org/fhir/Patient/12.Resource.meta.Meta.lastUpdated> .
+<http://hl7.org/fhir/Patient/12> <http://hl7.org/fhir/DomainResource.text> <http://hl7.org/fhir/Patient/12.DomainResource.text> .
+<http://hl7.org/fhir/Patient/12> <http://hl7.org/fhir/Patient.active> <http://hl7.org/fhir/Patient/12.Patient.active> .
+<http://hl7.org/fhir/Patient/12> <http://hl7.org/fhir/Patient.address> <http://hl7.org/fhir/Patient/12.Patient.address_0> .
+<http://hl7.org/fhir/Patient/12> <http://hl7.org/fhir/Patient.gender> <http://hl7.org/fhir/Patient/12.Patient.gender> .
+<http://hl7.org/fhir/Patient/12> <http://hl7.org/fhir/Patient.identifier> <http://hl7.org/fhir/Patient/12.Patient.identifier_0> .
+<http://hl7.org/fhir/Patient/12> <http://hl7.org/fhir/Patient.managingOrganization> <http://hl7.org/fhir/Patient/12.Patient.managingOrganization> .
+<http://hl7.org/fhir/Patient/12> <http://hl7.org/fhir/Patient.name> <http://hl7.org/fhir/Patient/12.Patient.name_0> .
+<http://hl7.org/fhir/Patient/12> <http://hl7.org/fhir/Patient.telecom> <http://hl7.org/fhir/Patient/12.Patient.telecom_0> .
+<http://hl7.org/fhir/Patient/12> <http://hl7.org/fhir/Resource.id> <http://hl7.org/fhir/Patient/12.Resource.id> .
+<http://hl7.org/fhir/Patient/12> <http://hl7.org/fhir/Resource.meta> <http://hl7.org/fhir/Patient/12.Resource.meta> .
+<http://hl7.org/fhir/Patient/12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/Patient> .----------------------------------------
+
+Subject http://hl7.org/fhir/Patient/8 DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/Patient/8.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
+<http://hl7.org/fhir/Patient/8.DomainResource.text> <http://hl7.org/fhir/Narrative.div> "<div xmlns=\"http://www.w3.org/1999/xhtml\">Mum, Martha. SSN:\n            444666666</div>" .
+<http://hl7.org/fhir/Patient/8.DomainResource.text> <http://hl7.org/fhir/Narrative.status> <http://hl7.org/fhir/Patient/8.DomainResource.text.Narrative.status> .
+<http://hl7.org/fhir/Patient/8.Patient.active> <http://hl7.org/fhir/value> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://hl7.org/fhir/Patient/8.Patient.address_0.Address.line_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Patient/8.Patient.address_0.Address.line_0> <http://hl7.org/fhir/value> "4444 Home Street" .
+<http://hl7.org/fhir/Patient/8.Patient.address_0.Address.use> <http://hl7.org/fhir/value> "home" .
+<http://hl7.org/fhir/Patient/8.Patient.address_0> <http://hl7.org/fhir/Address.line> <http://hl7.org/fhir/Patient/8.Patient.address_0.Address.line_0> .
+<http://hl7.org/fhir/Patient/8.Patient.address_0> <http://hl7.org/fhir/Address.use> <http://hl7.org/fhir/Patient/8.Patient.address_0.Address.use> .
+<http://hl7.org/fhir/Patient/8.Patient.address_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Patient/8.Patient.gender> <http://hl7.org/fhir/value> "female" .
+<http://hl7.org/fhir/Patient/8.Patient.identifier_0.Identifier.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/sid/us-ssn" .
+<http://hl7.org/fhir/Patient/8.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "SS" .
+<http://hl7.org/fhir/Patient/8.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/v2/0203" .
+<http://hl7.org/fhir/Patient/8.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Patient/8.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/Patient/8.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Patient/8.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.system> .
+<http://hl7.org/fhir/Patient/8.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Patient/8.Patient.identifier_0.Identifier.type> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Patient/8.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/Patient/8.Patient.identifier_0.Identifier.value> <http://hl7.org/fhir/value> "444666666" .
+<http://hl7.org/fhir/Patient/8.Patient.identifier_0> <http://hl7.org/fhir/Identifier.system> <http://hl7.org/fhir/Patient/8.Patient.identifier_0.Identifier.system> .
+<http://hl7.org/fhir/Patient/8.Patient.identifier_0> <http://hl7.org/fhir/Identifier.type> <http://hl7.org/fhir/Patient/8.Patient.identifier_0.Identifier.type> .
+<http://hl7.org/fhir/Patient/8.Patient.identifier_0> <http://hl7.org/fhir/Identifier.value> <http://hl7.org/fhir/Patient/8.Patient.identifier_0.Identifier.value> .
+<http://hl7.org/fhir/Patient/8.Patient.identifier_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Patient/8.Patient.managingOrganization.Reference.reference> <http://hl7.org/fhir/value> "Organization/hl7" .
+<http://hl7.org/fhir/Patient/8.Patient.managingOrganization> <http://hl7.org/fhir/Reference.reference> <http://hl7.org/fhir/Patient/8.Patient.managingOrganization.Reference.reference> .
+<http://hl7.org/fhir/Patient/8.Patient.managingOrganization> <http://hl7.org/fhir/link> <http://hl7.org/fhir/Organization/hl7> .
+<http://hl7.org/fhir/Patient/8.Patient.name_0.HumanName.family> <http://hl7.org/fhir/value> "Mum" .
+<http://hl7.org/fhir/Patient/8.Patient.name_0.HumanName.given_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Patient/8.Patient.name_0.HumanName.given_0> <http://hl7.org/fhir/value> "Martha" .
+<http://hl7.org/fhir/Patient/8.Patient.name_0.HumanName.use> <http://hl7.org/fhir/value> "official" .
+<http://hl7.org/fhir/Patient/8.Patient.name_0> <http://hl7.org/fhir/HumanName.family> <http://hl7.org/fhir/Patient/8.Patient.name_0.HumanName.family> .
+<http://hl7.org/fhir/Patient/8.Patient.name_0> <http://hl7.org/fhir/HumanName.given> <http://hl7.org/fhir/Patient/8.Patient.name_0.HumanName.given_0> .
+<http://hl7.org/fhir/Patient/8.Patient.name_0> <http://hl7.org/fhir/HumanName.use> <http://hl7.org/fhir/Patient/8.Patient.name_0.HumanName.use> .
+<http://hl7.org/fhir/Patient/8.Patient.name_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Patient/8.Patient.telecom_0.ContactPoint.system> <http://hl7.org/fhir/value> "phone" .
+<http://hl7.org/fhir/Patient/8.Patient.telecom_0.ContactPoint.use> <http://hl7.org/fhir/value> "work" .
+<http://hl7.org/fhir/Patient/8.Patient.telecom_0.ContactPoint.value> <http://hl7.org/fhir/value> "555-555-2006" .
+<http://hl7.org/fhir/Patient/8.Patient.telecom_0> <http://hl7.org/fhir/ContactPoint.system> <http://hl7.org/fhir/Patient/8.Patient.telecom_0.ContactPoint.system> .
+<http://hl7.org/fhir/Patient/8.Patient.telecom_0> <http://hl7.org/fhir/ContactPoint.use> <http://hl7.org/fhir/Patient/8.Patient.telecom_0.ContactPoint.use> .
+<http://hl7.org/fhir/Patient/8.Patient.telecom_0> <http://hl7.org/fhir/ContactPoint.value> <http://hl7.org/fhir/Patient/8.Patient.telecom_0.ContactPoint.value> .
+<http://hl7.org/fhir/Patient/8.Patient.telecom_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Patient/8.Resource.id> <http://hl7.org/fhir/value> "8" .
+<http://hl7.org/fhir/Patient/8.Resource.meta.Meta.lastUpdated> <http://hl7.org/fhir/value> "2012-05-29T23:45:32+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://hl7.org/fhir/Patient/8.Resource.meta> <http://hl7.org/fhir/Meta.lastUpdated> <http://hl7.org/fhir/Patient/8.Resource.meta.Meta.lastUpdated> .
+<http://hl7.org/fhir/Patient/8> <http://hl7.org/fhir/DomainResource.text> <http://hl7.org/fhir/Patient/8.DomainResource.text> .
+<http://hl7.org/fhir/Patient/8> <http://hl7.org/fhir/Patient.active> <http://hl7.org/fhir/Patient/8.Patient.active> .
+<http://hl7.org/fhir/Patient/8> <http://hl7.org/fhir/Patient.address> <http://hl7.org/fhir/Patient/8.Patient.address_0> .
+<http://hl7.org/fhir/Patient/8> <http://hl7.org/fhir/Patient.gender> <http://hl7.org/fhir/Patient/8.Patient.gender> .
+<http://hl7.org/fhir/Patient/8> <http://hl7.org/fhir/Patient.identifier> <http://hl7.org/fhir/Patient/8.Patient.identifier_0> .
+<http://hl7.org/fhir/Patient/8> <http://hl7.org/fhir/Patient.managingOrganization> <http://hl7.org/fhir/Patient/8.Patient.managingOrganization> .
+<http://hl7.org/fhir/Patient/8> <http://hl7.org/fhir/Patient.name> <http://hl7.org/fhir/Patient/8.Patient.name_0> .
+<http://hl7.org/fhir/Patient/8> <http://hl7.org/fhir/Patient.telecom> <http://hl7.org/fhir/Patient/8.Patient.telecom_0> .
+<http://hl7.org/fhir/Patient/8> <http://hl7.org/fhir/Resource.id> <http://hl7.org/fhir/Patient/8.Resource.id> .
+<http://hl7.org/fhir/Patient/8> <http://hl7.org/fhir/Resource.meta> <http://hl7.org/fhir/Patient/8.Resource.meta> .
+<http://hl7.org/fhir/Patient/8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/Patient> .----------------------------------------
+
+Subject http://hl7.org/fhir/Patient/3 DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/Patient/3.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
+<http://hl7.org/fhir/Patient/3.DomainResource.text> <http://hl7.org/fhir/Narrative.div> "<div xmlns=\"http://www.w3.org/1999/xhtml\">Kidd, Kari. SSN:\n            444555555</div>" .
+<http://hl7.org/fhir/Patient/3.DomainResource.text> <http://hl7.org/fhir/Narrative.status> <http://hl7.org/fhir/Patient/3.DomainResource.text.Narrative.status> .
+<http://hl7.org/fhir/Patient/3.Patient.active> <http://hl7.org/fhir/value> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://hl7.org/fhir/Patient/3.Patient.address_0.Address.line_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Patient/3.Patient.address_0.Address.line_0> <http://hl7.org/fhir/value> "2222 Home Street" .
+<http://hl7.org/fhir/Patient/3.Patient.address_0.Address.use> <http://hl7.org/fhir/value> "home" .
+<http://hl7.org/fhir/Patient/3.Patient.address_0> <http://hl7.org/fhir/Address.line> <http://hl7.org/fhir/Patient/3.Patient.address_0.Address.line_0> .
+<http://hl7.org/fhir/Patient/3.Patient.address_0> <http://hl7.org/fhir/Address.use> <http://hl7.org/fhir/Patient/3.Patient.address_0.Address.use> .
+<http://hl7.org/fhir/Patient/3.Patient.address_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Patient/3.Patient.gender> <http://hl7.org/fhir/value> "female" .
+<http://hl7.org/fhir/Patient/3.Patient.identifier_0.Identifier.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/sid/us-ssn" .
+<http://hl7.org/fhir/Patient/3.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "SS" .
+<http://hl7.org/fhir/Patient/3.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/v2/0203" .
+<http://hl7.org/fhir/Patient/3.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Patient/3.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/Patient/3.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Patient/3.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.system> .
+<http://hl7.org/fhir/Patient/3.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Patient/3.Patient.identifier_0.Identifier.type> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Patient/3.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/Patient/3.Patient.identifier_0.Identifier.value> <http://hl7.org/fhir/value> "444555555" .
+<http://hl7.org/fhir/Patient/3.Patient.identifier_0> <http://hl7.org/fhir/Identifier.system> <http://hl7.org/fhir/Patient/3.Patient.identifier_0.Identifier.system> .
+<http://hl7.org/fhir/Patient/3.Patient.identifier_0> <http://hl7.org/fhir/Identifier.type> <http://hl7.org/fhir/Patient/3.Patient.identifier_0.Identifier.type> .
+<http://hl7.org/fhir/Patient/3.Patient.identifier_0> <http://hl7.org/fhir/Identifier.value> <http://hl7.org/fhir/Patient/3.Patient.identifier_0.Identifier.value> .
+<http://hl7.org/fhir/Patient/3.Patient.identifier_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Patient/3.Patient.managingOrganization.Reference.reference> <http://hl7.org/fhir/value> "Organization/hl7" .
+<http://hl7.org/fhir/Patient/3.Patient.managingOrganization> <http://hl7.org/fhir/Reference.reference> <http://hl7.org/fhir/Patient/3.Patient.managingOrganization.Reference.reference> .
+<http://hl7.org/fhir/Patient/3.Patient.managingOrganization> <http://hl7.org/fhir/link> <http://hl7.org/fhir/Organization/hl7> .
+<http://hl7.org/fhir/Patient/3.Patient.name_0.HumanName.family> <http://hl7.org/fhir/value> "Kidd" .
+<http://hl7.org/fhir/Patient/3.Patient.name_0.HumanName.given_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Patient/3.Patient.name_0.HumanName.given_0> <http://hl7.org/fhir/value> "Kari" .
+<http://hl7.org/fhir/Patient/3.Patient.name_0.HumanName.use> <http://hl7.org/fhir/value> "official" .
+<http://hl7.org/fhir/Patient/3.Patient.name_0> <http://hl7.org/fhir/HumanName.family> <http://hl7.org/fhir/Patient/3.Patient.name_0.HumanName.family> .
+<http://hl7.org/fhir/Patient/3.Patient.name_0> <http://hl7.org/fhir/HumanName.given> <http://hl7.org/fhir/Patient/3.Patient.name_0.HumanName.given_0> .
+<http://hl7.org/fhir/Patient/3.Patient.name_0> <http://hl7.org/fhir/HumanName.use> <http://hl7.org/fhir/Patient/3.Patient.name_0.HumanName.use> .
+<http://hl7.org/fhir/Patient/3.Patient.name_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Patient/3.Patient.telecom_0.ContactPoint.system> <http://hl7.org/fhir/value> "phone" .
+<http://hl7.org/fhir/Patient/3.Patient.telecom_0.ContactPoint.use> <http://hl7.org/fhir/value> "work" .
+<http://hl7.org/fhir/Patient/3.Patient.telecom_0.ContactPoint.value> <http://hl7.org/fhir/value> "555-555-2005" .
+<http://hl7.org/fhir/Patient/3.Patient.telecom_0> <http://hl7.org/fhir/ContactPoint.system> <http://hl7.org/fhir/Patient/3.Patient.telecom_0.ContactPoint.system> .
+<http://hl7.org/fhir/Patient/3.Patient.telecom_0> <http://hl7.org/fhir/ContactPoint.use> <http://hl7.org/fhir/Patient/3.Patient.telecom_0.ContactPoint.use> .
+<http://hl7.org/fhir/Patient/3.Patient.telecom_0> <http://hl7.org/fhir/ContactPoint.value> <http://hl7.org/fhir/Patient/3.Patient.telecom_0.ContactPoint.value> .
+<http://hl7.org/fhir/Patient/3.Patient.telecom_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Patient/3.Resource.id> <http://hl7.org/fhir/value> "3" .
+<http://hl7.org/fhir/Patient/3.Resource.meta.Meta.lastUpdated> <http://hl7.org/fhir/value> "2012-05-29T23:45:32+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://hl7.org/fhir/Patient/3.Resource.meta> <http://hl7.org/fhir/Meta.lastUpdated> <http://hl7.org/fhir/Patient/3.Resource.meta.Meta.lastUpdated> .
+<http://hl7.org/fhir/Patient/3> <http://hl7.org/fhir/DomainResource.text> <http://hl7.org/fhir/Patient/3.DomainResource.text> .
+<http://hl7.org/fhir/Patient/3> <http://hl7.org/fhir/Patient.active> <http://hl7.org/fhir/Patient/3.Patient.active> .
+<http://hl7.org/fhir/Patient/3> <http://hl7.org/fhir/Patient.address> <http://hl7.org/fhir/Patient/3.Patient.address_0> .
+<http://hl7.org/fhir/Patient/3> <http://hl7.org/fhir/Patient.gender> <http://hl7.org/fhir/Patient/3.Patient.gender> .
+<http://hl7.org/fhir/Patient/3> <http://hl7.org/fhir/Patient.identifier> <http://hl7.org/fhir/Patient/3.Patient.identifier_0> .
+<http://hl7.org/fhir/Patient/3> <http://hl7.org/fhir/Patient.managingOrganization> <http://hl7.org/fhir/Patient/3.Patient.managingOrganization> .
+<http://hl7.org/fhir/Patient/3> <http://hl7.org/fhir/Patient.name> <http://hl7.org/fhir/Patient/3.Patient.name_0> .
+<http://hl7.org/fhir/Patient/3> <http://hl7.org/fhir/Patient.telecom> <http://hl7.org/fhir/Patient/3.Patient.telecom_0> .
+<http://hl7.org/fhir/Patient/3> <http://hl7.org/fhir/Resource.id> <http://hl7.org/fhir/Patient/3.Resource.id> .
+<http://hl7.org/fhir/Patient/3> <http://hl7.org/fhir/Resource.meta> <http://hl7.org/fhir/Patient/3.Resource.meta> .
+<http://hl7.org/fhir/Patient/3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/Patient> .----------------------------------------
 
 Subject http://hl7.org/fhir/Bundle/b248b1b2-1686-4b94-9936-37d7a5f94b51 DIFFERENCE: ==============================
 	----> First: 
@@ -1290,122 +1406,6 @@ Subject http://hl7.org/fhir/Patient/10 DIFFERENCE: =============================
 <http://hl7.org/fhir/Patient/10> <http://hl7.org/fhir/Resource.meta> <http://hl7.org/fhir/Patient/10.Resource.meta> .
 <http://hl7.org/fhir/Patient/10> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/Patient> .----------------------------------------
 
-Subject http://hl7.org/fhir/Patient/2 DIFFERENCE: ==============================
-	----> First: 
-<http://hl7.org/fhir/Patient/2.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
-<http://hl7.org/fhir/Patient/2.DomainResource.text> <http://hl7.org/fhir/Narrative.div> "<div xmlns=\"http://www.w3.org/1999/xhtml\">Everyman, Adam. SSN:\n            444333333</div>" .
-<http://hl7.org/fhir/Patient/2.DomainResource.text> <http://hl7.org/fhir/Narrative.status> <http://hl7.org/fhir/Patient/2.DomainResource.text.Narrative.status> .
-<http://hl7.org/fhir/Patient/2.Patient.active> <http://hl7.org/fhir/value> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<http://hl7.org/fhir/Patient/2.Patient.address_0.Address.line_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Patient/2.Patient.address_0.Address.line_0> <http://hl7.org/fhir/value> "2222 Home Street" .
-<http://hl7.org/fhir/Patient/2.Patient.address_0.Address.use> <http://hl7.org/fhir/value> "home" .
-<http://hl7.org/fhir/Patient/2.Patient.address_0> <http://hl7.org/fhir/Address.line> <http://hl7.org/fhir/Patient/2.Patient.address_0.Address.line_0> .
-<http://hl7.org/fhir/Patient/2.Patient.address_0> <http://hl7.org/fhir/Address.use> <http://hl7.org/fhir/Patient/2.Patient.address_0.Address.use> .
-<http://hl7.org/fhir/Patient/2.Patient.address_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Patient/2.Patient.gender> <http://hl7.org/fhir/value> "male" .
-<http://hl7.org/fhir/Patient/2.Patient.identifier_0.Identifier.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/sid/us-ssn" .
-<http://hl7.org/fhir/Patient/2.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "SS" .
-<http://hl7.org/fhir/Patient/2.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/v2/0203" .
-<http://hl7.org/fhir/Patient/2.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Patient/2.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.code> .
-<http://hl7.org/fhir/Patient/2.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Patient/2.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.system> .
-<http://hl7.org/fhir/Patient/2.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Patient/2.Patient.identifier_0.Identifier.type> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Patient/2.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> .
-<http://hl7.org/fhir/Patient/2.Patient.identifier_0.Identifier.value> <http://hl7.org/fhir/value> "444333333" .
-<http://hl7.org/fhir/Patient/2.Patient.identifier_0> <http://hl7.org/fhir/Identifier.system> <http://hl7.org/fhir/Patient/2.Patient.identifier_0.Identifier.system> .
-<http://hl7.org/fhir/Patient/2.Patient.identifier_0> <http://hl7.org/fhir/Identifier.type> <http://hl7.org/fhir/Patient/2.Patient.identifier_0.Identifier.type> .
-<http://hl7.org/fhir/Patient/2.Patient.identifier_0> <http://hl7.org/fhir/Identifier.value> <http://hl7.org/fhir/Patient/2.Patient.identifier_0.Identifier.value> .
-<http://hl7.org/fhir/Patient/2.Patient.identifier_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Patient/2.Patient.managingOrganization.Reference.reference> <http://hl7.org/fhir/value> "Organization/hl7" .
-<http://hl7.org/fhir/Patient/2.Patient.managingOrganization> <http://hl7.org/fhir/Reference.reference> <http://hl7.org/fhir/Patient/2.Patient.managingOrganization.Reference.reference> .
-<http://hl7.org/fhir/Patient/2.Patient.managingOrganization> <http://hl7.org/fhir/link> <http://hl7.org/fhir/Organization/hl7> .
-<http://hl7.org/fhir/Patient/2.Patient.name_0.HumanName.family> <http://hl7.org/fhir/value> "Everyman" .
-<http://hl7.org/fhir/Patient/2.Patient.name_0.HumanName.given_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Patient/2.Patient.name_0.HumanName.given_0> <http://hl7.org/fhir/value> "Adam" .
-<http://hl7.org/fhir/Patient/2.Patient.name_0.HumanName.use> <http://hl7.org/fhir/value> "official" .
-<http://hl7.org/fhir/Patient/2.Patient.name_0> <http://hl7.org/fhir/HumanName.family> <http://hl7.org/fhir/Patient/2.Patient.name_0.HumanName.family> .
-<http://hl7.org/fhir/Patient/2.Patient.name_0> <http://hl7.org/fhir/HumanName.given> <http://hl7.org/fhir/Patient/2.Patient.name_0.HumanName.given_0> .
-<http://hl7.org/fhir/Patient/2.Patient.name_0> <http://hl7.org/fhir/HumanName.use> <http://hl7.org/fhir/Patient/2.Patient.name_0.HumanName.use> .
-<http://hl7.org/fhir/Patient/2.Patient.name_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Patient/2.Patient.telecom_0.ContactPoint.system> <http://hl7.org/fhir/value> "phone" .
-<http://hl7.org/fhir/Patient/2.Patient.telecom_0.ContactPoint.use> <http://hl7.org/fhir/value> "work" .
-<http://hl7.org/fhir/Patient/2.Patient.telecom_0.ContactPoint.value> <http://hl7.org/fhir/value> "555-555-2004" .
-<http://hl7.org/fhir/Patient/2.Patient.telecom_0> <http://hl7.org/fhir/ContactPoint.system> <http://hl7.org/fhir/Patient/2.Patient.telecom_0.ContactPoint.system> .
-<http://hl7.org/fhir/Patient/2.Patient.telecom_0> <http://hl7.org/fhir/ContactPoint.use> <http://hl7.org/fhir/Patient/2.Patient.telecom_0.ContactPoint.use> .
-<http://hl7.org/fhir/Patient/2.Patient.telecom_0> <http://hl7.org/fhir/ContactPoint.value> <http://hl7.org/fhir/Patient/2.Patient.telecom_0.ContactPoint.value> .
-<http://hl7.org/fhir/Patient/2.Patient.telecom_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Patient/2.Resource.id> <http://hl7.org/fhir/value> "2" .
-<http://hl7.org/fhir/Patient/2.Resource.meta.Meta.lastUpdated> <http://hl7.org/fhir/value> "2012-05-29T23:45:32+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<http://hl7.org/fhir/Patient/2.Resource.meta> <http://hl7.org/fhir/Meta.lastUpdated> <http://hl7.org/fhir/Patient/2.Resource.meta.Meta.lastUpdated> .
-<http://hl7.org/fhir/Patient/2> <http://hl7.org/fhir/DomainResource.text> <http://hl7.org/fhir/Patient/2.DomainResource.text> .
-<http://hl7.org/fhir/Patient/2> <http://hl7.org/fhir/Patient.active> <http://hl7.org/fhir/Patient/2.Patient.active> .
-<http://hl7.org/fhir/Patient/2> <http://hl7.org/fhir/Patient.address> <http://hl7.org/fhir/Patient/2.Patient.address_0> .
-<http://hl7.org/fhir/Patient/2> <http://hl7.org/fhir/Patient.gender> <http://hl7.org/fhir/Patient/2.Patient.gender> .
-<http://hl7.org/fhir/Patient/2> <http://hl7.org/fhir/Patient.identifier> <http://hl7.org/fhir/Patient/2.Patient.identifier_0> .
-<http://hl7.org/fhir/Patient/2> <http://hl7.org/fhir/Patient.managingOrganization> <http://hl7.org/fhir/Patient/2.Patient.managingOrganization> .
-<http://hl7.org/fhir/Patient/2> <http://hl7.org/fhir/Patient.name> <http://hl7.org/fhir/Patient/2.Patient.name_0> .
-<http://hl7.org/fhir/Patient/2> <http://hl7.org/fhir/Patient.telecom> <http://hl7.org/fhir/Patient/2.Patient.telecom_0> .
-<http://hl7.org/fhir/Patient/2> <http://hl7.org/fhir/Resource.id> <http://hl7.org/fhir/Patient/2.Resource.id> .
-<http://hl7.org/fhir/Patient/2> <http://hl7.org/fhir/Resource.meta> <http://hl7.org/fhir/Patient/2.Resource.meta> .
-<http://hl7.org/fhir/Patient/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/Patient> .----------------------------------------
-
-Subject http://hl7.org/fhir/Patient/6 DIFFERENCE: ==============================
-	----> First: 
-<http://hl7.org/fhir/Patient/6.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
-<http://hl7.org/fhir/Patient/6.DomainResource.text> <http://hl7.org/fhir/Narrative.div> "<div xmlns=\"http://www.w3.org/1999/xhtml\">Nuclear, Ned. SSN:\n            444113456</div>" .
-<http://hl7.org/fhir/Patient/6.DomainResource.text> <http://hl7.org/fhir/Narrative.status> <http://hl7.org/fhir/Patient/6.DomainResource.text.Narrative.status> .
-<http://hl7.org/fhir/Patient/6.Patient.active> <http://hl7.org/fhir/value> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<http://hl7.org/fhir/Patient/6.Patient.address_0.Address.line_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Patient/6.Patient.address_0.Address.line_0> <http://hl7.org/fhir/value> "6666 Home Street" .
-<http://hl7.org/fhir/Patient/6.Patient.address_0.Address.use> <http://hl7.org/fhir/value> "home" .
-<http://hl7.org/fhir/Patient/6.Patient.address_0> <http://hl7.org/fhir/Address.line> <http://hl7.org/fhir/Patient/6.Patient.address_0.Address.line_0> .
-<http://hl7.org/fhir/Patient/6.Patient.address_0> <http://hl7.org/fhir/Address.use> <http://hl7.org/fhir/Patient/6.Patient.address_0.Address.use> .
-<http://hl7.org/fhir/Patient/6.Patient.address_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Patient/6.Patient.gender> <http://hl7.org/fhir/value> "male" .
-<http://hl7.org/fhir/Patient/6.Patient.identifier_0.Identifier.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/sid/us-ssn" .
-<http://hl7.org/fhir/Patient/6.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "SS" .
-<http://hl7.org/fhir/Patient/6.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/v2/0203" .
-<http://hl7.org/fhir/Patient/6.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Patient/6.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.code> .
-<http://hl7.org/fhir/Patient/6.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Patient/6.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0.Coding.system> .
-<http://hl7.org/fhir/Patient/6.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Patient/6.Patient.identifier_0.Identifier.type> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Patient/6.Patient.identifier_0.Identifier.type.CodeableConcept.coding_0> .
-<http://hl7.org/fhir/Patient/6.Patient.identifier_0.Identifier.value> <http://hl7.org/fhir/value> "444113456" .
-<http://hl7.org/fhir/Patient/6.Patient.identifier_0> <http://hl7.org/fhir/Identifier.system> <http://hl7.org/fhir/Patient/6.Patient.identifier_0.Identifier.system> .
-<http://hl7.org/fhir/Patient/6.Patient.identifier_0> <http://hl7.org/fhir/Identifier.type> <http://hl7.org/fhir/Patient/6.Patient.identifier_0.Identifier.type> .
-<http://hl7.org/fhir/Patient/6.Patient.identifier_0> <http://hl7.org/fhir/Identifier.value> <http://hl7.org/fhir/Patient/6.Patient.identifier_0.Identifier.value> .
-<http://hl7.org/fhir/Patient/6.Patient.identifier_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Patient/6.Patient.managingOrganization.Reference.reference> <http://hl7.org/fhir/value> "Organization/hl7" .
-<http://hl7.org/fhir/Patient/6.Patient.managingOrganization> <http://hl7.org/fhir/Reference.reference> <http://hl7.org/fhir/Patient/6.Patient.managingOrganization.Reference.reference> .
-<http://hl7.org/fhir/Patient/6.Patient.managingOrganization> <http://hl7.org/fhir/link> <http://hl7.org/fhir/Organization/hl7> .
-<http://hl7.org/fhir/Patient/6.Patient.name_0.HumanName.family> <http://hl7.org/fhir/value> "Nuclear" .
-<http://hl7.org/fhir/Patient/6.Patient.name_0.HumanName.given_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Patient/6.Patient.name_0.HumanName.given_0> <http://hl7.org/fhir/value> "Ned" .
-<http://hl7.org/fhir/Patient/6.Patient.name_0.HumanName.use> <http://hl7.org/fhir/value> "official" .
-<http://hl7.org/fhir/Patient/6.Patient.name_0> <http://hl7.org/fhir/HumanName.family> <http://hl7.org/fhir/Patient/6.Patient.name_0.HumanName.family> .
-<http://hl7.org/fhir/Patient/6.Patient.name_0> <http://hl7.org/fhir/HumanName.given> <http://hl7.org/fhir/Patient/6.Patient.name_0.HumanName.given_0> .
-<http://hl7.org/fhir/Patient/6.Patient.name_0> <http://hl7.org/fhir/HumanName.use> <http://hl7.org/fhir/Patient/6.Patient.name_0.HumanName.use> .
-<http://hl7.org/fhir/Patient/6.Patient.name_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Patient/6.Patient.telecom_0.ContactPoint.system> <http://hl7.org/fhir/value> "phone" .
-<http://hl7.org/fhir/Patient/6.Patient.telecom_0.ContactPoint.use> <http://hl7.org/fhir/value> "work" .
-<http://hl7.org/fhir/Patient/6.Patient.telecom_0.ContactPoint.value> <http://hl7.org/fhir/value> "555-555-5001" .
-<http://hl7.org/fhir/Patient/6.Patient.telecom_0> <http://hl7.org/fhir/ContactPoint.system> <http://hl7.org/fhir/Patient/6.Patient.telecom_0.ContactPoint.system> .
-<http://hl7.org/fhir/Patient/6.Patient.telecom_0> <http://hl7.org/fhir/ContactPoint.use> <http://hl7.org/fhir/Patient/6.Patient.telecom_0.ContactPoint.use> .
-<http://hl7.org/fhir/Patient/6.Patient.telecom_0> <http://hl7.org/fhir/ContactPoint.value> <http://hl7.org/fhir/Patient/6.Patient.telecom_0.ContactPoint.value> .
-<http://hl7.org/fhir/Patient/6.Patient.telecom_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Patient/6.Resource.id> <http://hl7.org/fhir/value> "6" .
-<http://hl7.org/fhir/Patient/6.Resource.meta.Meta.lastUpdated> <http://hl7.org/fhir/value> "2012-05-29T23:45:32+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
-<http://hl7.org/fhir/Patient/6.Resource.meta> <http://hl7.org/fhir/Meta.lastUpdated> <http://hl7.org/fhir/Patient/6.Resource.meta.Meta.lastUpdated> .
-<http://hl7.org/fhir/Patient/6> <http://hl7.org/fhir/DomainResource.text> <http://hl7.org/fhir/Patient/6.DomainResource.text> .
-<http://hl7.org/fhir/Patient/6> <http://hl7.org/fhir/Patient.active> <http://hl7.org/fhir/Patient/6.Patient.active> .
-<http://hl7.org/fhir/Patient/6> <http://hl7.org/fhir/Patient.address> <http://hl7.org/fhir/Patient/6.Patient.address_0> .
-<http://hl7.org/fhir/Patient/6> <http://hl7.org/fhir/Patient.gender> <http://hl7.org/fhir/Patient/6.Patient.gender> .
-<http://hl7.org/fhir/Patient/6> <http://hl7.org/fhir/Patient.identifier> <http://hl7.org/fhir/Patient/6.Patient.identifier_0> .
-<http://hl7.org/fhir/Patient/6> <http://hl7.org/fhir/Patient.managingOrganization> <http://hl7.org/fhir/Patient/6.Patient.managingOrganization> .
-<http://hl7.org/fhir/Patient/6> <http://hl7.org/fhir/Patient.name> <http://hl7.org/fhir/Patient/6.Patient.name_0> .
-<http://hl7.org/fhir/Patient/6> <http://hl7.org/fhir/Patient.telecom> <http://hl7.org/fhir/Patient/6.Patient.telecom_0> .
-<http://hl7.org/fhir/Patient/6> <http://hl7.org/fhir/Resource.id> <http://hl7.org/fhir/Patient/6.Resource.id> .
-<http://hl7.org/fhir/Patient/6> <http://hl7.org/fhir/Resource.meta> <http://hl7.org/fhir/Patient/6.Resource.meta> .
-<http://hl7.org/fhir/Patient/6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/Patient> .----------------------------------------
-
 ========================================
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -1419,370 +1419,6 @@ Subject http://hl7.org/fhir/Patient/6 DIFFERENCE: ==============================
 <http://hl7.org/fhir/Bundle/b248b1b2-1686-4b94-9936-37d7a5f94b51> a fhir:Bundle ;
     fhir:nodeRole fhir:treeRoot ;
     fhir:Bundle.entry [
-        fhir:index "6"^^xsd:integer ;
-        fhir:Bundle.entry.fullUrl [
-            fhir:value "http://hl7.org/fhir/Patient/7"
-        ] ;
-        fhir:Bundle.entry.resource [
-            fhir:DomainResource.text [
-                fhir:Narrative.div """<div xmlns="http://www.w3.org/1999/xhtml">Nuclear, Nelda. SSN:
-            444112345</div>""" ;
-                fhir:Narrative.status [
-                    fhir:value "generated"
-                ]
-            ] ;
-            fhir:Patient.active [
-                fhir:value "true"^^xsd:boolean
-            ] ;
-            fhir:Patient.address [
-                fhir:index "0"^^xsd:integer ;
-                fhir:Address.line [
-                    fhir:index "0"^^xsd:integer ;
-                    fhir:value "6666 Home Street"
-                ] ;
-                fhir:Address.use [
-                    fhir:value "home"
-                ]
-            ] ;
-            fhir:Patient.gender [
-                fhir:value "female"
-            ] ;
-            fhir:Patient.identifier [
-                fhir:index "0"^^xsd:integer ;
-                fhir:Identifier.system [
-                    fhir:value "http://hl7.org/fhir/sid/us-ssn"
-                ] ;
-                fhir:Identifier.type [
-                    fhir:CodeableConcept.coding [
-                        a <http://hl7.org/fhir/v2/0203/SS> ;
-                        fhir:index "0"^^xsd:integer ;
-                        fhir:Coding.code [
-                            fhir:value "SS"
-                        ] ;
-                        fhir:Coding.system [
-                            fhir:value "http://hl7.org/fhir/v2/0203"
-                        ]
-                    ]
-                ] ;
-                fhir:Identifier.value [
-                    fhir:value "444112345"
-                ]
-            ] ;
-            fhir:Patient.managingOrganization [
-                fhir:link <http://hl7.org/fhir/Organization/hl7> ;
-                fhir:Reference.reference [
-                    fhir:value "Organization/hl7"
-                ]
-            ] ;
-            fhir:Patient.name [
-                fhir:index "0"^^xsd:integer ;
-                fhir:HumanName.family [
-                    fhir:value "Nuclear"
-                ] ;
-                fhir:HumanName.given [
-                    fhir:index "0"^^xsd:integer ;
-                    fhir:value "Nelda"
-                ] ;
-                fhir:HumanName.use [
-                    fhir:value "official"
-                ]
-            ] ;
-            fhir:Patient.telecom [
-                fhir:index "0"^^xsd:integer ;
-                fhir:ContactPoint.system [
-                    fhir:value "phone"
-                ] ;
-                fhir:ContactPoint.use [
-                    fhir:value "work"
-                ] ;
-                fhir:ContactPoint.value [
-                    fhir:value "555-555-5001"
-                ]
-            ] ;
-            fhir:Resource.id [
-                fhir:value "7"
-            ] ;
-            fhir:Resource.meta [
-                fhir:Meta.lastUpdated [
-                    fhir:value "2012-05-29T23:45:32+00:00"^^xsd:dateTime
-                ]
-            ]
-        ]
-    ],
-        [
-        fhir:index "3"^^xsd:integer ;
-        fhir:Bundle.entry.fullUrl [
-            fhir:value "http://hl7.org/fhir/Patient/4"
-        ] ;
-        fhir:Bundle.entry.resource [
-            fhir:DomainResource.text [
-                fhir:Narrative.div """<div xmlns="http://www.w3.org/1999/xhtml">Nuclear, Nancy. SSN:
-            444114567</div>""" ;
-                fhir:Narrative.status [
-                    fhir:value "generated"
-                ]
-            ] ;
-            fhir:Patient.active [
-                fhir:value "true"^^xsd:boolean
-            ] ;
-            fhir:Patient.address [
-                fhir:index "0"^^xsd:integer ;
-                fhir:Address.line [
-                    fhir:index "0"^^xsd:integer ;
-                    fhir:value "6666 Home Street"
-                ] ;
-                fhir:Address.use [
-                    fhir:value "home"
-                ]
-            ] ;
-            fhir:Patient.gender [
-                fhir:value "female"
-            ] ;
-            fhir:Patient.identifier [
-                fhir:index "0"^^xsd:integer ;
-                fhir:Identifier.system [
-                    fhir:value "http://hl7.org/fhir/sid/us-ssn"
-                ] ;
-                fhir:Identifier.type [
-                    fhir:CodeableConcept.coding [
-                        a <http://hl7.org/fhir/v2/0203/SS> ;
-                        fhir:index "0"^^xsd:integer ;
-                        fhir:Coding.code [
-                            fhir:value "SS"
-                        ] ;
-                        fhir:Coding.system [
-                            fhir:value "http://hl7.org/fhir/v2/0203"
-                        ]
-                    ]
-                ] ;
-                fhir:Identifier.value [
-                    fhir:value "444114567"
-                ]
-            ] ;
-            fhir:Patient.managingOrganization [
-                fhir:link <http://hl7.org/fhir/Organization/hl7> ;
-                fhir:Reference.reference [
-                    fhir:value "Organization/hl7"
-                ]
-            ] ;
-            fhir:Patient.name [
-                fhir:index "0"^^xsd:integer ;
-                fhir:HumanName.family [
-                    fhir:value "Nuclear"
-                ] ;
-                fhir:HumanName.given [
-                    fhir:index "0"^^xsd:integer ;
-                    fhir:value "Nancy"
-                ] ;
-                fhir:HumanName.use [
-                    fhir:value "official"
-                ]
-            ] ;
-            fhir:Patient.telecom [
-                fhir:index "0"^^xsd:integer ;
-                fhir:ContactPoint.system [
-                    fhir:value "phone"
-                ] ;
-                fhir:ContactPoint.use [
-                    fhir:value "work"
-                ] ;
-                fhir:ContactPoint.value [
-                    fhir:value "555-555-5001"
-                ]
-            ] ;
-            fhir:Resource.id [
-                fhir:value "4"
-            ] ;
-            fhir:Resource.meta [
-                fhir:Meta.lastUpdated [
-                    fhir:value "2012-05-29T23:45:32+00:00"^^xsd:dateTime
-                ]
-            ]
-        ]
-    ],
-        [
-        fhir:index "5"^^xsd:integer ;
-        fhir:Bundle.entry.fullUrl [
-            fhir:value "http://hl7.org/fhir/Patient/6"
-        ] ;
-        fhir:Bundle.entry.resource [
-            fhir:DomainResource.text [
-                fhir:Narrative.div """<div xmlns="http://www.w3.org/1999/xhtml">Nuclear, Ned. SSN:
-            444113456</div>""" ;
-                fhir:Narrative.status [
-                    fhir:value "generated"
-                ]
-            ] ;
-            fhir:Patient.active [
-                fhir:value "true"^^xsd:boolean
-            ] ;
-            fhir:Patient.address [
-                fhir:index "0"^^xsd:integer ;
-                fhir:Address.line [
-                    fhir:index "0"^^xsd:integer ;
-                    fhir:value "6666 Home Street"
-                ] ;
-                fhir:Address.use [
-                    fhir:value "home"
-                ]
-            ] ;
-            fhir:Patient.gender [
-                fhir:value "male"
-            ] ;
-            fhir:Patient.identifier [
-                fhir:index "0"^^xsd:integer ;
-                fhir:Identifier.system [
-                    fhir:value "http://hl7.org/fhir/sid/us-ssn"
-                ] ;
-                fhir:Identifier.type [
-                    fhir:CodeableConcept.coding [
-                        a <http://hl7.org/fhir/v2/0203/SS> ;
-                        fhir:index "0"^^xsd:integer ;
-                        fhir:Coding.code [
-                            fhir:value "SS"
-                        ] ;
-                        fhir:Coding.system [
-                            fhir:value "http://hl7.org/fhir/v2/0203"
-                        ]
-                    ]
-                ] ;
-                fhir:Identifier.value [
-                    fhir:value "444113456"
-                ]
-            ] ;
-            fhir:Patient.managingOrganization [
-                fhir:link <http://hl7.org/fhir/Organization/hl7> ;
-                fhir:Reference.reference [
-                    fhir:value "Organization/hl7"
-                ]
-            ] ;
-            fhir:Patient.name [
-                fhir:index "0"^^xsd:integer ;
-                fhir:HumanName.family [
-                    fhir:value "Nuclear"
-                ] ;
-                fhir:HumanName.given [
-                    fhir:index "0"^^xsd:integer ;
-                    fhir:value "Ned"
-                ] ;
-                fhir:HumanName.use [
-                    fhir:value "official"
-                ]
-            ] ;
-            fhir:Patient.telecom [
-                fhir:index "0"^^xsd:integer ;
-                fhir:ContactPoint.system [
-                    fhir:value "phone"
-                ] ;
-                fhir:ContactPoint.use [
-                    fhir:value "work"
-                ] ;
-                fhir:ContactPoint.value [
-                    fhir:value "555-555-5001"
-                ]
-            ] ;
-            fhir:Resource.id [
-                fhir:value "6"
-            ] ;
-            fhir:Resource.meta [
-                fhir:Meta.lastUpdated [
-                    fhir:value "2012-05-29T23:45:32+00:00"^^xsd:dateTime
-                ]
-            ]
-        ]
-    ],
-        [
-        fhir:index "4"^^xsd:integer ;
-        fhir:Bundle.entry.fullUrl [
-            fhir:value "http://hl7.org/fhir/Patient/5"
-        ] ;
-        fhir:Bundle.entry.resource [
-            fhir:DomainResource.text [
-                fhir:Narrative.div """<div xmlns="http://www.w3.org/1999/xhtml">Nuclear, Neville. SSN:
-            444111234</div>""" ;
-                fhir:Narrative.status [
-                    fhir:value "generated"
-                ]
-            ] ;
-            fhir:Patient.active [
-                fhir:value "true"^^xsd:boolean
-            ] ;
-            fhir:Patient.address [
-                fhir:index "0"^^xsd:integer ;
-                fhir:Address.line [
-                    fhir:index "0"^^xsd:integer ;
-                    fhir:value "6666 Home Street"
-                ] ;
-                fhir:Address.use [
-                    fhir:value "home"
-                ]
-            ] ;
-            fhir:Patient.gender [
-                fhir:value "male"
-            ] ;
-            fhir:Patient.identifier [
-                fhir:index "0"^^xsd:integer ;
-                fhir:Identifier.system [
-                    fhir:value "http://hl7.org/fhir/sid/us-ssn"
-                ] ;
-                fhir:Identifier.type [
-                    fhir:CodeableConcept.coding [
-                        a <http://hl7.org/fhir/v2/0203/SS> ;
-                        fhir:index "0"^^xsd:integer ;
-                        fhir:Coding.code [
-                            fhir:value "SS"
-                        ] ;
-                        fhir:Coding.system [
-                            fhir:value "http://hl7.org/fhir/v2/0203"
-                        ]
-                    ]
-                ] ;
-                fhir:Identifier.value [
-                    fhir:value "444111234"
-                ]
-            ] ;
-            fhir:Patient.managingOrganization [
-                fhir:link <http://hl7.org/fhir/Organization/hl7> ;
-                fhir:Reference.reference [
-                    fhir:value "Organization/hl7"
-                ]
-            ] ;
-            fhir:Patient.name [
-                fhir:index "0"^^xsd:integer ;
-                fhir:HumanName.family [
-                    fhir:value "Nuclear"
-                ] ;
-                fhir:HumanName.given [
-                    fhir:index "0"^^xsd:integer ;
-                    fhir:value "Neville"
-                ] ;
-                fhir:HumanName.use [
-                    fhir:value "official"
-                ]
-            ] ;
-            fhir:Patient.telecom [
-                fhir:index "0"^^xsd:integer ;
-                fhir:ContactPoint.system [
-                    fhir:value "phone"
-                ] ;
-                fhir:ContactPoint.use [
-                    fhir:value "work"
-                ] ;
-                fhir:ContactPoint.value [
-                    fhir:value "555-555-5001"
-                ]
-            ] ;
-            fhir:Resource.id [
-                fhir:value "5"
-            ] ;
-            fhir:Resource.meta [
-                fhir:Meta.lastUpdated [
-                    fhir:value "2012-05-29T23:45:32+00:00"^^xsd:dateTime
-                ]
-            ]
-        ]
-    ],
-        [
         fhir:index "11"^^xsd:integer ;
         fhir:Bundle.entry.fullUrl [
             fhir:value "http://hl7.org/fhir/Patient/12"
@@ -1865,279 +1501,6 @@ Subject http://hl7.org/fhir/Patient/6 DIFFERENCE: ==============================
             ] ;
             fhir:Resource.id [
                 fhir:value "12"
-            ] ;
-            fhir:Resource.meta [
-                fhir:Meta.lastUpdated [
-                    fhir:value "2012-05-29T23:45:32+00:00"^^xsd:dateTime
-                ]
-            ]
-        ]
-    ],
-        [
-        fhir:index "7"^^xsd:integer ;
-        fhir:Bundle.entry.fullUrl [
-            fhir:value "http://hl7.org/fhir/Patient/8"
-        ] ;
-        fhir:Bundle.entry.resource [
-            fhir:DomainResource.text [
-                fhir:Narrative.div """<div xmlns="http://www.w3.org/1999/xhtml">Mum, Martha. SSN:
-            444666666</div>""" ;
-                fhir:Narrative.status [
-                    fhir:value "generated"
-                ]
-            ] ;
-            fhir:Patient.active [
-                fhir:value "true"^^xsd:boolean
-            ] ;
-            fhir:Patient.address [
-                fhir:index "0"^^xsd:integer ;
-                fhir:Address.line [
-                    fhir:index "0"^^xsd:integer ;
-                    fhir:value "4444 Home Street"
-                ] ;
-                fhir:Address.use [
-                    fhir:value "home"
-                ]
-            ] ;
-            fhir:Patient.gender [
-                fhir:value "female"
-            ] ;
-            fhir:Patient.identifier [
-                fhir:index "0"^^xsd:integer ;
-                fhir:Identifier.system [
-                    fhir:value "http://hl7.org/fhir/sid/us-ssn"
-                ] ;
-                fhir:Identifier.type [
-                    fhir:CodeableConcept.coding [
-                        a <http://hl7.org/fhir/v2/0203/SS> ;
-                        fhir:index "0"^^xsd:integer ;
-                        fhir:Coding.code [
-                            fhir:value "SS"
-                        ] ;
-                        fhir:Coding.system [
-                            fhir:value "http://hl7.org/fhir/v2/0203"
-                        ]
-                    ]
-                ] ;
-                fhir:Identifier.value [
-                    fhir:value "444666666"
-                ]
-            ] ;
-            fhir:Patient.managingOrganization [
-                fhir:link <http://hl7.org/fhir/Organization/hl7> ;
-                fhir:Reference.reference [
-                    fhir:value "Organization/hl7"
-                ]
-            ] ;
-            fhir:Patient.name [
-                fhir:index "0"^^xsd:integer ;
-                fhir:HumanName.family [
-                    fhir:value "Mum"
-                ] ;
-                fhir:HumanName.given [
-                    fhir:index "0"^^xsd:integer ;
-                    fhir:value "Martha"
-                ] ;
-                fhir:HumanName.use [
-                    fhir:value "official"
-                ]
-            ] ;
-            fhir:Patient.telecom [
-                fhir:index "0"^^xsd:integer ;
-                fhir:ContactPoint.system [
-                    fhir:value "phone"
-                ] ;
-                fhir:ContactPoint.use [
-                    fhir:value "work"
-                ] ;
-                fhir:ContactPoint.value [
-                    fhir:value "555-555-2006"
-                ]
-            ] ;
-            fhir:Resource.id [
-                fhir:value "8"
-            ] ;
-            fhir:Resource.meta [
-                fhir:Meta.lastUpdated [
-                    fhir:value "2012-05-29T23:45:32+00:00"^^xsd:dateTime
-                ]
-            ]
-        ]
-    ],
-        [
-        fhir:index "2"^^xsd:integer ;
-        fhir:Bundle.entry.fullUrl [
-            fhir:value "http://hl7.org/fhir/Patient/3"
-        ] ;
-        fhir:Bundle.entry.resource [
-            fhir:DomainResource.text [
-                fhir:Narrative.div """<div xmlns="http://www.w3.org/1999/xhtml">Kidd, Kari. SSN:
-            444555555</div>""" ;
-                fhir:Narrative.status [
-                    fhir:value "generated"
-                ]
-            ] ;
-            fhir:Patient.active [
-                fhir:value "true"^^xsd:boolean
-            ] ;
-            fhir:Patient.address [
-                fhir:index "0"^^xsd:integer ;
-                fhir:Address.line [
-                    fhir:index "0"^^xsd:integer ;
-                    fhir:value "2222 Home Street"
-                ] ;
-                fhir:Address.use [
-                    fhir:value "home"
-                ]
-            ] ;
-            fhir:Patient.gender [
-                fhir:value "female"
-            ] ;
-            fhir:Patient.identifier [
-                fhir:index "0"^^xsd:integer ;
-                fhir:Identifier.system [
-                    fhir:value "http://hl7.org/fhir/sid/us-ssn"
-                ] ;
-                fhir:Identifier.type [
-                    fhir:CodeableConcept.coding [
-                        a <http://hl7.org/fhir/v2/0203/SS> ;
-                        fhir:index "0"^^xsd:integer ;
-                        fhir:Coding.code [
-                            fhir:value "SS"
-                        ] ;
-                        fhir:Coding.system [
-                            fhir:value "http://hl7.org/fhir/v2/0203"
-                        ]
-                    ]
-                ] ;
-                fhir:Identifier.value [
-                    fhir:value "444555555"
-                ]
-            ] ;
-            fhir:Patient.managingOrganization [
-                fhir:link <http://hl7.org/fhir/Organization/hl7> ;
-                fhir:Reference.reference [
-                    fhir:value "Organization/hl7"
-                ]
-            ] ;
-            fhir:Patient.name [
-                fhir:index "0"^^xsd:integer ;
-                fhir:HumanName.family [
-                    fhir:value "Kidd"
-                ] ;
-                fhir:HumanName.given [
-                    fhir:index "0"^^xsd:integer ;
-                    fhir:value "Kari"
-                ] ;
-                fhir:HumanName.use [
-                    fhir:value "official"
-                ]
-            ] ;
-            fhir:Patient.telecom [
-                fhir:index "0"^^xsd:integer ;
-                fhir:ContactPoint.system [
-                    fhir:value "phone"
-                ] ;
-                fhir:ContactPoint.use [
-                    fhir:value "work"
-                ] ;
-                fhir:ContactPoint.value [
-                    fhir:value "555-555-2005"
-                ]
-            ] ;
-            fhir:Resource.id [
-                fhir:value "3"
-            ] ;
-            fhir:Resource.meta [
-                fhir:Meta.lastUpdated [
-                    fhir:value "2012-05-29T23:45:32+00:00"^^xsd:dateTime
-                ]
-            ]
-        ]
-    ],
-        [
-        fhir:index "1"^^xsd:integer ;
-        fhir:Bundle.entry.fullUrl [
-            fhir:value "http://hl7.org/fhir/Patient/2"
-        ] ;
-        fhir:Bundle.entry.resource [
-            fhir:DomainResource.text [
-                fhir:Narrative.div """<div xmlns="http://www.w3.org/1999/xhtml">Everyman, Adam. SSN:
-            444333333</div>""" ;
-                fhir:Narrative.status [
-                    fhir:value "generated"
-                ]
-            ] ;
-            fhir:Patient.active [
-                fhir:value "true"^^xsd:boolean
-            ] ;
-            fhir:Patient.address [
-                fhir:index "0"^^xsd:integer ;
-                fhir:Address.line [
-                    fhir:index "0"^^xsd:integer ;
-                    fhir:value "2222 Home Street"
-                ] ;
-                fhir:Address.use [
-                    fhir:value "home"
-                ]
-            ] ;
-            fhir:Patient.gender [
-                fhir:value "male"
-            ] ;
-            fhir:Patient.identifier [
-                fhir:index "0"^^xsd:integer ;
-                fhir:Identifier.system [
-                    fhir:value "http://hl7.org/fhir/sid/us-ssn"
-                ] ;
-                fhir:Identifier.type [
-                    fhir:CodeableConcept.coding [
-                        a <http://hl7.org/fhir/v2/0203/SS> ;
-                        fhir:index "0"^^xsd:integer ;
-                        fhir:Coding.code [
-                            fhir:value "SS"
-                        ] ;
-                        fhir:Coding.system [
-                            fhir:value "http://hl7.org/fhir/v2/0203"
-                        ]
-                    ]
-                ] ;
-                fhir:Identifier.value [
-                    fhir:value "444333333"
-                ]
-            ] ;
-            fhir:Patient.managingOrganization [
-                fhir:link <http://hl7.org/fhir/Organization/hl7> ;
-                fhir:Reference.reference [
-                    fhir:value "Organization/hl7"
-                ]
-            ] ;
-            fhir:Patient.name [
-                fhir:index "0"^^xsd:integer ;
-                fhir:HumanName.family [
-                    fhir:value "Everyman"
-                ] ;
-                fhir:HumanName.given [
-                    fhir:index "0"^^xsd:integer ;
-                    fhir:value "Adam"
-                ] ;
-                fhir:HumanName.use [
-                    fhir:value "official"
-                ]
-            ] ;
-            fhir:Patient.telecom [
-                fhir:index "0"^^xsd:integer ;
-                fhir:ContactPoint.system [
-                    fhir:value "phone"
-                ] ;
-                fhir:ContactPoint.use [
-                    fhir:value "work"
-                ] ;
-                fhir:ContactPoint.value [
-                    fhir:value "555-555-2004"
-                ]
-            ] ;
-            fhir:Resource.id [
-                fhir:value "2"
             ] ;
             fhir:Resource.meta [
                 fhir:Meta.lastUpdated [
@@ -2261,14 +1624,14 @@ Subject http://hl7.org/fhir/Patient/6 DIFFERENCE: ==============================
         ]
     ],
         [
-        fhir:index "0"^^xsd:integer ;
+        fhir:index "2"^^xsd:integer ;
         fhir:Bundle.entry.fullUrl [
-            fhir:value "http://hl7.org/fhir/Patient/1"
+            fhir:value "http://hl7.org/fhir/Patient/3"
         ] ;
         fhir:Bundle.entry.resource [
             fhir:DomainResource.text [
-                fhir:Narrative.div """<div xmlns="http://www.w3.org/1999/xhtml">Everywoman, Eve. SSN:
-            444222222</div>""" ;
+                fhir:Narrative.div """<div xmlns="http://www.w3.org/1999/xhtml">Kidd, Kari. SSN:
+            444555555</div>""" ;
                 fhir:Narrative.status [
                     fhir:value "generated"
                 ]
@@ -2285,9 +1648,6 @@ Subject http://hl7.org/fhir/Patient/6 DIFFERENCE: ==============================
                 fhir:Address.use [
                     fhir:value "home"
                 ]
-            ] ;
-            fhir:Patient.birthDate [
-                fhir:value "1973-05-31"^^xsd:date
             ] ;
             fhir:Patient.gender [
                 fhir:value "female"
@@ -2310,7 +1670,7 @@ Subject http://hl7.org/fhir/Patient/6 DIFFERENCE: ==============================
                     ]
                 ] ;
                 fhir:Identifier.value [
-                    fhir:value "444222222"
+                    fhir:value "444555555"
                 ]
             ] ;
             fhir:Patient.managingOrganization [
@@ -2322,11 +1682,11 @@ Subject http://hl7.org/fhir/Patient/6 DIFFERENCE: ==============================
             fhir:Patient.name [
                 fhir:index "0"^^xsd:integer ;
                 fhir:HumanName.family [
-                    fhir:value "Everywoman"
+                    fhir:value "Kidd"
                 ] ;
                 fhir:HumanName.given [
                     fhir:index "0"^^xsd:integer ;
-                    fhir:value "Eve"
+                    fhir:value "Kari"
                 ] ;
                 fhir:HumanName.use [
                     fhir:value "official"
@@ -2341,11 +1701,102 @@ Subject http://hl7.org/fhir/Patient/6 DIFFERENCE: ==============================
                     fhir:value "work"
                 ] ;
                 fhir:ContactPoint.value [
-                    fhir:value "555-555-2003"
+                    fhir:value "555-555-2005"
                 ]
             ] ;
             fhir:Resource.id [
-                fhir:value "1"
+                fhir:value "3"
+            ] ;
+            fhir:Resource.meta [
+                fhir:Meta.lastUpdated [
+                    fhir:value "2012-05-29T23:45:32+00:00"^^xsd:dateTime
+                ]
+            ]
+        ]
+    ],
+        [
+        fhir:index "5"^^xsd:integer ;
+        fhir:Bundle.entry.fullUrl [
+            fhir:value "http://hl7.org/fhir/Patient/6"
+        ] ;
+        fhir:Bundle.entry.resource [
+            fhir:DomainResource.text [
+                fhir:Narrative.div """<div xmlns="http://www.w3.org/1999/xhtml">Nuclear, Ned. SSN:
+            444113456</div>""" ;
+                fhir:Narrative.status [
+                    fhir:value "generated"
+                ]
+            ] ;
+            fhir:Patient.active [
+                fhir:value "true"^^xsd:boolean
+            ] ;
+            fhir:Patient.address [
+                fhir:index "0"^^xsd:integer ;
+                fhir:Address.line [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:value "6666 Home Street"
+                ] ;
+                fhir:Address.use [
+                    fhir:value "home"
+                ]
+            ] ;
+            fhir:Patient.gender [
+                fhir:value "male"
+            ] ;
+            fhir:Patient.identifier [
+                fhir:index "0"^^xsd:integer ;
+                fhir:Identifier.system [
+                    fhir:value "http://hl7.org/fhir/sid/us-ssn"
+                ] ;
+                fhir:Identifier.type [
+                    fhir:CodeableConcept.coding [
+                        a <http://hl7.org/fhir/v2/0203/SS> ;
+                        fhir:index "0"^^xsd:integer ;
+                        fhir:Coding.code [
+                            fhir:value "SS"
+                        ] ;
+                        fhir:Coding.system [
+                            fhir:value "http://hl7.org/fhir/v2/0203"
+                        ]
+                    ]
+                ] ;
+                fhir:Identifier.value [
+                    fhir:value "444113456"
+                ]
+            ] ;
+            fhir:Patient.managingOrganization [
+                fhir:link <http://hl7.org/fhir/Organization/hl7> ;
+                fhir:Reference.reference [
+                    fhir:value "Organization/hl7"
+                ]
+            ] ;
+            fhir:Patient.name [
+                fhir:index "0"^^xsd:integer ;
+                fhir:HumanName.family [
+                    fhir:value "Nuclear"
+                ] ;
+                fhir:HumanName.given [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:value "Ned"
+                ] ;
+                fhir:HumanName.use [
+                    fhir:value "official"
+                ]
+            ] ;
+            fhir:Patient.telecom [
+                fhir:index "0"^^xsd:integer ;
+                fhir:ContactPoint.system [
+                    fhir:value "phone"
+                ] ;
+                fhir:ContactPoint.use [
+                    fhir:value "work"
+                ] ;
+                fhir:ContactPoint.value [
+                    fhir:value "555-555-5001"
+                ]
+            ] ;
+            fhir:Resource.id [
+                fhir:value "6"
             ] ;
             fhir:Resource.meta [
                 fhir:Meta.lastUpdated [
@@ -2446,6 +1897,100 @@ Subject http://hl7.org/fhir/Patient/6 DIFFERENCE: ==============================
         ]
     ],
         [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Bundle.entry.fullUrl [
+            fhir:value "http://hl7.org/fhir/Patient/1"
+        ] ;
+        fhir:Bundle.entry.resource [
+            fhir:DomainResource.text [
+                fhir:Narrative.div """<div xmlns="http://www.w3.org/1999/xhtml">Everywoman, Eve. SSN:
+            444222222</div>""" ;
+                fhir:Narrative.status [
+                    fhir:value "generated"
+                ]
+            ] ;
+            fhir:Patient.active [
+                fhir:value "true"^^xsd:boolean
+            ] ;
+            fhir:Patient.address [
+                fhir:index "0"^^xsd:integer ;
+                fhir:Address.line [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:value "2222 Home Street"
+                ] ;
+                fhir:Address.use [
+                    fhir:value "home"
+                ]
+            ] ;
+            fhir:Patient.birthDate [
+                fhir:value "1973-05-31"^^xsd:date
+            ] ;
+            fhir:Patient.gender [
+                fhir:value "female"
+            ] ;
+            fhir:Patient.identifier [
+                fhir:index "0"^^xsd:integer ;
+                fhir:Identifier.system [
+                    fhir:value "http://hl7.org/fhir/sid/us-ssn"
+                ] ;
+                fhir:Identifier.type [
+                    fhir:CodeableConcept.coding [
+                        a <http://hl7.org/fhir/v2/0203/SS> ;
+                        fhir:index "0"^^xsd:integer ;
+                        fhir:Coding.code [
+                            fhir:value "SS"
+                        ] ;
+                        fhir:Coding.system [
+                            fhir:value "http://hl7.org/fhir/v2/0203"
+                        ]
+                    ]
+                ] ;
+                fhir:Identifier.value [
+                    fhir:value "444222222"
+                ]
+            ] ;
+            fhir:Patient.managingOrganization [
+                fhir:link <http://hl7.org/fhir/Organization/hl7> ;
+                fhir:Reference.reference [
+                    fhir:value "Organization/hl7"
+                ]
+            ] ;
+            fhir:Patient.name [
+                fhir:index "0"^^xsd:integer ;
+                fhir:HumanName.family [
+                    fhir:value "Everywoman"
+                ] ;
+                fhir:HumanName.given [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:value "Eve"
+                ] ;
+                fhir:HumanName.use [
+                    fhir:value "official"
+                ]
+            ] ;
+            fhir:Patient.telecom [
+                fhir:index "0"^^xsd:integer ;
+                fhir:ContactPoint.system [
+                    fhir:value "phone"
+                ] ;
+                fhir:ContactPoint.use [
+                    fhir:value "work"
+                ] ;
+                fhir:ContactPoint.value [
+                    fhir:value "555-555-2003"
+                ]
+            ] ;
+            fhir:Resource.id [
+                fhir:value "1"
+            ] ;
+            fhir:Resource.meta [
+                fhir:Meta.lastUpdated [
+                    fhir:value "2012-05-29T23:45:32+00:00"^^xsd:dateTime
+                ]
+            ]
+        ]
+    ],
+        [
         fhir:index "9"^^xsd:integer ;
         fhir:Bundle.entry.fullUrl [
             fhir:value "http://hl7.org/fhir/Patient/10"
@@ -2528,6 +2073,461 @@ Subject http://hl7.org/fhir/Patient/6 DIFFERENCE: ==============================
             ] ;
             fhir:Resource.id [
                 fhir:value "10"
+            ] ;
+            fhir:Resource.meta [
+                fhir:Meta.lastUpdated [
+                    fhir:value "2012-05-29T23:45:32+00:00"^^xsd:dateTime
+                ]
+            ]
+        ]
+    ],
+        [
+        fhir:index "4"^^xsd:integer ;
+        fhir:Bundle.entry.fullUrl [
+            fhir:value "http://hl7.org/fhir/Patient/5"
+        ] ;
+        fhir:Bundle.entry.resource [
+            fhir:DomainResource.text [
+                fhir:Narrative.div """<div xmlns="http://www.w3.org/1999/xhtml">Nuclear, Neville. SSN:
+            444111234</div>""" ;
+                fhir:Narrative.status [
+                    fhir:value "generated"
+                ]
+            ] ;
+            fhir:Patient.active [
+                fhir:value "true"^^xsd:boolean
+            ] ;
+            fhir:Patient.address [
+                fhir:index "0"^^xsd:integer ;
+                fhir:Address.line [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:value "6666 Home Street"
+                ] ;
+                fhir:Address.use [
+                    fhir:value "home"
+                ]
+            ] ;
+            fhir:Patient.gender [
+                fhir:value "male"
+            ] ;
+            fhir:Patient.identifier [
+                fhir:index "0"^^xsd:integer ;
+                fhir:Identifier.system [
+                    fhir:value "http://hl7.org/fhir/sid/us-ssn"
+                ] ;
+                fhir:Identifier.type [
+                    fhir:CodeableConcept.coding [
+                        a <http://hl7.org/fhir/v2/0203/SS> ;
+                        fhir:index "0"^^xsd:integer ;
+                        fhir:Coding.code [
+                            fhir:value "SS"
+                        ] ;
+                        fhir:Coding.system [
+                            fhir:value "http://hl7.org/fhir/v2/0203"
+                        ]
+                    ]
+                ] ;
+                fhir:Identifier.value [
+                    fhir:value "444111234"
+                ]
+            ] ;
+            fhir:Patient.managingOrganization [
+                fhir:link <http://hl7.org/fhir/Organization/hl7> ;
+                fhir:Reference.reference [
+                    fhir:value "Organization/hl7"
+                ]
+            ] ;
+            fhir:Patient.name [
+                fhir:index "0"^^xsd:integer ;
+                fhir:HumanName.family [
+                    fhir:value "Nuclear"
+                ] ;
+                fhir:HumanName.given [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:value "Neville"
+                ] ;
+                fhir:HumanName.use [
+                    fhir:value "official"
+                ]
+            ] ;
+            fhir:Patient.telecom [
+                fhir:index "0"^^xsd:integer ;
+                fhir:ContactPoint.system [
+                    fhir:value "phone"
+                ] ;
+                fhir:ContactPoint.use [
+                    fhir:value "work"
+                ] ;
+                fhir:ContactPoint.value [
+                    fhir:value "555-555-5001"
+                ]
+            ] ;
+            fhir:Resource.id [
+                fhir:value "5"
+            ] ;
+            fhir:Resource.meta [
+                fhir:Meta.lastUpdated [
+                    fhir:value "2012-05-29T23:45:32+00:00"^^xsd:dateTime
+                ]
+            ]
+        ]
+    ],
+        [
+        fhir:index "6"^^xsd:integer ;
+        fhir:Bundle.entry.fullUrl [
+            fhir:value "http://hl7.org/fhir/Patient/7"
+        ] ;
+        fhir:Bundle.entry.resource [
+            fhir:DomainResource.text [
+                fhir:Narrative.div """<div xmlns="http://www.w3.org/1999/xhtml">Nuclear, Nelda. SSN:
+            444112345</div>""" ;
+                fhir:Narrative.status [
+                    fhir:value "generated"
+                ]
+            ] ;
+            fhir:Patient.active [
+                fhir:value "true"^^xsd:boolean
+            ] ;
+            fhir:Patient.address [
+                fhir:index "0"^^xsd:integer ;
+                fhir:Address.line [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:value "6666 Home Street"
+                ] ;
+                fhir:Address.use [
+                    fhir:value "home"
+                ]
+            ] ;
+            fhir:Patient.gender [
+                fhir:value "female"
+            ] ;
+            fhir:Patient.identifier [
+                fhir:index "0"^^xsd:integer ;
+                fhir:Identifier.system [
+                    fhir:value "http://hl7.org/fhir/sid/us-ssn"
+                ] ;
+                fhir:Identifier.type [
+                    fhir:CodeableConcept.coding [
+                        a <http://hl7.org/fhir/v2/0203/SS> ;
+                        fhir:index "0"^^xsd:integer ;
+                        fhir:Coding.code [
+                            fhir:value "SS"
+                        ] ;
+                        fhir:Coding.system [
+                            fhir:value "http://hl7.org/fhir/v2/0203"
+                        ]
+                    ]
+                ] ;
+                fhir:Identifier.value [
+                    fhir:value "444112345"
+                ]
+            ] ;
+            fhir:Patient.managingOrganization [
+                fhir:link <http://hl7.org/fhir/Organization/hl7> ;
+                fhir:Reference.reference [
+                    fhir:value "Organization/hl7"
+                ]
+            ] ;
+            fhir:Patient.name [
+                fhir:index "0"^^xsd:integer ;
+                fhir:HumanName.family [
+                    fhir:value "Nuclear"
+                ] ;
+                fhir:HumanName.given [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:value "Nelda"
+                ] ;
+                fhir:HumanName.use [
+                    fhir:value "official"
+                ]
+            ] ;
+            fhir:Patient.telecom [
+                fhir:index "0"^^xsd:integer ;
+                fhir:ContactPoint.system [
+                    fhir:value "phone"
+                ] ;
+                fhir:ContactPoint.use [
+                    fhir:value "work"
+                ] ;
+                fhir:ContactPoint.value [
+                    fhir:value "555-555-5001"
+                ]
+            ] ;
+            fhir:Resource.id [
+                fhir:value "7"
+            ] ;
+            fhir:Resource.meta [
+                fhir:Meta.lastUpdated [
+                    fhir:value "2012-05-29T23:45:32+00:00"^^xsd:dateTime
+                ]
+            ]
+        ]
+    ],
+        [
+        fhir:index "7"^^xsd:integer ;
+        fhir:Bundle.entry.fullUrl [
+            fhir:value "http://hl7.org/fhir/Patient/8"
+        ] ;
+        fhir:Bundle.entry.resource [
+            fhir:DomainResource.text [
+                fhir:Narrative.div """<div xmlns="http://www.w3.org/1999/xhtml">Mum, Martha. SSN:
+            444666666</div>""" ;
+                fhir:Narrative.status [
+                    fhir:value "generated"
+                ]
+            ] ;
+            fhir:Patient.active [
+                fhir:value "true"^^xsd:boolean
+            ] ;
+            fhir:Patient.address [
+                fhir:index "0"^^xsd:integer ;
+                fhir:Address.line [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:value "4444 Home Street"
+                ] ;
+                fhir:Address.use [
+                    fhir:value "home"
+                ]
+            ] ;
+            fhir:Patient.gender [
+                fhir:value "female"
+            ] ;
+            fhir:Patient.identifier [
+                fhir:index "0"^^xsd:integer ;
+                fhir:Identifier.system [
+                    fhir:value "http://hl7.org/fhir/sid/us-ssn"
+                ] ;
+                fhir:Identifier.type [
+                    fhir:CodeableConcept.coding [
+                        a <http://hl7.org/fhir/v2/0203/SS> ;
+                        fhir:index "0"^^xsd:integer ;
+                        fhir:Coding.code [
+                            fhir:value "SS"
+                        ] ;
+                        fhir:Coding.system [
+                            fhir:value "http://hl7.org/fhir/v2/0203"
+                        ]
+                    ]
+                ] ;
+                fhir:Identifier.value [
+                    fhir:value "444666666"
+                ]
+            ] ;
+            fhir:Patient.managingOrganization [
+                fhir:link <http://hl7.org/fhir/Organization/hl7> ;
+                fhir:Reference.reference [
+                    fhir:value "Organization/hl7"
+                ]
+            ] ;
+            fhir:Patient.name [
+                fhir:index "0"^^xsd:integer ;
+                fhir:HumanName.family [
+                    fhir:value "Mum"
+                ] ;
+                fhir:HumanName.given [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:value "Martha"
+                ] ;
+                fhir:HumanName.use [
+                    fhir:value "official"
+                ]
+            ] ;
+            fhir:Patient.telecom [
+                fhir:index "0"^^xsd:integer ;
+                fhir:ContactPoint.system [
+                    fhir:value "phone"
+                ] ;
+                fhir:ContactPoint.use [
+                    fhir:value "work"
+                ] ;
+                fhir:ContactPoint.value [
+                    fhir:value "555-555-2006"
+                ]
+            ] ;
+            fhir:Resource.id [
+                fhir:value "8"
+            ] ;
+            fhir:Resource.meta [
+                fhir:Meta.lastUpdated [
+                    fhir:value "2012-05-29T23:45:32+00:00"^^xsd:dateTime
+                ]
+            ]
+        ]
+    ],
+        [
+        fhir:index "3"^^xsd:integer ;
+        fhir:Bundle.entry.fullUrl [
+            fhir:value "http://hl7.org/fhir/Patient/4"
+        ] ;
+        fhir:Bundle.entry.resource [
+            fhir:DomainResource.text [
+                fhir:Narrative.div """<div xmlns="http://www.w3.org/1999/xhtml">Nuclear, Nancy. SSN:
+            444114567</div>""" ;
+                fhir:Narrative.status [
+                    fhir:value "generated"
+                ]
+            ] ;
+            fhir:Patient.active [
+                fhir:value "true"^^xsd:boolean
+            ] ;
+            fhir:Patient.address [
+                fhir:index "0"^^xsd:integer ;
+                fhir:Address.line [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:value "6666 Home Street"
+                ] ;
+                fhir:Address.use [
+                    fhir:value "home"
+                ]
+            ] ;
+            fhir:Patient.gender [
+                fhir:value "female"
+            ] ;
+            fhir:Patient.identifier [
+                fhir:index "0"^^xsd:integer ;
+                fhir:Identifier.system [
+                    fhir:value "http://hl7.org/fhir/sid/us-ssn"
+                ] ;
+                fhir:Identifier.type [
+                    fhir:CodeableConcept.coding [
+                        a <http://hl7.org/fhir/v2/0203/SS> ;
+                        fhir:index "0"^^xsd:integer ;
+                        fhir:Coding.code [
+                            fhir:value "SS"
+                        ] ;
+                        fhir:Coding.system [
+                            fhir:value "http://hl7.org/fhir/v2/0203"
+                        ]
+                    ]
+                ] ;
+                fhir:Identifier.value [
+                    fhir:value "444114567"
+                ]
+            ] ;
+            fhir:Patient.managingOrganization [
+                fhir:link <http://hl7.org/fhir/Organization/hl7> ;
+                fhir:Reference.reference [
+                    fhir:value "Organization/hl7"
+                ]
+            ] ;
+            fhir:Patient.name [
+                fhir:index "0"^^xsd:integer ;
+                fhir:HumanName.family [
+                    fhir:value "Nuclear"
+                ] ;
+                fhir:HumanName.given [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:value "Nancy"
+                ] ;
+                fhir:HumanName.use [
+                    fhir:value "official"
+                ]
+            ] ;
+            fhir:Patient.telecom [
+                fhir:index "0"^^xsd:integer ;
+                fhir:ContactPoint.system [
+                    fhir:value "phone"
+                ] ;
+                fhir:ContactPoint.use [
+                    fhir:value "work"
+                ] ;
+                fhir:ContactPoint.value [
+                    fhir:value "555-555-5001"
+                ]
+            ] ;
+            fhir:Resource.id [
+                fhir:value "4"
+            ] ;
+            fhir:Resource.meta [
+                fhir:Meta.lastUpdated [
+                    fhir:value "2012-05-29T23:45:32+00:00"^^xsd:dateTime
+                ]
+            ]
+        ]
+    ],
+        [
+        fhir:index "1"^^xsd:integer ;
+        fhir:Bundle.entry.fullUrl [
+            fhir:value "http://hl7.org/fhir/Patient/2"
+        ] ;
+        fhir:Bundle.entry.resource [
+            fhir:DomainResource.text [
+                fhir:Narrative.div """<div xmlns="http://www.w3.org/1999/xhtml">Everyman, Adam. SSN:
+            444333333</div>""" ;
+                fhir:Narrative.status [
+                    fhir:value "generated"
+                ]
+            ] ;
+            fhir:Patient.active [
+                fhir:value "true"^^xsd:boolean
+            ] ;
+            fhir:Patient.address [
+                fhir:index "0"^^xsd:integer ;
+                fhir:Address.line [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:value "2222 Home Street"
+                ] ;
+                fhir:Address.use [
+                    fhir:value "home"
+                ]
+            ] ;
+            fhir:Patient.gender [
+                fhir:value "male"
+            ] ;
+            fhir:Patient.identifier [
+                fhir:index "0"^^xsd:integer ;
+                fhir:Identifier.system [
+                    fhir:value "http://hl7.org/fhir/sid/us-ssn"
+                ] ;
+                fhir:Identifier.type [
+                    fhir:CodeableConcept.coding [
+                        a <http://hl7.org/fhir/v2/0203/SS> ;
+                        fhir:index "0"^^xsd:integer ;
+                        fhir:Coding.code [
+                            fhir:value "SS"
+                        ] ;
+                        fhir:Coding.system [
+                            fhir:value "http://hl7.org/fhir/v2/0203"
+                        ]
+                    ]
+                ] ;
+                fhir:Identifier.value [
+                    fhir:value "444333333"
+                ]
+            ] ;
+            fhir:Patient.managingOrganization [
+                fhir:link <http://hl7.org/fhir/Organization/hl7> ;
+                fhir:Reference.reference [
+                    fhir:value "Organization/hl7"
+                ]
+            ] ;
+            fhir:Patient.name [
+                fhir:index "0"^^xsd:integer ;
+                fhir:HumanName.family [
+                    fhir:value "Everyman"
+                ] ;
+                fhir:HumanName.given [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:value "Adam"
+                ] ;
+                fhir:HumanName.use [
+                    fhir:value "official"
+                ]
+            ] ;
+            fhir:Patient.telecom [
+                fhir:index "0"^^xsd:integer ;
+                fhir:ContactPoint.system [
+                    fhir:value "phone"
+                ] ;
+                fhir:ContactPoint.use [
+                    fhir:value "work"
+                ] ;
+                fhir:ContactPoint.value [
+                    fhir:value "555-555-2004"
+                ]
+            ] ;
+            fhir:Resource.id [
+                fhir:value "2"
             ] ;
             fhir:Resource.meta [
                 fhir:Meta.lastUpdated [

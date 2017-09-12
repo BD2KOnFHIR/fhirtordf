@@ -346,30 +346,16 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-search DIFFERENCE: ===
             ]
         ],
             [
-            fhir:index "1"^^xsd:integer ;
+            fhir:index "2"^^xsd:integer ;
             fhir:TestScript.setup.action.assert [
                 fhir:TestScript.setup.action.assert.description [
-                    fhir:value "Confirm that the request url contains the family search parameter."
+                    fhir:value "Confirm that the returned HTTP status is 200(OK)."
                 ] ;
                 fhir:TestScript.setup.action.assert.direction [
-                    fhir:value "request"
+                    fhir:value "response"
                 ] ;
-                fhir:TestScript.setup.action.assert.operator [
-                    fhir:value "contains"
-                ] ;
-                fhir:TestScript.setup.action.assert.requestURL [
-                    fhir:value "family"
-                ]
-            ]
-        ],
-            [
-            fhir:index "3"^^xsd:integer ;
-            fhir:TestScript.setup.action.assert [
-                fhir:TestScript.setup.action.assert.description [
-                    fhir:value "Confirm that the returned resource type is Bundle."
-                ] ;
-                fhir:TestScript.setup.action.assert.resource [
-                    fhir:value "Bundle"
+                fhir:TestScript.setup.action.assert.responseCode [
+                    fhir:value "200"
                 ]
             ]
         ],
@@ -385,16 +371,30 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-search DIFFERENCE: ===
             ]
         ],
             [
-            fhir:index "2"^^xsd:integer ;
+            fhir:index "3"^^xsd:integer ;
             fhir:TestScript.setup.action.assert [
                 fhir:TestScript.setup.action.assert.description [
-                    fhir:value "Confirm that the returned HTTP status is 200(OK)."
+                    fhir:value "Confirm that the returned resource type is Bundle."
+                ] ;
+                fhir:TestScript.setup.action.assert.resource [
+                    fhir:value "Bundle"
+                ]
+            ]
+        ],
+            [
+            fhir:index "1"^^xsd:integer ;
+            fhir:TestScript.setup.action.assert [
+                fhir:TestScript.setup.action.assert.description [
+                    fhir:value "Confirm that the request url contains the family search parameter."
                 ] ;
                 fhir:TestScript.setup.action.assert.direction [
-                    fhir:value "response"
+                    fhir:value "request"
                 ] ;
-                fhir:TestScript.setup.action.assert.responseCode [
-                    fhir:value "200"
+                fhir:TestScript.setup.action.assert.operator [
+                    fhir:value "contains"
+                ] ;
+                fhir:TestScript.setup.action.assert.requestURL [
+                    fhir:value "family"
                 ]
             ]
         ]
@@ -419,13 +419,35 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-search DIFFERENCE: ===
             ]
         ],
             [
-            fhir:index "5"^^xsd:integer ;
+            fhir:index "4"^^xsd:integer ;
             fhir:TestScript.test.action.assert [
                 fhir:TestScript.test.action.assert.description [
-                    fhir:value "Confirm that the returned resource type is Patient."
+                    fhir:value "Confirm that the returned HTTP status is 200(OK)."
                 ] ;
-                fhir:TestScript.test.action.assert.resource [
-                    fhir:value "Patient"
+                fhir:TestScript.test.action.assert.response [
+                    fhir:value "okay"
+                ]
+            ]
+        ],
+            [
+            fhir:index "3"^^xsd:integer ;
+            fhir:TestScript.test.action.operation [
+                fhir:TestScript.test.action.operation.accept [
+                    fhir:value "xml"
+                ] ;
+                fhir:TestScript.test.action.operation.description [
+                    fhir:value "Read the created Patient using the captured Location URL value."
+                ] ;
+                fhir:TestScript.test.action.operation.type [
+                    fhir:Coding.code [
+                        fhir:value "read"
+                    ] ;
+                    fhir:Coding.system [
+                        fhir:value "http://hl7.org/fhir/testscript-operation-codes"
+                    ]
+                ] ;
+                fhir:TestScript.test.action.operation.url [
+                    fhir:value "${PatientCreateLocation}"
                 ]
             ]
         ],
@@ -461,35 +483,13 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-search DIFFERENCE: ===
             ]
         ],
             [
-            fhir:index "3"^^xsd:integer ;
-            fhir:TestScript.test.action.operation [
-                fhir:TestScript.test.action.operation.accept [
-                    fhir:value "xml"
-                ] ;
-                fhir:TestScript.test.action.operation.description [
-                    fhir:value "Read the created Patient using the captured Location URL value."
-                ] ;
-                fhir:TestScript.test.action.operation.type [
-                    fhir:Coding.code [
-                        fhir:value "read"
-                    ] ;
-                    fhir:Coding.system [
-                        fhir:value "http://hl7.org/fhir/testscript-operation-codes"
-                    ]
-                ] ;
-                fhir:TestScript.test.action.operation.url [
-                    fhir:value "${PatientCreateLocation}"
-                ]
-            ]
-        ],
-            [
-            fhir:index "4"^^xsd:integer ;
+            fhir:index "5"^^xsd:integer ;
             fhir:TestScript.test.action.assert [
                 fhir:TestScript.test.action.assert.description [
-                    fhir:value "Confirm that the returned HTTP status is 200(OK)."
+                    fhir:value "Confirm that the returned resource type is Patient."
                 ] ;
-                fhir:TestScript.test.action.assert.response [
-                    fhir:value "okay"
+                fhir:TestScript.test.action.assert.resource [
+                    fhir:value "Patient"
                 ]
             ]
         ],
@@ -523,24 +523,13 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-search DIFFERENCE: ===
             fhir:value "02-PatientSearchDynamic"
         ] ;
         fhir:TestScript.test.action [
-            fhir:index "4"^^xsd:integer ;
+            fhir:index "1"^^xsd:integer ;
             fhir:TestScript.test.action.assert [
                 fhir:TestScript.test.action.assert.description [
-                    fhir:value "Confirm that the returned Bundle conforms to the base FHIR specification."
+                    fhir:value "Confirm that the returned HTTP status is 200(OK)."
                 ] ;
-                fhir:TestScript.test.action.assert.validateProfileId [
-                    fhir:value "bundle-profile"
-                ]
-            ]
-        ],
-            [
-            fhir:index "6"^^xsd:integer ;
-            fhir:TestScript.test.action.assert [
-                fhir:TestScript.test.action.assert.description [
-                    fhir:value "Confirm that the returned Bundle total is greater than or equal to the number of returned entries."
-                ] ;
-                fhir:TestScript.test.action.assert.expression [
-                    fhir:value "Bundle.total.toInteger() >= entry.count()"
+                fhir:TestScript.test.action.assert.response [
+                    fhir:value "okay"
                 ]
             ]
         ],
@@ -556,30 +545,13 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-search DIFFERENCE: ===
             ]
         ],
             [
-            fhir:index "1"^^xsd:integer ;
+            fhir:index "4"^^xsd:integer ;
             fhir:TestScript.test.action.assert [
                 fhir:TestScript.test.action.assert.description [
-                    fhir:value "Confirm that the returned HTTP status is 200(OK)."
+                    fhir:value "Confirm that the returned Bundle conforms to the base FHIR specification."
                 ] ;
-                fhir:TestScript.test.action.assert.response [
-                    fhir:value "okay"
-                ]
-            ]
-        ],
-            [
-            fhir:index "5"^^xsd:integer ;
-            fhir:TestScript.test.action.assert [
-                fhir:TestScript.test.action.assert.description [
-                    fhir:value "Confirm that the returned Bundle type equals 'searchset'."
-                ] ;
-                fhir:TestScript.test.action.assert.operator [
-                    fhir:value "equals"
-                ] ;
-                fhir:TestScript.test.action.assert.path [
-                    fhir:value "fhir:Bundle/fhir:type/@value"
-                ] ;
-                fhir:TestScript.test.action.assert.value [
-                    fhir:value "searchset"
+                fhir:TestScript.test.action.assert.validateProfileId [
+                    fhir:value "bundle-profile"
                 ]
             ]
         ],
@@ -618,6 +590,34 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-search DIFFERENCE: ===
                     fhir:value "Confirm that the returned format is XML."
                 ]
             ]
+        ],
+            [
+            fhir:index "5"^^xsd:integer ;
+            fhir:TestScript.test.action.assert [
+                fhir:TestScript.test.action.assert.description [
+                    fhir:value "Confirm that the returned Bundle type equals 'searchset'."
+                ] ;
+                fhir:TestScript.test.action.assert.operator [
+                    fhir:value "equals"
+                ] ;
+                fhir:TestScript.test.action.assert.path [
+                    fhir:value "fhir:Bundle/fhir:type/@value"
+                ] ;
+                fhir:TestScript.test.action.assert.value [
+                    fhir:value "searchset"
+                ]
+            ]
+        ],
+            [
+            fhir:index "6"^^xsd:integer ;
+            fhir:TestScript.test.action.assert [
+                fhir:TestScript.test.action.assert.description [
+                    fhir:value "Confirm that the returned Bundle total is greater than or equal to the number of returned entries."
+                ] ;
+                fhir:TestScript.test.action.assert.expression [
+                    fhir:value "Bundle.total.toInteger() >= entry.count()"
+                ]
+            ]
         ] ;
         fhir:TestScript.test.description [
             fhir:value "Search for Patient resources using the user defined dynamic variables ${PatientSearchFamilyName} and ${PatientSearchGivenName} and validate response."
@@ -642,15 +642,15 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-search DIFFERENCE: ===
         ]
     ],
         [
-        fhir:index "2"^^xsd:integer ;
+        fhir:index "1"^^xsd:integer ;
         fhir:TestScript.variable.description [
-            fhir:value "Enter patient search criteria for a known given name on the target system"
+            fhir:value "Enter patient search criteria for a known family name on the target system"
         ] ;
         fhir:TestScript.variable.hint [
-            fhir:value "[Given name]"
+            fhir:value "[Family name]"
         ] ;
         fhir:TestScript.variable.name [
-            fhir:value "PatientSearchGivenName"
+            fhir:value "PatientSearchFamilyName"
         ]
     ],
         [
@@ -666,15 +666,15 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-search DIFFERENCE: ===
         ]
     ],
         [
-        fhir:index "1"^^xsd:integer ;
+        fhir:index "2"^^xsd:integer ;
         fhir:TestScript.variable.description [
-            fhir:value "Enter patient search criteria for a known family name on the target system"
+            fhir:value "Enter patient search criteria for a known given name on the target system"
         ] ;
         fhir:TestScript.variable.hint [
-            fhir:value "[Family name]"
+            fhir:value "[Given name]"
         ] ;
         fhir:TestScript.variable.name [
-            fhir:value "PatientSearchFamilyName"
+            fhir:value "PatientSearchGivenName"
         ]
     ] ;
     fhir:TestScript.version [

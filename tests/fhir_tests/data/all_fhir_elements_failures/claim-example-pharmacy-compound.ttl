@@ -79,6 +79,37 @@ Subject http://hl7.org/fhir/Claim/760152 DIFFERENCE: ===========================
         ]
     ] ;
     fhir:Claim.information [
+        fhir:index "2"^^xsd:integer ;
+        fhir:Claim.information.category [
+            fhir:CodeableConcept.coding [
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "pharmacyinformation"
+                ]
+            ]
+        ] ;
+        fhir:Claim.information.code [
+            fhir:CodeableConcept.coding [
+                a <http://hl7.org/fhir/pharmacy-information/dayssupply> ;
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "dayssupply"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://hl7.org/fhir/pharmacy-information"
+                ]
+            ]
+        ] ;
+        fhir:Claim.information.sequence [
+            fhir:value "3"^^xsd:positiveInteger
+        ] ;
+        fhir:Claim.information.valueQuantity [
+            fhir:Quantity.value [
+                fhir:value "10"^^xsd:decimal
+            ]
+        ]
+    ],
+        [
         fhir:index "1"^^xsd:integer ;
         fhir:Claim.information.category [
             fhir:CodeableConcept.coding [
@@ -160,37 +191,6 @@ Subject http://hl7.org/fhir/Claim/760152 DIFFERENCE: ===========================
         fhir:Claim.information.sequence [
             fhir:value "1"^^xsd:positiveInteger
         ]
-    ],
-        [
-        fhir:index "2"^^xsd:integer ;
-        fhir:Claim.information.category [
-            fhir:CodeableConcept.coding [
-                fhir:index "0"^^xsd:integer ;
-                fhir:Coding.code [
-                    fhir:value "pharmacyinformation"
-                ]
-            ]
-        ] ;
-        fhir:Claim.information.code [
-            fhir:CodeableConcept.coding [
-                a <http://hl7.org/fhir/pharmacy-information/dayssupply> ;
-                fhir:index "0"^^xsd:integer ;
-                fhir:Coding.code [
-                    fhir:value "dayssupply"
-                ] ;
-                fhir:Coding.system [
-                    fhir:value "http://hl7.org/fhir/pharmacy-information"
-                ]
-            ]
-        ] ;
-        fhir:Claim.information.sequence [
-            fhir:value "3"^^xsd:positiveInteger
-        ] ;
-        fhir:Claim.information.valueQuantity [
-            fhir:Quantity.value [
-                fhir:value "10"^^xsd:decimal
-            ]
-        ]
     ] ;
     fhir:Claim.insurance [
         fhir:index "0"^^xsd:integer ;
@@ -220,6 +220,103 @@ Subject http://hl7.org/fhir/Claim/760152 DIFFERENCE: ===========================
             fhir:value "1"^^xsd:positiveInteger
         ] ;
         fhir:Claim.item.detail [
+            fhir:index "2"^^xsd:integer ;
+            fhir:Claim.item.detail.net [
+                fhir:Quantity.code [
+                    fhir:value "USD"
+                ] ;
+                fhir:Quantity.system [
+                    fhir:value "urn:iso:std:iso:4217"
+                ] ;
+                fhir:Quantity.value [
+                    fhir:value "28.0"^^xsd:decimal
+                ]
+            ] ;
+            fhir:Claim.item.detail.quantity [
+                fhir:Quantity.unit [
+                    fhir:value "mg"
+                ] ;
+                fhir:Quantity.value [
+                    fhir:value "25"^^xsd:decimal
+                ]
+            ] ;
+            fhir:Claim.item.detail.sequence [
+                fhir:value "3"^^xsd:positiveInteger
+            ] ;
+            fhir:Claim.item.detail.service [
+                fhir:CodeableConcept.coding [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "44057"
+                    ] ;
+                    fhir:Coding.display [
+                        fhir:value "Codeine 25mg"
+                    ] ;
+                    fhir:Coding.system [
+                        fhir:value "http://localdruglist.org"
+                    ]
+                ]
+            ] ;
+            fhir:Claim.item.detail.subDetail [
+                fhir:index "0"^^xsd:integer ;
+                fhir:Claim.item.detail.subDetail.net [
+                    fhir:Quantity.code [
+                        fhir:value "USD"
+                    ] ;
+                    fhir:Quantity.system [
+                        fhir:value "urn:iso:std:iso:4217"
+                    ] ;
+                    fhir:Quantity.value [
+                        fhir:value "28.0"^^xsd:decimal
+                    ]
+                ] ;
+                fhir:Claim.item.detail.subDetail.sequence [
+                    fhir:value "1"^^xsd:positiveInteger
+                ] ;
+                fhir:Claim.item.detail.subDetail.service [
+                    fhir:CodeableConcept.coding [
+                        a <http://hl7.org/fhir/ex-pharmaservice/drugcost> ;
+                        fhir:index "0"^^xsd:integer ;
+                        fhir:Coding.code [
+                            fhir:value "drugcost"
+                        ] ;
+                        fhir:Coding.system [
+                            fhir:value "http://hl7.org/fhir/ex-pharmaservice"
+                        ]
+                    ]
+                ]
+            ]
+        ],
+            [
+            fhir:index "4"^^xsd:integer ;
+            fhir:Claim.item.detail.net [
+                fhir:Quantity.code [
+                    fhir:value "USD"
+                ] ;
+                fhir:Quantity.system [
+                    fhir:value "urn:iso:std:iso:4217"
+                ] ;
+                fhir:Quantity.value [
+                    fhir:value "60.0"^^xsd:decimal
+                ]
+            ] ;
+            fhir:Claim.item.detail.sequence [
+                fhir:value "3"^^xsd:positiveInteger
+            ] ;
+            fhir:Claim.item.detail.service [
+                fhir:CodeableConcept.coding [
+                    a <http://hl7.org/fhir/ex-pharmaservice/compoundfee> ;
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "compoundfee"
+                    ] ;
+                    fhir:Coding.system [
+                        fhir:value "http://hl7.org/fhir/ex-pharmaservice"
+                    ]
+                ]
+            ]
+        ],
+            [
             fhir:index "0"^^xsd:integer ;
             fhir:Claim.item.detail.net [
                 fhir:Quantity.code [
@@ -383,119 +480,22 @@ Subject http://hl7.org/fhir/Claim/760152 DIFFERENCE: ===========================
                     ]
                 ]
             ]
-        ],
-            [
-            fhir:index "4"^^xsd:integer ;
-            fhir:Claim.item.detail.net [
-                fhir:Quantity.code [
-                    fhir:value "USD"
-                ] ;
-                fhir:Quantity.system [
-                    fhir:value "urn:iso:std:iso:4217"
-                ] ;
-                fhir:Quantity.value [
-                    fhir:value "60.0"^^xsd:decimal
-                ]
-            ] ;
-            fhir:Claim.item.detail.sequence [
-                fhir:value "3"^^xsd:positiveInteger
-            ] ;
-            fhir:Claim.item.detail.service [
-                fhir:CodeableConcept.coding [
-                    a <http://hl7.org/fhir/ex-pharmaservice/compoundfee> ;
-                    fhir:index "0"^^xsd:integer ;
-                    fhir:Coding.code [
-                        fhir:value "compoundfee"
-                    ] ;
-                    fhir:Coding.system [
-                        fhir:value "http://hl7.org/fhir/ex-pharmaservice"
-                    ]
-                ]
-            ]
-        ],
-            [
-            fhir:index "2"^^xsd:integer ;
-            fhir:Claim.item.detail.net [
-                fhir:Quantity.code [
-                    fhir:value "USD"
-                ] ;
-                fhir:Quantity.system [
-                    fhir:value "urn:iso:std:iso:4217"
-                ] ;
-                fhir:Quantity.value [
-                    fhir:value "28.0"^^xsd:decimal
-                ]
-            ] ;
-            fhir:Claim.item.detail.quantity [
-                fhir:Quantity.unit [
-                    fhir:value "mg"
-                ] ;
-                fhir:Quantity.value [
-                    fhir:value "25"^^xsd:decimal
-                ]
-            ] ;
-            fhir:Claim.item.detail.sequence [
-                fhir:value "3"^^xsd:positiveInteger
-            ] ;
-            fhir:Claim.item.detail.service [
-                fhir:CodeableConcept.coding [
-                    fhir:index "0"^^xsd:integer ;
-                    fhir:Coding.code [
-                        fhir:value "44057"
-                    ] ;
-                    fhir:Coding.display [
-                        fhir:value "Codeine 25mg"
-                    ] ;
-                    fhir:Coding.system [
-                        fhir:value "http://localdruglist.org"
-                    ]
-                ]
-            ] ;
-            fhir:Claim.item.detail.subDetail [
-                fhir:index "0"^^xsd:integer ;
-                fhir:Claim.item.detail.subDetail.net [
-                    fhir:Quantity.code [
-                        fhir:value "USD"
-                    ] ;
-                    fhir:Quantity.system [
-                        fhir:value "urn:iso:std:iso:4217"
-                    ] ;
-                    fhir:Quantity.value [
-                        fhir:value "28.0"^^xsd:decimal
-                    ]
-                ] ;
-                fhir:Claim.item.detail.subDetail.sequence [
-                    fhir:value "1"^^xsd:positiveInteger
-                ] ;
-                fhir:Claim.item.detail.subDetail.service [
-                    fhir:CodeableConcept.coding [
-                        a <http://hl7.org/fhir/ex-pharmaservice/drugcost> ;
-                        fhir:index "0"^^xsd:integer ;
-                        fhir:Coding.code [
-                            fhir:value "drugcost"
-                        ] ;
-                        fhir:Coding.system [
-                            fhir:value "http://hl7.org/fhir/ex-pharmaservice"
-                        ]
-                    ]
-                ]
-            ]
         ] ;
         fhir:Claim.item.informationLinkId [
-            fhir:index "0"^^xsd:integer ;
-            fhir:value "1"^^xsd:positiveInteger
+            fhir:index "3"^^xsd:integer ;
+            fhir:value "4"^^xsd:positiveInteger
         ],
             [
             fhir:index "2"^^xsd:integer ;
             fhir:value "3"^^xsd:positiveInteger
         ],
             [
-            fhir:index "3"^^xsd:integer ;
-            fhir:value "4"^^xsd:positiveInteger
-        ],
-            [
             fhir:index "1"^^xsd:integer ;
             fhir:value "2"^^xsd:positiveInteger
+        ],
+            [
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "1"^^xsd:positiveInteger
         ] ;
         fhir:Claim.item.net [
             fhir:Quantity.code [

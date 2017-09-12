@@ -313,7 +313,7 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-multisystem DIFFERENCE
     ] ;
     fhir:TestScript.metadata [
         fhir:TestScript.metadata.capability [
-            fhir:index "0"^^xsd:integer ;
+            fhir:index "1"^^xsd:integer ;
             fhir:TestScript.metadata.capability.capabilities [
                 fhir:link <http://hl7.org/fhir/CapabilityStatement/example> ;
                 fhir:Reference.reference [
@@ -324,7 +324,7 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-multisystem DIFFERENCE
                 fhir:value "Patient Read Operation"
             ] ;
             fhir:TestScript.metadata.capability.destination [
-                fhir:value "1"^^xsd:integer
+                fhir:value "2"^^xsd:integer
             ] ;
             fhir:TestScript.metadata.capability.link [
                 fhir:index "0"^^xsd:integer ;
@@ -342,7 +342,7 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-multisystem DIFFERENCE
             ]
         ],
             [
-            fhir:index "1"^^xsd:integer ;
+            fhir:index "0"^^xsd:integer ;
             fhir:TestScript.metadata.capability.capabilities [
                 fhir:link <http://hl7.org/fhir/CapabilityStatement/example> ;
                 fhir:Reference.reference [
@@ -353,7 +353,7 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-multisystem DIFFERENCE
                 fhir:value "Patient Read Operation"
             ] ;
             fhir:TestScript.metadata.capability.destination [
-                fhir:value "2"^^xsd:integer
+                fhir:value "1"^^xsd:integer
             ] ;
             fhir:TestScript.metadata.capability.link [
                 fhir:index "0"^^xsd:integer ;
@@ -409,6 +409,79 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-multisystem DIFFERENCE
             fhir:value "01-ReadPatient-Destination1"
         ] ;
         fhir:TestScript.test.action [
+            fhir:index "3"^^xsd:integer ;
+            fhir:TestScript.test.action.assert [
+                fhir:TestScript.test.action.assert.description [
+                    fhir:value "Confirm that the returned HTTP status is 200(OK)."
+                ] ;
+                fhir:TestScript.test.action.assert.direction [
+                    fhir:value "response"
+                ] ;
+                fhir:TestScript.test.action.assert.response [
+                    fhir:value "okay"
+                ]
+            ]
+        ],
+            [
+            fhir:index "4"^^xsd:integer ;
+            fhir:TestScript.test.action.assert [
+                fhir:TestScript.test.action.assert.contentType [
+                    fhir:value "xml"
+                ] ;
+                fhir:TestScript.test.action.assert.description [
+                    fhir:value "Confirm that the returned format is XML."
+                ] ;
+                fhir:TestScript.test.action.assert.direction [
+                    fhir:value "response"
+                ]
+            ]
+        ],
+            [
+            fhir:index "1"^^xsd:integer ;
+            fhir:TestScript.test.action.assert [
+                fhir:TestScript.test.action.assert.description [
+                    fhir:value "Confirm that the request method GET was sent by the client system under test."
+                ] ;
+                fhir:TestScript.test.action.assert.requestMethod [
+                    fhir:value "get"
+                ]
+            ]
+        ],
+            [
+            fhir:index "2"^^xsd:integer ;
+            fhir:TestScript.test.action.assert [
+                fhir:TestScript.test.action.assert.description [
+                    fhir:value "Confirm that the client requested an Accept of xml."
+                ] ;
+                fhir:TestScript.test.action.assert.direction [
+                    fhir:value "request"
+                ] ;
+                fhir:TestScript.test.action.assert.headerField [
+                    fhir:value "Accept"
+                ] ;
+                fhir:TestScript.test.action.assert.operator [
+                    fhir:value "contains"
+                ] ;
+                fhir:TestScript.test.action.assert.value [
+                    fhir:value "xml"
+                ]
+            ]
+        ],
+            [
+            fhir:index "5"^^xsd:integer ;
+            fhir:TestScript.test.action.assert [
+                fhir:TestScript.test.action.assert.description [
+                    fhir:value "Confirm that the returned resource type is Patient."
+                ] ;
+                fhir:TestScript.test.action.assert.direction [
+                    fhir:value "response"
+                ] ;
+                fhir:TestScript.test.action.assert.resource [
+                    fhir:value "Patient"
+                ]
+            ]
+        ],
+            [
             fhir:index "0"^^xsd:integer ;
             fhir:TestScript.test.action.operation [
                 fhir:TestScript.test.action.operation.accept [
@@ -442,79 +515,6 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-multisystem DIFFERENCE
                     fhir:Coding.system [
                         fhir:value "http://hl7.org/fhir/testscript-operation-codes"
                     ]
-                ]
-            ]
-        ],
-            [
-            fhir:index "4"^^xsd:integer ;
-            fhir:TestScript.test.action.assert [
-                fhir:TestScript.test.action.assert.contentType [
-                    fhir:value "xml"
-                ] ;
-                fhir:TestScript.test.action.assert.description [
-                    fhir:value "Confirm that the returned format is XML."
-                ] ;
-                fhir:TestScript.test.action.assert.direction [
-                    fhir:value "response"
-                ]
-            ]
-        ],
-            [
-            fhir:index "3"^^xsd:integer ;
-            fhir:TestScript.test.action.assert [
-                fhir:TestScript.test.action.assert.description [
-                    fhir:value "Confirm that the returned HTTP status is 200(OK)."
-                ] ;
-                fhir:TestScript.test.action.assert.direction [
-                    fhir:value "response"
-                ] ;
-                fhir:TestScript.test.action.assert.response [
-                    fhir:value "okay"
-                ]
-            ]
-        ],
-            [
-            fhir:index "2"^^xsd:integer ;
-            fhir:TestScript.test.action.assert [
-                fhir:TestScript.test.action.assert.description [
-                    fhir:value "Confirm that the client requested an Accept of xml."
-                ] ;
-                fhir:TestScript.test.action.assert.direction [
-                    fhir:value "request"
-                ] ;
-                fhir:TestScript.test.action.assert.headerField [
-                    fhir:value "Accept"
-                ] ;
-                fhir:TestScript.test.action.assert.operator [
-                    fhir:value "contains"
-                ] ;
-                fhir:TestScript.test.action.assert.value [
-                    fhir:value "xml"
-                ]
-            ]
-        ],
-            [
-            fhir:index "1"^^xsd:integer ;
-            fhir:TestScript.test.action.assert [
-                fhir:TestScript.test.action.assert.description [
-                    fhir:value "Confirm that the request method GET was sent by the client system under test."
-                ] ;
-                fhir:TestScript.test.action.assert.requestMethod [
-                    fhir:value "get"
-                ]
-            ]
-        ],
-            [
-            fhir:index "5"^^xsd:integer ;
-            fhir:TestScript.test.action.assert [
-                fhir:TestScript.test.action.assert.description [
-                    fhir:value "Confirm that the returned resource type is Patient."
-                ] ;
-                fhir:TestScript.test.action.assert.direction [
-                    fhir:value "response"
-                ] ;
-                fhir:TestScript.test.action.assert.resource [
-                    fhir:value "Patient"
                 ]
             ]
         ] ;
@@ -574,20 +574,6 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-multisystem DIFFERENCE
             ]
         ],
             [
-            fhir:index "2"^^xsd:integer ;
-            fhir:TestScript.test.action.assert [
-                fhir:TestScript.test.action.assert.description [
-                    fhir:value "Confirm that the returned HTTP status is 200(OK)."
-                ] ;
-                fhir:TestScript.test.action.assert.direction [
-                    fhir:value "response"
-                ] ;
-                fhir:TestScript.test.action.assert.response [
-                    fhir:value "okay"
-                ]
-            ]
-        ],
-            [
             fhir:index "4"^^xsd:integer ;
             fhir:TestScript.test.action.assert [
                 fhir:TestScript.test.action.assert.description [
@@ -598,6 +584,20 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-multisystem DIFFERENCE
                 ] ;
                 fhir:TestScript.test.action.assert.resource [
                     fhir:value "Patient"
+                ]
+            ]
+        ],
+            [
+            fhir:index "3"^^xsd:integer ;
+            fhir:TestScript.test.action.assert [
+                fhir:TestScript.test.action.assert.contentType [
+                    fhir:value "xml"
+                ] ;
+                fhir:TestScript.test.action.assert.description [
+                    fhir:value "Confirm that the returned format is XML."
+                ] ;
+                fhir:TestScript.test.action.assert.direction [
+                    fhir:value "response"
                 ]
             ]
         ],
@@ -622,16 +622,16 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-multisystem DIFFERENCE
             ]
         ],
             [
-            fhir:index "3"^^xsd:integer ;
+            fhir:index "2"^^xsd:integer ;
             fhir:TestScript.test.action.assert [
-                fhir:TestScript.test.action.assert.contentType [
-                    fhir:value "xml"
-                ] ;
                 fhir:TestScript.test.action.assert.description [
-                    fhir:value "Confirm that the returned format is XML."
+                    fhir:value "Confirm that the returned HTTP status is 200(OK)."
                 ] ;
                 fhir:TestScript.test.action.assert.direction [
                     fhir:value "response"
+                ] ;
+                fhir:TestScript.test.action.assert.response [
+                    fhir:value "okay"
                 ]
             ]
         ] ;

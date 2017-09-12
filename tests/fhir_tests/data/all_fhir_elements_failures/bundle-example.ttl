@@ -1,24 +1,14 @@
 
 
-Subject https://example.com/base/MedicationRequest/3123 DIFFERENCE: ==============================
+Subject https://example.com/base/Medication/example DIFFERENCE: ==============================
 	----> First: 
-<https://example.com/base/MedicationRequest/3123.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
-<https://example.com/base/MedicationRequest/3123.DomainResource.text> <http://hl7.org/fhir/Narrative.div> "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 3123</p><p><b>intent</b>: order</p><p><b>medication</b>: <a>Medication/example</a></p><p><b>subject</b>: <a>Patient/347</a></p></div>" .
-<https://example.com/base/MedicationRequest/3123.DomainResource.text> <http://hl7.org/fhir/Narrative.status> <https://example.com/base/MedicationRequest/3123.DomainResource.text.Narrative.status> .
-<https://example.com/base/MedicationRequest/3123.MedicationRequest.intent> <http://hl7.org/fhir/value> "order" .
-<https://example.com/base/MedicationRequest/3123.MedicationRequest.medicationReference.Reference.reference> <http://hl7.org/fhir/value> "Medication/example" .
-<https://example.com/base/MedicationRequest/3123.MedicationRequest.medicationReference> <http://hl7.org/fhir/Reference.reference> <https://example.com/base/MedicationRequest/3123.MedicationRequest.medicationReference.Reference.reference> .
-<https://example.com/base/MedicationRequest/3123.MedicationRequest.medicationReference> <http://hl7.org/fhir/link> <http://hl7.org/fhir/Medication/example> .
-<https://example.com/base/MedicationRequest/3123.MedicationRequest.subject.Reference.reference> <http://hl7.org/fhir/value> "Patient/347" .
-<https://example.com/base/MedicationRequest/3123.MedicationRequest.subject> <http://hl7.org/fhir/Reference.reference> <https://example.com/base/MedicationRequest/3123.MedicationRequest.subject.Reference.reference> .
-<https://example.com/base/MedicationRequest/3123.MedicationRequest.subject> <http://hl7.org/fhir/link> <http://hl7.org/fhir/Patient/347> .
-<https://example.com/base/MedicationRequest/3123.Resource.id> <http://hl7.org/fhir/value> "3123" .
-<https://example.com/base/MedicationRequest/3123> <http://hl7.org/fhir/DomainResource.text> <https://example.com/base/MedicationRequest/3123.DomainResource.text> .
-<https://example.com/base/MedicationRequest/3123> <http://hl7.org/fhir/MedicationRequest.intent> <https://example.com/base/MedicationRequest/3123.MedicationRequest.intent> .
-<https://example.com/base/MedicationRequest/3123> <http://hl7.org/fhir/MedicationRequest.medicationReference> <https://example.com/base/MedicationRequest/3123.MedicationRequest.medicationReference> .
-<https://example.com/base/MedicationRequest/3123> <http://hl7.org/fhir/MedicationRequest.subject> <https://example.com/base/MedicationRequest/3123.MedicationRequest.subject> .
-<https://example.com/base/MedicationRequest/3123> <http://hl7.org/fhir/Resource.id> <https://example.com/base/MedicationRequest/3123.Resource.id> .
-<https://example.com/base/MedicationRequest/3123> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/MedicationRequest> .----------------------------------------
+<https://example.com/base/Medication/example.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
+<https://example.com/base/Medication/example.DomainResource.text> <http://hl7.org/fhir/Narrative.div> "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example</p></div>" .
+<https://example.com/base/Medication/example.DomainResource.text> <http://hl7.org/fhir/Narrative.status> <https://example.com/base/Medication/example.DomainResource.text.Narrative.status> .
+<https://example.com/base/Medication/example.Resource.id> <http://hl7.org/fhir/value> "example" .
+<https://example.com/base/Medication/example> <http://hl7.org/fhir/DomainResource.text> <https://example.com/base/Medication/example.DomainResource.text> .
+<https://example.com/base/Medication/example> <http://hl7.org/fhir/Resource.id> <https://example.com/base/Medication/example.Resource.id> .
+<https://example.com/base/Medication/example> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/Medication> .----------------------------------------
 
 Subject http://hl7.org/fhir/Bundle/bundle-example DIFFERENCE: ==============================
 	----> First: 
@@ -50,15 +40,25 @@ Subject http://hl7.org/fhir/Bundle/bundle-example DIFFERENCE: ==================
 <http://hl7.org/fhir/Bundle/bundle-example.Bundle.entry_1.Bundle.entry.resource> <http://hl7.org/fhir/Resource.id> <http://hl7.org/fhir/Bundle/bundle-example.Bundle.entry_1.Bundle.entry.resource.Resource.id> .
 <http://hl7.org/fhir/Bundle/bundle-example.Bundle.entry_1> <http://hl7.org/fhir/Bundle.entry.resource> <http://hl7.org/fhir/Bundle/bundle-example.Bundle.entry_1.Bundle.entry.resource> .----------------------------------------
 
-Subject https://example.com/base/Medication/example DIFFERENCE: ==============================
+Subject https://example.com/base/MedicationRequest/3123 DIFFERENCE: ==============================
 	----> First: 
-<https://example.com/base/Medication/example.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
-<https://example.com/base/Medication/example.DomainResource.text> <http://hl7.org/fhir/Narrative.div> "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example</p></div>" .
-<https://example.com/base/Medication/example.DomainResource.text> <http://hl7.org/fhir/Narrative.status> <https://example.com/base/Medication/example.DomainResource.text.Narrative.status> .
-<https://example.com/base/Medication/example.Resource.id> <http://hl7.org/fhir/value> "example" .
-<https://example.com/base/Medication/example> <http://hl7.org/fhir/DomainResource.text> <https://example.com/base/Medication/example.DomainResource.text> .
-<https://example.com/base/Medication/example> <http://hl7.org/fhir/Resource.id> <https://example.com/base/Medication/example.Resource.id> .
-<https://example.com/base/Medication/example> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/Medication> .----------------------------------------
+<https://example.com/base/MedicationRequest/3123.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
+<https://example.com/base/MedicationRequest/3123.DomainResource.text> <http://hl7.org/fhir/Narrative.div> "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: 3123</p><p><b>intent</b>: order</p><p><b>medication</b>: <a>Medication/example</a></p><p><b>subject</b>: <a>Patient/347</a></p></div>" .
+<https://example.com/base/MedicationRequest/3123.DomainResource.text> <http://hl7.org/fhir/Narrative.status> <https://example.com/base/MedicationRequest/3123.DomainResource.text.Narrative.status> .
+<https://example.com/base/MedicationRequest/3123.MedicationRequest.intent> <http://hl7.org/fhir/value> "order" .
+<https://example.com/base/MedicationRequest/3123.MedicationRequest.medicationReference.Reference.reference> <http://hl7.org/fhir/value> "Medication/example" .
+<https://example.com/base/MedicationRequest/3123.MedicationRequest.medicationReference> <http://hl7.org/fhir/Reference.reference> <https://example.com/base/MedicationRequest/3123.MedicationRequest.medicationReference.Reference.reference> .
+<https://example.com/base/MedicationRequest/3123.MedicationRequest.medicationReference> <http://hl7.org/fhir/link> <http://hl7.org/fhir/Medication/example> .
+<https://example.com/base/MedicationRequest/3123.MedicationRequest.subject.Reference.reference> <http://hl7.org/fhir/value> "Patient/347" .
+<https://example.com/base/MedicationRequest/3123.MedicationRequest.subject> <http://hl7.org/fhir/Reference.reference> <https://example.com/base/MedicationRequest/3123.MedicationRequest.subject.Reference.reference> .
+<https://example.com/base/MedicationRequest/3123.MedicationRequest.subject> <http://hl7.org/fhir/link> <http://hl7.org/fhir/Patient/347> .
+<https://example.com/base/MedicationRequest/3123.Resource.id> <http://hl7.org/fhir/value> "3123" .
+<https://example.com/base/MedicationRequest/3123> <http://hl7.org/fhir/DomainResource.text> <https://example.com/base/MedicationRequest/3123.DomainResource.text> .
+<https://example.com/base/MedicationRequest/3123> <http://hl7.org/fhir/MedicationRequest.intent> <https://example.com/base/MedicationRequest/3123.MedicationRequest.intent> .
+<https://example.com/base/MedicationRequest/3123> <http://hl7.org/fhir/MedicationRequest.medicationReference> <https://example.com/base/MedicationRequest/3123.MedicationRequest.medicationReference> .
+<https://example.com/base/MedicationRequest/3123> <http://hl7.org/fhir/MedicationRequest.subject> <https://example.com/base/MedicationRequest/3123.MedicationRequest.subject> .
+<https://example.com/base/MedicationRequest/3123> <http://hl7.org/fhir/Resource.id> <https://example.com/base/MedicationRequest/3123.Resource.id> .
+<https://example.com/base/MedicationRequest/3123> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/MedicationRequest> .----------------------------------------
 
 ========================================
 @prefix fhir: <http://hl7.org/fhir/> .
@@ -72,28 +72,6 @@ Subject https://example.com/base/Medication/example DIFFERENCE: ================
 <http://hl7.org/fhir/Bundle/bundle-example> a fhir:Bundle ;
     fhir:nodeRole fhir:treeRoot ;
     fhir:Bundle.entry [
-        fhir:index "1"^^xsd:integer ;
-        fhir:Bundle.entry.fullUrl [
-            fhir:value "https://example.com/base/Medication/example"
-        ] ;
-        fhir:Bundle.entry.resource [
-            fhir:DomainResource.text [
-                fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example</p></div>" ;
-                fhir:Narrative.status [
-                    fhir:value "generated"
-                ]
-            ] ;
-            fhir:Resource.id [
-                fhir:value "example"
-            ]
-        ] ;
-        fhir:Bundle.entry.search [
-            fhir:Bundle.entry.search.mode [
-                fhir:value "include"
-            ]
-        ]
-    ],
-        [
         fhir:index "0"^^xsd:integer ;
         fhir:Bundle.entry.fullUrl [
             fhir:value "https://example.com/base/MedicationRequest/3123"
@@ -130,6 +108,28 @@ Subject https://example.com/base/Medication/example DIFFERENCE: ================
             ] ;
             fhir:Bundle.entry.search.score [
                 fhir:value "1"^^xsd:decimal
+            ]
+        ]
+    ],
+        [
+        fhir:index "1"^^xsd:integer ;
+        fhir:Bundle.entry.fullUrl [
+            fhir:value "https://example.com/base/Medication/example"
+        ] ;
+        fhir:Bundle.entry.resource [
+            fhir:DomainResource.text [
+                fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example</p></div>" ;
+                fhir:Narrative.status [
+                    fhir:value "generated"
+                ]
+            ] ;
+            fhir:Resource.id [
+                fhir:value "example"
+            ]
+        ] ;
+        fhir:Bundle.entry.search [
+            fhir:Bundle.entry.search.mode [
+                fhir:value "include"
             ]
         ]
     ] ;

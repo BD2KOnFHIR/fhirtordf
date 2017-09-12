@@ -523,6 +523,42 @@ Subject http://hl7.org/fhir/ActivityDefinition/provide-mosquito-prevention-advic
             ]
         ],
             [
+            fhir:index "1"^^xsd:integer ;
+            fhir:PlanDefinition.action.action.condition [
+                fhir:index "0"^^xsd:integer ;
+                fhir:PlanDefinition.action.action.condition.expression [
+                    fhir:value "Should Order Serum + Urine rRT-PCR Test"
+                ] ;
+                fhir:PlanDefinition.action.action.condition.kind [
+                    fhir:value "applicability"
+                ]
+            ] ;
+            fhir:PlanDefinition.action.action.definition [
+                fhir:link <http://hl7.org/fhir/ActivityDefinition/order-serum-urine-rrt-pcr-test> ;
+                fhir:Reference.reference [
+                    fhir:value "ActivityDefinition/order-serum-urine-rrt-pcr-test"
+                ]
+            ]
+        ],
+            [
+            fhir:index "4"^^xsd:integer ;
+            fhir:PlanDefinition.action.action.action [
+                fhir:index "1"^^xsd:integer
+            ],
+                [
+                fhir:index "0"^^xsd:integer
+            ] ;
+            fhir:PlanDefinition.action.action.condition [
+                fhir:index "0"^^xsd:integer ;
+                fhir:PlanDefinition.action.action.condition.expression [
+                    fhir:value "Should Provide Mosquito Prevention and Contraception Advice"
+                ] ;
+                fhir:PlanDefinition.action.action.condition.kind [
+                    fhir:value "applicability"
+                ]
+            ]
+        ],
+            [
             fhir:index "2"^^xsd:integer ;
             fhir:PlanDefinition.action.action.condition [
                 fhir:index "0"^^xsd:integer ;
@@ -541,24 +577,6 @@ Subject http://hl7.org/fhir/ActivityDefinition/provide-mosquito-prevention-advic
             ]
         ],
             [
-            fhir:index "4"^^xsd:integer ;
-            fhir:PlanDefinition.action.action.action [
-                fhir:index "0"^^xsd:integer
-            ],
-                [
-                fhir:index "1"^^xsd:integer
-            ] ;
-            fhir:PlanDefinition.action.action.condition [
-                fhir:index "0"^^xsd:integer ;
-                fhir:PlanDefinition.action.action.condition.expression [
-                    fhir:value "Should Provide Mosquito Prevention and Contraception Advice"
-                ] ;
-                fhir:PlanDefinition.action.action.condition.kind [
-                    fhir:value "applicability"
-                ]
-            ]
-        ],
-            [
             fhir:index "0"^^xsd:integer ;
             fhir:PlanDefinition.action.action.condition [
                 fhir:index "0"^^xsd:integer ;
@@ -573,24 +591,6 @@ Subject http://hl7.org/fhir/ActivityDefinition/provide-mosquito-prevention-advic
                 fhir:link <http://hl7.org/fhir/ActivityDefinition/administer-zika-virus-exposure-assessment> ;
                 fhir:Reference.reference [
                     fhir:value "ActivityDefinition/administer-zika-virus-exposure-assessment"
-                ]
-            ]
-        ],
-            [
-            fhir:index "1"^^xsd:integer ;
-            fhir:PlanDefinition.action.action.condition [
-                fhir:index "0"^^xsd:integer ;
-                fhir:PlanDefinition.action.action.condition.expression [
-                    fhir:value "Should Order Serum + Urine rRT-PCR Test"
-                ] ;
-                fhir:PlanDefinition.action.action.condition.kind [
-                    fhir:value "applicability"
-                ]
-            ] ;
-            fhir:PlanDefinition.action.action.definition [
-                fhir:link <http://hl7.org/fhir/ActivityDefinition/order-serum-urine-rrt-pcr-test> ;
-                fhir:Reference.reference [
-                    fhir:value "ActivityDefinition/order-serum-urine-rrt-pcr-test"
                 ]
             ]
         ] ;
@@ -639,15 +639,6 @@ Subject http://hl7.org/fhir/ActivityDefinition/provide-mosquito-prevention-advic
         ]
     ] ;
     fhir:PlanDefinition.relatedArtifact [
-        fhir:index "0"^^xsd:integer ;
-        fhir:RelatedArtifact.type [
-            fhir:value "derived-from"
-        ] ;
-        fhir:RelatedArtifact.url [
-            fhir:value "https://www.cdc.gov/mmwr/volumes/65/wr/mm6539e1.htm?s_cid=mm6539e1_w"
-        ]
-    ],
-        [
         fhir:index "1"^^xsd:integer ;
         fhir:RelatedArtifact.resource [
             fhir:link <http://hl7.org/fhir/PlanDefinition/zika-virus-intervention-initial> ;
@@ -657,6 +648,15 @@ Subject http://hl7.org/fhir/ActivityDefinition/provide-mosquito-prevention-advic
         ] ;
         fhir:RelatedArtifact.type [
             fhir:value "predecessor"
+        ]
+    ],
+        [
+        fhir:index "0"^^xsd:integer ;
+        fhir:RelatedArtifact.type [
+            fhir:value "derived-from"
+        ] ;
+        fhir:RelatedArtifact.url [
+            fhir:value "https://www.cdc.gov/mmwr/volumes/65/wr/mm6539e1.htm?s_cid=mm6539e1_w"
         ]
     ] ;
     fhir:PlanDefinition.status [

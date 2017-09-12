@@ -4,11 +4,9 @@ Subject http://hl7.org/fhir/ClaimResponse/R3500 DIFFERENCE: ====================
 	----> First: 
 <http://hl7.org/fhir/ClaimResponse/R3500.ClaimResponse.item_0.ClaimResponse.item.adjudication_1.ClaimResponse.item.adjudication.amount.Quantity.value> <http://hl7.org/fhir/value> "10.00"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 <http://hl7.org/fhir/ClaimResponse/R3500.ClaimResponse.item_0.ClaimResponse.item.adjudication_2.ClaimResponse.item.adjudication.value> <http://hl7.org/fhir/value> "80.00"^^<http://www.w3.org/2001/XMLSchema#decimal> .
-<http://hl7.org/fhir/ClaimResponse/R3500.ClaimResponse.request> <http://hl7.org/fhir/link> <http://www.BenefitsInc.com/fhir/oralhealthclaim/15476332402> .
 	----> Second: 
 <http://hl7.org/fhir/ClaimResponse/R3500.ClaimResponse.item_0.ClaimResponse.item.adjudication_1.ClaimResponse.item.adjudication.amount.Quantity.value> <http://hl7.org/fhir/value> "10.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
-<http://hl7.org/fhir/ClaimResponse/R3500.ClaimResponse.item_0.ClaimResponse.item.adjudication_2.ClaimResponse.item.adjudication.value> <http://hl7.org/fhir/value> "80.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
-<http://hl7.org/fhir/ClaimResponse/R3500.ClaimResponse.request> <http://hl7.org/fhir/link> <http://hl7.org/fhir/http%3A//www.BenefitsInc.com/fhir/oralhealthclaim/15476332402> .----------------------------------------
+<http://hl7.org/fhir/ClaimResponse/R3500.ClaimResponse.item_0.ClaimResponse.item.adjudication_2.ClaimResponse.item.adjudication.value> <http://hl7.org/fhir/value> "80.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .----------------------------------------
 
 ========================================
 @prefix adjudication-reason: <http://hl7.org/fhir/adjudication-reason> .
@@ -52,6 +50,28 @@ Subject http://hl7.org/fhir/ClaimResponse/R3500 DIFFERENCE: ====================
     fhir:ClaimResponse.item [
         fhir:index "0"^^xsd:integer ;
         fhir:ClaimResponse.item.adjudication [
+            fhir:index "0"^^xsd:integer ;
+            fhir:ClaimResponse.item.adjudication.amount [
+                fhir:Quantity.code [
+                    fhir:value "USD"
+                ] ;
+                fhir:Quantity.system [
+                    fhir:value "urn:iso:std:iso:4217"
+                ] ;
+                fhir:Quantity.value [
+                    fhir:value "135.57"^^xsd:decimal
+                ]
+            ] ;
+            fhir:ClaimResponse.item.adjudication.category [
+                fhir:CodeableConcept.coding [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "eligible"
+                    ]
+                ]
+            ]
+        ],
+            [
             fhir:index "3"^^xsd:integer ;
             fhir:ClaimResponse.item.adjudication.amount [
                 fhir:Quantity.code [
@@ -123,28 +143,6 @@ Subject http://hl7.org/fhir/ClaimResponse/R3500 DIFFERENCE: ====================
             fhir:ClaimResponse.item.adjudication.value [
                 fhir:value "80.0"^^xsd:decimal
             ]
-        ],
-            [
-            fhir:index "0"^^xsd:integer ;
-            fhir:ClaimResponse.item.adjudication.amount [
-                fhir:Quantity.code [
-                    fhir:value "USD"
-                ] ;
-                fhir:Quantity.system [
-                    fhir:value "urn:iso:std:iso:4217"
-                ] ;
-                fhir:Quantity.value [
-                    fhir:value "135.57"^^xsd:decimal
-                ]
-            ] ;
-            fhir:ClaimResponse.item.adjudication.category [
-                fhir:CodeableConcept.coding [
-                    fhir:index "0"^^xsd:integer ;
-                    fhir:Coding.code [
-                        fhir:value "eligible"
-                    ]
-                ]
-            ]
         ] ;
         fhir:ClaimResponse.item.sequenceLinkId [
             fhir:value "1"^^xsd:positiveInteger
@@ -208,7 +206,7 @@ Subject http://hl7.org/fhir/ClaimResponse/R3500 DIFFERENCE: ====================
         ]
     ] ;
     fhir:ClaimResponse.request [
-        fhir:link <http://hl7.org/fhir/http%3A//www.BenefitsInc.com/fhir/oralhealthclaim/15476332402> ;
+        fhir:link <http://www.BenefitsInc.com/fhir/oralhealthclaim/15476332402> ;
         fhir:Reference.reference [
             fhir:value "http://www.BenefitsInc.com/fhir/oralhealthclaim/15476332402"
         ]
@@ -269,5 +267,5 @@ Subject http://hl7.org/fhir/ClaimResponse/R3500 DIFFERENCE: ====================
 
 <http://hl7.org/fhir/Practitioner/1> a fhir:Practitioner .
 
-<http://hl7.org/fhir/http%3A//www.BenefitsInc.com/fhir/oralhealthclaim/15476332402> a <http://hl7.org/fhir/http:> .
+<http://www.BenefitsInc.com/fhir/oralhealthclaim/15476332402> a fhir:Resource .
 

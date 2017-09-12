@@ -51,12 +51,12 @@ Subject http://hl7.org/fhir/PractitionerRole/example DIFFERENCE: ===============
             fhir:value "09:00:00"
         ] ;
         fhir:PractitionerRole.availableTime.daysOfWeek [
-            fhir:index "0"^^xsd:integer ;
-            fhir:value "thu"
-        ],
-            [
             fhir:index "1"^^xsd:integer ;
             fhir:value "fri"
+        ],
+            [
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "thu"
         ]
     ],
         [

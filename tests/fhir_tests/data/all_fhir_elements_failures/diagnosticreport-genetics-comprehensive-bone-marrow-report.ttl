@@ -39,69 +39,9 @@ Subject http://hl7.org/fhir/DiagnosticReport/report DIFFERENCE: ================
         ]
     ] ;
     fhir:DiagnosticReport.result [
-        fhir:index "5"^^xsd:integer ;
-        fhir:Reference.reference [
-            fhir:value "#o6"
-        ]
-    ],
-        [
-        fhir:index "1"^^xsd:integer ;
-        fhir:Reference.reference [
-            fhir:value "#o2"
-        ]
-    ],
-        [
-        fhir:index "2"^^xsd:integer ;
-        fhir:Reference.reference [
-            fhir:value "#o3"
-        ]
-    ],
-        [
-        fhir:index "7"^^xsd:integer ;
-        fhir:Reference.reference [
-            fhir:value "#o8"
-        ]
-    ],
-        [
         fhir:index "6"^^xsd:integer ;
         fhir:Reference.reference [
             fhir:value "#o7"
-        ]
-    ],
-        [
-        fhir:index "9"^^xsd:integer ;
-        fhir:Reference.reference [
-            fhir:value "#o10"
-        ]
-    ],
-        [
-        fhir:index "4"^^xsd:integer ;
-        fhir:Reference.reference [
-            fhir:value "#o5"
-        ]
-    ],
-        [
-        fhir:index "3"^^xsd:integer ;
-        fhir:Reference.reference [
-            fhir:value "#o4"
-        ]
-    ],
-        [
-        fhir:index "8"^^xsd:integer ;
-        fhir:Reference.reference [
-            fhir:value "#o9"
-        ]
-    ],
-        [
-        fhir:index "10"^^xsd:integer ;
-        fhir:Reference.reference [
-            fhir:value "#o11"
-        ]
-    ],
-        [
-        fhir:index "0"^^xsd:integer ;
-        fhir:Reference.reference [
-            fhir:value "#o1"
         ]
     ],
         [
@@ -111,9 +51,69 @@ Subject http://hl7.org/fhir/DiagnosticReport/report DIFFERENCE: ================
         ]
     ],
         [
+        fhir:index "8"^^xsd:integer ;
+        fhir:Reference.reference [
+            fhir:value "#o9"
+        ]
+    ],
+        [
+        fhir:index "9"^^xsd:integer ;
+        fhir:Reference.reference [
+            fhir:value "#o10"
+        ]
+    ],
+        [
+        fhir:index "10"^^xsd:integer ;
+        fhir:Reference.reference [
+            fhir:value "#o11"
+        ]
+    ],
+        [
         fhir:index "12"^^xsd:integer ;
         fhir:Reference.reference [
             fhir:value "#o13"
+        ]
+    ],
+        [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Reference.reference [
+            fhir:value "#o1"
+        ]
+    ],
+        [
+        fhir:index "2"^^xsd:integer ;
+        fhir:Reference.reference [
+            fhir:value "#o3"
+        ]
+    ],
+        [
+        fhir:index "1"^^xsd:integer ;
+        fhir:Reference.reference [
+            fhir:value "#o2"
+        ]
+    ],
+        [
+        fhir:index "7"^^xsd:integer ;
+        fhir:Reference.reference [
+            fhir:value "#o8"
+        ]
+    ],
+        [
+        fhir:index "3"^^xsd:integer ;
+        fhir:Reference.reference [
+            fhir:value "#o4"
+        ]
+    ],
+        [
+        fhir:index "4"^^xsd:integer ;
+        fhir:Reference.reference [
+            fhir:value "#o5"
+        ]
+    ],
+        [
+        fhir:index "5"^^xsd:integer ;
+        fhir:Reference.reference [
+            fhir:value "#o6"
         ]
     ] ;
     fhir:DiagnosticReport.specimen [
@@ -139,96 +139,6 @@ Subject http://hl7.org/fhir/DiagnosticReport/report DIFFERENCE: ================
         ]
     ] ;
     fhir:DomainResource.contained [
-        fhir:index "12"^^xsd:integer ;
-        fhir:Observation.code [
-            fhir:CodeableConcept.text [
-                fhir:value "AML-associated genetic abnormalities"
-            ]
-        ] ;
-        fhir:Observation.status [
-            fhir:value "final"
-        ] ;
-        fhir:Observation.valueCodeableConcept [
-            fhir:CodeableConcept.coding [
-                a sct:260385009 ;
-                fhir:index "0"^^xsd:integer ;
-                fhir:Coding.code [
-                    fhir:value "260385009"
-                ] ;
-                fhir:Coding.display [
-                    fhir:value "Negative"
-                ] ;
-                fhir:Coding.system [
-                    fhir:value "http://snomed.info/sct"
-                ]
-            ]
-        ] ;
-        fhir:Resource.id [
-            fhir:value "o13"
-        ]
-    ],
-        [
-        fhir:index "10"^^xsd:integer ;
-        fhir:Observation.code [
-            fhir:CodeableConcept.coding [
-                a loinc:33893-9 ;
-                fhir:index "0"^^xsd:integer ;
-                fhir:Coding.code [
-                    fhir:value "33893-9"
-                ] ;
-                fhir:Coding.display [
-                    fhir:value "Karyotype [Identifier] in Bone marrow Nominal"
-                ] ;
-                fhir:Coding.system [
-                    fhir:value "http://loinc.org"
-                ]
-            ]
-        ] ;
-        fhir:Observation.status [
-            fhir:value "final"
-        ] ;
-        fhir:Observation.valueCodeableConcept [
-            fhir:CodeableConcept.text [
-                fhir:value "46,XX[20]"
-            ]
-        ] ;
-        fhir:Resource.id [
-            fhir:value "o11"
-        ]
-    ],
-        [
-        fhir:index "1"^^xsd:integer ;
-        fhir:Observation.code [
-            fhir:CodeableConcept.coding [
-                a loinc:20570-8 ;
-                fhir:index "0"^^xsd:integer ;
-                fhir:Coding.code [
-                    fhir:value "20570-8"
-                ] ;
-                fhir:Coding.display [
-                    fhir:value "Hematocrit [Volume Fraction] of Blood"
-                ] ;
-                fhir:Coding.system [
-                    fhir:value "http://loinc.org"
-                ]
-            ]
-        ] ;
-        fhir:Observation.status [
-            fhir:value "final"
-        ] ;
-        fhir:Observation.valueQuantity [
-            fhir:Quantity.unit [
-                fhir:value "%"
-            ] ;
-            fhir:Quantity.value [
-                fhir:value "27"^^xsd:decimal
-            ]
-        ] ;
-        fhir:Resource.id [
-            fhir:value "o2"
-        ]
-    ],
-        [
         fhir:index "7"^^xsd:integer ;
         fhir:Observation.code [
             fhir:CodeableConcept.coding [
@@ -265,45 +175,6 @@ Subject http://hl7.org/fhir/DiagnosticReport/report DIFFERENCE: ================
         ] ;
         fhir:Resource.id [
             fhir:value "o8"
-        ]
-    ],
-        [
-        fhir:index "6"^^xsd:integer ;
-        fhir:Observation.code [
-            fhir:CodeableConcept.coding [
-                a loinc:30444-4 ;
-                fhir:index "0"^^xsd:integer ;
-                fhir:Coding.code [
-                    fhir:value "30444-4"
-                ] ;
-                fhir:Coding.display [
-                    fhir:value "Myeloblasts [#/volume] in Blood"
-                ] ;
-                fhir:Coding.system [
-                    fhir:value "http://loinc.org"
-                ]
-            ]
-        ] ;
-        fhir:Observation.status [
-            fhir:value "final"
-        ] ;
-        fhir:Observation.valueCodeableConcept [
-            fhir:CodeableConcept.coding [
-                a sct:10828004 ;
-                fhir:index "0"^^xsd:integer ;
-                fhir:Coding.code [
-                    fhir:value "10828004"
-                ] ;
-                fhir:Coding.display [
-                    fhir:value "Positive"
-                ] ;
-                fhir:Coding.system [
-                    fhir:value "http://snomed.info/sct"
-                ]
-            ]
-        ] ;
-        fhir:Resource.id [
-            fhir:value "o7"
         ]
     ],
         [
@@ -346,16 +217,16 @@ Subject http://hl7.org/fhir/DiagnosticReport/report DIFFERENCE: ================
         ]
     ],
         [
-        fhir:index "0"^^xsd:integer ;
+        fhir:index "10"^^xsd:integer ;
         fhir:Observation.code [
             fhir:CodeableConcept.coding [
-                a loinc:26464-8 ;
+                a loinc:33893-9 ;
                 fhir:index "0"^^xsd:integer ;
                 fhir:Coding.code [
-                    fhir:value "26464-8"
+                    fhir:value "33893-9"
                 ] ;
                 fhir:Coding.display [
-                    fhir:value "Leukocytes [#/volume] in Blood"
+                    fhir:value "Karyotype [Identifier] in Bone marrow Nominal"
                 ] ;
                 fhir:Coding.system [
                     fhir:value "http://loinc.org"
@@ -365,55 +236,30 @@ Subject http://hl7.org/fhir/DiagnosticReport/report DIFFERENCE: ================
         fhir:Observation.status [
             fhir:value "final"
         ] ;
-        fhir:Observation.valueQuantity [
-            fhir:Quantity.unit [
-                fhir:value "K/ul"
-            ] ;
-            fhir:Quantity.value [
-                fhir:value "31.9"^^xsd:decimal
-            ]
-        ] ;
-        fhir:Resource.id [
-            fhir:value "o1"
-        ]
-    ],
-        [
-        fhir:index "2"^^xsd:integer ;
-        fhir:Observation.code [
-            fhir:CodeableConcept.coding [
-                a loinc:26515-7 ;
-                fhir:index "0"^^xsd:integer ;
-                fhir:Coding.code [
-                    fhir:value "26515-7"
-                ] ;
-                fhir:Coding.display [
-                    fhir:value "Platelets [#/volume] in Blood"
-                ] ;
-                fhir:Coding.system [
-                    fhir:value "http://loinc.org"
-                ]
-            ]
-        ] ;
-        fhir:Observation.status [
-            fhir:value "final"
-        ] ;
-        fhir:Observation.valueQuantity [
-            fhir:Quantity.unit [
-                fhir:value "K/ul"
-            ] ;
-            fhir:Quantity.value [
-                fhir:value "84"^^xsd:decimal
-            ]
-        ] ;
-        fhir:Resource.id [
-            fhir:value "o3"
-        ]
-    ],
-        [
-        fhir:index "11"^^xsd:integer ;
-        fhir:Observation.code [
+        fhir:Observation.valueCodeableConcept [
             fhir:CodeableConcept.text [
-                fhir:value "MDS-associated genetic abnormalities"
+                fhir:value "46,XX[20]"
+            ]
+        ] ;
+        fhir:Resource.id [
+            fhir:value "o11"
+        ]
+    ],
+        [
+        fhir:index "3"^^xsd:integer ;
+        fhir:Observation.code [
+            fhir:CodeableConcept.coding [
+                a loinc:75034-9 ;
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "75034-9"
+                ] ;
+                fhir:Coding.display [
+                    fhir:value "NPM1 gene mutations found [Identifier] in Bone marrow by Molecular genetics method Nominal"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://loinc.org"
+                ]
             ]
         ] ;
         fhir:Observation.status [
@@ -421,13 +267,13 @@ Subject http://hl7.org/fhir/DiagnosticReport/report DIFFERENCE: ================
         ] ;
         fhir:Observation.valueCodeableConcept [
             fhir:CodeableConcept.coding [
-                a sct:260385009 ;
+                a sct:10828004 ;
                 fhir:index "0"^^xsd:integer ;
                 fhir:Coding.code [
-                    fhir:value "260385009"
+                    fhir:value "10828004"
                 ] ;
                 fhir:Coding.display [
-                    fhir:value "Negative"
+                    fhir:value "Positive"
                 ] ;
                 fhir:Coding.system [
                     fhir:value "http://snomed.info/sct"
@@ -435,7 +281,7 @@ Subject http://hl7.org/fhir/DiagnosticReport/report DIFFERENCE: ================
             ]
         ] ;
         fhir:Resource.id [
-            fhir:value "o12"
+            fhir:value "o4"
         ]
     ],
         [
@@ -478,6 +324,106 @@ Subject http://hl7.org/fhir/DiagnosticReport/report DIFFERENCE: ================
         ]
     ],
         [
+        fhir:index "6"^^xsd:integer ;
+        fhir:Observation.code [
+            fhir:CodeableConcept.coding [
+                a loinc:30444-4 ;
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "30444-4"
+                ] ;
+                fhir:Coding.display [
+                    fhir:value "Myeloblasts [#/volume] in Blood"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://loinc.org"
+                ]
+            ]
+        ] ;
+        fhir:Observation.status [
+            fhir:value "final"
+        ] ;
+        fhir:Observation.valueCodeableConcept [
+            fhir:CodeableConcept.coding [
+                a sct:10828004 ;
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "10828004"
+                ] ;
+                fhir:Coding.display [
+                    fhir:value "Positive"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://snomed.info/sct"
+                ]
+            ]
+        ] ;
+        fhir:Resource.id [
+            fhir:value "o7"
+        ]
+    ],
+        [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Observation.code [
+            fhir:CodeableConcept.coding [
+                a loinc:26464-8 ;
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "26464-8"
+                ] ;
+                fhir:Coding.display [
+                    fhir:value "Leukocytes [#/volume] in Blood"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://loinc.org"
+                ]
+            ]
+        ] ;
+        fhir:Observation.status [
+            fhir:value "final"
+        ] ;
+        fhir:Observation.valueQuantity [
+            fhir:Quantity.unit [
+                fhir:value "K/ul"
+            ] ;
+            fhir:Quantity.value [
+                fhir:value "31.9"^^xsd:decimal
+            ]
+        ] ;
+        fhir:Resource.id [
+            fhir:value "o1"
+        ]
+    ],
+        [
+        fhir:index "12"^^xsd:integer ;
+        fhir:Observation.code [
+            fhir:CodeableConcept.text [
+                fhir:value "AML-associated genetic abnormalities"
+            ]
+        ] ;
+        fhir:Observation.status [
+            fhir:value "final"
+        ] ;
+        fhir:Observation.valueCodeableConcept [
+            fhir:CodeableConcept.coding [
+                a sct:260385009 ;
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "260385009"
+                ] ;
+                fhir:Coding.display [
+                    fhir:value "Negative"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://snomed.info/sct"
+                ]
+            ]
+        ] ;
+        fhir:Resource.id [
+            fhir:value "o13"
+        ]
+    ],
+        [
         fhir:index "4"^^xsd:integer ;
         fhir:Observation.code [
             fhir:CodeableConcept.coding [
@@ -517,6 +463,99 @@ Subject http://hl7.org/fhir/DiagnosticReport/report DIFFERENCE: ================
         ]
     ],
         [
+        fhir:index "11"^^xsd:integer ;
+        fhir:Observation.code [
+            fhir:CodeableConcept.text [
+                fhir:value "MDS-associated genetic abnormalities"
+            ]
+        ] ;
+        fhir:Observation.status [
+            fhir:value "final"
+        ] ;
+        fhir:Observation.valueCodeableConcept [
+            fhir:CodeableConcept.coding [
+                a sct:260385009 ;
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "260385009"
+                ] ;
+                fhir:Coding.display [
+                    fhir:value "Negative"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://snomed.info/sct"
+                ]
+            ]
+        ] ;
+        fhir:Resource.id [
+            fhir:value "o12"
+        ]
+    ],
+        [
+        fhir:index "1"^^xsd:integer ;
+        fhir:Observation.code [
+            fhir:CodeableConcept.coding [
+                a loinc:20570-8 ;
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "20570-8"
+                ] ;
+                fhir:Coding.display [
+                    fhir:value "Hematocrit [Volume Fraction] of Blood"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://loinc.org"
+                ]
+            ]
+        ] ;
+        fhir:Observation.status [
+            fhir:value "final"
+        ] ;
+        fhir:Observation.valueQuantity [
+            fhir:Quantity.unit [
+                fhir:value "%"
+            ] ;
+            fhir:Quantity.value [
+                fhir:value "27"^^xsd:decimal
+            ]
+        ] ;
+        fhir:Resource.id [
+            fhir:value "o2"
+        ]
+    ],
+        [
+        fhir:index "2"^^xsd:integer ;
+        fhir:Observation.code [
+            fhir:CodeableConcept.coding [
+                a loinc:26515-7 ;
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "26515-7"
+                ] ;
+                fhir:Coding.display [
+                    fhir:value "Platelets [#/volume] in Blood"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://loinc.org"
+                ]
+            ]
+        ] ;
+        fhir:Observation.status [
+            fhir:value "final"
+        ] ;
+        fhir:Observation.valueQuantity [
+            fhir:Quantity.unit [
+                fhir:value "K/ul"
+            ] ;
+            fhir:Quantity.value [
+                fhir:value "84"^^xsd:decimal
+            ]
+        ] ;
+        fhir:Resource.id [
+            fhir:value "o3"
+        ]
+    ],
+        [
         fhir:index "5"^^xsd:integer ;
         fhir:Observation.code [
             fhir:CodeableConcept.coding [
@@ -553,45 +592,6 @@ Subject http://hl7.org/fhir/DiagnosticReport/report DIFFERENCE: ================
         ] ;
         fhir:Resource.id [
             fhir:value "o6"
-        ]
-    ],
-        [
-        fhir:index "3"^^xsd:integer ;
-        fhir:Observation.code [
-            fhir:CodeableConcept.coding [
-                a loinc:75034-9 ;
-                fhir:index "0"^^xsd:integer ;
-                fhir:Coding.code [
-                    fhir:value "75034-9"
-                ] ;
-                fhir:Coding.display [
-                    fhir:value "NPM1 gene mutations found [Identifier] in Bone marrow by Molecular genetics method Nominal"
-                ] ;
-                fhir:Coding.system [
-                    fhir:value "http://loinc.org"
-                ]
-            ]
-        ] ;
-        fhir:Observation.status [
-            fhir:value "final"
-        ] ;
-        fhir:Observation.valueCodeableConcept [
-            fhir:CodeableConcept.coding [
-                a sct:10828004 ;
-                fhir:index "0"^^xsd:integer ;
-                fhir:Coding.code [
-                    fhir:value "10828004"
-                ] ;
-                fhir:Coding.display [
-                    fhir:value "Positive"
-                ] ;
-                fhir:Coding.system [
-                    fhir:value "http://snomed.info/sct"
-                ]
-            ]
-        ] ;
-        fhir:Resource.id [
-            fhir:value "o4"
         ]
     ] ;
     fhir:DomainResource.extension [

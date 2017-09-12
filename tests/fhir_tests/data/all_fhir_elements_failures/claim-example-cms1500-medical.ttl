@@ -42,6 +42,27 @@ Subject http://hl7.org/fhir/Claim/MED-00050 DIFFERENCE: ========================
         fhir:value "2015-10-16T00:00:00-07:00"^^xsd:dateTime
     ] ;
     fhir:Claim.diagnosis [
+        fhir:index "2"^^xsd:integer ;
+        fhir:Claim.diagnosis.diagnosisCodeableConcept [
+            fhir:CodeableConcept.coding [
+                a <http://hl7.org/fhir/sid/icd-10/M53.88> ;
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "M53.88"
+                ] ;
+                fhir:Coding.display [
+                    fhir:value "Other specified dorsopathies, sacral and sacrococcygeal region"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://hl7.org/fhir/sid/icd-10"
+                ]
+            ]
+        ] ;
+        fhir:Claim.diagnosis.sequence [
+            fhir:value "3"^^xsd:positiveInteger
+        ]
+    ],
+        [
         fhir:index "3"^^xsd:integer ;
         fhir:Claim.diagnosis.diagnosisCodeableConcept [
             fhir:CodeableConcept.coding [
@@ -60,27 +81,6 @@ Subject http://hl7.org/fhir/Claim/MED-00050 DIFFERENCE: ========================
         ] ;
         fhir:Claim.diagnosis.sequence [
             fhir:value "4"^^xsd:positiveInteger
-        ]
-    ],
-        [
-        fhir:index "1"^^xsd:integer ;
-        fhir:Claim.diagnosis.diagnosisCodeableConcept [
-            fhir:CodeableConcept.coding [
-                a <http://hl7.org/fhir/sid/icd-10/G89.4> ;
-                fhir:index "0"^^xsd:integer ;
-                fhir:Coding.code [
-                    fhir:value "G89.4"
-                ] ;
-                fhir:Coding.display [
-                    fhir:value "Chronic pain syndrome"
-                ] ;
-                fhir:Coding.system [
-                    fhir:value "http://hl7.org/fhir/sid/icd-10"
-                ]
-            ]
-        ] ;
-        fhir:Claim.diagnosis.sequence [
-            fhir:value "2"^^xsd:positiveInteger
         ]
     ],
         [
@@ -105,16 +105,16 @@ Subject http://hl7.org/fhir/Claim/MED-00050 DIFFERENCE: ========================
         ]
     ],
         [
-        fhir:index "2"^^xsd:integer ;
+        fhir:index "1"^^xsd:integer ;
         fhir:Claim.diagnosis.diagnosisCodeableConcept [
             fhir:CodeableConcept.coding [
-                a <http://hl7.org/fhir/sid/icd-10/M53.88> ;
+                a <http://hl7.org/fhir/sid/icd-10/G89.4> ;
                 fhir:index "0"^^xsd:integer ;
                 fhir:Coding.code [
-                    fhir:value "M53.88"
+                    fhir:value "G89.4"
                 ] ;
                 fhir:Coding.display [
-                    fhir:value "Other specified dorsopathies, sacral and sacrococcygeal region"
+                    fhir:value "Chronic pain syndrome"
                 ] ;
                 fhir:Coding.system [
                     fhir:value "http://hl7.org/fhir/sid/icd-10"
@@ -122,7 +122,7 @@ Subject http://hl7.org/fhir/Claim/MED-00050 DIFFERENCE: ========================
             ]
         ] ;
         fhir:Claim.diagnosis.sequence [
-            fhir:value "3"^^xsd:positiveInteger
+            fhir:value "2"^^xsd:positiveInteger
         ]
     ] ;
     fhir:Claim.hospitalization [

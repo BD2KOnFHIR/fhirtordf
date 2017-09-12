@@ -4,16 +4,12 @@ Subject http://hl7.org/fhir/PaymentReconciliation/ER2500 DIFFERENCE: ===========
 	----> First: 
 <http://hl7.org/fhir/PaymentReconciliation/ER2500.PaymentReconciliation.detail_0.PaymentReconciliation.detail.amount.Quantity.value> <http://hl7.org/fhir/value> "1000.00"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 <http://hl7.org/fhir/PaymentReconciliation/ER2500.PaymentReconciliation.detail_1.PaymentReconciliation.detail.amount.Quantity.value> <http://hl7.org/fhir/value> "4000.00"^^<http://www.w3.org/2001/XMLSchema#decimal> .
-<http://hl7.org/fhir/PaymentReconciliation/ER2500.PaymentReconciliation.detail_1.PaymentReconciliation.detail.request> <http://hl7.org/fhir/link> <http://www.BenefitsInc.com/fhir/oralhealthclaim/225476332699> .
 <http://hl7.org/fhir/PaymentReconciliation/ER2500.PaymentReconciliation.detail_2.PaymentReconciliation.detail.amount.Quantity.value> <http://hl7.org/fhir/value> "-1500.00"^^<http://www.w3.org/2001/XMLSchema#decimal> .
-<http://hl7.org/fhir/PaymentReconciliation/ER2500.PaymentReconciliation.request> <http://hl7.org/fhir/link> <http://www.BenefitsInc.com/fhir/eligibility/225476332402> .
 <http://hl7.org/fhir/PaymentReconciliation/ER2500.PaymentReconciliation.total.Quantity.value> <http://hl7.org/fhir/value> "3500.00"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 	----> Second: 
 <http://hl7.org/fhir/PaymentReconciliation/ER2500.PaymentReconciliation.detail_0.PaymentReconciliation.detail.amount.Quantity.value> <http://hl7.org/fhir/value> "1000.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 <http://hl7.org/fhir/PaymentReconciliation/ER2500.PaymentReconciliation.detail_1.PaymentReconciliation.detail.amount.Quantity.value> <http://hl7.org/fhir/value> "4000.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
-<http://hl7.org/fhir/PaymentReconciliation/ER2500.PaymentReconciliation.detail_1.PaymentReconciliation.detail.request> <http://hl7.org/fhir/link> <http://hl7.org/fhir/http%3A//www.BenefitsInc.com/fhir/oralhealthclaim/225476332699> .
 <http://hl7.org/fhir/PaymentReconciliation/ER2500.PaymentReconciliation.detail_2.PaymentReconciliation.detail.amount.Quantity.value> <http://hl7.org/fhir/value> "-1500.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
-<http://hl7.org/fhir/PaymentReconciliation/ER2500.PaymentReconciliation.request> <http://hl7.org/fhir/link> <http://hl7.org/fhir/http%3A//www.BenefitsInc.com/fhir/eligibility/225476332402> .
 <http://hl7.org/fhir/PaymentReconciliation/ER2500.PaymentReconciliation.total.Quantity.value> <http://hl7.org/fhir/value> "3500.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .----------------------------------------
 
 ========================================
@@ -38,6 +34,41 @@ Subject http://hl7.org/fhir/PaymentReconciliation/ER2500 DIFFERENCE: ===========
         fhir:value "2014-08-16"^^xsd:date
     ] ;
     fhir:PaymentReconciliation.detail [
+        fhir:index "1"^^xsd:integer ;
+        fhir:PaymentReconciliation.detail.amount [
+            fhir:Quantity.code [
+                fhir:value "USD"
+            ] ;
+            fhir:Quantity.system [
+                fhir:value "urn:iso:std:iso:4217"
+            ] ;
+            fhir:Quantity.value [
+                fhir:value "4000.0"^^xsd:decimal
+            ]
+        ] ;
+        fhir:PaymentReconciliation.detail.date [
+            fhir:value "2014-08-12"^^xsd:date
+        ] ;
+        fhir:PaymentReconciliation.detail.request [
+            fhir:link <http://www.BenefitsInc.com/fhir/oralhealthclaim/225476332699> ;
+            fhir:Reference.reference [
+                fhir:value "http://www.BenefitsInc.com/fhir/oralhealthclaim/225476332699"
+            ]
+        ] ;
+        fhir:PaymentReconciliation.detail.type [
+            fhir:CodeableConcept.coding [
+                a <http://hl7.org/fhir/payment-type/payment> ;
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "payment"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://hl7.org/fhir/payment-type"
+                ]
+            ]
+        ]
+    ],
+        [
         fhir:index "2"^^xsd:integer ;
         fhir:PaymentReconciliation.detail.amount [
             fhir:Quantity.code [
@@ -59,41 +90,6 @@ Subject http://hl7.org/fhir/PaymentReconciliation/ER2500 DIFFERENCE: ===========
                 fhir:index "0"^^xsd:integer ;
                 fhir:Coding.code [
                     fhir:value "advance"
-                ] ;
-                fhir:Coding.system [
-                    fhir:value "http://hl7.org/fhir/payment-type"
-                ]
-            ]
-        ]
-    ],
-        [
-        fhir:index "1"^^xsd:integer ;
-        fhir:PaymentReconciliation.detail.amount [
-            fhir:Quantity.code [
-                fhir:value "USD"
-            ] ;
-            fhir:Quantity.system [
-                fhir:value "urn:iso:std:iso:4217"
-            ] ;
-            fhir:Quantity.value [
-                fhir:value "4000.0"^^xsd:decimal
-            ]
-        ] ;
-        fhir:PaymentReconciliation.detail.date [
-            fhir:value "2014-08-12"^^xsd:date
-        ] ;
-        fhir:PaymentReconciliation.detail.request [
-            fhir:link <http://hl7.org/fhir/http%3A//www.BenefitsInc.com/fhir/oralhealthclaim/225476332699> ;
-            fhir:Reference.reference [
-                fhir:value "http://www.BenefitsInc.com/fhir/oralhealthclaim/225476332699"
-            ]
-        ] ;
-        fhir:PaymentReconciliation.detail.type [
-            fhir:CodeableConcept.coding [
-                a <http://hl7.org/fhir/payment-type/payment> ;
-                fhir:index "0"^^xsd:integer ;
-                fhir:Coding.code [
-                    fhir:value "payment"
                 ] ;
                 fhir:Coding.system [
                     fhir:value "http://hl7.org/fhir/payment-type"
@@ -212,7 +208,7 @@ Subject http://hl7.org/fhir/PaymentReconciliation/ER2500 DIFFERENCE: ===========
         ]
     ] ;
     fhir:PaymentReconciliation.request [
-        fhir:link <http://hl7.org/fhir/http%3A//www.BenefitsInc.com/fhir/eligibility/225476332402> ;
+        fhir:link <http://www.BenefitsInc.com/fhir/eligibility/225476332402> ;
         fhir:Reference.reference [
             fhir:value "http://www.BenefitsInc.com/fhir/eligibility/225476332402"
         ]
@@ -254,9 +250,9 @@ Subject http://hl7.org/fhir/PaymentReconciliation/ER2500 DIFFERENCE: ===========
 
 <http://hl7.org/fhir/Practitioner/example> a fhir:Practitioner .
 
-<http://hl7.org/fhir/http%3A//www.BenefitsInc.com/fhir/eligibility/225476332402> a <http://hl7.org/fhir/http:> .
+<http://www.BenefitsInc.com/fhir/eligibility/225476332402> a fhir:Resource .
 
-<http://hl7.org/fhir/http%3A//www.BenefitsInc.com/fhir/oralhealthclaim/225476332699> a <http://hl7.org/fhir/http:> .
+<http://www.BenefitsInc.com/fhir/oralhealthclaim/225476332699> a fhir:Resource .
 
 <http://hl7.org/fhir/Organization/1> a fhir:Organization .
 

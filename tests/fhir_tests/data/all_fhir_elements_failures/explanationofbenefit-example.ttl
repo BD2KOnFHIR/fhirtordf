@@ -94,6 +94,20 @@ Subject http://hl7.org/fhir/ExplanationOfBenefit/EB3500 DIFFERENCE: ============
     fhir:ExplanationOfBenefit.item [
         fhir:index "0"^^xsd:integer ;
         fhir:ExplanationOfBenefit.item.adjudication [
+            fhir:index "1"^^xsd:integer ;
+            fhir:ExplanationOfBenefit.item.adjudication.category [
+                fhir:CodeableConcept.coding [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "eligpercent"
+                    ]
+                ]
+            ] ;
+            fhir:ExplanationOfBenefit.item.adjudication.value [
+                fhir:value "0.8"^^xsd:decimal
+            ]
+        ],
+            [
             fhir:index "0"^^xsd:integer ;
             fhir:ExplanationOfBenefit.item.adjudication.amount [
                 fhir:Quantity.code [
@@ -113,20 +127,6 @@ Subject http://hl7.org/fhir/ExplanationOfBenefit/EB3500 DIFFERENCE: ============
                         fhir:value "eligible"
                     ]
                 ]
-            ]
-        ],
-            [
-            fhir:index "1"^^xsd:integer ;
-            fhir:ExplanationOfBenefit.item.adjudication.category [
-                fhir:CodeableConcept.coding [
-                    fhir:index "0"^^xsd:integer ;
-                    fhir:Coding.code [
-                        fhir:value "eligpercent"
-                    ]
-                ]
-            ] ;
-            fhir:ExplanationOfBenefit.item.adjudication.value [
-                fhir:value "0.8"^^xsd:decimal
             ]
         ],
             [

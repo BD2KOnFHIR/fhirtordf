@@ -190,10 +190,22 @@ Subject http://hl7.org/fhir/Contract/INS-101 DIFFERENCE: =======================
             ]
         ] ;
         fhir:Contract.term.group [
-            fhir:index "1"^^xsd:integer ;
+            fhir:index "2"^^xsd:integer ;
+            fhir:Contract.term.group.group [
+                fhir:index "3"^^xsd:integer
+            ],
+                [
+                fhir:index "0"^^xsd:integer
+            ],
+                [
+                fhir:index "1"^^xsd:integer
+            ],
+                [
+                fhir:index "2"^^xsd:integer
+            ] ;
             fhir:Contract.term.group.offer [
                 fhir:Contract.term.group.offer.text [
-                    fhir:value "Responsibility for Payment"
+                    fhir:value "List of Benefits"
                 ]
             ]
         ],
@@ -206,22 +218,10 @@ Subject http://hl7.org/fhir/Contract/INS-101 DIFFERENCE: =======================
             ]
         ],
             [
-            fhir:index "2"^^xsd:integer ;
-            fhir:Contract.term.group.group [
-                fhir:index "2"^^xsd:integer
-            ],
-                [
-                fhir:index "3"^^xsd:integer
-            ],
-                [
-                fhir:index "0"^^xsd:integer
-            ],
-                [
-                fhir:index "1"^^xsd:integer
-            ] ;
+            fhir:index "1"^^xsd:integer ;
             fhir:Contract.term.group.offer [
                 fhir:Contract.term.group.offer.text [
-                    fhir:value "List of Benefits"
+                    fhir:value "Responsibility for Payment"
                 ]
             ]
         ] ;

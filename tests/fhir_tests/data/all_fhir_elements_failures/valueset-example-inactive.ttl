@@ -159,6 +159,21 @@ Subject http://hl7.org/fhir/ValueSet/inactive DIFFERENCE: ======================
     ] ;
     fhir:ValueSet.expansion [
         fhir:ValueSet.expansion.contains [
+            fhir:index "0"^^xsd:integer ;
+            fhir:ValueSet.expansion.contains.code [
+                fhir:value "CRT"
+            ] ;
+            fhir:ValueSet.expansion.contains.display [
+                fhir:value "criterion"
+            ] ;
+            fhir:ValueSet.expansion.contains.inactive [
+                fhir:value "true"^^xsd:boolean
+            ] ;
+            fhir:ValueSet.expansion.contains.system [
+                fhir:value "http://hl7.org/fhir/v3/ActMood"
+            ]
+        ],
+            [
             fhir:index "2"^^xsd:integer ;
             fhir:ValueSet.expansion.contains.code [
                 fhir:value "OPT"
@@ -201,21 +216,6 @@ Subject http://hl7.org/fhir/ValueSet/inactive DIFFERENCE: ======================
             ] ;
             fhir:ValueSet.expansion.contains.display [
                 fhir:value "expectation"
-            ] ;
-            fhir:ValueSet.expansion.contains.system [
-                fhir:value "http://hl7.org/fhir/v3/ActMood"
-            ]
-        ],
-            [
-            fhir:index "0"^^xsd:integer ;
-            fhir:ValueSet.expansion.contains.code [
-                fhir:value "CRT"
-            ] ;
-            fhir:ValueSet.expansion.contains.display [
-                fhir:value "criterion"
-            ] ;
-            fhir:ValueSet.expansion.contains.inactive [
-                fhir:value "true"^^xsd:boolean
             ] ;
             fhir:ValueSet.expansion.contains.system [
                 fhir:value "http://hl7.org/fhir/v3/ActMood"

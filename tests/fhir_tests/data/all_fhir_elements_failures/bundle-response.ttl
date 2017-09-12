@@ -1,5 +1,23 @@
 
 
+Subject urn:uuid:e7bcef8e-5ef9-4d2b-87d5-b42b1eec9125 DIFFERENCE: ==============================
+	----> First: 
+<urn:uuid:e7bcef8e-5ef9-4d2b-87d5-b42b1eec9125.Bundle.type> <http://hl7.org/fhir/value> "searchset" .
+<urn:uuid:e7bcef8e-5ef9-4d2b-87d5-b42b1eec9125.Resource.id> <http://hl7.org/fhir/value> "fb6ed6cb-324e-4588-87cd-0c92c68986ca" .
+<urn:uuid:e7bcef8e-5ef9-4d2b-87d5-b42b1eec9125> <http://hl7.org/fhir/Bundle.type> <urn:uuid:e7bcef8e-5ef9-4d2b-87d5-b42b1eec9125.Bundle.type> .
+<urn:uuid:e7bcef8e-5ef9-4d2b-87d5-b42b1eec9125> <http://hl7.org/fhir/Resource.id> <urn:uuid:e7bcef8e-5ef9-4d2b-87d5-b42b1eec9125.Resource.id> .
+<urn:uuid:e7bcef8e-5ef9-4d2b-87d5-b42b1eec9125> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/Bundle> .----------------------------------------
+
+Subject urn:uuid:7f9724ed-ef8d-4434-aacb-41869db83233 DIFFERENCE: ==============================
+	----> First: 
+<urn:uuid:7f9724ed-ef8d-4434-aacb-41869db83233.Parameters.parameter_0.Parameters.parameter.name> <http://hl7.org/fhir/value> "name" .
+<urn:uuid:7f9724ed-ef8d-4434-aacb-41869db83233.Parameters.parameter_0.Parameters.parameter.valueString> <http://hl7.org/fhir/value> "LOINC" .
+<urn:uuid:7f9724ed-ef8d-4434-aacb-41869db83233.Parameters.parameter_0> <http://hl7.org/fhir/Parameters.parameter.name> <urn:uuid:7f9724ed-ef8d-4434-aacb-41869db83233.Parameters.parameter_0.Parameters.parameter.name> .
+<urn:uuid:7f9724ed-ef8d-4434-aacb-41869db83233.Parameters.parameter_0> <http://hl7.org/fhir/Parameters.parameter.valueString> <urn:uuid:7f9724ed-ef8d-4434-aacb-41869db83233.Parameters.parameter_0.Parameters.parameter.valueString> .
+<urn:uuid:7f9724ed-ef8d-4434-aacb-41869db83233.Parameters.parameter_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<urn:uuid:7f9724ed-ef8d-4434-aacb-41869db83233> <http://hl7.org/fhir/Parameters.parameter> <urn:uuid:7f9724ed-ef8d-4434-aacb-41869db83233.Parameters.parameter_0> .
+<urn:uuid:7f9724ed-ef8d-4434-aacb-41869db83233> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/Parameters> .----------------------------------------
+
 Subject http://example.org/fhir/Patient/12423 DIFFERENCE: ==============================
 	----> First: 
 <http://example.org/fhir/Patient/12423.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
@@ -32,24 +50,6 @@ Subject http://example.org/fhir/Patient/12423 DIFFERENCE: ======================
 <http://example.org/fhir/Patient/12423> <http://hl7.org/fhir/Resource.id> <http://example.org/fhir/Patient/12423.Resource.id> .
 <http://example.org/fhir/Patient/12423> <http://hl7.org/fhir/Resource.meta> <http://example.org/fhir/Patient/12423.Resource.meta> .
 <http://example.org/fhir/Patient/12423> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/Patient> .----------------------------------------
-
-Subject urn:uuid:e7bcef8e-5ef9-4d2b-87d5-b42b1eec9125 DIFFERENCE: ==============================
-	----> First: 
-<urn:uuid:e7bcef8e-5ef9-4d2b-87d5-b42b1eec9125.Bundle.type> <http://hl7.org/fhir/value> "searchset" .
-<urn:uuid:e7bcef8e-5ef9-4d2b-87d5-b42b1eec9125.Resource.id> <http://hl7.org/fhir/value> "fb6ed6cb-324e-4588-87cd-0c92c68986ca" .
-<urn:uuid:e7bcef8e-5ef9-4d2b-87d5-b42b1eec9125> <http://hl7.org/fhir/Bundle.type> <urn:uuid:e7bcef8e-5ef9-4d2b-87d5-b42b1eec9125.Bundle.type> .
-<urn:uuid:e7bcef8e-5ef9-4d2b-87d5-b42b1eec9125> <http://hl7.org/fhir/Resource.id> <urn:uuid:e7bcef8e-5ef9-4d2b-87d5-b42b1eec9125.Resource.id> .
-<urn:uuid:e7bcef8e-5ef9-4d2b-87d5-b42b1eec9125> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/Bundle> .----------------------------------------
-
-Subject urn:uuid:7f9724ed-ef8d-4434-aacb-41869db83233 DIFFERENCE: ==============================
-	----> First: 
-<urn:uuid:7f9724ed-ef8d-4434-aacb-41869db83233.Parameters.parameter_0.Parameters.parameter.name> <http://hl7.org/fhir/value> "name" .
-<urn:uuid:7f9724ed-ef8d-4434-aacb-41869db83233.Parameters.parameter_0.Parameters.parameter.valueString> <http://hl7.org/fhir/value> "LOINC" .
-<urn:uuid:7f9724ed-ef8d-4434-aacb-41869db83233.Parameters.parameter_0> <http://hl7.org/fhir/Parameters.parameter.name> <urn:uuid:7f9724ed-ef8d-4434-aacb-41869db83233.Parameters.parameter_0.Parameters.parameter.name> .
-<urn:uuid:7f9724ed-ef8d-4434-aacb-41869db83233.Parameters.parameter_0> <http://hl7.org/fhir/Parameters.parameter.valueString> <urn:uuid:7f9724ed-ef8d-4434-aacb-41869db83233.Parameters.parameter_0.Parameters.parameter.valueString> .
-<urn:uuid:7f9724ed-ef8d-4434-aacb-41869db83233.Parameters.parameter_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<urn:uuid:7f9724ed-ef8d-4434-aacb-41869db83233> <http://hl7.org/fhir/Parameters.parameter> <urn:uuid:7f9724ed-ef8d-4434-aacb-41869db83233.Parameters.parameter_0> .
-<urn:uuid:7f9724ed-ef8d-4434-aacb-41869db83233> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/Parameters> .----------------------------------------
 
 Subject http://hl7.org/fhir/Bundle/bundle-response DIFFERENCE: ==============================
 	----> First: 
@@ -112,102 +112,6 @@ Subject http://hl7.org/fhir/Bundle/bundle-response DIFFERENCE: =================
 <http://hl7.org/fhir/Bundle/bundle-response> a fhir:Bundle ;
     fhir:nodeRole fhir:treeRoot ;
     fhir:Bundle.entry [
-        fhir:index "2"^^xsd:integer ;
-        fhir:Bundle.entry.response [
-            fhir:Bundle.entry.response.etag [
-                fhir:value "W/\"4\""
-            ] ;
-            fhir:Bundle.entry.response.location [
-                fhir:value "Patient/123/_history/4"
-            ] ;
-            fhir:Bundle.entry.response.status [
-                fhir:value "200 OK"
-            ]
-        ]
-    ],
-        [
-        fhir:index "1"^^xsd:integer ;
-        fhir:Bundle.entry.response [
-            fhir:Bundle.entry.response.status [
-                fhir:value "200 OK"
-            ]
-        ]
-    ],
-        [
-        fhir:index "5"^^xsd:integer ;
-        fhir:Bundle.entry.response [
-            fhir:Bundle.entry.response.status [
-                fhir:value "202 Accepted"
-            ]
-        ]
-    ],
-        [
-        fhir:index "9"^^xsd:integer ;
-        fhir:Bundle.entry.response [
-            fhir:Bundle.entry.response.status [
-                fhir:value "304 Not Modified"
-            ]
-        ]
-    ],
-        [
-        fhir:index "7"^^xsd:integer ;
-        fhir:Bundle.entry.fullUrl [
-            fhir:value "urn:uuid:7f9724ed-ef8d-4434-aacb-41869db83233"
-        ] ;
-        fhir:Bundle.entry.resource [
-            fhir:Parameters.parameter [
-                fhir:index "0"^^xsd:integer ;
-                fhir:Extension.valueString [
-                    fhir:value "LOINC"
-                ] ;
-                fhir:Parameters.parameter.name [
-                    fhir:value "name"
-                ]
-            ]
-        ] ;
-        fhir:Bundle.entry.response [
-            fhir:Bundle.entry.response.status [
-                fhir:value "200 ok"
-            ]
-        ]
-    ],
-        [
-        fhir:index "4"^^xsd:integer ;
-        fhir:Bundle.entry.response [
-            fhir:Bundle.entry.response.etag [
-                fhir:value "W/\"3\""
-            ] ;
-            fhir:Bundle.entry.response.location [
-                fhir:value "Patient/123a/_history/3"
-            ] ;
-            fhir:Bundle.entry.response.status [
-                fhir:value "200 ok"
-            ]
-        ]
-    ],
-        [
-        fhir:index "3"^^xsd:integer ;
-        fhir:Bundle.entry.response [
-            fhir:Bundle.entry.response.etag [
-                fhir:value "W/\"1\""
-            ] ;
-            fhir:Bundle.entry.response.location [
-                fhir:value "Patient/12424/_history/1"
-            ] ;
-            fhir:Bundle.entry.response.status [
-                fhir:value "201 Created"
-            ]
-        ]
-    ],
-        [
-        fhir:index "6"^^xsd:integer ;
-        fhir:Bundle.entry.response [
-            fhir:Bundle.entry.response.status [
-                fhir:value "DELETE"
-            ]
-        ]
-    ],
-        [
         fhir:index "8"^^xsd:integer ;
         fhir:Bundle.entry.fullUrl [
             fhir:value "urn:uuid:e7bcef8e-5ef9-4d2b-87d5-b42b1eec9125"
@@ -220,6 +124,22 @@ Subject http://hl7.org/fhir/Bundle/bundle-response DIFFERENCE: =================
                 fhir:value "fb6ed6cb-324e-4588-87cd-0c92c68986ca"
             ]
         ] ;
+        fhir:Bundle.entry.response [
+            fhir:Bundle.entry.response.status [
+                fhir:value "200 OK"
+            ]
+        ]
+    ],
+        [
+        fhir:index "9"^^xsd:integer ;
+        fhir:Bundle.entry.response [
+            fhir:Bundle.entry.response.status [
+                fhir:value "304 Not Modified"
+            ]
+        ]
+    ],
+        [
+        fhir:index "1"^^xsd:integer ;
         fhir:Bundle.entry.response [
             fhir:Bundle.entry.response.status [
                 fhir:value "200 OK"
@@ -308,6 +228,86 @@ Subject http://hl7.org/fhir/Bundle/bundle-response DIFFERENCE: =================
             ] ;
             fhir:Bundle.entry.response.status [
                 fhir:value "201 Created"
+            ]
+        ]
+    ],
+        [
+        fhir:index "6"^^xsd:integer ;
+        fhir:Bundle.entry.response [
+            fhir:Bundle.entry.response.status [
+                fhir:value "DELETE"
+            ]
+        ]
+    ],
+        [
+        fhir:index "2"^^xsd:integer ;
+        fhir:Bundle.entry.response [
+            fhir:Bundle.entry.response.etag [
+                fhir:value "W/\"4\""
+            ] ;
+            fhir:Bundle.entry.response.location [
+                fhir:value "Patient/123/_history/4"
+            ] ;
+            fhir:Bundle.entry.response.status [
+                fhir:value "200 OK"
+            ]
+        ]
+    ],
+        [
+        fhir:index "5"^^xsd:integer ;
+        fhir:Bundle.entry.response [
+            fhir:Bundle.entry.response.status [
+                fhir:value "202 Accepted"
+            ]
+        ]
+    ],
+        [
+        fhir:index "3"^^xsd:integer ;
+        fhir:Bundle.entry.response [
+            fhir:Bundle.entry.response.etag [
+                fhir:value "W/\"1\""
+            ] ;
+            fhir:Bundle.entry.response.location [
+                fhir:value "Patient/12424/_history/1"
+            ] ;
+            fhir:Bundle.entry.response.status [
+                fhir:value "201 Created"
+            ]
+        ]
+    ],
+        [
+        fhir:index "7"^^xsd:integer ;
+        fhir:Bundle.entry.fullUrl [
+            fhir:value "urn:uuid:7f9724ed-ef8d-4434-aacb-41869db83233"
+        ] ;
+        fhir:Bundle.entry.resource [
+            fhir:Parameters.parameter [
+                fhir:index "0"^^xsd:integer ;
+                fhir:Extension.valueString [
+                    fhir:value "LOINC"
+                ] ;
+                fhir:Parameters.parameter.name [
+                    fhir:value "name"
+                ]
+            ]
+        ] ;
+        fhir:Bundle.entry.response [
+            fhir:Bundle.entry.response.status [
+                fhir:value "200 ok"
+            ]
+        ]
+    ],
+        [
+        fhir:index "4"^^xsd:integer ;
+        fhir:Bundle.entry.response [
+            fhir:Bundle.entry.response.etag [
+                fhir:value "W/\"3\""
+            ] ;
+            fhir:Bundle.entry.response.location [
+                fhir:value "Patient/123a/_history/3"
+            ] ;
+            fhir:Bundle.entry.response.status [
+                fhir:value "200 ok"
             ]
         ]
     ] ;

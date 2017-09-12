@@ -89,21 +89,21 @@ Subject http://hl7.org/fhir/Location/hl7 DIFFERENCE: ===========================
         fhir:value "active"
     ] ;
     fhir:Location.telecom [
-        fhir:index "1"^^xsd:integer ;
-        fhir:ContactPoint.system [
-            fhir:value "fax"
-        ] ;
-        fhir:ContactPoint.value [
-            fhir:value "(+1) 734-677-6622"
-        ]
-    ],
-        [
         fhir:index "2"^^xsd:integer ;
         fhir:ContactPoint.system [
             fhir:value "email"
         ] ;
         fhir:ContactPoint.value [
             fhir:value "hq@HL7.org"
+        ]
+    ],
+        [
+        fhir:index "1"^^xsd:integer ;
+        fhir:ContactPoint.system [
+            fhir:value "fax"
+        ] ;
+        fhir:ContactPoint.value [
+            fhir:value "(+1) 734-677-6622"
         ]
     ],
         [

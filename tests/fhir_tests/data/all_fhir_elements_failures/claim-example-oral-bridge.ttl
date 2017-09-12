@@ -125,160 +125,6 @@ Subject http://hl7.org/fhir/Claim/100156 DIFFERENCE: ===========================
         ]
     ] ;
     fhir:Claim.item [
-        fhir:index "2"^^xsd:integer ;
-        fhir:Claim.item.bodySite [
-            fhir:CodeableConcept.coding [
-                fhir:index "0"^^xsd:integer ;
-                fhir:Coding.code [
-                    fhir:value "24"
-                ] ;
-                fhir:Coding.system [
-                    fhir:value "http://fdi.org/fhir/oraltoothcodes"
-                ]
-            ]
-        ] ;
-        fhir:Claim.item.careTeamLinkId [
-            fhir:index "0"^^xsd:integer ;
-            fhir:value "1"^^xsd:positiveInteger
-        ] ;
-        fhir:Claim.item.detail [
-            fhir:index "0"^^xsd:integer ;
-            fhir:Claim.item.detail.factor [
-                fhir:value "0.75"^^xsd:decimal
-            ] ;
-            fhir:Claim.item.detail.net [
-                fhir:Quantity.code [
-                    fhir:value "USD"
-                ] ;
-                fhir:Quantity.system [
-                    fhir:value "urn:iso:std:iso:4217"
-                ] ;
-                fhir:Quantity.value [
-                    fhir:value "750.0"^^xsd:decimal
-                ]
-            ] ;
-            fhir:Claim.item.detail.sequence [
-                fhir:value "1"^^xsd:positiveInteger
-            ] ;
-            fhir:Claim.item.detail.service [
-                fhir:CodeableConcept.coding [
-                    fhir:index "0"^^xsd:integer ;
-                    fhir:Coding.code [
-                        fhir:value "27211"
-                    ] ;
-                    fhir:Coding.system [
-                        fhir:value "http://example.org/fhir/oralservicecodes"
-                    ]
-                ]
-            ] ;
-            fhir:Claim.item.detail.unitPrice [
-                fhir:Quantity.code [
-                    fhir:value "USD"
-                ] ;
-                fhir:Quantity.system [
-                    fhir:value "urn:iso:std:iso:4217"
-                ] ;
-                fhir:Quantity.value [
-                    fhir:value "1000.0"^^xsd:decimal
-                ]
-            ]
-        ],
-            [
-            fhir:index "1"^^xsd:integer ;
-            fhir:Claim.item.detail.net [
-                fhir:Quantity.code [
-                    fhir:value "USD"
-                ] ;
-                fhir:Quantity.system [
-                    fhir:value "urn:iso:std:iso:4217"
-                ] ;
-                fhir:Quantity.value [
-                    fhir:value "350.0"^^xsd:decimal
-                ]
-            ] ;
-            fhir:Claim.item.detail.sequence [
-                fhir:value "2"^^xsd:positiveInteger
-            ] ;
-            fhir:Claim.item.detail.service [
-                fhir:CodeableConcept.coding [
-                    fhir:index "0"^^xsd:integer ;
-                    fhir:Coding.code [
-                        fhir:value "lab"
-                    ] ;
-                    fhir:Coding.system [
-                        fhir:value "http://example.org/fhir/oralservicecodes"
-                    ]
-                ]
-            ] ;
-            fhir:Claim.item.detail.unitPrice [
-                fhir:Quantity.code [
-                    fhir:value "USD"
-                ] ;
-                fhir:Quantity.system [
-                    fhir:value "urn:iso:std:iso:4217"
-                ] ;
-                fhir:Quantity.value [
-                    fhir:value "350.0"^^xsd:decimal
-                ]
-            ]
-        ] ;
-        fhir:Claim.item.locationCodeableConcept [
-            fhir:CodeableConcept.coding [
-                a <http://hl7.org/fhir/ex-serviceplace/11> ;
-                fhir:index "0"^^xsd:integer ;
-                fhir:Coding.code [
-                    fhir:value "11"
-                ] ;
-                fhir:Coding.system [
-                    fhir:value "http://hl7.org/fhir/ex-serviceplace"
-                ]
-            ]
-        ] ;
-        fhir:Claim.item.net [
-            fhir:Quantity.code [
-                fhir:value "USD"
-            ] ;
-            fhir:Quantity.system [
-                fhir:value "urn:iso:std:iso:4217"
-            ] ;
-            fhir:Quantity.value [
-                fhir:value "1100.0"^^xsd:decimal
-            ]
-        ] ;
-        fhir:Claim.item.procedureLinkId [
-            fhir:index "0"^^xsd:integer ;
-            fhir:value "1"^^xsd:positiveInteger
-        ] ;
-        fhir:Claim.item.sequence [
-            fhir:value "3"^^xsd:positiveInteger
-        ] ;
-        fhir:Claim.item.service [
-            fhir:CodeableConcept.coding [
-                fhir:index "0"^^xsd:integer ;
-                fhir:Coding.code [
-                    fhir:value "27211"
-                ] ;
-                fhir:Coding.system [
-                    fhir:value "http://example.org/fhir/oralservicecodes"
-                ]
-            ]
-        ] ;
-        fhir:Claim.item.servicedDate [
-            fhir:value "2014-08-16"^^xsd:date
-        ] ;
-        fhir:Claim.item.unitPrice [
-            fhir:Quantity.code [
-                fhir:value "USD"
-            ] ;
-            fhir:Quantity.system [
-                fhir:value "urn:iso:std:iso:4217"
-            ] ;
-            fhir:Quantity.value [
-                fhir:value "1100.0"^^xsd:decimal
-            ]
-        ]
-    ],
-        [
         fhir:index "0"^^xsd:integer ;
         fhir:Claim.item.bodySite [
             fhir:CodeableConcept.coding [
@@ -443,6 +289,160 @@ Subject http://hl7.org/fhir/Claim/100156 DIFFERENCE: ===========================
                 fhir:value "105.0"^^xsd:decimal
             ]
         ]
+    ],
+        [
+        fhir:index "2"^^xsd:integer ;
+        fhir:Claim.item.bodySite [
+            fhir:CodeableConcept.coding [
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "24"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://fdi.org/fhir/oraltoothcodes"
+                ]
+            ]
+        ] ;
+        fhir:Claim.item.careTeamLinkId [
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "1"^^xsd:positiveInteger
+        ] ;
+        fhir:Claim.item.detail [
+            fhir:index "0"^^xsd:integer ;
+            fhir:Claim.item.detail.factor [
+                fhir:value "0.75"^^xsd:decimal
+            ] ;
+            fhir:Claim.item.detail.net [
+                fhir:Quantity.code [
+                    fhir:value "USD"
+                ] ;
+                fhir:Quantity.system [
+                    fhir:value "urn:iso:std:iso:4217"
+                ] ;
+                fhir:Quantity.value [
+                    fhir:value "750.0"^^xsd:decimal
+                ]
+            ] ;
+            fhir:Claim.item.detail.sequence [
+                fhir:value "1"^^xsd:positiveInteger
+            ] ;
+            fhir:Claim.item.detail.service [
+                fhir:CodeableConcept.coding [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "27211"
+                    ] ;
+                    fhir:Coding.system [
+                        fhir:value "http://example.org/fhir/oralservicecodes"
+                    ]
+                ]
+            ] ;
+            fhir:Claim.item.detail.unitPrice [
+                fhir:Quantity.code [
+                    fhir:value "USD"
+                ] ;
+                fhir:Quantity.system [
+                    fhir:value "urn:iso:std:iso:4217"
+                ] ;
+                fhir:Quantity.value [
+                    fhir:value "1000.0"^^xsd:decimal
+                ]
+            ]
+        ],
+            [
+            fhir:index "1"^^xsd:integer ;
+            fhir:Claim.item.detail.net [
+                fhir:Quantity.code [
+                    fhir:value "USD"
+                ] ;
+                fhir:Quantity.system [
+                    fhir:value "urn:iso:std:iso:4217"
+                ] ;
+                fhir:Quantity.value [
+                    fhir:value "350.0"^^xsd:decimal
+                ]
+            ] ;
+            fhir:Claim.item.detail.sequence [
+                fhir:value "2"^^xsd:positiveInteger
+            ] ;
+            fhir:Claim.item.detail.service [
+                fhir:CodeableConcept.coding [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "lab"
+                    ] ;
+                    fhir:Coding.system [
+                        fhir:value "http://example.org/fhir/oralservicecodes"
+                    ]
+                ]
+            ] ;
+            fhir:Claim.item.detail.unitPrice [
+                fhir:Quantity.code [
+                    fhir:value "USD"
+                ] ;
+                fhir:Quantity.system [
+                    fhir:value "urn:iso:std:iso:4217"
+                ] ;
+                fhir:Quantity.value [
+                    fhir:value "350.0"^^xsd:decimal
+                ]
+            ]
+        ] ;
+        fhir:Claim.item.locationCodeableConcept [
+            fhir:CodeableConcept.coding [
+                a <http://hl7.org/fhir/ex-serviceplace/11> ;
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "11"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://hl7.org/fhir/ex-serviceplace"
+                ]
+            ]
+        ] ;
+        fhir:Claim.item.net [
+            fhir:Quantity.code [
+                fhir:value "USD"
+            ] ;
+            fhir:Quantity.system [
+                fhir:value "urn:iso:std:iso:4217"
+            ] ;
+            fhir:Quantity.value [
+                fhir:value "1100.0"^^xsd:decimal
+            ]
+        ] ;
+        fhir:Claim.item.procedureLinkId [
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "1"^^xsd:positiveInteger
+        ] ;
+        fhir:Claim.item.sequence [
+            fhir:value "3"^^xsd:positiveInteger
+        ] ;
+        fhir:Claim.item.service [
+            fhir:CodeableConcept.coding [
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "27211"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://example.org/fhir/oralservicecodes"
+                ]
+            ]
+        ] ;
+        fhir:Claim.item.servicedDate [
+            fhir:value "2014-08-16"^^xsd:date
+        ] ;
+        fhir:Claim.item.unitPrice [
+            fhir:Quantity.code [
+                fhir:value "USD"
+            ] ;
+            fhir:Quantity.system [
+                fhir:value "urn:iso:std:iso:4217"
+            ] ;
+            fhir:Quantity.value [
+                fhir:value "1100.0"^^xsd:decimal
+            ]
+        ]
     ] ;
     fhir:Claim.organization [
         fhir:link <http://hl7.org/fhir/Organization/1> ;
@@ -564,6 +564,12 @@ Subject http://hl7.org/fhir/Claim/100156 DIFFERENCE: ===========================
         fhir:value "complete"
     ] ;
     fhir:DomainResource.contained [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Resource.id [
+            fhir:value "device-bridge"
+        ]
+    ],
+        [
         fhir:index "1"^^xsd:integer ;
         fhir:ProcedureRequest.intent [
             fhir:value "order"
@@ -579,12 +585,6 @@ Subject http://hl7.org/fhir/Claim/100156 DIFFERENCE: ===========================
         ] ;
         fhir:Resource.id [
             fhir:value "referral"
-        ]
-    ],
-        [
-        fhir:index "0"^^xsd:integer ;
-        fhir:Resource.id [
-            fhir:value "device-bridge"
         ]
     ] ;
     fhir:DomainResource.text [
