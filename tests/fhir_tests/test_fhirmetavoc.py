@@ -136,7 +136,7 @@ class FHIRMetaVocTestCase(unittest.TestCase):
         self.assertEqual(XSD.dateTime, m.primitive_datatype_nostring(FHIR.instant))
         self.assertEqual(XSD.integer, m.primitive_datatype_nostring(FHIR.integer))
         self.assertEqual(None, m.primitive_datatype_nostring(FHIR.markdown))
-        self.assertEqual(XSD.anyURI, m.primitive_datatype_nostring(FHIR.oid))
+        self.assertEqual(None, m.primitive_datatype_nostring(FHIR.oid))
         self.assertEqual(XSD.positiveInteger, m.primitive_datatype_nostring(FHIR.positiveInt))
         self.assertEqual(None, m.primitive_datatype_nostring(FHIR.string))
         self.assertEqual(None, m.primitive_datatype_nostring(FHIR.time))

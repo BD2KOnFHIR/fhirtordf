@@ -41,6 +41,9 @@ class FHIRMetaVocEntry:
     # False means use OWL dates (datetime)
     fhir_dates = True
 
+    # FHIR doesn't attach the anyURI to an oid
+    fhir_oids = True
+
     """
     FHIR metadata vocbulary for a given subject
     """
@@ -158,6 +161,9 @@ class FHIRMetaVocEntry:
         if self.fhir_dates and vt == XSD.dateTime and v:
             return XSD.gYear if len(v) == 4 else XSD.gYearMonth if len(v) == 7 \
                 else XSD.date if (len(v) == 10 or (len(v) > 10 and v[10] in '+-')) else XSD.dateTime
+        # For some reason the oid datatype is represented as a string as well
+        if self.fhir_oids and vt == XSD.anyURI:
+            vt = None
         return None if vt == XSD.string else vt
 
 
