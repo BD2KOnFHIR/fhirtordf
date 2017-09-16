@@ -81,7 +81,7 @@ class FHIRResource:
     """ A FHIR RDF representation of a FHIR JSON resource """
     def __init__(self, vocabulary: Graph, json_fname: Optional[str], base_uri: str,
                  data: Optional[JsonObj]=None, target: Optional[Graph]=None, add_ontology_header: bool=True,
-                 replace_narrative_text: bool=False):
+                 replace_narrative_text: bool=False, is_root=True):
         """
         Construct an RDF representation
         :param vocabulary: FHIR Metadata Vocabulary (fhir.ttl)
@@ -91,6 +91,7 @@ class FHIRResource:
         :param target: target graph -- used for collections, bundles, etc.
         :param add_ontology_header: Add the OWL ontology header to the output
         :param replace_narrative_text: Replace long narrative text section with boilerplate
+        :param is_root: True means this is a root node, False a component
         """
         if json_fname:
             self.root = load(json_fname)
@@ -110,7 +111,7 @@ class FHIRResource:
         self._addl_namespaces = dict()
         self._add_ontology_header = add_ontology_header
         self._replace_narrative_text = replace_narrative_text
-        self.generate()
+        self.generate(is_root)
 
     @property
     def resource_id(self) -> Optional[str]:
@@ -210,6 +211,17 @@ class FHIRResource:
                         self.add(subj, RDF.type, type_uri)
                     break
 
+    def node_subject(self, list_idx: int, subj: Node, pred: URIRef, node: JsonObj) -> Node:
+        if pred == FHIR.Bundle.entry:
+            entry = BNode()
+            self.add(entry, FHIR.index, Literal(list_idx))
+            self.add_val(entry, FHIR.Bundle.entry.fullUrl, node, 'fullUrl')
+            self.add(entry, FHIR.Bundle.entry.resource, URIRef(node.fullUrl))
+            self.add(subj, pred, entry)
+            return URIRef(node.fullUrl)
+        else:
+            return BNode()
+
     def add_val(self, subj: Node, pred: URIRef, json_obj: JsonObj, json_key: str,
                 valuetype: Optional[URIRef] = None) -> Optional[BNode]:
         """
@@ -232,14 +244,23 @@ class FHIRResource:
             list_idx = 0
             for lv in val:
                 entry_bnode = BNode()
-                self.add(entry_bnode, FHIR.index, Literal(list_idx))
-                if isinstance(lv, JsonObj):
-                    self.add_value_node(entry_bnode, pred, lv, valuetype)
+                if pred == FHIR.Bundle.entry:
+                    entry_subj = URIRef(lv.fullUrl)
+                    self.add(entry_bnode, FHIR.index, Literal(list_idx))
+                    self.add_val(entry_bnode, FHIR.Bundle.entry.fullUrl, lv, 'fullUrl')
+                    self.add(entry_bnode, FHIR.Bundle.entry.resource, entry_subj)
+                    self.add(subj, pred, entry_bnode)
+                    FHIRResource(self._vocabulary, None,  self._base_uri, lv.resource, self._g,
+                                 False, self._replace_narrative_text, False)
                 else:
-                    vt = self._meta.predicate_type(pred)
-                    atom_type = self._meta.primitive_datatype_nostring(vt) if vt else None
-                    self.add(entry_bnode, FHIR.value, Literal(lv, datatype=atom_type))
-                self.add(subj, pred, entry_bnode)
+                    self.add(entry_bnode, FHIR.index, Literal(list_idx))
+                    if isinstance(lv, JsonObj):
+                        self.add_value_node(entry_bnode, pred, lv, valuetype)
+                    else:
+                        vt = self._meta.predicate_type(pred)
+                        atom_type = self._meta.primitive_datatype_nostring(vt) if vt else None
+                        self.add(entry_bnode, FHIR.value, Literal(lv, datatype=atom_type))
+                    self.add(subj, pred, entry_bnode)
                 list_idx += 1
         else:
             vt = self._meta.predicate_type(pred) if not valuetype else valuetype
@@ -330,15 +351,19 @@ class FHIRResource:
             else:
                 self.add_val(subj, FHIR.Element.extension, json_obj[extendee_name], 'extension')
 
-    def generate(self) -> Graph:
-        self.add_prefixes(namespaces)
-        if self._add_ontology_header:
-            self.add_ontology_definition()
-        self.add(self._resource_uri, RDF.type, FHIR[self.root.resourceType])
-        self.add(self._resource_uri, FHIR.nodeRole, FHIR.treeRoot)
+    def add_resource(self, subj: URIRef, json_obj: JsonObj):
+        self.add(subj, RDF.type, FHIR[json_obj.resourceType])
         for k, p in self._meta.predicates().items():
-            if k in self.root:
-                self.add_val(self._resource_uri, p, self.root, k)
+            if k in json_obj:
+                self.add_val(subj, p, json_obj, k)
+
+    def generate(self, is_root: bool) -> Graph:
+        if is_root:
+            self.add_prefixes(namespaces)
+            if self._add_ontology_header:
+                self.add_ontology_definition()
+            self.add(self._resource_uri, FHIR.nodeRole, FHIR.treeRoot)
+        self.add_resource(self._resource_uri, self.root)
         self.add_prefixes(self._addl_namespaces)
         return self._g
 

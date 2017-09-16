@@ -52,15 +52,12 @@ Subject http://hl7.org/fhir/GuidanceResponse/example DIFFERENCE: ===============
     fhir:DomainResource.contained [
         fhir:index "0"^^xsd:integer ;
         fhir:Parameters.parameter [
-            fhir:index "2"^^xsd:integer ;
-            fhir:Extension.valueReference [
-                fhir:link <http://hl7.org/fhir/Device/software> ;
-                fhir:Reference.reference [
-                    fhir:value "Device/software"
-                ]
+            fhir:index "3"^^xsd:integer ;
+            fhir:Extension.valueUri [
+                fhir:value "http://someguidelineprovider.org/radiology-appropriateness-guidelines.html"
             ] ;
             fhir:Parameters.parameter.name [
-                fhir:value "device"
+                fhir:value "guideline-followed"
             ]
         ],
             [
@@ -70,15 +67,6 @@ Subject http://hl7.org/fhir/GuidanceResponse/example DIFFERENCE: ===============
             ] ;
             fhir:Parameters.parameter.name [
                 fhir:value "score"
-            ]
-        ],
-            [
-            fhir:index "3"^^xsd:integer ;
-            fhir:Extension.valueUri [
-                fhir:value "http://someguidelineprovider.org/radiology-appropriateness-guidelines.html"
-            ] ;
-            fhir:Parameters.parameter.name [
-                fhir:value "guideline-followed"
             ]
         ],
             [
@@ -99,6 +87,18 @@ Subject http://hl7.org/fhir/GuidanceResponse/example DIFFERENCE: ===============
             ] ;
             fhir:Parameters.parameter.name [
                 fhir:value "item-assessed"
+            ]
+        ],
+            [
+            fhir:index "2"^^xsd:integer ;
+            fhir:Extension.valueReference [
+                fhir:link <http://hl7.org/fhir/Device/software> ;
+                fhir:Reference.reference [
+                    fhir:value "Device/software"
+                ]
+            ] ;
+            fhir:Parameters.parameter.name [
+                fhir:value "device"
             ]
         ] ;
         fhir:Resource.id [

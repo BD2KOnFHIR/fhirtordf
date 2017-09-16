@@ -195,42 +195,42 @@ Subject http://hl7.org/fhir/Questionnaire/bb DIFFERENCE: =======================
     fhir:Questionnaire.item [
         fhir:index "0"^^xsd:integer ;
         fhir:Questionnaire.item.item [
-            fhir:index "1"^^xsd:integer ;
+            fhir:index "0"^^xsd:integer ;
             fhir:Questionnaire.item.item.item [
-                fhir:index "4"^^xsd:integer
-            ],
-                [
-                fhir:index "0"^^xsd:integer
-            ],
-                [
                 fhir:index "1"^^xsd:integer
             ],
                 [
-                fhir:index "2"^^xsd:integer
-            ],
-                [
-                fhir:index "3"^^xsd:integer
+                fhir:index "0"^^xsd:integer
             ] ;
             fhir:Questionnaire.item.item.linkId [
-                fhir:value "neonatalInformation"
-            ] ;
-            fhir:Questionnaire.item.item.text [
-                fhir:value "Neonatal Information"
+                fhir:value "group"
             ] ;
             fhir:Questionnaire.item.item.type [
                 fhir:value "group"
             ]
         ],
             [
-            fhir:index "0"^^xsd:integer ;
+            fhir:index "1"^^xsd:integer ;
             fhir:Questionnaire.item.item.item [
+                fhir:index "3"^^xsd:integer
+            ],
+                [
                 fhir:index "0"^^xsd:integer
+            ],
+                [
+                fhir:index "2"^^xsd:integer
+            ],
+                [
+                fhir:index "4"^^xsd:integer
             ],
                 [
                 fhir:index "1"^^xsd:integer
             ] ;
             fhir:Questionnaire.item.item.linkId [
-                fhir:value "group"
+                fhir:value "neonatalInformation"
+            ] ;
+            fhir:Questionnaire.item.item.text [
+                fhir:value "Neonatal Information"
             ] ;
             fhir:Questionnaire.item.item.type [
                 fhir:value "group"

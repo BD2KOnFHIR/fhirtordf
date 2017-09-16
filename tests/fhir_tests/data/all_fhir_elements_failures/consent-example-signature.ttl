@@ -194,18 +194,18 @@ Subject http://hl7.org/fhir/Consent/consent-example-signature DIFFERENCE: ======
                 ]
             ] ;
             fhir:Consent.provision.provision.code [
-                fhir:index "1"^^xsd:integer ;
+                fhir:index "0"^^xsd:integer ;
                 fhir:Coding.code [
-                    fhir:value "18842-5"
+                    fhir:value "34133-9"
                 ] ;
                 fhir:Coding.system [
                     fhir:value "http://loinc.org"
                 ]
             ],
                 [
-                fhir:index "0"^^xsd:integer ;
+                fhir:index "1"^^xsd:integer ;
                 fhir:Coding.code [
-                    fhir:value "34133-9"
+                    fhir:value "18842-5"
                 ] ;
                 fhir:Coding.system [
                     fhir:value "http://loinc.org"

@@ -129,27 +129,6 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-history DIFFERENCE: ==
         fhir:value "true"^^xsd:boolean
     ] ;
     fhir:TestScript.fixture [
-        fhir:index "1"^^xsd:integer ;
-        fhir:Element.id [
-            fhir:value "fixture-patient-update"
-        ] ;
-        fhir:TestScript.fixture.autocreate [
-            fhir:value "false"^^xsd:boolean
-        ] ;
-        fhir:TestScript.fixture.autodelete [
-            fhir:value "false"^^xsd:boolean
-        ] ;
-        fhir:TestScript.fixture.resource [
-            fhir:link <http://hl7.org/fhir/Patient/pat1> ;
-            fhir:Reference.display [
-                fhir:value "Donald Duck"
-            ] ;
-            fhir:Reference.reference [
-                fhir:value "Patient/pat1"
-            ]
-        ]
-    ],
-        [
         fhir:index "0"^^xsd:integer ;
         fhir:Element.id [
             fhir:value "fixture-patient-create"
@@ -167,6 +146,27 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-history DIFFERENCE: ==
             ] ;
             fhir:Reference.reference [
                 fhir:value "Patient/example"
+            ]
+        ]
+    ],
+        [
+        fhir:index "1"^^xsd:integer ;
+        fhir:Element.id [
+            fhir:value "fixture-patient-update"
+        ] ;
+        fhir:TestScript.fixture.autocreate [
+            fhir:value "false"^^xsd:boolean
+        ] ;
+        fhir:TestScript.fixture.autodelete [
+            fhir:value "false"^^xsd:boolean
+        ] ;
+        fhir:TestScript.fixture.resource [
+            fhir:link <http://hl7.org/fhir/Patient/pat1> ;
+            fhir:Reference.display [
+                fhir:value "Donald Duck"
+            ] ;
+            fhir:Reference.reference [
+                fhir:value "Patient/pat1"
             ]
         ]
     ] ;
@@ -206,12 +206,12 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-history DIFFERENCE: ==
                 fhir:value "Patient Update, Delete and History (Instance) Operations"
             ] ;
             fhir:TestScript.metadata.capability.link [
-                fhir:index "2"^^xsd:integer ;
-                fhir:value "http://hl7.org/fhir/http.html#history"
-            ],
-                [
                 fhir:index "0"^^xsd:integer ;
                 fhir:value "http://hl7.org/fhir/http.html#update"
+            ],
+                [
+                fhir:index "2"^^xsd:integer ;
+                fhir:value "http://hl7.org/fhir/http.html#history"
             ],
                 [
                 fhir:index "1"^^xsd:integer ;
@@ -252,34 +252,6 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-history DIFFERENCE: ==
     ] ;
     fhir:TestScript.setup [
         fhir:TestScript.setup.action [
-            fhir:index "3"^^xsd:integer ;
-            fhir:TestScript.setup.action.assert [
-                fhir:TestScript.setup.action.assert.description [
-                    fhir:value "Confirm that the returned HTTP status is 201(Created)."
-                ] ;
-                fhir:TestScript.setup.action.assert.direction [
-                    fhir:value "response"
-                ] ;
-                fhir:TestScript.setup.action.assert.responseCode [
-                    fhir:value "201"
-                ]
-            ]
-        ],
-            [
-            fhir:index "5"^^xsd:integer ;
-            fhir:TestScript.setup.action.assert [
-                fhir:TestScript.setup.action.assert.description [
-                    fhir:value "Confirm that the returned HTTP status is 200(OK)."
-                ] ;
-                fhir:TestScript.setup.action.assert.direction [
-                    fhir:value "response"
-                ] ;
-                fhir:TestScript.setup.action.assert.responseCode [
-                    fhir:value "200"
-                ]
-            ]
-        ],
-            [
             fhir:index "2"^^xsd:integer ;
             fhir:TestScript.setup.action.operation [
                 fhir:TestScript.setup.action.operation.accept [
@@ -314,47 +286,16 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-history DIFFERENCE: ==
             ]
         ],
             [
-            fhir:index "0"^^xsd:integer ;
-            fhir:TestScript.setup.action.operation [
-                fhir:TestScript.setup.action.operation.accept [
-                    fhir:value "json"
-                ] ;
-                fhir:TestScript.setup.action.operation.description [
-                    fhir:value "Execute a delete operation to insure the patient does not exist on the server."
-                ] ;
-                fhir:TestScript.setup.action.operation.label [
-                    fhir:value "SetupDeletePatient"
-                ] ;
-                fhir:TestScript.setup.action.operation.params [
-                    fhir:value "/${createResourceId}"
-                ] ;
-                fhir:TestScript.setup.action.operation.resource [
-                    fhir:value "Patient"
-                ] ;
-                fhir:TestScript.setup.action.operation.type [
-                    fhir:Coding.code [
-                        fhir:value "delete"
-                    ] ;
-                    fhir:Coding.system [
-                        fhir:value "http://hl7.org/fhir/testscript-operation-codes"
-                    ]
-                ]
-            ]
-        ],
-            [
-            fhir:index "1"^^xsd:integer ;
+            fhir:index "5"^^xsd:integer ;
             fhir:TestScript.setup.action.assert [
                 fhir:TestScript.setup.action.assert.description [
-                    fhir:value "Confirm that the returned HTTP status is 200(OK) or 204(No Content)."
+                    fhir:value "Confirm that the returned HTTP status is 200(OK)."
                 ] ;
                 fhir:TestScript.setup.action.assert.direction [
                     fhir:value "response"
                 ] ;
-                fhir:TestScript.setup.action.assert.operator [
-                    fhir:value "in"
-                ] ;
                 fhir:TestScript.setup.action.assert.responseCode [
-                    fhir:value "200,204"
+                    fhir:value "200"
                 ]
             ]
         ],
@@ -391,6 +332,65 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-history DIFFERENCE: ==
                     ]
                 ]
             ]
+        ],
+            [
+            fhir:index "1"^^xsd:integer ;
+            fhir:TestScript.setup.action.assert [
+                fhir:TestScript.setup.action.assert.description [
+                    fhir:value "Confirm that the returned HTTP status is 200(OK) or 204(No Content)."
+                ] ;
+                fhir:TestScript.setup.action.assert.direction [
+                    fhir:value "response"
+                ] ;
+                fhir:TestScript.setup.action.assert.operator [
+                    fhir:value "in"
+                ] ;
+                fhir:TestScript.setup.action.assert.responseCode [
+                    fhir:value "200,204"
+                ]
+            ]
+        ],
+            [
+            fhir:index "3"^^xsd:integer ;
+            fhir:TestScript.setup.action.assert [
+                fhir:TestScript.setup.action.assert.description [
+                    fhir:value "Confirm that the returned HTTP status is 201(Created)."
+                ] ;
+                fhir:TestScript.setup.action.assert.direction [
+                    fhir:value "response"
+                ] ;
+                fhir:TestScript.setup.action.assert.responseCode [
+                    fhir:value "201"
+                ]
+            ]
+        ],
+            [
+            fhir:index "0"^^xsd:integer ;
+            fhir:TestScript.setup.action.operation [
+                fhir:TestScript.setup.action.operation.accept [
+                    fhir:value "json"
+                ] ;
+                fhir:TestScript.setup.action.operation.description [
+                    fhir:value "Execute a delete operation to insure the patient does not exist on the server."
+                ] ;
+                fhir:TestScript.setup.action.operation.label [
+                    fhir:value "SetupDeletePatient"
+                ] ;
+                fhir:TestScript.setup.action.operation.params [
+                    fhir:value "/${createResourceId}"
+                ] ;
+                fhir:TestScript.setup.action.operation.resource [
+                    fhir:value "Patient"
+                ] ;
+                fhir:TestScript.setup.action.operation.type [
+                    fhir:Coding.code [
+                        fhir:value "delete"
+                    ] ;
+                    fhir:Coding.system [
+                        fhir:value "http://hl7.org/fhir/testscript-operation-codes"
+                    ]
+                ]
+            ]
         ]
     ] ;
     fhir:TestScript.status [
@@ -409,6 +409,34 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-history DIFFERENCE: ==
                 ] ;
                 fhir:TestScript.test.action.assert.validateProfileId [
                     fhir:value "bundle-profile"
+                ]
+            ]
+        ],
+            [
+            fhir:index "2"^^xsd:integer ;
+            fhir:TestScript.test.action.assert [
+                fhir:TestScript.test.action.assert.description [
+                    fhir:value "Confirm that the returned resource type is Bundle."
+                ] ;
+                fhir:TestScript.test.action.assert.resource [
+                    fhir:value "Bundle"
+                ]
+            ]
+        ],
+            [
+            fhir:index "4"^^xsd:integer ;
+            fhir:TestScript.test.action.assert [
+                fhir:TestScript.test.action.assert.description [
+                    fhir:value "Confirm that the returned Bundle type equals 'history'."
+                ] ;
+                fhir:TestScript.test.action.assert.operator [
+                    fhir:value "equals"
+                ] ;
+                fhir:TestScript.test.action.assert.path [
+                    fhir:value "fhir:Bundle/fhir:type/@value"
+                ] ;
+                fhir:TestScript.test.action.assert.value [
+                    fhir:value "history"
                 ]
             ]
         ],
@@ -451,34 +479,6 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-history DIFFERENCE: ==
                 ] ;
                 fhir:TestScript.test.action.assert.response [
                     fhir:value "okay"
-                ]
-            ]
-        ],
-            [
-            fhir:index "2"^^xsd:integer ;
-            fhir:TestScript.test.action.assert [
-                fhir:TestScript.test.action.assert.description [
-                    fhir:value "Confirm that the returned resource type is Bundle."
-                ] ;
-                fhir:TestScript.test.action.assert.resource [
-                    fhir:value "Bundle"
-                ]
-            ]
-        ],
-            [
-            fhir:index "4"^^xsd:integer ;
-            fhir:TestScript.test.action.assert [
-                fhir:TestScript.test.action.assert.description [
-                    fhir:value "Confirm that the returned Bundle type equals 'history'."
-                ] ;
-                fhir:TestScript.test.action.assert.operator [
-                    fhir:value "equals"
-                ] ;
-                fhir:TestScript.test.action.assert.path [
-                    fhir:value "fhir:Bundle/fhir:type/@value"
-                ] ;
-                fhir:TestScript.test.action.assert.value [
-                    fhir:value "history"
                 ]
             ]
         ] ;

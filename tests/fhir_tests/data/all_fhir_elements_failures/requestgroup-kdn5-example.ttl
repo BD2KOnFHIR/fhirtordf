@@ -92,67 +92,6 @@ Subject http://hl7.org/fhir/RequestGroup/kdn5-example DIFFERENCE: ==============
 <http://hl7.org/fhir/RequestGroup/kdn5-example> a fhir:RequestGroup ;
     fhir:nodeRole fhir:treeRoot ;
     fhir:DomainResource.contained [
-        fhir:index "0"^^xsd:integer ;
-        fhir:MedicationRequest.dosageInstruction [
-            fhir:index "0"^^xsd:integer ;
-            fhir:Dosage.doseQuantity [
-                fhir:Quantity.unit [
-                    fhir:value "mg/m²"
-                ] ;
-                fhir:Quantity.value [
-                    fhir:value "1250"^^xsd:decimal
-                ]
-            ] ;
-            fhir:Dosage.route [
-                fhir:CodeableConcept.text [
-                    fhir:value "IV"
-                ]
-            ] ;
-            fhir:Dosage.text [
-                fhir:value "1250 mg/m² IV over 30 minutes"
-            ] ;
-            fhir:Dosage.timing [
-                fhir:Timing.repeat [
-                    fhir:Timing.repeat.duration [
-                        fhir:value "30"^^xsd:decimal
-                    ] ;
-                    fhir:Timing.repeat.durationUnit [
-                        fhir:value "min"
-                    ]
-                ]
-            ]
-        ] ;
-        fhir:MedicationRequest.intent [
-            fhir:value "proposal"
-        ] ;
-        fhir:MedicationRequest.medicationCodeableConcept [
-            fhir:CodeableConcept.coding [
-                fhir:index "0"^^xsd:integer ;
-                fhir:Coding.code [
-                    fhir:value "12574"
-                ] ;
-                fhir:Coding.display [
-                    fhir:value "gemcitabine"
-                ] ;
-                fhir:Coding.system [
-                    fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm"
-                ]
-            ] ;
-            fhir:CodeableConcept.text [
-                fhir:value "gemcitabine"
-            ]
-        ] ;
-        fhir:MedicationRequest.subject [
-            fhir:link <http://hl7.org/fhir/Patient/example> ;
-            fhir:Reference.reference [
-                fhir:value "Patient/example"
-            ]
-        ] ;
-        fhir:Resource.id [
-            fhir:value "1111"
-        ]
-    ],
-        [
         fhir:index "1"^^xsd:integer ;
         fhir:MedicationRequest.dosageInstruction [
             fhir:index "0"^^xsd:integer ;
@@ -214,6 +153,67 @@ Subject http://hl7.org/fhir/RequestGroup/kdn5-example DIFFERENCE: ==============
         ] ;
         fhir:Resource.id [
             fhir:value "2222"
+        ]
+    ],
+        [
+        fhir:index "0"^^xsd:integer ;
+        fhir:MedicationRequest.dosageInstruction [
+            fhir:index "0"^^xsd:integer ;
+            fhir:Dosage.doseQuantity [
+                fhir:Quantity.unit [
+                    fhir:value "mg/m²"
+                ] ;
+                fhir:Quantity.value [
+                    fhir:value "1250"^^xsd:decimal
+                ]
+            ] ;
+            fhir:Dosage.route [
+                fhir:CodeableConcept.text [
+                    fhir:value "IV"
+                ]
+            ] ;
+            fhir:Dosage.text [
+                fhir:value "1250 mg/m² IV over 30 minutes"
+            ] ;
+            fhir:Dosage.timing [
+                fhir:Timing.repeat [
+                    fhir:Timing.repeat.duration [
+                        fhir:value "30"^^xsd:decimal
+                    ] ;
+                    fhir:Timing.repeat.durationUnit [
+                        fhir:value "min"
+                    ]
+                ]
+            ]
+        ] ;
+        fhir:MedicationRequest.intent [
+            fhir:value "proposal"
+        ] ;
+        fhir:MedicationRequest.medicationCodeableConcept [
+            fhir:CodeableConcept.coding [
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "12574"
+                ] ;
+                fhir:Coding.display [
+                    fhir:value "gemcitabine"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm"
+                ]
+            ] ;
+            fhir:CodeableConcept.text [
+                fhir:value "gemcitabine"
+            ]
+        ] ;
+        fhir:MedicationRequest.subject [
+            fhir:link <http://hl7.org/fhir/Patient/example> ;
+            fhir:Reference.reference [
+                fhir:value "Patient/example"
+            ]
+        ] ;
+        fhir:Resource.id [
+            fhir:value "1111"
         ]
     ] ;
     fhir:DomainResource.text [

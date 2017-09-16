@@ -62,18 +62,6 @@ Subject http://hl7.org/fhir/NutritionOrder/enteralcontinuous DIFFERENCE: =======
     ] ;
     fhir:NutritionOrder.enteralFormula [
         fhir:NutritionOrder.enteralFormula.administration [
-            fhir:index "1"^^xsd:integer ;
-            fhir:NutritionOrder.enteralFormula.administration.schedule [
-                fhir:Timing.repeat [
-                    fhir:Timing.repeat.boundsPeriod [
-                        fhir:Period.start [
-                            fhir:value "2014-09-17T11:00:00+00:00"^^xsd:dateTime
-                        ]
-                    ]
-                ]
-            ]
-        ],
-            [
             fhir:index "2"^^xsd:integer ;
             fhir:NutritionOrder.enteralFormula.administration.schedule [
                 fhir:Timing.repeat [
@@ -92,6 +80,18 @@ Subject http://hl7.org/fhir/NutritionOrder/enteralcontinuous DIFFERENCE: =======
                     fhir:Timing.repeat.boundsPeriod [
                         fhir:Period.start [
                             fhir:value "2014-09-17T07:00:00+00:00"^^xsd:dateTime
+                        ]
+                    ]
+                ]
+            ]
+        ],
+            [
+            fhir:index "1"^^xsd:integer ;
+            fhir:NutritionOrder.enteralFormula.administration.schedule [
+                fhir:Timing.repeat [
+                    fhir:Timing.repeat.boundsPeriod [
+                        fhir:Period.start [
+                            fhir:value "2014-09-17T11:00:00+00:00"^^xsd:dateTime
                         ]
                     ]
                 ]

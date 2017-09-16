@@ -247,21 +247,6 @@ Subject http://hl7.org/fhir/ValueSet/example-expansion DIFFERENCE: =============
             ]
         ] ;
         fhir:ValueSet.expansion.contains [
-            fhir:index "0"^^xsd:integer ;
-            fhir:ValueSet.expansion.contains.code [
-                fhir:value "14647-2"
-            ] ;
-            fhir:ValueSet.expansion.contains.display [
-                fhir:value "Cholesterol [Moles/volume] in Serum or Plasma"
-            ] ;
-            fhir:ValueSet.expansion.contains.system [
-                fhir:value "http://loinc.org"
-            ] ;
-            fhir:ValueSet.expansion.contains.version [
-                fhir:value "2.50"
-            ]
-        ],
-            [
             fhir:index "2"^^xsd:integer ;
             fhir:ValueSet.expansion.contains.abstract [
                 fhir:value "true"^^xsd:boolean
@@ -328,6 +313,21 @@ Subject http://hl7.org/fhir/ValueSet/example-expansion DIFFERENCE: =============
             ] ;
             fhir:ValueSet.expansion.contains.display [
                 fhir:value "Cholesterol Ratios"
+            ]
+        ],
+            [
+            fhir:index "0"^^xsd:integer ;
+            fhir:ValueSet.expansion.contains.code [
+                fhir:value "14647-2"
+            ] ;
+            fhir:ValueSet.expansion.contains.display [
+                fhir:value "Cholesterol [Moles/volume] in Serum or Plasma"
+            ] ;
+            fhir:ValueSet.expansion.contains.system [
+                fhir:value "http://loinc.org"
+            ] ;
+            fhir:ValueSet.expansion.contains.version [
+                fhir:value "2.50"
             ]
         ],
             [

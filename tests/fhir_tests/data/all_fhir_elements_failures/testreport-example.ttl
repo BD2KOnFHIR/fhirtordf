@@ -216,20 +216,6 @@ Subject http://hl7.org/fhir/TestReport/testreport-example DIFFERENCE: ==========
             ]
         ],
             [
-            fhir:index "1"^^xsd:integer ;
-            fhir:TestReport.setup.action.assert [
-                fhir:TestReport.setup.action.assert.detail [
-                    fhir:value "http://projectcrucible.org/permalink/1"
-                ] ;
-                fhir:TestReport.setup.action.assert.message [
-                    fhir:value "HTTP 204"
-                ] ;
-                fhir:TestReport.setup.action.assert.result [
-                    fhir:value "pass"
-                ]
-            ]
-        ],
-            [
             fhir:index "3"^^xsd:integer ;
             fhir:TestReport.setup.action.assert [
                 fhir:TestReport.setup.action.assert.detail [
@@ -253,6 +239,20 @@ Subject http://hl7.org/fhir/TestReport/testreport-example DIFFERENCE: ==========
                     fhir:value "DELETE Patient"
                 ] ;
                 fhir:TestReport.setup.action.operation.result [
+                    fhir:value "pass"
+                ]
+            ]
+        ],
+            [
+            fhir:index "1"^^xsd:integer ;
+            fhir:TestReport.setup.action.assert [
+                fhir:TestReport.setup.action.assert.detail [
+                    fhir:value "http://projectcrucible.org/permalink/1"
+                ] ;
+                fhir:TestReport.setup.action.assert.message [
+                    fhir:value "HTTP 204"
+                ] ;
+                fhir:TestReport.setup.action.assert.result [
                     fhir:value "pass"
                 ]
             ]
@@ -283,13 +283,27 @@ Subject http://hl7.org/fhir/TestReport/testreport-example DIFFERENCE: ==========
             fhir:value "01-ReadPatient"
         ] ;
         fhir:TestReport.test.action [
-            fhir:index "3"^^xsd:integer ;
+            fhir:index "1"^^xsd:integer ;
             fhir:TestReport.test.action.assert [
                 fhir:TestReport.test.action.assert.detail [
                     fhir:value "http://projectcrucible.org/permalink/2"
                 ] ;
                 fhir:TestReport.test.action.assert.message [
-                    fhir:value "Response is Patient"
+                    fhir:value "HTTP 200"
+                ] ;
+                fhir:TestReport.test.action.assert.result [
+                    fhir:value "pass"
+                ]
+            ]
+        ],
+            [
+            fhir:index "2"^^xsd:integer ;
+            fhir:TestReport.test.action.assert [
+                fhir:TestReport.test.action.assert.detail [
+                    fhir:value "http://projectcrucible.org/permalink/2"
+                ] ;
+                fhir:TestReport.test.action.assert.message [
+                    fhir:value "Last-Modified Present"
                 ] ;
                 fhir:TestReport.test.action.assert.result [
                     fhir:value "pass"
@@ -311,13 +325,41 @@ Subject http://hl7.org/fhir/TestReport/testreport-example DIFFERENCE: ==========
             ]
         ],
             [
-            fhir:index "6"^^xsd:integer ;
+            fhir:index "3"^^xsd:integer ;
             fhir:TestReport.test.action.assert [
                 fhir:TestReport.test.action.assert.detail [
                     fhir:value "http://projectcrucible.org/permalink/2"
                 ] ;
                 fhir:TestReport.test.action.assert.message [
-                    fhir:value "Patient.name.given 'Peter'"
+                    fhir:value "Response is Patient"
+                ] ;
+                fhir:TestReport.test.action.assert.result [
+                    fhir:value "pass"
+                ]
+            ]
+        ],
+            [
+            fhir:index "9"^^xsd:integer ;
+            fhir:TestReport.test.action.assert [
+                fhir:TestReport.test.action.assert.detail [
+                    fhir:value "http://projectcrucible.org/permalink/2"
+                ] ;
+                fhir:TestReport.test.action.assert.message [
+                    fhir:value "Patient expected values."
+                ] ;
+                fhir:TestReport.test.action.assert.result [
+                    fhir:value "pass"
+                ]
+            ]
+        ],
+            [
+            fhir:index "5"^^xsd:integer ;
+            fhir:TestReport.test.action.assert [
+                fhir:TestReport.test.action.assert.detail [
+                    fhir:value "http://projectcrucible.org/permalink/2"
+                ] ;
+                fhir:TestReport.test.action.assert.message [
+                    fhir:value "Patient.name.family 'Chalmers'"
                 ] ;
                 fhir:TestReport.test.action.assert.result [
                     fhir:value "pass"
@@ -353,13 +395,13 @@ Subject http://hl7.org/fhir/TestReport/testreport-example DIFFERENCE: ==========
             ]
         ],
             [
-            fhir:index "1"^^xsd:integer ;
+            fhir:index "6"^^xsd:integer ;
             fhir:TestReport.test.action.assert [
                 fhir:TestReport.test.action.assert.detail [
                     fhir:value "http://projectcrucible.org/permalink/2"
                 ] ;
                 fhir:TestReport.test.action.assert.message [
-                    fhir:value "HTTP 200"
+                    fhir:value "Patient.name.given 'Peter'"
                 ] ;
                 fhir:TestReport.test.action.assert.result [
                     fhir:value "pass"
@@ -374,48 +416,6 @@ Subject http://hl7.org/fhir/TestReport/testreport-example DIFFERENCE: ==========
                 ] ;
                 fhir:TestReport.test.action.assert.message [
                     fhir:value "Patient.name.family 'Chalmers'"
-                ] ;
-                fhir:TestReport.test.action.assert.result [
-                    fhir:value "pass"
-                ]
-            ]
-        ],
-            [
-            fhir:index "5"^^xsd:integer ;
-            fhir:TestReport.test.action.assert [
-                fhir:TestReport.test.action.assert.detail [
-                    fhir:value "http://projectcrucible.org/permalink/2"
-                ] ;
-                fhir:TestReport.test.action.assert.message [
-                    fhir:value "Patient.name.family 'Chalmers'"
-                ] ;
-                fhir:TestReport.test.action.assert.result [
-                    fhir:value "pass"
-                ]
-            ]
-        ],
-            [
-            fhir:index "9"^^xsd:integer ;
-            fhir:TestReport.test.action.assert [
-                fhir:TestReport.test.action.assert.detail [
-                    fhir:value "http://projectcrucible.org/permalink/2"
-                ] ;
-                fhir:TestReport.test.action.assert.message [
-                    fhir:value "Patient expected values."
-                ] ;
-                fhir:TestReport.test.action.assert.result [
-                    fhir:value "pass"
-                ]
-            ]
-        ],
-            [
-            fhir:index "2"^^xsd:integer ;
-            fhir:TestReport.test.action.assert [
-                fhir:TestReport.test.action.assert.detail [
-                    fhir:value "http://projectcrucible.org/permalink/2"
-                ] ;
-                fhir:TestReport.test.action.assert.message [
-                    fhir:value "Last-Modified Present"
                 ] ;
                 fhir:TestReport.test.action.assert.result [
                     fhir:value "pass"

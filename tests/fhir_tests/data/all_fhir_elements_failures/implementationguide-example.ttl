@@ -54,21 +54,6 @@ Subject http://hl7.org/fhir/ImplementationGuide/example DIFFERENCE: ============
         fhir:value "http://h7.org/fhir/fhir.css"
     ] ;
     fhir:ImplementationGuide.contact [
-        fhir:index "0"^^xsd:integer ;
-        fhir:ContactDetail.name [
-            fhir:value "ONC"
-        ] ;
-        fhir:ContactDetail.telecom [
-            fhir:index "0"^^xsd:integer ;
-            fhir:ContactPoint.system [
-                fhir:value "url"
-            ] ;
-            fhir:ContactPoint.value [
-                fhir:value "http://www.healthit.gov"
-            ]
-        ]
-    ],
-        [
         fhir:index "1"^^xsd:integer ;
         fhir:ContactDetail.name [
             fhir:value "HL7"
@@ -80,6 +65,21 @@ Subject http://hl7.org/fhir/ImplementationGuide/example DIFFERENCE: ============
             ] ;
             fhir:ContactPoint.value [
                 fhir:value "http://hl7.org/fhir"
+            ]
+        ]
+    ],
+        [
+        fhir:index "0"^^xsd:integer ;
+        fhir:ContactDetail.name [
+            fhir:value "ONC"
+        ] ;
+        fhir:ContactDetail.telecom [
+            fhir:index "0"^^xsd:integer ;
+            fhir:ContactPoint.system [
+                fhir:value "url"
+            ] ;
+            fhir:ContactPoint.value [
+                fhir:value "http://www.healthit.gov"
             ]
         ]
     ] ;

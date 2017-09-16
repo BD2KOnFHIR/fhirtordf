@@ -170,18 +170,6 @@ Subject http://hl7.org/fhir/Questionnaire/f201 DIFFERENCE: =====================
         [
         fhir:index "1"^^xsd:integer ;
         fhir:Questionnaire.item.item [
-            fhir:index "0"^^xsd:integer ;
-            fhir:Questionnaire.item.item.linkId [
-                fhir:value "2.1"
-            ] ;
-            fhir:Questionnaire.item.item.text [
-                fhir:value "What is your gender?"
-            ] ;
-            fhir:Questionnaire.item.item.type [
-                fhir:value "string"
-            ]
-        ],
-            [
             fhir:index "2"^^xsd:integer ;
             fhir:Questionnaire.item.item.linkId [
                 fhir:value "2.3"
@@ -203,6 +191,18 @@ Subject http://hl7.org/fhir/Questionnaire/f201 DIFFERENCE: =====================
             ] ;
             fhir:Questionnaire.item.item.type [
                 fhir:value "date"
+            ]
+        ],
+            [
+            fhir:index "0"^^xsd:integer ;
+            fhir:Questionnaire.item.item.linkId [
+                fhir:value "2.1"
+            ] ;
+            fhir:Questionnaire.item.item.text [
+                fhir:value "What is your gender?"
+            ] ;
+            fhir:Questionnaire.item.item.type [
+                fhir:value "string"
             ]
         ],
             [

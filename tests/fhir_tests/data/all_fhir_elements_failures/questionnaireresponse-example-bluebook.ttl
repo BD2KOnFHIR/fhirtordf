@@ -173,10 +173,10 @@ Subject http://hl7.org/fhir/QuestionnaireResponse/bb DIFFERENCE: ===============
         fhir:QuestionnaireResponse.item.item [
             fhir:index "0"^^xsd:integer ;
             fhir:QuestionnaireResponse.item.item.item [
-                fhir:index "0"^^xsd:integer
+                fhir:index "1"^^xsd:integer
             ],
                 [
-                fhir:index "1"^^xsd:integer
+                fhir:index "0"^^xsd:integer
             ] ;
             fhir:QuestionnaireResponse.item.item.linkId [
                 fhir:value "group"
@@ -185,6 +185,9 @@ Subject http://hl7.org/fhir/QuestionnaireResponse/bb DIFFERENCE: ===============
             [
             fhir:index "1"^^xsd:integer ;
             fhir:QuestionnaireResponse.item.item.item [
+                fhir:index "1"^^xsd:integer
+            ],
+                [
                 fhir:index "2"^^xsd:integer
             ],
                 [
@@ -195,9 +198,6 @@ Subject http://hl7.org/fhir/QuestionnaireResponse/bb DIFFERENCE: ===============
             ],
                 [
                 fhir:index "0"^^xsd:integer
-            ],
-                [
-                fhir:index "1"^^xsd:integer
             ] ;
             fhir:QuestionnaireResponse.item.item.linkId [
                 fhir:value "neonatalInformation"

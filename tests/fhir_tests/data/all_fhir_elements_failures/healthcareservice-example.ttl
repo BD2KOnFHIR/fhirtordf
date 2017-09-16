@@ -75,20 +75,30 @@ Subject http://hl7.org/fhir/HealthcareService/example DIFFERENCE: ==============
             fhir:value "08:30:00"
         ] ;
         fhir:HealthcareService.availableTime.daysOfWeek [
-            fhir:index "1"^^xsd:integer ;
-            fhir:value "tue"
-        ],
-            [
-            fhir:index "0"^^xsd:integer ;
-            fhir:value "mon"
-        ],
-            [
             fhir:index "3"^^xsd:integer ;
             fhir:value "fri"
         ],
             [
             fhir:index "2"^^xsd:integer ;
             fhir:value "thu"
+        ],
+            [
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "mon"
+        ],
+            [
+            fhir:index "1"^^xsd:integer ;
+            fhir:value "tue"
+        ]
+    ],
+        [
+        fhir:index "0"^^xsd:integer ;
+        fhir:HealthcareService.availableTime.allDay [
+            fhir:value "true"^^xsd:boolean
+        ] ;
+        fhir:HealthcareService.availableTime.daysOfWeek [
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "wed"
         ]
     ],
         [
@@ -106,16 +116,6 @@ Subject http://hl7.org/fhir/HealthcareService/example DIFFERENCE: ==============
             [
             fhir:index "0"^^xsd:integer ;
             fhir:value "sat"
-        ]
-    ],
-        [
-        fhir:index "0"^^xsd:integer ;
-        fhir:HealthcareService.availableTime.allDay [
-            fhir:value "true"^^xsd:boolean
-        ] ;
-        fhir:HealthcareService.availableTime.daysOfWeek [
-            fhir:index "0"^^xsd:integer ;
-            fhir:value "wed"
         ]
     ] ;
     fhir:HealthcareService.category [
@@ -198,20 +198,6 @@ Subject http://hl7.org/fhir/HealthcareService/example DIFFERENCE: ==============
         fhir:value "Consulting psychologists and/or psychology services"
     ] ;
     fhir:HealthcareService.notAvailable [
-        fhir:index "0"^^xsd:integer ;
-        fhir:HealthcareService.notAvailable.description [
-            fhir:value "Christmas/Boxing Day"
-        ] ;
-        fhir:HealthcareService.notAvailable.during [
-            fhir:Period.end [
-                fhir:value "2015-12-26"^^xsd:date
-            ] ;
-            fhir:Period.start [
-                fhir:value "2015-12-25"^^xsd:date
-            ]
-        ]
-    ],
-        [
         fhir:index "1"^^xsd:integer ;
         fhir:HealthcareService.notAvailable.description [
             fhir:value "New Years Day"
@@ -222,6 +208,20 @@ Subject http://hl7.org/fhir/HealthcareService/example DIFFERENCE: ==============
             ] ;
             fhir:Period.start [
                 fhir:value "2016-01-01"^^xsd:date
+            ]
+        ]
+    ],
+        [
+        fhir:index "0"^^xsd:integer ;
+        fhir:HealthcareService.notAvailable.description [
+            fhir:value "Christmas/Boxing Day"
+        ] ;
+        fhir:HealthcareService.notAvailable.during [
+            fhir:Period.end [
+                fhir:value "2015-12-26"^^xsd:date
+            ] ;
+            fhir:Period.start [
+                fhir:value "2015-12-25"^^xsd:date
             ]
         ]
     ] ;
@@ -263,18 +263,6 @@ Subject http://hl7.org/fhir/HealthcareService/example DIFFERENCE: ==============
         ]
     ],
         [
-        fhir:index "2"^^xsd:integer ;
-        fhir:CodeableConcept.coding [
-            fhir:index "0"^^xsd:integer ;
-            fhir:Coding.code [
-                fhir:value "elec"
-            ] ;
-            fhir:Coding.display [
-                fhir:value "Secure Messaging"
-            ]
-        ]
-    ],
-        [
         fhir:index "3"^^xsd:integer ;
         fhir:CodeableConcept.coding [
             fhir:index "0"^^xsd:integer ;
@@ -283,6 +271,18 @@ Subject http://hl7.org/fhir/HealthcareService/example DIFFERENCE: ==============
             ] ;
             fhir:Coding.display [
                 fhir:value "Secure Email"
+            ]
+        ]
+    ],
+        [
+        fhir:index "2"^^xsd:integer ;
+        fhir:CodeableConcept.coding [
+            fhir:index "0"^^xsd:integer ;
+            fhir:Coding.code [
+                fhir:value "elec"
+            ] ;
+            fhir:Coding.display [
+                fhir:value "Secure Messaging"
             ]
         ]
     ] ;

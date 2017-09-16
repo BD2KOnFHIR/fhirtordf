@@ -2,8 +2,6 @@
 
 Subject http://hl7.org/fhir/Contract/INS-101 DIFFERENCE: ==============================
 	----> First: 
-<http://hl7.org/fhir/Contract/INS-101.Contract.term_0.Contract.term.asset_0.Contract.term.asset.valuedItem_0.Contract.term.asset.valuedItem.net.Quantity.value> <http://hl7.org/fhir/value> "200.00"^^<http://www.w3.org/2001/XMLSchema#decimal> .
-<http://hl7.org/fhir/Contract/INS-101.Contract.term_0.Contract.term.asset_0.Contract.term.asset.valuedItem_0.Contract.term.asset.valuedItem.unitPrice.Quantity.value> <http://hl7.org/fhir/value> "200.00"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 <http://hl7.org/fhir/Contract/INS-101.Contract.term_0.Contract.term.group_0.Contract.term.offer.Contract.term.offer.text> <http://hl7.org/fhir/value> "Eligible Providers" .
 <http://hl7.org/fhir/Contract/INS-101.Contract.term_0.Contract.term.group_0.Contract.term.offer> <http://hl7.org/fhir/Contract.term.offer.text> <http://hl7.org/fhir/Contract/INS-101.Contract.term_0.Contract.term.group_0.Contract.term.offer.Contract.term.offer.text> .
 <http://hl7.org/fhir/Contract/INS-101.Contract.term_0.Contract.term.group_0> <http://hl7.org/fhir/Contract.term.offer> <http://hl7.org/fhir/Contract/INS-101.Contract.term_0.Contract.term.group_0.Contract.term.offer> .
@@ -69,8 +67,6 @@ Subject http://hl7.org/fhir/Contract/INS-101 DIFFERENCE: =======================
 <http://hl7.org/fhir/Contract/INS-101.Contract.term_0.Contract.term.group_2> <http://hl7.org/fhir/Contract.term.group> <http://hl7.org/fhir/Contract/INS-101.Contract.term_0.Contract.term.group_2.Contract.term.group_3> .
 <http://hl7.org/fhir/Contract/INS-101.Contract.term_0.Contract.term.group_2> <http://hl7.org/fhir/Contract.term.offer> <http://hl7.org/fhir/Contract/INS-101.Contract.term_0.Contract.term.group_2.Contract.term.offer> .
 	----> Second: 
-<http://hl7.org/fhir/Contract/INS-101.Contract.term_0.Contract.term.asset_0.Contract.term.asset.valuedItem_0.Contract.term.asset.valuedItem.net.Quantity.value> <http://hl7.org/fhir/value> "200.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
-<http://hl7.org/fhir/Contract/INS-101.Contract.term_0.Contract.term.asset_0.Contract.term.asset.valuedItem_0.Contract.term.asset.valuedItem.unitPrice.Quantity.value> <http://hl7.org/fhir/value> "200.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
 <http://hl7.org/fhir/Contract/INS-101.Contract.term_0.Contract.term.group_0.Contract.term.group.offer.Contract.term.group.offer.text> <http://hl7.org/fhir/value> "Eligible Providers" .
 <http://hl7.org/fhir/Contract/INS-101.Contract.term_0.Contract.term.group_0.Contract.term.group.offer> <http://hl7.org/fhir/Contract.term.group.offer.text> <http://hl7.org/fhir/Contract/INS-101.Contract.term_0.Contract.term.group_0.Contract.term.group.offer.Contract.term.group.offer.text> .
 <http://hl7.org/fhir/Contract/INS-101.Contract.term_0.Contract.term.group_0> <http://hl7.org/fhir/Contract.term.group.offer> <http://hl7.org/fhir/Contract/INS-101.Contract.term_0.Contract.term.group_0.Contract.term.group.offer> .
@@ -190,26 +186,6 @@ Subject http://hl7.org/fhir/Contract/INS-101 DIFFERENCE: =======================
             ]
         ] ;
         fhir:Contract.term.group [
-            fhir:index "2"^^xsd:integer ;
-            fhir:Contract.term.group.group [
-                fhir:index "3"^^xsd:integer
-            ],
-                [
-                fhir:index "0"^^xsd:integer
-            ],
-                [
-                fhir:index "1"^^xsd:integer
-            ],
-                [
-                fhir:index "2"^^xsd:integer
-            ] ;
-            fhir:Contract.term.group.offer [
-                fhir:Contract.term.group.offer.text [
-                    fhir:value "List of Benefits"
-                ]
-            ]
-        ],
-            [
             fhir:index "0"^^xsd:integer ;
             fhir:Contract.term.group.offer [
                 fhir:Contract.term.group.offer.text [
@@ -222,6 +198,26 @@ Subject http://hl7.org/fhir/Contract/INS-101 DIFFERENCE: =======================
             fhir:Contract.term.group.offer [
                 fhir:Contract.term.group.offer.text [
                     fhir:value "Responsibility for Payment"
+                ]
+            ]
+        ],
+            [
+            fhir:index "2"^^xsd:integer ;
+            fhir:Contract.term.group.group [
+                fhir:index "1"^^xsd:integer
+            ],
+                [
+                fhir:index "2"^^xsd:integer
+            ],
+                [
+                fhir:index "3"^^xsd:integer
+            ],
+                [
+                fhir:index "0"^^xsd:integer
+            ] ;
+            fhir:Contract.term.group.offer [
+                fhir:Contract.term.group.offer.text [
+                    fhir:value "List of Benefits"
                 ]
             ]
         ] ;

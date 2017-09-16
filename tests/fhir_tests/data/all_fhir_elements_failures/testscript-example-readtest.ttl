@@ -311,6 +311,17 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-readtest DIFFERENCE: =
             fhir:value "R004"
         ] ;
         fhir:TestScript.test.action [
+            fhir:index "1"^^xsd:integer ;
+            fhir:TestScript.test.action.assert [
+                fhir:TestScript.test.action.assert.description [
+                    fhir:value "Confirm that the returned HTTP status is 400(Bad Request)."
+                ] ;
+                fhir:TestScript.test.action.assert.response [
+                    fhir:value "bad"
+                ]
+            ]
+        ],
+            [
             fhir:index "0"^^xsd:integer ;
             fhir:TestScript.test.action.operation [
                 fhir:TestScript.test.action.operation.accept [
@@ -334,17 +345,6 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-readtest DIFFERENCE: =
                     ]
                 ]
             ]
-        ],
-            [
-            fhir:index "1"^^xsd:integer ;
-            fhir:TestScript.test.action.assert [
-                fhir:TestScript.test.action.assert.description [
-                    fhir:value "Confirm that the returned HTTP status is 400(Bad Request)."
-                ] ;
-                fhir:TestScript.test.action.assert.response [
-                    fhir:value "bad"
-                ]
-            ]
         ] ;
         fhir:TestScript.test.description [
             fhir:value "Read a Patient using a known bad formatted resource id and validate response."
@@ -359,17 +359,6 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-readtest DIFFERENCE: =
             fhir:value "R001"
         ] ;
         fhir:TestScript.test.action [
-            fhir:index "4"^^xsd:integer ;
-            fhir:TestScript.test.action.assert [
-                fhir:TestScript.test.action.assert.description [
-                    fhir:value "Confirm that the returned resource type is Patient."
-                ] ;
-                fhir:TestScript.test.action.assert.resource [
-                    fhir:value "Patient"
-                ]
-            ]
-        ],
-            [
             fhir:index "1"^^xsd:integer ;
             fhir:TestScript.test.action.assert [
                 fhir:TestScript.test.action.assert.description [
@@ -381,6 +370,28 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-readtest DIFFERENCE: =
             ]
         ],
             [
+            fhir:index "4"^^xsd:integer ;
+            fhir:TestScript.test.action.assert [
+                fhir:TestScript.test.action.assert.description [
+                    fhir:value "Confirm that the returned resource type is Patient."
+                ] ;
+                fhir:TestScript.test.action.assert.resource [
+                    fhir:value "Patient"
+                ]
+            ]
+        ],
+            [
+            fhir:index "5"^^xsd:integer ;
+            fhir:TestScript.test.action.assert [
+                fhir:TestScript.test.action.assert.description [
+                    fhir:value "Confirm that the returned Patient conforms to the base FHIR specification."
+                ] ;
+                fhir:TestScript.test.action.assert.validateProfileId [
+                    fhir:value "patient-profile"
+                ]
+            ]
+        ],
+            [
             fhir:index "2"^^xsd:integer ;
             fhir:TestScript.test.action.assert [
                 fhir:TestScript.test.action.assert.contentType [
@@ -388,6 +399,23 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-readtest DIFFERENCE: =
                 ] ;
                 fhir:TestScript.test.action.assert.description [
                     fhir:value "Confirm that the returned format is XML."
+                ]
+            ]
+        ],
+            [
+            fhir:index "3"^^xsd:integer ;
+            fhir:TestScript.test.action.assert [
+                fhir:TestScript.test.action.assert.description [
+                    fhir:value "Confirm that the returned HTTP Header Last-Modified is present. Warning only as the server may not support versioning."
+                ] ;
+                fhir:TestScript.test.action.assert.headerField [
+                    fhir:value "Last-Modified"
+                ] ;
+                fhir:TestScript.test.action.assert.operator [
+                    fhir:value "notEmpty"
+                ] ;
+                fhir:TestScript.test.action.assert.warningOnly [
+                    fhir:value "true"^^xsd:boolean
                 ]
             ]
         ],
@@ -415,34 +443,6 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-readtest DIFFERENCE: =
                     ]
                 ]
             ]
-        ],
-            [
-            fhir:index "3"^^xsd:integer ;
-            fhir:TestScript.test.action.assert [
-                fhir:TestScript.test.action.assert.description [
-                    fhir:value "Confirm that the returned HTTP Header Last-Modified is present. Warning only as the server may not support versioning."
-                ] ;
-                fhir:TestScript.test.action.assert.headerField [
-                    fhir:value "Last-Modified"
-                ] ;
-                fhir:TestScript.test.action.assert.operator [
-                    fhir:value "notEmpty"
-                ] ;
-                fhir:TestScript.test.action.assert.warningOnly [
-                    fhir:value "true"^^xsd:boolean
-                ]
-            ]
-        ],
-            [
-            fhir:index "5"^^xsd:integer ;
-            fhir:TestScript.test.action.assert [
-                fhir:TestScript.test.action.assert.description [
-                    fhir:value "Confirm that the returned Patient conforms to the base FHIR specification."
-                ] ;
-                fhir:TestScript.test.action.assert.validateProfileId [
-                    fhir:value "patient-profile"
-                ]
-            ]
         ] ;
         fhir:TestScript.test.description [
             fhir:value "Read a known Patient and validate response."
@@ -457,6 +457,17 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-readtest DIFFERENCE: =
             fhir:value "R002"
         ] ;
         fhir:TestScript.test.action [
+            fhir:index "1"^^xsd:integer ;
+            fhir:TestScript.test.action.assert [
+                fhir:TestScript.test.action.assert.description [
+                    fhir:value "Confirm that the returned HTTP status is 404(Not Found)."
+                ] ;
+                fhir:TestScript.test.action.assert.response [
+                    fhir:value "notFound"
+                ]
+            ]
+        ],
+            [
             fhir:index "0"^^xsd:integer ;
             fhir:TestScript.test.action.operation [
                 fhir:TestScript.test.action.operation.accept [
@@ -478,17 +489,6 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-readtest DIFFERENCE: =
                     fhir:Coding.system [
                         fhir:value "http://hl7.org/fhir/testscript-operation-codes"
                     ]
-                ]
-            ]
-        ],
-            [
-            fhir:index "1"^^xsd:integer ;
-            fhir:TestScript.test.action.assert [
-                fhir:TestScript.test.action.assert.description [
-                    fhir:value "Confirm that the returned HTTP status is 404(Not Found)."
-                ] ;
-                fhir:TestScript.test.action.assert.response [
-                    fhir:value "notFound"
                 ]
             ]
         ] ;
@@ -551,21 +551,21 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-readtest DIFFERENCE: =
         fhir:value "http://hl7.org/fhir/TestScript/testscript-example-readtest"
     ] ;
     fhir:TestScript.variable [
-        fhir:index "0"^^xsd:integer ;
-        fhir:TestScript.variable.defaultValue [
-            fhir:value "example"
-        ] ;
-        fhir:TestScript.variable.name [
-            fhir:value "KnownPatientResourceId"
-        ]
-    ],
-        [
         fhir:index "1"^^xsd:integer ;
         fhir:TestScript.variable.defaultValue [
             fhir:value "does-not-exist"
         ] ;
         fhir:TestScript.variable.name [
             fhir:value "NonExistsPatientResourceId"
+        ]
+    ],
+        [
+        fhir:index "0"^^xsd:integer ;
+        fhir:TestScript.variable.defaultValue [
+            fhir:value "example"
+        ] ;
+        fhir:TestScript.variable.name [
+            fhir:value "KnownPatientResourceId"
         ]
     ] ;
     fhir:TestScript.version [
