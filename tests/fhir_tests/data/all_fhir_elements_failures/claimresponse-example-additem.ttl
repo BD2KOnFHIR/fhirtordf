@@ -1,0 +1,1175 @@
+
+
+Subject http://hl7.org/fhir/ClaimResponse/R3503 DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_0.ClaimResponse.item.adjudication.amount.Quantity.code> <http://hl7.org/fhir/value> "USD" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_0.ClaimResponse.item.adjudication.amount.Quantity.system> <http://hl7.org/fhir/value> "urn:iso:std:iso:4217" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_0.ClaimResponse.item.adjudication.amount.Quantity.value> <http://hl7.org/fhir/value> "100.00"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_0.ClaimResponse.item.adjudication.amount> <http://hl7.org/fhir/Quantity.code> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_0.ClaimResponse.item.adjudication.amount.Quantity.code> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_0.ClaimResponse.item.adjudication.amount> <http://hl7.org/fhir/Quantity.system> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_0.ClaimResponse.item.adjudication.amount.Quantity.system> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_0.ClaimResponse.item.adjudication.amount> <http://hl7.org/fhir/Quantity.value> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_0.ClaimResponse.item.adjudication.amount.Quantity.value> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_0.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "eligible" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_0.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_0.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_0.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_0.ClaimResponse.item.adjudication.category> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_0.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_0> <http://hl7.org/fhir/ClaimResponse.item.adjudication.amount> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_0.ClaimResponse.item.adjudication.amount> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_0> <http://hl7.org/fhir/ClaimResponse.item.adjudication.category> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_0.ClaimResponse.item.adjudication.category> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_1.ClaimResponse.item.adjudication.amount.Quantity.code> <http://hl7.org/fhir/value> "USD" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_1.ClaimResponse.item.adjudication.amount.Quantity.system> <http://hl7.org/fhir/value> "urn:iso:std:iso:4217" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_1.ClaimResponse.item.adjudication.amount.Quantity.value> <http://hl7.org/fhir/value> "10.00"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_1.ClaimResponse.item.adjudication.amount> <http://hl7.org/fhir/Quantity.code> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_1.ClaimResponse.item.adjudication.amount.Quantity.code> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_1.ClaimResponse.item.adjudication.amount> <http://hl7.org/fhir/Quantity.system> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_1.ClaimResponse.item.adjudication.amount.Quantity.system> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_1.ClaimResponse.item.adjudication.amount> <http://hl7.org/fhir/Quantity.value> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_1.ClaimResponse.item.adjudication.amount.Quantity.value> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_1.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "copay" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_1.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_1.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_1.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_1.ClaimResponse.item.adjudication.category> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_1.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_1> <http://hl7.org/fhir/ClaimResponse.item.adjudication.amount> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_1.ClaimResponse.item.adjudication.amount> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_1> <http://hl7.org/fhir/ClaimResponse.item.adjudication.category> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_1.ClaimResponse.item.adjudication.category> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_2.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "eligpercent" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_2.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_2.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_2.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_2.ClaimResponse.item.adjudication.category> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_2.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_2.ClaimResponse.item.adjudication.value> <http://hl7.org/fhir/value> "80.00"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_2> <http://hl7.org/fhir/ClaimResponse.item.adjudication.category> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_2.ClaimResponse.item.adjudication.category> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_2> <http://hl7.org/fhir/ClaimResponse.item.adjudication.value> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_2.ClaimResponse.item.adjudication.value> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.item.adjudication.amount.Quantity.code> <http://hl7.org/fhir/value> "USD" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.item.adjudication.amount.Quantity.system> <http://hl7.org/fhir/value> "urn:iso:std:iso:4217" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.item.adjudication.amount.Quantity.value> <http://hl7.org/fhir/value> "72.00"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.item.adjudication.amount> <http://hl7.org/fhir/Quantity.code> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.item.adjudication.amount.Quantity.code> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.item.adjudication.amount> <http://hl7.org/fhir/Quantity.system> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.item.adjudication.amount.Quantity.system> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.item.adjudication.amount> <http://hl7.org/fhir/Quantity.value> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.item.adjudication.amount.Quantity.value> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "benefit" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.item.adjudication.category> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.item.adjudication.reason.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "ar002" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.item.adjudication.reason.CodeableConcept.coding_0.Coding.display> <http://hl7.org/fhir/value> "Plan Limit Reached" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.item.adjudication.reason.CodeableConcept.coding_0.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/adjudication-reason" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.item.adjudication.reason.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.item.adjudication.reason.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.item.adjudication.reason.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.display> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.item.adjudication.reason.CodeableConcept.coding_0.Coding.display> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.item.adjudication.reason.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.item.adjudication.reason.CodeableConcept.coding_0.Coding.system> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.item.adjudication.reason.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.item.adjudication.reason> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.item.adjudication.reason.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3> <http://hl7.org/fhir/ClaimResponse.item.adjudication.amount> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.item.adjudication.amount> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3> <http://hl7.org/fhir/ClaimResponse.item.adjudication.category> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.item.adjudication.category> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3> <http://hl7.org/fhir/ClaimResponse.item.adjudication.reason> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.item.adjudication.reason> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_0.ClaimResponse.item.adjudication.amount.Quantity.code> <http://hl7.org/fhir/value> "USD" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_0.ClaimResponse.item.adjudication.amount.Quantity.system> <http://hl7.org/fhir/value> "urn:iso:std:iso:4217" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_0.ClaimResponse.item.adjudication.amount.Quantity.value> <http://hl7.org/fhir/value> "35.57"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_0.ClaimResponse.item.adjudication.amount> <http://hl7.org/fhir/Quantity.code> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_0.ClaimResponse.item.adjudication.amount.Quantity.code> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_0.ClaimResponse.item.adjudication.amount> <http://hl7.org/fhir/Quantity.system> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_0.ClaimResponse.item.adjudication.amount.Quantity.system> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_0.ClaimResponse.item.adjudication.amount> <http://hl7.org/fhir/Quantity.value> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_0.ClaimResponse.item.adjudication.amount.Quantity.value> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_0.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "eligible" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_0.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_0.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_0.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_0.ClaimResponse.item.adjudication.category> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_0.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_0> <http://hl7.org/fhir/ClaimResponse.item.adjudication.amount> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_0.ClaimResponse.item.adjudication.amount> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_0> <http://hl7.org/fhir/ClaimResponse.item.adjudication.category> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_0.ClaimResponse.item.adjudication.category> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_1.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "eligpercent" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_1.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_1.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_1.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_1.ClaimResponse.item.adjudication.category> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_1.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_1.ClaimResponse.item.adjudication.value> <http://hl7.org/fhir/value> "80.00"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_1> <http://hl7.org/fhir/ClaimResponse.item.adjudication.category> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_1.ClaimResponse.item.adjudication.category> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_1> <http://hl7.org/fhir/ClaimResponse.item.adjudication.value> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_1.ClaimResponse.item.adjudication.value> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_2.ClaimResponse.item.adjudication.amount.Quantity.code> <http://hl7.org/fhir/value> "USD" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_2.ClaimResponse.item.adjudication.amount.Quantity.system> <http://hl7.org/fhir/value> "urn:iso:std:iso:4217" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_2.ClaimResponse.item.adjudication.amount.Quantity.value> <http://hl7.org/fhir/value> "28.47"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_2.ClaimResponse.item.adjudication.amount> <http://hl7.org/fhir/Quantity.code> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_2.ClaimResponse.item.adjudication.amount.Quantity.code> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_2.ClaimResponse.item.adjudication.amount> <http://hl7.org/fhir/Quantity.system> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_2.ClaimResponse.item.adjudication.amount.Quantity.system> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_2.ClaimResponse.item.adjudication.amount> <http://hl7.org/fhir/Quantity.value> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_2.ClaimResponse.item.adjudication.amount.Quantity.value> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_2.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "benefit" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_2.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_2.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_2.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_2.ClaimResponse.item.adjudication.category> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_2.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_2> <http://hl7.org/fhir/ClaimResponse.item.adjudication.amount> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_2.ClaimResponse.item.adjudication.amount> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_2> <http://hl7.org/fhir/ClaimResponse.item.adjudication.category> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_2.ClaimResponse.item.adjudication.category> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_0.ClaimResponse.item.adjudication.amount.Quantity.code> <http://hl7.org/fhir/value> "USD" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_0.ClaimResponse.item.adjudication.amount.Quantity.system> <http://hl7.org/fhir/value> "urn:iso:std:iso:4217" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_0.ClaimResponse.item.adjudication.amount.Quantity.value> <http://hl7.org/fhir/value> "350.00"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_0.ClaimResponse.item.adjudication.amount> <http://hl7.org/fhir/Quantity.code> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_0.ClaimResponse.item.adjudication.amount.Quantity.code> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_0.ClaimResponse.item.adjudication.amount> <http://hl7.org/fhir/Quantity.system> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_0.ClaimResponse.item.adjudication.amount.Quantity.system> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_0.ClaimResponse.item.adjudication.amount> <http://hl7.org/fhir/Quantity.value> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_0.ClaimResponse.item.adjudication.amount.Quantity.value> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_0.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "eligible" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_0.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_0.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_0.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_0.ClaimResponse.item.adjudication.category> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_0.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_0> <http://hl7.org/fhir/ClaimResponse.item.adjudication.amount> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_0.ClaimResponse.item.adjudication.amount> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_0> <http://hl7.org/fhir/ClaimResponse.item.adjudication.category> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_0.ClaimResponse.item.adjudication.category> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_1.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "eligpercent" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_1.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_1.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_1.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_1.ClaimResponse.item.adjudication.category> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_1.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_1.ClaimResponse.item.adjudication.value> <http://hl7.org/fhir/value> "80.00"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_1> <http://hl7.org/fhir/ClaimResponse.item.adjudication.category> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_1.ClaimResponse.item.adjudication.category> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_1> <http://hl7.org/fhir/ClaimResponse.item.adjudication.value> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_1.ClaimResponse.item.adjudication.value> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_2.ClaimResponse.item.adjudication.amount.Quantity.code> <http://hl7.org/fhir/value> "USD" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_2.ClaimResponse.item.adjudication.amount.Quantity.system> <http://hl7.org/fhir/value> "urn:iso:std:iso:4217" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_2.ClaimResponse.item.adjudication.amount.Quantity.value> <http://hl7.org/fhir/value> "270.00"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_2.ClaimResponse.item.adjudication.amount> <http://hl7.org/fhir/Quantity.code> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_2.ClaimResponse.item.adjudication.amount.Quantity.code> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_2.ClaimResponse.item.adjudication.amount> <http://hl7.org/fhir/Quantity.system> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_2.ClaimResponse.item.adjudication.amount.Quantity.system> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_2.ClaimResponse.item.adjudication.amount> <http://hl7.org/fhir/Quantity.value> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_2.ClaimResponse.item.adjudication.amount.Quantity.value> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_2.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "benefit" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_2.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_2.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_2.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_2.ClaimResponse.item.adjudication.category> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_2.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_2> <http://hl7.org/fhir/ClaimResponse.item.adjudication.amount> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_2.ClaimResponse.item.adjudication.amount> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_2> <http://hl7.org/fhir/ClaimResponse.item.adjudication.category> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_2.ClaimResponse.item.adjudication.category> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.adjudication.amount.Quantity.code> <http://hl7.org/fhir/value> "USD" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.adjudication.amount.Quantity.system> <http://hl7.org/fhir/value> "urn:iso:std:iso:4217" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.adjudication.amount.Quantity.value> <http://hl7.org/fhir/value> "750.00"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.adjudication.amount> <http://hl7.org/fhir/Quantity.code> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.adjudication.amount.Quantity.code> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.adjudication.amount> <http://hl7.org/fhir/Quantity.system> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.adjudication.amount.Quantity.system> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.adjudication.amount> <http://hl7.org/fhir/Quantity.value> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.adjudication.amount.Quantity.value> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "eligible" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.adjudication.category> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_0> <http://hl7.org/fhir/ClaimResponse.item.adjudication.amount> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.adjudication.amount> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_0> <http://hl7.org/fhir/ClaimResponse.item.adjudication.category> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.adjudication.category> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_1.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "eligpercent" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_1.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_1.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_1.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_1.ClaimResponse.item.adjudication.category> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_1.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_1.ClaimResponse.item.adjudication.value> <http://hl7.org/fhir/value> "80.00"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_1> <http://hl7.org/fhir/ClaimResponse.item.adjudication.category> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_1.ClaimResponse.item.adjudication.category> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_1> <http://hl7.org/fhir/ClaimResponse.item.adjudication.value> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_1.ClaimResponse.item.adjudication.value> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_2.ClaimResponse.item.adjudication.amount.Quantity.code> <http://hl7.org/fhir/value> "USD" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_2.ClaimResponse.item.adjudication.amount.Quantity.system> <http://hl7.org/fhir/value> "urn:iso:std:iso:4217" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_2.ClaimResponse.item.adjudication.amount.Quantity.value> <http://hl7.org/fhir/value> "600.00"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_2.ClaimResponse.item.adjudication.amount> <http://hl7.org/fhir/Quantity.code> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_2.ClaimResponse.item.adjudication.amount.Quantity.code> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_2.ClaimResponse.item.adjudication.amount> <http://hl7.org/fhir/Quantity.system> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_2.ClaimResponse.item.adjudication.amount.Quantity.system> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_2.ClaimResponse.item.adjudication.amount> <http://hl7.org/fhir/Quantity.value> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_2.ClaimResponse.item.adjudication.amount.Quantity.value> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_2.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "benefit" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_2.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_2.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_2.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_2.ClaimResponse.item.adjudication.category> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_2.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_2> <http://hl7.org/fhir/ClaimResponse.item.adjudication.amount> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_2.ClaimResponse.item.adjudication.amount> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_2> <http://hl7.org/fhir/ClaimResponse.item.adjudication.category> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_2.ClaimResponse.item.adjudication.category> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.adjudication.amount.Quantity.code> <http://hl7.org/fhir/value> "USD" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.adjudication.amount.Quantity.system> <http://hl7.org/fhir/value> "urn:iso:std:iso:4217" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.adjudication.amount.Quantity.value> <http://hl7.org/fhir/value> "0.00"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.adjudication.amount> <http://hl7.org/fhir/Quantity.code> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.adjudication.amount.Quantity.code> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.adjudication.amount> <http://hl7.org/fhir/Quantity.system> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.adjudication.amount.Quantity.system> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.adjudication.amount> <http://hl7.org/fhir/Quantity.value> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.adjudication.amount.Quantity.value> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "eligible" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.adjudication.category> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_0> <http://hl7.org/fhir/ClaimResponse.item.adjudication.amount> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.adjudication.amount> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_0> <http://hl7.org/fhir/ClaimResponse.item.adjudication.category> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.adjudication.category> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_1.ClaimResponse.item.adjudication.amount.Quantity.code> <http://hl7.org/fhir/value> "USD" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_1.ClaimResponse.item.adjudication.amount.Quantity.system> <http://hl7.org/fhir/value> "urn:iso:std:iso:4217" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_1.ClaimResponse.item.adjudication.amount.Quantity.value> <http://hl7.org/fhir/value> "0.00"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_1.ClaimResponse.item.adjudication.amount> <http://hl7.org/fhir/Quantity.code> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_1.ClaimResponse.item.adjudication.amount.Quantity.code> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_1.ClaimResponse.item.adjudication.amount> <http://hl7.org/fhir/Quantity.system> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_1.ClaimResponse.item.adjudication.amount.Quantity.system> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_1.ClaimResponse.item.adjudication.amount> <http://hl7.org/fhir/Quantity.value> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_1.ClaimResponse.item.adjudication.amount.Quantity.value> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_1.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "benefit" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_1.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_1.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_1.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_1.ClaimResponse.item.adjudication.category> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_1.ClaimResponse.item.adjudication.category.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_1> <http://hl7.org/fhir/ClaimResponse.item.adjudication.amount> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_1.ClaimResponse.item.adjudication.amount> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_1> <http://hl7.org/fhir/ClaimResponse.item.adjudication.category> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_1.ClaimResponse.item.adjudication.category> .
+	----> Second: 
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_0.ClaimResponse.addItem.adjudication.amount.Quantity.code> <http://hl7.org/fhir/value> "USD" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_0.ClaimResponse.addItem.adjudication.amount.Quantity.system> <http://hl7.org/fhir/value> "urn:iso:std:iso:4217" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_0.ClaimResponse.addItem.adjudication.amount.Quantity.value> <http://hl7.org/fhir/value> "100.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_0.ClaimResponse.addItem.adjudication.amount> <http://hl7.org/fhir/Quantity.code> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_0.ClaimResponse.addItem.adjudication.amount.Quantity.code> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_0.ClaimResponse.addItem.adjudication.amount> <http://hl7.org/fhir/Quantity.system> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_0.ClaimResponse.addItem.adjudication.amount.Quantity.system> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_0.ClaimResponse.addItem.adjudication.amount> <http://hl7.org/fhir/Quantity.value> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_0.ClaimResponse.addItem.adjudication.amount.Quantity.value> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_0.ClaimResponse.addItem.adjudication.category.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "eligible" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_0.ClaimResponse.addItem.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_0.ClaimResponse.addItem.adjudication.category.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_0.ClaimResponse.addItem.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_0.ClaimResponse.addItem.adjudication.category> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_0.ClaimResponse.addItem.adjudication.category.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_0> <http://hl7.org/fhir/ClaimResponse.addItem.adjudication.amount> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_0.ClaimResponse.addItem.adjudication.amount> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_0> <http://hl7.org/fhir/ClaimResponse.addItem.adjudication.category> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_0.ClaimResponse.addItem.adjudication.category> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_1.ClaimResponse.addItem.adjudication.amount.Quantity.code> <http://hl7.org/fhir/value> "USD" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_1.ClaimResponse.addItem.adjudication.amount.Quantity.system> <http://hl7.org/fhir/value> "urn:iso:std:iso:4217" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_1.ClaimResponse.addItem.adjudication.amount.Quantity.value> <http://hl7.org/fhir/value> "10.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_1.ClaimResponse.addItem.adjudication.amount> <http://hl7.org/fhir/Quantity.code> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_1.ClaimResponse.addItem.adjudication.amount.Quantity.code> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_1.ClaimResponse.addItem.adjudication.amount> <http://hl7.org/fhir/Quantity.system> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_1.ClaimResponse.addItem.adjudication.amount.Quantity.system> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_1.ClaimResponse.addItem.adjudication.amount> <http://hl7.org/fhir/Quantity.value> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_1.ClaimResponse.addItem.adjudication.amount.Quantity.value> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_1.ClaimResponse.addItem.adjudication.category.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "copay" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_1.ClaimResponse.addItem.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_1.ClaimResponse.addItem.adjudication.category.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_1.ClaimResponse.addItem.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_1.ClaimResponse.addItem.adjudication.category> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_1.ClaimResponse.addItem.adjudication.category.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_1> <http://hl7.org/fhir/ClaimResponse.addItem.adjudication.amount> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_1.ClaimResponse.addItem.adjudication.amount> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_1> <http://hl7.org/fhir/ClaimResponse.addItem.adjudication.category> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_1.ClaimResponse.addItem.adjudication.category> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_2.ClaimResponse.addItem.adjudication.category.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "eligpercent" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_2.ClaimResponse.addItem.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_2.ClaimResponse.addItem.adjudication.category.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_2.ClaimResponse.addItem.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_2.ClaimResponse.addItem.adjudication.category> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_2.ClaimResponse.addItem.adjudication.category.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_2.ClaimResponse.addItem.adjudication.value> <http://hl7.org/fhir/value> "80.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_2> <http://hl7.org/fhir/ClaimResponse.addItem.adjudication.category> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_2.ClaimResponse.addItem.adjudication.category> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_2> <http://hl7.org/fhir/ClaimResponse.addItem.adjudication.value> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_2.ClaimResponse.addItem.adjudication.value> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.addItem.adjudication.amount.Quantity.code> <http://hl7.org/fhir/value> "USD" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.addItem.adjudication.amount.Quantity.system> <http://hl7.org/fhir/value> "urn:iso:std:iso:4217" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.addItem.adjudication.amount.Quantity.value> <http://hl7.org/fhir/value> "72.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.addItem.adjudication.amount> <http://hl7.org/fhir/Quantity.code> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.addItem.adjudication.amount.Quantity.code> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.addItem.adjudication.amount> <http://hl7.org/fhir/Quantity.system> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.addItem.adjudication.amount.Quantity.system> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.addItem.adjudication.amount> <http://hl7.org/fhir/Quantity.value> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.addItem.adjudication.amount.Quantity.value> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.addItem.adjudication.category.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "benefit" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.addItem.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.addItem.adjudication.category.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.addItem.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.addItem.adjudication.category> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.addItem.adjudication.category.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.addItem.adjudication.reason.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "ar002" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.addItem.adjudication.reason.CodeableConcept.coding_0.Coding.display> <http://hl7.org/fhir/value> "Plan Limit Reached" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.addItem.adjudication.reason.CodeableConcept.coding_0.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/adjudication-reason" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.addItem.adjudication.reason.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.addItem.adjudication.reason.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.addItem.adjudication.reason.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.display> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.addItem.adjudication.reason.CodeableConcept.coding_0.Coding.display> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.addItem.adjudication.reason.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.addItem.adjudication.reason.CodeableConcept.coding_0.Coding.system> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.addItem.adjudication.reason.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.addItem.adjudication.reason> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.addItem.adjudication.reason.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3> <http://hl7.org/fhir/ClaimResponse.addItem.adjudication.amount> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.addItem.adjudication.amount> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3> <http://hl7.org/fhir/ClaimResponse.addItem.adjudication.category> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.addItem.adjudication.category> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3> <http://hl7.org/fhir/ClaimResponse.addItem.adjudication.reason> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_0.ClaimResponse.addItem.adjudication_3.ClaimResponse.addItem.adjudication.reason> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_0.ClaimResponse.addItem.adjudication.amount.Quantity.code> <http://hl7.org/fhir/value> "USD" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_0.ClaimResponse.addItem.adjudication.amount.Quantity.system> <http://hl7.org/fhir/value> "urn:iso:std:iso:4217" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_0.ClaimResponse.addItem.adjudication.amount.Quantity.value> <http://hl7.org/fhir/value> "35.57"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_0.ClaimResponse.addItem.adjudication.amount> <http://hl7.org/fhir/Quantity.code> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_0.ClaimResponse.addItem.adjudication.amount.Quantity.code> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_0.ClaimResponse.addItem.adjudication.amount> <http://hl7.org/fhir/Quantity.system> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_0.ClaimResponse.addItem.adjudication.amount.Quantity.system> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_0.ClaimResponse.addItem.adjudication.amount> <http://hl7.org/fhir/Quantity.value> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_0.ClaimResponse.addItem.adjudication.amount.Quantity.value> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_0.ClaimResponse.addItem.adjudication.category.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "eligible" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_0.ClaimResponse.addItem.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_0.ClaimResponse.addItem.adjudication.category.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_0.ClaimResponse.addItem.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_0.ClaimResponse.addItem.adjudication.category> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_0.ClaimResponse.addItem.adjudication.category.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_0> <http://hl7.org/fhir/ClaimResponse.addItem.adjudication.amount> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_0.ClaimResponse.addItem.adjudication.amount> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_0> <http://hl7.org/fhir/ClaimResponse.addItem.adjudication.category> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_0.ClaimResponse.addItem.adjudication.category> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_1.ClaimResponse.addItem.adjudication.category.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "eligpercent" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_1.ClaimResponse.addItem.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_1.ClaimResponse.addItem.adjudication.category.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_1.ClaimResponse.addItem.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_1.ClaimResponse.addItem.adjudication.category> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_1.ClaimResponse.addItem.adjudication.category.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_1.ClaimResponse.addItem.adjudication.value> <http://hl7.org/fhir/value> "80.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_1> <http://hl7.org/fhir/ClaimResponse.addItem.adjudication.category> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_1.ClaimResponse.addItem.adjudication.category> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_1> <http://hl7.org/fhir/ClaimResponse.addItem.adjudication.value> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_1.ClaimResponse.addItem.adjudication.value> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_2.ClaimResponse.addItem.adjudication.amount.Quantity.code> <http://hl7.org/fhir/value> "USD" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_2.ClaimResponse.addItem.adjudication.amount.Quantity.system> <http://hl7.org/fhir/value> "urn:iso:std:iso:4217" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_2.ClaimResponse.addItem.adjudication.amount.Quantity.value> <http://hl7.org/fhir/value> "28.47"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_2.ClaimResponse.addItem.adjudication.amount> <http://hl7.org/fhir/Quantity.code> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_2.ClaimResponse.addItem.adjudication.amount.Quantity.code> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_2.ClaimResponse.addItem.adjudication.amount> <http://hl7.org/fhir/Quantity.system> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_2.ClaimResponse.addItem.adjudication.amount.Quantity.system> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_2.ClaimResponse.addItem.adjudication.amount> <http://hl7.org/fhir/Quantity.value> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_2.ClaimResponse.addItem.adjudication.amount.Quantity.value> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_2.ClaimResponse.addItem.adjudication.category.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "benefit" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_2.ClaimResponse.addItem.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_2.ClaimResponse.addItem.adjudication.category.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_2.ClaimResponse.addItem.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_2.ClaimResponse.addItem.adjudication.category> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_2.ClaimResponse.addItem.adjudication.category.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_2> <http://hl7.org/fhir/ClaimResponse.addItem.adjudication.amount> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_2.ClaimResponse.addItem.adjudication.amount> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_2> <http://hl7.org/fhir/ClaimResponse.addItem.adjudication.category> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_1.ClaimResponse.addItem.adjudication_2.ClaimResponse.addItem.adjudication.category> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_0.ClaimResponse.addItem.adjudication.amount.Quantity.code> <http://hl7.org/fhir/value> "USD" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_0.ClaimResponse.addItem.adjudication.amount.Quantity.system> <http://hl7.org/fhir/value> "urn:iso:std:iso:4217" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_0.ClaimResponse.addItem.adjudication.amount.Quantity.value> <http://hl7.org/fhir/value> "350.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_0.ClaimResponse.addItem.adjudication.amount> <http://hl7.org/fhir/Quantity.code> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_0.ClaimResponse.addItem.adjudication.amount.Quantity.code> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_0.ClaimResponse.addItem.adjudication.amount> <http://hl7.org/fhir/Quantity.system> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_0.ClaimResponse.addItem.adjudication.amount.Quantity.system> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_0.ClaimResponse.addItem.adjudication.amount> <http://hl7.org/fhir/Quantity.value> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_0.ClaimResponse.addItem.adjudication.amount.Quantity.value> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_0.ClaimResponse.addItem.adjudication.category.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "eligible" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_0.ClaimResponse.addItem.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_0.ClaimResponse.addItem.adjudication.category.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_0.ClaimResponse.addItem.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_0.ClaimResponse.addItem.adjudication.category> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_0.ClaimResponse.addItem.adjudication.category.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_0> <http://hl7.org/fhir/ClaimResponse.addItem.adjudication.amount> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_0.ClaimResponse.addItem.adjudication.amount> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_0> <http://hl7.org/fhir/ClaimResponse.addItem.adjudication.category> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_0.ClaimResponse.addItem.adjudication.category> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_1.ClaimResponse.addItem.adjudication.category.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "eligpercent" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_1.ClaimResponse.addItem.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_1.ClaimResponse.addItem.adjudication.category.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_1.ClaimResponse.addItem.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_1.ClaimResponse.addItem.adjudication.category> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_1.ClaimResponse.addItem.adjudication.category.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_1.ClaimResponse.addItem.adjudication.value> <http://hl7.org/fhir/value> "80.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_1> <http://hl7.org/fhir/ClaimResponse.addItem.adjudication.category> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_1.ClaimResponse.addItem.adjudication.category> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_1> <http://hl7.org/fhir/ClaimResponse.addItem.adjudication.value> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_1.ClaimResponse.addItem.adjudication.value> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_2.ClaimResponse.addItem.adjudication.amount.Quantity.code> <http://hl7.org/fhir/value> "USD" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_2.ClaimResponse.addItem.adjudication.amount.Quantity.system> <http://hl7.org/fhir/value> "urn:iso:std:iso:4217" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_2.ClaimResponse.addItem.adjudication.amount.Quantity.value> <http://hl7.org/fhir/value> "270.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_2.ClaimResponse.addItem.adjudication.amount> <http://hl7.org/fhir/Quantity.code> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_2.ClaimResponse.addItem.adjudication.amount.Quantity.code> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_2.ClaimResponse.addItem.adjudication.amount> <http://hl7.org/fhir/Quantity.system> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_2.ClaimResponse.addItem.adjudication.amount.Quantity.system> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_2.ClaimResponse.addItem.adjudication.amount> <http://hl7.org/fhir/Quantity.value> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_2.ClaimResponse.addItem.adjudication.amount.Quantity.value> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_2.ClaimResponse.addItem.adjudication.category.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "benefit" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_2.ClaimResponse.addItem.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_2.ClaimResponse.addItem.adjudication.category.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_2.ClaimResponse.addItem.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_2.ClaimResponse.addItem.adjudication.category> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_2.ClaimResponse.addItem.adjudication.category.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_2> <http://hl7.org/fhir/ClaimResponse.addItem.adjudication.amount> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_2.ClaimResponse.addItem.adjudication.amount> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_2> <http://hl7.org/fhir/ClaimResponse.addItem.adjudication.category> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.addItem_2.ClaimResponse.addItem.adjudication_2.ClaimResponse.addItem.adjudication.category> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.detail.adjudication.amount.Quantity.code> <http://hl7.org/fhir/value> "USD" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.detail.adjudication.amount.Quantity.system> <http://hl7.org/fhir/value> "urn:iso:std:iso:4217" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.detail.adjudication.amount.Quantity.value> <http://hl7.org/fhir/value> "750.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.detail.adjudication.amount> <http://hl7.org/fhir/Quantity.code> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.detail.adjudication.amount.Quantity.code> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.detail.adjudication.amount> <http://hl7.org/fhir/Quantity.system> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.detail.adjudication.amount.Quantity.system> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.detail.adjudication.amount> <http://hl7.org/fhir/Quantity.value> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.detail.adjudication.amount.Quantity.value> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.detail.adjudication.category.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "eligible" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.detail.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.detail.adjudication.category.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.detail.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.detail.adjudication.category> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.detail.adjudication.category.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_0> <http://hl7.org/fhir/ClaimResponse.item.detail.adjudication.amount> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.detail.adjudication.amount> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_0> <http://hl7.org/fhir/ClaimResponse.item.detail.adjudication.category> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.detail.adjudication.category> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_1.ClaimResponse.item.detail.adjudication.category.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "eligpercent" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_1.ClaimResponse.item.detail.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_1.ClaimResponse.item.detail.adjudication.category.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_1.ClaimResponse.item.detail.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_1.ClaimResponse.item.detail.adjudication.category> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_1.ClaimResponse.item.detail.adjudication.category.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_1.ClaimResponse.item.detail.adjudication.value> <http://hl7.org/fhir/value> "80.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_1> <http://hl7.org/fhir/ClaimResponse.item.detail.adjudication.category> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_1.ClaimResponse.item.detail.adjudication.category> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_1> <http://hl7.org/fhir/ClaimResponse.item.detail.adjudication.value> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_1.ClaimResponse.item.detail.adjudication.value> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_2.ClaimResponse.item.detail.adjudication.amount.Quantity.code> <http://hl7.org/fhir/value> "USD" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_2.ClaimResponse.item.detail.adjudication.amount.Quantity.system> <http://hl7.org/fhir/value> "urn:iso:std:iso:4217" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_2.ClaimResponse.item.detail.adjudication.amount.Quantity.value> <http://hl7.org/fhir/value> "600.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_2.ClaimResponse.item.detail.adjudication.amount> <http://hl7.org/fhir/Quantity.code> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_2.ClaimResponse.item.detail.adjudication.amount.Quantity.code> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_2.ClaimResponse.item.detail.adjudication.amount> <http://hl7.org/fhir/Quantity.system> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_2.ClaimResponse.item.detail.adjudication.amount.Quantity.system> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_2.ClaimResponse.item.detail.adjudication.amount> <http://hl7.org/fhir/Quantity.value> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_2.ClaimResponse.item.detail.adjudication.amount.Quantity.value> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_2.ClaimResponse.item.detail.adjudication.category.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "benefit" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_2.ClaimResponse.item.detail.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_2.ClaimResponse.item.detail.adjudication.category.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_2.ClaimResponse.item.detail.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_2.ClaimResponse.item.detail.adjudication.category> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_2.ClaimResponse.item.detail.adjudication.category.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_2> <http://hl7.org/fhir/ClaimResponse.item.detail.adjudication.amount> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_2.ClaimResponse.item.detail.adjudication.amount> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_2> <http://hl7.org/fhir/ClaimResponse.item.detail.adjudication.category> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_0.ClaimResponse.item.detail.adjudication_2.ClaimResponse.item.detail.adjudication.category> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.detail.adjudication.amount.Quantity.code> <http://hl7.org/fhir/value> "USD" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.detail.adjudication.amount.Quantity.system> <http://hl7.org/fhir/value> "urn:iso:std:iso:4217" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.detail.adjudication.amount.Quantity.value> <http://hl7.org/fhir/value> "0.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.detail.adjudication.amount> <http://hl7.org/fhir/Quantity.code> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.detail.adjudication.amount.Quantity.code> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.detail.adjudication.amount> <http://hl7.org/fhir/Quantity.system> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.detail.adjudication.amount.Quantity.system> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.detail.adjudication.amount> <http://hl7.org/fhir/Quantity.value> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.detail.adjudication.amount.Quantity.value> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.detail.adjudication.category.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "eligible" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.detail.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.detail.adjudication.category.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.detail.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.detail.adjudication.category> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.detail.adjudication.category.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_0> <http://hl7.org/fhir/ClaimResponse.item.detail.adjudication.amount> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.detail.adjudication.amount> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_0> <http://hl7.org/fhir/ClaimResponse.item.detail.adjudication.category> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_0.ClaimResponse.item.detail.adjudication.category> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_1.ClaimResponse.item.detail.adjudication.amount.Quantity.code> <http://hl7.org/fhir/value> "USD" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_1.ClaimResponse.item.detail.adjudication.amount.Quantity.system> <http://hl7.org/fhir/value> "urn:iso:std:iso:4217" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_1.ClaimResponse.item.detail.adjudication.amount.Quantity.value> <http://hl7.org/fhir/value> "0.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_1.ClaimResponse.item.detail.adjudication.amount> <http://hl7.org/fhir/Quantity.code> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_1.ClaimResponse.item.detail.adjudication.amount.Quantity.code> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_1.ClaimResponse.item.detail.adjudication.amount> <http://hl7.org/fhir/Quantity.system> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_1.ClaimResponse.item.detail.adjudication.amount.Quantity.system> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_1.ClaimResponse.item.detail.adjudication.amount> <http://hl7.org/fhir/Quantity.value> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_1.ClaimResponse.item.detail.adjudication.amount.Quantity.value> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_1.ClaimResponse.item.detail.adjudication.category.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "benefit" .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_1.ClaimResponse.item.detail.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_1.ClaimResponse.item.detail.adjudication.category.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_1.ClaimResponse.item.detail.adjudication.category.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_1.ClaimResponse.item.detail.adjudication.category> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_1.ClaimResponse.item.detail.adjudication.category.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_1> <http://hl7.org/fhir/ClaimResponse.item.detail.adjudication.amount> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_1.ClaimResponse.item.detail.adjudication.amount> .
+<http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_1> <http://hl7.org/fhir/ClaimResponse.item.detail.adjudication.category> <http://hl7.org/fhir/ClaimResponse/R3503.ClaimResponse.item_2.ClaimResponse.item.detail_1.ClaimResponse.item.detail.adjudication_1.ClaimResponse.item.detail.adjudication.category> .----------------------------------------
+
+========================================
+@prefix adjudication-reason: <http://hl7.org/fhir/adjudication-reason> .
+@prefix ex-paymenttype: <http://hl7.org/fhir/ex-paymenttype> .
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix payeetype: <http://hl7.org/fhir/payeetype> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix w5: <http://hl7.org/fhir/w5#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://hl7.org/fhir/ClaimResponse/R3503> a fhir:ClaimResponse ;
+    fhir:nodeRole fhir:treeRoot ;
+    fhir:ClaimResponse.addItem [
+        fhir:index "2"^^xsd:integer ;
+        fhir:ClaimResponse.addItem.adjudication [
+            fhir:index "2"^^xsd:integer ;
+            fhir:ClaimResponse.addItem.adjudication.amount [
+                fhir:Quantity.code [
+                    fhir:value "USD"
+                ] ;
+                fhir:Quantity.system [
+                    fhir:value "urn:iso:std:iso:4217"
+                ] ;
+                fhir:Quantity.value [
+                    fhir:value "270.0"^^xsd:decimal
+                ]
+            ] ;
+            fhir:ClaimResponse.addItem.adjudication.category [
+                fhir:CodeableConcept.coding [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "benefit"
+                    ]
+                ]
+            ]
+        ],
+            [
+            fhir:index "0"^^xsd:integer ;
+            fhir:ClaimResponse.addItem.adjudication.amount [
+                fhir:Quantity.code [
+                    fhir:value "USD"
+                ] ;
+                fhir:Quantity.system [
+                    fhir:value "urn:iso:std:iso:4217"
+                ] ;
+                fhir:Quantity.value [
+                    fhir:value "350.0"^^xsd:decimal
+                ]
+            ] ;
+            fhir:ClaimResponse.addItem.adjudication.category [
+                fhir:CodeableConcept.coding [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "eligible"
+                    ]
+                ]
+            ]
+        ],
+            [
+            fhir:index "1"^^xsd:integer ;
+            fhir:ClaimResponse.addItem.adjudication.category [
+                fhir:CodeableConcept.coding [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "eligpercent"
+                    ]
+                ]
+            ] ;
+            fhir:ClaimResponse.addItem.adjudication.value [
+                fhir:value "80.0"^^xsd:decimal
+            ]
+        ] ;
+        fhir:ClaimResponse.addItem.detailSequenceLinkId [
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "2"^^xsd:positiveInteger
+        ] ;
+        fhir:ClaimResponse.addItem.fee [
+            fhir:Quantity.code [
+                fhir:value "USD"
+            ] ;
+            fhir:Quantity.system [
+                fhir:value "urn:iso:std:iso:4217"
+            ] ;
+            fhir:Quantity.value [
+                fhir:value "350.0"^^xsd:decimal
+            ]
+        ] ;
+        fhir:ClaimResponse.addItem.modifier [
+            fhir:index "0"^^xsd:integer ;
+            fhir:CodeableConcept.coding [
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "x"
+                ] ;
+                fhir:Coding.display [
+                    fhir:value "None"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://example.org/fhir/modifiers"
+                ]
+            ]
+        ] ;
+        fhir:ClaimResponse.addItem.noteNumber [
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "101"^^xsd:positiveInteger
+        ] ;
+        fhir:ClaimResponse.addItem.sequenceLinkId [
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "3"^^xsd:positiveInteger
+        ] ;
+        fhir:ClaimResponse.addItem.service [
+            fhir:CodeableConcept.coding [
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "expense"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://example.org/fhir/oralservicecodes"
+                ]
+            ]
+        ]
+    ],
+        [
+        fhir:index "1"^^xsd:integer ;
+        fhir:ClaimResponse.addItem.adjudication [
+            fhir:index "0"^^xsd:integer ;
+            fhir:ClaimResponse.addItem.adjudication.amount [
+                fhir:Quantity.code [
+                    fhir:value "USD"
+                ] ;
+                fhir:Quantity.system [
+                    fhir:value "urn:iso:std:iso:4217"
+                ] ;
+                fhir:Quantity.value [
+                    fhir:value "35.57"^^xsd:decimal
+                ]
+            ] ;
+            fhir:ClaimResponse.addItem.adjudication.category [
+                fhir:CodeableConcept.coding [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "eligible"
+                    ]
+                ]
+            ]
+        ],
+            [
+            fhir:index "2"^^xsd:integer ;
+            fhir:ClaimResponse.addItem.adjudication.amount [
+                fhir:Quantity.code [
+                    fhir:value "USD"
+                ] ;
+                fhir:Quantity.system [
+                    fhir:value "urn:iso:std:iso:4217"
+                ] ;
+                fhir:Quantity.value [
+                    fhir:value "28.47"^^xsd:decimal
+                ]
+            ] ;
+            fhir:ClaimResponse.addItem.adjudication.category [
+                fhir:CodeableConcept.coding [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "benefit"
+                    ]
+                ]
+            ]
+        ],
+            [
+            fhir:index "1"^^xsd:integer ;
+            fhir:ClaimResponse.addItem.adjudication.category [
+                fhir:CodeableConcept.coding [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "eligpercent"
+                    ]
+                ]
+            ] ;
+            fhir:ClaimResponse.addItem.adjudication.value [
+                fhir:value "80.0"^^xsd:decimal
+            ]
+        ] ;
+        fhir:ClaimResponse.addItem.fee [
+            fhir:Quantity.code [
+                fhir:value "USD"
+            ] ;
+            fhir:Quantity.system [
+                fhir:value "urn:iso:std:iso:4217"
+            ] ;
+            fhir:Quantity.value [
+                fhir:value "35.57"^^xsd:decimal
+            ]
+        ] ;
+        fhir:ClaimResponse.addItem.sequenceLinkId [
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "1"^^xsd:positiveInteger
+        ] ;
+        fhir:ClaimResponse.addItem.service [
+            fhir:CodeableConcept.coding [
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "2141"
+                ] ;
+                fhir:Coding.display [
+                    fhir:value "Radiograph, bytewing"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://example.org/fhir/oralservicecodes"
+                ]
+            ]
+        ]
+    ],
+        [
+        fhir:index "0"^^xsd:integer ;
+        fhir:ClaimResponse.addItem.adjudication [
+            fhir:index "0"^^xsd:integer ;
+            fhir:ClaimResponse.addItem.adjudication.amount [
+                fhir:Quantity.code [
+                    fhir:value "USD"
+                ] ;
+                fhir:Quantity.system [
+                    fhir:value "urn:iso:std:iso:4217"
+                ] ;
+                fhir:Quantity.value [
+                    fhir:value "100.0"^^xsd:decimal
+                ]
+            ] ;
+            fhir:ClaimResponse.addItem.adjudication.category [
+                fhir:CodeableConcept.coding [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "eligible"
+                    ]
+                ]
+            ]
+        ],
+            [
+            fhir:index "2"^^xsd:integer ;
+            fhir:ClaimResponse.addItem.adjudication.category [
+                fhir:CodeableConcept.coding [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "eligpercent"
+                    ]
+                ]
+            ] ;
+            fhir:ClaimResponse.addItem.adjudication.value [
+                fhir:value "80.0"^^xsd:decimal
+            ]
+        ],
+            [
+            fhir:index "3"^^xsd:integer ;
+            fhir:ClaimResponse.addItem.adjudication.amount [
+                fhir:Quantity.code [
+                    fhir:value "USD"
+                ] ;
+                fhir:Quantity.system [
+                    fhir:value "urn:iso:std:iso:4217"
+                ] ;
+                fhir:Quantity.value [
+                    fhir:value "72.0"^^xsd:decimal
+                ]
+            ] ;
+            fhir:ClaimResponse.addItem.adjudication.category [
+                fhir:CodeableConcept.coding [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "benefit"
+                    ]
+                ]
+            ] ;
+            fhir:ClaimResponse.addItem.adjudication.reason [
+                fhir:CodeableConcept.coding [
+                    a <http://hl7.org/fhir/adjudication-reason/ar002> ;
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "ar002"
+                    ] ;
+                    fhir:Coding.display [
+                        fhir:value "Plan Limit Reached"
+                    ] ;
+                    fhir:Coding.system [
+                        fhir:value "http://hl7.org/fhir/adjudication-reason"
+                    ]
+                ]
+            ]
+        ],
+            [
+            fhir:index "1"^^xsd:integer ;
+            fhir:ClaimResponse.addItem.adjudication.amount [
+                fhir:Quantity.code [
+                    fhir:value "USD"
+                ] ;
+                fhir:Quantity.system [
+                    fhir:value "urn:iso:std:iso:4217"
+                ] ;
+                fhir:Quantity.value [
+                    fhir:value "10.0"^^xsd:decimal
+                ]
+            ] ;
+            fhir:ClaimResponse.addItem.adjudication.category [
+                fhir:CodeableConcept.coding [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "copay"
+                    ]
+                ]
+            ]
+        ] ;
+        fhir:ClaimResponse.addItem.fee [
+            fhir:Quantity.code [
+                fhir:value "USD"
+            ] ;
+            fhir:Quantity.system [
+                fhir:value "urn:iso:std:iso:4217"
+            ] ;
+            fhir:Quantity.value [
+                fhir:value "135.57"^^xsd:decimal
+            ]
+        ] ;
+        fhir:ClaimResponse.addItem.modifier [
+            fhir:index "0"^^xsd:integer ;
+            fhir:CodeableConcept.coding [
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "x"
+                ] ;
+                fhir:Coding.display [
+                    fhir:value "None"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://example.org/fhir/modifiers"
+                ]
+            ]
+        ] ;
+        fhir:ClaimResponse.addItem.noteNumber [
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "101"^^xsd:positiveInteger
+        ] ;
+        fhir:ClaimResponse.addItem.sequenceLinkId [
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "1"^^xsd:positiveInteger
+        ] ;
+        fhir:ClaimResponse.addItem.service [
+            fhir:CodeableConcept.coding [
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "1101"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://example.org/fhir/oralservicecodes"
+                ]
+            ]
+        ]
+    ] ;
+    fhir:ClaimResponse.created [
+        fhir:value "2014-08-16"^^xsd:date
+    ] ;
+    fhir:ClaimResponse.disposition [
+        fhir:value "Claim settled as per contract."
+    ] ;
+    fhir:ClaimResponse.identifier [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Identifier.system [
+            fhir:value "http://www.BenefitsInc.com/fhir/remittance"
+        ] ;
+        fhir:Identifier.value [
+            fhir:value "R3503"
+        ]
+    ] ;
+    fhir:ClaimResponse.insurer [
+        fhir:Reference.identifier [
+            fhir:Identifier.system [
+                fhir:value "http://www.jurisdiction.org/insurers"
+            ] ;
+            fhir:Identifier.value [
+                fhir:value "555123"
+            ]
+        ]
+    ] ;
+    fhir:ClaimResponse.item [
+        fhir:index "0"^^xsd:integer ;
+        fhir:ClaimResponse.item.adjudication [
+            fhir:index "1"^^xsd:integer ;
+            fhir:ClaimResponse.item.adjudication.amount [
+                fhir:Quantity.code [
+                    fhir:value "USD"
+                ] ;
+                fhir:Quantity.system [
+                    fhir:value "urn:iso:std:iso:4217"
+                ] ;
+                fhir:Quantity.value [
+                    fhir:value "0.0"^^xsd:decimal
+                ]
+            ] ;
+            fhir:ClaimResponse.item.adjudication.category [
+                fhir:CodeableConcept.coding [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "benefit"
+                    ]
+                ]
+            ]
+        ],
+            [
+            fhir:index "0"^^xsd:integer ;
+            fhir:ClaimResponse.item.adjudication.amount [
+                fhir:Quantity.code [
+                    fhir:value "USD"
+                ] ;
+                fhir:Quantity.system [
+                    fhir:value "urn:iso:std:iso:4217"
+                ] ;
+                fhir:Quantity.value [
+                    fhir:value "0.0"^^xsd:decimal
+                ]
+            ] ;
+            fhir:ClaimResponse.item.adjudication.category [
+                fhir:CodeableConcept.coding [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "eligible"
+                    ]
+                ]
+            ]
+        ] ;
+        fhir:ClaimResponse.item.sequenceLinkId [
+            fhir:value "1"^^xsd:positiveInteger
+        ]
+    ],
+        [
+        fhir:index "1"^^xsd:integer ;
+        fhir:ClaimResponse.item.adjudication [
+            fhir:index "0"^^xsd:integer ;
+            fhir:ClaimResponse.item.adjudication.amount [
+                fhir:Quantity.code [
+                    fhir:value "USD"
+                ] ;
+                fhir:Quantity.system [
+                    fhir:value "urn:iso:std:iso:4217"
+                ] ;
+                fhir:Quantity.value [
+                    fhir:value "105.0"^^xsd:decimal
+                ]
+            ] ;
+            fhir:ClaimResponse.item.adjudication.category [
+                fhir:CodeableConcept.coding [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "eligible"
+                    ]
+                ]
+            ]
+        ],
+            [
+            fhir:index "1"^^xsd:integer ;
+            fhir:ClaimResponse.item.adjudication.category [
+                fhir:CodeableConcept.coding [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "eligpercent"
+                    ]
+                ]
+            ] ;
+            fhir:ClaimResponse.item.adjudication.value [
+                fhir:value "80.0"^^xsd:decimal
+            ]
+        ],
+            [
+            fhir:index "2"^^xsd:integer ;
+            fhir:ClaimResponse.item.adjudication.amount [
+                fhir:Quantity.code [
+                    fhir:value "USD"
+                ] ;
+                fhir:Quantity.system [
+                    fhir:value "urn:iso:std:iso:4217"
+                ] ;
+                fhir:Quantity.value [
+                    fhir:value "84.0"^^xsd:decimal
+                ]
+            ] ;
+            fhir:ClaimResponse.item.adjudication.category [
+                fhir:CodeableConcept.coding [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "benefit"
+                    ]
+                ]
+            ]
+        ] ;
+        fhir:ClaimResponse.item.sequenceLinkId [
+            fhir:value "2"^^xsd:positiveInteger
+        ]
+    ],
+        [
+        fhir:index "2"^^xsd:integer ;
+        fhir:ClaimResponse.item.adjudication [
+            fhir:index "2"^^xsd:integer ;
+            fhir:ClaimResponse.item.adjudication.amount [
+                fhir:Quantity.code [
+                    fhir:value "USD"
+                ] ;
+                fhir:Quantity.system [
+                    fhir:value "urn:iso:std:iso:4217"
+                ] ;
+                fhir:Quantity.value [
+                    fhir:value "600.0"^^xsd:decimal
+                ]
+            ] ;
+            fhir:ClaimResponse.item.adjudication.category [
+                fhir:CodeableConcept.coding [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "benefit"
+                    ]
+                ]
+            ]
+        ],
+            [
+            fhir:index "0"^^xsd:integer ;
+            fhir:ClaimResponse.item.adjudication.amount [
+                fhir:Quantity.code [
+                    fhir:value "USD"
+                ] ;
+                fhir:Quantity.system [
+                    fhir:value "urn:iso:std:iso:4217"
+                ] ;
+                fhir:Quantity.value [
+                    fhir:value "750.0"^^xsd:decimal
+                ]
+            ] ;
+            fhir:ClaimResponse.item.adjudication.category [
+                fhir:CodeableConcept.coding [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "eligible"
+                    ]
+                ]
+            ]
+        ],
+            [
+            fhir:index "1"^^xsd:integer ;
+            fhir:ClaimResponse.item.adjudication.category [
+                fhir:CodeableConcept.coding [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "eligpercent"
+                    ]
+                ]
+            ] ;
+            fhir:ClaimResponse.item.adjudication.value [
+                fhir:value "80.0"^^xsd:decimal
+            ]
+        ] ;
+        fhir:ClaimResponse.item.detail [
+            fhir:index "1"^^xsd:integer ;
+            fhir:ClaimResponse.item.detail.adjudication [
+                fhir:index "0"^^xsd:integer ;
+                fhir:ClaimResponse.item.detail.adjudication.amount [
+                    fhir:Quantity.code [
+                        fhir:value "USD"
+                    ] ;
+                    fhir:Quantity.system [
+                        fhir:value "urn:iso:std:iso:4217"
+                    ] ;
+                    fhir:Quantity.value [
+                        fhir:value "0.0"^^xsd:decimal
+                    ]
+                ] ;
+                fhir:ClaimResponse.item.detail.adjudication.category [
+                    fhir:CodeableConcept.coding [
+                        fhir:index "0"^^xsd:integer ;
+                        fhir:Coding.code [
+                            fhir:value "eligible"
+                        ]
+                    ]
+                ]
+            ],
+                [
+                fhir:index "1"^^xsd:integer ;
+                fhir:ClaimResponse.item.detail.adjudication.amount [
+                    fhir:Quantity.code [
+                        fhir:value "USD"
+                    ] ;
+                    fhir:Quantity.system [
+                        fhir:value "urn:iso:std:iso:4217"
+                    ] ;
+                    fhir:Quantity.value [
+                        fhir:value "0.0"^^xsd:decimal
+                    ]
+                ] ;
+                fhir:ClaimResponse.item.detail.adjudication.category [
+                    fhir:CodeableConcept.coding [
+                        fhir:index "0"^^xsd:integer ;
+                        fhir:Coding.code [
+                            fhir:value "benefit"
+                        ]
+                    ]
+                ]
+            ] ;
+            fhir:ClaimResponse.item.detail.sequenceLinkId [
+                fhir:value "2"^^xsd:positiveInteger
+            ]
+        ],
+            [
+            fhir:index "0"^^xsd:integer ;
+            fhir:ClaimResponse.item.detail.adjudication [
+                fhir:index "0"^^xsd:integer ;
+                fhir:ClaimResponse.item.detail.adjudication.amount [
+                    fhir:Quantity.code [
+                        fhir:value "USD"
+                    ] ;
+                    fhir:Quantity.system [
+                        fhir:value "urn:iso:std:iso:4217"
+                    ] ;
+                    fhir:Quantity.value [
+                        fhir:value "750.0"^^xsd:decimal
+                    ]
+                ] ;
+                fhir:ClaimResponse.item.detail.adjudication.category [
+                    fhir:CodeableConcept.coding [
+                        fhir:index "0"^^xsd:integer ;
+                        fhir:Coding.code [
+                            fhir:value "eligible"
+                        ]
+                    ]
+                ]
+            ],
+                [
+                fhir:index "1"^^xsd:integer ;
+                fhir:ClaimResponse.item.detail.adjudication.category [
+                    fhir:CodeableConcept.coding [
+                        fhir:index "0"^^xsd:integer ;
+                        fhir:Coding.code [
+                            fhir:value "eligpercent"
+                        ]
+                    ]
+                ] ;
+                fhir:ClaimResponse.item.detail.adjudication.value [
+                    fhir:value "80.0"^^xsd:decimal
+                ]
+            ],
+                [
+                fhir:index "2"^^xsd:integer ;
+                fhir:ClaimResponse.item.detail.adjudication.amount [
+                    fhir:Quantity.code [
+                        fhir:value "USD"
+                    ] ;
+                    fhir:Quantity.system [
+                        fhir:value "urn:iso:std:iso:4217"
+                    ] ;
+                    fhir:Quantity.value [
+                        fhir:value "600.0"^^xsd:decimal
+                    ]
+                ] ;
+                fhir:ClaimResponse.item.detail.adjudication.category [
+                    fhir:CodeableConcept.coding [
+                        fhir:index "0"^^xsd:integer ;
+                        fhir:Coding.code [
+                            fhir:value "benefit"
+                        ]
+                    ]
+                ]
+            ] ;
+            fhir:ClaimResponse.item.detail.sequenceLinkId [
+                fhir:value "1"^^xsd:positiveInteger
+            ]
+        ] ;
+        fhir:ClaimResponse.item.sequenceLinkId [
+            fhir:value "3"^^xsd:positiveInteger
+        ]
+    ] ;
+    fhir:ClaimResponse.outcome [
+        fhir:value "complete"
+    ] ;
+    fhir:ClaimResponse.patient [
+        fhir:link <http://hl7.org/fhir/Patient/1> ;
+        fhir:Reference.reference [
+            fhir:value "Patient/1"
+        ]
+    ] ;
+    fhir:ClaimResponse.payeeType [
+        fhir:CodeableConcept.coding [
+            a <http://hl7.org/fhir/payeetype/provider> ;
+            fhir:index "0"^^xsd:integer ;
+            fhir:Coding.code [
+                fhir:value "provider"
+            ] ;
+            fhir:Coding.system [
+                fhir:value "http://hl7.org/fhir/payeetype"
+            ]
+        ]
+    ] ;
+    fhir:ClaimResponse.payment [
+        fhir:ClaimResponse.payment.amount [
+            fhir:Quantity.code [
+                fhir:value "USD"
+            ] ;
+            fhir:Quantity.system [
+                fhir:value "urn:iso:std:iso:4217"
+            ] ;
+            fhir:Quantity.value [
+                fhir:value "100.47"^^xsd:decimal
+            ]
+        ] ;
+        fhir:ClaimResponse.payment.date [
+            fhir:value "2014-08-31"^^xsd:date
+        ] ;
+        fhir:ClaimResponse.payment.identifier [
+            fhir:Identifier.system [
+                fhir:value "http://www.BenefitsInc.com/fhir/paymentidentifier"
+            ] ;
+            fhir:Identifier.value [
+                fhir:value "201408-2-15507"
+            ]
+        ] ;
+        fhir:ClaimResponse.payment.type [
+            fhir:CodeableConcept.coding [
+                a <http://hl7.org/fhir/ex-paymenttype/complete> ;
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "complete"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://hl7.org/fhir/ex-paymenttype"
+                ]
+            ]
+        ]
+    ] ;
+    fhir:ClaimResponse.processNote [
+        fhir:index "0"^^xsd:integer ;
+        fhir:ClaimResponse.processNote.language [
+            fhir:CodeableConcept.coding [
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "en-CA"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "urn:ietf:bcp:47"
+                ]
+            ]
+        ] ;
+        fhir:ClaimResponse.processNote.number [
+            fhir:value "101"^^xsd:positiveInteger
+        ] ;
+        fhir:ClaimResponse.processNote.text [
+            fhir:value "Package codes are not permitted. Codes replaced by Insurer."
+        ] ;
+        fhir:ClaimResponse.processNote.type [
+            fhir:value "print"
+        ]
+    ] ;
+    fhir:ClaimResponse.request [
+        fhir:Reference.identifier [
+            fhir:Identifier.system [
+                fhir:value "http://happyvalley.com/claim"
+            ] ;
+            fhir:Identifier.value [
+                fhir:value "12346"
+            ]
+        ]
+    ] ;
+    fhir:ClaimResponse.requestOrganization [
+        fhir:link <http://hl7.org/fhir/Organization/1> ;
+        fhir:Reference.reference [
+            fhir:value "Organization/1"
+        ]
+    ] ;
+    fhir:ClaimResponse.requestProvider [
+        fhir:link <http://hl7.org/fhir/Practitioner/1> ;
+        fhir:Reference.reference [
+            fhir:value "Practitioner/1"
+        ]
+    ] ;
+    fhir:ClaimResponse.status [
+        fhir:value "active"
+    ] ;
+    fhir:ClaimResponse.totalBenefit [
+        fhir:Quantity.code [
+            fhir:value "USD"
+        ] ;
+        fhir:Quantity.system [
+            fhir:value "urn:iso:std:iso:4217"
+        ] ;
+        fhir:Quantity.value [
+            fhir:value "1054.47"^^xsd:decimal
+        ]
+    ] ;
+    fhir:ClaimResponse.totalCost [
+        fhir:Quantity.code [
+            fhir:value "USD"
+        ] ;
+        fhir:Quantity.system [
+            fhir:value "urn:iso:std:iso:4217"
+        ] ;
+        fhir:Quantity.value [
+            fhir:value "1340.57"^^xsd:decimal
+        ]
+    ] ;
+    fhir:ClaimResponse.unallocDeductable [
+        fhir:Quantity.code [
+            fhir:value "USD"
+        ] ;
+        fhir:Quantity.system [
+            fhir:value "urn:iso:std:iso:4217"
+        ] ;
+        fhir:Quantity.value [
+            fhir:value "0.0"^^xsd:decimal
+        ]
+    ] ;
+    fhir:DomainResource.text [
+        fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">A human-readable rendering of the ClaimResponse to Claim Oral Average with additional items</div>" ;
+        fhir:Narrative.status [
+            fhir:value "generated"
+        ]
+    ] ;
+    fhir:Resource.id [
+        fhir:value "R3503"
+    ] .
+
+<http://hl7.org/fhir/ClaimResponse/R3503.ttl> a owl:Ontology ;
+    owl:imports fhir:fhir.ttl .
+
+<http://hl7.org/fhir/Organization/1> a fhir:Organization .
+
+<http://hl7.org/fhir/Patient/1> a fhir:Patient .
+
+<http://hl7.org/fhir/Practitioner/1> a fhir:Practitioner .
+

@@ -1,0 +1,263 @@
+
+
+Subject http://hl7.org/fhir/QuestionnaireResponse/3141 DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.valueCoding.Coding.code> <http://hl7.org/fhir/value> "1" .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.valueCoding.Coding.system> <http://hl7.org/fhir/value> "http://cancer.questionnaire.org/system/code/yesno" .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.valueCoding> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.valueCoding.Coding.code> .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.valueCoding> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.valueCoding.Coding.system> .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0> <http://hl7.org/fhir/QuestionnaireResponse.item.answer.valueCoding> <http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.valueCoding> .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.linkId> <http://hl7.org/fhir/value> "1.1.1.1" .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.item_0.QuestionnaireResponse.item.item_0> <http://hl7.org/fhir/QuestionnaireResponse.item.answer> <http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0> .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.item_0.QuestionnaireResponse.item.item_0> <http://hl7.org/fhir/QuestionnaireResponse.item.linkId> <http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.linkId> .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.item_0.QuestionnaireResponse.item.item_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.item_0.QuestionnaireResponse.item.item_1.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.valueCoding.Coding.code> <http://hl7.org/fhir/value> "1" .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.item_0.QuestionnaireResponse.item.item_1.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.valueCoding.Coding.system> <http://hl7.org/fhir/value> "http://cancer.questionnaire.org/system/code/yesno" .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.item_0.QuestionnaireResponse.item.item_1.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.valueCoding> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.item_0.QuestionnaireResponse.item.item_1.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.valueCoding.Coding.code> .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.item_0.QuestionnaireResponse.item.item_1.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.valueCoding> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.item_0.QuestionnaireResponse.item.item_1.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.valueCoding.Coding.system> .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.item_0.QuestionnaireResponse.item.item_1.QuestionnaireResponse.item.answer_0> <http://hl7.org/fhir/QuestionnaireResponse.item.answer.valueCoding> <http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.item_0.QuestionnaireResponse.item.item_1.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.valueCoding> .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.item_0.QuestionnaireResponse.item.item_1.QuestionnaireResponse.item.answer_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.item_0.QuestionnaireResponse.item.item_1.QuestionnaireResponse.item.linkId> <http://hl7.org/fhir/value> "1.1.1.2" .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.item_0.QuestionnaireResponse.item.item_1> <http://hl7.org/fhir/QuestionnaireResponse.item.answer> <http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.item_0.QuestionnaireResponse.item.item_1.QuestionnaireResponse.item.answer_0> .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.item_0.QuestionnaireResponse.item.item_1> <http://hl7.org/fhir/QuestionnaireResponse.item.linkId> <http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.item_0.QuestionnaireResponse.item.item_1.QuestionnaireResponse.item.linkId> .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.item_0.QuestionnaireResponse.item.item_1> <http://hl7.org/fhir/index> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.item_0.QuestionnaireResponse.item.item_2.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.valueCoding.Coding.code> <http://hl7.org/fhir/value> "0" .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.item_0.QuestionnaireResponse.item.item_2.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.valueCoding.Coding.system> <http://hl7.org/fhir/value> "http://cancer.questionnaire.org/system/code/yesno" .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.item_0.QuestionnaireResponse.item.item_2.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.valueCoding> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.item_0.QuestionnaireResponse.item.item_2.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.valueCoding.Coding.code> .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.item_0.QuestionnaireResponse.item.item_2.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.valueCoding> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.item_0.QuestionnaireResponse.item.item_2.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.valueCoding.Coding.system> .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.item_0.QuestionnaireResponse.item.item_2.QuestionnaireResponse.item.answer_0> <http://hl7.org/fhir/QuestionnaireResponse.item.answer.valueCoding> <http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.item_0.QuestionnaireResponse.item.item_2.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.valueCoding> .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.item_0.QuestionnaireResponse.item.item_2.QuestionnaireResponse.item.answer_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.item_0.QuestionnaireResponse.item.item_2.QuestionnaireResponse.item.linkId> <http://hl7.org/fhir/value> "1.1.1.3" .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.item_0.QuestionnaireResponse.item.item_2> <http://hl7.org/fhir/QuestionnaireResponse.item.answer> <http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.item_0.QuestionnaireResponse.item.item_2.QuestionnaireResponse.item.answer_0> .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.item_0.QuestionnaireResponse.item.item_2> <http://hl7.org/fhir/QuestionnaireResponse.item.linkId> <http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.item_0.QuestionnaireResponse.item.item_2.QuestionnaireResponse.item.linkId> .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.item_0.QuestionnaireResponse.item.item_2> <http://hl7.org/fhir/index> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.item_0.QuestionnaireResponse.item.linkId> <http://hl7.org/fhir/value> "1.1.1" .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.item_0> <http://hl7.org/fhir/QuestionnaireResponse.item.item> <http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.item_0.QuestionnaireResponse.item.item_0> .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.item_0> <http://hl7.org/fhir/QuestionnaireResponse.item.item> <http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.item_0.QuestionnaireResponse.item.item_1> .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.item_0> <http://hl7.org/fhir/QuestionnaireResponse.item.item> <http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.item_0.QuestionnaireResponse.item.item_2> .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.item_0> <http://hl7.org/fhir/QuestionnaireResponse.item.linkId> <http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.item_0.QuestionnaireResponse.item.linkId> .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.item_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.valueCoding.Coding.code> <http://hl7.org/fhir/value> "1" .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.valueCoding.Coding.display> <http://hl7.org/fhir/value> "Yes" .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.valueCoding.Coding.system> <http://hl7.org/fhir/value> "http://cancer.questionnaire.org/system/code/yesno" .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.valueCoding> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.valueCoding.Coding.code> .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.valueCoding> <http://hl7.org/fhir/Coding.display> <http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.valueCoding.Coding.display> .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.valueCoding> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.valueCoding.Coding.system> .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0> <http://hl7.org/fhir/QuestionnaireResponse.item.answer.item> <http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.item_0> .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0> <http://hl7.org/fhir/QuestionnaireResponse.item.answer.valueCoding> <http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0.QuestionnaireResponse.item.answer.valueCoding> .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.linkId> <http://hl7.org/fhir/value> "1.1" .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0> <http://hl7.org/fhir/QuestionnaireResponse.item.answer> <http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.answer_0> .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0> <http://hl7.org/fhir/QuestionnaireResponse.item.linkId> <http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.linkId> .
+	----> Second: 
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.item.answer_0.QuestionnaireResponse.item.item.answer.item_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.item.answer_0.QuestionnaireResponse.item.item.answer.valueCoding.Coding.code> <http://hl7.org/fhir/value> "1" .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.item.answer_0.QuestionnaireResponse.item.item.answer.valueCoding.Coding.display> <http://hl7.org/fhir/value> "Yes" .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.item.answer_0.QuestionnaireResponse.item.item.answer.valueCoding.Coding.system> <http://hl7.org/fhir/value> "http://cancer.questionnaire.org/system/code/yesno" .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.item.answer_0.QuestionnaireResponse.item.item.answer.valueCoding> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.item.answer_0.QuestionnaireResponse.item.item.answer.valueCoding.Coding.code> .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.item.answer_0.QuestionnaireResponse.item.item.answer.valueCoding> <http://hl7.org/fhir/Coding.display> <http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.item.answer_0.QuestionnaireResponse.item.item.answer.valueCoding.Coding.display> .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.item.answer_0.QuestionnaireResponse.item.item.answer.valueCoding> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.item.answer_0.QuestionnaireResponse.item.item.answer.valueCoding.Coding.system> .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.item.answer_0> <http://hl7.org/fhir/QuestionnaireResponse.item.item.answer.item> <http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.item.answer_0.QuestionnaireResponse.item.item.answer.item_0> .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.item.answer_0> <http://hl7.org/fhir/QuestionnaireResponse.item.item.answer.valueCoding> <http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.item.answer_0.QuestionnaireResponse.item.item.answer.valueCoding> .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.item.answer_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.item.linkId> <http://hl7.org/fhir/value> "1.1" .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0> <http://hl7.org/fhir/QuestionnaireResponse.item.item.answer> <http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.item.answer_0> .
+<http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0> <http://hl7.org/fhir/QuestionnaireResponse.item.item.linkId> <http://hl7.org/fhir/QuestionnaireResponse/3141.QuestionnaireResponse.item_0.QuestionnaireResponse.item.item_0.QuestionnaireResponse.item.item.linkId> .----------------------------------------
+
+========================================
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix w5: <http://hl7.org/fhir/w5#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://hl7.org/fhir/QuestionnaireResponse/3141> a fhir:QuestionnaireResponse ;
+    fhir:nodeRole fhir:treeRoot ;
+    fhir:DomainResource.contained [
+        fhir:index "2"^^xsd:integer ;
+        fhir:Practitioner.identifier [
+            fhir:index "0"^^xsd:integer ;
+            fhir:Identifier.system [
+                fhir:value "http://cancer.questionnaire.org/systems/id/org"
+            ] ;
+            fhir:Identifier.type [
+                fhir:CodeableConcept.text [
+                    fhir:value "AUMC, Den Helder"
+                ]
+            ] ;
+            fhir:Identifier.value [
+                fhir:value "AUMC"
+            ]
+        ] ;
+        fhir:Resource.id [
+            fhir:value "questauth"
+        ]
+    ],
+        [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Patient.birthDate [
+            fhir:value "1972-11-30"^^xsd:date
+        ] ;
+        fhir:Patient.gender [
+            fhir:value "male"
+        ] ;
+        fhir:Patient.identifier [
+            fhir:index "1"^^xsd:integer ;
+            fhir:Identifier.system [
+                fhir:value "urn:oid:2.16.840.1.113883.2.4.6.3"
+            ] ;
+            fhir:Identifier.type [
+                fhir:CodeableConcept.text [
+                    fhir:value "Dutch BSN"
+                ]
+            ] ;
+            fhir:Identifier.value [
+                fhir:value "188912345"
+            ]
+        ],
+            [
+            fhir:index "0"^^xsd:integer ;
+            fhir:Identifier.system [
+                fhir:value "http://cancer.questionnaire.org/systems/id/patientnr"
+            ] ;
+            fhir:Identifier.value [
+                fhir:value "A34442332"
+            ]
+        ] ;
+        fhir:Resource.id [
+            fhir:value "patsub"
+        ]
+    ],
+        [
+        fhir:index "1"^^xsd:integer ;
+        fhir:ProcedureRequest.intent [
+            fhir:value "order"
+        ] ;
+        fhir:ProcedureRequest.requester [
+            fhir:ProcedureRequest.requester.agent [
+                fhir:link <http://hl7.org/fhir/Practitioner/example> ;
+                fhir:Reference.reference [
+                    fhir:value "Practitioner/example"
+                ]
+            ]
+        ] ;
+        fhir:ProcedureRequest.status [
+            fhir:value "unknown"
+        ] ;
+        fhir:ProcedureRequest.subject [
+            fhir:Reference.reference [
+                fhir:value "#patsub"
+            ]
+        ] ;
+        fhir:Resource.id [
+            fhir:value "order"
+        ]
+    ] ;
+    fhir:DomainResource.text [
+        fhir:Narrative.div """<div xmlns="http://www.w3.org/1999/xhtml">
+      <pre>
+            Comorbidity? YES
+              Cardial Comorbidity? YES
+                Angina? YES
+                MI? NO
+              Vascular Comorbidity?
+                (no answers)
+              ...
+            Histopathology
+              Abdominal
+                pT category: 1a
+              ...
+          </pre>
+    </div>""" ;
+        fhir:Narrative.status [
+            fhir:value "generated"
+        ]
+    ] ;
+    fhir:QuestionnaireResponse.author [
+        fhir:Reference.reference [
+            fhir:value "#questauth"
+        ]
+    ] ;
+    fhir:QuestionnaireResponse.authored [
+        fhir:value "2013-02-19T14:15:00-05:00"^^xsd:dateTime
+    ] ;
+    fhir:QuestionnaireResponse.basedOn [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Reference.reference [
+            fhir:value "#order"
+        ]
+    ] ;
+    fhir:QuestionnaireResponse.context [
+        fhir:link <http://hl7.org/fhir/Encounter/example> ;
+        fhir:Reference.reference [
+            fhir:value "Encounter/example"
+        ]
+    ] ;
+    fhir:QuestionnaireResponse.identifier [
+        fhir:Identifier.system [
+            fhir:value "http://example.org/fhir/NamingSystem/questionnaire-ids"
+        ] ;
+        fhir:Identifier.value [
+            fhir:value "Q12349876"
+        ]
+    ] ;
+    fhir:QuestionnaireResponse.item [
+        fhir:index "0"^^xsd:integer ;
+        fhir:QuestionnaireResponse.item.item [
+            fhir:index "0"^^xsd:integer ;
+            fhir:QuestionnaireResponse.item.item.answer [
+                fhir:index "0"^^xsd:integer ;
+                fhir:QuestionnaireResponse.item.item.answer.item [
+                    fhir:index "0"^^xsd:integer
+                ] ;
+                fhir:QuestionnaireResponse.item.item.answer.valueCoding [
+                    fhir:Coding.code [
+                        fhir:value "1"
+                    ] ;
+                    fhir:Coding.display [
+                        fhir:value "Yes"
+                    ] ;
+                    fhir:Coding.system [
+                        fhir:value "http://cancer.questionnaire.org/system/code/yesno"
+                    ]
+                ]
+            ] ;
+            fhir:QuestionnaireResponse.item.item.linkId [
+                fhir:value "1.1"
+            ]
+        ] ;
+        fhir:QuestionnaireResponse.item.linkId [
+            fhir:value "1"
+        ]
+    ] ;
+    fhir:QuestionnaireResponse.parent [
+        fhir:index "0"^^xsd:integer ;
+        fhir:link <http://hl7.org/fhir/Procedure/f201> ;
+        fhir:Reference.reference [
+            fhir:value "Procedure/f201"
+        ]
+    ] ;
+    fhir:QuestionnaireResponse.status [
+        fhir:value "completed"
+    ] ;
+    fhir:QuestionnaireResponse.subject [
+        fhir:Reference.reference [
+            fhir:value "#patsub"
+        ]
+    ] ;
+    fhir:Resource.id [
+        fhir:value "3141"
+    ] .
+
+<http://hl7.org/fhir/QuestionnaireResponse/3141.ttl> a owl:Ontology ;
+    owl:imports fhir:fhir.ttl .
+
+<http://hl7.org/fhir/Encounter/example> a fhir:Encounter .
+
+<http://hl7.org/fhir/Practitioner/example> a fhir:Practitioner .
+
+<http://hl7.org/fhir/Procedure/f201> a fhir:Procedure .
+

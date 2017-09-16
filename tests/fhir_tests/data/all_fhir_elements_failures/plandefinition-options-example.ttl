@@ -1,0 +1,166 @@
+
+
+Subject http://hl7.org/fhir/PlanDefinition/options-example DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_0.PlanDefinition.action.definition.Reference.reference> <http://hl7.org/fhir/value> "#activitydefinition-medicationrequest-1" .
+<http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_0.PlanDefinition.action.definition> <http://hl7.org/fhir/Reference.reference> <http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_0.PlanDefinition.action.definition.Reference.reference> .
+<http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_0.PlanDefinition.action.title> <http://hl7.org/fhir/value> "Administer Medication 1" .
+<http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_0> <http://hl7.org/fhir/PlanDefinition.action.definition> <http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_0.PlanDefinition.action.definition> .
+<http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_0> <http://hl7.org/fhir/PlanDefinition.action.title> <http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_0.PlanDefinition.action.title> .
+<http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.definition.Reference.reference> <http://hl7.org/fhir/value> "#activitydefinition-medicationrequest-2" .
+<http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.definition> <http://hl7.org/fhir/Reference.reference> <http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.definition.Reference.reference> .
+<http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.relatedAction_0.PlanDefinition.action.relatedAction.actionId> <http://hl7.org/fhir/value> "medication-action-1" .
+<http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.relatedAction_0.PlanDefinition.action.relatedAction.offsetDuration.Quantity.unit> <http://hl7.org/fhir/value> "h" .
+<http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.relatedAction_0.PlanDefinition.action.relatedAction.offsetDuration.Quantity.value> <http://hl7.org/fhir/value> "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.relatedAction_0.PlanDefinition.action.relatedAction.offsetDuration> <http://hl7.org/fhir/Quantity.unit> <http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.relatedAction_0.PlanDefinition.action.relatedAction.offsetDuration.Quantity.unit> .
+<http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.relatedAction_0.PlanDefinition.action.relatedAction.offsetDuration> <http://hl7.org/fhir/Quantity.value> <http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.relatedAction_0.PlanDefinition.action.relatedAction.offsetDuration.Quantity.value> .
+<http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.relatedAction_0.PlanDefinition.action.relatedAction.relationship> <http://hl7.org/fhir/value> "after-end" .
+<http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.relatedAction_0> <http://hl7.org/fhir/PlanDefinition.action.relatedAction.actionId> <http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.relatedAction_0.PlanDefinition.action.relatedAction.actionId> .
+<http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.relatedAction_0> <http://hl7.org/fhir/PlanDefinition.action.relatedAction.offsetDuration> <http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.relatedAction_0.PlanDefinition.action.relatedAction.offsetDuration> .
+<http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.relatedAction_0> <http://hl7.org/fhir/PlanDefinition.action.relatedAction.relationship> <http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.relatedAction_0.PlanDefinition.action.relatedAction.relationship> .
+<http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.relatedAction_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.title> <http://hl7.org/fhir/value> "Administer Medication 2" .
+<http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_1> <http://hl7.org/fhir/PlanDefinition.action.definition> <http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.definition> .
+<http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_1> <http://hl7.org/fhir/PlanDefinition.action.relatedAction> <http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.relatedAction_0> .
+<http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_1> <http://hl7.org/fhir/PlanDefinition.action.title> <http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.title> .
+	----> Second: 
+<http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_0.PlanDefinition.action.action.definition.Reference.reference> <http://hl7.org/fhir/value> "#activitydefinition-medicationrequest-1" .
+<http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_0.PlanDefinition.action.action.definition> <http://hl7.org/fhir/Reference.reference> <http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_0.PlanDefinition.action.action.definition.Reference.reference> .
+<http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_0.PlanDefinition.action.action.title> <http://hl7.org/fhir/value> "Administer Medication 1" .
+<http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_0> <http://hl7.org/fhir/PlanDefinition.action.action.definition> <http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_0.PlanDefinition.action.action.definition> .
+<http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_0> <http://hl7.org/fhir/PlanDefinition.action.action.title> <http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_0.PlanDefinition.action.action.title> .
+<http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.action.definition.Reference.reference> <http://hl7.org/fhir/value> "#activitydefinition-medicationrequest-2" .
+<http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.action.definition> <http://hl7.org/fhir/Reference.reference> <http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.action.definition.Reference.reference> .
+<http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.action.relatedAction_0.PlanDefinition.action.action.relatedAction.actionId> <http://hl7.org/fhir/value> "medication-action-1" .
+<http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.action.relatedAction_0.PlanDefinition.action.action.relatedAction.offsetDuration.Quantity.unit> <http://hl7.org/fhir/value> "h" .
+<http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.action.relatedAction_0.PlanDefinition.action.action.relatedAction.offsetDuration.Quantity.value> <http://hl7.org/fhir/value> "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.action.relatedAction_0.PlanDefinition.action.action.relatedAction.offsetDuration> <http://hl7.org/fhir/Quantity.unit> <http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.action.relatedAction_0.PlanDefinition.action.action.relatedAction.offsetDuration.Quantity.unit> .
+<http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.action.relatedAction_0.PlanDefinition.action.action.relatedAction.offsetDuration> <http://hl7.org/fhir/Quantity.value> <http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.action.relatedAction_0.PlanDefinition.action.action.relatedAction.offsetDuration.Quantity.value> .
+<http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.action.relatedAction_0.PlanDefinition.action.action.relatedAction.relationship> <http://hl7.org/fhir/value> "after-end" .
+<http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.action.relatedAction_0> <http://hl7.org/fhir/PlanDefinition.action.action.relatedAction.actionId> <http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.action.relatedAction_0.PlanDefinition.action.action.relatedAction.actionId> .
+<http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.action.relatedAction_0> <http://hl7.org/fhir/PlanDefinition.action.action.relatedAction.offsetDuration> <http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.action.relatedAction_0.PlanDefinition.action.action.relatedAction.offsetDuration> .
+<http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.action.relatedAction_0> <http://hl7.org/fhir/PlanDefinition.action.action.relatedAction.relationship> <http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.action.relatedAction_0.PlanDefinition.action.action.relatedAction.relationship> .
+<http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.action.relatedAction_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.action.title> <http://hl7.org/fhir/value> "Administer Medication 2" .
+<http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_1> <http://hl7.org/fhir/PlanDefinition.action.action.definition> <http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.action.definition> .
+<http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_1> <http://hl7.org/fhir/PlanDefinition.action.action.relatedAction> <http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.action.relatedAction_0> .
+<http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_1> <http://hl7.org/fhir/PlanDefinition.action.action.title> <http://hl7.org/fhir/PlanDefinition/options-example.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.action.title> .----------------------------------------
+
+========================================
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix w5: <http://hl7.org/fhir/w5#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://hl7.org/fhir/PlanDefinition/options-example> a fhir:PlanDefinition ;
+    fhir:nodeRole fhir:treeRoot ;
+    fhir:DomainResource.contained [
+        fhir:index "0"^^xsd:integer ;
+        fhir:ActivityDefinition.kind [
+            fhir:value "MedicationRequest"
+        ] ;
+        fhir:ActivityDefinition.productCodeableConcept [
+            fhir:CodeableConcept.text [
+                fhir:value "Medication 1"
+            ]
+        ] ;
+        fhir:ActivityDefinition.status [
+            fhir:value "draft"
+        ] ;
+        fhir:Resource.id [
+            fhir:value "activitydefinition-medicationrequest-1"
+        ]
+    ],
+        [
+        fhir:index "1"^^xsd:integer ;
+        fhir:ActivityDefinition.kind [
+            fhir:value "MedicationRequest"
+        ] ;
+        fhir:ActivityDefinition.productCodeableConcept [
+            fhir:CodeableConcept.text [
+                fhir:value "Medication 2"
+            ]
+        ] ;
+        fhir:ActivityDefinition.status [
+            fhir:value "draft"
+        ] ;
+        fhir:Resource.id [
+            fhir:value "activitydefinition-medicationrequest-2"
+        ]
+    ] ;
+    fhir:DomainResource.text [
+        fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">[Put rendering here]</div>" ;
+        fhir:Narrative.status [
+            fhir:value "generated"
+        ]
+    ] ;
+    fhir:PlanDefinition.action [
+        fhir:index "0"^^xsd:integer ;
+        fhir:PlanDefinition.action.action [
+            fhir:index "1"^^xsd:integer ;
+            fhir:Element.id [
+                fhir:value "medication-action-2"
+            ] ;
+            fhir:PlanDefinition.action.action.definition [
+                fhir:Reference.reference [
+                    fhir:value "#activitydefinition-medicationrequest-2"
+                ]
+            ] ;
+            fhir:PlanDefinition.action.action.relatedAction [
+                fhir:index "0"^^xsd:integer ;
+                fhir:PlanDefinition.action.action.relatedAction.actionId [
+                    fhir:value "medication-action-1"
+                ] ;
+                fhir:PlanDefinition.action.action.relatedAction.offsetDuration [
+                    fhir:Quantity.unit [
+                        fhir:value "h"
+                    ] ;
+                    fhir:Quantity.value [
+                        fhir:value "1"^^xsd:decimal
+                    ]
+                ] ;
+                fhir:PlanDefinition.action.action.relatedAction.relationship [
+                    fhir:value "after-end"
+                ]
+            ] ;
+            fhir:PlanDefinition.action.action.title [
+                fhir:value "Administer Medication 2"
+            ]
+        ],
+            [
+            fhir:index "0"^^xsd:integer ;
+            fhir:Element.id [
+                fhir:value "medication-action-1"
+            ] ;
+            fhir:PlanDefinition.action.action.definition [
+                fhir:Reference.reference [
+                    fhir:value "#activitydefinition-medicationrequest-1"
+                ]
+            ] ;
+            fhir:PlanDefinition.action.action.title [
+                fhir:value "Administer Medication 1"
+            ]
+        ] ;
+        fhir:PlanDefinition.action.groupingBehavior [
+            fhir:value "logical-group"
+        ] ;
+        fhir:PlanDefinition.action.selectionBehavior [
+            fhir:value "all"
+        ]
+    ] ;
+    fhir:PlanDefinition.status [
+        fhir:value "draft"
+    ] ;
+    fhir:PlanDefinition.title [
+        fhir:value "This example illustrates relationships between actions."
+    ] ;
+    fhir:Resource.id [
+        fhir:value "options-example"
+    ] .
+
+<http://hl7.org/fhir/PlanDefinition/options-example.ttl> a owl:Ontology ;
+    owl:imports fhir:fhir.ttl .
+

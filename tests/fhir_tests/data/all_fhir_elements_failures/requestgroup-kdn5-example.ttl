@@ -1,0 +1,297 @@
+
+
+Subject http://hl7.org/fhir/RequestGroup/kdn5-example DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.Element.id> <http://hl7.org/fhir/value> "cycle-definition-1" .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.Element.extension_0.Element.extension_0.Extension.url> <http://hl7.org/fhir/value> "day" .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.Element.extension_0.Element.extension_0.Extension.valueInteger> <http://hl7.org/fhir/value> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.Element.extension_0.Element.extension_0> <http://hl7.org/fhir/Extension.url> <http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.Element.extension_0.Element.extension_0.Extension.url> .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.Element.extension_0.Element.extension_0> <http://hl7.org/fhir/Extension.valueInteger> <http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.Element.extension_0.Element.extension_0.Extension.valueInteger> .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.Element.extension_0.Element.extension_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.Element.extension_0.Element.extension_1.Extension.url> <http://hl7.org/fhir/value> "day" .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.Element.extension_0.Element.extension_1.Extension.valueInteger> <http://hl7.org/fhir/value> "8"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.Element.extension_0.Element.extension_1> <http://hl7.org/fhir/Extension.url> <http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.Element.extension_0.Element.extension_1.Extension.url> .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.Element.extension_0.Element.extension_1> <http://hl7.org/fhir/Extension.valueInteger> <http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.Element.extension_0.Element.extension_1.Extension.valueInteger> .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.Element.extension_0.Element.extension_1> <http://hl7.org/fhir/index> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.Element.extension_0.Extension.url> <http://hl7.org/fhir/value> "http://hl7.org/fhir/StructureDefinition/timing-daysOfCycle" .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.Element.extension_0> <http://hl7.org/fhir/Element.extension> <http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.Element.extension_0.Element.extension_0> .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.Element.extension_0> <http://hl7.org/fhir/Element.extension> <http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.Element.extension_0.Element.extension_1> .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.Element.extension_0> <http://hl7.org/fhir/Extension.url> <http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.Element.extension_0.Extension.url> .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.Element.extension_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.Element.id> <http://hl7.org/fhir/value> "action-1" .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.resource.Reference.reference> <http://hl7.org/fhir/value> "#1111" .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.resource> <http://hl7.org/fhir/Reference.reference> <http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.resource.Reference.reference> .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.textEquivalent> <http://hl7.org/fhir/value> "Gemcitabine 1250 mg/m\u00B2 IV over 30 minutes on days 1 and 8" .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0> <http://hl7.org/fhir/Element.extension> <http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.Element.extension_0> .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0> <http://hl7.org/fhir/Element.id> <http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.Element.id> .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0> <http://hl7.org/fhir/RequestGroup.action.resource> <http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.resource> .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0> <http://hl7.org/fhir/RequestGroup.action.textEquivalent> <http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.textEquivalent> .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_1.Element.extension_0.Element.extension_0.Extension.url> <http://hl7.org/fhir/value> "day" .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_1.Element.extension_0.Element.extension_0.Extension.valueInteger> <http://hl7.org/fhir/value> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_1.Element.extension_0.Element.extension_0> <http://hl7.org/fhir/Extension.url> <http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_1.Element.extension_0.Element.extension_0.Extension.url> .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_1.Element.extension_0.Element.extension_0> <http://hl7.org/fhir/Extension.valueInteger> <http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_1.Element.extension_0.Element.extension_0.Extension.valueInteger> .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_1.Element.extension_0.Element.extension_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_1.Element.extension_0.Extension.url> <http://hl7.org/fhir/value> "http://hl7.org/fhir/StructureDefinition/timing-daysOfCycle" .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_1.Element.extension_0> <http://hl7.org/fhir/Element.extension> <http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_1.Element.extension_0.Element.extension_0> .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_1.Element.extension_0> <http://hl7.org/fhir/Extension.url> <http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_1.Element.extension_0.Extension.url> .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_1.Element.extension_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_1.Element.id> <http://hl7.org/fhir/value> "action-2" .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_1.RequestGroup.action.relatedAction_0.RequestGroup.action.relatedAction.actionId> <http://hl7.org/fhir/value> "action-1" .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_1.RequestGroup.action.relatedAction_0.RequestGroup.action.relatedAction.relationship> <http://hl7.org/fhir/value> "concurrent-with-start" .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_1.RequestGroup.action.relatedAction_0> <http://hl7.org/fhir/RequestGroup.action.relatedAction.actionId> <http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_1.RequestGroup.action.relatedAction_0.RequestGroup.action.relatedAction.actionId> .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_1.RequestGroup.action.relatedAction_0> <http://hl7.org/fhir/RequestGroup.action.relatedAction.relationship> <http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_1.RequestGroup.action.relatedAction_0.RequestGroup.action.relatedAction.relationship> .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_1.RequestGroup.action.relatedAction_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_1.RequestGroup.action.resource.Reference.reference> <http://hl7.org/fhir/value> "#2222" .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_1.RequestGroup.action.resource> <http://hl7.org/fhir/Reference.reference> <http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_1.RequestGroup.action.resource.Reference.reference> .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_1.RequestGroup.action.textEquivalent> <http://hl7.org/fhir/value> "CARBOplatin AUC 5 IV over 30 minutes on Day 1" .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_1> <http://hl7.org/fhir/Element.extension> <http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_1.Element.extension_0> .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_1> <http://hl7.org/fhir/Element.id> <http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_1.Element.id> .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_1> <http://hl7.org/fhir/RequestGroup.action.relatedAction> <http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_1.RequestGroup.action.relatedAction_0> .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_1> <http://hl7.org/fhir/RequestGroup.action.resource> <http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_1.RequestGroup.action.resource> .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_1> <http://hl7.org/fhir/RequestGroup.action.textEquivalent> <http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_1.RequestGroup.action.textEquivalent> .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_1> <http://hl7.org/fhir/index> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.textEquivalent> <http://hl7.org/fhir/value> "21-day cycle for 6 cycles" .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.timingTiming.Timing.repeat.Timing.repeat.count> <http://hl7.org/fhir/value> "6"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.timingTiming.Timing.repeat.Timing.repeat.duration> <http://hl7.org/fhir/value> "21"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.timingTiming.Timing.repeat.Timing.repeat.durationUnit> <http://hl7.org/fhir/value> "d" .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.timingTiming.Timing.repeat> <http://hl7.org/fhir/Timing.repeat.count> <http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.timingTiming.Timing.repeat.Timing.repeat.count> .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.timingTiming.Timing.repeat> <http://hl7.org/fhir/Timing.repeat.duration> <http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.timingTiming.Timing.repeat.Timing.repeat.duration> .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.timingTiming.Timing.repeat> <http://hl7.org/fhir/Timing.repeat.durationUnit> <http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.timingTiming.Timing.repeat.Timing.repeat.durationUnit> .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.timingTiming> <http://hl7.org/fhir/Timing.repeat> <http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.timingTiming.Timing.repeat> .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0> <http://hl7.org/fhir/Element.id> <http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.Element.id> .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0> <http://hl7.org/fhir/RequestGroup.action.action> <http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0> .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0> <http://hl7.org/fhir/RequestGroup.action.action> <http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_1> .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0> <http://hl7.org/fhir/RequestGroup.action.textEquivalent> <http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.textEquivalent> .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0> <http://hl7.org/fhir/RequestGroup.action.timingTiming> <http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.timingTiming> .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.groupingBehavior> <http://hl7.org/fhir/value> "sentence-group" .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.selectionBehavior> <http://hl7.org/fhir/value> "exactly-one" .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0> <http://hl7.org/fhir/RequestGroup.action.action> <http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0> .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0> <http://hl7.org/fhir/RequestGroup.action.groupingBehavior> <http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.groupingBehavior> .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0> <http://hl7.org/fhir/RequestGroup.action.selectionBehavior> <http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0.RequestGroup.action.selectionBehavior> .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.selectionBehavior> <http://hl7.org/fhir/value> "all" .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0> <http://hl7.org/fhir/RequestGroup.action.action> <http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action_0> .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0> <http://hl7.org/fhir/RequestGroup.action.selectionBehavior> <http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.selectionBehavior> .
+	----> Second: 
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action.action_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action.selectionBehavior> <http://hl7.org/fhir/value> "all" .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0> <http://hl7.org/fhir/RequestGroup.action.action.action> <http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action.action_0> .
+<http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0> <http://hl7.org/fhir/RequestGroup.action.action.selectionBehavior> <http://hl7.org/fhir/RequestGroup/kdn5-example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action.selectionBehavior> .----------------------------------------
+
+========================================
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix w5: <http://hl7.org/fhir/w5#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://hl7.org/fhir/RequestGroup/kdn5-example> a fhir:RequestGroup ;
+    fhir:nodeRole fhir:treeRoot ;
+    fhir:DomainResource.contained [
+        fhir:index "0"^^xsd:integer ;
+        fhir:MedicationRequest.dosageInstruction [
+            fhir:index "0"^^xsd:integer ;
+            fhir:Dosage.doseQuantity [
+                fhir:Quantity.unit [
+                    fhir:value "mg/m²"
+                ] ;
+                fhir:Quantity.value [
+                    fhir:value "1250"^^xsd:decimal
+                ]
+            ] ;
+            fhir:Dosage.route [
+                fhir:CodeableConcept.text [
+                    fhir:value "IV"
+                ]
+            ] ;
+            fhir:Dosage.text [
+                fhir:value "1250 mg/m² IV over 30 minutes"
+            ] ;
+            fhir:Dosage.timing [
+                fhir:Timing.repeat [
+                    fhir:Timing.repeat.duration [
+                        fhir:value "30"^^xsd:decimal
+                    ] ;
+                    fhir:Timing.repeat.durationUnit [
+                        fhir:value "min"
+                    ]
+                ]
+            ]
+        ] ;
+        fhir:MedicationRequest.intent [
+            fhir:value "proposal"
+        ] ;
+        fhir:MedicationRequest.medicationCodeableConcept [
+            fhir:CodeableConcept.coding [
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "12574"
+                ] ;
+                fhir:Coding.display [
+                    fhir:value "gemcitabine"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm"
+                ]
+            ] ;
+            fhir:CodeableConcept.text [
+                fhir:value "gemcitabine"
+            ]
+        ] ;
+        fhir:MedicationRequest.subject [
+            fhir:link <http://hl7.org/fhir/Patient/example> ;
+            fhir:Reference.reference [
+                fhir:value "Patient/example"
+            ]
+        ] ;
+        fhir:Resource.id [
+            fhir:value "1111"
+        ]
+    ],
+        [
+        fhir:index "1"^^xsd:integer ;
+        fhir:MedicationRequest.dosageInstruction [
+            fhir:index "0"^^xsd:integer ;
+            fhir:Dosage.doseQuantity [
+                fhir:Element.extension [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Extension.url [
+                        fhir:value "http://example.org/fhir/AUC-dose"
+                    ] ;
+                    fhir:Extension.valueInteger [
+                        fhir:value "5"^^xsd:integer
+                    ]
+                ]
+            ] ;
+            fhir:Dosage.route [
+                fhir:CodeableConcept.text [
+                    fhir:value "IV"
+                ]
+            ] ;
+            fhir:Dosage.text [
+                fhir:value "AUC 5 IV over 30 minutes"
+            ] ;
+            fhir:Dosage.timing [
+                fhir:Timing.repeat [
+                    fhir:Timing.repeat.duration [
+                        fhir:value "30"^^xsd:decimal
+                    ] ;
+                    fhir:Timing.repeat.durationUnit [
+                        fhir:value "min"
+                    ]
+                ]
+            ]
+        ] ;
+        fhir:MedicationRequest.intent [
+            fhir:value "proposal"
+        ] ;
+        fhir:MedicationRequest.medicationCodeableConcept [
+            fhir:CodeableConcept.coding [
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "40048"
+                ] ;
+                fhir:Coding.display [
+                    fhir:value "Carboplatin"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm"
+                ]
+            ] ;
+            fhir:CodeableConcept.text [
+                fhir:value "CARBOplatin"
+            ]
+        ] ;
+        fhir:MedicationRequest.subject [
+            fhir:link <http://hl7.org/fhir/Patient/example> ;
+            fhir:Reference.reference [
+                fhir:value "Patient/example"
+            ]
+        ] ;
+        fhir:Resource.id [
+            fhir:value "2222"
+        ]
+    ] ;
+    fhir:DomainResource.text [
+        fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Administer gemcitabine and carboplatin.</div>" ;
+        fhir:Narrative.status [
+            fhir:value "generated"
+        ]
+    ] ;
+    fhir:RequestGroup.action [
+        fhir:index "0"^^xsd:integer ;
+        fhir:RequestGroup.action.action [
+            fhir:index "0"^^xsd:integer ;
+            fhir:RequestGroup.action.action.action [
+                fhir:index "0"^^xsd:integer
+            ] ;
+            fhir:RequestGroup.action.action.selectionBehavior [
+                fhir:value "all"
+            ]
+        ] ;
+        fhir:RequestGroup.action.selectionBehavior [
+            fhir:value "exactly-one"
+        ]
+    ] ;
+    fhir:RequestGroup.author [
+        fhir:link <http://hl7.org/fhir/Practitioner/1> ;
+        fhir:Reference.reference [
+            fhir:value "Practitioner/1"
+        ]
+    ] ;
+    fhir:RequestGroup.authoredOn [
+        fhir:value "2017-03-06T17:31:00+00:00"^^xsd:dateTime
+    ] ;
+    fhir:RequestGroup.context [
+        fhir:link <http://hl7.org/fhir/Encounter/example> ;
+        fhir:Reference.reference [
+            fhir:value "Encounter/example"
+        ]
+    ] ;
+    fhir:RequestGroup.definition [
+        fhir:index "0"^^xsd:integer ;
+        fhir:link <http://hl7.org/fhir/PlanDefinition/KDN5> ;
+        fhir:Reference.reference [
+            fhir:value "PlanDefinition/KDN5"
+        ]
+    ] ;
+    fhir:RequestGroup.identifier [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Identifier.value [
+            fhir:value "requestgroup-kdn5"
+        ]
+    ] ;
+    fhir:RequestGroup.intent [
+        fhir:value "plan"
+    ] ;
+    fhir:RequestGroup.priority [
+        fhir:value "routine"
+    ] ;
+    fhir:RequestGroup.status [
+        fhir:value "draft"
+    ] ;
+    fhir:RequestGroup.subject [
+        fhir:link <http://hl7.org/fhir/Patient/example> ;
+        fhir:Reference.reference [
+            fhir:value "Patient/example"
+        ]
+    ] ;
+    fhir:Resource.id [
+        fhir:value "kdn5-example"
+    ] .
+
+<http://hl7.org/fhir/RequestGroup/kdn5-example.ttl> a owl:Ontology ;
+    owl:imports fhir:fhir.ttl .
+
+<http://hl7.org/fhir/Encounter/example> a fhir:Encounter .
+
+<http://hl7.org/fhir/PlanDefinition/KDN5> a fhir:PlanDefinition .
+
+<http://hl7.org/fhir/Practitioner/1> a fhir:Practitioner .
+
+<http://hl7.org/fhir/Patient/example> a fhir:Patient .
+

@@ -1,0 +1,238 @@
+
+
+Subject http://hl7.org/fhir/MedicationAdministration/medadmin0307 DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/MedicationAdministration/medadmin0307.MedicationAdministration.dosage.MedicationAdministration.dosage.rateQuantity.Quantity.code> <http://hl7.org/fhir/value> "min" .
+<http://hl7.org/fhir/MedicationAdministration/medadmin0307.MedicationAdministration.dosage.MedicationAdministration.dosage.rateQuantity.Quantity.system> <http://hl7.org/fhir/value> "http://unitsofmeasure.org" .
+<http://hl7.org/fhir/MedicationAdministration/medadmin0307.MedicationAdministration.dosage.MedicationAdministration.dosage.rateQuantity.Quantity.unit> <http://hl7.org/fhir/value> "min" .
+<http://hl7.org/fhir/MedicationAdministration/medadmin0307.MedicationAdministration.dosage.MedicationAdministration.dosage.rateQuantity.Quantity.value> <http://hl7.org/fhir/value> "4"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://hl7.org/fhir/MedicationAdministration/medadmin0307.MedicationAdministration.dosage.MedicationAdministration.dosage.rateQuantity> <http://hl7.org/fhir/Quantity.code> <http://hl7.org/fhir/MedicationAdministration/medadmin0307.MedicationAdministration.dosage.MedicationAdministration.dosage.rateQuantity.Quantity.code> .
+<http://hl7.org/fhir/MedicationAdministration/medadmin0307.MedicationAdministration.dosage.MedicationAdministration.dosage.rateQuantity> <http://hl7.org/fhir/Quantity.system> <http://hl7.org/fhir/MedicationAdministration/medadmin0307.MedicationAdministration.dosage.MedicationAdministration.dosage.rateQuantity.Quantity.system> .
+<http://hl7.org/fhir/MedicationAdministration/medadmin0307.MedicationAdministration.dosage.MedicationAdministration.dosage.rateQuantity> <http://hl7.org/fhir/Quantity.unit> <http://hl7.org/fhir/MedicationAdministration/medadmin0307.MedicationAdministration.dosage.MedicationAdministration.dosage.rateQuantity.Quantity.unit> .
+<http://hl7.org/fhir/MedicationAdministration/medadmin0307.MedicationAdministration.dosage.MedicationAdministration.dosage.rateQuantity> <http://hl7.org/fhir/Quantity.value> <http://hl7.org/fhir/MedicationAdministration/medadmin0307.MedicationAdministration.dosage.MedicationAdministration.dosage.rateQuantity.Quantity.value> .
+<http://hl7.org/fhir/MedicationAdministration/medadmin0307.MedicationAdministration.dosage> <http://hl7.org/fhir/MedicationAdministration.dosage.rateQuantity> <http://hl7.org/fhir/MedicationAdministration/medadmin0307.MedicationAdministration.dosage.MedicationAdministration.dosage.rateQuantity> .----------------------------------------
+
+========================================
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix w5: <http://hl7.org/fhir/w5#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://hl7.org/fhir/MedicationAdministration/medadmin0307> a fhir:MedicationAdministration ;
+    fhir:nodeRole fhir:treeRoot ;
+    fhir:DomainResource.contained [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Medication.code [
+            fhir:CodeableConcept.coding [
+                a sct:400621001 ;
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "400621001"
+                ] ;
+                fhir:Coding.display [
+                    fhir:value "Lorazepam 2mg/ml injection solution 1ml vial (product)"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://snomed.info/sct"
+                ]
+            ]
+        ] ;
+        fhir:Medication.form [
+            fhir:CodeableConcept.coding [
+                a sct:385219001 ;
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "385219001"
+                ] ;
+                fhir:Coding.display [
+                    fhir:value "Injection solution (qualifier value)"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://snomed.info/sct"
+                ]
+            ]
+        ] ;
+        fhir:Medication.ingredient [
+            fhir:index "0"^^xsd:integer ;
+            fhir:Medication.ingredient.amount [
+                fhir:Ratio.denominator [
+                    fhir:Quantity.code [
+                        fhir:value "mL"
+                    ] ;
+                    fhir:Quantity.system [
+                        fhir:value "http://unitsofmeasure.org"
+                    ] ;
+                    fhir:Quantity.value [
+                        fhir:value "1"^^xsd:decimal
+                    ]
+                ] ;
+                fhir:Ratio.numerator [
+                    fhir:Quantity.code [
+                        fhir:value "mg"
+                    ] ;
+                    fhir:Quantity.system [
+                        fhir:value "http://unitsofmeasure.org"
+                    ] ;
+                    fhir:Quantity.value [
+                        fhir:value "2"^^xsd:decimal
+                    ]
+                ]
+            ] ;
+            fhir:Medication.ingredient.itemCodeableConcept [
+                fhir:CodeableConcept.coding [
+                    a sct:387106007 ;
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "387106007"
+                    ] ;
+                    fhir:Coding.display [
+                        fhir:value "Lorazepam (substance)"
+                    ] ;
+                    fhir:Coding.system [
+                        fhir:value "http://snomed.info/sct"
+                    ]
+                ]
+            ]
+        ] ;
+        fhir:Medication.isBrand [
+            fhir:value "false"^^xsd:boolean
+        ] ;
+        fhir:Resource.id [
+            fhir:value "med0313"
+        ]
+    ] ;
+    fhir:DomainResource.text [
+        fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: medadmin0307</p><p><b>contained</b>: </p><p><b>status</b>: completed</p><p><b>medication</b>: id: med0313; Lorazepam 2mg/ml injection solution 1ml vial (product) <span>(Details : {SNOMED CT code '400621001' = 'Lorazepam 2mg/mL injection solution 1mL vial', given as 'Lorazepam 2mg/ml injection solution 1ml vial (product)'})</span>; Injection solution (qualifier value) <span>(Details : {SNOMED CT code '385219001' = 'Injection solution', given as 'Injection solution (qualifier value)'})</span></p><p><b>subject</b>: <a>Donald Duck</a></p><p><b>context</b>: <a>encounter who leads to this prescription</a></p><p><b>effective</b>: Jan 15, 2015 4:30:00 AM --&gt; Jan 15, 2015 2:30:00 PM</p><h3>Performers</h3><table><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><a>Patrick Pump</a></td></tr></table><p><b>request</b>: <a>MedicationRequest/medrx0315</a></p><p><b>device</b>: <a>Device/f001</a></p><h3>Dosages</h3><table><tr><td>-</td><td><b>Text</b></td><td><b>Route</b></td><td><b>Method</b></td><td><b>Dose</b></td><td><b>Rate[x]</b></td></tr><tr><td>*</td><td>0.05 - 0.1mg/kg IV over 2-5 minutes every 15 minutes as needed</td><td>Intravenous <span>(Details : {SNOMED CT code '255560000' = 'Intravenous', given as 'Intravenous'})</span></td><td>Push - dosing instruction imperative (qualifier value) <span>(Details : {SNOMED CT code '420620005' = 'Push', given as 'Push - dosing instruction imperative (qualifier value)'})</span></td><td>7 mg<span> (Details: UCUM code mg = 'mg')</span></td><td>4 min<span> (Details: UCUM code min = 'min')</span></td></tr></table></div>" ;
+        fhir:Narrative.status [
+            fhir:value "generated"
+        ]
+    ] ;
+    fhir:MedicationAdministration.context [
+        fhir:link <http://hl7.org/fhir/Encounter/f001> ;
+        fhir:Reference.display [
+            fhir:value "encounter who leads to this prescription"
+        ] ;
+        fhir:Reference.reference [
+            fhir:value "Encounter/f001"
+        ]
+    ] ;
+    fhir:MedicationAdministration.device [
+        fhir:index "0"^^xsd:integer ;
+        fhir:link <http://hl7.org/fhir/Device/f001> ;
+        fhir:Reference.reference [
+            fhir:value "Device/f001"
+        ]
+    ] ;
+    fhir:MedicationAdministration.dosage [
+        fhir:MedicationAdministration.dosage.dose [
+            fhir:Quantity.code [
+                fhir:value "mg"
+            ] ;
+            fhir:Quantity.system [
+                fhir:value "http://unitsofmeasure.org"
+            ] ;
+            fhir:Quantity.unit [
+                fhir:value "mg"
+            ] ;
+            fhir:Quantity.value [
+                fhir:value "7"^^xsd:decimal
+            ]
+        ] ;
+        fhir:MedicationAdministration.dosage.method [
+            fhir:CodeableConcept.coding [
+                a sct:420620005 ;
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "420620005"
+                ] ;
+                fhir:Coding.display [
+                    fhir:value "Push - dosing instruction imperative (qualifier value)"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://snomed.info/sct"
+                ]
+            ]
+        ] ;
+        fhir:MedicationAdministration.dosage.route [
+            fhir:CodeableConcept.coding [
+                a sct:255560000 ;
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "255560000"
+                ] ;
+                fhir:Coding.display [
+                    fhir:value "Intravenous"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://snomed.info/sct"
+                ]
+            ]
+        ] ;
+        fhir:MedicationAdministration.dosage.text [
+            fhir:value "0.05 - 0.1mg/kg IV over 2-5 minutes every 15 minutes as needed"
+        ]
+    ] ;
+    fhir:MedicationAdministration.effectivePeriod [
+        fhir:Period.end [
+            fhir:value "2015-01-15T14:30:00+01:00"^^xsd:dateTime
+        ] ;
+        fhir:Period.start [
+            fhir:value "2015-01-15T04:30:00+01:00"^^xsd:dateTime
+        ]
+    ] ;
+    fhir:MedicationAdministration.medicationReference [
+        fhir:Reference.reference [
+            fhir:value "#med0313"
+        ]
+    ] ;
+    fhir:MedicationAdministration.performer [
+        fhir:index "0"^^xsd:integer ;
+        fhir:MedicationAdministration.performer.actor [
+            fhir:link <http://hl7.org/fhir/Practitioner/f007> ;
+            fhir:Reference.display [
+                fhir:value "Patrick Pump"
+            ] ;
+            fhir:Reference.reference [
+                fhir:value "Practitioner/f007"
+            ]
+        ]
+    ] ;
+    fhir:MedicationAdministration.request [
+        fhir:link <http://hl7.org/fhir/MedicationRequest/medrx0315> ;
+        fhir:Reference.reference [
+            fhir:value "MedicationRequest/medrx0315"
+        ]
+    ] ;
+    fhir:MedicationAdministration.status [
+        fhir:value "completed"
+    ] ;
+    fhir:MedicationAdministration.subject [
+        fhir:link <http://hl7.org/fhir/Patient/pat1> ;
+        fhir:Reference.display [
+            fhir:value "Donald Duck"
+        ] ;
+        fhir:Reference.reference [
+            fhir:value "Patient/pat1"
+        ]
+    ] ;
+    fhir:Resource.id [
+        fhir:value "medadmin0307"
+    ] .
+
+<http://hl7.org/fhir/MedicationAdministration/medadmin0307.ttl> a owl:Ontology ;
+    owl:imports fhir:fhir.ttl .
+
+<http://hl7.org/fhir/Device/f001> a fhir:Device .
+
+<http://hl7.org/fhir/Encounter/f001> a fhir:Encounter .
+
+<http://hl7.org/fhir/MedicationRequest/medrx0315> a fhir:MedicationRequest .
+
+<http://hl7.org/fhir/Patient/pat1> a fhir:Patient .
+
+<http://hl7.org/fhir/Practitioner/f007> a fhir:Practitioner .
+

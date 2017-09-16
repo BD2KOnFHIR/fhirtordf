@@ -1,0 +1,192 @@
+
+
+Subject http://hl7.org/fhir/MedicationRequest/medrx0335 DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/MedicationRequest/medrx0335.MedicationRequest.dosageInstruction_0.Dosage.timing.Timing.repeat.Timing.repeat.timeOfDay_0> <http://hl7.org/fhir/value> "09:00:00"^^<http://www.w3.org/2001/XMLSchema#time> .
+	----> Second: 
+<http://hl7.org/fhir/MedicationRequest/medrx0335.MedicationRequest.dosageInstruction_0.Dosage.timing.Timing.repeat.Timing.repeat.timeOfDay_0> <http://hl7.org/fhir/value> "09:00:00" .----------------------------------------
+
+========================================
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix v3-ActReason: <http://hl7.org/fhir/v3/ActReason> .
+@prefix w5: <http://hl7.org/fhir/w5#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://hl7.org/fhir/MedicationRequest/medrx0335> a fhir:MedicationRequest ;
+    fhir:nodeRole fhir:treeRoot ;
+    fhir:DomainResource.text [
+        fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: medrx0335</p><p><b>identifier</b>: 12345689 (OFFICIAL)</p><p><b>status</b>: on-hold</p><p><b>intent</b>: order</p><p><b>medication</b>: Nystatin 100UNT/MG Topical Ointment <span>(Details : {RxNorm code '884308' = '884308', given as 'Nystatin 100UNT/MG Topical Ointment'})</span></p><p><b>subject</b>: <a>Donald Duck</a></p><p><b>authoredOn</b>: Jan 15, 2015</p><h3>Requesters</h3><table><tr><td>-</td><td><b>Agent</b></td><td><b>OnBehalfOf</b></td></tr><tr><td>*</td><td><a>Patrick Pump</a></td><td><a>Organization/f002</a></td></tr></table><p><b>dosageInstruction</b>: </p><h3>DispenseRequests</h3><table><tr><td>-</td><td><b>ValidityPeriod</b></td><td><b>NumberOfRepeatsAllowed</b></td><td><b>Quantity</b></td><td><b>ExpectedSupplyDuration</b></td></tr><tr><td>*</td><td>Jan 15, 2015 --&gt; Jan 15, 2016</td><td>3</td><td>30 g<span> (Details: UCUM code g = 'g')</span></td><td>10 days<span> (Details: UCUM code d = 'd')</span></td></tr></table><h3>Substitutions</h3><table><tr><td>-</td><td><b>Allowed</b></td><td><b>Reason</b></td></tr><tr><td>*</td><td>true</td><td>formulary policy <span>(Details : {http://hl7.org/fhir/v3/ActReason code 'FP' = 'formulary policy', given as 'formulary policy'})</span></td></tr></table></div>" ;
+        fhir:Narrative.status [
+            fhir:value "generated"
+        ]
+    ] ;
+    fhir:MedicationRequest.authoredOn [
+        fhir:value "2015-01-15"^^xsd:date
+    ] ;
+    fhir:MedicationRequest.dispenseRequest [
+        fhir:MedicationRequest.dispenseRequest.expectedSupplyDuration [
+            fhir:Quantity.code [
+                fhir:value "d"
+            ] ;
+            fhir:Quantity.system [
+                fhir:value "http://unitsofmeasure.org"
+            ] ;
+            fhir:Quantity.unit [
+                fhir:value "days"
+            ] ;
+            fhir:Quantity.value [
+                fhir:value "10"^^xsd:decimal
+            ]
+        ] ;
+        fhir:MedicationRequest.dispenseRequest.numberOfRepeatsAllowed [
+            fhir:value "3"^^xsd:nonNegativeInteger
+        ] ;
+        fhir:MedicationRequest.dispenseRequest.quantity [
+            fhir:Quantity.code [
+                fhir:value "g"
+            ] ;
+            fhir:Quantity.system [
+                fhir:value "http://unitsofmeasure.org"
+            ] ;
+            fhir:Quantity.unit [
+                fhir:value "g"
+            ] ;
+            fhir:Quantity.value [
+                fhir:value "30"^^xsd:decimal
+            ]
+        ] ;
+        fhir:MedicationRequest.dispenseRequest.validityPeriod [
+            fhir:Period.end [
+                fhir:value "2016-01-15"^^xsd:date
+            ] ;
+            fhir:Period.start [
+                fhir:value "2015-01-15"^^xsd:date
+            ]
+        ]
+    ] ;
+    fhir:MedicationRequest.dosageInstruction [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Dosage.doseQuantity [
+            fhir:Quantity.code [
+                fhir:value "ea"
+            ] ;
+            fhir:Quantity.system [
+                fhir:value "http://unitsofmeasure.org"
+            ] ;
+            fhir:Quantity.unit [
+                fhir:value "ea"
+            ] ;
+            fhir:Quantity.value [
+                fhir:value "1"^^xsd:decimal
+            ]
+        ] ;
+        fhir:Dosage.sequence [
+            fhir:value "1"^^xsd:integer
+        ] ;
+        fhir:Dosage.text [
+            fhir:value "Apply to affected areas at 9am daily"
+        ] ;
+        fhir:Dosage.timing [
+            fhir:Timing.repeat [
+                fhir:Timing.repeat.timeOfDay [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:value "09:00:00"
+                ]
+            ]
+        ]
+    ] ;
+    fhir:MedicationRequest.identifier [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Identifier.system [
+            fhir:value "http://www.bmc.nl/portal/prescriptions"
+        ] ;
+        fhir:Identifier.use [
+            fhir:value "official"
+        ] ;
+        fhir:Identifier.value [
+            fhir:value "12345689"
+        ]
+    ] ;
+    fhir:MedicationRequest.intent [
+        fhir:value "order"
+    ] ;
+    fhir:MedicationRequest.medicationCodeableConcept [
+        fhir:CodeableConcept.coding [
+            fhir:index "0"^^xsd:integer ;
+            fhir:Coding.code [
+                fhir:value "884308"
+            ] ;
+            fhir:Coding.display [
+                fhir:value "Nystatin 100UNT/MG Topical Ointment"
+            ] ;
+            fhir:Coding.system [
+                fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm"
+            ]
+        ]
+    ] ;
+    fhir:MedicationRequest.requester [
+        fhir:MedicationRequest.requester.agent [
+            fhir:link <http://hl7.org/fhir/Practitioner/f007> ;
+            fhir:Reference.display [
+                fhir:value "Patrick Pump"
+            ] ;
+            fhir:Reference.reference [
+                fhir:value "Practitioner/f007"
+            ]
+        ] ;
+        fhir:MedicationRequest.requester.onBehalfOf [
+            fhir:link <http://hl7.org/fhir/Organization/f002> ;
+            fhir:Reference.reference [
+                fhir:value "Organization/f002"
+            ]
+        ]
+    ] ;
+    fhir:MedicationRequest.status [
+        fhir:value "on-hold"
+    ] ;
+    fhir:MedicationRequest.subject [
+        fhir:link <http://hl7.org/fhir/Patient/pat1> ;
+        fhir:Reference.display [
+            fhir:value "Donald Duck"
+        ] ;
+        fhir:Reference.reference [
+            fhir:value "Patient/pat1"
+        ]
+    ] ;
+    fhir:MedicationRequest.substitution [
+        fhir:MedicationRequest.substitution.allowed [
+            fhir:value "true"^^xsd:boolean
+        ] ;
+        fhir:MedicationRequest.substitution.reason [
+            fhir:CodeableConcept.coding [
+                a <http://hl7.org/fhir/v3/ActReason/FP> ;
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "FP"
+                ] ;
+                fhir:Coding.display [
+                    fhir:value "formulary policy"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://hl7.org/fhir/v3/ActReason"
+                ]
+            ]
+        ]
+    ] ;
+    fhir:Resource.id [
+        fhir:value "medrx0335"
+    ] .
+
+<http://hl7.org/fhir/MedicationRequest/medrx0335.ttl> a owl:Ontology ;
+    owl:imports fhir:fhir.ttl .
+
+<http://hl7.org/fhir/Organization/f002> a fhir:Organization .
+
+<http://hl7.org/fhir/Patient/pat1> a fhir:Patient .
+
+<http://hl7.org/fhir/Practitioner/f007> a fhir:Practitioner .
+

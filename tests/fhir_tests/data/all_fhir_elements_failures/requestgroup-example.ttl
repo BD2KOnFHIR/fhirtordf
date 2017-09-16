@@ -1,0 +1,281 @@
+
+
+Subject http://hl7.org/fhir/RequestGroup/example DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.description> <http://hl7.org/fhir/value> "Administer medication 1" .
+<http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.resource.Reference.reference> <http://hl7.org/fhir/value> "#medicationrequest-1" .
+<http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.resource> <http://hl7.org/fhir/Reference.reference> <http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.resource.Reference.reference> .
+<http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.type.Coding.code> <http://hl7.org/fhir/value> "create" .
+<http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.type> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.type.Coding.code> .
+<http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_0> <http://hl7.org/fhir/RequestGroup.action.description> <http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.description> .
+<http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_0> <http://hl7.org/fhir/RequestGroup.action.resource> <http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.resource> .
+<http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_0> <http://hl7.org/fhir/RequestGroup.action.type> <http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.type> .
+<http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1.RequestGroup.action.description> <http://hl7.org/fhir/value> "Administer medication 2" .
+<http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1.RequestGroup.action.relatedAction_0.RequestGroup.action.relatedAction.actionId> <http://hl7.org/fhir/value> "medication-action-1" .
+<http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1.RequestGroup.action.relatedAction_0.RequestGroup.action.relatedAction.offsetDuration.Quantity.unit> <http://hl7.org/fhir/value> "h" .
+<http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1.RequestGroup.action.relatedAction_0.RequestGroup.action.relatedAction.offsetDuration.Quantity.value> <http://hl7.org/fhir/value> "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1.RequestGroup.action.relatedAction_0.RequestGroup.action.relatedAction.offsetDuration> <http://hl7.org/fhir/Quantity.unit> <http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1.RequestGroup.action.relatedAction_0.RequestGroup.action.relatedAction.offsetDuration.Quantity.unit> .
+<http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1.RequestGroup.action.relatedAction_0.RequestGroup.action.relatedAction.offsetDuration> <http://hl7.org/fhir/Quantity.value> <http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1.RequestGroup.action.relatedAction_0.RequestGroup.action.relatedAction.offsetDuration.Quantity.value> .
+<http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1.RequestGroup.action.relatedAction_0.RequestGroup.action.relatedAction.relationship> <http://hl7.org/fhir/value> "after-end" .
+<http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1.RequestGroup.action.relatedAction_0> <http://hl7.org/fhir/RequestGroup.action.relatedAction.actionId> <http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1.RequestGroup.action.relatedAction_0.RequestGroup.action.relatedAction.actionId> .
+<http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1.RequestGroup.action.relatedAction_0> <http://hl7.org/fhir/RequestGroup.action.relatedAction.offsetDuration> <http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1.RequestGroup.action.relatedAction_0.RequestGroup.action.relatedAction.offsetDuration> .
+<http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1.RequestGroup.action.relatedAction_0> <http://hl7.org/fhir/RequestGroup.action.relatedAction.relationship> <http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1.RequestGroup.action.relatedAction_0.RequestGroup.action.relatedAction.relationship> .
+<http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1.RequestGroup.action.relatedAction_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1.RequestGroup.action.resource.Reference.reference> <http://hl7.org/fhir/value> "#medicationrequest-2" .
+<http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1.RequestGroup.action.resource> <http://hl7.org/fhir/Reference.reference> <http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1.RequestGroup.action.resource.Reference.reference> .
+<http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1.RequestGroup.action.type.Coding.code> <http://hl7.org/fhir/value> "create" .
+<http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1.RequestGroup.action.type> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1.RequestGroup.action.type.Coding.code> .
+<http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1> <http://hl7.org/fhir/RequestGroup.action.description> <http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1.RequestGroup.action.description> .
+<http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1> <http://hl7.org/fhir/RequestGroup.action.relatedAction> <http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1.RequestGroup.action.relatedAction_0> .
+<http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1> <http://hl7.org/fhir/RequestGroup.action.resource> <http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1.RequestGroup.action.resource> .
+<http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1> <http://hl7.org/fhir/RequestGroup.action.type> <http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1.RequestGroup.action.type> .
+	----> Second: 
+<http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action.description> <http://hl7.org/fhir/value> "Administer medication 1" .
+<http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action.resource.Reference.reference> <http://hl7.org/fhir/value> "#medicationrequest-1" .
+<http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action.resource> <http://hl7.org/fhir/Reference.reference> <http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action.resource.Reference.reference> .
+<http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action.type.Coding.code> <http://hl7.org/fhir/value> "create" .
+<http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action.type> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action.type.Coding.code> .
+<http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_0> <http://hl7.org/fhir/RequestGroup.action.action.description> <http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action.description> .
+<http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_0> <http://hl7.org/fhir/RequestGroup.action.action.resource> <http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action.resource> .
+<http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_0> <http://hl7.org/fhir/RequestGroup.action.action.type> <http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_0.RequestGroup.action.action.type> .
+<http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1.RequestGroup.action.action.description> <http://hl7.org/fhir/value> "Administer medication 2" .
+<http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1.RequestGroup.action.action.relatedAction_0.RequestGroup.action.action.relatedAction.actionId> <http://hl7.org/fhir/value> "medication-action-1" .
+<http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1.RequestGroup.action.action.relatedAction_0.RequestGroup.action.action.relatedAction.offsetDuration.Quantity.unit> <http://hl7.org/fhir/value> "h" .
+<http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1.RequestGroup.action.action.relatedAction_0.RequestGroup.action.action.relatedAction.offsetDuration.Quantity.value> <http://hl7.org/fhir/value> "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1.RequestGroup.action.action.relatedAction_0.RequestGroup.action.action.relatedAction.offsetDuration> <http://hl7.org/fhir/Quantity.unit> <http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1.RequestGroup.action.action.relatedAction_0.RequestGroup.action.action.relatedAction.offsetDuration.Quantity.unit> .
+<http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1.RequestGroup.action.action.relatedAction_0.RequestGroup.action.action.relatedAction.offsetDuration> <http://hl7.org/fhir/Quantity.value> <http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1.RequestGroup.action.action.relatedAction_0.RequestGroup.action.action.relatedAction.offsetDuration.Quantity.value> .
+<http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1.RequestGroup.action.action.relatedAction_0.RequestGroup.action.action.relatedAction.relationship> <http://hl7.org/fhir/value> "after-end" .
+<http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1.RequestGroup.action.action.relatedAction_0> <http://hl7.org/fhir/RequestGroup.action.action.relatedAction.actionId> <http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1.RequestGroup.action.action.relatedAction_0.RequestGroup.action.action.relatedAction.actionId> .
+<http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1.RequestGroup.action.action.relatedAction_0> <http://hl7.org/fhir/RequestGroup.action.action.relatedAction.offsetDuration> <http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1.RequestGroup.action.action.relatedAction_0.RequestGroup.action.action.relatedAction.offsetDuration> .
+<http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1.RequestGroup.action.action.relatedAction_0> <http://hl7.org/fhir/RequestGroup.action.action.relatedAction.relationship> <http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1.RequestGroup.action.action.relatedAction_0.RequestGroup.action.action.relatedAction.relationship> .
+<http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1.RequestGroup.action.action.relatedAction_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1.RequestGroup.action.action.resource.Reference.reference> <http://hl7.org/fhir/value> "#medicationrequest-2" .
+<http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1.RequestGroup.action.action.resource> <http://hl7.org/fhir/Reference.reference> <http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1.RequestGroup.action.action.resource.Reference.reference> .
+<http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1.RequestGroup.action.action.type.Coding.code> <http://hl7.org/fhir/value> "create" .
+<http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1.RequestGroup.action.action.type> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1.RequestGroup.action.action.type.Coding.code> .
+<http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1> <http://hl7.org/fhir/RequestGroup.action.action.description> <http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1.RequestGroup.action.action.description> .
+<http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1> <http://hl7.org/fhir/RequestGroup.action.action.relatedAction> <http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1.RequestGroup.action.action.relatedAction_0> .
+<http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1> <http://hl7.org/fhir/RequestGroup.action.action.resource> <http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1.RequestGroup.action.action.resource> .
+<http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1> <http://hl7.org/fhir/RequestGroup.action.action.type> <http://hl7.org/fhir/RequestGroup/example.RequestGroup.action_0.RequestGroup.action.action_1.RequestGroup.action.action.type> .----------------------------------------
+
+========================================
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix w5: <http://hl7.org/fhir/w5#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://hl7.org/fhir/RequestGroup/example> a fhir:RequestGroup ;
+    fhir:nodeRole fhir:treeRoot ;
+    fhir:DomainResource.contained [
+        fhir:index "1"^^xsd:integer ;
+        fhir:MedicationRequest.intent [
+            fhir:value "proposal"
+        ] ;
+        fhir:MedicationRequest.medicationCodeableConcept [
+            fhir:CodeableConcept.text [
+                fhir:value "Medication 2"
+            ]
+        ] ;
+        fhir:MedicationRequest.subject [
+            fhir:link <http://hl7.org/fhir/Patient/example> ;
+            fhir:Reference.reference [
+                fhir:value "Patient/example"
+            ]
+        ] ;
+        fhir:Resource.id [
+            fhir:value "medicationrequest-2"
+        ]
+    ],
+        [
+        fhir:index "0"^^xsd:integer ;
+        fhir:MedicationRequest.intent [
+            fhir:value "proposal"
+        ] ;
+        fhir:MedicationRequest.medicationCodeableConcept [
+            fhir:CodeableConcept.text [
+                fhir:value "Medication 1"
+            ]
+        ] ;
+        fhir:MedicationRequest.subject [
+            fhir:link <http://hl7.org/fhir/Patient/example> ;
+            fhir:Reference.reference [
+                fhir:value "Patient/example"
+            ]
+        ] ;
+        fhir:Resource.id [
+            fhir:value "medicationrequest-1"
+        ]
+    ] ;
+    fhir:DomainResource.text [
+        fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Example RequestGroup illustrating related actions to administer medications in sequence with time delay.</div>" ;
+        fhir:Narrative.status [
+            fhir:value "generated"
+        ]
+    ] ;
+    fhir:RequestGroup.action [
+        fhir:index "0"^^xsd:integer ;
+        fhir:RequestGroup.action.action [
+            fhir:index "0"^^xsd:integer ;
+            fhir:Element.id [
+                fhir:value "medication-action-1"
+            ] ;
+            fhir:RequestGroup.action.action.description [
+                fhir:value "Administer medication 1"
+            ] ;
+            fhir:RequestGroup.action.action.resource [
+                fhir:Reference.reference [
+                    fhir:value "#medicationrequest-1"
+                ]
+            ] ;
+            fhir:RequestGroup.action.action.type [
+                fhir:Coding.code [
+                    fhir:value "create"
+                ]
+            ]
+        ],
+            [
+            fhir:index "1"^^xsd:integer ;
+            fhir:Element.id [
+                fhir:value "medication-action-2"
+            ] ;
+            fhir:RequestGroup.action.action.description [
+                fhir:value "Administer medication 2"
+            ] ;
+            fhir:RequestGroup.action.action.relatedAction [
+                fhir:index "0"^^xsd:integer ;
+                fhir:RequestGroup.action.action.relatedAction.actionId [
+                    fhir:value "medication-action-1"
+                ] ;
+                fhir:RequestGroup.action.action.relatedAction.offsetDuration [
+                    fhir:Quantity.unit [
+                        fhir:value "h"
+                    ] ;
+                    fhir:Quantity.value [
+                        fhir:value "1"^^xsd:decimal
+                    ]
+                ] ;
+                fhir:RequestGroup.action.action.relatedAction.relationship [
+                    fhir:value "after-end"
+                ]
+            ] ;
+            fhir:RequestGroup.action.action.resource [
+                fhir:Reference.reference [
+                    fhir:value "#medicationrequest-2"
+                ]
+            ] ;
+            fhir:RequestGroup.action.action.type [
+                fhir:Coding.code [
+                    fhir:value "create"
+                ]
+            ]
+        ] ;
+        fhir:RequestGroup.action.cardinalityBehavior [
+            fhir:value "single"
+        ] ;
+        fhir:RequestGroup.action.description [
+            fhir:value "Administer medications at the appropriate time"
+        ] ;
+        fhir:RequestGroup.action.groupingBehavior [
+            fhir:value "logical-group"
+        ] ;
+        fhir:RequestGroup.action.participant [
+            fhir:index "0"^^xsd:integer ;
+            fhir:link <http://hl7.org/fhir/Practitioner/1> ;
+            fhir:Reference.reference [
+                fhir:value "Practitioner/1"
+            ]
+        ] ;
+        fhir:RequestGroup.action.precheckBehavior [
+            fhir:value "yes"
+        ] ;
+        fhir:RequestGroup.action.prefix [
+            fhir:value "1"
+        ] ;
+        fhir:RequestGroup.action.requiredBehavior [
+            fhir:value "must"
+        ] ;
+        fhir:RequestGroup.action.selectionBehavior [
+            fhir:value "all"
+        ] ;
+        fhir:RequestGroup.action.textEquivalent [
+            fhir:value "Administer medication 1, followed an hour later by medication 2"
+        ] ;
+        fhir:RequestGroup.action.timingDateTime [
+            fhir:value "2017-03-06T19:00:00+00:00"^^xsd:dateTime
+        ] ;
+        fhir:RequestGroup.action.title [
+            fhir:value "Administer Medications"
+        ]
+    ] ;
+    fhir:RequestGroup.author [
+        fhir:link <http://hl7.org/fhir/Practitioner/1> ;
+        fhir:Reference.reference [
+            fhir:value "Practitioner/1"
+        ]
+    ] ;
+    fhir:RequestGroup.authoredOn [
+        fhir:value "2017-03-06T17:31:00+00:00"^^xsd:dateTime
+    ] ;
+    fhir:RequestGroup.context [
+        fhir:link <http://hl7.org/fhir/Encounter/example> ;
+        fhir:Reference.reference [
+            fhir:value "Encounter/example"
+        ]
+    ] ;
+    fhir:RequestGroup.groupIdentifier [
+        fhir:Identifier.system [
+            fhir:value "http://example.org/treatment-group"
+        ] ;
+        fhir:Identifier.value [
+            fhir:value "00001"
+        ]
+    ] ;
+    fhir:RequestGroup.identifier [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Identifier.value [
+            fhir:value "requestgroup-1"
+        ]
+    ] ;
+    fhir:RequestGroup.intent [
+        fhir:value "plan"
+    ] ;
+    fhir:RequestGroup.note [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Annotation.text [
+            fhir:value "Additional notes about the request group"
+        ]
+    ] ;
+    fhir:RequestGroup.priority [
+        fhir:value "routine"
+    ] ;
+    fhir:RequestGroup.reasonCode [
+        fhir:index "0"^^xsd:integer ;
+        fhir:CodeableConcept.text [
+            fhir:value "Treatment"
+        ]
+    ] ;
+    fhir:RequestGroup.status [
+        fhir:value "draft"
+    ] ;
+    fhir:RequestGroup.subject [
+        fhir:link <http://hl7.org/fhir/Patient/example> ;
+        fhir:Reference.reference [
+            fhir:value "Patient/example"
+        ]
+    ] ;
+    fhir:Resource.id [
+        fhir:value "example"
+    ] .
+
+<http://hl7.org/fhir/RequestGroup/example.ttl> a owl:Ontology ;
+    owl:imports fhir:fhir.ttl .
+
+<http://hl7.org/fhir/Encounter/example> a fhir:Encounter .
+
+<http://hl7.org/fhir/Practitioner/1> a fhir:Practitioner .
+
+<http://hl7.org/fhir/Patient/example> a fhir:Patient .
+

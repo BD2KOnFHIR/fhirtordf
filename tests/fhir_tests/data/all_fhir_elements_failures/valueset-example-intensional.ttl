@@ -1,0 +1,145 @@
+
+
+Subject http://hl7.org/fhir/ValueSet/example-intensional DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/ValueSet/example-intensional.ValueSet.compose.ValueSet.compose.exclude_0.ValueSet.compose.include.concept_0.ValueSet.compose.include.concept.code> <http://hl7.org/fhir/value> "5932-9" .
+<http://hl7.org/fhir/ValueSet/example-intensional.ValueSet.compose.ValueSet.compose.exclude_0.ValueSet.compose.include.concept_0.ValueSet.compose.include.concept.display> <http://hl7.org/fhir/value> "Cholesterol [Presence] in Blood by Test strip" .
+<http://hl7.org/fhir/ValueSet/example-intensional.ValueSet.compose.ValueSet.compose.exclude_0.ValueSet.compose.include.concept_0> <http://hl7.org/fhir/ValueSet.compose.include.concept.code> <http://hl7.org/fhir/ValueSet/example-intensional.ValueSet.compose.ValueSet.compose.exclude_0.ValueSet.compose.include.concept_0.ValueSet.compose.include.concept.code> .
+<http://hl7.org/fhir/ValueSet/example-intensional.ValueSet.compose.ValueSet.compose.exclude_0.ValueSet.compose.include.concept_0> <http://hl7.org/fhir/ValueSet.compose.include.concept.display> <http://hl7.org/fhir/ValueSet/example-intensional.ValueSet.compose.ValueSet.compose.exclude_0.ValueSet.compose.include.concept_0.ValueSet.compose.include.concept.display> .
+<http://hl7.org/fhir/ValueSet/example-intensional.ValueSet.compose.ValueSet.compose.exclude_0.ValueSet.compose.include.concept_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ValueSet/example-intensional.ValueSet.compose.ValueSet.compose.exclude_0.ValueSet.compose.include.system> <http://hl7.org/fhir/value> "http://loinc.org" .
+<http://hl7.org/fhir/ValueSet/example-intensional.ValueSet.compose.ValueSet.compose.exclude_0> <http://hl7.org/fhir/ValueSet.compose.include.concept> <http://hl7.org/fhir/ValueSet/example-intensional.ValueSet.compose.ValueSet.compose.exclude_0.ValueSet.compose.include.concept_0> .
+<http://hl7.org/fhir/ValueSet/example-intensional.ValueSet.compose.ValueSet.compose.exclude_0> <http://hl7.org/fhir/ValueSet.compose.include.system> <http://hl7.org/fhir/ValueSet/example-intensional.ValueSet.compose.ValueSet.compose.exclude_0.ValueSet.compose.include.system> .
+	----> Second: 
+<http://hl7.org/fhir/ValueSet/example-intensional.ValueSet.compose.ValueSet.compose.exclude_0.ValueSet.compose.exclude.concept_0.ValueSet.compose.exclude.concept.code> <http://hl7.org/fhir/value> "5932-9" .
+<http://hl7.org/fhir/ValueSet/example-intensional.ValueSet.compose.ValueSet.compose.exclude_0.ValueSet.compose.exclude.concept_0.ValueSet.compose.exclude.concept.display> <http://hl7.org/fhir/value> "Cholesterol [Presence] in Blood by Test strip" .
+<http://hl7.org/fhir/ValueSet/example-intensional.ValueSet.compose.ValueSet.compose.exclude_0.ValueSet.compose.exclude.concept_0> <http://hl7.org/fhir/ValueSet.compose.exclude.concept.code> <http://hl7.org/fhir/ValueSet/example-intensional.ValueSet.compose.ValueSet.compose.exclude_0.ValueSet.compose.exclude.concept_0.ValueSet.compose.exclude.concept.code> .
+<http://hl7.org/fhir/ValueSet/example-intensional.ValueSet.compose.ValueSet.compose.exclude_0.ValueSet.compose.exclude.concept_0> <http://hl7.org/fhir/ValueSet.compose.exclude.concept.display> <http://hl7.org/fhir/ValueSet/example-intensional.ValueSet.compose.ValueSet.compose.exclude_0.ValueSet.compose.exclude.concept_0.ValueSet.compose.exclude.concept.display> .
+<http://hl7.org/fhir/ValueSet/example-intensional.ValueSet.compose.ValueSet.compose.exclude_0.ValueSet.compose.exclude.concept_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ValueSet/example-intensional.ValueSet.compose.ValueSet.compose.exclude_0.ValueSet.compose.exclude.system> <http://hl7.org/fhir/value> "http://loinc.org" .
+<http://hl7.org/fhir/ValueSet/example-intensional.ValueSet.compose.ValueSet.compose.exclude_0> <http://hl7.org/fhir/ValueSet.compose.exclude.concept> <http://hl7.org/fhir/ValueSet/example-intensional.ValueSet.compose.ValueSet.compose.exclude_0.ValueSet.compose.exclude.concept_0> .
+<http://hl7.org/fhir/ValueSet/example-intensional.ValueSet.compose.ValueSet.compose.exclude_0> <http://hl7.org/fhir/ValueSet.compose.exclude.system> <http://hl7.org/fhir/ValueSet/example-intensional.ValueSet.compose.ValueSet.compose.exclude_0.ValueSet.compose.exclude.system> .----------------------------------------
+
+========================================
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix w5: <http://hl7.org/fhir/w5#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://hl7.org/fhir/ValueSet/example-intensional> a fhir:ValueSet ;
+    fhir:nodeRole fhir:treeRoot ;
+    fhir:DomainResource.text [
+        fhir:Narrative.div """<div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Value set &quot;LOINC Codes for Cholesterol&quot;: This is an example value set that includes 
+        all the  codes for serum cholesterol from LOINC v2.36.</p>
+      <p>Developed by: FHIR project team (example)</p>
+      <p>Published for testing on 13-June 2012</p>
+      <p>This value set includes all the LOINC codes in LOINC Part Concept Cholesterol | Bld-Ser-Plas (LP43571-6), except for 5932-9 Cholesterol [Presence] in Blood by Test strip</p>
+      <p>This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use</p>
+    </div>""" ;
+        fhir:Narrative.status [
+            fhir:value "generated"
+        ]
+    ] ;
+    fhir:Resource.id [
+        fhir:value "example-intensional"
+    ] ;
+    fhir:Resource.meta [
+        fhir:Meta.profile [
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+        ]
+    ] ;
+    fhir:ValueSet.compose [
+        fhir:ValueSet.compose.exclude [
+            fhir:index "0"^^xsd:integer ;
+            fhir:ValueSet.compose.exclude.concept [
+                fhir:index "0"^^xsd:integer ;
+                fhir:ValueSet.compose.exclude.concept.code [
+                    fhir:value "5932-9"
+                ] ;
+                fhir:ValueSet.compose.exclude.concept.display [
+                    fhir:value "Cholesterol [Presence] in Blood by Test strip"
+                ]
+            ] ;
+            fhir:ValueSet.compose.exclude.system [
+                fhir:value "http://loinc.org"
+            ]
+        ] ;
+        fhir:ValueSet.compose.include [
+            fhir:index "0"^^xsd:integer ;
+            fhir:ValueSet.compose.include.filter [
+                fhir:index "0"^^xsd:integer ;
+                fhir:ValueSet.compose.include.filter.op [
+                    fhir:value "="
+                ] ;
+                fhir:ValueSet.compose.include.filter.property [
+                    fhir:value "parent"
+                ] ;
+                fhir:ValueSet.compose.include.filter.value [
+                    fhir:value "LP43571-6"
+                ]
+            ] ;
+            fhir:ValueSet.compose.include.system [
+                fhir:value "http://loinc.org"
+            ]
+        ]
+    ] ;
+    fhir:ValueSet.contact [
+        fhir:index "0"^^xsd:integer ;
+        fhir:ContactDetail.name [
+            fhir:value "FHIR project team"
+        ] ;
+        fhir:ContactDetail.telecom [
+            fhir:index "0"^^xsd:integer ;
+            fhir:ContactPoint.system [
+                fhir:value "url"
+            ] ;
+            fhir:ContactPoint.value [
+                fhir:value "http://hl7.org/fhir"
+            ]
+        ]
+    ] ;
+    fhir:ValueSet.copyright [
+        fhir:value "This content from LOINCÂ® is copyright Â© 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use"
+    ] ;
+    fhir:ValueSet.date [
+        fhir:value "2015-06-22"^^xsd:date
+    ] ;
+    fhir:ValueSet.description [
+        fhir:value "This is an example value set that includes all the LOINC codes for serum/plasma cholesterol from v2.36."
+    ] ;
+    fhir:ValueSet.experimental [
+        fhir:value "true"^^xsd:boolean
+    ] ;
+    fhir:ValueSet.identifier [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Identifier.system [
+            fhir:value "http://acme.com/identifiers/valuesets"
+        ] ;
+        fhir:Identifier.value [
+            fhir:value "loinc-cholesterol-ext"
+        ]
+    ] ;
+    fhir:ValueSet.name [
+        fhir:value "LOINC Codes for Cholesterol in Serum/Plasma"
+    ] ;
+    fhir:ValueSet.publisher [
+        fhir:value "HL7 International"
+    ] ;
+    fhir:ValueSet.status [
+        fhir:value "draft"
+    ] ;
+    fhir:ValueSet.url [
+        fhir:value "http://hl7.org/fhir/ValueSet/example-intensional"
+    ] ;
+    fhir:ValueSet.version [
+        fhir:value "20150622"
+    ] .
+
+<http://hl7.org/fhir/ValueSet/example-intensional.ttl> a owl:Ontology ;
+    owl:imports fhir:fhir.ttl .
+

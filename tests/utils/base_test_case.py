@@ -94,8 +94,8 @@ def fhir_decimal_issue_filter(in_both: Graph, in_first: Graph, in_second: Graph)
     """
     for s, p, o in list(in_first):
         o_2 = in_second.value(s, p)
-        if o_2 and isinstance(o_2, Literal) and o_2.datatype == XSD.decimal and \
-                   isinstance(o, Literal) and o.datatype == XSD.decimal:
+        if o_2 is not None and isinstance(o_2, Literal) and o_2.datatype == XSD.decimal and \
+                               isinstance(o, Literal) and o.datatype == XSD.decimal:
             if o.value == o_2.value:
                 in_both.add((s, p, o))
                 in_first.remove((s, p, o))

@@ -1,0 +1,378 @@
+
+
+Subject http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03 DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_0.PlanDefinition.action.dynamicValue_0.PlanDefinition.action.dynamicValue.expression> <http://hl7.org/fhir/value> "Communication Request to Charge Nurse" .
+<http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_0.PlanDefinition.action.dynamicValue_0.PlanDefinition.action.dynamicValue.path> <http://hl7.org/fhir/value> "/" .
+<http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_0.PlanDefinition.action.dynamicValue_0> <http://hl7.org/fhir/PlanDefinition.action.dynamicValue.expression> <http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_0.PlanDefinition.action.dynamicValue_0.PlanDefinition.action.dynamicValue.expression> .
+<http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_0.PlanDefinition.action.dynamicValue_0> <http://hl7.org/fhir/PlanDefinition.action.dynamicValue.path> <http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_0.PlanDefinition.action.dynamicValue_0.PlanDefinition.action.dynamicValue.path> .
+<http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_0.PlanDefinition.action.dynamicValue_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_0.PlanDefinition.action.textEquivalent> <http://hl7.org/fhir/value> "A Breastfeeding Readiness Assessment is recommended, please administer the assessment." .
+<http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_0.PlanDefinition.action.title> <http://hl7.org/fhir/value> "Notify the charge nurse to perform the assessment." .
+<http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_0.PlanDefinition.action.type.Coding.code> <http://hl7.org/fhir/value> "create" .
+<http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_0.PlanDefinition.action.type> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_0.PlanDefinition.action.type.Coding.code> .
+<http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_0> <http://hl7.org/fhir/PlanDefinition.action.dynamicValue> <http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_0.PlanDefinition.action.dynamicValue_0> .
+<http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_0> <http://hl7.org/fhir/PlanDefinition.action.textEquivalent> <http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_0.PlanDefinition.action.textEquivalent> .
+<http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_0> <http://hl7.org/fhir/PlanDefinition.action.title> <http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_0.PlanDefinition.action.title> .
+<http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_0> <http://hl7.org/fhir/PlanDefinition.action.type> <http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_0.PlanDefinition.action.type> .
+<http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.dynamicValue_0.PlanDefinition.action.dynamicValue.expression> <http://hl7.org/fhir/value> "Communication Request to Bedside Nurse" .
+<http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.dynamicValue_0.PlanDefinition.action.dynamicValue.path> <http://hl7.org/fhir/value> "/" .
+<http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.dynamicValue_0> <http://hl7.org/fhir/PlanDefinition.action.dynamicValue.expression> <http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.dynamicValue_0.PlanDefinition.action.dynamicValue.expression> .
+<http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.dynamicValue_0> <http://hl7.org/fhir/PlanDefinition.action.dynamicValue.path> <http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.dynamicValue_0.PlanDefinition.action.dynamicValue.path> .
+<http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.dynamicValue_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.textEquivalent> <http://hl7.org/fhir/value> "A Breastfeeding Readiness Assessment is recommended, please administer the assessment." .
+<http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.title> <http://hl7.org/fhir/value> "Notify the bedside nurse to perform the assessment." .
+<http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.type.Coding.code> <http://hl7.org/fhir/value> "create" .
+<http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.type> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.type.Coding.code> .
+<http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_1> <http://hl7.org/fhir/PlanDefinition.action.dynamicValue> <http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.dynamicValue_0> .
+<http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_1> <http://hl7.org/fhir/PlanDefinition.action.textEquivalent> <http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.textEquivalent> .
+<http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_1> <http://hl7.org/fhir/PlanDefinition.action.title> <http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.title> .
+<http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_1> <http://hl7.org/fhir/PlanDefinition.action.type> <http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.type> .
+	----> Second: 
+<http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_0.PlanDefinition.action.action.dynamicValue_0.PlanDefinition.action.action.dynamicValue.expression> <http://hl7.org/fhir/value> "Communication Request to Charge Nurse" .
+<http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_0.PlanDefinition.action.action.dynamicValue_0.PlanDefinition.action.action.dynamicValue.path> <http://hl7.org/fhir/value> "/" .
+<http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_0.PlanDefinition.action.action.dynamicValue_0> <http://hl7.org/fhir/PlanDefinition.action.action.dynamicValue.expression> <http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_0.PlanDefinition.action.action.dynamicValue_0.PlanDefinition.action.action.dynamicValue.expression> .
+<http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_0.PlanDefinition.action.action.dynamicValue_0> <http://hl7.org/fhir/PlanDefinition.action.action.dynamicValue.path> <http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_0.PlanDefinition.action.action.dynamicValue_0.PlanDefinition.action.action.dynamicValue.path> .
+<http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_0.PlanDefinition.action.action.dynamicValue_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_0.PlanDefinition.action.action.textEquivalent> <http://hl7.org/fhir/value> "A Breastfeeding Readiness Assessment is recommended, please administer the assessment." .
+<http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_0.PlanDefinition.action.action.title> <http://hl7.org/fhir/value> "Notify the charge nurse to perform the assessment." .
+<http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_0.PlanDefinition.action.action.type.Coding.code> <http://hl7.org/fhir/value> "create" .
+<http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_0.PlanDefinition.action.action.type> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_0.PlanDefinition.action.action.type.Coding.code> .
+<http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_0> <http://hl7.org/fhir/PlanDefinition.action.action.dynamicValue> <http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_0.PlanDefinition.action.action.dynamicValue_0> .
+<http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_0> <http://hl7.org/fhir/PlanDefinition.action.action.textEquivalent> <http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_0.PlanDefinition.action.action.textEquivalent> .
+<http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_0> <http://hl7.org/fhir/PlanDefinition.action.action.title> <http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_0.PlanDefinition.action.action.title> .
+<http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_0> <http://hl7.org/fhir/PlanDefinition.action.action.type> <http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_0.PlanDefinition.action.action.type> .
+<http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.action.dynamicValue_0.PlanDefinition.action.action.dynamicValue.expression> <http://hl7.org/fhir/value> "Communication Request to Bedside Nurse" .
+<http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.action.dynamicValue_0.PlanDefinition.action.action.dynamicValue.path> <http://hl7.org/fhir/value> "/" .
+<http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.action.dynamicValue_0> <http://hl7.org/fhir/PlanDefinition.action.action.dynamicValue.expression> <http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.action.dynamicValue_0.PlanDefinition.action.action.dynamicValue.expression> .
+<http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.action.dynamicValue_0> <http://hl7.org/fhir/PlanDefinition.action.action.dynamicValue.path> <http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.action.dynamicValue_0.PlanDefinition.action.action.dynamicValue.path> .
+<http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.action.dynamicValue_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.action.textEquivalent> <http://hl7.org/fhir/value> "A Breastfeeding Readiness Assessment is recommended, please administer the assessment." .
+<http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.action.title> <http://hl7.org/fhir/value> "Notify the bedside nurse to perform the assessment." .
+<http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.action.type.Coding.code> <http://hl7.org/fhir/value> "create" .
+<http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.action.type> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.action.type.Coding.code> .
+<http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_1> <http://hl7.org/fhir/PlanDefinition.action.action.dynamicValue> <http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.action.dynamicValue_0> .
+<http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_1> <http://hl7.org/fhir/PlanDefinition.action.action.textEquivalent> <http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.action.textEquivalent> .
+<http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_1> <http://hl7.org/fhir/PlanDefinition.action.action.title> <http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.action.title> .
+<http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_1> <http://hl7.org/fhir/PlanDefinition.action.action.type> <http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.PlanDefinition.action_0.PlanDefinition.action.action_1.PlanDefinition.action.action.type> .----------------------------------------
+
+========================================
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix w5: <http://hl7.org/fhir/w5#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03> a fhir:PlanDefinition ;
+    fhir:nodeRole fhir:treeRoot ;
+    fhir:DomainResource.text [
+        fhir:Narrative.div """<div xmlns="http://www.w3.org/1999/xhtml">
+         <table class="grid dict">
+            <tr>
+               <td>
+                  <b>Id: </b>
+               </td>
+            </tr>
+            <tr>
+               <td style="padding-left: 25px; padding-right: 25px;">PlanDefinition/exclusive-breastfeeding-intervention-03</td>
+            </tr>
+         </table>
+         <p/>
+         <table class="grid dict">
+            <tr>
+               <td>
+                  <b>Identifier: </b>
+               </td>
+            </tr>
+            <tr>
+               <td style="padding-left: 25px; padding-right: 25px;">
+                  <b>value: </b>
+                  <span>exclusive-breastfeeding-intervention-03</span>
+               </td>
+            </tr>
+         </table>
+         <p/>
+         <table class="grid dict">
+            <tr>
+               <td>
+                  <b>Title: </b>
+               </td>
+            </tr>
+            <tr>
+               <td style="padding-left: 25px; padding-right: 25px;">Exclusive Breastfeeding Intervention-03</td>
+            </tr>
+         </table>
+         <p/>
+         <table class="grid dict">
+            <tr>
+               <td>
+                  <b>Status: </b>
+               </td>
+            </tr>
+            <tr>
+               <td style="padding-left: 25px; padding-right: 25px;">active</td>
+            </tr>
+         </table>
+         <p/>
+         <table class="grid dict">
+            <tr>
+               <td>
+                  <b>Description: </b>
+               </td>
+            </tr>
+            <tr>
+               <td style="padding-left: 25px; padding-right: 25px;">Exclusive breastfeeding intervention intended to improve outcomes for exclusive breastmilk feeding of newborns by notifying the charge and/or bedside nurse to perform the breastfeeding readiness assessment.</td>
+            </tr>
+         </table>
+         <p/>
+         <table class="grid dict">
+            <tr>
+               <td>
+                  <b>Topic: </b>
+               </td>
+            </tr>
+            <tr>
+               <td style="padding-left: 25px; padding-right: 25px;">
+                  <span>
+                     <b>text: </b>
+                     <span>Exclusive Breastfeeding</span>
+                  </span>
+               </td>
+            </tr>
+         </table>
+         <p/>
+         <table class="grid dict">
+            <tr>
+               <td>
+                  <b>Library: </b>
+               </td>
+            </tr>
+            <tr>
+               <td style="padding-left: 25px; padding-right: 25px;">
+                  <b>reference: </b>
+                  <span>Library/library-exclusive-breastfeeding-cds-logic</span>
+               </td>
+            </tr>
+         </table>
+         <p/>
+         <h2>Actions</h2>
+         <p style="width: 100%;" class="hierarchy">
+            <span>
+               <b>Step: </b>
+               <br/>
+               <span style="padding-left: 25px;">
+                  <b>title: </b>
+                  <span>Mother should be administered a breastfeeding readiness assessment.</span>
+                  <br/>
+               </span>
+               <span style="padding-left: 25px;">
+                  <b>condition: </b>
+                  <br/>
+                  <span style="padding-left: 50px;">
+                     <b>type: </b>
+                     <span>applicability</span>
+                     <br/>
+                  </span>
+                  <span style="padding-left: 50px;">
+                     <b>expression: </b>
+                     <span>Should Notify Nurse to Perform Assessment</span>
+                     <br/>
+                  </span>
+               </span>
+               <span style="padding-left: 25px;">
+                  <span>
+                     <b>Step: </b>
+                     <br/>
+                     <span style="padding-left: 50px;">
+                        <b>title: </b>
+                        <span>Notify the charge nurse to perform the assessment.</span>
+                        <br/>
+                     </span>
+                     <span style="padding-left: 50px;">
+                        <b>text: </b>
+                        <span>A Breastfeeding Readiness Assessment is recommended, please administer the assessment.</span>
+                        <br/>
+                     </span>
+                     <span style="padding-left: 50px;"/>
+                  </span>
+                  <span>
+                     <b>Step: </b>
+                     <br/>
+                     <span style="padding-left: 75px;">
+                        <b>title: </b>
+                        <span>Notify the bedside nurse to perform the assessment.</span>
+                        <br/>
+                     </span>
+                     <span style="padding-left: 75px;">
+                        <b>text: </b>
+                        <span>A Breastfeeding Readiness Assessment is recommended, please administer the assessment.</span>
+                        <br/>
+                     </span>
+                  </span>
+               </span>
+            </span>
+         </p>
+      </div>""" ;
+        fhir:Narrative.status [
+            fhir:value "generated"
+        ]
+    ] ;
+    fhir:PlanDefinition.action [
+        fhir:index "0"^^xsd:integer ;
+        fhir:PlanDefinition.action.action [
+            fhir:index "1"^^xsd:integer ;
+            fhir:PlanDefinition.action.action.dynamicValue [
+                fhir:index "0"^^xsd:integer ;
+                fhir:PlanDefinition.action.action.dynamicValue.expression [
+                    fhir:value "Communication Request to Bedside Nurse"
+                ] ;
+                fhir:PlanDefinition.action.action.dynamicValue.path [
+                    fhir:value "/"
+                ]
+            ] ;
+            fhir:PlanDefinition.action.action.textEquivalent [
+                fhir:value "A Breastfeeding Readiness Assessment is recommended, please administer the assessment."
+            ] ;
+            fhir:PlanDefinition.action.action.title [
+                fhir:value "Notify the bedside nurse to perform the assessment."
+            ] ;
+            fhir:PlanDefinition.action.action.type [
+                fhir:Coding.code [
+                    fhir:value "create"
+                ]
+            ]
+        ],
+            [
+            fhir:index "0"^^xsd:integer ;
+            fhir:PlanDefinition.action.action.dynamicValue [
+                fhir:index "0"^^xsd:integer ;
+                fhir:PlanDefinition.action.action.dynamicValue.expression [
+                    fhir:value "Communication Request to Charge Nurse"
+                ] ;
+                fhir:PlanDefinition.action.action.dynamicValue.path [
+                    fhir:value "/"
+                ]
+            ] ;
+            fhir:PlanDefinition.action.action.textEquivalent [
+                fhir:value "A Breastfeeding Readiness Assessment is recommended, please administer the assessment."
+            ] ;
+            fhir:PlanDefinition.action.action.title [
+                fhir:value "Notify the charge nurse to perform the assessment."
+            ] ;
+            fhir:PlanDefinition.action.action.type [
+                fhir:Coding.code [
+                    fhir:value "create"
+                ]
+            ]
+        ] ;
+        fhir:PlanDefinition.action.condition [
+            fhir:index "0"^^xsd:integer ;
+            fhir:PlanDefinition.action.condition.expression [
+                fhir:value "Should Notify Nurse to Perform Assessment"
+            ] ;
+            fhir:PlanDefinition.action.condition.kind [
+                fhir:value "applicability"
+            ]
+        ] ;
+        fhir:PlanDefinition.action.title [
+            fhir:value "Mother should be administered a breastfeeding readiness assessment."
+        ] ;
+        fhir:PlanDefinition.action.triggerDefinition [
+            fhir:index "0"^^xsd:integer ;
+            fhir:TriggerDefinition.name [
+                fhir:value "Admission"
+            ] ;
+            fhir:TriggerDefinition.type [
+                fhir:value "named-event"
+            ]
+        ],
+            [
+            fhir:index "3"^^xsd:integer ;
+            fhir:TriggerDefinition.name [
+                fhir:value "Transfer to Post-Partum"
+            ] ;
+            fhir:TriggerDefinition.type [
+                fhir:value "named-event"
+            ]
+        ],
+            [
+            fhir:index "1"^^xsd:integer ;
+            fhir:TriggerDefinition.name [
+                fhir:value "Birth"
+            ] ;
+            fhir:TriggerDefinition.type [
+                fhir:value "named-event"
+            ]
+        ],
+            [
+            fhir:index "2"^^xsd:integer ;
+            fhir:TriggerDefinition.name [
+                fhir:value "Infant Transfer to Recovery"
+            ] ;
+            fhir:TriggerDefinition.type [
+                fhir:value "named-event"
+            ]
+        ]
+    ] ;
+    fhir:PlanDefinition.date [
+        fhir:value "2015-03-08"^^xsd:date
+    ] ;
+    fhir:PlanDefinition.description [
+        fhir:value "Exclusive breastfeeding intervention intended to improve outcomes for exclusive breastmilk feeding of newborns by notifying the charge and/or bedside nurse to perform the breastfeeding readiness assessment."
+    ] ;
+    fhir:PlanDefinition.identifier [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Identifier.use [
+            fhir:value "official"
+        ] ;
+        fhir:Identifier.value [
+            fhir:value "exclusive-breastfeeding-intervention-03"
+        ]
+    ] ;
+    fhir:PlanDefinition.library [
+        fhir:index "0"^^xsd:integer ;
+        fhir:link <http://hl7.org/fhir/Library/library-exclusive-breastfeeding-cds-logic> ;
+        fhir:Reference.reference [
+            fhir:value "Library/library-exclusive-breastfeeding-cds-logic"
+        ]
+    ] ;
+    fhir:PlanDefinition.relatedArtifact [
+        fhir:index "0"^^xsd:integer ;
+        fhir:RelatedArtifact.resource [
+            fhir:link <http://hl7.org/fhir/Measure/measure-exclusive-breastfeeding> ;
+            fhir:Reference.reference [
+                fhir:value "Measure/measure-exclusive-breastfeeding"
+            ]
+        ] ;
+        fhir:RelatedArtifact.type [
+            fhir:value "derived-from"
+        ]
+    ] ;
+    fhir:PlanDefinition.status [
+        fhir:value "active"
+    ] ;
+    fhir:PlanDefinition.title [
+        fhir:value "Exclusive Breastfeeding Intervention-03"
+    ] ;
+    fhir:PlanDefinition.topic [
+        fhir:index "0"^^xsd:integer ;
+        fhir:CodeableConcept.text [
+            fhir:value "Exclusive Breastfeeding"
+        ]
+    ] ;
+    fhir:PlanDefinition.version [
+        fhir:value "1.0.0"
+    ] ;
+    fhir:Resource.id [
+        fhir:value "exclusive-breastfeeding-intervention-03"
+    ] .
+
+<http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-03.ttl> a owl:Ontology ;
+    owl:imports fhir:fhir.ttl .
+
+<http://hl7.org/fhir/Library/library-exclusive-breastfeeding-cds-logic> a fhir:Library .
+
+<http://hl7.org/fhir/Measure/measure-exclusive-breastfeeding> a fhir:Measure .
+

@@ -1,0 +1,246 @@
+
+
+Subject http://hl7.org/fhir/ValueSet/inactive DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/ValueSet/inactive.ValueSet.expansion.ValueSet.expansion.contains_1.ValueSet.expansion.contains.contains_0.ValueSet.expansion.contains.code> <http://hl7.org/fhir/value> "GOL" .
+<http://hl7.org/fhir/ValueSet/inactive.ValueSet.expansion.ValueSet.expansion.contains_1.ValueSet.expansion.contains.contains_0.ValueSet.expansion.contains.display> <http://hl7.org/fhir/value> "goal" .
+<http://hl7.org/fhir/ValueSet/inactive.ValueSet.expansion.ValueSet.expansion.contains_1.ValueSet.expansion.contains.contains_0.ValueSet.expansion.contains.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/v3/ActMood" .
+<http://hl7.org/fhir/ValueSet/inactive.ValueSet.expansion.ValueSet.expansion.contains_1.ValueSet.expansion.contains.contains_0> <http://hl7.org/fhir/ValueSet.expansion.contains.code> <http://hl7.org/fhir/ValueSet/inactive.ValueSet.expansion.ValueSet.expansion.contains_1.ValueSet.expansion.contains.contains_0.ValueSet.expansion.contains.code> .
+<http://hl7.org/fhir/ValueSet/inactive.ValueSet.expansion.ValueSet.expansion.contains_1.ValueSet.expansion.contains.contains_0> <http://hl7.org/fhir/ValueSet.expansion.contains.display> <http://hl7.org/fhir/ValueSet/inactive.ValueSet.expansion.ValueSet.expansion.contains_1.ValueSet.expansion.contains.contains_0.ValueSet.expansion.contains.display> .
+<http://hl7.org/fhir/ValueSet/inactive.ValueSet.expansion.ValueSet.expansion.contains_1.ValueSet.expansion.contains.contains_0> <http://hl7.org/fhir/ValueSet.expansion.contains.system> <http://hl7.org/fhir/ValueSet/inactive.ValueSet.expansion.ValueSet.expansion.contains_1.ValueSet.expansion.contains.contains_0.ValueSet.expansion.contains.system> .
+<http://hl7.org/fhir/ValueSet/inactive.ValueSet.expansion.ValueSet.expansion.contains_1.ValueSet.expansion.contains.contains_1.ValueSet.expansion.contains.code> <http://hl7.org/fhir/value> "RSK" .
+<http://hl7.org/fhir/ValueSet/inactive.ValueSet.expansion.ValueSet.expansion.contains_1.ValueSet.expansion.contains.contains_1.ValueSet.expansion.contains.display> <http://hl7.org/fhir/value> "risk" .
+<http://hl7.org/fhir/ValueSet/inactive.ValueSet.expansion.ValueSet.expansion.contains_1.ValueSet.expansion.contains.contains_1.ValueSet.expansion.contains.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/v3/ActMood" .
+<http://hl7.org/fhir/ValueSet/inactive.ValueSet.expansion.ValueSet.expansion.contains_1.ValueSet.expansion.contains.contains_1> <http://hl7.org/fhir/ValueSet.expansion.contains.code> <http://hl7.org/fhir/ValueSet/inactive.ValueSet.expansion.ValueSet.expansion.contains_1.ValueSet.expansion.contains.contains_1.ValueSet.expansion.contains.code> .
+<http://hl7.org/fhir/ValueSet/inactive.ValueSet.expansion.ValueSet.expansion.contains_1.ValueSet.expansion.contains.contains_1> <http://hl7.org/fhir/ValueSet.expansion.contains.display> <http://hl7.org/fhir/ValueSet/inactive.ValueSet.expansion.ValueSet.expansion.contains_1.ValueSet.expansion.contains.contains_1.ValueSet.expansion.contains.display> .
+<http://hl7.org/fhir/ValueSet/inactive.ValueSet.expansion.ValueSet.expansion.contains_1.ValueSet.expansion.contains.contains_1> <http://hl7.org/fhir/ValueSet.expansion.contains.system> <http://hl7.org/fhir/ValueSet/inactive.ValueSet.expansion.ValueSet.expansion.contains_1.ValueSet.expansion.contains.contains_1.ValueSet.expansion.contains.system> .
+	----> Second: 
+<http://hl7.org/fhir/ValueSet/inactive.ValueSet.expansion.ValueSet.expansion.contains_1.ValueSet.expansion.contains.contains_0.ValueSet.expansion.contains.contains.code> <http://hl7.org/fhir/value> "GOL" .
+<http://hl7.org/fhir/ValueSet/inactive.ValueSet.expansion.ValueSet.expansion.contains_1.ValueSet.expansion.contains.contains_0.ValueSet.expansion.contains.contains.display> <http://hl7.org/fhir/value> "goal" .
+<http://hl7.org/fhir/ValueSet/inactive.ValueSet.expansion.ValueSet.expansion.contains_1.ValueSet.expansion.contains.contains_0.ValueSet.expansion.contains.contains.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/v3/ActMood" .
+<http://hl7.org/fhir/ValueSet/inactive.ValueSet.expansion.ValueSet.expansion.contains_1.ValueSet.expansion.contains.contains_0> <http://hl7.org/fhir/ValueSet.expansion.contains.contains.code> <http://hl7.org/fhir/ValueSet/inactive.ValueSet.expansion.ValueSet.expansion.contains_1.ValueSet.expansion.contains.contains_0.ValueSet.expansion.contains.contains.code> .
+<http://hl7.org/fhir/ValueSet/inactive.ValueSet.expansion.ValueSet.expansion.contains_1.ValueSet.expansion.contains.contains_0> <http://hl7.org/fhir/ValueSet.expansion.contains.contains.display> <http://hl7.org/fhir/ValueSet/inactive.ValueSet.expansion.ValueSet.expansion.contains_1.ValueSet.expansion.contains.contains_0.ValueSet.expansion.contains.contains.display> .
+<http://hl7.org/fhir/ValueSet/inactive.ValueSet.expansion.ValueSet.expansion.contains_1.ValueSet.expansion.contains.contains_0> <http://hl7.org/fhir/ValueSet.expansion.contains.contains.system> <http://hl7.org/fhir/ValueSet/inactive.ValueSet.expansion.ValueSet.expansion.contains_1.ValueSet.expansion.contains.contains_0.ValueSet.expansion.contains.contains.system> .
+<http://hl7.org/fhir/ValueSet/inactive.ValueSet.expansion.ValueSet.expansion.contains_1.ValueSet.expansion.contains.contains_1.ValueSet.expansion.contains.contains.code> <http://hl7.org/fhir/value> "RSK" .
+<http://hl7.org/fhir/ValueSet/inactive.ValueSet.expansion.ValueSet.expansion.contains_1.ValueSet.expansion.contains.contains_1.ValueSet.expansion.contains.contains.display> <http://hl7.org/fhir/value> "risk" .
+<http://hl7.org/fhir/ValueSet/inactive.ValueSet.expansion.ValueSet.expansion.contains_1.ValueSet.expansion.contains.contains_1.ValueSet.expansion.contains.contains.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/v3/ActMood" .
+<http://hl7.org/fhir/ValueSet/inactive.ValueSet.expansion.ValueSet.expansion.contains_1.ValueSet.expansion.contains.contains_1> <http://hl7.org/fhir/ValueSet.expansion.contains.contains.code> <http://hl7.org/fhir/ValueSet/inactive.ValueSet.expansion.ValueSet.expansion.contains_1.ValueSet.expansion.contains.contains_1.ValueSet.expansion.contains.contains.code> .
+<http://hl7.org/fhir/ValueSet/inactive.ValueSet.expansion.ValueSet.expansion.contains_1.ValueSet.expansion.contains.contains_1> <http://hl7.org/fhir/ValueSet.expansion.contains.contains.display> <http://hl7.org/fhir/ValueSet/inactive.ValueSet.expansion.ValueSet.expansion.contains_1.ValueSet.expansion.contains.contains_1.ValueSet.expansion.contains.contains.display> .
+<http://hl7.org/fhir/ValueSet/inactive.ValueSet.expansion.ValueSet.expansion.contains_1.ValueSet.expansion.contains.contains_1> <http://hl7.org/fhir/ValueSet.expansion.contains.contains.system> <http://hl7.org/fhir/ValueSet/inactive.ValueSet.expansion.ValueSet.expansion.contains_1.ValueSet.expansion.contains.contains_1.ValueSet.expansion.contains.contains.system> .----------------------------------------
+
+========================================
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix w5: <http://hl7.org/fhir/w5#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://hl7.org/fhir/ValueSet/inactive> a fhir:ValueSet ;
+    fhir:nodeRole fhir:treeRoot ;
+    fhir:DomainResource.text [
+        fhir:Narrative.div """<div xmlns="http://www.w3.org/1999/xhtml">
+      <h3>Value Set Contents</h3>
+      <p>This value set contains 5 concepts</p>
+      <p>All codes from system 
+        <a href="v3/ActMood/cs.html">
+          <code>http://hl7.org/fhir/v3/ActMood</code>
+        </a>
+      </p>
+      <table class="codes">
+        <tr>
+          <td>
+            <b>Code</b>
+          </td>
+          <td>
+            <b>Display</b>
+          </td>
+          <td>
+            <b>Definition</b>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a name="http---hl7.org-fhir-v3-ActMood-CRT"> </a>
+            <a href="v3/ActMood/cs.html#v3-ActMood-CRT">CRT</a>
+          </td>
+          <td>criterion</td>
+          <td>Deprecation Comment: 
+                           This concept This codes should no longer be used.  Instead, set attribute Act.isCriterionInd to &quot;true&quot; and use the desired mood for your criterion.
+
+                        
+                           Definition: A condition that must be true for the source act to be considered.</td>
+        </tr>
+        <tr>
+          <td>
+            <a name="http---hl7.org-fhir-v3-ActMood-EXPEC"> </a>
+            <a href="v3/ActMood/cs.html#v3-ActMood-EXPEC">EXPEC</a>
+          </td>
+          <td>expectation</td>
+          <td>Definition: An act that is considered to have some noteworthy likelihood of occurring in the future (has_match = event).
+
+                        
+                           Examples:Prognosis of a condition, Expected date of discharge from hospital, patient will likely need an emergency decompression of the intracranial pressure by morning.
+
+                        
+                           UsageNotes:INT (intent) reflects a plan for the future, which is a declaration to do something. This contrasts with expectation, which is a prediction that something will happen in the future. GOL (goal) reflects a hope rather than a prediction. RSK (risk) reflects a potential negative event that may or may not be expected to happen.</td>
+        </tr>
+        <tr>
+          <td>
+            <a name="http---hl7.org-fhir-v3-ActMood-GOL"> </a>  
+            <a href="v3/ActMood/cs.html#v3-ActMood-GOL">GOL</a>
+          </td>
+          <td>goal</td>
+          <td>Definition: An expectation that is considered to be desirable to occur in the future 
+
+                        
+                           Examples:Target weight below 80Kg, Stop smoking, Regain ability to walk, goal is to administer thrombolytics to candidate patients presenting with acute myocardial infarction.
+
+                        
+                           UsageNotes: INT (intent) reflects a plan for the future, which is a declaration to do something.  This contrasts with goal which doesn't represent an intention to act, merely a hope for an eventual result.  A goal is distinct from the intended actions to reach that goal.  &quot;I will reduce the dose of drug x to 20mg&quot; is an intent.  &quot;I hope to be able to get the patient to the point where I can reduce the dose of drug x to 20mg&quot; is a goal. EXPEC (expectation) reflects a prediction rather than a hope. RSK (risk) reflects a potential negative event rather than a hope.</td>
+        </tr>
+        <tr>
+          <td>
+            <a name="http---hl7.org-fhir-v3-ActMood-RSK"> </a>  
+            <a href="v3/ActMood/cs.html#v3-ActMood-RSK">RSK</a>
+          </td>
+          <td>risk</td>
+          <td>Definition:An act that may occur in the future and which is regarded as undesirable 
+
+                        
+                           Examples:Increased risk of DVT, at risk for sub-acute bacterial endocarditis.
+
+                        
+                           UsageNotes:Note: An observation in RSK mood expresses the undesirable act, and not the underlying risk factor. A risk factor that is present (e.g. obesity, smoking, etc) should be expressed in event mood. INT (intent) reflects a plan for the future, which is a declaration to do something. This contrasts with RSK (risk), which is the potential that something negative will occur that may or may not ever happen. GOL (goal) reflects a hope to achieve something. EXPEC (expectation) is the prediction of a positive or negative event. This contrasts with RSK (risk), which is the potential that something negative will occur that may or may not ever happen, and may not be expected to happen.</td>
+        </tr>
+        <tr>
+          <td>
+            <a name="http---hl7.org-fhir-v3-ActMood-OPT"> </a>
+            <a href="v3/ActMood/cs.html#v3-ActMood-OPT">OPT</a>
+          </td>
+          <td>option</td>
+          <td>Definition: One of a set of acts that specify an option for the property values that the parent act may have. Typically used in definitions or orders to describe alternatives. An option can only be used as a group, that is, all assigned values must be used together. The actual mood of the act is the same as the parent act, and they must be linked by an actrelationship with type = OPTN.</td>
+        </tr>
+      </table>
+    </div>""" ;
+        fhir:Narrative.status [
+            fhir:value "generated"
+        ]
+    ] ;
+    fhir:Resource.id [
+        fhir:value "inactive"
+    ] ;
+    fhir:ValueSet.compose [
+        fhir:ValueSet.compose.inactive [
+            fhir:value "true"^^xsd:boolean
+        ] ;
+        fhir:ValueSet.compose.include [
+            fhir:index "0"^^xsd:integer ;
+            fhir:ValueSet.compose.include.filter [
+                fhir:index "0"^^xsd:integer ;
+                fhir:ValueSet.compose.include.filter.op [
+                    fhir:value "descendent-of"
+                ] ;
+                fhir:ValueSet.compose.include.filter.property [
+                    fhir:value "concept"
+                ] ;
+                fhir:ValueSet.compose.include.filter.value [
+                    fhir:value "_ActMoodPredicate"
+                ]
+            ] ;
+            fhir:ValueSet.compose.include.system [
+                fhir:value "http://hl7.org/fhir/v3/ActMood"
+            ]
+        ]
+    ] ;
+    fhir:ValueSet.description [
+        fhir:value "HL7 v3 ActMood Prdicate codes, including inactive codes"
+    ] ;
+    fhir:ValueSet.expansion [
+        fhir:ValueSet.expansion.contains [
+            fhir:index "1"^^xsd:integer ;
+            fhir:ValueSet.expansion.contains.code [
+                fhir:value "EXPEC"
+            ] ;
+            fhir:ValueSet.expansion.contains.contains [
+                fhir:index "1"^^xsd:integer ;
+                fhir:ValueSet.expansion.contains.contains.code [
+                    fhir:value "RSK"
+                ] ;
+                fhir:ValueSet.expansion.contains.contains.display [
+                    fhir:value "risk"
+                ] ;
+                fhir:ValueSet.expansion.contains.contains.system [
+                    fhir:value "http://hl7.org/fhir/v3/ActMood"
+                ]
+            ],
+                [
+                fhir:index "0"^^xsd:integer ;
+                fhir:ValueSet.expansion.contains.contains.code [
+                    fhir:value "GOL"
+                ] ;
+                fhir:ValueSet.expansion.contains.contains.display [
+                    fhir:value "goal"
+                ] ;
+                fhir:ValueSet.expansion.contains.contains.system [
+                    fhir:value "http://hl7.org/fhir/v3/ActMood"
+                ]
+            ] ;
+            fhir:ValueSet.expansion.contains.display [
+                fhir:value "expectation"
+            ] ;
+            fhir:ValueSet.expansion.contains.system [
+                fhir:value "http://hl7.org/fhir/v3/ActMood"
+            ]
+        ],
+            [
+            fhir:index "0"^^xsd:integer ;
+            fhir:ValueSet.expansion.contains.code [
+                fhir:value "CRT"
+            ] ;
+            fhir:ValueSet.expansion.contains.display [
+                fhir:value "criterion"
+            ] ;
+            fhir:ValueSet.expansion.contains.inactive [
+                fhir:value "true"^^xsd:boolean
+            ] ;
+            fhir:ValueSet.expansion.contains.system [
+                fhir:value "http://hl7.org/fhir/v3/ActMood"
+            ]
+        ],
+            [
+            fhir:index "2"^^xsd:integer ;
+            fhir:ValueSet.expansion.contains.code [
+                fhir:value "OPT"
+            ] ;
+            fhir:ValueSet.expansion.contains.display [
+                fhir:value "option"
+            ] ;
+            fhir:ValueSet.expansion.contains.system [
+                fhir:value "http://hl7.org/fhir/v3/ActMood"
+            ]
+        ] ;
+        fhir:ValueSet.expansion.identifier [
+            fhir:value "urn:uuid:46c00b3f-003a-4f31-9d4b-ea2de58b2a99"
+        ] ;
+        fhir:ValueSet.expansion.timestamp [
+            fhir:value "2017-02-26T10:00:00+00:00"^^xsd:dateTime
+        ]
+    ] ;
+    fhir:ValueSet.name [
+        fhir:value "Example-inactive"
+    ] ;
+    fhir:ValueSet.status [
+        fhir:value "draft"
+    ] ;
+    fhir:ValueSet.title [
+        fhir:value "Example with inactive codes"
+    ] ;
+    fhir:ValueSet.url [
+        fhir:value "http://hl7.org/fhir/ValueSet/inactive"
+    ] .
+
+<http://hl7.org/fhir/ValueSet/inactive.ttl> a owl:Ontology ;
+    owl:imports fhir:fhir.ttl .
+
