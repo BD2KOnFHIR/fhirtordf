@@ -31,7 +31,7 @@ from datetime import datetime, timedelta
 from typing import Union
 
 from dateutil.parser import parse
-from rdflib import Graph
+from rdflib import Graph, Literal, XSD
 
 test_directory = os.path.join(os.path.split(os.path.abspath(__file__))[0], '..')
 test_data_directory = os.path.join(test_directory, 'data')
@@ -86,3 +86,18 @@ def make_and_clear_directory(directory: str):
     os.makedirs(directory)
     with open(safety_file, "w") as f:
         f.write("Generated for safety.  Must be present for test to clear this directory.")
+
+
+def fhir_decimal_issue_filter(in_both: Graph, in_first: Graph, in_second: Graph) -> None:
+    """ FHIR currently requires a non-standard JSON parser that can differentiate between '"x": 1.0' and '"x": 1.00'
+        The filter below treats RDF representation of both as the same, and is used to make decimal values
+        pass unit tests
+    """
+    for s, p, o in list(in_first):
+        o_2 = in_second.value(s, p)
+        if o_2 and isinstance(o_2, Literal) and o_2.datatype == XSD.decimal and \
+                   isinstance(o, Literal) and o.datatype == XSD.decimal:
+            if o.value == o_2.value:
+                in_both.add((s, p, o))
+                in_first.remove((s, p, o))
+                in_second.remove((s, p, o_2))

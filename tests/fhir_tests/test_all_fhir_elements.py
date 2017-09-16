@@ -33,7 +33,7 @@ from rdflib import Graph
 from fhirtordf.fhir.fhirmetavoc import FHIRMetaVocEntry
 from fhirtordf.loaders.fhirresourceloader import FHIRResource
 from fhirtordf.rdfsupport.rdfcompare import rdf_compare
-from tests.utils.base_test_case import make_and_clear_directory
+from tests.utils.base_test_case import make_and_clear_directory, fhir_decimal_issue_filter
 from tests.utils.build_test_harness import ValidationTestCase
 
 
@@ -61,7 +61,7 @@ FHIRInstanceTestCase.file_filter = lambda dp, fn: ".cs." not in fn and '.vs.' no
                                                   and '.schema.' not in fn and '.diff.' not in fn
 FHIRInstanceTestCase.base_dir = 'http://hl7.org/fhir'
 FHIRInstanceTestCase.max_size = 20                 # maximum file size in kb
-# FHIRInstanceTestCase.start_at = "valueset-example-intensional"
+# FHIRInstanceTestCase.start_at = "imagingstudy-example"
 
 
 # Comparing to FHIR, so make certain we're doing FHIR dates
@@ -76,7 +76,11 @@ def json_to_ttl(self: FHIRInstanceTestCase, dirpath: str, fname: str) -> bool:
     if os.path.exists(test_ttl_fname):
         target = Graph()
         target.load(test_ttl_fname, format="turtle")
-        diffs = rdf_compare(target, source.graph, ignore_owl_version=True, ignore_type_arcs=True)
+        diffs_nc = rdf_compare(target, source.graph, ignore_owl_version=True, ignore_type_arcs=True)
+        diffs = rdf_compare(target, source.graph, ignore_owl_version=True, ignore_type_arcs=True,
+                            compare_filter=fhir_decimal_issue_filter)
+        if diffs_nc and not diffs:
+            print("---> {} has decimal precision issues".format(fname))
         if diffs:
             with open(os.path.join(self.output_directory, turtle_fname), 'w') as f:
                 f.write(diffs)

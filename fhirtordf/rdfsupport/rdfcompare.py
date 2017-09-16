@@ -25,7 +25,7 @@
 # LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
 # OF THE POSSIBILITY OF SUCH DAMAGE.
-from typing import Optional, List, Set
+from typing import Optional, List, Set, Callable
 
 from rdflib import URIRef, Graph, OWL, RDF, BNode
 from rdflib.compare import graph_diff
@@ -114,13 +114,15 @@ def dump_nt_sorted(g: Graph) -> List[str]:
     return [l.decode('ascii') for l in sorted(g.serialize(format='nt').splitlines()) if l]
 
 
-def rdf_compare(g1: Graph, g2: Graph, ignore_owl_version: bool=False, ignore_type_arcs: bool = False) -> str:
+def rdf_compare(g1: Graph, g2: Graph, ignore_owl_version: bool=False, ignore_type_arcs: bool = False,
+                compare_filter: Optional[Callable[[Graph, Graph, Graph], None]]=None) -> str:
     """
     Compare graph g1 and g2
     :param g1: first graph
     :param g2: second graph
     :param ignore_owl_version:
     :param ignore_type_arcs:
+    :param compare_filter: Final adjustment for graph difference. Used, for example, to deal with FHIR decimal problems.
     :return: List of differences as printable lines or blank if everything matches
     """
     def graph_for_subject(g: Graph, subj: Node) -> Graph:
@@ -155,6 +157,8 @@ def rdf_compare(g1: Graph, g2: Graph, ignore_owl_version: bool=False, ignore_typ
         s_in_g1 = graph_for_subject(g1, s)
         s_in_g2 = graph_for_subject(g2, s)
         in_both, in_first, in_second = graph_diff(skolemize(s_in_g1), skolemize(s_in_g2))
+        if compare_filter:
+            compare_filter(in_both, in_first, in_second)
         if len(list(in_first)) or len(list(in_second)):
             rval += "\n\nSubject {} DIFFERENCE: ".format(s) + '=' * 30
             if len(in_first):
