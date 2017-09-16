@@ -14,6 +14,15 @@
 <http://standardhealthrecord.org/fhir/Patient/526238ef-dec3-401d-a1c1-2974962df23f> a fhir:Patient ;
     fhir:nodeRole fhir:treeRoot ;
     fhir:DomainResource.extension [
+        fhir:index "4"^^xsd:integer ;
+        fhir:Extension.url [
+            fhir:value "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"
+        ] ;
+        fhir:Extension.valueCode [
+            fhir:value "M"
+        ]
+    ],
+        [
         fhir:index "2"^^xsd:integer ;
         fhir:Extension.url [
             fhir:value "http://hl7.org/fhir/StructureDefinition/birthPlace"
@@ -37,6 +46,17 @@
         ] ;
         fhir:Extension.valueBoolean [
             fhir:value "true"^^xsd:boolean
+        ]
+    ],
+        [
+        fhir:index "7"^^xsd:integer ;
+        fhir:Extension.url [
+            fhir:value "http://standardhealthrecord.org/fhir/StructureDefinition/shr-demographics-FathersName-extension"
+        ] ;
+        fhir:Extension.valueHumanName [
+            fhir:HumanName.text [
+                fhir:value "Jamel944 Adams301"
+            ]
         ]
     ],
         [
@@ -64,6 +84,33 @@
         ]
     ],
         [
+        fhir:index "8"^^xsd:integer ;
+        fhir:Extension.url [
+            fhir:value "http://standardhealthrecord.org/fhir/StructureDefinition/shr-demographics-SocialSecurityNumber-extension"
+        ] ;
+        fhir:Extension.valueString [
+            fhir:value "999-35-8029"
+        ]
+    ],
+        [
+        fhir:index "5"^^xsd:integer ;
+        fhir:Extension.url [
+            fhir:value "http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired"
+        ] ;
+        fhir:Extension.valueBoolean [
+            fhir:value "false"^^xsd:boolean
+        ]
+    ],
+        [
+        fhir:index "3"^^xsd:integer ;
+        fhir:Extension.url [
+            fhir:value "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName"
+        ] ;
+        fhir:Extension.valueString [
+            fhir:value "Euna636 VonRueden575"
+        ]
+    ],
+        [
         fhir:index "0"^^xsd:integer ;
         fhir:Extension.url [
             fhir:value "http://hl7.org/fhir/StructureDefinition/us-core-race"
@@ -85,53 +132,6 @@
             fhir:CodeableConcept.text [
                 fhir:value "race"
             ]
-        ]
-    ],
-        [
-        fhir:index "8"^^xsd:integer ;
-        fhir:Extension.url [
-            fhir:value "http://standardhealthrecord.org/fhir/StructureDefinition/shr-demographics-SocialSecurityNumber-extension"
-        ] ;
-        fhir:Extension.valueString [
-            fhir:value "999-35-8029"
-        ]
-    ],
-        [
-        fhir:index "4"^^xsd:integer ;
-        fhir:Extension.url [
-            fhir:value "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"
-        ] ;
-        fhir:Extension.valueCode [
-            fhir:value "M"
-        ]
-    ],
-        [
-        fhir:index "7"^^xsd:integer ;
-        fhir:Extension.url [
-            fhir:value "http://standardhealthrecord.org/fhir/StructureDefinition/shr-demographics-FathersName-extension"
-        ] ;
-        fhir:Extension.valueHumanName [
-            fhir:HumanName.text [
-                fhir:value "Jamel944 Adams301"
-            ]
-        ]
-    ],
-        [
-        fhir:index "3"^^xsd:integer ;
-        fhir:Extension.url [
-            fhir:value "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName"
-        ] ;
-        fhir:Extension.valueString [
-            fhir:value "Euna636 VonRueden575"
-        ]
-    ],
-        [
-        fhir:index "5"^^xsd:integer ;
-        fhir:Extension.url [
-            fhir:value "http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired"
-        ] ;
-        fhir:Extension.valueBoolean [
-            fhir:value "false"^^xsd:boolean
         ]
     ] ;
     fhir:DomainResource.text [
@@ -165,21 +165,21 @@
         fhir:Element.extension [
             fhir:index "0"^^xsd:integer ;
             fhir:Element.extension [
-                fhir:index "0"^^xsd:integer ;
-                fhir:Extension.url [
-                    fhir:value "latitude"
-                ] ;
-                fhir:Extension.valueDecimal [
-                    fhir:value "42.3930359430747"^^xsd:decimal
-                ]
-            ],
-                [
                 fhir:index "1"^^xsd:integer ;
                 fhir:Extension.url [
                     fhir:value "longitude"
                 ] ;
                 fhir:Extension.valueDecimal [
                     fhir:value "-71.5420268302525"^^xsd:decimal
+                ]
+            ],
+                [
+                fhir:index "0"^^xsd:integer ;
+                fhir:Extension.url [
+                    fhir:value "latitude"
+                ] ;
+                fhir:Extension.valueDecimal [
+                    fhir:value "42.3930359430747"^^xsd:decimal
                 ]
             ] ;
             fhir:Extension.url [
@@ -235,6 +235,15 @@
         ]
     ],
         [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Identifier.system [
+            fhir:value "https://github.com/synthetichealth/synthea"
+        ] ;
+        fhir:Identifier.value [
+            fhir:value "a32d29bc-aac5-4e38-8470-bf2f26390ff6"
+        ]
+    ],
+        [
         fhir:index "1"^^xsd:integer ;
         fhir:Identifier.system [
             fhir:value "http://hl7.org/fhir/sid/us-ssn"
@@ -253,15 +262,6 @@
         ] ;
         fhir:Identifier.value [
             fhir:value "999358029"
-        ]
-    ],
-        [
-        fhir:index "0"^^xsd:integer ;
-        fhir:Identifier.system [
-            fhir:value "https://github.com/synthetichealth/synthea"
-        ] ;
-        fhir:Identifier.value [
-            fhir:value "a32d29bc-aac5-4e38-8470-bf2f26390ff6"
         ]
     ] ;
     fhir:Patient.maritalStatus [

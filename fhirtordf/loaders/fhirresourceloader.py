@@ -81,7 +81,7 @@ class FHIRResource:
     """ A FHIR RDF representation of a FHIR JSON resource """
     def __init__(self, vocabulary: Graph, json_fname: Optional[str], base_uri: str,
                  data: Optional[JsonObj]=None, target: Optional[Graph]=None, add_ontology_header: bool=True,
-                 replace_narrative_text: bool=False, is_root=True):
+                 replace_narrative_text: bool=False, is_root=True, resource_uri: Optional[URIRef]=None):
         """
         Construct an RDF representation
         :param vocabulary: FHIR Metadata Vocabulary (fhir.ttl)
@@ -92,6 +92,7 @@ class FHIRResource:
         :param add_ontology_header: Add the OWL ontology header to the output
         :param replace_narrative_text: Replace long narrative text section with boilerplate
         :param is_root: True means this is a root node, False a component
+        :param resource_uri: If present, this becomes the resource subject
         """
         if json_fname:
             self.root = load(json_fname)
@@ -102,9 +103,12 @@ class FHIRResource:
         self._base_uri = base_uri + ('/' if base_uri[-1] not in '/#' else '')
         if 'resourceType' not in self.root:
             raise ValueError("{} is not a FHIR resource".format(json_fname))
-        if 'id' not in self.root:
-            self.root.id = str(uuid4())
-        self._resource_uri = URIRef(self._base_uri + self.root.resourceType + '/' + self.root.id)
+        if resource_uri:
+            self._resource_uri = resource_uri
+        else:
+            if 'id' not in self.root:
+                self.root.id = str(uuid4())
+            self._resource_uri = URIRef(self._base_uri + self.root.resourceType + '/' + self.root.id)
         self._meta = FHIRMetaVocEntry(vocabulary, FHIR[self.root.resourceType])
         self._g = PrettyGraph() if target is None else target
         self._vocabulary = vocabulary
@@ -251,7 +255,7 @@ class FHIRResource:
                     self.add(entry_bnode, FHIR.Bundle.entry.resource, entry_subj)
                     self.add(subj, pred, entry_bnode)
                     FHIRResource(self._vocabulary, None,  self._base_uri, lv.resource, self._g,
-                                 False, self._replace_narrative_text, False)
+                                 False, self._replace_narrative_text, False, resource_uri=entry_subj)
                 else:
                     self.add(entry_bnode, FHIR.index, Literal(list_idx))
                     if isinstance(lv, JsonObj):

@@ -112,6 +112,8 @@ The `fhirtordf` command line tool can:
 * **`--nocache `**: Load the FHIR Metadata Vocabulary (fhir.ttl) from the `METADATVOC` location.
 * **`--fmvcache FMVCACHE`**: Location of the FMB cache. (default: `$HOME/.cache`)
 * **`--maxsize MAXSIZE`**: Maximum sensible file size in KB. 0 means no size check (default: 800)
+* **`-sd, --skipdirs`**: List of directory patterns to skip.  Example: `-sd /v2 v3/ foo` will not process files in any directory that begins with 'v2', ends with 'v3' or contains 'foo'.  Directories whose names begin with an underscore ('_') are always skpped.
+* **`-sf, --skipfns`**: List of file name patterns to skip.  Example: `-sf .cs. .vs` will not process any files whose names contain '.cs.' or '.vs'. All files whose names that do not end with '.json' will be skipped. 
 
 ## Examples
 ### Transform a FHIR resource and emit on stdout

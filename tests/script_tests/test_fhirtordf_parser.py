@@ -26,6 +26,7 @@
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
 # OF THE POSSIBILITY OF SUCH DAMAGE.
 import io
+import shutil
 import unittest
 
 import sys
@@ -39,6 +40,7 @@ help_text = """usage: fhirtordf [-h] [-i [INFILE [INFILE ...]]] [-id INDIR]
                  [-o [OUTFILE [OUTFILE ...]]] [-od OUTDIR] [-f] [-s] [-v]
                  [-u URIBASE] [-mv METADATAVOC] [-no] [-nn] [-nc] [--nocache]
                  [--fmvcache FMVCACHE] [--maxsize MAXSIZE]
+                 [-sd [SKIPDIRS [SKIPDIRS ...]]] [-sf [SKIPFNS [SKIPFNS ...]]]
 
 Convert FHIR JSON into RDF
 
@@ -71,6 +73,10 @@ optional arguments:
                         /Users/mrf7578/.cache)
   --maxsize MAXSIZE     Maximum sensible file size in KB. 0 means no size
                         check (default: 800)
+  -sd [SKIPDIRS [SKIPDIRS ...]], --skipdirs [SKIPDIRS [SKIPDIRS ...]]
+                        Skip directories
+  -sf [SKIPFNS [SKIPFNS ...]], --skipfns [SKIPFNS [SKIPFNS ...]]
+                        Skip file names containing text
 """
 
 save_sample_output = False           # True means create a fres text copy for sample patient
@@ -107,6 +113,7 @@ class FHIRToRDFParserTestCase(unittest.TestCase):
         fhirtordf(args.split(), default_exit=False)
         self._pop_stdout()
         self.maxDiff = None
+        print(help_text)
         self.assertEqual(help_text, output.getvalue())
 
     def bester_tester(self, args: str, test_fname: str):
@@ -149,10 +156,13 @@ class FHIRToRDFParserTestCase(unittest.TestCase):
     def test_output_directory(self):
         from fhirtordf.fhirtordf import fhirtordf
         output_directory = os.path.abspath(os.path.join(os.path.split(os.path.abspath(__file__))[0], 'data', 'patlist'))
+        shutil.rmtree(output_directory, ignore_errors=True)
 
         fhirtordf("-i http://fhirtest.uhn.ca/baseDstu3/Patient"
                   "?_format=json&gender=male&birthdate=gt2013-01-01 -od {} -nn -nc".format(output_directory).split())
-        self.assertTrue(False)
+        self.assertTrue(os.path.exists(output_directory))
+        self.assertTrue(os.path.exists(os.path.join(output_directory, '_url1.ttl')))
+        shutil.rmtree(output_directory)
 
     def test_big_fhir_convert(self):
         # This is a test of the complete FHIR directory conversion

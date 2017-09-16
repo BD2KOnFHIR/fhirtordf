@@ -214,6 +214,28 @@
         ]
     ] ;
     fhir:Patient.name [
+        fhir:index "2"^^xsd:integer ;
+        fhir:HumanName.family [
+            fhir:value "Windsor"
+        ] ;
+        fhir:HumanName.given [
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "Peter"
+        ],
+            [
+            fhir:index "1"^^xsd:integer ;
+            fhir:value "James"
+        ] ;
+        fhir:HumanName.period [
+            fhir:Period.end [
+                fhir:value "2002-01-01"^^xsd:gYear
+            ]
+        ] ;
+        fhir:HumanName.use [
+            fhir:value "maiden"
+        ]
+    ],
+        [
         fhir:index "0"^^xsd:integer ;
         fhir:HumanName.family [
             fhir:value "Chalmers"
@@ -239,30 +261,23 @@
         fhir:HumanName.use [
             fhir:value "usual"
         ]
-    ],
-        [
-        fhir:index "2"^^xsd:integer ;
-        fhir:HumanName.family [
-            fhir:value "Windsor"
-        ] ;
-        fhir:HumanName.given [
-            fhir:index "1"^^xsd:integer ;
-            fhir:value "James"
-        ],
-            [
-            fhir:index "0"^^xsd:integer ;
-            fhir:value "Peter"
-        ] ;
-        fhir:HumanName.period [
-            fhir:Period.end [
-                fhir:value "2002-01-01"^^xsd:gYear
-            ]
-        ] ;
-        fhir:HumanName.use [
-            fhir:value "maiden"
-        ]
     ] ;
     fhir:Patient.telecom [
+        fhir:index "1"^^xsd:integer ;
+        fhir:ContactPoint.rank [
+            fhir:value "1"^^xsd:positiveInteger
+        ] ;
+        fhir:ContactPoint.system [
+            fhir:value "phone"
+        ] ;
+        fhir:ContactPoint.use [
+            fhir:value "work"
+        ] ;
+        fhir:ContactPoint.value [
+            fhir:value "(03) 5555 6473"
+        ]
+    ],
+        [
         fhir:index "3"^^xsd:integer ;
         fhir:ContactPoint.period [
             fhir:Period.end [
@@ -280,27 +295,6 @@
         ]
     ],
         [
-        fhir:index "1"^^xsd:integer ;
-        fhir:ContactPoint.rank [
-            fhir:value "1"^^xsd:positiveInteger
-        ] ;
-        fhir:ContactPoint.system [
-            fhir:value "phone"
-        ] ;
-        fhir:ContactPoint.use [
-            fhir:value "work"
-        ] ;
-        fhir:ContactPoint.value [
-            fhir:value "(03) 5555 6473"
-        ]
-    ],
-        [
-        fhir:index "0"^^xsd:integer ;
-        fhir:ContactPoint.use [
-            fhir:value "home"
-        ]
-    ],
-        [
         fhir:index "2"^^xsd:integer ;
         fhir:ContactPoint.rank [
             fhir:value "2"^^xsd:positiveInteger
@@ -313,6 +307,12 @@
         ] ;
         fhir:ContactPoint.value [
             fhir:value "(03) 3410 5613"
+        ]
+    ],
+        [
+        fhir:index "0"^^xsd:integer ;
+        fhir:ContactPoint.use [
+            fhir:value "home"
         ]
     ] ;
     fhir:Resource.id [

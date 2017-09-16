@@ -48,8 +48,8 @@ class FHIRInstanceTestCase(ValidationTestCase):
         from tests.utils.base_test_case import FHIRGraph
         cls.fhir_ontology = FHIRGraph()
 
-FHIRInstanceTestCase.no_tests = False           # Set this to True if you want to omit the batch tests
-FHIRInstanceTestCase.single_file = False         # True makes life simpler
+FHIRInstanceTestCase.no_tests = True           # Set this to True if you want to omit the batch tests
+FHIRInstanceTestCase.single_file = True         # True makes life simpler
 
 FHIRInstanceTestCase.input_directory = "/Users/mrf7578/Development/fhir/build/publish"
 FHIRInstanceTestCase.output_directory = \

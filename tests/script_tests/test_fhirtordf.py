@@ -28,9 +28,9 @@
 import os
 import io as sio
 import unittest
-from typing import io
 
 import sys
+
 from rdflib import Graph, URIRef
 
 from fhirtordf.rdfsupport.rdfcompare import rdf_compare
@@ -42,7 +42,7 @@ save_output = False
 class JSONToRDFTestCase(unittest.TestCase):
     save_stdout = []
 
-    def _push_stdout(self) -> io:
+    def _push_stdout(self) -> sio.StringIO:
         self.save_stdout.append(sys.stdout)
         output = sio.StringIO()
         sys.stdout = output

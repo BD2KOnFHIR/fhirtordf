@@ -87,7 +87,6 @@ def make_and_clear_directory(directory: str):
     with open(safety_file, "w") as f:
         f.write("Generated for safety.  Must be present for test to clear this directory.")
 
-
 def fhir_decimal_issue_filter(in_both: Graph, in_first: Graph, in_second: Graph) -> None:
     """ FHIR currently requires a non-standard JSON parser that can differentiate between '"x": 1.0' and '"x": 1.00'
         The filter below treats RDF representation of both as the same, and is used to make decimal values
