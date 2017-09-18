@@ -25,5 +25,35 @@
 # LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
 # OF THE POSSIBILITY OF SUCH DAMAGE.
+import sys
+import io as sio
+from typing import List
 
-__version__ = "0.9.0"
+
+class OutputRedirector:
+    save_stdout = []
+    save_stderr = []
+
+    def _push_stdout(self) -> sio.StringIO:
+        self.save_stdout.append(sys.stdout)
+        output = sio.StringIO()
+        sys.stdout = output
+        return output
+
+    def _pop_stdout(self) -> None:
+        if self.save_stdout:
+            sys.stdout = self.save_stdout.pop()
+
+    def _push_stderr(self) -> sio.StringIO:
+        self.save_stderr.append(sys.stdout)
+        output = sio.StringIO()
+        sys.stderr = output
+        return output
+
+    def _pop_stderr(self) -> None:
+        if self.save_stderr:
+            sys.stderr = self.save_stderr.pop()
+
+    def tearDown(self):
+        self._pop_stdout()
+        self._pop_stderr()

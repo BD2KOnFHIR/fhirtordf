@@ -58,23 +58,6 @@ Subject http://hl7.org/fhir/PlanDefinition/options-example DIFFERENCE: =========
 <http://hl7.org/fhir/PlanDefinition/options-example> a fhir:PlanDefinition ;
     fhir:nodeRole fhir:treeRoot ;
     fhir:DomainResource.contained [
-        fhir:index "0"^^xsd:integer ;
-        fhir:ActivityDefinition.kind [
-            fhir:value "MedicationRequest"
-        ] ;
-        fhir:ActivityDefinition.productCodeableConcept [
-            fhir:CodeableConcept.text [
-                fhir:value "Medication 1"
-            ]
-        ] ;
-        fhir:ActivityDefinition.status [
-            fhir:value "draft"
-        ] ;
-        fhir:Resource.id [
-            fhir:value "activitydefinition-medicationrequest-1"
-        ]
-    ],
-        [
         fhir:index "1"^^xsd:integer ;
         fhir:ActivityDefinition.kind [
             fhir:value "MedicationRequest"
@@ -90,6 +73,23 @@ Subject http://hl7.org/fhir/PlanDefinition/options-example DIFFERENCE: =========
         fhir:Resource.id [
             fhir:value "activitydefinition-medicationrequest-2"
         ]
+    ],
+        [
+        fhir:index "0"^^xsd:integer ;
+        fhir:ActivityDefinition.kind [
+            fhir:value "MedicationRequest"
+        ] ;
+        fhir:ActivityDefinition.productCodeableConcept [
+            fhir:CodeableConcept.text [
+                fhir:value "Medication 1"
+            ]
+        ] ;
+        fhir:ActivityDefinition.status [
+            fhir:value "draft"
+        ] ;
+        fhir:Resource.id [
+            fhir:value "activitydefinition-medicationrequest-1"
+        ]
     ] ;
     fhir:DomainResource.text [
         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">[Put rendering here]</div>" ;
@@ -100,6 +100,20 @@ Subject http://hl7.org/fhir/PlanDefinition/options-example DIFFERENCE: =========
     fhir:PlanDefinition.action [
         fhir:index "0"^^xsd:integer ;
         fhir:PlanDefinition.action.action [
+            fhir:index "0"^^xsd:integer ;
+            fhir:Element.id [
+                fhir:value "medication-action-1"
+            ] ;
+            fhir:PlanDefinition.action.action.definition [
+                fhir:Reference.reference [
+                    fhir:value "#activitydefinition-medicationrequest-1"
+                ]
+            ] ;
+            fhir:PlanDefinition.action.action.title [
+                fhir:value "Administer Medication 1"
+            ]
+        ],
+            [
             fhir:index "1"^^xsd:integer ;
             fhir:Element.id [
                 fhir:value "medication-action-2"
@@ -128,20 +142,6 @@ Subject http://hl7.org/fhir/PlanDefinition/options-example DIFFERENCE: =========
             ] ;
             fhir:PlanDefinition.action.action.title [
                 fhir:value "Administer Medication 2"
-            ]
-        ],
-            [
-            fhir:index "0"^^xsd:integer ;
-            fhir:Element.id [
-                fhir:value "medication-action-1"
-            ] ;
-            fhir:PlanDefinition.action.action.definition [
-                fhir:Reference.reference [
-                    fhir:value "#activitydefinition-medicationrequest-1"
-                ]
-            ] ;
-            fhir:PlanDefinition.action.action.title [
-                fhir:value "Administer Medication 1"
             ]
         ] ;
         fhir:PlanDefinition.action.groupingBehavior [

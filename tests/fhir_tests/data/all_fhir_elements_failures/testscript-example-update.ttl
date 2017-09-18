@@ -202,12 +202,12 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-update DIFFERENCE: ===
                 fhir:value "Patient Update and Delete Operations"
             ] ;
             fhir:TestScript.metadata.capability.link [
-                fhir:index "1"^^xsd:integer ;
-                fhir:value "http://hl7.org/fhir/http.html#delete"
-            ],
-                [
                 fhir:index "0"^^xsd:integer ;
                 fhir:value "http://hl7.org/fhir/http.html#update"
+            ],
+                [
+                fhir:index "1"^^xsd:integer ;
+                fhir:value "http://hl7.org/fhir/http.html#delete"
             ] ;
             fhir:TestScript.metadata.capability.required [
                 fhir:value "true"^^xsd:boolean
@@ -346,23 +346,6 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-update DIFFERENCE: ===
             fhir:value "01-UpdatePatient"
         ] ;
         fhir:TestScript.test.action [
-            fhir:index "3"^^xsd:integer ;
-            fhir:TestScript.test.action.assert [
-                fhir:TestScript.test.action.assert.description [
-                    fhir:value "Confirm that the returned HTTP Header Last-Modified is present. Warning only as the server may not support versioning."
-                ] ;
-                fhir:TestScript.test.action.assert.headerField [
-                    fhir:value "Last-Modified"
-                ] ;
-                fhir:TestScript.test.action.assert.operator [
-                    fhir:value "notEmpty"
-                ] ;
-                fhir:TestScript.test.action.assert.warningOnly [
-                    fhir:value "true"^^xsd:boolean
-                ]
-            ]
-        ],
-            [
             fhir:index "0"^^xsd:integer ;
             fhir:TestScript.test.action.operation [
                 fhir:TestScript.test.action.operation.accept [
@@ -397,6 +380,17 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-update DIFFERENCE: ===
             ]
         ],
             [
+            fhir:index "2"^^xsd:integer ;
+            fhir:TestScript.test.action.assert [
+                fhir:TestScript.test.action.assert.contentType [
+                    fhir:value "xml"
+                ] ;
+                fhir:TestScript.test.action.assert.description [
+                    fhir:value "Confirm that the returned format is XML."
+                ]
+            ]
+        ],
+            [
             fhir:index "1"^^xsd:integer ;
             fhir:TestScript.test.action.assert [
                 fhir:TestScript.test.action.assert.description [
@@ -408,13 +402,19 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-update DIFFERENCE: ===
             ]
         ],
             [
-            fhir:index "2"^^xsd:integer ;
+            fhir:index "3"^^xsd:integer ;
             fhir:TestScript.test.action.assert [
-                fhir:TestScript.test.action.assert.contentType [
-                    fhir:value "xml"
-                ] ;
                 fhir:TestScript.test.action.assert.description [
-                    fhir:value "Confirm that the returned format is XML."
+                    fhir:value "Confirm that the returned HTTP Header Last-Modified is present. Warning only as the server may not support versioning."
+                ] ;
+                fhir:TestScript.test.action.assert.headerField [
+                    fhir:value "Last-Modified"
+                ] ;
+                fhir:TestScript.test.action.assert.operator [
+                    fhir:value "notEmpty"
+                ] ;
+                fhir:TestScript.test.action.assert.warningOnly [
+                    fhir:value "true"^^xsd:boolean
                 ]
             ]
         ] ;

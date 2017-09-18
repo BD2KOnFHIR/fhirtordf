@@ -49,6 +49,7 @@ Example:
 This package requires [python](https://www.python.org/) 3. It has been developed and tested with [python 3.6.1](https://www.python.org/downloads/release/python-361/).
 
 ### Create a virtual environment (optional)
+The [`virtualenv`](https://virtualenv.pypa.io/en/stable/) package allows you to load local libraries in a sandbox, which minimizes the possibility of version collisions. 
   1) Install [`virtualenv`](https://virtualenv.pypa.io/en/stable/) if needed:
 
 ```text
@@ -71,7 +72,14 @@ This package requires [python](https://www.python.org/) 3. It has been developed
     (venv) > 
 ```
 
+The `(venv)` at the prompt is a visual indicator that the virtual environment is in place.  You can revert to the default python environment at any type by:
+```text
+ (venv) > deactivate
+ >
+```
+
 ### Install the `fhirtordf` package
+
 #### Option 1: Installation using [pip](https://pip.pypa.io/en/stable/)
 ```text
 (venv) > pip install fhirtordf
@@ -90,9 +98,15 @@ FHIR to RDF Conversion Tool -- Version 0.1.0
 (venv) > pip install -e .      <-- Don't forget the '.'
 ```
 
-## Command Line Tool
+Installation can be tested with:
+```text
+(venv) > fhirtordf -v
+FHIR to RDF Conversion Tool -- Version 0.1.0    <-- actual version number will vary
+```
+
+## FHIR to RDF Command Line Tool
 The `fhirtordf` command line tool can:
-* Convert a list of FHIR DSTU2 or STU3 JSON resources, bundles or collections to their RDF equivalents.  The input(s) be a URL or a file.
+* Convert a list of FHIR DSTU2 or STU3 JSON resources, bundles or collections to their RDF equivalents.  The input(s) can be URL's, files or both.
 * Convert a (possibly nested) directory of JSON resources into their RDF equivalent, saving the output as a (possibly nested) directory of output files or as a single aggregate output file.
 
 ### Parameters
@@ -114,6 +128,19 @@ The `fhirtordf` command line tool can:
 * **`--maxsize MAXSIZE`**: Maximum sensible file size in KB. 0 means no size check (default: 800)
 * **`-sd, --skipdirs`**: List of directory patterns to skip.  Example: `-sd /v2 v3/ foo` will not process files in any directory that begins with 'v2', ends with 'v3' or contains 'foo'.  Directories whose names begin with an underscore ('_') are always skpped.
 * **`-sf, --skipfns`**: List of file name patterns to skip.  Example: `-sf .cs. .vs` will not process any files whose names contain '.cs.' or '.vs'. All files whose names that do not end with '.json' will be skipped. 
+* **`--format FORMAT`**: Output file format.  Posssible formats include:
+
+| Format | DESCRIPTION | OUTPUT FILE SUFFIX | NOTES |
+| ------ | ----------- | ----- | ----- |
+| json-ld | [JSON for Linking Data](https://json-ld.org/) | .json-ld | Will be considerably more useful if and when we include a FHIR context |
+| n3 | [Notation3 (N3)](https://www.w3.org/TeamSubmission/n3/) | .n3 | |
+| nt</br>nt11</br>ntriples | [N-Triples 1.1](https://www.w3.org/TeamSubmission/n3/) | .nt | Line-based syntax | |
+| xml | [XML Syntax](https://www.w3.org/TR/rdf-syntax-grammar/) | .xml | RDF Triples in XML |
+| pretty-xml | [XML Syntax](https://www.w3.org/TR/rdf-syntax-grammar/) | .xml | Nested RDF -- BNodes factored out |
+| trig | [RDF Dataset Language](https://www.w3.org/TR/trig/) | .trig | |
+| ttl</br>turtle | [Terse RDF Triple Language](https://www.w3.org/TeamSubmission/turtle/) | .ttl | (default) |
+
+
 
 ## Examples
 ### Transform a FHIR resource and emit on stdout
@@ -147,13 +174,109 @@ Note: The conversion utility will never convert files whose names begin with '.'
 This will do the same thing as the previous command, with the exception that all of the output RDF will be merged int a single output file named `master.ttl`
 
 ## Use as a python library
+The `fhirrtordf` package can be used to create an `rdflib Graph` from one or more FHIR JSON resources. Example:
+```python
+from rdflib import URIRef
+from fhirtordf.loaders.fhirjsonloader import fhir_json_to_rdf
+
+g = fhir_json_to_rdf("http://hl7.org/fhir/Observation/vitals-panel")
+print([str(s) for s in set(g.subjects()) if isinstance(s, URIRef)])
+
+# ['http://hl7.org/fhir/Observation/blood-pressure',
+#  'http://hl7.org/fhir/Observation/body-temperature',
+#  'http://hl7.org/fhir/Observation/heart-rate',
+#  'http://hl7.org/fhir/Observation/respiratory-rate',
+#  'http://hl7.org/fhir/Observation/vitals-panel',
+#  'http://hl7.org/fhir/Observation/vitals-panel.ttl',
+#  'http://hl7.org/fhir/Patient/example']
+
+```
+
+Signature:
+```python
+from typing import Optional, Union
+from rdflib import Graph
+from fhirtordf.fhir.fhirmetavoc import FHIRMetaVoc
+
+
+def fhir_json_to_rdf(json_fname: str,
+                     base_uri: str = "http://hl7.org/fhir/",
+                     target_graph: Optional[Graph] = None,
+                     add_ontology_header: bool = True,
+                     do_continuations: bool = True,
+                     replace_narrative_text: bool = False,
+                     metavoc: Optional[Union[Graph, FHIRMetaVoc]] = None) -> Graph:
+    """
+    Convert a FHIR JSON resource image to RDF
+    :param json_fname: Name or URI of the file to convert
+    :param base_uri: Base URI to use for relative references. 
+    :param target_graph:  If supplied, add RDF to this graph. If not, start with an empty graph.
+    :param add_ontology_header:  True means add owl:Ontology declaration to output
+    :param do_continuations: True means follow continuation records on bundles and queries
+    :param replace_narrative_text: True means replace any narrative text longer than 120 characters with
+                '<div xmlns="http://www.w3.org/1999/xhtml">(removed)</div>'
+    :param metavoc: FHIR Metadata Vocabulary (fhir.ttl) graph
+    :return: resulting graph 
+    """
+    pass
+```
+
+Notes:
+* `base_uri` this is the URI that will be used with URI fragments.  As an example, if a [Patient](http://fhir.org/fhir/patient.html) resource has a link in the form:
+```text
+  "link": [
+    {
+      "other": {
+        "reference": "Patient/pat2"
+      },
+      "type": "seealso"
+    }
+  ]
+```
+the generated RDF will use `base_uri` it to create the `fhir:link`:
+```text
+   fhir:Patient.link [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Patient.link.other [
+            fhir:link <http://hl7.org/fhir/Patient/pat2> ;
+            fhir:Reference.reference [
+                fhir:value "Patient/pat2"
+            ]
+        ] ;
+        fhir:Patient.link.type [
+            fhir:value "seealso"
+        ]
+    ] ;
+```
+* `add_ontology_header` - if `True`, an additional ontology declaration will be added to the output graph:
+```text
+<http://hl7.org/fhir/Patient/pat1.ttl> a owl:Ontology ;
+    owl:imports fhir:fhir.ttl .
+```
+Note: We anticipate that the ontololgy URI may be changed at a later date.  Note also, that if there is versioninfo in the metadata, this information will be added to the ontology declaration.
 
 ## How it works
 
+## Fragile bits
+The items below list points where there are dependencies on specific versions of libraries or resources that are prone to break.
+
+1) **FHIR URI Regular Expression**:
+This parser depends heavily on the regular expression for a FHIR resource, as published in [http://hl7.org/fhir/references.html](http://hl7.org/fhir/references.html).  Any changes to this will need to be reflected in [fhirresourcere.py](fhirtordf/rdfsupport/fhirresourcere.py)
+2) **`rdflib` URI Parser**: We have to weaken the rules for parsing URI's in `rdflib`, as, technically, "http://snomed.info/id/74400008" is not a valid URI because a path cannot start with a number.  We include the following code fragment in [fhirgraphutils.py](fhirtordf/rdfsupport/fhirgraphutils.py):
+```python
+from rdflib.namespace import NAME_START_CATEGORIES
+NAME_START_CATEGORIES.append('Nd')
+```
+3) **`rdflib` turtle printer**: For reasons that we don't fully understand, rdflib version 4.2.2 makes a mess of printing nested turtle.  [fhirgraphutils.py](fhirtordf/rdfsupport/fhirgraphutils.py) overrides two methods in `TurtleSerializer` -- `p_squared` and `label`.  It is quite likely that subsequent versions of `rdflib` will not be compatible with these changes.  We can hope, however, that the rdflib group will grow weary of unreadable turtle and fix this problem.
+
+  
+
 ## Issues and incomplete tasks
-### FHIR Bundle Entries
-1) The native FHIR to RDF converter uses the `fullUrl` of each [entry](http://hl7.org/fhir/bundle-definitions.html#Bundle.entry) in the FHIR [Bundle](http://hl7.org/fhir/bundle.html) Resource as the subject of the entry itself. The `fhirtordf` tool currently represents each entry as a BNode.
-2) `search`, `request` and/or `response` elements in the FHIR Bundle entry are not currently converted.  This is a bug in the conversion tool and is scheduled to be fixed.
+
+### Which FHIR Metadata Vocabulary?
+We have encountered a number of bugs and issues with the HL7 STU3 FHIR Metadata Vocabulary ([http://hl7.org/fhir/fhir.ttl]()). These problems are serious enough that the`fhirtordf` conversion utility will not work correctly with that item as a resource.  The latest 
+build of the FMV, ([http://build.fhir.org/fhir.ttl]()), has all of the significant conversion issues fixed.  For this reason, all of the defaults in this package currently point at the latest.
+
 ### Numeric precision representation
 1) The FHIR specification requires a non standard JSON parser -- one that preserves the textual representation of numeric objects.  As an example, in JSON,  "5", "5.", "5.0" and "5.00" all represent exactly the same value and will all be serialized as "5".  The FHIR specification requires that the difference in these values be preserved.   Not unexpectedly, the [Python Json encoder and decoder](https://docs.python.org/3.6/library/json.html) does not preserve this distinction.  We may be able to code a work-around, but, at the moment, currency and diopter values that use trailing zeroes fail this test.
 ### Recursive representation of paths

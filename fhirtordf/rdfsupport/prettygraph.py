@@ -101,9 +101,7 @@ class PrettyGraph(Graph):
                       g.serialize(format="turtle").decode(),
                       flags=re.MULTILINE).strip()
 
-    def serialize(self, **args):
-        if 'format' in args and args['format'] == 'turtle':
-            args.pop('format')
+    def serialize(self, format='turtle', **args):
         assert len(args) == 0, "All arguments to serialize are fixed"
 
-        return super().serialize(format="turtle", spacious=False)
+        return super().serialize(format=format, spacious=False)

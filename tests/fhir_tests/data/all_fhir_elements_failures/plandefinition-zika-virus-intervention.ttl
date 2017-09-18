@@ -1,13 +1,5 @@
 
 
-Subject http://hl7.org/fhir/ActivityDefinition/provide-mosquito-prevention-advice DIFFERENCE: ==============================
-	----> First: 
-<http://hl7.org/fhir/ActivityDefinition/provide-mosquito-prevention-advice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/ActivityDefinition> .----------------------------------------
-
-Subject http://hl7.org/fhir/ActivityDefinition/provide-contraception-advice DIFFERENCE: ==============================
-	----> First: 
-<http://hl7.org/fhir/ActivityDefinition/provide-contraception-advice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/ActivityDefinition> .----------------------------------------
-
 Subject http://hl7.org/fhir/PlanDefinition/zika-virus-intervention DIFFERENCE: ==============================
 	----> First: 
 <http://hl7.org/fhir/PlanDefinition/zika-virus-intervention.PlanDefinition.action_0.PlanDefinition.action.action_0.PlanDefinition.action.condition_0.PlanDefinition.action.condition.expression> <http://hl7.org/fhir/value> "Should Administer Zika Virus Exposure Assessment" .
@@ -119,6 +111,14 @@ Subject http://hl7.org/fhir/PlanDefinition/zika-virus-intervention DIFFERENCE: =
 <http://hl7.org/fhir/PlanDefinition/zika-virus-intervention.PlanDefinition.action_0.PlanDefinition.action.action_4> <http://hl7.org/fhir/PlanDefinition.action.action.action> <http://hl7.org/fhir/PlanDefinition/zika-virus-intervention.PlanDefinition.action_0.PlanDefinition.action.action_4.PlanDefinition.action.action.action_0> .
 <http://hl7.org/fhir/PlanDefinition/zika-virus-intervention.PlanDefinition.action_0.PlanDefinition.action.action_4> <http://hl7.org/fhir/PlanDefinition.action.action.action> <http://hl7.org/fhir/PlanDefinition/zika-virus-intervention.PlanDefinition.action_0.PlanDefinition.action.action_4.PlanDefinition.action.action.action_1> .
 <http://hl7.org/fhir/PlanDefinition/zika-virus-intervention.PlanDefinition.action_0.PlanDefinition.action.action_4> <http://hl7.org/fhir/PlanDefinition.action.action.condition> <http://hl7.org/fhir/PlanDefinition/zika-virus-intervention.PlanDefinition.action_0.PlanDefinition.action.action_4.PlanDefinition.action.action.condition_0> .----------------------------------------
+
+Subject http://hl7.org/fhir/ActivityDefinition/provide-mosquito-prevention-advice DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/ActivityDefinition/provide-mosquito-prevention-advice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/ActivityDefinition> .----------------------------------------
+
+Subject http://hl7.org/fhir/ActivityDefinition/provide-contraception-advice DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/ActivityDefinition/provide-contraception-advice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/ActivityDefinition> .----------------------------------------
 
 ========================================
 @prefix fhir: <http://hl7.org/fhir/> .
@@ -523,24 +523,6 @@ Subject http://hl7.org/fhir/PlanDefinition/zika-virus-intervention DIFFERENCE: =
             ]
         ],
             [
-            fhir:index "2"^^xsd:integer ;
-            fhir:PlanDefinition.action.action.condition [
-                fhir:index "0"^^xsd:integer ;
-                fhir:PlanDefinition.action.action.condition.expression [
-                    fhir:value "Should Order Serum Zika Virus IgM + Dengue Virus IgM"
-                ] ;
-                fhir:PlanDefinition.action.action.condition.kind [
-                    fhir:value "applicability"
-                ]
-            ] ;
-            fhir:PlanDefinition.action.action.definition [
-                fhir:link <http://hl7.org/fhir/ActivityDefinition/order-serum-zika-dengue-virus-igm> ;
-                fhir:Reference.reference [
-                    fhir:value "ActivityDefinition/order-serum-zika-dengue-virus-igm"
-                ]
-            ]
-        ],
-            [
             fhir:index "3"^^xsd:integer ;
             fhir:PlanDefinition.action.action.condition [
                 fhir:index "0"^^xsd:integer ;
@@ -559,24 +541,6 @@ Subject http://hl7.org/fhir/PlanDefinition/zika-virus-intervention DIFFERENCE: =
             ]
         ],
             [
-            fhir:index "0"^^xsd:integer ;
-            fhir:PlanDefinition.action.action.condition [
-                fhir:index "0"^^xsd:integer ;
-                fhir:PlanDefinition.action.action.condition.expression [
-                    fhir:value "Should Administer Zika Virus Exposure Assessment"
-                ] ;
-                fhir:PlanDefinition.action.action.condition.kind [
-                    fhir:value "applicability"
-                ]
-            ] ;
-            fhir:PlanDefinition.action.action.definition [
-                fhir:link <http://hl7.org/fhir/ActivityDefinition/administer-zika-virus-exposure-assessment> ;
-                fhir:Reference.reference [
-                    fhir:value "ActivityDefinition/administer-zika-virus-exposure-assessment"
-                ]
-            ]
-        ],
-            [
             fhir:index "4"^^xsd:integer ;
             fhir:PlanDefinition.action.action.action [
                 fhir:index "0"^^xsd:integer
@@ -591,6 +555,42 @@ Subject http://hl7.org/fhir/PlanDefinition/zika-virus-intervention DIFFERENCE: =
                 ] ;
                 fhir:PlanDefinition.action.action.condition.kind [
                     fhir:value "applicability"
+                ]
+            ]
+        ],
+            [
+            fhir:index "2"^^xsd:integer ;
+            fhir:PlanDefinition.action.action.condition [
+                fhir:index "0"^^xsd:integer ;
+                fhir:PlanDefinition.action.action.condition.expression [
+                    fhir:value "Should Order Serum Zika Virus IgM + Dengue Virus IgM"
+                ] ;
+                fhir:PlanDefinition.action.action.condition.kind [
+                    fhir:value "applicability"
+                ]
+            ] ;
+            fhir:PlanDefinition.action.action.definition [
+                fhir:link <http://hl7.org/fhir/ActivityDefinition/order-serum-zika-dengue-virus-igm> ;
+                fhir:Reference.reference [
+                    fhir:value "ActivityDefinition/order-serum-zika-dengue-virus-igm"
+                ]
+            ]
+        ],
+            [
+            fhir:index "0"^^xsd:integer ;
+            fhir:PlanDefinition.action.action.condition [
+                fhir:index "0"^^xsd:integer ;
+                fhir:PlanDefinition.action.action.condition.expression [
+                    fhir:value "Should Administer Zika Virus Exposure Assessment"
+                ] ;
+                fhir:PlanDefinition.action.action.condition.kind [
+                    fhir:value "applicability"
+                ]
+            ] ;
+            fhir:PlanDefinition.action.action.definition [
+                fhir:link <http://hl7.org/fhir/ActivityDefinition/administer-zika-virus-exposure-assessment> ;
+                fhir:Reference.reference [
+                    fhir:value "ActivityDefinition/administer-zika-virus-exposure-assessment"
                 ]
             ]
         ] ;

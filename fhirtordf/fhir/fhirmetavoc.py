@@ -127,15 +127,18 @@ class FHIRMetaVocEntry:
         if self.is_valid(FHIR[value_pred]):
             return FHIR[value_pred]
 
-    def is_atom(self, t: URIRef) -> bool:
+    def is_atom(self, pred: URIRef) -> bool:
         """
-        Determine whether type "t" is an 'atomic' type -- i.e it doesn't use a FHIR value representation
-        :param t: type to test
+        Determine whether predicate is an 'atomic' type -- i.e it doesn't use a FHIR value representation
+        :param pred: type to test
         :return:
         """
-        if not self.has_type(t):
-            raise TypeError("Unrecognized FHIR type: {}".format(t))
-        return len(set(self._o.objects(t, RDFS.subClassOf))) == 0
+        if not self.has_type(pred):
+            if '.value' in str(pred):               # synthetic values (valueString, valueDate, ...)
+                return False
+            else:
+                raise TypeError("Unrecognized FHIR predicate: {}".format(pred))
+        return pred == FHIR.nodeRole or OWL.DatatypeProperty in set(self._o.objects(pred, RDF.type))
 
     def primitive_datatype(self, t: URIRef) -> Optional[URIRef]:
         """
@@ -169,18 +172,20 @@ class FHIRMetaVocEntry:
 
 class FHIRMetaVoc:
 
-    def __init__(self, mv_file_loc: str, fmt: str="turtle"):
+    def __init__(self, mv_file_loc: str="http://build.fhir.org/fhir.ttl", fmt: str="turtle", cache_mv_file=True):
         """
         Load a FHIR Metadata Vocabulary image
         :param mv_file_loc: file name or URI of fhir.ttl image
         :param fmt: format of image
+        :param cache_mv_file: True means cache an image in ~/.cache/.  False means no cache
         """
-        self.g = picklejar().get(mv_file_loc, signature(mv_file_loc))
+        self.g = picklejar().get(mv_file_loc, signature(mv_file_loc)) if cache_mv_file else None
         if not self.g:
             self.from_cache = False
             self.g = Graph()
             self.g.load(mv_file_loc, format=fmt)
-            picklejar().add(mv_file_loc, signature(mv_file_loc), self.g)
+            if cache_mv_file:
+                picklejar().add(mv_file_loc, signature(mv_file_loc), self.g)
         else:
             self.from_cache = True
 

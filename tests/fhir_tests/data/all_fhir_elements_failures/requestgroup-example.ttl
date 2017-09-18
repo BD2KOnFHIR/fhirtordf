@@ -70,26 +70,6 @@ Subject http://hl7.org/fhir/RequestGroup/example DIFFERENCE: ===================
 <http://hl7.org/fhir/RequestGroup/example> a fhir:RequestGroup ;
     fhir:nodeRole fhir:treeRoot ;
     fhir:DomainResource.contained [
-        fhir:index "1"^^xsd:integer ;
-        fhir:MedicationRequest.intent [
-            fhir:value "proposal"
-        ] ;
-        fhir:MedicationRequest.medicationCodeableConcept [
-            fhir:CodeableConcept.text [
-                fhir:value "Medication 2"
-            ]
-        ] ;
-        fhir:MedicationRequest.subject [
-            fhir:link <http://hl7.org/fhir/Patient/example> ;
-            fhir:Reference.reference [
-                fhir:value "Patient/example"
-            ]
-        ] ;
-        fhir:Resource.id [
-            fhir:value "medicationrequest-2"
-        ]
-    ],
-        [
         fhir:index "0"^^xsd:integer ;
         fhir:MedicationRequest.intent [
             fhir:value "proposal"
@@ -107,6 +87,26 @@ Subject http://hl7.org/fhir/RequestGroup/example DIFFERENCE: ===================
         ] ;
         fhir:Resource.id [
             fhir:value "medicationrequest-1"
+        ]
+    ],
+        [
+        fhir:index "1"^^xsd:integer ;
+        fhir:MedicationRequest.intent [
+            fhir:value "proposal"
+        ] ;
+        fhir:MedicationRequest.medicationCodeableConcept [
+            fhir:CodeableConcept.text [
+                fhir:value "Medication 2"
+            ]
+        ] ;
+        fhir:MedicationRequest.subject [
+            fhir:link <http://hl7.org/fhir/Patient/example> ;
+            fhir:Reference.reference [
+                fhir:value "Patient/example"
+            ]
+        ] ;
+        fhir:Resource.id [
+            fhir:value "medicationrequest-2"
         ]
     ] ;
     fhir:DomainResource.text [

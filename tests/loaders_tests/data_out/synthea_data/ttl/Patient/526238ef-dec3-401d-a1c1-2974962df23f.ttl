@@ -14,12 +14,32 @@
 <http://standardhealthrecord.org/fhir/Patient/526238ef-dec3-401d-a1c1-2974962df23f> a fhir:Patient ;
     fhir:nodeRole fhir:treeRoot ;
     fhir:DomainResource.extension [
-        fhir:index "4"^^xsd:integer ;
+        fhir:index "3"^^xsd:integer ;
         fhir:Extension.url [
-            fhir:value "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"
+            fhir:value "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName"
         ] ;
-        fhir:Extension.valueCode [
-            fhir:value "M"
+        fhir:Extension.valueString [
+            fhir:value "Euna636 VonRueden575"
+        ]
+    ],
+        [
+        fhir:index "7"^^xsd:integer ;
+        fhir:Extension.url [
+            fhir:value "http://standardhealthrecord.org/fhir/StructureDefinition/shr-demographics-FathersName-extension"
+        ] ;
+        fhir:Extension.valueHumanName [
+            fhir:HumanName.text [
+                fhir:value "Jamel944 Adams301"
+            ]
+        ]
+    ],
+        [
+        fhir:index "6"^^xsd:integer ;
+        fhir:Extension.url [
+            fhir:value "http://standardhealthrecord.org/fhir/StructureDefinition/shr-actor-FictionalPerson-extension"
+        ] ;
+        fhir:Extension.valueBoolean [
+            fhir:value "true"^^xsd:boolean
         ]
     ],
         [
@@ -40,22 +60,35 @@
         ]
     ],
         [
-        fhir:index "6"^^xsd:integer ;
+        fhir:index "4"^^xsd:integer ;
         fhir:Extension.url [
-            fhir:value "http://standardhealthrecord.org/fhir/StructureDefinition/shr-actor-FictionalPerson-extension"
+            fhir:value "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"
         ] ;
-        fhir:Extension.valueBoolean [
-            fhir:value "true"^^xsd:boolean
+        fhir:Extension.valueCode [
+            fhir:value "M"
         ]
     ],
         [
-        fhir:index "7"^^xsd:integer ;
+        fhir:index "0"^^xsd:integer ;
         fhir:Extension.url [
-            fhir:value "http://standardhealthrecord.org/fhir/StructureDefinition/shr-demographics-FathersName-extension"
+            fhir:value "http://hl7.org/fhir/StructureDefinition/us-core-race"
         ] ;
-        fhir:Extension.valueHumanName [
-            fhir:HumanName.text [
-                fhir:value "Jamel944 Adams301"
+        fhir:Extension.valueCodeableConcept [
+            fhir:CodeableConcept.coding [
+                a <http://hl7.org/fhir/v3/Race/2131-1> ;
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "2131-1"
+                ] ;
+                fhir:Coding.display [
+                    fhir:value "Other"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://hl7.org/fhir/v3/Race"
+                ]
+            ] ;
+            fhir:CodeableConcept.text [
+                fhir:value "race"
             ]
         ]
     ],
@@ -84,15 +117,6 @@
         ]
     ],
         [
-        fhir:index "8"^^xsd:integer ;
-        fhir:Extension.url [
-            fhir:value "http://standardhealthrecord.org/fhir/StructureDefinition/shr-demographics-SocialSecurityNumber-extension"
-        ] ;
-        fhir:Extension.valueString [
-            fhir:value "999-35-8029"
-        ]
-    ],
-        [
         fhir:index "5"^^xsd:integer ;
         fhir:Extension.url [
             fhir:value "http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired"
@@ -102,36 +126,12 @@
         ]
     ],
         [
-        fhir:index "3"^^xsd:integer ;
+        fhir:index "8"^^xsd:integer ;
         fhir:Extension.url [
-            fhir:value "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName"
+            fhir:value "http://standardhealthrecord.org/fhir/StructureDefinition/shr-demographics-SocialSecurityNumber-extension"
         ] ;
         fhir:Extension.valueString [
-            fhir:value "Euna636 VonRueden575"
-        ]
-    ],
-        [
-        fhir:index "0"^^xsd:integer ;
-        fhir:Extension.url [
-            fhir:value "http://hl7.org/fhir/StructureDefinition/us-core-race"
-        ] ;
-        fhir:Extension.valueCodeableConcept [
-            fhir:CodeableConcept.coding [
-                a <http://hl7.org/fhir/v3/Race/2131-1> ;
-                fhir:index "0"^^xsd:integer ;
-                fhir:Coding.code [
-                    fhir:value "2131-1"
-                ] ;
-                fhir:Coding.display [
-                    fhir:value "Other"
-                ] ;
-                fhir:Coding.system [
-                    fhir:value "http://hl7.org/fhir/v3/Race"
-                ]
-            ] ;
-            fhir:CodeableConcept.text [
-                fhir:value "race"
-            ]
+            fhir:value "999-35-8029"
         ]
     ] ;
     fhir:DomainResource.text [
@@ -149,12 +149,12 @@
             fhir:value "US"
         ] ;
         fhir:Address.line [
-            fhir:index "1"^^xsd:integer ;
-            fhir:value "Suite 830"
-        ],
-            [
             fhir:index "0"^^xsd:integer ;
             fhir:value "87884 Caitlyn Springs"
+        ],
+            [
+            fhir:index "1"^^xsd:integer ;
+            fhir:value "Suite 830"
         ] ;
         fhir:Address.postalCode [
             fhir:value "01749"

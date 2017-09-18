@@ -248,12 +248,18 @@ class FHIRResource:
             list_idx = 0
             for lv in val:
                 entry_bnode = BNode()
+                # TODO: this is getting messy. Refactor and clean this up
                 if pred == FHIR.Bundle.entry:
                     entry_subj = URIRef(lv.fullUrl)
                     self.add(entry_bnode, FHIR.index, Literal(list_idx))
                     self.add_val(entry_bnode, FHIR.Bundle.entry.fullUrl, lv, 'fullUrl')
                     self.add(entry_bnode, FHIR.Bundle.entry.resource, entry_subj)
                     self.add(subj, pred, entry_bnode)
+                    entry_mv = FHIRMetaVocEntry(self._vocabulary, FHIR.BundleEntryComponent)
+                    for k, p in entry_mv.predicates().items():
+                        if k not in ['resource', 'fullUrl'] and k in lv:
+                            print("---> adding {}".format(k))
+                            self.add_val(subj, p, lv, k)
                     FHIRResource(self._vocabulary, None,  self._base_uri, lv.resource, self._g,
                                  False, self._replace_narrative_text, False, resource_uri=entry_subj)
                 else:
@@ -268,7 +274,7 @@ class FHIRResource:
                 list_idx += 1
         else:
             vt = self._meta.predicate_type(pred) if not valuetype else valuetype
-            if self._meta.is_atom(vt):
+            if self._meta.is_atom(pred):
                 if self._replace_narrative_text and pred == FHIR.Narrative.div and len(val) > 120:
                     val = REPLACED_NARRATIVE_TEXT
                 self.add(subj, pred, Literal(val))

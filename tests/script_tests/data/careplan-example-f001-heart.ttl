@@ -109,24 +109,6 @@
         ]
     ] ;
     fhir:DomainResource.contained [
-        fhir:index "0"^^xsd:integer ;
-        fhir:CareTeam.participant [
-            fhir:index "0"^^xsd:integer ;
-            fhir:CareTeam.participant.member [
-                fhir:link <http://hl7.org/fhir/Practitioner/f002> ;
-                fhir:Reference.display [
-                    fhir:value "P. Voigt"
-                ] ;
-                fhir:Reference.reference [
-                    fhir:value "Practitioner/f002"
-                ]
-            ]
-        ] ;
-        fhir:Resource.id [
-            fhir:value "careteam"
-        ]
-    ],
-        [
         fhir:index "1"^^xsd:integer ;
         fhir:Goal.description [
             fhir:CodeableConcept.text [
@@ -153,6 +135,24 @@
         ] ;
         fhir:Resource.id [
             fhir:value "goal"
+        ]
+    ],
+        [
+        fhir:index "0"^^xsd:integer ;
+        fhir:CareTeam.participant [
+            fhir:index "0"^^xsd:integer ;
+            fhir:CareTeam.participant.member [
+                fhir:link <http://hl7.org/fhir/Practitioner/f002> ;
+                fhir:Reference.display [
+                    fhir:value "P. Voigt"
+                ] ;
+                fhir:Reference.reference [
+                    fhir:value "Practitioner/f002"
+                ]
+            ]
+        ] ;
+        fhir:Resource.id [
+            fhir:value "careteam"
         ]
     ] ;
     fhir:DomainResource.text [

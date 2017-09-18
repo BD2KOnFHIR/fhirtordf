@@ -61,7 +61,7 @@ FHIRInstanceTestCase.file_filter = lambda dp, fn: ".cs." not in fn and '.vs.' no
                                                   and '.schema.' not in fn and '.diff.' not in fn
 FHIRInstanceTestCase.base_dir = 'http://hl7.org/fhir'
 FHIRInstanceTestCase.max_size = 20                 # maximum file size in kb
-# FHIRInstanceTestCase.start_at = "explanationofbenefit-example-2"
+#FHIRInstanceTestCase.start_at = "bundle-example"
 
 
 # Comparing to FHIR, so make certain we're doing FHIR dates
@@ -95,7 +95,7 @@ def json_to_ttl(self: FHIRInstanceTestCase, dirpath: str, fname: str) -> bool:
 
 FHIRInstanceTestCase.validation_function = json_to_ttl
 
-if not FHIRInstanceTestCase.no_tests or not FHIRInstanceTestCase.single_file:
+if not FHIRInstanceTestCase.no_tests and not FHIRInstanceTestCase.single_file:
     make_and_clear_directory(FHIRInstanceTestCase.output_directory)
 FHIRInstanceTestCase.build_test_harness()
 

@@ -1,5 +1,9 @@
 
 
+Subject http://hl7.org/fhir/ActivityDefinition/provide-mosquito-prevention-advice DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/ActivityDefinition/provide-mosquito-prevention-advice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/ActivityDefinition> .----------------------------------------
+
 Subject http://hl7.org/fhir/PlanDefinition/zika-virus-intervention-initial DIFFERENCE: ==============================
 	----> First: 
 <http://hl7.org/fhir/PlanDefinition/zika-virus-intervention-initial.PlanDefinition.action_0.PlanDefinition.action.action_0.PlanDefinition.action.condition_0.PlanDefinition.action.condition.expression> <http://hl7.org/fhir/value> "Should Administer Zika Virus Exposure Assessment" .
@@ -111,10 +115,6 @@ Subject http://hl7.org/fhir/PlanDefinition/zika-virus-intervention-initial DIFFE
 <http://hl7.org/fhir/PlanDefinition/zika-virus-intervention-initial.PlanDefinition.action_0.PlanDefinition.action.action_4> <http://hl7.org/fhir/PlanDefinition.action.action.action> <http://hl7.org/fhir/PlanDefinition/zika-virus-intervention-initial.PlanDefinition.action_0.PlanDefinition.action.action_4.PlanDefinition.action.action.action_0> .
 <http://hl7.org/fhir/PlanDefinition/zika-virus-intervention-initial.PlanDefinition.action_0.PlanDefinition.action.action_4> <http://hl7.org/fhir/PlanDefinition.action.action.action> <http://hl7.org/fhir/PlanDefinition/zika-virus-intervention-initial.PlanDefinition.action_0.PlanDefinition.action.action_4.PlanDefinition.action.action.action_1> .
 <http://hl7.org/fhir/PlanDefinition/zika-virus-intervention-initial.PlanDefinition.action_0.PlanDefinition.action.action_4> <http://hl7.org/fhir/PlanDefinition.action.action.condition> <http://hl7.org/fhir/PlanDefinition/zika-virus-intervention-initial.PlanDefinition.action_0.PlanDefinition.action.action_4.PlanDefinition.action.action.condition_0> .----------------------------------------
-
-Subject http://hl7.org/fhir/ActivityDefinition/provide-mosquito-prevention-advice DIFFERENCE: ==============================
-	----> First: 
-<http://hl7.org/fhir/ActivityDefinition/provide-mosquito-prevention-advice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/ActivityDefinition> .----------------------------------------
 
 Subject http://hl7.org/fhir/ActivityDefinition/provide-contraception-advice DIFFERENCE: ==============================
 	----> First: 
@@ -505,38 +505,20 @@ Subject http://hl7.org/fhir/ActivityDefinition/provide-contraception-advice DIFF
     fhir:PlanDefinition.action [
         fhir:index "0"^^xsd:integer ;
         fhir:PlanDefinition.action.action [
-            fhir:index "0"^^xsd:integer ;
+            fhir:index "4"^^xsd:integer ;
+            fhir:PlanDefinition.action.action.action [
+                fhir:index "0"^^xsd:integer
+            ],
+                [
+                fhir:index "1"^^xsd:integer
+            ] ;
             fhir:PlanDefinition.action.action.condition [
                 fhir:index "0"^^xsd:integer ;
                 fhir:PlanDefinition.action.action.condition.expression [
-                    fhir:value "Should Administer Zika Virus Exposure Assessment"
+                    fhir:value "Should Provide Mosquito Prevention and Contraception Advice"
                 ] ;
                 fhir:PlanDefinition.action.action.condition.kind [
                     fhir:value "applicability"
-                ]
-            ] ;
-            fhir:PlanDefinition.action.action.definition [
-                fhir:link <http://hl7.org/fhir/ActivityDefinition/administer-zika-virus-exposure-assessment> ;
-                fhir:Reference.reference [
-                    fhir:value "ActivityDefinition/administer-zika-virus-exposure-assessment"
-                ]
-            ]
-        ],
-            [
-            fhir:index "1"^^xsd:integer ;
-            fhir:PlanDefinition.action.action.condition [
-                fhir:index "0"^^xsd:integer ;
-                fhir:PlanDefinition.action.action.condition.expression [
-                    fhir:value "Should Order Serum + Urine rRT-PCR Test"
-                ] ;
-                fhir:PlanDefinition.action.action.condition.kind [
-                    fhir:value "applicability"
-                ]
-            ] ;
-            fhir:PlanDefinition.action.action.definition [
-                fhir:link <http://hl7.org/fhir/ActivityDefinition/order-serum-urine-rrt-pcr-test> ;
-                fhir:Reference.reference [
-                    fhir:value "ActivityDefinition/order-serum-urine-rrt-pcr-test"
                 ]
             ]
         ],
@@ -577,20 +559,38 @@ Subject http://hl7.org/fhir/ActivityDefinition/provide-contraception-advice DIFF
             ]
         ],
             [
-            fhir:index "4"^^xsd:integer ;
-            fhir:PlanDefinition.action.action.action [
-                fhir:index "0"^^xsd:integer
-            ],
-                [
-                fhir:index "1"^^xsd:integer
-            ] ;
+            fhir:index "0"^^xsd:integer ;
             fhir:PlanDefinition.action.action.condition [
                 fhir:index "0"^^xsd:integer ;
                 fhir:PlanDefinition.action.action.condition.expression [
-                    fhir:value "Should Provide Mosquito Prevention and Contraception Advice"
+                    fhir:value "Should Administer Zika Virus Exposure Assessment"
                 ] ;
                 fhir:PlanDefinition.action.action.condition.kind [
                     fhir:value "applicability"
+                ]
+            ] ;
+            fhir:PlanDefinition.action.action.definition [
+                fhir:link <http://hl7.org/fhir/ActivityDefinition/administer-zika-virus-exposure-assessment> ;
+                fhir:Reference.reference [
+                    fhir:value "ActivityDefinition/administer-zika-virus-exposure-assessment"
+                ]
+            ]
+        ],
+            [
+            fhir:index "1"^^xsd:integer ;
+            fhir:PlanDefinition.action.action.condition [
+                fhir:index "0"^^xsd:integer ;
+                fhir:PlanDefinition.action.action.condition.expression [
+                    fhir:value "Should Order Serum + Urine rRT-PCR Test"
+                ] ;
+                fhir:PlanDefinition.action.action.condition.kind [
+                    fhir:value "applicability"
+                ]
+            ] ;
+            fhir:PlanDefinition.action.action.definition [
+                fhir:link <http://hl7.org/fhir/ActivityDefinition/order-serum-urine-rrt-pcr-test> ;
+                fhir:Reference.reference [
+                    fhir:value "ActivityDefinition/order-serum-urine-rrt-pcr-test"
                 ]
             ]
         ] ;

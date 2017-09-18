@@ -62,10 +62,6 @@ class _PickleJarFactory:
 picklejarfactory = _PickleJarFactory()
 
 
-class PickleJar:
-    pass
-
-
 class _PickleJar:
 
     class CacheEntry:

@@ -222,29 +222,6 @@ Subject http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-
     fhir:PlanDefinition.action [
         fhir:index "0"^^xsd:integer ;
         fhir:PlanDefinition.action.action [
-            fhir:index "1"^^xsd:integer ;
-            fhir:PlanDefinition.action.action.dynamicValue [
-                fhir:index "0"^^xsd:integer ;
-                fhir:PlanDefinition.action.action.dynamicValue.expression [
-                    fhir:value "Communication Request to Bedside Nurse"
-                ] ;
-                fhir:PlanDefinition.action.action.dynamicValue.path [
-                    fhir:value "/"
-                ]
-            ] ;
-            fhir:PlanDefinition.action.action.textEquivalent [
-                fhir:value "A Breastfeeding Readiness Assessment is recommended, please administer the assessment."
-            ] ;
-            fhir:PlanDefinition.action.action.title [
-                fhir:value "Notify the bedside nurse to perform the assessment."
-            ] ;
-            fhir:PlanDefinition.action.action.type [
-                fhir:Coding.code [
-                    fhir:value "create"
-                ]
-            ]
-        ],
-            [
             fhir:index "0"^^xsd:integer ;
             fhir:PlanDefinition.action.action.dynamicValue [
                 fhir:index "0"^^xsd:integer ;
@@ -260,6 +237,29 @@ Subject http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-
             ] ;
             fhir:PlanDefinition.action.action.title [
                 fhir:value "Notify the charge nurse to perform the assessment."
+            ] ;
+            fhir:PlanDefinition.action.action.type [
+                fhir:Coding.code [
+                    fhir:value "create"
+                ]
+            ]
+        ],
+            [
+            fhir:index "1"^^xsd:integer ;
+            fhir:PlanDefinition.action.action.dynamicValue [
+                fhir:index "0"^^xsd:integer ;
+                fhir:PlanDefinition.action.action.dynamicValue.expression [
+                    fhir:value "Communication Request to Bedside Nurse"
+                ] ;
+                fhir:PlanDefinition.action.action.dynamicValue.path [
+                    fhir:value "/"
+                ]
+            ] ;
+            fhir:PlanDefinition.action.action.textEquivalent [
+                fhir:value "A Breastfeeding Readiness Assessment is recommended, please administer the assessment."
+            ] ;
+            fhir:PlanDefinition.action.action.title [
+                fhir:value "Notify the bedside nurse to perform the assessment."
             ] ;
             fhir:PlanDefinition.action.action.type [
                 fhir:Coding.code [
@@ -289,15 +289,6 @@ Subject http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-
             ]
         ],
             [
-            fhir:index "3"^^xsd:integer ;
-            fhir:TriggerDefinition.name [
-                fhir:value "Transfer to Post-Partum"
-            ] ;
-            fhir:TriggerDefinition.type [
-                fhir:value "named-event"
-            ]
-        ],
-            [
             fhir:index "1"^^xsd:integer ;
             fhir:TriggerDefinition.name [
                 fhir:value "Birth"
@@ -310,6 +301,15 @@ Subject http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-
             fhir:index "2"^^xsd:integer ;
             fhir:TriggerDefinition.name [
                 fhir:value "Infant Transfer to Recovery"
+            ] ;
+            fhir:TriggerDefinition.type [
+                fhir:value "named-event"
+            ]
+        ],
+            [
+            fhir:index "3"^^xsd:integer ;
+            fhir:TriggerDefinition.name [
+                fhir:value "Transfer to Post-Partum"
             ] ;
             fhir:TriggerDefinition.type [
                 fhir:value "named-event"

@@ -9,7 +9,14 @@ Subject http://hl7.org/fhir/Bundle/bundle-example DIFFERENCE: ==================
 <http://hl7.org/fhir/Bundle/bundle-example.Bundle.entry_0> <http://hl7.org/fhir/Bundle.entry.search> <http://hl7.org/fhir/Bundle/bundle-example.Bundle.entry_0.Bundle.entry.search> .
 <http://hl7.org/fhir/Bundle/bundle-example.Bundle.entry_1.Bundle.entry.search.Bundle.entry.search.mode> <http://hl7.org/fhir/value> "include" .
 <http://hl7.org/fhir/Bundle/bundle-example.Bundle.entry_1.Bundle.entry.search> <http://hl7.org/fhir/Bundle.entry.search.mode> <http://hl7.org/fhir/Bundle/bundle-example.Bundle.entry_1.Bundle.entry.search.Bundle.entry.search.mode> .
-<http://hl7.org/fhir/Bundle/bundle-example.Bundle.entry_1> <http://hl7.org/fhir/Bundle.entry.search> <http://hl7.org/fhir/Bundle/bundle-example.Bundle.entry_1.Bundle.entry.search> .----------------------------------------
+<http://hl7.org/fhir/Bundle/bundle-example.Bundle.entry_1> <http://hl7.org/fhir/Bundle.entry.search> <http://hl7.org/fhir/Bundle/bundle-example.Bundle.entry_1.Bundle.entry.search> .
+	----> Second: 
+<http://hl7.org/fhir/Bundle/bundle-example.Bundle.entry.search.Bundle.entry.search.mode> <http://hl7.org/fhir/value> "include" .
+<http://hl7.org/fhir/Bundle/bundle-example.Bundle.entry.search.Bundle.entry.search.mode> <http://hl7.org/fhir/value> "match" .
+<http://hl7.org/fhir/Bundle/bundle-example.Bundle.entry.search.Bundle.entry.search.score> <http://hl7.org/fhir/value> "1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://hl7.org/fhir/Bundle/bundle-example.Bundle.entry.search> <http://hl7.org/fhir/Bundle.entry.search.mode> <http://hl7.org/fhir/Bundle/bundle-example.Bundle.entry.search.Bundle.entry.search.mode> .
+<http://hl7.org/fhir/Bundle/bundle-example.Bundle.entry.search> <http://hl7.org/fhir/Bundle.entry.search.score> <http://hl7.org/fhir/Bundle/bundle-example.Bundle.entry.search.Bundle.entry.search.score> .
+<http://hl7.org/fhir/Bundle/bundle-example> <http://hl7.org/fhir/Bundle.entry.search> <http://hl7.org/fhir/Bundle/bundle-example.Bundle.entry.search> .----------------------------------------
 
 ========================================
 @prefix fhir: <http://hl7.org/fhir/> .
@@ -35,6 +42,19 @@ Subject http://hl7.org/fhir/Bundle/bundle-example DIFFERENCE: ==================
         ] ;
         fhir:Bundle.entry.resource <https://example.com/base/Medication/example> ;
         fhir:index "1"^^xsd:integer
+    ] ;
+    fhir:Bundle.entry.search [
+        fhir:Bundle.entry.search.mode [
+            fhir:value "include"
+        ]
+    ],
+        [
+        fhir:Bundle.entry.search.mode [
+            fhir:value "match"
+        ] ;
+        fhir:Bundle.entry.search.score [
+            fhir:value "1"^^xsd:decimal
+        ]
     ] ;
     fhir:Bundle.link [
         fhir:index "1"^^xsd:integer ;

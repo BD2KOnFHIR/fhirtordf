@@ -322,6 +322,18 @@ Subject http://hl7.org/fhir/PlanDefinition/KDN5 DIFFERENCE: ====================
         fhir:value "National Comprehensive Cancer Network, Inc."
     ] ;
     fhir:PlanDefinition.relatedArtifact [
+        fhir:index "0"^^xsd:integer ;
+        fhir:RelatedArtifact.display [
+            fhir:value "NCCN Guidelines for Kidney Cancer. V.2.2016"
+        ] ;
+        fhir:RelatedArtifact.type [
+            fhir:value "derived-from"
+        ] ;
+        fhir:RelatedArtifact.url [
+            fhir:value "http://www.example.org/professionals/physician_gls/PDF/kidney.pdf"
+        ]
+    ],
+        [
         fhir:index "1"^^xsd:integer ;
         fhir:RelatedArtifact.citation [
             fhir:value "Oudard S, et al. J Urol. 2007;177(5):1698-702"
@@ -341,18 +353,6 @@ Subject http://hl7.org/fhir/PlanDefinition/KDN5 DIFFERENCE: ====================
         fhir:RelatedArtifact.url [
             fhir:value "http://www.ncbi.nlm.nih.gov/pubmed/17437788"
         ]
-    ],
-        [
-        fhir:index "0"^^xsd:integer ;
-        fhir:RelatedArtifact.display [
-            fhir:value "NCCN Guidelines for Kidney Cancer. V.2.2016"
-        ] ;
-        fhir:RelatedArtifact.type [
-            fhir:value "derived-from"
-        ] ;
-        fhir:RelatedArtifact.url [
-            fhir:value "http://www.example.org/professionals/physician_gls/PDF/kidney.pdf"
-        ]
     ] ;
     fhir:PlanDefinition.status [
         fhir:value "draft"
@@ -366,7 +366,7 @@ Subject http://hl7.org/fhir/PlanDefinition/KDN5 DIFFERENCE: ====================
         ]
     ] ;
     fhir:PlanDefinition.useContext [
-        fhir:index "1"^^xsd:integer ;
+        fhir:index "0"^^xsd:integer ;
         fhir:Element.extension [
             fhir:index "0"^^xsd:integer ;
             fhir:Extension.url [
@@ -378,7 +378,7 @@ Subject http://hl7.org/fhir/PlanDefinition/KDN5 DIFFERENCE: ====================
         ] ;
         fhir:UsageContext.code [
             fhir:Coding.code [
-                fhir:value "disease-or-histology"
+                fhir:value "treamentSetting-or-diseaseStatus"
             ] ;
             fhir:Coding.system [
                 fhir:value "http://example.org/fhir/CodeSystem/indications"
@@ -386,7 +386,7 @@ Subject http://hl7.org/fhir/PlanDefinition/KDN5 DIFFERENCE: ====================
         ] ;
         fhir:UsageContext.valueCodeableConcept [
             fhir:CodeableConcept.text [
-                fhir:value "Collecting Duct/Medullary Subtypes"
+                fhir:value "Metastatic"
             ]
         ]
     ],
@@ -416,31 +416,6 @@ Subject http://hl7.org/fhir/PlanDefinition/KDN5 DIFFERENCE: ====================
         ]
     ],
         [
-        fhir:index "3"^^xsd:integer ;
-        fhir:Element.extension [
-            fhir:index "0"^^xsd:integer ;
-            fhir:Extension.url [
-                fhir:value "http://hl7.org/fhir/StructureDefinition/usagecontext-group"
-            ] ;
-            fhir:Extension.valueString [
-                fhir:value "B"
-            ]
-        ] ;
-        fhir:UsageContext.code [
-            fhir:Coding.code [
-                fhir:value "treatmentSetting-or-diseaseStatus"
-            ] ;
-            fhir:Coding.system [
-                fhir:value "http://example.org/fhir/CodeSystem/indications"
-            ]
-        ] ;
-        fhir:UsageContext.valueCodeableConcept [
-            fhir:CodeableConcept.text [
-                fhir:value "Relapsed"
-            ]
-        ]
-    ],
-        [
         fhir:index "2"^^xsd:integer ;
         fhir:Element.extension [
             fhir:index "0"^^xsd:integer ;
@@ -462,6 +437,31 @@ Subject http://hl7.org/fhir/PlanDefinition/KDN5 DIFFERENCE: ====================
         fhir:UsageContext.valueCodeableConcept [
             fhir:CodeableConcept.text [
                 fhir:value "Kidney Cancer"
+            ]
+        ]
+    ],
+        [
+        fhir:index "1"^^xsd:integer ;
+        fhir:Element.extension [
+            fhir:index "0"^^xsd:integer ;
+            fhir:Extension.url [
+                fhir:value "http://hl7.org/fhir/StructureDefinition/usagecontext-group"
+            ] ;
+            fhir:Extension.valueString [
+                fhir:value "A"
+            ]
+        ] ;
+        fhir:UsageContext.code [
+            fhir:Coding.code [
+                fhir:value "disease-or-histology"
+            ] ;
+            fhir:Coding.system [
+                fhir:value "http://example.org/fhir/CodeSystem/indications"
+            ]
+        ] ;
+        fhir:UsageContext.valueCodeableConcept [
+            fhir:CodeableConcept.text [
+                fhir:value "Collecting Duct/Medullary Subtypes"
             ]
         ]
     ],
@@ -491,19 +491,19 @@ Subject http://hl7.org/fhir/PlanDefinition/KDN5 DIFFERENCE: ====================
         ]
     ],
         [
-        fhir:index "0"^^xsd:integer ;
+        fhir:index "3"^^xsd:integer ;
         fhir:Element.extension [
             fhir:index "0"^^xsd:integer ;
             fhir:Extension.url [
                 fhir:value "http://hl7.org/fhir/StructureDefinition/usagecontext-group"
             ] ;
             fhir:Extension.valueString [
-                fhir:value "A"
+                fhir:value "B"
             ]
         ] ;
         fhir:UsageContext.code [
             fhir:Coding.code [
-                fhir:value "treamentSetting-or-diseaseStatus"
+                fhir:value "treatmentSetting-or-diseaseStatus"
             ] ;
             fhir:Coding.system [
                 fhir:value "http://example.org/fhir/CodeSystem/indications"
@@ -511,7 +511,7 @@ Subject http://hl7.org/fhir/PlanDefinition/KDN5 DIFFERENCE: ====================
         ] ;
         fhir:UsageContext.valueCodeableConcept [
             fhir:CodeableConcept.text [
-                fhir:value "Metastatic"
+                fhir:value "Relapsed"
             ]
         ]
     ] ;

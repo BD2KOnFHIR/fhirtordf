@@ -36,24 +36,12 @@ from rdflib import Graph, URIRef
 from fhirtordf.rdfsupport.rdfcompare import rdf_compare
 
 # If true, we're updating the target. Will always return a fail
+from tests.utils.output_redirector import OutputRedirector
+
 save_output = False
 
 
-class JSONToRDFTestCase(unittest.TestCase):
-    save_stdout = []
-
-    def _push_stdout(self) -> sio.StringIO:
-        self.save_stdout.append(sys.stdout)
-        output = sio.StringIO()
-        sys.stdout = output
-        return output
-
-    def _pop_stdout(self) -> None:
-        if self.save_stdout:
-            sys.stdout = self.save_stdout.pop()
-
-    def tearDown(self):
-        self._pop_stdout()
+class JSONToRDFTestCase(unittest.TestCase, OutputRedirector):
 
     def test_patient_example(self):
         from fhirtordf.fhirtordf import fhirtordf

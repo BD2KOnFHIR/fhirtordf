@@ -122,18 +122,6 @@ Subject http://hl7.org/fhir/Questionnaire/f201 DIFFERENCE: =====================
     fhir:Questionnaire.item [
         fhir:index "1"^^xsd:integer ;
         fhir:Questionnaire.item.item [
-            fhir:index "2"^^xsd:integer ;
-            fhir:Questionnaire.item.item.linkId [
-                fhir:value "2.3"
-            ] ;
-            fhir:Questionnaire.item.item.text [
-                fhir:value "What is your country of birth?"
-            ] ;
-            fhir:Questionnaire.item.item.type [
-                fhir:value "string"
-            ]
-        ],
-            [
             fhir:index "3"^^xsd:integer ;
             fhir:Questionnaire.item.item.linkId [
                 fhir:value "2.4"
@@ -168,48 +156,24 @@ Subject http://hl7.org/fhir/Questionnaire/f201 DIFFERENCE: =====================
             fhir:Questionnaire.item.item.type [
                 fhir:value "string"
             ]
+        ],
+            [
+            fhir:index "2"^^xsd:integer ;
+            fhir:Questionnaire.item.item.linkId [
+                fhir:value "2.3"
+            ] ;
+            fhir:Questionnaire.item.item.text [
+                fhir:value "What is your country of birth?"
+            ] ;
+            fhir:Questionnaire.item.item.type [
+                fhir:value "string"
+            ]
         ] ;
         fhir:Questionnaire.item.linkId [
             fhir:value "2"
         ] ;
         fhir:Questionnaire.item.text [
             fhir:value "General questions"
-        ] ;
-        fhir:Questionnaire.item.type [
-            fhir:value "group"
-        ]
-    ],
-        [
-        fhir:index "2"^^xsd:integer ;
-        fhir:Questionnaire.item.item [
-            fhir:index "1"^^xsd:integer ;
-            fhir:Questionnaire.item.item.linkId [
-                fhir:value "3.2"
-            ] ;
-            fhir:Questionnaire.item.item.text [
-                fhir:value "Do you drink alchohol?"
-            ] ;
-            fhir:Questionnaire.item.item.type [
-                fhir:value "boolean"
-            ]
-        ],
-            [
-            fhir:index "0"^^xsd:integer ;
-            fhir:Questionnaire.item.item.linkId [
-                fhir:value "3.1"
-            ] ;
-            fhir:Questionnaire.item.item.text [
-                fhir:value "Do you smoke?"
-            ] ;
-            fhir:Questionnaire.item.item.type [
-                fhir:value "boolean"
-            ]
-        ] ;
-        fhir:Questionnaire.item.linkId [
-            fhir:value "3"
-        ] ;
-        fhir:Questionnaire.item.text [
-            fhir:value "Intoxications"
         ] ;
         fhir:Questionnaire.item.type [
             fhir:value "group"
@@ -225,6 +189,42 @@ Subject http://hl7.org/fhir/Questionnaire/f201 DIFFERENCE: =====================
         ] ;
         fhir:Questionnaire.item.type [
             fhir:value "boolean"
+        ]
+    ],
+        [
+        fhir:index "2"^^xsd:integer ;
+        fhir:Questionnaire.item.item [
+            fhir:index "0"^^xsd:integer ;
+            fhir:Questionnaire.item.item.linkId [
+                fhir:value "3.1"
+            ] ;
+            fhir:Questionnaire.item.item.text [
+                fhir:value "Do you smoke?"
+            ] ;
+            fhir:Questionnaire.item.item.type [
+                fhir:value "boolean"
+            ]
+        ],
+            [
+            fhir:index "1"^^xsd:integer ;
+            fhir:Questionnaire.item.item.linkId [
+                fhir:value "3.2"
+            ] ;
+            fhir:Questionnaire.item.item.text [
+                fhir:value "Do you drink alchohol?"
+            ] ;
+            fhir:Questionnaire.item.item.type [
+                fhir:value "boolean"
+            ]
+        ] ;
+        fhir:Questionnaire.item.linkId [
+            fhir:value "3"
+        ] ;
+        fhir:Questionnaire.item.text [
+            fhir:value "Intoxications"
+        ] ;
+        fhir:Questionnaire.item.type [
+            fhir:value "group"
         ]
     ] ;
     fhir:Questionnaire.status [

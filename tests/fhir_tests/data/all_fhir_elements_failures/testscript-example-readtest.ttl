@@ -306,35 +306,66 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-readtest DIFFERENCE: =
         fhir:value "draft"
     ] ;
     fhir:TestScript.test [
+        fhir:index "3"^^xsd:integer ;
+        fhir:Element.id [
+            fhir:value "R004"
+        ] ;
+        fhir:TestScript.test.action [
+            fhir:index "0"^^xsd:integer ;
+            fhir:TestScript.test.action.operation [
+                fhir:TestScript.test.action.operation.accept [
+                    fhir:value "xml"
+                ] ;
+                fhir:TestScript.test.action.operation.description [
+                    fhir:value "Attempt to read a Patient resource on the destination test system using known bad formatted resource id."
+                ] ;
+                fhir:TestScript.test.action.operation.params [
+                    fhir:value "/ID-may-not-contain-CAPITALS"
+                ] ;
+                fhir:TestScript.test.action.operation.resource [
+                    fhir:value "Patient"
+                ] ;
+                fhir:TestScript.test.action.operation.type [
+                    fhir:Coding.code [
+                        fhir:value "read"
+                    ] ;
+                    fhir:Coding.system [
+                        fhir:value "http://hl7.org/fhir/testscript-operation-codes"
+                    ]
+                ]
+            ]
+        ],
+            [
+            fhir:index "1"^^xsd:integer ;
+            fhir:TestScript.test.action.assert [
+                fhir:TestScript.test.action.assert.description [
+                    fhir:value "Confirm that the returned HTTP status is 400(Bad Request)."
+                ] ;
+                fhir:TestScript.test.action.assert.response [
+                    fhir:value "bad"
+                ]
+            ]
+        ] ;
+        fhir:TestScript.test.description [
+            fhir:value "Read a Patient using a known bad formatted resource id and validate response."
+        ] ;
+        fhir:TestScript.test.name [
+            fhir:value "Sprinkler Read Test R004"
+        ]
+    ],
+        [
         fhir:index "0"^^xsd:integer ;
         fhir:Element.id [
             fhir:value "R001"
         ] ;
         fhir:TestScript.test.action [
-            fhir:index "2"^^xsd:integer ;
-            fhir:TestScript.test.action.assert [
-                fhir:TestScript.test.action.assert.contentType [
-                    fhir:value "xml"
-                ] ;
-                fhir:TestScript.test.action.assert.description [
-                    fhir:value "Confirm that the returned format is XML."
-                ]
-            ]
-        ],
-            [
-            fhir:index "3"^^xsd:integer ;
+            fhir:index "1"^^xsd:integer ;
             fhir:TestScript.test.action.assert [
                 fhir:TestScript.test.action.assert.description [
-                    fhir:value "Confirm that the returned HTTP Header Last-Modified is present. Warning only as the server may not support versioning."
+                    fhir:value "Confirm that the returned HTTP status is 200(OK)."
                 ] ;
-                fhir:TestScript.test.action.assert.headerField [
-                    fhir:value "Last-Modified"
-                ] ;
-                fhir:TestScript.test.action.assert.operator [
-                    fhir:value "notEmpty"
-                ] ;
-                fhir:TestScript.test.action.assert.warningOnly [
-                    fhir:value "true"^^xsd:boolean
+                fhir:TestScript.test.action.assert.response [
+                    fhir:value "okay"
                 ]
             ]
         ],
@@ -350,24 +381,13 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-readtest DIFFERENCE: =
             ]
         ],
             [
-            fhir:index "5"^^xsd:integer ;
+            fhir:index "2"^^xsd:integer ;
             fhir:TestScript.test.action.assert [
-                fhir:TestScript.test.action.assert.description [
-                    fhir:value "Confirm that the returned Patient conforms to the base FHIR specification."
+                fhir:TestScript.test.action.assert.contentType [
+                    fhir:value "xml"
                 ] ;
-                fhir:TestScript.test.action.assert.validateProfileId [
-                    fhir:value "patient-profile"
-                ]
-            ]
-        ],
-            [
-            fhir:index "1"^^xsd:integer ;
-            fhir:TestScript.test.action.assert [
                 fhir:TestScript.test.action.assert.description [
-                    fhir:value "Confirm that the returned HTTP status is 200(OK)."
-                ] ;
-                fhir:TestScript.test.action.assert.response [
-                    fhir:value "okay"
+                    fhir:value "Confirm that the returned format is XML."
                 ]
             ]
         ],
@@ -395,108 +415,40 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-readtest DIFFERENCE: =
                     ]
                 ]
             ]
+        ],
+            [
+            fhir:index "5"^^xsd:integer ;
+            fhir:TestScript.test.action.assert [
+                fhir:TestScript.test.action.assert.description [
+                    fhir:value "Confirm that the returned Patient conforms to the base FHIR specification."
+                ] ;
+                fhir:TestScript.test.action.assert.validateProfileId [
+                    fhir:value "patient-profile"
+                ]
+            ]
+        ],
+            [
+            fhir:index "3"^^xsd:integer ;
+            fhir:TestScript.test.action.assert [
+                fhir:TestScript.test.action.assert.description [
+                    fhir:value "Confirm that the returned HTTP Header Last-Modified is present. Warning only as the server may not support versioning."
+                ] ;
+                fhir:TestScript.test.action.assert.headerField [
+                    fhir:value "Last-Modified"
+                ] ;
+                fhir:TestScript.test.action.assert.operator [
+                    fhir:value "notEmpty"
+                ] ;
+                fhir:TestScript.test.action.assert.warningOnly [
+                    fhir:value "true"^^xsd:boolean
+                ]
+            ]
         ] ;
         fhir:TestScript.test.description [
             fhir:value "Read a known Patient and validate response."
         ] ;
         fhir:TestScript.test.name [
             fhir:value "Sprinkler Read Test R001"
-        ]
-    ],
-        [
-        fhir:index "1"^^xsd:integer ;
-        fhir:Element.id [
-            fhir:value "R002"
-        ] ;
-        fhir:TestScript.test.action [
-            fhir:index "0"^^xsd:integer ;
-            fhir:TestScript.test.action.operation [
-                fhir:TestScript.test.action.operation.accept [
-                    fhir:value "xml"
-                ] ;
-                fhir:TestScript.test.action.operation.description [
-                    fhir:value "Attempt to read the Parameters resource type. What we really want here is an illegal type but the build process won't allow that. Parameters is a valid resource which doesn't have an end-point so, this should fail."
-                ] ;
-                fhir:TestScript.test.action.operation.params [
-                    fhir:value "/1"
-                ] ;
-                fhir:TestScript.test.action.operation.resource [
-                    fhir:value "Patient"
-                ] ;
-                fhir:TestScript.test.action.operation.type [
-                    fhir:Coding.code [
-                        fhir:value "read"
-                    ] ;
-                    fhir:Coding.system [
-                        fhir:value "http://hl7.org/fhir/testscript-operation-codes"
-                    ]
-                ]
-            ]
-        ],
-            [
-            fhir:index "1"^^xsd:integer ;
-            fhir:TestScript.test.action.assert [
-                fhir:TestScript.test.action.assert.description [
-                    fhir:value "Confirm that the returned HTTP status is 404(Not Found)."
-                ] ;
-                fhir:TestScript.test.action.assert.response [
-                    fhir:value "notFound"
-                ]
-            ]
-        ] ;
-        fhir:TestScript.test.description [
-            fhir:value "Read an unknown Resource Type and validate response."
-        ] ;
-        fhir:TestScript.test.name [
-            fhir:value "Sprinkler Read Test R002"
-        ]
-    ],
-        [
-        fhir:index "3"^^xsd:integer ;
-        fhir:Element.id [
-            fhir:value "R004"
-        ] ;
-        fhir:TestScript.test.action [
-            fhir:index "1"^^xsd:integer ;
-            fhir:TestScript.test.action.assert [
-                fhir:TestScript.test.action.assert.description [
-                    fhir:value "Confirm that the returned HTTP status is 400(Bad Request)."
-                ] ;
-                fhir:TestScript.test.action.assert.response [
-                    fhir:value "bad"
-                ]
-            ]
-        ],
-            [
-            fhir:index "0"^^xsd:integer ;
-            fhir:TestScript.test.action.operation [
-                fhir:TestScript.test.action.operation.accept [
-                    fhir:value "xml"
-                ] ;
-                fhir:TestScript.test.action.operation.description [
-                    fhir:value "Attempt to read a Patient resource on the destination test system using known bad formatted resource id."
-                ] ;
-                fhir:TestScript.test.action.operation.params [
-                    fhir:value "/ID-may-not-contain-CAPITALS"
-                ] ;
-                fhir:TestScript.test.action.operation.resource [
-                    fhir:value "Patient"
-                ] ;
-                fhir:TestScript.test.action.operation.type [
-                    fhir:Coding.code [
-                        fhir:value "read"
-                    ] ;
-                    fhir:Coding.system [
-                        fhir:value "http://hl7.org/fhir/testscript-operation-codes"
-                    ]
-                ]
-            ]
-        ] ;
-        fhir:TestScript.test.description [
-            fhir:value "Read a Patient using a known bad formatted resource id and validate response."
-        ] ;
-        fhir:TestScript.test.name [
-            fhir:value "Sprinkler Read Test R004"
         ]
     ],
         [
@@ -545,6 +497,54 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-readtest DIFFERENCE: =
         ] ;
         fhir:TestScript.test.name [
             fhir:value "Sprinkler Read Test R003"
+        ]
+    ],
+        [
+        fhir:index "1"^^xsd:integer ;
+        fhir:Element.id [
+            fhir:value "R002"
+        ] ;
+        fhir:TestScript.test.action [
+            fhir:index "1"^^xsd:integer ;
+            fhir:TestScript.test.action.assert [
+                fhir:TestScript.test.action.assert.description [
+                    fhir:value "Confirm that the returned HTTP status is 404(Not Found)."
+                ] ;
+                fhir:TestScript.test.action.assert.response [
+                    fhir:value "notFound"
+                ]
+            ]
+        ],
+            [
+            fhir:index "0"^^xsd:integer ;
+            fhir:TestScript.test.action.operation [
+                fhir:TestScript.test.action.operation.accept [
+                    fhir:value "xml"
+                ] ;
+                fhir:TestScript.test.action.operation.description [
+                    fhir:value "Attempt to read the Parameters resource type. What we really want here is an illegal type but the build process won't allow that. Parameters is a valid resource which doesn't have an end-point so, this should fail."
+                ] ;
+                fhir:TestScript.test.action.operation.params [
+                    fhir:value "/1"
+                ] ;
+                fhir:TestScript.test.action.operation.resource [
+                    fhir:value "Patient"
+                ] ;
+                fhir:TestScript.test.action.operation.type [
+                    fhir:Coding.code [
+                        fhir:value "read"
+                    ] ;
+                    fhir:Coding.system [
+                        fhir:value "http://hl7.org/fhir/testscript-operation-codes"
+                    ]
+                ]
+            ]
+        ] ;
+        fhir:TestScript.test.description [
+            fhir:value "Read an unknown Resource Type and validate response."
+        ] ;
+        fhir:TestScript.test.name [
+            fhir:value "Sprinkler Read Test R002"
         ]
     ] ;
     fhir:TestScript.url [

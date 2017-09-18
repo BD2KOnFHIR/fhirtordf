@@ -15,18 +15,6 @@
     fhir:ActivityDefinition.contact [
         fhir:index "0"^^xsd:integer ;
         fhir:ContactDetail.telecom [
-            fhir:index "0"^^xsd:integer ;
-            fhir:ContactPoint.system [
-                fhir:value "phone"
-            ] ;
-            fhir:ContactPoint.use [
-                fhir:value "work"
-            ] ;
-            fhir:ContactPoint.value [
-                fhir:value "415-362-4007"
-            ]
-        ],
-            [
             fhir:index "1"^^xsd:integer ;
             fhir:ContactPoint.system [
                 fhir:value "email"
@@ -37,6 +25,18 @@
             fhir:ContactPoint.value [
                 fhir:value "info@motivemi.com"
             ]
+        ],
+            [
+            fhir:index "0"^^xsd:integer ;
+            fhir:ContactPoint.system [
+                fhir:value "phone"
+            ] ;
+            fhir:ContactPoint.use [
+                fhir:value "work"
+            ] ;
+            fhir:ContactPoint.value [
+                fhir:value "415-362-4007"
+            ]
         ]
     ] ;
     fhir:ActivityDefinition.contributor [
@@ -44,18 +44,6 @@
         fhir:Contributor.contact [
             fhir:index "0"^^xsd:integer ;
             fhir:ContactDetail.telecom [
-                fhir:index "0"^^xsd:integer ;
-                fhir:ContactPoint.system [
-                    fhir:value "phone"
-                ] ;
-                fhir:ContactPoint.use [
-                    fhir:value "work"
-                ] ;
-                fhir:ContactPoint.value [
-                    fhir:value "415-362-4007"
-                ]
-            ],
-                [
                 fhir:index "1"^^xsd:integer ;
                 fhir:ContactPoint.system [
                     fhir:value "email"
@@ -65,6 +53,18 @@
                 ] ;
                 fhir:ContactPoint.value [
                     fhir:value "info@motivemi.com"
+                ]
+            ],
+                [
+                fhir:index "0"^^xsd:integer ;
+                fhir:ContactPoint.system [
+                    fhir:value "phone"
+                ] ;
+                fhir:ContactPoint.use [
+                    fhir:value "work"
+                ] ;
+                fhir:ContactPoint.value [
+                    fhir:value "415-362-4007"
                 ]
             ]
         ] ;
@@ -126,21 +126,6 @@
         ]
     ] ;
     fhir:ActivityDefinition.dynamicValue [
-        fhir:index "0"^^xsd:integer ;
-        fhir:ActivityDefinition.dynamicValue.description [
-            fhir:value "dispenseRequest.numberOfRepeatsAllowed is three (3)"
-        ] ;
-        fhir:ActivityDefinition.dynamicValue.expression [
-            fhir:value "3"
-        ] ;
-        fhir:ActivityDefinition.dynamicValue.language [
-            fhir:value "text/cql"
-        ] ;
-        fhir:ActivityDefinition.dynamicValue.path [
-            fhir:value "dispenseRequest.numberOfRepeatsAllowed"
-        ]
-    ],
-        [
         fhir:index "1"^^xsd:integer ;
         fhir:ActivityDefinition.dynamicValue.description [
             fhir:value "dispenseRequest.quantity is thirty (30) tablets"
@@ -153,6 +138,21 @@
         ] ;
         fhir:ActivityDefinition.dynamicValue.path [
             fhir:value "dispenseRequest.quantity"
+        ]
+    ],
+        [
+        fhir:index "0"^^xsd:integer ;
+        fhir:ActivityDefinition.dynamicValue.description [
+            fhir:value "dispenseRequest.numberOfRepeatsAllowed is three (3)"
+        ] ;
+        fhir:ActivityDefinition.dynamicValue.expression [
+            fhir:value "3"
+        ] ;
+        fhir:ActivityDefinition.dynamicValue.language [
+            fhir:value "text/cql"
+        ] ;
+        fhir:ActivityDefinition.dynamicValue.path [
+            fhir:value "dispenseRequest.numberOfRepeatsAllowed"
         ]
     ] ;
     fhir:ActivityDefinition.effectivePeriod [
@@ -252,32 +252,6 @@
         fhir:value "This activity definition is used as part of various suicide risk order sets"
     ] ;
     fhir:ActivityDefinition.useContext [
-        fhir:index "5"^^xsd:integer ;
-        fhir:UsageContext.code [
-            fhir:Coding.code [
-                fhir:value "user"
-            ] ;
-            fhir:Coding.system [
-                fhir:value "http://hl7.org/fhir/usage-context-type"
-            ]
-        ] ;
-        fhir:UsageContext.valueCodeableConcept [
-            fhir:CodeableConcept.coding [
-                a sct:309343006 ;
-                fhir:index "0"^^xsd:integer ;
-                fhir:Coding.code [
-                    fhir:value "309343006"
-                ] ;
-                fhir:Coding.display [
-                    fhir:value "Physician"
-                ] ;
-                fhir:Coding.system [
-                    fhir:value "http://snomed.info/sct"
-                ]
-            ]
-        ]
-    ],
-        [
         fhir:index "3"^^xsd:integer ;
         fhir:UsageContext.code [
             fhir:Coding.code [
@@ -304,10 +278,10 @@
         ]
     ],
         [
-        fhir:index "4"^^xsd:integer ;
+        fhir:index "5"^^xsd:integer ;
         fhir:UsageContext.code [
             fhir:Coding.code [
-                fhir:value "focus"
+                fhir:value "user"
             ] ;
             fhir:Coding.system [
                 fhir:value "http://hl7.org/fhir/usage-context-type"
@@ -315,13 +289,13 @@
         ] ;
         fhir:UsageContext.valueCodeableConcept [
             fhir:CodeableConcept.coding [
-                a sct:306206005 ;
+                a sct:309343006 ;
                 fhir:index "0"^^xsd:integer ;
                 fhir:Coding.code [
-                    fhir:value "306206005"
+                    fhir:value "309343006"
                 ] ;
                 fhir:Coding.display [
-                    fhir:value "Referral to service (procedure)"
+                    fhir:value "Physician"
                 ] ;
                 fhir:Coding.system [
                     fhir:value "http://snomed.info/sct"
@@ -356,6 +330,31 @@
         ]
     ],
         [
+        fhir:index "0"^^xsd:integer ;
+        fhir:UsageContext.code [
+            fhir:Coding.code [
+                fhir:value "age"
+            ] ;
+            fhir:Coding.system [
+                fhir:value "http://hl7.org/fhir/usage-context-type"
+            ]
+        ] ;
+        fhir:UsageContext.valueCodeableConcept [
+            fhir:CodeableConcept.coding [
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "D000328"
+                ] ;
+                fhir:Coding.display [
+                    fhir:value "Adult"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "https://meshb.nlm.nih.gov"
+                ]
+            ]
+        ]
+    ],
+        [
         fhir:index "6"^^xsd:integer ;
         fhir:UsageContext.code [
             fhir:Coding.code [
@@ -382,10 +381,10 @@
         ]
     ],
         [
-        fhir:index "0"^^xsd:integer ;
+        fhir:index "4"^^xsd:integer ;
         fhir:UsageContext.code [
             fhir:Coding.code [
-                fhir:value "age"
+                fhir:value "focus"
             ] ;
             fhir:Coding.system [
                 fhir:value "http://hl7.org/fhir/usage-context-type"
@@ -393,15 +392,16 @@
         ] ;
         fhir:UsageContext.valueCodeableConcept [
             fhir:CodeableConcept.coding [
+                a sct:306206005 ;
                 fhir:index "0"^^xsd:integer ;
                 fhir:Coding.code [
-                    fhir:value "D000328"
+                    fhir:value "306206005"
                 ] ;
                 fhir:Coding.display [
-                    fhir:value "Adult"
+                    fhir:value "Referral to service (procedure)"
                 ] ;
                 fhir:Coding.system [
-                    fhir:value "https://meshb.nlm.nih.gov"
+                    fhir:value "http://snomed.info/sct"
                 ]
             ]
         ]

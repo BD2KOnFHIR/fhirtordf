@@ -75,7 +75,7 @@ class FHIRMetaVocTestCase(unittest.TestCase):
         for name in sorted(preds.keys()):
             pred = preds[name]
             t = m.predicate_type(pred)
-            v.append((name, str(t), 'A' if m.is_atom(t) else 'P' if m.is_primitive(t) else 'C'))
+            v.append((name, str(t), 'A' if m.is_atom(pred) else 'P' if m.is_primitive(t) else 'C'))
         self.assertEqual([
              ('active', 'http://hl7.org/fhir/Period', 'C'),
              ('balance', 'http://hl7.org/fhir/Money', 'C'),
@@ -98,6 +98,22 @@ class FHIRMetaVocTestCase(unittest.TestCase):
              ('subject', 'http://hl7.org/fhir/Reference', 'C'),
              ('text', 'http://hl7.org/fhir/Narrative', 'C'),
              ('type', 'http://hl7.org/fhir/CodeableConcept', 'C')], v)
+
+    def test3(self):
+        from fhirtordf.fhir.fhirmetavoc import FHIRMetaVocEntry
+        m = FHIRMetaVocEntry(self.fhir_ontology, "Narrative")
+        preds = m.predicates()
+        v = []
+        for name in sorted(preds.keys()):
+            pred = preds[name]
+            t = m.predicate_type(pred)
+            v.append((name, str(t), 'A' if m.is_atom(pred) else 'P' if m.is_primitive(t) else 'C'))
+        self.assertEqual([
+            ('div', 'http://hl7.org/fhir/xhtml', 'A'),
+            ('extension', 'http://hl7.org/fhir/Extension', 'C'),
+            ('id', 'http://hl7.org/fhir/string', 'P'),
+            ('index', 'http://www.w3.org/2001/XMLSchema#nonNegativeInteger', 'A'),
+            ('status', 'http://hl7.org/fhir/code', 'P')], v)
 
     def test_valuetype(self):
         from fhirtordf.fhir.fhirmetavoc import FHIRMetaVocEntry

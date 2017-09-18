@@ -77,26 +77,6 @@ Subject http://hl7.org/fhir/QuestionnaireResponse/3141 DIFFERENCE: =============
 <http://hl7.org/fhir/QuestionnaireResponse/3141> a fhir:QuestionnaireResponse ;
     fhir:nodeRole fhir:treeRoot ;
     fhir:DomainResource.contained [
-        fhir:index "2"^^xsd:integer ;
-        fhir:Practitioner.identifier [
-            fhir:index "0"^^xsd:integer ;
-            fhir:Identifier.system [
-                fhir:value "http://cancer.questionnaire.org/systems/id/org"
-            ] ;
-            fhir:Identifier.type [
-                fhir:CodeableConcept.text [
-                    fhir:value "AUMC, Den Helder"
-                ]
-            ] ;
-            fhir:Identifier.value [
-                fhir:value "AUMC"
-            ]
-        ] ;
-        fhir:Resource.id [
-            fhir:value "questauth"
-        ]
-    ],
-        [
         fhir:index "0"^^xsd:integer ;
         fhir:Patient.birthDate [
             fhir:value "1972-11-30"^^xsd:date
@@ -105,6 +85,15 @@ Subject http://hl7.org/fhir/QuestionnaireResponse/3141 DIFFERENCE: =============
             fhir:value "male"
         ] ;
         fhir:Patient.identifier [
+            fhir:index "0"^^xsd:integer ;
+            fhir:Identifier.system [
+                fhir:value "http://cancer.questionnaire.org/systems/id/patientnr"
+            ] ;
+            fhir:Identifier.value [
+                fhir:value "A34442332"
+            ]
+        ],
+            [
             fhir:index "1"^^xsd:integer ;
             fhir:Identifier.system [
                 fhir:value "urn:oid:2.16.840.1.113883.2.4.6.3"
@@ -116,15 +105,6 @@ Subject http://hl7.org/fhir/QuestionnaireResponse/3141 DIFFERENCE: =============
             ] ;
             fhir:Identifier.value [
                 fhir:value "188912345"
-            ]
-        ],
-            [
-            fhir:index "0"^^xsd:integer ;
-            fhir:Identifier.system [
-                fhir:value "http://cancer.questionnaire.org/systems/id/patientnr"
-            ] ;
-            fhir:Identifier.value [
-                fhir:value "A34442332"
             ]
         ] ;
         fhir:Resource.id [
@@ -154,6 +134,26 @@ Subject http://hl7.org/fhir/QuestionnaireResponse/3141 DIFFERENCE: =============
         ] ;
         fhir:Resource.id [
             fhir:value "order"
+        ]
+    ],
+        [
+        fhir:index "2"^^xsd:integer ;
+        fhir:Practitioner.identifier [
+            fhir:index "0"^^xsd:integer ;
+            fhir:Identifier.system [
+                fhir:value "http://cancer.questionnaire.org/systems/id/org"
+            ] ;
+            fhir:Identifier.type [
+                fhir:CodeableConcept.text [
+                    fhir:value "AUMC, Den Helder"
+                ]
+            ] ;
+            fhir:Identifier.value [
+                fhir:value "AUMC"
+            ]
+        ] ;
+        fhir:Resource.id [
+            fhir:value "questauth"
         ]
     ] ;
     fhir:DomainResource.text [

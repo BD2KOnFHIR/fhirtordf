@@ -47,6 +47,21 @@ Subject http://hl7.org/fhir/sid/icd-10-us DIFFERENCE: ==========================
     fhir:ConceptMap.group [
         fhir:index "0"^^xsd:integer ;
         fhir:ConceptMap.group.element [
+            fhir:index "1"^^xsd:integer ;
+            fhir:ConceptMap.group.element.target [
+                fhir:index "0"^^xsd:integer ;
+                fhir:ConceptMap.group.element.target.code [
+                    fhir:value "S52.209D"
+                ] ;
+                fhir:ConceptMap.group.element.target.comment [
+                    fhir:value "The target mapping to ICD-10-CM is narrower, since additional patient data on the encounter (initial vs. subsequent), fracture type and healing (for subsequent encounter) is required for a valid ICD-10-CM mapping."
+                ] ;
+                fhir:ConceptMap.group.element.target.equivalence [
+                    fhir:value "narrower"
+                ]
+            ]
+        ],
+            [
             fhir:index "0"^^xsd:integer ;
             fhir:ConceptMap.group.element.code [
                 fhir:value "263204007"
@@ -58,21 +73,6 @@ Subject http://hl7.org/fhir/sid/icd-10-us DIFFERENCE: ==========================
                 ] ;
                 fhir:ConceptMap.group.element.target.comment [
                     fhir:value "The target mapping to ICD-10-CM is narrower, since additional patient data on the encounter (initial vs. subsequent) and fracture type is required for a valid ICD-10-CM mapping."
-                ] ;
-                fhir:ConceptMap.group.element.target.equivalence [
-                    fhir:value "narrower"
-                ]
-            ]
-        ],
-            [
-            fhir:index "1"^^xsd:integer ;
-            fhir:ConceptMap.group.element.target [
-                fhir:index "0"^^xsd:integer ;
-                fhir:ConceptMap.group.element.target.code [
-                    fhir:value "S52.209D"
-                ] ;
-                fhir:ConceptMap.group.element.target.comment [
-                    fhir:value "The target mapping to ICD-10-CM is narrower, since additional patient data on the encounter (initial vs. subsequent), fracture type and healing (for subsequent encounter) is required for a valid ICD-10-CM mapping."
                 ] ;
                 fhir:ConceptMap.group.element.target.equivalence [
                     fhir:value "narrower"

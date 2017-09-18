@@ -321,13 +321,13 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-search DIFFERENCE: ===
     ] ;
     fhir:TestScript.setup [
         fhir:TestScript.setup.action [
-            fhir:index "3"^^xsd:integer ;
+            fhir:index "4"^^xsd:integer ;
             fhir:TestScript.setup.action.assert [
                 fhir:TestScript.setup.action.assert.description [
-                    fhir:value "Confirm that the returned resource type is Bundle."
+                    fhir:value "Confirm that the returned Bundle correctly defines the navigation links."
                 ] ;
-                fhir:TestScript.setup.action.assert.resource [
-                    fhir:value "Bundle"
+                fhir:TestScript.setup.action.assert.navigationLinks [
+                    fhir:value "true"^^xsd:boolean
                 ]
             ]
         ],
@@ -357,16 +357,13 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-search DIFFERENCE: ===
             ]
         ],
             [
-            fhir:index "2"^^xsd:integer ;
+            fhir:index "3"^^xsd:integer ;
             fhir:TestScript.setup.action.assert [
                 fhir:TestScript.setup.action.assert.description [
-                    fhir:value "Confirm that the returned HTTP status is 200(OK)."
+                    fhir:value "Confirm that the returned resource type is Bundle."
                 ] ;
-                fhir:TestScript.setup.action.assert.direction [
-                    fhir:value "response"
-                ] ;
-                fhir:TestScript.setup.action.assert.responseCode [
-                    fhir:value "200"
+                fhir:TestScript.setup.action.assert.resource [
+                    fhir:value "Bundle"
                 ]
             ]
         ],
@@ -388,13 +385,16 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-search DIFFERENCE: ===
             ]
         ],
             [
-            fhir:index "4"^^xsd:integer ;
+            fhir:index "2"^^xsd:integer ;
             fhir:TestScript.setup.action.assert [
                 fhir:TestScript.setup.action.assert.description [
-                    fhir:value "Confirm that the returned Bundle correctly defines the navigation links."
+                    fhir:value "Confirm that the returned HTTP status is 200(OK)."
                 ] ;
-                fhir:TestScript.setup.action.assert.navigationLinks [
-                    fhir:value "true"^^xsd:boolean
+                fhir:TestScript.setup.action.assert.direction [
+                    fhir:value "response"
+                ] ;
+                fhir:TestScript.setup.action.assert.responseCode [
+                    fhir:value "200"
                 ]
             ]
         ]
@@ -408,6 +408,17 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-search DIFFERENCE: ===
             fhir:value "01-PatientCreateSearch"
         ] ;
         fhir:TestScript.test.action [
+            fhir:index "1"^^xsd:integer ;
+            fhir:TestScript.test.action.assert [
+                fhir:TestScript.test.action.assert.description [
+                    fhir:value "Confirm that the returned HTTP status is 201(Created)."
+                ] ;
+                fhir:TestScript.test.action.assert.response [
+                    fhir:value "created"
+                ]
+            ]
+        ],
+            [
             fhir:index "3"^^xsd:integer ;
             fhir:TestScript.test.action.operation [
                 fhir:TestScript.test.action.operation.accept [
@@ -426,56 +437,6 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-search DIFFERENCE: ===
                 ] ;
                 fhir:TestScript.test.action.operation.url [
                     fhir:value "${PatientCreateLocation}"
-                ]
-            ]
-        ],
-            [
-            fhir:index "5"^^xsd:integer ;
-            fhir:TestScript.test.action.assert [
-                fhir:TestScript.test.action.assert.description [
-                    fhir:value "Confirm that the returned resource type is Patient."
-                ] ;
-                fhir:TestScript.test.action.assert.resource [
-                    fhir:value "Patient"
-                ]
-            ]
-        ],
-            [
-            fhir:index "4"^^xsd:integer ;
-            fhir:TestScript.test.action.assert [
-                fhir:TestScript.test.action.assert.description [
-                    fhir:value "Confirm that the returned HTTP status is 200(OK)."
-                ] ;
-                fhir:TestScript.test.action.assert.response [
-                    fhir:value "okay"
-                ]
-            ]
-        ],
-            [
-            fhir:index "1"^^xsd:integer ;
-            fhir:TestScript.test.action.assert [
-                fhir:TestScript.test.action.assert.description [
-                    fhir:value "Confirm that the returned HTTP status is 201(Created)."
-                ] ;
-                fhir:TestScript.test.action.assert.response [
-                    fhir:value "created"
-                ]
-            ]
-        ],
-            [
-            fhir:index "2"^^xsd:integer ;
-            fhir:TestScript.test.action.assert [
-                fhir:TestScript.test.action.assert.description [
-                    fhir:value "Confirm that the returned HTTP Header Location is present."
-                ] ;
-                fhir:TestScript.test.action.assert.direction [
-                    fhir:value "response"
-                ] ;
-                fhir:TestScript.test.action.assert.headerField [
-                    fhir:value "Location"
-                ] ;
-                fhir:TestScript.test.action.assert.operator [
-                    fhir:value "notEmpty"
                 ]
             ]
         ],
@@ -509,6 +470,45 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-search DIFFERENCE: ===
                     ]
                 ]
             ]
+        ],
+            [
+            fhir:index "2"^^xsd:integer ;
+            fhir:TestScript.test.action.assert [
+                fhir:TestScript.test.action.assert.description [
+                    fhir:value "Confirm that the returned HTTP Header Location is present."
+                ] ;
+                fhir:TestScript.test.action.assert.direction [
+                    fhir:value "response"
+                ] ;
+                fhir:TestScript.test.action.assert.headerField [
+                    fhir:value "Location"
+                ] ;
+                fhir:TestScript.test.action.assert.operator [
+                    fhir:value "notEmpty"
+                ]
+            ]
+        ],
+            [
+            fhir:index "4"^^xsd:integer ;
+            fhir:TestScript.test.action.assert [
+                fhir:TestScript.test.action.assert.description [
+                    fhir:value "Confirm that the returned HTTP status is 200(OK)."
+                ] ;
+                fhir:TestScript.test.action.assert.response [
+                    fhir:value "okay"
+                ]
+            ]
+        ],
+            [
+            fhir:index "5"^^xsd:integer ;
+            fhir:TestScript.test.action.assert [
+                fhir:TestScript.test.action.assert.description [
+                    fhir:value "Confirm that the returned resource type is Patient."
+                ] ;
+                fhir:TestScript.test.action.assert.resource [
+                    fhir:value "Patient"
+                ]
+            ]
         ] ;
         fhir:TestScript.test.description [
             fhir:value "Create a Patient resource and capture the returned HTTP Header Location. Then search for (read) that Patient using the Location URL value and validate the response."
@@ -523,39 +523,6 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-search DIFFERENCE: ===
             fhir:value "02-PatientSearchDynamic"
         ] ;
         fhir:TestScript.test.action [
-            fhir:index "3"^^xsd:integer ;
-            fhir:TestScript.test.action.assert [
-                fhir:TestScript.test.action.assert.description [
-                    fhir:value "Confirm that the returned resource type is Bundle."
-                ] ;
-                fhir:TestScript.test.action.assert.resource [
-                    fhir:value "Bundle"
-                ]
-            ]
-        ],
-            [
-            fhir:index "6"^^xsd:integer ;
-            fhir:TestScript.test.action.assert [
-                fhir:TestScript.test.action.assert.description [
-                    fhir:value "Confirm that the returned Bundle total is greater than or equal to the number of returned entries."
-                ] ;
-                fhir:TestScript.test.action.assert.expression [
-                    fhir:value "Bundle.total.toInteger() >= entry.count()"
-                ]
-            ]
-        ],
-            [
-            fhir:index "2"^^xsd:integer ;
-            fhir:TestScript.test.action.assert [
-                fhir:TestScript.test.action.assert.contentType [
-                    fhir:value "xml"
-                ] ;
-                fhir:TestScript.test.action.assert.description [
-                    fhir:value "Confirm that the returned format is XML."
-                ]
-            ]
-        ],
-            [
             fhir:index "5"^^xsd:integer ;
             fhir:TestScript.test.action.assert [
                 fhir:TestScript.test.action.assert.description [
@@ -573,6 +540,28 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-search DIFFERENCE: ===
             ]
         ],
             [
+            fhir:index "2"^^xsd:integer ;
+            fhir:TestScript.test.action.assert [
+                fhir:TestScript.test.action.assert.contentType [
+                    fhir:value "xml"
+                ] ;
+                fhir:TestScript.test.action.assert.description [
+                    fhir:value "Confirm that the returned format is XML."
+                ]
+            ]
+        ],
+            [
+            fhir:index "6"^^xsd:integer ;
+            fhir:TestScript.test.action.assert [
+                fhir:TestScript.test.action.assert.description [
+                    fhir:value "Confirm that the returned Bundle total is greater than or equal to the number of returned entries."
+                ] ;
+                fhir:TestScript.test.action.assert.expression [
+                    fhir:value "Bundle.total.toInteger() >= entry.count()"
+                ]
+            ]
+        ],
+            [
             fhir:index "1"^^xsd:integer ;
             fhir:TestScript.test.action.assert [
                 fhir:TestScript.test.action.assert.description [
@@ -580,6 +569,28 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-search DIFFERENCE: ===
                 ] ;
                 fhir:TestScript.test.action.assert.response [
                     fhir:value "okay"
+                ]
+            ]
+        ],
+            [
+            fhir:index "3"^^xsd:integer ;
+            fhir:TestScript.test.action.assert [
+                fhir:TestScript.test.action.assert.description [
+                    fhir:value "Confirm that the returned resource type is Bundle."
+                ] ;
+                fhir:TestScript.test.action.assert.resource [
+                    fhir:value "Bundle"
+                ]
+            ]
+        ],
+            [
+            fhir:index "4"^^xsd:integer ;
+            fhir:TestScript.test.action.assert [
+                fhir:TestScript.test.action.assert.description [
+                    fhir:value "Confirm that the returned Bundle conforms to the base FHIR specification."
+                ] ;
+                fhir:TestScript.test.action.assert.validateProfileId [
+                    fhir:value "bundle-profile"
                 ]
             ]
         ],
@@ -607,17 +618,6 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-search DIFFERENCE: ===
                     ]
                 ]
             ]
-        ],
-            [
-            fhir:index "4"^^xsd:integer ;
-            fhir:TestScript.test.action.assert [
-                fhir:TestScript.test.action.assert.description [
-                    fhir:value "Confirm that the returned Bundle conforms to the base FHIR specification."
-                ] ;
-                fhir:TestScript.test.action.assert.validateProfileId [
-                    fhir:value "bundle-profile"
-                ]
-            ]
         ] ;
         fhir:TestScript.test.description [
             fhir:value "Search for Patient resources using the user defined dynamic variables ${PatientSearchFamilyName} and ${PatientSearchGivenName} and validate response."
@@ -642,6 +642,18 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-search DIFFERENCE: ===
         ]
     ],
         [
+        fhir:index "2"^^xsd:integer ;
+        fhir:TestScript.variable.description [
+            fhir:value "Enter patient search criteria for a known given name on the target system"
+        ] ;
+        fhir:TestScript.variable.hint [
+            fhir:value "[Given name]"
+        ] ;
+        fhir:TestScript.variable.name [
+            fhir:value "PatientSearchGivenName"
+        ]
+    ],
+        [
         fhir:index "0"^^xsd:integer ;
         fhir:TestScript.variable.headerField [
             fhir:value "Location"
@@ -663,18 +675,6 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-search DIFFERENCE: ===
         ] ;
         fhir:TestScript.variable.name [
             fhir:value "PatientSearchBundleTotal"
-        ]
-    ],
-        [
-        fhir:index "2"^^xsd:integer ;
-        fhir:TestScript.variable.description [
-            fhir:value "Enter patient search criteria for a known given name on the target system"
-        ] ;
-        fhir:TestScript.variable.hint [
-            fhir:value "[Given name]"
-        ] ;
-        fhir:TestScript.variable.name [
-            fhir:value "PatientSearchGivenName"
         ]
     ] ;
     fhir:TestScript.version [

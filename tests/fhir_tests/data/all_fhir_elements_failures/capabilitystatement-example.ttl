@@ -171,12 +171,12 @@ Subject http://hl7.org/fhir/us/core/StructureDefinition/familymemberhistory-gene
         fhir:value "ACME-EHR"
     ] ;
     fhir:CapabilityStatement.patchFormat [
-        fhir:index "0"^^xsd:integer ;
-        fhir:value "application/xml-patch+xml"
-    ],
-        [
         fhir:index "1"^^xsd:integer ;
         fhir:value "application/json-patch+json"
+    ],
+        [
+        fhir:index "0"^^xsd:integer ;
+        fhir:value "application/xml-patch+xml"
     ] ;
     fhir:CapabilityStatement.profile [
         fhir:index "0"^^xsd:integer ;
@@ -233,21 +233,12 @@ Subject http://hl7.org/fhir/us/core/StructureDefinition/familymemberhistory-gene
                 fhir:value "This server does not let the clients create identities."
             ] ;
             fhir:CapabilityStatement.rest.resource.interaction [
-                fhir:index "0"^^xsd:integer ;
+                fhir:index "1"^^xsd:integer ;
                 fhir:CapabilityStatement.rest.resource.interaction.code [
-                    fhir:value "read"
-                ]
-            ],
-                [
-                fhir:index "4"^^xsd:integer ;
-                fhir:CapabilityStatement.rest.resource.interaction.code [
-                    fhir:value "create"
-                ]
-            ],
-                [
-                fhir:index "3"^^xsd:integer ;
-                fhir:CapabilityStatement.rest.resource.interaction.code [
-                    fhir:value "history-instance"
+                    fhir:value "vread"
+                ] ;
+                fhir:CapabilityStatement.rest.resource.interaction.documentation [
+                    fhir:value "Only supported for patient records since 12-Dec 2012"
                 ]
             ],
                 [
@@ -257,18 +248,27 @@ Subject http://hl7.org/fhir/us/core/StructureDefinition/familymemberhistory-gene
                 ]
             ],
                 [
+                fhir:index "4"^^xsd:integer ;
+                fhir:CapabilityStatement.rest.resource.interaction.code [
+                    fhir:value "create"
+                ]
+            ],
+                [
                 fhir:index "2"^^xsd:integer ;
                 fhir:CapabilityStatement.rest.resource.interaction.code [
                     fhir:value "update"
                 ]
             ],
                 [
-                fhir:index "1"^^xsd:integer ;
+                fhir:index "3"^^xsd:integer ;
                 fhir:CapabilityStatement.rest.resource.interaction.code [
-                    fhir:value "vread"
-                ] ;
-                fhir:CapabilityStatement.rest.resource.interaction.documentation [
-                    fhir:value "Only supported for patient records since 12-Dec 2012"
+                    fhir:value "history-instance"
+                ]
+            ],
+                [
+                fhir:index "0"^^xsd:integer ;
+                fhir:CapabilityStatement.rest.resource.interaction.code [
+                    fhir:value "read"
                 ]
             ] ;
             fhir:CapabilityStatement.rest.resource.profile [
@@ -285,18 +285,6 @@ Subject http://hl7.org/fhir/us/core/StructureDefinition/familymemberhistory-gene
                 fhir:value "Organization"
             ] ;
             fhir:CapabilityStatement.rest.resource.searchParam [
-                fhir:index "1"^^xsd:integer ;
-                fhir:CapabilityStatement.rest.resource.searchParam.definition [
-                    fhir:value "http://hl7.org/fhir/SearchParameter/Patient-general-practitioner"
-                ] ;
-                fhir:CapabilityStatement.rest.resource.searchParam.name [
-                    fhir:value "general-practitioner"
-                ] ;
-                fhir:CapabilityStatement.rest.resource.searchParam.type [
-                    fhir:value "reference"
-                ]
-            ],
-                [
                 fhir:index "0"^^xsd:integer ;
                 fhir:CapabilityStatement.rest.resource.searchParam.definition [
                     fhir:value "http://hl7.org/fhir/SearchParameter/Patient-identifier"
@@ -309,6 +297,18 @@ Subject http://hl7.org/fhir/us/core/StructureDefinition/familymemberhistory-gene
                 ] ;
                 fhir:CapabilityStatement.rest.resource.searchParam.type [
                     fhir:value "token"
+                ]
+            ],
+                [
+                fhir:index "1"^^xsd:integer ;
+                fhir:CapabilityStatement.rest.resource.searchParam.definition [
+                    fhir:value "http://hl7.org/fhir/SearchParameter/Patient-general-practitioner"
+                ] ;
+                fhir:CapabilityStatement.rest.resource.searchParam.name [
+                    fhir:value "general-practitioner"
+                ] ;
+                fhir:CapabilityStatement.rest.resource.searchParam.type [
+                    fhir:value "reference"
                 ]
             ] ;
             fhir:CapabilityStatement.rest.resource.searchRevInclude [

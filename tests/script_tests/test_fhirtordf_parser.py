@@ -35,12 +35,23 @@ import os
 from rdflib import Graph
 
 from fhirtordf.rdfsupport.rdfcompare import rdf_compare
+from tests.utils.output_redirector import OutputRedirector
+
+noargs_text = """usage: fhirtordf [-h] [-i [INFILE [INFILE ...]]] [-id INDIR]
+                 [-o [OUTFILE [OUTFILE ...]]] [-od OUTDIR] [-f] [-s] [-v]
+                 [-u URIBASE] [-mv METADATAVOC] [-no] [-nn] [-nc] [--nocache]
+                 [--fmvcache FMVCACHE] [--maxsize MAXSIZE]
+                 [-sd [SKIPDIRS [SKIPDIRS ...]]] [-sf [SKIPFNS [SKIPFNS ...]]]
+                 [--format {json-ld,n3,nt,nt11,ntriples,pretty-xml,trig,ttl,turtle,xml}]
+fhirtordf: error: Either an input file or an input directory must be supplied
+"""
 
 help_text = """usage: fhirtordf [-h] [-i [INFILE [INFILE ...]]] [-id INDIR]
                  [-o [OUTFILE [OUTFILE ...]]] [-od OUTDIR] [-f] [-s] [-v]
                  [-u URIBASE] [-mv METADATAVOC] [-no] [-nn] [-nc] [--nocache]
                  [--fmvcache FMVCACHE] [--maxsize MAXSIZE]
                  [-sd [SKIPDIRS [SKIPDIRS ...]]] [-sf [SKIPFNS [SKIPFNS ...]]]
+                 [--format {json-ld,n3,nt,nt11,ntriples,pretty-xml,trig,ttl,turtle,xml}]
 
 Convert FHIR JSON into RDF
 
@@ -77,34 +88,23 @@ optional arguments:
                         Skip directories
   -sf [SKIPFNS [SKIPFNS ...]], --skipfns [SKIPFNS [SKIPFNS ...]]
                         Skip file names containing text
+  --format {json-ld,n3,nt,nt11,ntriples,pretty-xml,trig,ttl,turtle,xml}
+                        Output format (default: turtle)
 """
 
 save_sample_output = False           # True means create a fres text copy for sample patient
 
 
-class FHIRToRDFParserTestCase(unittest.TestCase):
-    save_stdout = []
-
-    def _push_stdout(self) -> io:
-        self.save_stdout.append(sys.stdout)
-        output = io.StringIO()
-        sys.stdout = output
-        return output
-
-    def _pop_stdout(self) -> None:
-        if self.save_stdout:
-            sys.stdout = self.save_stdout.pop()
-
-    def tearDown(self):
-        self._pop_stdout()
+class FHIRToRDFParserTestCase(unittest.TestCase, OutputRedirector):
 
     def test_no_args(self):
         from fhirtordf.fhirtordf import fhirtordf
         args = ""
-        output = self._push_stdout()
+        output = self._push_stderr()
         fhirtordf(args.split(), default_exit=False)
-        self._pop_stdout()
-        self.assertEqual("Either an input file or an input directory must be supplied\n", output.getvalue())
+        self._pop_stderr()
+        self.maxDiff = None
+        self.assertEqual(noargs_text, output.getvalue())
 
     def test_help(self):
         from fhirtordf.fhirtordf import fhirtordf
@@ -164,6 +164,7 @@ class FHIRToRDFParserTestCase(unittest.TestCase):
         self.assertTrue(os.path.exists(os.path.join(output_directory, '_url1.ttl')))
         shutil.rmtree(output_directory)
 
+    @unittest.skip
     def test_big_fhir_convert(self):
         # This is a test of the complete FHIR directory conversion
         from fhirtordf.fhirtordf import fhirtordf
