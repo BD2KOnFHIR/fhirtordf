@@ -2,8 +2,11 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix v2: <http://hl7.org/fhir/v2/> .
 @prefix v2-0131: <http://hl7.org/fhir/v2/0131> .
 @prefix v2-0203: <http://hl7.org/fhir/v2/0203> .
+@prefix v3: <http://hl7.org/fhir/v3/> .
 @prefix w5: <http://hl7.org/fhir/w5#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -214,33 +217,6 @@
         ]
     ] ;
     fhir:Patient.name [
-        fhir:index "0"^^xsd:integer ;
-        fhir:HumanName.family [
-            fhir:value "Chalmers"
-        ] ;
-        fhir:HumanName.given [
-            fhir:index "1"^^xsd:integer ;
-            fhir:value "James"
-        ],
-            [
-            fhir:index "0"^^xsd:integer ;
-            fhir:value "Peter"
-        ] ;
-        fhir:HumanName.use [
-            fhir:value "official"
-        ]
-    ],
-        [
-        fhir:index "1"^^xsd:integer ;
-        fhir:HumanName.given [
-            fhir:index "0"^^xsd:integer ;
-            fhir:value "Jim"
-        ] ;
-        fhir:HumanName.use [
-            fhir:value "usual"
-        ]
-    ],
-        [
         fhir:index "2"^^xsd:integer ;
         fhir:HumanName.family [
             fhir:value "Windsor"
@@ -261,6 +237,33 @@
         fhir:HumanName.use [
             fhir:value "maiden"
         ]
+    ],
+        [
+        fhir:index "1"^^xsd:integer ;
+        fhir:HumanName.given [
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "Jim"
+        ] ;
+        fhir:HumanName.use [
+            fhir:value "usual"
+        ]
+    ],
+        [
+        fhir:index "0"^^xsd:integer ;
+        fhir:HumanName.family [
+            fhir:value "Chalmers"
+        ] ;
+        fhir:HumanName.given [
+            fhir:index "1"^^xsd:integer ;
+            fhir:value "James"
+        ],
+            [
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "Peter"
+        ] ;
+        fhir:HumanName.use [
+            fhir:value "official"
+        ]
     ] ;
     fhir:Patient.telecom [
         fhir:index "0"^^xsd:integer ;
@@ -269,20 +272,18 @@
         ]
     ],
         [
-        fhir:index "3"^^xsd:integer ;
-        fhir:ContactPoint.period [
-            fhir:Period.end [
-                fhir:value "2014-01-01"^^xsd:gYear
-            ]
+        fhir:index "2"^^xsd:integer ;
+        fhir:ContactPoint.rank [
+            fhir:value "2"^^xsd:positiveInteger
         ] ;
         fhir:ContactPoint.system [
             fhir:value "phone"
         ] ;
         fhir:ContactPoint.use [
-            fhir:value "old"
+            fhir:value "mobile"
         ] ;
         fhir:ContactPoint.value [
-            fhir:value "(03) 5555 8834"
+            fhir:value "(03) 3410 5613"
         ]
     ],
         [
@@ -301,18 +302,20 @@
         ]
     ],
         [
-        fhir:index "2"^^xsd:integer ;
-        fhir:ContactPoint.rank [
-            fhir:value "2"^^xsd:positiveInteger
+        fhir:index "3"^^xsd:integer ;
+        fhir:ContactPoint.period [
+            fhir:Period.end [
+                fhir:value "2014-01-01"^^xsd:gYear
+            ]
         ] ;
         fhir:ContactPoint.system [
             fhir:value "phone"
         ] ;
         fhir:ContactPoint.use [
-            fhir:value "mobile"
+            fhir:value "old"
         ] ;
         fhir:ContactPoint.value [
-            fhir:value "(03) 3410 5613"
+            fhir:value "(03) 5555 8834"
         ]
     ] ;
     fhir:Resource.id [

@@ -3,6 +3,8 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sct: <http://snomed.info/id/> .
+@prefix v2: <http://hl7.org/fhir/v2/> .
+@prefix v3: <http://hl7.org/fhir/v3/> .
 @prefix w5: <http://hl7.org/fhir/w5#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -15,18 +17,6 @@
     fhir:ActivityDefinition.contact [
         fhir:index "0"^^xsd:integer ;
         fhir:ContactDetail.telecom [
-            fhir:index "1"^^xsd:integer ;
-            fhir:ContactPoint.system [
-                fhir:value "email"
-            ] ;
-            fhir:ContactPoint.use [
-                fhir:value "work"
-            ] ;
-            fhir:ContactPoint.value [
-                fhir:value "info@motivemi.com"
-            ]
-        ],
-            [
             fhir:index "0"^^xsd:integer ;
             fhir:ContactPoint.system [
                 fhir:value "phone"
@@ -36,6 +26,18 @@
             ] ;
             fhir:ContactPoint.value [
                 fhir:value "415-362-4007"
+            ]
+        ],
+            [
+            fhir:index "1"^^xsd:integer ;
+            fhir:ContactPoint.system [
+                fhir:value "email"
+            ] ;
+            fhir:ContactPoint.use [
+                fhir:value "work"
+            ] ;
+            fhir:ContactPoint.value [
+                fhir:value "info@motivemi.com"
             ]
         ]
     ] ;
@@ -126,21 +128,6 @@
         ]
     ] ;
     fhir:ActivityDefinition.dynamicValue [
-        fhir:index "1"^^xsd:integer ;
-        fhir:ActivityDefinition.dynamicValue.description [
-            fhir:value "dispenseRequest.quantity is thirty (30) tablets"
-        ] ;
-        fhir:ActivityDefinition.dynamicValue.expression [
-            fhir:value "30 '{tbl}'"
-        ] ;
-        fhir:ActivityDefinition.dynamicValue.language [
-            fhir:value "text/cql"
-        ] ;
-        fhir:ActivityDefinition.dynamicValue.path [
-            fhir:value "dispenseRequest.quantity"
-        ]
-    ],
-        [
         fhir:index "0"^^xsd:integer ;
         fhir:ActivityDefinition.dynamicValue.description [
             fhir:value "dispenseRequest.numberOfRepeatsAllowed is three (3)"
@@ -153,6 +140,21 @@
         ] ;
         fhir:ActivityDefinition.dynamicValue.path [
             fhir:value "dispenseRequest.numberOfRepeatsAllowed"
+        ]
+    ],
+        [
+        fhir:index "1"^^xsd:integer ;
+        fhir:ActivityDefinition.dynamicValue.description [
+            fhir:value "dispenseRequest.quantity is thirty (30) tablets"
+        ] ;
+        fhir:ActivityDefinition.dynamicValue.expression [
+            fhir:value "30 '{tbl}'"
+        ] ;
+        fhir:ActivityDefinition.dynamicValue.language [
+            fhir:value "text/cql"
+        ] ;
+        fhir:ActivityDefinition.dynamicValue.path [
+            fhir:value "dispenseRequest.quantity"
         ]
     ] ;
     fhir:ActivityDefinition.effectivePeriod [
@@ -211,17 +213,6 @@
         fhir:value "Defines a guideline supported prescription for the treatment of depressive disorders"
     ] ;
     fhir:ActivityDefinition.relatedArtifact [
-        fhir:index "1"^^xsd:integer ;
-        fhir:RelatedArtifact.resource [
-            fhir:Reference.reference [
-                fhir:value "#citalopramMedication"
-            ]
-        ] ;
-        fhir:RelatedArtifact.type [
-            fhir:value "composed-of"
-        ]
-    ],
-        [
         fhir:index "0"^^xsd:integer ;
         fhir:RelatedArtifact.display [
             fhir:value "Practice Guideline for the Treatment of Patients with Major Depressive Disorder"
@@ -231,6 +222,17 @@
         ] ;
         fhir:RelatedArtifact.url [
             fhir:value "http://psychiatryonline.org/pb/assets/raw/sitewide/practice_guidelines/guidelines/mdd.pdf"
+        ]
+    ],
+        [
+        fhir:index "1"^^xsd:integer ;
+        fhir:RelatedArtifact.resource [
+            fhir:Reference.reference [
+                fhir:value "#citalopramMedication"
+            ]
+        ] ;
+        fhir:RelatedArtifact.type [
+            fhir:value "composed-of"
         ]
     ] ;
     fhir:ActivityDefinition.status [
@@ -252,7 +254,7 @@
         fhir:value "This activity definition is used as part of various suicide risk order sets"
     ] ;
     fhir:ActivityDefinition.useContext [
-        fhir:index "3"^^xsd:integer ;
+        fhir:index "4"^^xsd:integer ;
         fhir:UsageContext.code [
             fhir:Coding.code [
                 fhir:value "focus"
@@ -263,13 +265,39 @@
         ] ;
         fhir:UsageContext.valueCodeableConcept [
             fhir:CodeableConcept.coding [
-                a sct:225444004 ;
+                a sct:306206005 ;
                 fhir:index "0"^^xsd:integer ;
                 fhir:Coding.code [
-                    fhir:value "225444004"
+                    fhir:value "306206005"
                 ] ;
                 fhir:Coding.display [
-                    fhir:value "At risk for suicide (finding)"
+                    fhir:value "Referral to service (procedure)"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://snomed.info/sct"
+                ]
+            ]
+        ]
+    ],
+        [
+        fhir:index "1"^^xsd:integer ;
+        fhir:UsageContext.code [
+            fhir:Coding.code [
+                fhir:value "focus"
+            ] ;
+            fhir:Coding.system [
+                fhir:value "http://hl7.org/fhir/usage-context-type"
+            ]
+        ] ;
+        fhir:UsageContext.valueCodeableConcept [
+            fhir:CodeableConcept.coding [
+                a sct:87512008 ;
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "87512008"
+                ] ;
+                fhir:Coding.display [
+                    fhir:value "Mild major depression"
                 ] ;
                 fhir:Coding.system [
                     fhir:value "http://snomed.info/sct"
@@ -296,6 +324,32 @@
                 ] ;
                 fhir:Coding.display [
                     fhir:value "Physician"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://snomed.info/sct"
+                ]
+            ]
+        ]
+    ],
+        [
+        fhir:index "3"^^xsd:integer ;
+        fhir:UsageContext.code [
+            fhir:Coding.code [
+                fhir:value "focus"
+            ] ;
+            fhir:Coding.system [
+                fhir:value "http://hl7.org/fhir/usage-context-type"
+            ]
+        ] ;
+        fhir:UsageContext.valueCodeableConcept [
+            fhir:CodeableConcept.coding [
+                a sct:225444004 ;
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "225444004"
+                ] ;
+                fhir:Coding.display [
+                    fhir:value "At risk for suicide (finding)"
                 ] ;
                 fhir:Coding.system [
                     fhir:value "http://snomed.info/sct"
@@ -373,58 +427,6 @@
                 ] ;
                 fhir:Coding.display [
                     fhir:value "Outpatient environment"
-                ] ;
-                fhir:Coding.system [
-                    fhir:value "http://snomed.info/sct"
-                ]
-            ]
-        ]
-    ],
-        [
-        fhir:index "4"^^xsd:integer ;
-        fhir:UsageContext.code [
-            fhir:Coding.code [
-                fhir:value "focus"
-            ] ;
-            fhir:Coding.system [
-                fhir:value "http://hl7.org/fhir/usage-context-type"
-            ]
-        ] ;
-        fhir:UsageContext.valueCodeableConcept [
-            fhir:CodeableConcept.coding [
-                a sct:306206005 ;
-                fhir:index "0"^^xsd:integer ;
-                fhir:Coding.code [
-                    fhir:value "306206005"
-                ] ;
-                fhir:Coding.display [
-                    fhir:value "Referral to service (procedure)"
-                ] ;
-                fhir:Coding.system [
-                    fhir:value "http://snomed.info/sct"
-                ]
-            ]
-        ]
-    ],
-        [
-        fhir:index "1"^^xsd:integer ;
-        fhir:UsageContext.code [
-            fhir:Coding.code [
-                fhir:value "focus"
-            ] ;
-            fhir:Coding.system [
-                fhir:value "http://hl7.org/fhir/usage-context-type"
-            ]
-        ] ;
-        fhir:UsageContext.valueCodeableConcept [
-            fhir:CodeableConcept.coding [
-                a sct:87512008 ;
-                fhir:index "0"^^xsd:integer ;
-                fhir:Coding.code [
-                    fhir:value "87512008"
-                ] ;
-                fhir:Coding.display [
-                    fhir:value "Mild major depression"
                 ] ;
                 fhir:Coding.system [
                     fhir:value "http://snomed.info/sct"

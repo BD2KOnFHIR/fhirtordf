@@ -160,6 +160,9 @@ Subject http://hl7.org/fhir/Questionnaire/bb DIFFERENCE: =======================
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix v2: <http://hl7.org/fhir/v2/> .
+@prefix v3: <http://hl7.org/fhir/v3/> .
 @prefix w5: <http://hl7.org/fhir/w5#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -195,42 +198,42 @@ Subject http://hl7.org/fhir/Questionnaire/bb DIFFERENCE: =======================
     fhir:Questionnaire.item [
         fhir:index "0"^^xsd:integer ;
         fhir:Questionnaire.item.item [
-            fhir:index "0"^^xsd:integer ;
-            fhir:Questionnaire.item.item.item [
-                fhir:index "0"^^xsd:integer
-            ],
-                [
-                fhir:index "1"^^xsd:integer
-            ] ;
-            fhir:Questionnaire.item.item.linkId [
-                fhir:value "group"
-            ] ;
-            fhir:Questionnaire.item.item.type [
-                fhir:value "group"
-            ]
-        ],
-            [
             fhir:index "1"^^xsd:integer ;
             fhir:Questionnaire.item.item.item [
-                fhir:index "2"^^xsd:integer
+                fhir:index "1"^^xsd:integer
             ],
                 [
                 fhir:index "4"^^xsd:integer
             ],
                 [
-                fhir:index "0"^^xsd:integer
-            ],
-                [
-                fhir:index "1"^^xsd:integer
+                fhir:index "2"^^xsd:integer
             ],
                 [
                 fhir:index "3"^^xsd:integer
+            ],
+                [
+                fhir:index "0"^^xsd:integer
             ] ;
             fhir:Questionnaire.item.item.linkId [
                 fhir:value "neonatalInformation"
             ] ;
             fhir:Questionnaire.item.item.text [
                 fhir:value "Neonatal Information"
+            ] ;
+            fhir:Questionnaire.item.item.type [
+                fhir:value "group"
+            ]
+        ],
+            [
+            fhir:index "0"^^xsd:integer ;
+            fhir:Questionnaire.item.item.item [
+                fhir:index "1"^^xsd:integer
+            ],
+                [
+                fhir:index "0"^^xsd:integer
+            ] ;
+            fhir:Questionnaire.item.item.linkId [
+                fhir:value "group"
             ] ;
             fhir:Questionnaire.item.item.type [
                 fhir:value "group"

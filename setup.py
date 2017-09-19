@@ -4,7 +4,8 @@ import sys
 
 from fhirtordf import __version__
 
-requires = ['python_dateutil', 'rdflib>=4.2.2', 'jsonasobj>=1.1.1', 'dirlistproc>=1.4.5', 'rdflib-jsonld']
+requires = ['python_dateutil', 'rdflib>=4.2.2', 'jsonasobj>=1.1.1', 'dirlistproc>=1.4.5', 'rdflib-jsonld',
+            'isodate']
 if sys.version_info < (3, 5):
     requires.append('typing')
 

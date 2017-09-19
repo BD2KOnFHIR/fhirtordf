@@ -23,6 +23,9 @@ Subject http://hl7.org/fhir/Bundle/bundle-example DIFFERENCE: ==================
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix v2: <http://hl7.org/fhir/v2/> .
+@prefix v3: <http://hl7.org/fhir/v3/> .
 @prefix w5: <http://hl7.org/fhir/w5#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -31,29 +34,29 @@ Subject http://hl7.org/fhir/Bundle/bundle-example DIFFERENCE: ==================
     fhir:nodeRole fhir:treeRoot ;
     fhir:Bundle.entry [
         fhir:Bundle.entry.fullUrl [
-            fhir:value "https://example.com/base/MedicationRequest/3123"
-        ] ;
-        fhir:Bundle.entry.resource <https://example.com/base/MedicationRequest/3123> ;
-        fhir:index "0"^^xsd:integer
-    ],
-        [
-        fhir:Bundle.entry.fullUrl [
             fhir:value "https://example.com/base/Medication/example"
         ] ;
         fhir:Bundle.entry.resource <https://example.com/base/Medication/example> ;
         fhir:index "1"^^xsd:integer
-    ] ;
-    fhir:Bundle.entry.search [
-        fhir:Bundle.entry.search.mode [
-            fhir:value "include"
-        ]
     ],
         [
+        fhir:Bundle.entry.fullUrl [
+            fhir:value "https://example.com/base/MedicationRequest/3123"
+        ] ;
+        fhir:Bundle.entry.resource <https://example.com/base/MedicationRequest/3123> ;
+        fhir:index "0"^^xsd:integer
+    ] ;
+    fhir:Bundle.entry.search [
         fhir:Bundle.entry.search.mode [
             fhir:value "match"
         ] ;
         fhir:Bundle.entry.search.score [
             fhir:value "1"^^xsd:decimal
+        ]
+    ],
+        [
+        fhir:Bundle.entry.search.mode [
+            fhir:value "include"
         ]
     ] ;
     fhir:Bundle.link [

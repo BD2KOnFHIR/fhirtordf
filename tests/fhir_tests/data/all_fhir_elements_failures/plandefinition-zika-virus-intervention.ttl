@@ -125,6 +125,9 @@ Subject http://hl7.org/fhir/ActivityDefinition/provide-contraception-advice DIFF
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix v2: <http://hl7.org/fhir/v2/> .
+@prefix v3: <http://hl7.org/fhir/v3/> .
 @prefix w5: <http://hl7.org/fhir/w5#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -505,42 +508,6 @@ Subject http://hl7.org/fhir/ActivityDefinition/provide-contraception-advice DIFF
     fhir:PlanDefinition.action [
         fhir:index "0"^^xsd:integer ;
         fhir:PlanDefinition.action.action [
-            fhir:index "1"^^xsd:integer ;
-            fhir:PlanDefinition.action.action.condition [
-                fhir:index "0"^^xsd:integer ;
-                fhir:PlanDefinition.action.action.condition.expression [
-                    fhir:value "Should Order Serum + Urine rRT-PCR Test"
-                ] ;
-                fhir:PlanDefinition.action.action.condition.kind [
-                    fhir:value "applicability"
-                ]
-            ] ;
-            fhir:PlanDefinition.action.action.definition [
-                fhir:link <http://hl7.org/fhir/ActivityDefinition/order-serum-urine-rrt-pcr-test> ;
-                fhir:Reference.reference [
-                    fhir:value "ActivityDefinition/order-serum-urine-rrt-pcr-test"
-                ]
-            ]
-        ],
-            [
-            fhir:index "3"^^xsd:integer ;
-            fhir:PlanDefinition.action.action.condition [
-                fhir:index "0"^^xsd:integer ;
-                fhir:PlanDefinition.action.action.condition.expression [
-                    fhir:value "Should Consider IgM Antibody Testing"
-                ] ;
-                fhir:PlanDefinition.action.action.condition.kind [
-                    fhir:value "applicability"
-                ]
-            ] ;
-            fhir:PlanDefinition.action.action.definition [
-                fhir:link <http://hl7.org/fhir/ActivityDefinition/consider-igm-antibody-testing> ;
-                fhir:Reference.reference [
-                    fhir:value "ActivityDefinition/consider-igm-antibody-testing"
-                ]
-            ]
-        ],
-            [
             fhir:index "4"^^xsd:integer ;
             fhir:PlanDefinition.action.action.action [
                 fhir:index "0"^^xsd:integer
@@ -573,6 +540,42 @@ Subject http://hl7.org/fhir/ActivityDefinition/provide-contraception-advice DIFF
                 fhir:link <http://hl7.org/fhir/ActivityDefinition/order-serum-zika-dengue-virus-igm> ;
                 fhir:Reference.reference [
                     fhir:value "ActivityDefinition/order-serum-zika-dengue-virus-igm"
+                ]
+            ]
+        ],
+            [
+            fhir:index "1"^^xsd:integer ;
+            fhir:PlanDefinition.action.action.condition [
+                fhir:index "0"^^xsd:integer ;
+                fhir:PlanDefinition.action.action.condition.expression [
+                    fhir:value "Should Order Serum + Urine rRT-PCR Test"
+                ] ;
+                fhir:PlanDefinition.action.action.condition.kind [
+                    fhir:value "applicability"
+                ]
+            ] ;
+            fhir:PlanDefinition.action.action.definition [
+                fhir:link <http://hl7.org/fhir/ActivityDefinition/order-serum-urine-rrt-pcr-test> ;
+                fhir:Reference.reference [
+                    fhir:value "ActivityDefinition/order-serum-urine-rrt-pcr-test"
+                ]
+            ]
+        ],
+            [
+            fhir:index "3"^^xsd:integer ;
+            fhir:PlanDefinition.action.action.condition [
+                fhir:index "0"^^xsd:integer ;
+                fhir:PlanDefinition.action.action.condition.expression [
+                    fhir:value "Should Consider IgM Antibody Testing"
+                ] ;
+                fhir:PlanDefinition.action.action.condition.kind [
+                    fhir:value "applicability"
+                ]
+            ] ;
+            fhir:PlanDefinition.action.action.definition [
+                fhir:link <http://hl7.org/fhir/ActivityDefinition/consider-igm-antibody-testing> ;
+                fhir:Reference.reference [
+                    fhir:value "ActivityDefinition/consider-igm-antibody-testing"
                 ]
             ]
         ],

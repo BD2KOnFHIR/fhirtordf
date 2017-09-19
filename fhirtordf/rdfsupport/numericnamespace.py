@@ -25,27 +25,24 @@
 # LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
 # OF THE POSSIBILITY OF SUCH DAMAGE.
+from typing import Optional
 
-from rdflib import Namespace, OWL, RDFS, RDF, XSD
+from rdflib import Namespace, URIRef
 
-from fhirtordf.rdfsupport.dottednamespace import DottedNamespace
 
-# TODO: Determine what these various namespaces should actually be
-W5 = DottedNamespace("http://hl7.org/fhir/w5#")
-FHIR = DottedNamespace("http://hl7.org/fhir/")
-LOINC = Namespace("http://loinc.org/owl#")
-SNOMEDCT = Namespace("http://snomed.info/id/")
-RXNORM = Namespace("http://www.nlm.nih.gov/research/umls/rxnorm")
-V3 = Namespace("http://hl7.org/fhir/v3/")
-V2 = Namespace("http://hl7.org/fhir/v2/")
-SCT = Namespace("http://snomed.info/id/")
+class NumericNamespace(Namespace):
+    """
+    An RDF namespace that supports numeric identifiers (e.g. sct:74400008).
+    Notation for use: SCT.C74400008
+    """
+    def __new__(cls, value):
+        return Namespace.__new__(cls, value)
 
-namespaces = {"fhir": FHIR,
-              "owl": OWL,
-              "rdfs": RDFS,
-              "rdf": RDF,
-              "xsd": XSD,
-              "w5": W5,
-              "v2": V2,
-              "v3": V3,
-              "sct": SCT}
+    def __getattr__(self, item: str) -> "URIRef":
+        return URIRef(str(self) + item[1:])
+
+    def __eq__(self, other):
+        return super().__eq__(other)
+
+    def __hash__(self):
+        return super().__hash__()

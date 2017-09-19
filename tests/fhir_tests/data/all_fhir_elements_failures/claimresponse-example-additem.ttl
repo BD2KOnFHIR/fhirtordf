@@ -350,6 +350,9 @@ Subject http://hl7.org/fhir/ClaimResponse/R3503 DIFFERENCE: ====================
 @prefix payeetype: <http://hl7.org/fhir/payeetype> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix v2: <http://hl7.org/fhir/v2/> .
+@prefix v3: <http://hl7.org/fhir/v3/> .
 @prefix w5: <http://hl7.org/fhir/w5#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -357,96 +360,6 @@ Subject http://hl7.org/fhir/ClaimResponse/R3503 DIFFERENCE: ====================
 <http://hl7.org/fhir/ClaimResponse/R3503> a fhir:ClaimResponse ;
     fhir:nodeRole fhir:treeRoot ;
     fhir:ClaimResponse.addItem [
-        fhir:index "1"^^xsd:integer ;
-        fhir:ClaimResponse.addItem.adjudication [
-            fhir:index "2"^^xsd:integer ;
-            fhir:ClaimResponse.addItem.adjudication.amount [
-                fhir:Quantity.code [
-                    fhir:value "USD"
-                ] ;
-                fhir:Quantity.system [
-                    fhir:value "urn:iso:std:iso:4217"
-                ] ;
-                fhir:Quantity.value [
-                    fhir:value "28.47"^^xsd:decimal
-                ]
-            ] ;
-            fhir:ClaimResponse.addItem.adjudication.category [
-                fhir:CodeableConcept.coding [
-                    fhir:index "0"^^xsd:integer ;
-                    fhir:Coding.code [
-                        fhir:value "benefit"
-                    ]
-                ]
-            ]
-        ],
-            [
-            fhir:index "0"^^xsd:integer ;
-            fhir:ClaimResponse.addItem.adjudication.amount [
-                fhir:Quantity.code [
-                    fhir:value "USD"
-                ] ;
-                fhir:Quantity.system [
-                    fhir:value "urn:iso:std:iso:4217"
-                ] ;
-                fhir:Quantity.value [
-                    fhir:value "35.57"^^xsd:decimal
-                ]
-            ] ;
-            fhir:ClaimResponse.addItem.adjudication.category [
-                fhir:CodeableConcept.coding [
-                    fhir:index "0"^^xsd:integer ;
-                    fhir:Coding.code [
-                        fhir:value "eligible"
-                    ]
-                ]
-            ]
-        ],
-            [
-            fhir:index "1"^^xsd:integer ;
-            fhir:ClaimResponse.addItem.adjudication.category [
-                fhir:CodeableConcept.coding [
-                    fhir:index "0"^^xsd:integer ;
-                    fhir:Coding.code [
-                        fhir:value "eligpercent"
-                    ]
-                ]
-            ] ;
-            fhir:ClaimResponse.addItem.adjudication.value [
-                fhir:value "80.0"^^xsd:decimal
-            ]
-        ] ;
-        fhir:ClaimResponse.addItem.fee [
-            fhir:Quantity.code [
-                fhir:value "USD"
-            ] ;
-            fhir:Quantity.system [
-                fhir:value "urn:iso:std:iso:4217"
-            ] ;
-            fhir:Quantity.value [
-                fhir:value "35.57"^^xsd:decimal
-            ]
-        ] ;
-        fhir:ClaimResponse.addItem.sequenceLinkId [
-            fhir:index "0"^^xsd:integer ;
-            fhir:value "1"^^xsd:positiveInteger
-        ] ;
-        fhir:ClaimResponse.addItem.service [
-            fhir:CodeableConcept.coding [
-                fhir:index "0"^^xsd:integer ;
-                fhir:Coding.code [
-                    fhir:value "2141"
-                ] ;
-                fhir:Coding.display [
-                    fhir:value "Radiograph, bytewing"
-                ] ;
-                fhir:Coding.system [
-                    fhir:value "http://example.org/fhir/oralservicecodes"
-                ]
-            ]
-        ]
-    ],
-        [
         fhir:index "0"^^xsd:integer ;
         fhir:ClaimResponse.addItem.adjudication [
             fhir:index "1"^^xsd:integer ;
@@ -468,20 +381,6 @@ Subject http://hl7.org/fhir/ClaimResponse/R3503 DIFFERENCE: ====================
                         fhir:value "copay"
                     ]
                 ]
-            ]
-        ],
-            [
-            fhir:index "2"^^xsd:integer ;
-            fhir:ClaimResponse.addItem.adjudication.category [
-                fhir:CodeableConcept.coding [
-                    fhir:index "0"^^xsd:integer ;
-                    fhir:Coding.code [
-                        fhir:value "eligpercent"
-                    ]
-                ]
-            ] ;
-            fhir:ClaimResponse.addItem.adjudication.value [
-                fhir:value "80.0"^^xsd:decimal
             ]
         ],
             [
@@ -542,6 +441,20 @@ Subject http://hl7.org/fhir/ClaimResponse/R3503 DIFFERENCE: ====================
                     ]
                 ]
             ]
+        ],
+            [
+            fhir:index "2"^^xsd:integer ;
+            fhir:ClaimResponse.addItem.adjudication.category [
+                fhir:CodeableConcept.coding [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "eligpercent"
+                    ]
+                ]
+            ] ;
+            fhir:ClaimResponse.addItem.adjudication.value [
+                fhir:value "80.0"^^xsd:decimal
+            ]
         ] ;
         fhir:ClaimResponse.addItem.fee [
             fhir:Quantity.code [
@@ -592,7 +505,7 @@ Subject http://hl7.org/fhir/ClaimResponse/R3503 DIFFERENCE: ====================
         [
         fhir:index "2"^^xsd:integer ;
         fhir:ClaimResponse.addItem.adjudication [
-            fhir:index "2"^^xsd:integer ;
+            fhir:index "0"^^xsd:integer ;
             fhir:ClaimResponse.addItem.adjudication.amount [
                 fhir:Quantity.code [
                     fhir:value "USD"
@@ -601,14 +514,14 @@ Subject http://hl7.org/fhir/ClaimResponse/R3503 DIFFERENCE: ====================
                     fhir:value "urn:iso:std:iso:4217"
                 ] ;
                 fhir:Quantity.value [
-                    fhir:value "270.0"^^xsd:decimal
+                    fhir:value "350.0"^^xsd:decimal
                 ]
             ] ;
             fhir:ClaimResponse.addItem.adjudication.category [
                 fhir:CodeableConcept.coding [
                     fhir:index "0"^^xsd:integer ;
                     fhir:Coding.code [
-                        fhir:value "benefit"
+                        fhir:value "eligible"
                     ]
                 ]
             ]
@@ -628,7 +541,7 @@ Subject http://hl7.org/fhir/ClaimResponse/R3503 DIFFERENCE: ====================
             ]
         ],
             [
-            fhir:index "0"^^xsd:integer ;
+            fhir:index "2"^^xsd:integer ;
             fhir:ClaimResponse.addItem.adjudication.amount [
                 fhir:Quantity.code [
                     fhir:value "USD"
@@ -637,14 +550,14 @@ Subject http://hl7.org/fhir/ClaimResponse/R3503 DIFFERENCE: ====================
                     fhir:value "urn:iso:std:iso:4217"
                 ] ;
                 fhir:Quantity.value [
-                    fhir:value "350.0"^^xsd:decimal
+                    fhir:value "270.0"^^xsd:decimal
                 ]
             ] ;
             fhir:ClaimResponse.addItem.adjudication.category [
                 fhir:CodeableConcept.coding [
                     fhir:index "0"^^xsd:integer ;
                     fhir:Coding.code [
-                        fhir:value "eligible"
+                        fhir:value "benefit"
                     ]
                 ]
             ]
@@ -698,6 +611,96 @@ Subject http://hl7.org/fhir/ClaimResponse/R3503 DIFFERENCE: ====================
                 ]
             ]
         ]
+    ],
+        [
+        fhir:index "1"^^xsd:integer ;
+        fhir:ClaimResponse.addItem.adjudication [
+            fhir:index "1"^^xsd:integer ;
+            fhir:ClaimResponse.addItem.adjudication.category [
+                fhir:CodeableConcept.coding [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "eligpercent"
+                    ]
+                ]
+            ] ;
+            fhir:ClaimResponse.addItem.adjudication.value [
+                fhir:value "80.0"^^xsd:decimal
+            ]
+        ],
+            [
+            fhir:index "0"^^xsd:integer ;
+            fhir:ClaimResponse.addItem.adjudication.amount [
+                fhir:Quantity.code [
+                    fhir:value "USD"
+                ] ;
+                fhir:Quantity.system [
+                    fhir:value "urn:iso:std:iso:4217"
+                ] ;
+                fhir:Quantity.value [
+                    fhir:value "35.57"^^xsd:decimal
+                ]
+            ] ;
+            fhir:ClaimResponse.addItem.adjudication.category [
+                fhir:CodeableConcept.coding [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "eligible"
+                    ]
+                ]
+            ]
+        ],
+            [
+            fhir:index "2"^^xsd:integer ;
+            fhir:ClaimResponse.addItem.adjudication.amount [
+                fhir:Quantity.code [
+                    fhir:value "USD"
+                ] ;
+                fhir:Quantity.system [
+                    fhir:value "urn:iso:std:iso:4217"
+                ] ;
+                fhir:Quantity.value [
+                    fhir:value "28.47"^^xsd:decimal
+                ]
+            ] ;
+            fhir:ClaimResponse.addItem.adjudication.category [
+                fhir:CodeableConcept.coding [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "benefit"
+                    ]
+                ]
+            ]
+        ] ;
+        fhir:ClaimResponse.addItem.fee [
+            fhir:Quantity.code [
+                fhir:value "USD"
+            ] ;
+            fhir:Quantity.system [
+                fhir:value "urn:iso:std:iso:4217"
+            ] ;
+            fhir:Quantity.value [
+                fhir:value "35.57"^^xsd:decimal
+            ]
+        ] ;
+        fhir:ClaimResponse.addItem.sequenceLinkId [
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "1"^^xsd:positiveInteger
+        ] ;
+        fhir:ClaimResponse.addItem.service [
+            fhir:CodeableConcept.coding [
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "2141"
+                ] ;
+                fhir:Coding.display [
+                    fhir:value "Radiograph, bytewing"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://example.org/fhir/oralservicecodes"
+                ]
+            ]
+        ]
     ] ;
     fhir:ClaimResponse.created [
         fhir:value "2014-08-16"^^xsd:date
@@ -725,8 +728,136 @@ Subject http://hl7.org/fhir/ClaimResponse/R3503 DIFFERENCE: ====================
         ]
     ] ;
     fhir:ClaimResponse.item [
+        fhir:index "0"^^xsd:integer ;
+        fhir:ClaimResponse.item.adjudication [
+            fhir:index "0"^^xsd:integer ;
+            fhir:ClaimResponse.item.adjudication.amount [
+                fhir:Quantity.code [
+                    fhir:value "USD"
+                ] ;
+                fhir:Quantity.system [
+                    fhir:value "urn:iso:std:iso:4217"
+                ] ;
+                fhir:Quantity.value [
+                    fhir:value "0.0"^^xsd:decimal
+                ]
+            ] ;
+            fhir:ClaimResponse.item.adjudication.category [
+                fhir:CodeableConcept.coding [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "eligible"
+                    ]
+                ]
+            ]
+        ],
+            [
+            fhir:index "1"^^xsd:integer ;
+            fhir:ClaimResponse.item.adjudication.amount [
+                fhir:Quantity.code [
+                    fhir:value "USD"
+                ] ;
+                fhir:Quantity.system [
+                    fhir:value "urn:iso:std:iso:4217"
+                ] ;
+                fhir:Quantity.value [
+                    fhir:value "0.0"^^xsd:decimal
+                ]
+            ] ;
+            fhir:ClaimResponse.item.adjudication.category [
+                fhir:CodeableConcept.coding [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "benefit"
+                    ]
+                ]
+            ]
+        ] ;
+        fhir:ClaimResponse.item.sequenceLinkId [
+            fhir:value "1"^^xsd:positiveInteger
+        ]
+    ],
+        [
+        fhir:index "1"^^xsd:integer ;
+        fhir:ClaimResponse.item.adjudication [
+            fhir:index "0"^^xsd:integer ;
+            fhir:ClaimResponse.item.adjudication.amount [
+                fhir:Quantity.code [
+                    fhir:value "USD"
+                ] ;
+                fhir:Quantity.system [
+                    fhir:value "urn:iso:std:iso:4217"
+                ] ;
+                fhir:Quantity.value [
+                    fhir:value "105.0"^^xsd:decimal
+                ]
+            ] ;
+            fhir:ClaimResponse.item.adjudication.category [
+                fhir:CodeableConcept.coding [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "eligible"
+                    ]
+                ]
+            ]
+        ],
+            [
+            fhir:index "1"^^xsd:integer ;
+            fhir:ClaimResponse.item.adjudication.category [
+                fhir:CodeableConcept.coding [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "eligpercent"
+                    ]
+                ]
+            ] ;
+            fhir:ClaimResponse.item.adjudication.value [
+                fhir:value "80.0"^^xsd:decimal
+            ]
+        ],
+            [
+            fhir:index "2"^^xsd:integer ;
+            fhir:ClaimResponse.item.adjudication.amount [
+                fhir:Quantity.code [
+                    fhir:value "USD"
+                ] ;
+                fhir:Quantity.system [
+                    fhir:value "urn:iso:std:iso:4217"
+                ] ;
+                fhir:Quantity.value [
+                    fhir:value "84.0"^^xsd:decimal
+                ]
+            ] ;
+            fhir:ClaimResponse.item.adjudication.category [
+                fhir:CodeableConcept.coding [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "benefit"
+                    ]
+                ]
+            ]
+        ] ;
+        fhir:ClaimResponse.item.sequenceLinkId [
+            fhir:value "2"^^xsd:positiveInteger
+        ]
+    ],
+        [
         fhir:index "2"^^xsd:integer ;
         fhir:ClaimResponse.item.adjudication [
+            fhir:index "1"^^xsd:integer ;
+            fhir:ClaimResponse.item.adjudication.category [
+                fhir:CodeableConcept.coding [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "eligpercent"
+                    ]
+                ]
+            ] ;
+            fhir:ClaimResponse.item.adjudication.value [
+                fhir:value "80.0"^^xsd:decimal
+            ]
+        ],
+            [
             fhir:index "2"^^xsd:integer ;
             fhir:ClaimResponse.item.adjudication.amount [
                 fhir:Quantity.code [
@@ -746,20 +877,6 @@ Subject http://hl7.org/fhir/ClaimResponse/R3503 DIFFERENCE: ====================
                         fhir:value "benefit"
                     ]
                 ]
-            ]
-        ],
-            [
-            fhir:index "1"^^xsd:integer ;
-            fhir:ClaimResponse.item.adjudication.category [
-                fhir:CodeableConcept.coding [
-                    fhir:index "0"^^xsd:integer ;
-                    fhir:Coding.code [
-                        fhir:value "eligpercent"
-                    ]
-                ]
-            ] ;
-            fhir:ClaimResponse.item.adjudication.value [
-                fhir:value "80.0"^^xsd:decimal
             ]
         ],
             [
@@ -851,28 +968,6 @@ Subject http://hl7.org/fhir/ClaimResponse/R3503 DIFFERENCE: ====================
             [
             fhir:index "1"^^xsd:integer ;
             fhir:ClaimResponse.item.detail.adjudication [
-                fhir:index "1"^^xsd:integer ;
-                fhir:ClaimResponse.item.detail.adjudication.amount [
-                    fhir:Quantity.code [
-                        fhir:value "USD"
-                    ] ;
-                    fhir:Quantity.system [
-                        fhir:value "urn:iso:std:iso:4217"
-                    ] ;
-                    fhir:Quantity.value [
-                        fhir:value "0.0"^^xsd:decimal
-                    ]
-                ] ;
-                fhir:ClaimResponse.item.detail.adjudication.category [
-                    fhir:CodeableConcept.coding [
-                        fhir:index "0"^^xsd:integer ;
-                        fhir:Coding.code [
-                            fhir:value "benefit"
-                        ]
-                    ]
-                ]
-            ],
-                [
                 fhir:index "0"^^xsd:integer ;
                 fhir:ClaimResponse.item.detail.adjudication.amount [
                     fhir:Quantity.code [
@@ -893,6 +988,28 @@ Subject http://hl7.org/fhir/ClaimResponse/R3503 DIFFERENCE: ====================
                         ]
                     ]
                 ]
+            ],
+                [
+                fhir:index "1"^^xsd:integer ;
+                fhir:ClaimResponse.item.detail.adjudication.amount [
+                    fhir:Quantity.code [
+                        fhir:value "USD"
+                    ] ;
+                    fhir:Quantity.system [
+                        fhir:value "urn:iso:std:iso:4217"
+                    ] ;
+                    fhir:Quantity.value [
+                        fhir:value "0.0"^^xsd:decimal
+                    ]
+                ] ;
+                fhir:ClaimResponse.item.detail.adjudication.category [
+                    fhir:CodeableConcept.coding [
+                        fhir:index "0"^^xsd:integer ;
+                        fhir:Coding.code [
+                            fhir:value "benefit"
+                        ]
+                    ]
+                ]
             ] ;
             fhir:ClaimResponse.item.detail.sequenceLinkId [
                 fhir:value "2"^^xsd:positiveInteger
@@ -900,120 +1017,6 @@ Subject http://hl7.org/fhir/ClaimResponse/R3503 DIFFERENCE: ====================
         ] ;
         fhir:ClaimResponse.item.sequenceLinkId [
             fhir:value "3"^^xsd:positiveInteger
-        ]
-    ],
-        [
-        fhir:index "0"^^xsd:integer ;
-        fhir:ClaimResponse.item.adjudication [
-            fhir:index "0"^^xsd:integer ;
-            fhir:ClaimResponse.item.adjudication.amount [
-                fhir:Quantity.code [
-                    fhir:value "USD"
-                ] ;
-                fhir:Quantity.system [
-                    fhir:value "urn:iso:std:iso:4217"
-                ] ;
-                fhir:Quantity.value [
-                    fhir:value "0.0"^^xsd:decimal
-                ]
-            ] ;
-            fhir:ClaimResponse.item.adjudication.category [
-                fhir:CodeableConcept.coding [
-                    fhir:index "0"^^xsd:integer ;
-                    fhir:Coding.code [
-                        fhir:value "eligible"
-                    ]
-                ]
-            ]
-        ],
-            [
-            fhir:index "1"^^xsd:integer ;
-            fhir:ClaimResponse.item.adjudication.amount [
-                fhir:Quantity.code [
-                    fhir:value "USD"
-                ] ;
-                fhir:Quantity.system [
-                    fhir:value "urn:iso:std:iso:4217"
-                ] ;
-                fhir:Quantity.value [
-                    fhir:value "0.0"^^xsd:decimal
-                ]
-            ] ;
-            fhir:ClaimResponse.item.adjudication.category [
-                fhir:CodeableConcept.coding [
-                    fhir:index "0"^^xsd:integer ;
-                    fhir:Coding.code [
-                        fhir:value "benefit"
-                    ]
-                ]
-            ]
-        ] ;
-        fhir:ClaimResponse.item.sequenceLinkId [
-            fhir:value "1"^^xsd:positiveInteger
-        ]
-    ],
-        [
-        fhir:index "1"^^xsd:integer ;
-        fhir:ClaimResponse.item.adjudication [
-            fhir:index "2"^^xsd:integer ;
-            fhir:ClaimResponse.item.adjudication.amount [
-                fhir:Quantity.code [
-                    fhir:value "USD"
-                ] ;
-                fhir:Quantity.system [
-                    fhir:value "urn:iso:std:iso:4217"
-                ] ;
-                fhir:Quantity.value [
-                    fhir:value "84.0"^^xsd:decimal
-                ]
-            ] ;
-            fhir:ClaimResponse.item.adjudication.category [
-                fhir:CodeableConcept.coding [
-                    fhir:index "0"^^xsd:integer ;
-                    fhir:Coding.code [
-                        fhir:value "benefit"
-                    ]
-                ]
-            ]
-        ],
-            [
-            fhir:index "1"^^xsd:integer ;
-            fhir:ClaimResponse.item.adjudication.category [
-                fhir:CodeableConcept.coding [
-                    fhir:index "0"^^xsd:integer ;
-                    fhir:Coding.code [
-                        fhir:value "eligpercent"
-                    ]
-                ]
-            ] ;
-            fhir:ClaimResponse.item.adjudication.value [
-                fhir:value "80.0"^^xsd:decimal
-            ]
-        ],
-            [
-            fhir:index "0"^^xsd:integer ;
-            fhir:ClaimResponse.item.adjudication.amount [
-                fhir:Quantity.code [
-                    fhir:value "USD"
-                ] ;
-                fhir:Quantity.system [
-                    fhir:value "urn:iso:std:iso:4217"
-                ] ;
-                fhir:Quantity.value [
-                    fhir:value "105.0"^^xsd:decimal
-                ]
-            ] ;
-            fhir:ClaimResponse.item.adjudication.category [
-                fhir:CodeableConcept.coding [
-                    fhir:index "0"^^xsd:integer ;
-                    fhir:Coding.code [
-                        fhir:value "eligible"
-                    ]
-                ]
-            ]
-        ] ;
-        fhir:ClaimResponse.item.sequenceLinkId [
-            fhir:value "2"^^xsd:positiveInteger
         ]
     ] ;
     fhir:ClaimResponse.outcome [

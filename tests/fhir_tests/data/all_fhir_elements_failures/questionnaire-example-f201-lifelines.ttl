@@ -81,6 +81,9 @@ Subject http://hl7.org/fhir/Questionnaire/f201 DIFFERENCE: =====================
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix v2: <http://hl7.org/fhir/v2/> .
+@prefix v3: <http://hl7.org/fhir/v3/> .
 @prefix w5: <http://hl7.org/fhir/w5#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -120,32 +123,20 @@ Subject http://hl7.org/fhir/Questionnaire/f201 DIFFERENCE: =====================
         fhir:value "2010-01-01"^^xsd:gYear
     ] ;
     fhir:Questionnaire.item [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Questionnaire.item.linkId [
+            fhir:value "1"
+        ] ;
+        fhir:Questionnaire.item.text [
+            fhir:value "Do you have allergies?"
+        ] ;
+        fhir:Questionnaire.item.type [
+            fhir:value "boolean"
+        ]
+    ],
+        [
         fhir:index "1"^^xsd:integer ;
         fhir:Questionnaire.item.item [
-            fhir:index "3"^^xsd:integer ;
-            fhir:Questionnaire.item.item.linkId [
-                fhir:value "2.4"
-            ] ;
-            fhir:Questionnaire.item.item.text [
-                fhir:value "What is your marital status?"
-            ] ;
-            fhir:Questionnaire.item.item.type [
-                fhir:value "string"
-            ]
-        ],
-            [
-            fhir:index "1"^^xsd:integer ;
-            fhir:Questionnaire.item.item.linkId [
-                fhir:value "2.2"
-            ] ;
-            fhir:Questionnaire.item.item.text [
-                fhir:value "What is your date of birth?"
-            ] ;
-            fhir:Questionnaire.item.item.type [
-                fhir:value "date"
-            ]
-        ],
-            [
             fhir:index "0"^^xsd:integer ;
             fhir:Questionnaire.item.item.linkId [
                 fhir:value "2.1"
@@ -168,6 +159,30 @@ Subject http://hl7.org/fhir/Questionnaire/f201 DIFFERENCE: =====================
             fhir:Questionnaire.item.item.type [
                 fhir:value "string"
             ]
+        ],
+            [
+            fhir:index "3"^^xsd:integer ;
+            fhir:Questionnaire.item.item.linkId [
+                fhir:value "2.4"
+            ] ;
+            fhir:Questionnaire.item.item.text [
+                fhir:value "What is your marital status?"
+            ] ;
+            fhir:Questionnaire.item.item.type [
+                fhir:value "string"
+            ]
+        ],
+            [
+            fhir:index "1"^^xsd:integer ;
+            fhir:Questionnaire.item.item.linkId [
+                fhir:value "2.2"
+            ] ;
+            fhir:Questionnaire.item.item.text [
+                fhir:value "What is your date of birth?"
+            ] ;
+            fhir:Questionnaire.item.item.type [
+                fhir:value "date"
+            ]
         ] ;
         fhir:Questionnaire.item.linkId [
             fhir:value "2"
@@ -180,38 +195,26 @@ Subject http://hl7.org/fhir/Questionnaire/f201 DIFFERENCE: =====================
         ]
     ],
         [
-        fhir:index "0"^^xsd:integer ;
-        fhir:Questionnaire.item.linkId [
-            fhir:value "1"
-        ] ;
-        fhir:Questionnaire.item.text [
-            fhir:value "Do you have allergies?"
-        ] ;
-        fhir:Questionnaire.item.type [
-            fhir:value "boolean"
-        ]
-    ],
-        [
         fhir:index "2"^^xsd:integer ;
         fhir:Questionnaire.item.item [
-            fhir:index "0"^^xsd:integer ;
-            fhir:Questionnaire.item.item.linkId [
-                fhir:value "3.1"
-            ] ;
-            fhir:Questionnaire.item.item.text [
-                fhir:value "Do you smoke?"
-            ] ;
-            fhir:Questionnaire.item.item.type [
-                fhir:value "boolean"
-            ]
-        ],
-            [
             fhir:index "1"^^xsd:integer ;
             fhir:Questionnaire.item.item.linkId [
                 fhir:value "3.2"
             ] ;
             fhir:Questionnaire.item.item.text [
                 fhir:value "Do you drink alchohol?"
+            ] ;
+            fhir:Questionnaire.item.item.type [
+                fhir:value "boolean"
+            ]
+        ],
+            [
+            fhir:index "0"^^xsd:integer ;
+            fhir:Questionnaire.item.item.linkId [
+                fhir:value "3.1"
+            ] ;
+            fhir:Questionnaire.item.item.text [
+                fhir:value "Do you smoke?"
             ] ;
             fhir:Questionnaire.item.item.type [
                 fhir:value "boolean"

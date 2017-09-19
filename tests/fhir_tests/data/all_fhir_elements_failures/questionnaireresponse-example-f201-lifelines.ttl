@@ -121,6 +121,9 @@ Subject http://hl7.org/fhir/QuestionnaireResponse/f201 DIFFERENCE: =============
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix v2: <http://hl7.org/fhir/v2/> .
+@prefix v3: <http://hl7.org/fhir/v3/> .
 @prefix w5: <http://hl7.org/fhir/w5#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -143,75 +146,6 @@ Subject http://hl7.org/fhir/QuestionnaireResponse/f201 DIFFERENCE: =============
         fhir:value "2013-06-18T00:00:00+01:00"^^xsd:dateTime
     ] ;
     fhir:QuestionnaireResponse.item [
-        fhir:index "1"^^xsd:integer ;
-        fhir:QuestionnaireResponse.item.item [
-            fhir:index "2"^^xsd:integer ;
-            fhir:QuestionnaireResponse.item.item.answer [
-                fhir:index "0"^^xsd:integer ;
-                fhir:QuestionnaireResponse.item.item.answer.valueString [
-                    fhir:value "The Netherlands"
-                ]
-            ] ;
-            fhir:QuestionnaireResponse.item.item.linkId [
-                fhir:value "2.3"
-            ] ;
-            fhir:QuestionnaireResponse.item.item.text [
-                fhir:value "What is your country of birth?"
-            ]
-        ],
-            [
-            fhir:index "1"^^xsd:integer ;
-            fhir:QuestionnaireResponse.item.item.answer [
-                fhir:index "0"^^xsd:integer ;
-                fhir:QuestionnaireResponse.item.item.answer.valueDate [
-                    fhir:value "1960-03-13"^^xsd:date
-                ]
-            ] ;
-            fhir:QuestionnaireResponse.item.item.linkId [
-                fhir:value "2.2"
-            ] ;
-            fhir:QuestionnaireResponse.item.item.text [
-                fhir:value "What is your date of birth?"
-            ]
-        ],
-            [
-            fhir:index "3"^^xsd:integer ;
-            fhir:QuestionnaireResponse.item.item.answer [
-                fhir:index "0"^^xsd:integer ;
-                fhir:QuestionnaireResponse.item.item.answer.valueString [
-                    fhir:value "married"
-                ]
-            ] ;
-            fhir:QuestionnaireResponse.item.item.linkId [
-                fhir:value "2.4"
-            ] ;
-            fhir:QuestionnaireResponse.item.item.text [
-                fhir:value "What is your marital status?"
-            ]
-        ],
-            [
-            fhir:index "0"^^xsd:integer ;
-            fhir:QuestionnaireResponse.item.item.answer [
-                fhir:index "0"^^xsd:integer ;
-                fhir:QuestionnaireResponse.item.item.answer.valueString [
-                    fhir:value "Male"
-                ]
-            ] ;
-            fhir:QuestionnaireResponse.item.item.linkId [
-                fhir:value "2.1"
-            ] ;
-            fhir:QuestionnaireResponse.item.item.text [
-                fhir:value "What is your gender?"
-            ]
-        ] ;
-        fhir:QuestionnaireResponse.item.linkId [
-            fhir:value "2"
-        ] ;
-        fhir:QuestionnaireResponse.item.text [
-            fhir:value "General questions"
-        ]
-    ],
-        [
         fhir:index "2"^^xsd:integer ;
         fhir:QuestionnaireResponse.item.item [
             fhir:index "0"^^xsd:integer ;
@@ -269,6 +203,75 @@ Subject http://hl7.org/fhir/QuestionnaireResponse/f201 DIFFERENCE: =============
         ] ;
         fhir:QuestionnaireResponse.item.linkId [
             fhir:value "1"
+        ]
+    ],
+        [
+        fhir:index "1"^^xsd:integer ;
+        fhir:QuestionnaireResponse.item.item [
+            fhir:index "0"^^xsd:integer ;
+            fhir:QuestionnaireResponse.item.item.answer [
+                fhir:index "0"^^xsd:integer ;
+                fhir:QuestionnaireResponse.item.item.answer.valueString [
+                    fhir:value "Male"
+                ]
+            ] ;
+            fhir:QuestionnaireResponse.item.item.linkId [
+                fhir:value "2.1"
+            ] ;
+            fhir:QuestionnaireResponse.item.item.text [
+                fhir:value "What is your gender?"
+            ]
+        ],
+            [
+            fhir:index "2"^^xsd:integer ;
+            fhir:QuestionnaireResponse.item.item.answer [
+                fhir:index "0"^^xsd:integer ;
+                fhir:QuestionnaireResponse.item.item.answer.valueString [
+                    fhir:value "The Netherlands"
+                ]
+            ] ;
+            fhir:QuestionnaireResponse.item.item.linkId [
+                fhir:value "2.3"
+            ] ;
+            fhir:QuestionnaireResponse.item.item.text [
+                fhir:value "What is your country of birth?"
+            ]
+        ],
+            [
+            fhir:index "3"^^xsd:integer ;
+            fhir:QuestionnaireResponse.item.item.answer [
+                fhir:index "0"^^xsd:integer ;
+                fhir:QuestionnaireResponse.item.item.answer.valueString [
+                    fhir:value "married"
+                ]
+            ] ;
+            fhir:QuestionnaireResponse.item.item.linkId [
+                fhir:value "2.4"
+            ] ;
+            fhir:QuestionnaireResponse.item.item.text [
+                fhir:value "What is your marital status?"
+            ]
+        ],
+            [
+            fhir:index "1"^^xsd:integer ;
+            fhir:QuestionnaireResponse.item.item.answer [
+                fhir:index "0"^^xsd:integer ;
+                fhir:QuestionnaireResponse.item.item.answer.valueDate [
+                    fhir:value "1960-03-13"^^xsd:date
+                ]
+            ] ;
+            fhir:QuestionnaireResponse.item.item.linkId [
+                fhir:value "2.2"
+            ] ;
+            fhir:QuestionnaireResponse.item.item.text [
+                fhir:value "What is your date of birth?"
+            ]
+        ] ;
+        fhir:QuestionnaireResponse.item.linkId [
+            fhir:value "2"
+        ] ;
+        fhir:QuestionnaireResponse.item.text [
+            fhir:value "General questions"
         ]
     ] ;
     fhir:QuestionnaireResponse.source [

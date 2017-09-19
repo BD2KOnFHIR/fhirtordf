@@ -3,6 +3,8 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sct: <http://snomed.info/id/> .
+@prefix v2: <http://hl7.org/fhir/v2/> .
+@prefix v3: <http://hl7.org/fhir/v3/> .
 @prefix w5: <http://hl7.org/fhir/w5#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -109,6 +111,24 @@
         ]
     ] ;
     fhir:DomainResource.contained [
+        fhir:index "0"^^xsd:integer ;
+        fhir:CareTeam.participant [
+            fhir:index "0"^^xsd:integer ;
+            fhir:CareTeam.participant.member [
+                fhir:link <http://hl7.org/fhir/Practitioner/f002> ;
+                fhir:Reference.display [
+                    fhir:value "P. Voigt"
+                ] ;
+                fhir:Reference.reference [
+                    fhir:value "Practitioner/f002"
+                ]
+            ]
+        ] ;
+        fhir:Resource.id [
+            fhir:value "careteam"
+        ]
+    ],
+        [
         fhir:index "1"^^xsd:integer ;
         fhir:Goal.description [
             fhir:CodeableConcept.text [
@@ -135,24 +155,6 @@
         ] ;
         fhir:Resource.id [
             fhir:value "goal"
-        ]
-    ],
-        [
-        fhir:index "0"^^xsd:integer ;
-        fhir:CareTeam.participant [
-            fhir:index "0"^^xsd:integer ;
-            fhir:CareTeam.participant.member [
-                fhir:link <http://hl7.org/fhir/Practitioner/f002> ;
-                fhir:Reference.display [
-                    fhir:value "P. Voigt"
-                ] ;
-                fhir:Reference.reference [
-                    fhir:value "Practitioner/f002"
-                ]
-            ]
-        ] ;
-        fhir:Resource.id [
-            fhir:value "careteam"
         ]
     ] ;
     fhir:DomainResource.text [

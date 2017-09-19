@@ -25,27 +25,27 @@
 # LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
 # OF THE POSSIBILITY OF SUCH DAMAGE.
+from typing import Tuple
 
-from rdflib import Namespace, OWL, RDFS, RDF, XSD
+from rdflib import URIRef
 
-from fhirtordf.rdfsupport.dottednamespace import DottedNamespace
+from i2fhirb2.fhir.fhirspecific import FHIR_RESOURCE_RE, FHIR_RE_ID, FHIR_RE_BASE, FHIR_RE_RESOURCE
 
-# TODO: Determine what these various namespaces should actually be
-W5 = DottedNamespace("http://hl7.org/fhir/w5#")
-FHIR = DottedNamespace("http://hl7.org/fhir/")
-LOINC = Namespace("http://loinc.org/owl#")
-SNOMEDCT = Namespace("http://snomed.info/id/")
-RXNORM = Namespace("http://www.nlm.nih.gov/research/umls/rxnorm")
-V3 = Namespace("http://hl7.org/fhir/v3/")
-V2 = Namespace("http://hl7.org/fhir/v2/")
-SCT = Namespace("http://snomed.info/id/")
 
-namespaces = {"fhir": FHIR,
-              "owl": OWL,
-              "rdfs": RDFS,
-              "rdf": RDF,
-              "xsd": XSD,
-              "w5": W5,
-              "v2": V2,
-              "v3": V3,
-              "sct": SCT}
+def uri_to_ide_and_source(uri: URIRef, include_resource: bool=False) -> Tuple[str, str]:
+    """
+    Convert a  URI into a identifier/ identifier source tuple
+    :param uri:  URI
+    :param include_resource: If true, resource type becomes part of the identifier
+    :return: ide, ide_source
+    """
+    uri_str = str(uri)
+    m = FHIR_RESOURCE_RE.match(uri_str)
+    if m:
+        ide = ((m.group(FHIR_RE_RESOURCE) + '/') if include_resource else '') + m.group(FHIR_RE_ID)
+        ide_source = m.group(FHIR_RE_BASE)
+    else:
+        # Assume no history entry if not FHIR format...
+        ide_source, ide = uri_str.rsplit('#', 1) if '#' in uri_str \
+            else uri_str.rsplit('/', 1) if '/' in uri_str else ('UNKNOWN', uri_str)
+    return ide, ide_source

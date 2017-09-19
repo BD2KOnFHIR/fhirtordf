@@ -37,6 +37,9 @@ Subject http://hl7.org/fhir/ImplementationGuide/example DIFFERENCE: ============
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix v2: <http://hl7.org/fhir/v2/> .
+@prefix v3: <http://hl7.org/fhir/v3/> .
 @prefix w5: <http://hl7.org/fhir/w5#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -54,21 +57,6 @@ Subject http://hl7.org/fhir/ImplementationGuide/example DIFFERENCE: ============
         fhir:value "http://h7.org/fhir/fhir.css"
     ] ;
     fhir:ImplementationGuide.contact [
-        fhir:index "0"^^xsd:integer ;
-        fhir:ContactDetail.name [
-            fhir:value "ONC"
-        ] ;
-        fhir:ContactDetail.telecom [
-            fhir:index "0"^^xsd:integer ;
-            fhir:ContactPoint.system [
-                fhir:value "url"
-            ] ;
-            fhir:ContactPoint.value [
-                fhir:value "http://www.healthit.gov"
-            ]
-        ]
-    ],
-        [
         fhir:index "1"^^xsd:integer ;
         fhir:ContactDetail.name [
             fhir:value "HL7"
@@ -80,6 +68,21 @@ Subject http://hl7.org/fhir/ImplementationGuide/example DIFFERENCE: ============
             ] ;
             fhir:ContactPoint.value [
                 fhir:value "http://hl7.org/fhir"
+            ]
+        ]
+    ],
+        [
+        fhir:index "0"^^xsd:integer ;
+        fhir:ContactDetail.name [
+            fhir:value "ONC"
+        ] ;
+        fhir:ContactDetail.telecom [
+            fhir:index "0"^^xsd:integer ;
+            fhir:ContactPoint.system [
+                fhir:value "url"
+            ] ;
+            fhir:ContactPoint.value [
+                fhir:value "http://www.healthit.gov"
             ]
         ]
     ] ;

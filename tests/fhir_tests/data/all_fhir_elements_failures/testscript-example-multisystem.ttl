@@ -221,6 +221,9 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-multisystem DIFFERENCE
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix v2: <http://hl7.org/fhir/v2/> .
+@prefix v3: <http://hl7.org/fhir/v3/> .
 @prefix w5: <http://hl7.org/fhir/w5#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -264,9 +267,9 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-multisystem DIFFERENCE
         fhir:value "TestScript example resource showing use of origin and destination for multisystem support. The single origin will execute a Patient read against the two destination systems using user defined dynamic variables. The test engine will wait at each operation action with a defined origin and destination for the origin test system to send the expected FHIR operation to the destination test system. Once the expected request and response is observed, the test engine will continue with the test execution."
     ] ;
     fhir:TestScript.destination [
-        fhir:index "1"^^xsd:integer ;
+        fhir:index "0"^^xsd:integer ;
         fhir:TestScript.destination.index [
-            fhir:value "2"^^xsd:integer
+            fhir:value "1"^^xsd:integer
         ] ;
         fhir:TestScript.destination.profile [
             fhir:Coding.code [
@@ -275,9 +278,9 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-multisystem DIFFERENCE
         ]
     ],
         [
-        fhir:index "0"^^xsd:integer ;
+        fhir:index "1"^^xsd:integer ;
         fhir:TestScript.destination.index [
-            fhir:value "1"^^xsd:integer
+            fhir:value "2"^^xsd:integer
         ] ;
         fhir:TestScript.destination.profile [
             fhir:Coding.code [
@@ -313,7 +316,7 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-multisystem DIFFERENCE
     ] ;
     fhir:TestScript.metadata [
         fhir:TestScript.metadata.capability [
-            fhir:index "1"^^xsd:integer ;
+            fhir:index "0"^^xsd:integer ;
             fhir:TestScript.metadata.capability.capabilities [
                 fhir:link <http://hl7.org/fhir/CapabilityStatement/example> ;
                 fhir:Reference.reference [
@@ -324,7 +327,7 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-multisystem DIFFERENCE
                 fhir:value "Patient Read Operation"
             ] ;
             fhir:TestScript.metadata.capability.destination [
-                fhir:value "2"^^xsd:integer
+                fhir:value "1"^^xsd:integer
             ] ;
             fhir:TestScript.metadata.capability.link [
                 fhir:index "0"^^xsd:integer ;
@@ -342,7 +345,7 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-multisystem DIFFERENCE
             ]
         ],
             [
-            fhir:index "0"^^xsd:integer ;
+            fhir:index "1"^^xsd:integer ;
             fhir:TestScript.metadata.capability.capabilities [
                 fhir:link <http://hl7.org/fhir/CapabilityStatement/example> ;
                 fhir:Reference.reference [
@@ -353,7 +356,7 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-multisystem DIFFERENCE
                 fhir:value "Patient Read Operation"
             ] ;
             fhir:TestScript.metadata.capability.destination [
-                fhir:value "1"^^xsd:integer
+                fhir:value "2"^^xsd:integer
             ] ;
             fhir:TestScript.metadata.capability.link [
                 fhir:index "0"^^xsd:integer ;
@@ -409,6 +412,71 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-multisystem DIFFERENCE
             fhir:value "01-ReadPatient-Destination1"
         ] ;
         fhir:TestScript.test.action [
+            fhir:index "0"^^xsd:integer ;
+            fhir:TestScript.test.action.operation [
+                fhir:TestScript.test.action.operation.accept [
+                    fhir:value "xml"
+                ] ;
+                fhir:TestScript.test.action.operation.contentType [
+                    fhir:value "xml"
+                ] ;
+                fhir:TestScript.test.action.operation.description [
+                    fhir:value "Read a Patient from the first destination test system and perform basic validation."
+                ] ;
+                fhir:TestScript.test.action.operation.destination [
+                    fhir:value "1"^^xsd:integer
+                ] ;
+                fhir:TestScript.test.action.operation.origin [
+                    fhir:value "1"^^xsd:integer
+                ] ;
+                fhir:TestScript.test.action.operation.params [
+                    fhir:value "/${Dest1PatientResourceId}"
+                ] ;
+                fhir:TestScript.test.action.operation.requestId [
+                    fhir:value "request-read-patient-01"
+                ] ;
+                fhir:TestScript.test.action.operation.resource [
+                    fhir:value "Patient"
+                ] ;
+                fhir:TestScript.test.action.operation.type [
+                    fhir:Coding.code [
+                        fhir:value "read"
+                    ] ;
+                    fhir:Coding.system [
+                        fhir:value "http://hl7.org/fhir/testscript-operation-codes"
+                    ]
+                ]
+            ]
+        ],
+            [
+            fhir:index "5"^^xsd:integer ;
+            fhir:TestScript.test.action.assert [
+                fhir:TestScript.test.action.assert.description [
+                    fhir:value "Confirm that the returned resource type is Patient."
+                ] ;
+                fhir:TestScript.test.action.assert.direction [
+                    fhir:value "response"
+                ] ;
+                fhir:TestScript.test.action.assert.resource [
+                    fhir:value "Patient"
+                ]
+            ]
+        ],
+            [
+            fhir:index "3"^^xsd:integer ;
+            fhir:TestScript.test.action.assert [
+                fhir:TestScript.test.action.assert.description [
+                    fhir:value "Confirm that the returned HTTP status is 200(OK)."
+                ] ;
+                fhir:TestScript.test.action.assert.direction [
+                    fhir:value "response"
+                ] ;
+                fhir:TestScript.test.action.assert.response [
+                    fhir:value "okay"
+                ]
+            ]
+        ],
+            [
             fhir:index "1"^^xsd:integer ;
             fhir:TestScript.test.action.assert [
                 fhir:TestScript.test.action.assert.description [
@@ -452,71 +520,6 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-multisystem DIFFERENCE
                     fhir:value "xml"
                 ]
             ]
-        ],
-            [
-            fhir:index "3"^^xsd:integer ;
-            fhir:TestScript.test.action.assert [
-                fhir:TestScript.test.action.assert.description [
-                    fhir:value "Confirm that the returned HTTP status is 200(OK)."
-                ] ;
-                fhir:TestScript.test.action.assert.direction [
-                    fhir:value "response"
-                ] ;
-                fhir:TestScript.test.action.assert.response [
-                    fhir:value "okay"
-                ]
-            ]
-        ],
-            [
-            fhir:index "5"^^xsd:integer ;
-            fhir:TestScript.test.action.assert [
-                fhir:TestScript.test.action.assert.description [
-                    fhir:value "Confirm that the returned resource type is Patient."
-                ] ;
-                fhir:TestScript.test.action.assert.direction [
-                    fhir:value "response"
-                ] ;
-                fhir:TestScript.test.action.assert.resource [
-                    fhir:value "Patient"
-                ]
-            ]
-        ],
-            [
-            fhir:index "0"^^xsd:integer ;
-            fhir:TestScript.test.action.operation [
-                fhir:TestScript.test.action.operation.accept [
-                    fhir:value "xml"
-                ] ;
-                fhir:TestScript.test.action.operation.contentType [
-                    fhir:value "xml"
-                ] ;
-                fhir:TestScript.test.action.operation.description [
-                    fhir:value "Read a Patient from the first destination test system and perform basic validation."
-                ] ;
-                fhir:TestScript.test.action.operation.destination [
-                    fhir:value "1"^^xsd:integer
-                ] ;
-                fhir:TestScript.test.action.operation.origin [
-                    fhir:value "1"^^xsd:integer
-                ] ;
-                fhir:TestScript.test.action.operation.params [
-                    fhir:value "/${Dest1PatientResourceId}"
-                ] ;
-                fhir:TestScript.test.action.operation.requestId [
-                    fhir:value "request-read-patient-01"
-                ] ;
-                fhir:TestScript.test.action.operation.resource [
-                    fhir:value "Patient"
-                ] ;
-                fhir:TestScript.test.action.operation.type [
-                    fhir:Coding.code [
-                        fhir:value "read"
-                    ] ;
-                    fhir:Coding.system [
-                        fhir:value "http://hl7.org/fhir/testscript-operation-codes"
-                    ]
-                ]
-            ]
         ] ;
         fhir:TestScript.test.description [
             fhir:value "Read a Patient from the first destination test system using the user defined dynamic variable ${Dest1PatientResourceId}. Perform basic validation."
@@ -541,40 +544,6 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-multisystem DIFFERENCE
                 ] ;
                 fhir:TestScript.test.action.assert.response [
                     fhir:value "okay"
-                ]
-            ]
-        ],
-            [
-            fhir:index "1"^^xsd:integer ;
-            fhir:TestScript.test.action.assert [
-                fhir:TestScript.test.action.assert.description [
-                    fhir:value "Confirm that the client requested an Accept of xml."
-                ] ;
-                fhir:TestScript.test.action.assert.direction [
-                    fhir:value "request"
-                ] ;
-                fhir:TestScript.test.action.assert.headerField [
-                    fhir:value "Accept"
-                ] ;
-                fhir:TestScript.test.action.assert.operator [
-                    fhir:value "contains"
-                ] ;
-                fhir:TestScript.test.action.assert.value [
-                    fhir:value "xml"
-                ]
-            ]
-        ],
-            [
-            fhir:index "3"^^xsd:integer ;
-            fhir:TestScript.test.action.assert [
-                fhir:TestScript.test.action.assert.contentType [
-                    fhir:value "xml"
-                ] ;
-                fhir:TestScript.test.action.assert.description [
-                    fhir:value "Confirm that the returned format is XML."
-                ] ;
-                fhir:TestScript.test.action.assert.direction [
-                    fhir:value "response"
                 ]
             ]
         ],
@@ -622,6 +591,40 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-multisystem DIFFERENCE
             ]
         ],
             [
+            fhir:index "3"^^xsd:integer ;
+            fhir:TestScript.test.action.assert [
+                fhir:TestScript.test.action.assert.contentType [
+                    fhir:value "xml"
+                ] ;
+                fhir:TestScript.test.action.assert.description [
+                    fhir:value "Confirm that the returned format is XML."
+                ] ;
+                fhir:TestScript.test.action.assert.direction [
+                    fhir:value "response"
+                ]
+            ]
+        ],
+            [
+            fhir:index "1"^^xsd:integer ;
+            fhir:TestScript.test.action.assert [
+                fhir:TestScript.test.action.assert.description [
+                    fhir:value "Confirm that the client requested an Accept of xml."
+                ] ;
+                fhir:TestScript.test.action.assert.direction [
+                    fhir:value "request"
+                ] ;
+                fhir:TestScript.test.action.assert.headerField [
+                    fhir:value "Accept"
+                ] ;
+                fhir:TestScript.test.action.assert.operator [
+                    fhir:value "contains"
+                ] ;
+                fhir:TestScript.test.action.assert.value [
+                    fhir:value "xml"
+                ]
+            ]
+        ],
+            [
             fhir:index "4"^^xsd:integer ;
             fhir:TestScript.test.action.assert [
                 fhir:TestScript.test.action.assert.description [
@@ -649,21 +652,21 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-multisystem DIFFERENCE
         fhir:value "http://hl7.org/fhir/TestScript/testscript-example-multisystem"
     ] ;
     fhir:TestScript.variable [
-        fhir:index "0"^^xsd:integer ;
-        fhir:TestScript.variable.defaultValue [
-            fhir:value "example"
-        ] ;
-        fhir:TestScript.variable.name [
-            fhir:value "Dest1PatientResourceId"
-        ]
-    ],
-        [
         fhir:index "1"^^xsd:integer ;
         fhir:TestScript.variable.defaultValue [
             fhir:value "example"
         ] ;
         fhir:TestScript.variable.name [
             fhir:value "Dest2PatientResourceId"
+        ]
+    ],
+        [
+        fhir:index "0"^^xsd:integer ;
+        fhir:TestScript.variable.defaultValue [
+            fhir:value "example"
+        ] ;
+        fhir:TestScript.variable.name [
+            fhir:value "Dest1PatientResourceId"
         ]
     ] ;
     fhir:TestScript.version [

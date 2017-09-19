@@ -94,6 +94,9 @@ Subject http://hl7.org/fhir/Observation/f205 DIFFERENCE: =======================
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix v2: <http://hl7.org/fhir/v2/> .
+@prefix v3: <http://hl7.org/fhir/v3/> .
 @prefix w5: <http://hl7.org/fhir/w5#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -125,71 +128,6 @@ Subject http://hl7.org/fhir/Observation/f205 DIFFERENCE: =======================
         fhir:value "GFR estimating equations developed by the Modification of Diet in Renal Disease (MDRD) Study Group and the Chronic Kidney Disease Epidemiology Collaboration (CKD-EPI)...."
     ] ;
     fhir:Observation.component [
-        fhir:index "1"^^xsd:integer ;
-        fhir:Observation.component.code [
-            fhir:CodeableConcept.coding [
-                a loinc:48642-3 ;
-                fhir:index "0"^^xsd:integer ;
-                fhir:Coding.code [
-                    fhir:value "48642-3"
-                ] ;
-                fhir:Coding.display [
-                    fhir:value "Glomerular filtration rate/1.73 sq M predicted among non-blacks [Volume Rate/Area] in Serum or Plasma by Creatinine-based formula (MDRD)"
-                ] ;
-                fhir:Coding.system [
-                    fhir:value "http://loinc.org"
-                ]
-            ]
-        ] ;
-        fhir:Observation.component.referenceRange [
-            fhir:index "0"^^xsd:integer ;
-            fhir:Observation.component.referenceRange.age [
-                fhir:Range.low [
-                    fhir:Quantity.code [
-                        fhir:value "a"
-                    ] ;
-                    fhir:Quantity.system [
-                        fhir:value "http://unitsofmeasure.org"
-                    ] ;
-                    fhir:Quantity.unit [
-                        fhir:value "yrs"
-                    ] ;
-                    fhir:Quantity.value [
-                        fhir:value "18"^^xsd:decimal
-                    ]
-                ]
-            ] ;
-            fhir:Observation.component.referenceRange.low [
-                fhir:Quantity.code [
-                    fhir:value "mL/min/{1.73_m2}"
-                ] ;
-                fhir:Quantity.system [
-                    fhir:value "http://unitsofmeasure.org"
-                ] ;
-                fhir:Quantity.unit [
-                    fhir:value "mL/min/1.73m2"
-                ] ;
-                fhir:Quantity.value [
-                    fhir:value "60"^^xsd:decimal
-                ]
-            ]
-        ] ;
-        fhir:Observation.component.valueQuantity [
-            fhir:Quantity.code [
-                fhir:value "mL/min/{1.73_m2}"
-            ] ;
-            fhir:Quantity.system [
-                fhir:value "http://unitsofmeasure.org"
-            ] ;
-            fhir:Quantity.unit [
-                fhir:value "mL/min/1.73m2"
-            ] ;
-            fhir:Quantity.value [
-                fhir:value "60"^^xsd:decimal
-            ]
-        ]
-    ],
-        [
         fhir:index "0"^^xsd:integer ;
         fhir:Observation.component.code [
             fhir:CodeableConcept.coding [
@@ -251,6 +189,71 @@ Subject http://hl7.org/fhir/Observation/f205 DIFFERENCE: =======================
             ] ;
             fhir:Quantity.comparator [
                 fhir:value ">"
+            ] ;
+            fhir:Quantity.system [
+                fhir:value "http://unitsofmeasure.org"
+            ] ;
+            fhir:Quantity.unit [
+                fhir:value "mL/min/1.73m2"
+            ] ;
+            fhir:Quantity.value [
+                fhir:value "60"^^xsd:decimal
+            ]
+        ]
+    ],
+        [
+        fhir:index "1"^^xsd:integer ;
+        fhir:Observation.component.code [
+            fhir:CodeableConcept.coding [
+                a loinc:48642-3 ;
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "48642-3"
+                ] ;
+                fhir:Coding.display [
+                    fhir:value "Glomerular filtration rate/1.73 sq M predicted among non-blacks [Volume Rate/Area] in Serum or Plasma by Creatinine-based formula (MDRD)"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://loinc.org"
+                ]
+            ]
+        ] ;
+        fhir:Observation.component.referenceRange [
+            fhir:index "0"^^xsd:integer ;
+            fhir:Observation.component.referenceRange.age [
+                fhir:Range.low [
+                    fhir:Quantity.code [
+                        fhir:value "a"
+                    ] ;
+                    fhir:Quantity.system [
+                        fhir:value "http://unitsofmeasure.org"
+                    ] ;
+                    fhir:Quantity.unit [
+                        fhir:value "yrs"
+                    ] ;
+                    fhir:Quantity.value [
+                        fhir:value "18"^^xsd:decimal
+                    ]
+                ]
+            ] ;
+            fhir:Observation.component.referenceRange.low [
+                fhir:Quantity.code [
+                    fhir:value "mL/min/{1.73_m2}"
+                ] ;
+                fhir:Quantity.system [
+                    fhir:value "http://unitsofmeasure.org"
+                ] ;
+                fhir:Quantity.unit [
+                    fhir:value "mL/min/1.73m2"
+                ] ;
+                fhir:Quantity.value [
+                    fhir:value "60"^^xsd:decimal
+                ]
+            ]
+        ] ;
+        fhir:Observation.component.valueQuantity [
+            fhir:Quantity.code [
+                fhir:value "mL/min/{1.73_m2}"
             ] ;
             fhir:Quantity.system [
                 fhir:value "http://unitsofmeasure.org"

@@ -70,6 +70,9 @@ Subject http://hl7.org/fhir/QuestionnaireResponse/3141 DIFFERENCE: =============
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix v2: <http://hl7.org/fhir/v2/> .
+@prefix v3: <http://hl7.org/fhir/v3/> .
 @prefix w5: <http://hl7.org/fhir/w5#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -85,15 +88,6 @@ Subject http://hl7.org/fhir/QuestionnaireResponse/3141 DIFFERENCE: =============
             fhir:value "male"
         ] ;
         fhir:Patient.identifier [
-            fhir:index "0"^^xsd:integer ;
-            fhir:Identifier.system [
-                fhir:value "http://cancer.questionnaire.org/systems/id/patientnr"
-            ] ;
-            fhir:Identifier.value [
-                fhir:value "A34442332"
-            ]
-        ],
-            [
             fhir:index "1"^^xsd:integer ;
             fhir:Identifier.system [
                 fhir:value "urn:oid:2.16.840.1.113883.2.4.6.3"
@@ -106,9 +100,38 @@ Subject http://hl7.org/fhir/QuestionnaireResponse/3141 DIFFERENCE: =============
             fhir:Identifier.value [
                 fhir:value "188912345"
             ]
+        ],
+            [
+            fhir:index "0"^^xsd:integer ;
+            fhir:Identifier.system [
+                fhir:value "http://cancer.questionnaire.org/systems/id/patientnr"
+            ] ;
+            fhir:Identifier.value [
+                fhir:value "A34442332"
+            ]
         ] ;
         fhir:Resource.id [
             fhir:value "patsub"
+        ]
+    ],
+        [
+        fhir:index "2"^^xsd:integer ;
+        fhir:Practitioner.identifier [
+            fhir:index "0"^^xsd:integer ;
+            fhir:Identifier.system [
+                fhir:value "http://cancer.questionnaire.org/systems/id/org"
+            ] ;
+            fhir:Identifier.type [
+                fhir:CodeableConcept.text [
+                    fhir:value "AUMC, Den Helder"
+                ]
+            ] ;
+            fhir:Identifier.value [
+                fhir:value "AUMC"
+            ]
+        ] ;
+        fhir:Resource.id [
+            fhir:value "questauth"
         ]
     ],
         [
@@ -134,26 +157,6 @@ Subject http://hl7.org/fhir/QuestionnaireResponse/3141 DIFFERENCE: =============
         ] ;
         fhir:Resource.id [
             fhir:value "order"
-        ]
-    ],
-        [
-        fhir:index "2"^^xsd:integer ;
-        fhir:Practitioner.identifier [
-            fhir:index "0"^^xsd:integer ;
-            fhir:Identifier.system [
-                fhir:value "http://cancer.questionnaire.org/systems/id/org"
-            ] ;
-            fhir:Identifier.type [
-                fhir:CodeableConcept.text [
-                    fhir:value "AUMC, Den Helder"
-                ]
-            ] ;
-            fhir:Identifier.value [
-                fhir:value "AUMC"
-            ]
-        ] ;
-        fhir:Resource.id [
-            fhir:value "questauth"
         ]
     ] ;
     fhir:DomainResource.text [

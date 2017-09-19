@@ -205,6 +205,9 @@ Subject http://hl7.org/fhir/TestScript/testscript-example DIFFERENCE: ==========
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix v2: <http://hl7.org/fhir/v2/> .
+@prefix v3: <http://hl7.org/fhir/v3/> .
 @prefix variant-state: <http://hl7.org/fhir/variant-state> .
 @prefix w5: <http://hl7.org/fhir/w5#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -252,27 +255,6 @@ Subject http://hl7.org/fhir/TestScript/testscript-example DIFFERENCE: ==========
         fhir:value "true"^^xsd:boolean
     ] ;
     fhir:TestScript.fixture [
-        fhir:index "1"^^xsd:integer ;
-        fhir:Element.id [
-            fhir:value "fixture-patient-minimum"
-        ] ;
-        fhir:TestScript.fixture.autocreate [
-            fhir:value "false"^^xsd:boolean
-        ] ;
-        fhir:TestScript.fixture.autodelete [
-            fhir:value "false"^^xsd:boolean
-        ] ;
-        fhir:TestScript.fixture.resource [
-            fhir:link <http://hl7.org/fhir/Patient/example> ;
-            fhir:Reference.display [
-                fhir:value "Peter Chalmers (minimum)"
-            ] ;
-            fhir:Reference.reference [
-                fhir:value "Patient/example"
-            ]
-        ]
-    ],
-        [
         fhir:index "0"^^xsd:integer ;
         fhir:Element.id [
             fhir:value "fixture-patient-create"
@@ -287,6 +269,27 @@ Subject http://hl7.org/fhir/TestScript/testscript-example DIFFERENCE: ==========
             fhir:link <http://hl7.org/fhir/Patient/example> ;
             fhir:Reference.display [
                 fhir:value "Peter Chalmers"
+            ] ;
+            fhir:Reference.reference [
+                fhir:value "Patient/example"
+            ]
+        ]
+    ],
+        [
+        fhir:index "1"^^xsd:integer ;
+        fhir:Element.id [
+            fhir:value "fixture-patient-minimum"
+        ] ;
+        fhir:TestScript.fixture.autocreate [
+            fhir:value "false"^^xsd:boolean
+        ] ;
+        fhir:TestScript.fixture.autodelete [
+            fhir:value "false"^^xsd:boolean
+        ] ;
+        fhir:TestScript.fixture.resource [
+            fhir:link <http://hl7.org/fhir/Patient/example> ;
+            fhir:Reference.display [
+                fhir:value "Peter Chalmers (minimum)"
             ] ;
             fhir:Reference.reference [
                 fhir:value "Patient/example"
@@ -329,16 +332,16 @@ Subject http://hl7.org/fhir/TestScript/testscript-example DIFFERENCE: ==========
                 fhir:value "Patient Update, Read and Delete Operations"
             ] ;
             fhir:TestScript.metadata.capability.link [
-                fhir:index "1"^^xsd:integer ;
-                fhir:value "http://hl7.org/fhir/http.html#read"
-            ],
-                [
                 fhir:index "2"^^xsd:integer ;
                 fhir:value "http://hl7.org/fhir/http.html#update"
             ],
                 [
                 fhir:index "0"^^xsd:integer ;
                 fhir:value "http://hl7.org/fhir/http.html#delete"
+            ],
+                [
+                fhir:index "1"^^xsd:integer ;
+                fhir:value "http://hl7.org/fhir/http.html#read"
             ] ;
             fhir:TestScript.metadata.capability.required [
                 fhir:value "true"^^xsd:boolean
@@ -411,47 +414,19 @@ Subject http://hl7.org/fhir/TestScript/testscript-example DIFFERENCE: ==========
             ]
         ],
             [
-            fhir:index "0"^^xsd:integer ;
-            fhir:TestScript.setup.action.operation [
-                fhir:TestScript.setup.action.operation.accept [
-                    fhir:value "json"
-                ] ;
-                fhir:TestScript.setup.action.operation.description [
-                    fhir:value "Execute a delete operation to insure the patient does not exist on the server."
-                ] ;
-                fhir:TestScript.setup.action.operation.label [
-                    fhir:value "SetupDeletePatient"
-                ] ;
-                fhir:TestScript.setup.action.operation.params [
-                    fhir:value "/${createResourceId}"
-                ] ;
-                fhir:TestScript.setup.action.operation.resource [
-                    fhir:value "Patient"
-                ] ;
-                fhir:TestScript.setup.action.operation.type [
-                    fhir:Coding.code [
-                        fhir:value "delete"
-                    ] ;
-                    fhir:Coding.system [
-                        fhir:value "http://hl7.org/fhir/testscript-operation-codes"
-                    ]
-                ]
-            ]
-        ],
-            [
-            fhir:index "6"^^xsd:integer ;
+            fhir:index "1"^^xsd:integer ;
             fhir:TestScript.setup.action.assert [
-                fhir:TestScript.setup.action.assert.compareToSourceExpression [
-                    fhir:value "Patient.name.first().family"
-                ] ;
-                fhir:TestScript.setup.action.assert.compareToSourceId [
-                    fhir:value "fixture-patient-create"
-                ] ;
                 fhir:TestScript.setup.action.assert.description [
-                    fhir:value "Confirm that the returned Patient contains the expected family name 'Chalmers'. Uses explicit compareToSourceId reference to fixture-patient-create used to create the Patient."
+                    fhir:value "Confirm that the returned HTTP status is 200(OK) or 204(No Content)."
+                ] ;
+                fhir:TestScript.setup.action.assert.direction [
+                    fhir:value "response"
                 ] ;
                 fhir:TestScript.setup.action.assert.operator [
-                    fhir:value "equals"
+                    fhir:value "in"
+                ] ;
+                fhir:TestScript.setup.action.assert.responseCode [
+                    fhir:value "200,204"
                 ]
             ]
         ],
@@ -490,19 +465,30 @@ Subject http://hl7.org/fhir/TestScript/testscript-example DIFFERENCE: ==========
             ]
         ],
             [
-            fhir:index "1"^^xsd:integer ;
-            fhir:TestScript.setup.action.assert [
-                fhir:TestScript.setup.action.assert.description [
-                    fhir:value "Confirm that the returned HTTP status is 200(OK) or 204(No Content)."
+            fhir:index "0"^^xsd:integer ;
+            fhir:TestScript.setup.action.operation [
+                fhir:TestScript.setup.action.operation.accept [
+                    fhir:value "json"
                 ] ;
-                fhir:TestScript.setup.action.assert.direction [
-                    fhir:value "response"
+                fhir:TestScript.setup.action.operation.description [
+                    fhir:value "Execute a delete operation to insure the patient does not exist on the server."
                 ] ;
-                fhir:TestScript.setup.action.assert.operator [
-                    fhir:value "in"
+                fhir:TestScript.setup.action.operation.label [
+                    fhir:value "SetupDeletePatient"
                 ] ;
-                fhir:TestScript.setup.action.assert.responseCode [
-                    fhir:value "200,204"
+                fhir:TestScript.setup.action.operation.params [
+                    fhir:value "/${createResourceId}"
+                ] ;
+                fhir:TestScript.setup.action.operation.resource [
+                    fhir:value "Patient"
+                ] ;
+                fhir:TestScript.setup.action.operation.type [
+                    fhir:Coding.code [
+                        fhir:value "delete"
+                    ] ;
+                    fhir:Coding.system [
+                        fhir:value "http://hl7.org/fhir/testscript-operation-codes"
+                    ]
                 ]
             ]
         ],
@@ -517,6 +503,23 @@ Subject http://hl7.org/fhir/TestScript/testscript-example DIFFERENCE: ==========
                 ] ;
                 fhir:TestScript.setup.action.assert.responseCode [
                     fhir:value "201"
+                ]
+            ]
+        ],
+            [
+            fhir:index "6"^^xsd:integer ;
+            fhir:TestScript.setup.action.assert [
+                fhir:TestScript.setup.action.assert.compareToSourceExpression [
+                    fhir:value "Patient.name.first().family"
+                ] ;
+                fhir:TestScript.setup.action.assert.compareToSourceId [
+                    fhir:value "fixture-patient-create"
+                ] ;
+                fhir:TestScript.setup.action.assert.description [
+                    fhir:value "Confirm that the returned Patient contains the expected family name 'Chalmers'. Uses explicit compareToSourceId reference to fixture-patient-create used to create the Patient."
+                ] ;
+                fhir:TestScript.setup.action.assert.operator [
+                    fhir:value "equals"
                 ]
             ]
         ]
@@ -602,22 +605,13 @@ Subject http://hl7.org/fhir/TestScript/testscript-example DIFFERENCE: ==========
             ]
         ],
             [
-            fhir:index "2"^^xsd:integer ;
+            fhir:index "4"^^xsd:integer ;
             fhir:TestScript.test.action.assert [
                 fhir:TestScript.test.action.assert.description [
-                    fhir:value "Confirm that the returned HTTP Header Last-Modified is present. Warning only as the server may not support versioning."
+                    fhir:value "Confirm that the returned Patient conforms to the base FHIR specification."
                 ] ;
-                fhir:TestScript.test.action.assert.direction [
-                    fhir:value "response"
-                ] ;
-                fhir:TestScript.test.action.assert.headerField [
-                    fhir:value "Last-Modified"
-                ] ;
-                fhir:TestScript.test.action.assert.operator [
-                    fhir:value "notEmpty"
-                ] ;
-                fhir:TestScript.test.action.assert.warningOnly [
-                    fhir:value "true"^^xsd:boolean
+                fhir:TestScript.test.action.assert.validateProfileId [
+                    fhir:value "patient-profile"
                 ]
             ]
         ],
@@ -656,6 +650,17 @@ Subject http://hl7.org/fhir/TestScript/testscript-example DIFFERENCE: ==========
             ]
         ],
             [
+            fhir:index "3"^^xsd:integer ;
+            fhir:TestScript.test.action.assert [
+                fhir:TestScript.test.action.assert.description [
+                    fhir:value "Confirm that the returned resource type is Patient."
+                ] ;
+                fhir:TestScript.test.action.assert.resource [
+                    fhir:value "Patient"
+                ]
+            ]
+        ],
+            [
             fhir:index "5"^^xsd:integer ;
             fhir:TestScript.test.action.assert [
                 fhir:TestScript.test.action.assert.description [
@@ -672,6 +677,26 @@ Subject http://hl7.org/fhir/TestScript/testscript-example DIFFERENCE: ==========
                 ] ;
                 fhir:TestScript.test.action.assert.value [
                     fhir:value "Chalmers"
+                ]
+            ]
+        ],
+            [
+            fhir:index "2"^^xsd:integer ;
+            fhir:TestScript.test.action.assert [
+                fhir:TestScript.test.action.assert.description [
+                    fhir:value "Confirm that the returned HTTP Header Last-Modified is present. Warning only as the server may not support versioning."
+                ] ;
+                fhir:TestScript.test.action.assert.direction [
+                    fhir:value "response"
+                ] ;
+                fhir:TestScript.test.action.assert.headerField [
+                    fhir:value "Last-Modified"
+                ] ;
+                fhir:TestScript.test.action.assert.operator [
+                    fhir:value "notEmpty"
+                ] ;
+                fhir:TestScript.test.action.assert.warningOnly [
+                    fhir:value "true"^^xsd:boolean
                 ]
             ]
         ],
@@ -709,28 +734,6 @@ Subject http://hl7.org/fhir/TestScript/testscript-example DIFFERENCE: ==========
                 ] ;
                 fhir:TestScript.test.action.assert.path [
                     fhir:value "fhir:Patient/fhir:name/fhir:family/@value"
-                ]
-            ]
-        ],
-            [
-            fhir:index "4"^^xsd:integer ;
-            fhir:TestScript.test.action.assert [
-                fhir:TestScript.test.action.assert.description [
-                    fhir:value "Confirm that the returned Patient conforms to the base FHIR specification."
-                ] ;
-                fhir:TestScript.test.action.assert.validateProfileId [
-                    fhir:value "patient-profile"
-                ]
-            ]
-        ],
-            [
-            fhir:index "3"^^xsd:integer ;
-            fhir:TestScript.test.action.assert [
-                fhir:TestScript.test.action.assert.description [
-                    fhir:value "Confirm that the returned resource type is Patient."
-                ] ;
-                fhir:TestScript.test.action.assert.resource [
-                    fhir:value "Patient"
                 ]
             ]
         ] ;

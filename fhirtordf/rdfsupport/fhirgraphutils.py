@@ -43,8 +43,10 @@ def value(g: Graph, subject: Node, predicate: URIRef, asLiteral=False) -> \
         return None
 
     if all(isinstance(v, BNode) for v in values) and predicate != FHIR.value:
-        vv = list(set(g.value(v, FHIR.value) for v in values))
-        if len(vv) > 1:
+        vv = [gv for gv in set(g.value(v, FHIR.value) for v in values) if gv is not None]
+        if len(vv) == 0:
+            return None
+        elif len(vv) > 1:
             raise UniquenessError("Non-unique values for {} {} : [{}]".format(subject, predicate, ', '.join(vv)))
         return vv[0].toPython() if not asLiteral else vv[0]
     else:

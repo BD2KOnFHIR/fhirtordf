@@ -18,7 +18,9 @@ Subject http://hl7.org/fhir/PractitionerRole/example DIFFERENCE: ===============
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sct: <http://snomed.info/id/> .
+@prefix v2: <http://hl7.org/fhir/v2/> .
 @prefix v2-0286: <http://hl7.org/fhir/v2/0286> .
+@prefix v3: <http://hl7.org/fhir/v3/> .
 @prefix w5: <http://hl7.org/fhir/w5#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -43,6 +45,27 @@ Subject http://hl7.org/fhir/PractitionerRole/example DIFFERENCE: ===============
         fhir:value "Adam is generally unavailable on public holidays and during the Christmas/New Year break"
     ] ;
     fhir:PractitionerRole.availableTime [
+        fhir:index "0"^^xsd:integer ;
+        fhir:PractitionerRole.availableTime.availableEndTime [
+            fhir:value "16:30:00"
+        ] ;
+        fhir:PractitionerRole.availableTime.availableStartTime [
+            fhir:value "09:00:00"
+        ] ;
+        fhir:PractitionerRole.availableTime.daysOfWeek [
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "mon"
+        ],
+            [
+            fhir:index "1"^^xsd:integer ;
+            fhir:value "tue"
+        ],
+            [
+            fhir:index "2"^^xsd:integer ;
+            fhir:value "wed"
+        ]
+    ],
+        [
         fhir:index "1"^^xsd:integer ;
         fhir:PractitionerRole.availableTime.availableEndTime [
             fhir:value "12:00:00"
@@ -57,27 +80,6 @@ Subject http://hl7.org/fhir/PractitionerRole/example DIFFERENCE: ===============
             [
             fhir:index "0"^^xsd:integer ;
             fhir:value "thu"
-        ]
-    ],
-        [
-        fhir:index "0"^^xsd:integer ;
-        fhir:PractitionerRole.availableTime.availableEndTime [
-            fhir:value "16:30:00"
-        ] ;
-        fhir:PractitionerRole.availableTime.availableStartTime [
-            fhir:value "09:00:00"
-        ] ;
-        fhir:PractitionerRole.availableTime.daysOfWeek [
-            fhir:index "0"^^xsd:integer ;
-            fhir:value "mon"
-        ],
-            [
-            fhir:index "2"^^xsd:integer ;
-            fhir:value "wed"
-        ],
-            [
-            fhir:index "1"^^xsd:integer ;
-            fhir:value "tue"
         ]
     ] ;
     fhir:PractitionerRole.code [

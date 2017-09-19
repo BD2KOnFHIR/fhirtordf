@@ -211,6 +211,9 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-rule DIFFERENCE: =====
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix v2: <http://hl7.org/fhir/v2/> .
+@prefix v3: <http://hl7.org/fhir/v3/> .
 @prefix w5: <http://hl7.org/fhir/w5#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -411,21 +414,6 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-rule DIFFERENCE: =====
             ]
         ] ;
         fhir:TestScript.ruleset.rule [
-            fhir:index "1"^^xsd:integer ;
-            fhir:TestScript.ruleset.rule.param [
-                fhir:index "0"^^xsd:integer ;
-                fhir:TestScript.ruleset.rule.param.name [
-                    fhir:value "expectedStatusCode"
-                ] ;
-                fhir:TestScript.ruleset.rule.param.value [
-                    fhir:value "200"
-                ]
-            ] ;
-            fhir:TestScript.ruleset.rule.ruleId [
-                fhir:value "RuleResponseStatusCode"
-            ]
-        ],
-            [
             fhir:index "0"^^xsd:integer ;
             fhir:TestScript.ruleset.rule.param [
                 fhir:index "0"^^xsd:integer ;
@@ -439,10 +427,87 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-rule DIFFERENCE: =====
             fhir:TestScript.ruleset.rule.ruleId [
                 fhir:value "RuleResponseContentType"
             ]
+        ],
+            [
+            fhir:index "1"^^xsd:integer ;
+            fhir:TestScript.ruleset.rule.param [
+                fhir:index "0"^^xsd:integer ;
+                fhir:TestScript.ruleset.rule.param.name [
+                    fhir:value "expectedStatusCode"
+                ] ;
+                fhir:TestScript.ruleset.rule.param.value [
+                    fhir:value "200"
+                ]
+            ] ;
+            fhir:TestScript.ruleset.rule.ruleId [
+                fhir:value "RuleResponseStatusCode"
+            ]
         ]
     ] ;
     fhir:TestScript.setup [
         fhir:TestScript.setup.action [
+            fhir:index "3"^^xsd:integer ;
+            fhir:TestScript.setup.action.assert [
+                fhir:TestScript.setup.action.assert.description [
+                    fhir:value "Confirm that the returned HTTP status is 201(Created)."
+                ] ;
+                fhir:TestScript.setup.action.assert.direction [
+                    fhir:value "response"
+                ] ;
+                fhir:TestScript.setup.action.assert.label [
+                    fhir:value "Setup-RuleCreateOK"
+                ] ;
+                fhir:TestScript.setup.action.assert.rule [
+                    fhir:TestScript.setup.action.assert.rule.param [
+                        fhir:index "0"^^xsd:integer ;
+                        fhir:TestScript.setup.action.assert.rule.param.name [
+                            fhir:value "expectedStatusCode"
+                        ] ;
+                        fhir:TestScript.setup.action.assert.rule.param.value [
+                            fhir:value "201"
+                        ]
+                    ] ;
+                    fhir:TestScript.setup.action.assert.rule.ruleId [
+                        fhir:value "rule-responseStatusCode"
+                    ]
+                ]
+            ]
+        ],
+            [
+            fhir:index "2"^^xsd:integer ;
+            fhir:TestScript.setup.action.operation [
+                fhir:TestScript.setup.action.operation.accept [
+                    fhir:value "json"
+                ] ;
+                fhir:TestScript.setup.action.operation.contentType [
+                    fhir:value "json"
+                ] ;
+                fhir:TestScript.setup.action.operation.description [
+                    fhir:value "Create patient resource on test server using the contents of fixture-patient-create"
+                ] ;
+                fhir:TestScript.setup.action.operation.label [
+                    fhir:value "SetupCreatePatient"
+                ] ;
+                fhir:TestScript.setup.action.operation.params [
+                    fhir:value "/${createResourceId}"
+                ] ;
+                fhir:TestScript.setup.action.operation.resource [
+                    fhir:value "Patient"
+                ] ;
+                fhir:TestScript.setup.action.operation.sourceId [
+                    fhir:value "fixture-patient-create"
+                ] ;
+                fhir:TestScript.setup.action.operation.type [
+                    fhir:Coding.code [
+                        fhir:value "update"
+                    ] ;
+                    fhir:Coding.system [
+                        fhir:value "http://hl7.org/fhir/testscript-operation-codes"
+                    ]
+                ]
+            ]
+        ],
+            [
             fhir:index "1"^^xsd:integer ;
             fhir:TestScript.setup.action.assert [
                 fhir:TestScript.setup.action.assert.description [
@@ -486,68 +551,6 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-rule DIFFERENCE: =====
                     ]
                 ]
             ]
-        ],
-            [
-            fhir:index "2"^^xsd:integer ;
-            fhir:TestScript.setup.action.operation [
-                fhir:TestScript.setup.action.operation.accept [
-                    fhir:value "json"
-                ] ;
-                fhir:TestScript.setup.action.operation.contentType [
-                    fhir:value "json"
-                ] ;
-                fhir:TestScript.setup.action.operation.description [
-                    fhir:value "Create patient resource on test server using the contents of fixture-patient-create"
-                ] ;
-                fhir:TestScript.setup.action.operation.label [
-                    fhir:value "SetupCreatePatient"
-                ] ;
-                fhir:TestScript.setup.action.operation.params [
-                    fhir:value "/${createResourceId}"
-                ] ;
-                fhir:TestScript.setup.action.operation.resource [
-                    fhir:value "Patient"
-                ] ;
-                fhir:TestScript.setup.action.operation.sourceId [
-                    fhir:value "fixture-patient-create"
-                ] ;
-                fhir:TestScript.setup.action.operation.type [
-                    fhir:Coding.code [
-                        fhir:value "update"
-                    ] ;
-                    fhir:Coding.system [
-                        fhir:value "http://hl7.org/fhir/testscript-operation-codes"
-                    ]
-                ]
-            ]
-        ],
-            [
-            fhir:index "3"^^xsd:integer ;
-            fhir:TestScript.setup.action.assert [
-                fhir:TestScript.setup.action.assert.description [
-                    fhir:value "Confirm that the returned HTTP status is 201(Created)."
-                ] ;
-                fhir:TestScript.setup.action.assert.direction [
-                    fhir:value "response"
-                ] ;
-                fhir:TestScript.setup.action.assert.label [
-                    fhir:value "Setup-RuleCreateOK"
-                ] ;
-                fhir:TestScript.setup.action.assert.rule [
-                    fhir:TestScript.setup.action.assert.rule.param [
-                        fhir:index "0"^^xsd:integer ;
-                        fhir:TestScript.setup.action.assert.rule.param.name [
-                            fhir:value "expectedStatusCode"
-                        ] ;
-                        fhir:TestScript.setup.action.assert.rule.param.value [
-                            fhir:value "201"
-                        ]
-                    ] ;
-                    fhir:TestScript.setup.action.assert.rule.ruleId [
-                        fhir:value "rule-responseStatusCode"
-                    ]
-                ]
-            ]
         ]
     ] ;
     fhir:TestScript.status [
@@ -559,81 +562,6 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-rule DIFFERENCE: =====
             fhir:value "01-ReadPatient"
         ] ;
         fhir:TestScript.test.action [
-            fhir:index "5"^^xsd:integer ;
-            fhir:TestScript.test.action.assert [
-                fhir:TestScript.test.action.assert.description [
-                    fhir:value "Confirm that the returned Patient conforms to the base FHIR specification."
-                ] ;
-                fhir:TestScript.test.action.assert.validateProfileId [
-                    fhir:value "patient-profile"
-                ]
-            ]
-        ],
-            [
-            fhir:index "0"^^xsd:integer ;
-            fhir:TestScript.test.action.operation [
-                fhir:TestScript.test.action.operation.description [
-                    fhir:value "Read the patient resource on the test server using the id from fixture-patient-create. Prevent URL encoding of the request."
-                ] ;
-                fhir:TestScript.test.action.operation.encodeRequestUrl [
-                    fhir:value "false"^^xsd:boolean
-                ] ;
-                fhir:TestScript.test.action.operation.resource [
-                    fhir:value "Patient"
-                ] ;
-                fhir:TestScript.test.action.operation.responseId [
-                    fhir:value "fixture-patient-read"
-                ] ;
-                fhir:TestScript.test.action.operation.targetId [
-                    fhir:value "fixture-patient-create"
-                ] ;
-                fhir:TestScript.test.action.operation.type [
-                    fhir:Coding.code [
-                        fhir:value "read"
-                    ] ;
-                    fhir:Coding.system [
-                        fhir:value "http://hl7.org/fhir/testscript-operation-codes"
-                    ]
-                ]
-            ]
-        ],
-            [
-            fhir:index "1"^^xsd:integer ;
-            fhir:TestScript.test.action.assert [
-                fhir:TestScript.test.action.assert.description [
-                    fhir:value "Confirm that the returned HTTP status is 200(OK)."
-                ] ;
-                fhir:TestScript.test.action.assert.label [
-                    fhir:value "01-RuleReadPatientOK"
-                ] ;
-                fhir:TestScript.test.action.assert.rule [
-                    fhir:TestScript.test.action.assert.rule.ruleId [
-                        fhir:value "rule-responseStatusCode"
-                    ]
-                ]
-            ]
-        ],
-            [
-            fhir:index "7"^^xsd:integer ;
-            fhir:TestScript.test.action.assert [
-                fhir:TestScript.test.action.assert.description [
-                    fhir:value "Confirm that the returned Patient contains the expected given name 'Peter'. Uses explicit sourceId reference to read responseId fixture."
-                ] ;
-                fhir:TestScript.test.action.assert.operator [
-                    fhir:value "equals"
-                ] ;
-                fhir:TestScript.test.action.assert.path [
-                    fhir:value "fhir:Patient/fhir:name/fhir:given/@value"
-                ] ;
-                fhir:TestScript.test.action.assert.sourceId [
-                    fhir:value "fixture-patient-read"
-                ] ;
-                fhir:TestScript.test.action.assert.value [
-                    fhir:value "Peter"
-                ]
-            ]
-        ],
-            [
             fhir:index "8"^^xsd:integer ;
             fhir:TestScript.test.action.assert [
                 fhir:TestScript.test.action.assert.compareToSourceId [
@@ -654,22 +582,22 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-rule DIFFERENCE: =====
             ]
         ],
             [
-            fhir:index "6"^^xsd:integer ;
+            fhir:index "7"^^xsd:integer ;
             fhir:TestScript.test.action.assert [
                 fhir:TestScript.test.action.assert.description [
-                    fhir:value "Confirm that the returned Patient contains the expected family name 'Chalmers'. Uses explicit sourceId reference to read responseId fixture."
+                    fhir:value "Confirm that the returned Patient contains the expected given name 'Peter'. Uses explicit sourceId reference to read responseId fixture."
                 ] ;
                 fhir:TestScript.test.action.assert.operator [
                     fhir:value "equals"
                 ] ;
                 fhir:TestScript.test.action.assert.path [
-                    fhir:value "fhir:Patient/fhir:name/fhir:family/@value"
+                    fhir:value "fhir:Patient/fhir:name/fhir:given/@value"
                 ] ;
                 fhir:TestScript.test.action.assert.sourceId [
                     fhir:value "fixture-patient-read"
                 ] ;
                 fhir:TestScript.test.action.assert.value [
-                    fhir:value "Chalmers"
+                    fhir:value "Peter"
                 ]
             ]
         ],
@@ -702,6 +630,45 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-rule DIFFERENCE: =====
             ]
         ],
             [
+            fhir:index "0"^^xsd:integer ;
+            fhir:TestScript.test.action.operation [
+                fhir:TestScript.test.action.operation.description [
+                    fhir:value "Read the patient resource on the test server using the id from fixture-patient-create. Prevent URL encoding of the request."
+                ] ;
+                fhir:TestScript.test.action.operation.encodeRequestUrl [
+                    fhir:value "false"^^xsd:boolean
+                ] ;
+                fhir:TestScript.test.action.operation.resource [
+                    fhir:value "Patient"
+                ] ;
+                fhir:TestScript.test.action.operation.responseId [
+                    fhir:value "fixture-patient-read"
+                ] ;
+                fhir:TestScript.test.action.operation.targetId [
+                    fhir:value "fixture-patient-create"
+                ] ;
+                fhir:TestScript.test.action.operation.type [
+                    fhir:Coding.code [
+                        fhir:value "read"
+                    ] ;
+                    fhir:Coding.system [
+                        fhir:value "http://hl7.org/fhir/testscript-operation-codes"
+                    ]
+                ]
+            ]
+        ],
+            [
+            fhir:index "5"^^xsd:integer ;
+            fhir:TestScript.test.action.assert [
+                fhir:TestScript.test.action.assert.description [
+                    fhir:value "Confirm that the returned Patient conforms to the base FHIR specification."
+                ] ;
+                fhir:TestScript.test.action.assert.validateProfileId [
+                    fhir:value "patient-profile"
+                ]
+            ]
+        ],
+            [
             fhir:index "9"^^xsd:integer ;
             fhir:TestScript.test.action.assert [
                 fhir:TestScript.test.action.assert.compareToSourceId [
@@ -718,6 +685,56 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-rule DIFFERENCE: =====
                 ] ;
                 fhir:TestScript.test.action.assert.sourceId [
                     fhir:value "fixture-patient-read"
+                ]
+            ]
+        ],
+            [
+            fhir:index "10"^^xsd:integer ;
+            fhir:TestScript.test.action.assert [
+                fhir:TestScript.test.action.assert.description [
+                    fhir:value "Confirm that the returned resource contains the expected retained elements and values. Warning only to provide users with reviewable results."
+                ] ;
+                fhir:TestScript.test.action.assert.minimumId [
+                    fhir:value "fixture-patient-minimum"
+                ] ;
+                fhir:TestScript.test.action.assert.warningOnly [
+                    fhir:value "true"^^xsd:boolean
+                ]
+            ]
+        ],
+            [
+            fhir:index "1"^^xsd:integer ;
+            fhir:TestScript.test.action.assert [
+                fhir:TestScript.test.action.assert.description [
+                    fhir:value "Confirm that the returned HTTP status is 200(OK)."
+                ] ;
+                fhir:TestScript.test.action.assert.label [
+                    fhir:value "01-RuleReadPatientOK"
+                ] ;
+                fhir:TestScript.test.action.assert.rule [
+                    fhir:TestScript.test.action.assert.rule.ruleId [
+                        fhir:value "rule-responseStatusCode"
+                    ]
+                ]
+            ]
+        ],
+            [
+            fhir:index "6"^^xsd:integer ;
+            fhir:TestScript.test.action.assert [
+                fhir:TestScript.test.action.assert.description [
+                    fhir:value "Confirm that the returned Patient contains the expected family name 'Chalmers'. Uses explicit sourceId reference to read responseId fixture."
+                ] ;
+                fhir:TestScript.test.action.assert.operator [
+                    fhir:value "equals"
+                ] ;
+                fhir:TestScript.test.action.assert.path [
+                    fhir:value "fhir:Patient/fhir:name/fhir:family/@value"
+                ] ;
+                fhir:TestScript.test.action.assert.sourceId [
+                    fhir:value "fixture-patient-read"
+                ] ;
+                fhir:TestScript.test.action.assert.value [
+                    fhir:value "Chalmers"
                 ]
             ]
         ],
@@ -746,20 +763,6 @@ Subject http://hl7.org/fhir/TestScript/testscript-example-rule DIFFERENCE: =====
                 ] ;
                 fhir:TestScript.test.action.assert.operator [
                     fhir:value "notEmpty"
-                ] ;
-                fhir:TestScript.test.action.assert.warningOnly [
-                    fhir:value "true"^^xsd:boolean
-                ]
-            ]
-        ],
-            [
-            fhir:index "10"^^xsd:integer ;
-            fhir:TestScript.test.action.assert [
-                fhir:TestScript.test.action.assert.description [
-                    fhir:value "Confirm that the returned resource contains the expected retained elements and values. Warning only to provide users with reviewable results."
-                ] ;
-                fhir:TestScript.test.action.assert.minimumId [
-                    fhir:value "fixture-patient-minimum"
                 ] ;
                 fhir:TestScript.test.action.assert.warningOnly [
                     fhir:value "true"^^xsd:boolean

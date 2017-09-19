@@ -26,26 +26,31 @@
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
 # OF THE POSSIBILITY OF SUCH DAMAGE.
 
-from rdflib import Namespace, OWL, RDFS, RDF, XSD
+import unittest
 
-from fhirtordf.rdfsupport.dottednamespace import DottedNamespace
+from rdflib import URIRef
 
-# TODO: Determine what these various namespaces should actually be
-W5 = DottedNamespace("http://hl7.org/fhir/w5#")
-FHIR = DottedNamespace("http://hl7.org/fhir/")
-LOINC = Namespace("http://loinc.org/owl#")
-SNOMEDCT = Namespace("http://snomed.info/id/")
-RXNORM = Namespace("http://www.nlm.nih.gov/research/umls/rxnorm")
-V3 = Namespace("http://hl7.org/fhir/v3/")
-V2 = Namespace("http://hl7.org/fhir/v2/")
-SCT = Namespace("http://snomed.info/id/")
 
-namespaces = {"fhir": FHIR,
-              "owl": OWL,
-              "rdfs": RDFS,
-              "rdf": RDF,
-              "xsd": XSD,
-              "w5": W5,
-              "v2": V2,
-              "v3": V3,
-              "sct": SCT}
+class NumericNamespaceTestCase(unittest.TestCase):
+    def eval(self, item: URIRef, val: str):
+        self.assertTrue(isinstance(item, URIRef))
+        self.assertEqual(val, str(item))
+
+    def test(self):
+        from fhirtordf.rdfsupport.numericnamespace import NumericNamespace
+        SCT = NumericNamespace("http://snomed.info/id/")
+        self.eval(SCT.C74400008, "http://snomed.info/id/74400008")
+
+    def test_comparisons(self):
+        from fhirtordf.rdfsupport.numericnamespace import NumericNamespace
+        SCT = NumericNamespace("http://snomed.info/id/")
+        self.assertEqual(SCT.C74400008, SCT.C74400008)
+        self.assertNotEqual(SCT.C74400008, SCT.C74400009)
+        self.assertEqual(SCT.C74400008, URIRef("http://snomed.info/id/74400008"))
+        self.assertEqual(URIRef("http://snomed.info/id/74400008"), SCT.C74400008)
+        self.assertTrue(SCT.C74400008 in {SCT.C12345, URIRef("http://snomed.info/id/74400008")})
+        self.assertTrue(SCT.C74400008 in {SCT.C12345, SCT.C74400008})
+
+
+if __name__ == '__main__':
+    unittest.main()

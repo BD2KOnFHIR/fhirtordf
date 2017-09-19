@@ -79,6 +79,9 @@ Subject http://hl7.org/fhir/Contract/pcd-example-notLabs DIFFERENCE: ===========
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix resource-types: <http://hl7.org/fhir/resource-types> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix v2: <http://hl7.org/fhir/v2/> .
+@prefix v3: <http://hl7.org/fhir/v3/> .
 @prefix w5: <http://hl7.org/fhir/w5#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -152,18 +155,18 @@ Subject http://hl7.org/fhir/Contract/pcd-example-notLabs DIFFERENCE: ===========
     fhir:Contract.term [
         fhir:index "0"^^xsd:integer ;
         fhir:Contract.term.group [
-            fhir:index "1"^^xsd:integer ;
+            fhir:index "0"^^xsd:integer ;
             fhir:Contract.term.group.offer [
                 fhir:Contract.term.group.offer.text [
-                    fhir:value "Withhold order results from any provider."
+                    fhir:value "Withhold orders from any provider."
                 ]
             ] ;
             fhir:Contract.term.group.subType [
                 fhir:CodeableConcept.coding [
-                    a <http://hl7.org/fhir/resource-types/DiagnosticReport> ;
+                    a <http://hl7.org/fhir/resource-types/ProcedureRequest> ;
                     fhir:index "0"^^xsd:integer ;
                     fhir:Coding.code [
-                        fhir:value "DiagnosticReport"
+                        fhir:value "ProcedureRequest"
                     ] ;
                     fhir:Coding.system [
                         fhir:value "http://hl7.org/fhir/resource-types"
@@ -183,18 +186,18 @@ Subject http://hl7.org/fhir/Contract/pcd-example-notLabs DIFFERENCE: ===========
             ]
         ],
             [
-            fhir:index "0"^^xsd:integer ;
+            fhir:index "1"^^xsd:integer ;
             fhir:Contract.term.group.offer [
                 fhir:Contract.term.group.offer.text [
-                    fhir:value "Withhold orders from any provider."
+                    fhir:value "Withhold order results from any provider."
                 ]
             ] ;
             fhir:Contract.term.group.subType [
                 fhir:CodeableConcept.coding [
-                    a <http://hl7.org/fhir/resource-types/ProcedureRequest> ;
+                    a <http://hl7.org/fhir/resource-types/DiagnosticReport> ;
                     fhir:index "0"^^xsd:integer ;
                     fhir:Coding.code [
-                        fhir:value "ProcedureRequest"
+                        fhir:value "DiagnosticReport"
                     ] ;
                     fhir:Coding.system [
                         fhir:value "http://hl7.org/fhir/resource-types"

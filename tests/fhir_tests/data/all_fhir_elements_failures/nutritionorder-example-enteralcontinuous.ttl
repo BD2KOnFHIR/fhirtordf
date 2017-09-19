@@ -35,6 +35,9 @@ Subject http://hl7.org/fhir/NutritionOrder/enteralcontinuous DIFFERENCE: =======
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix v2: <http://hl7.org/fhir/v2/> .
+@prefix v3: <http://hl7.org/fhir/v3/> .
 @prefix v3-RouteOfAdministration: <http://hl7.org/fhir/v3/RouteOfAdministration> .
 @prefix w5: <http://hl7.org/fhir/w5#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -62,24 +65,24 @@ Subject http://hl7.org/fhir/NutritionOrder/enteralcontinuous DIFFERENCE: =======
     ] ;
     fhir:NutritionOrder.enteralFormula [
         fhir:NutritionOrder.enteralFormula.administration [
-            fhir:index "2"^^xsd:integer ;
-            fhir:NutritionOrder.enteralFormula.administration.schedule [
-                fhir:Timing.repeat [
-                    fhir:Timing.repeat.boundsPeriod [
-                        fhir:Period.start [
-                            fhir:value "2014-09-17T15:00:00+00:00"^^xsd:dateTime
-                        ]
-                    ]
-                ]
-            ]
-        ],
-            [
             fhir:index "1"^^xsd:integer ;
             fhir:NutritionOrder.enteralFormula.administration.schedule [
                 fhir:Timing.repeat [
                     fhir:Timing.repeat.boundsPeriod [
                         fhir:Period.start [
                             fhir:value "2014-09-17T11:00:00+00:00"^^xsd:dateTime
+                        ]
+                    ]
+                ]
+            ]
+        ],
+            [
+            fhir:index "2"^^xsd:integer ;
+            fhir:NutritionOrder.enteralFormula.administration.schedule [
+                fhir:Timing.repeat [
+                    fhir:Timing.repeat.boundsPeriod [
+                        fhir:Period.start [
+                            fhir:value "2014-09-17T15:00:00+00:00"^^xsd:dateTime
                         ]
                     ]
                 ]

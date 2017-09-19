@@ -26,26 +26,18 @@
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
 # OF THE POSSIBILITY OF SUCH DAMAGE.
 
-from rdflib import Namespace, OWL, RDFS, RDF, XSD
+import unittest
 
-from fhirtordf.rdfsupport.dottednamespace import DottedNamespace
+from fhirtordf.rdfsupport.namespaces import FHIR
 
-# TODO: Determine what these various namespaces should actually be
-W5 = DottedNamespace("http://hl7.org/fhir/w5#")
-FHIR = DottedNamespace("http://hl7.org/fhir/")
-LOINC = Namespace("http://loinc.org/owl#")
-SNOMEDCT = Namespace("http://snomed.info/id/")
-RXNORM = Namespace("http://www.nlm.nih.gov/research/umls/rxnorm")
-V3 = Namespace("http://hl7.org/fhir/v3/")
-V2 = Namespace("http://hl7.org/fhir/v2/")
-SCT = Namespace("http://snomed.info/id/")
 
-namespaces = {"fhir": FHIR,
-              "owl": OWL,
-              "rdfs": RDFS,
-              "rdf": RDF,
-              "xsd": XSD,
-              "w5": W5,
-              "v2": V2,
-              "v3": V3,
-              "sct": SCT}
+class RDFCompareTestCase(unittest.TestCase):
+    def test_subj_pred_to_uri(self):
+        from fhirtordf.rdfsupport.rdfcompare import subj_pred_idx_to_uri
+        self.assertEqual(FHIR['Patient/f001.Patient.identifier_0'],
+                         subj_pred_idx_to_uri(FHIR['Patient/f001'], FHIR.Patient.identifier, 0))
+        self.assertEqual(FHIR['Patient/f001.Patient.active'],
+                         subj_pred_idx_to_uri(FHIR['Patient/f001'], FHIR.Patient.active))
+
+if __name__ == '__main__':
+    unittest.main()

@@ -63,6 +63,9 @@ Subject http://hl7.org/fhir/RequestGroup/example DIFFERENCE: ===================
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix v2: <http://hl7.org/fhir/v2/> .
+@prefix v3: <http://hl7.org/fhir/v3/> .
 @prefix w5: <http://hl7.org/fhir/w5#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -70,26 +73,6 @@ Subject http://hl7.org/fhir/RequestGroup/example DIFFERENCE: ===================
 <http://hl7.org/fhir/RequestGroup/example> a fhir:RequestGroup ;
     fhir:nodeRole fhir:treeRoot ;
     fhir:DomainResource.contained [
-        fhir:index "0"^^xsd:integer ;
-        fhir:MedicationRequest.intent [
-            fhir:value "proposal"
-        ] ;
-        fhir:MedicationRequest.medicationCodeableConcept [
-            fhir:CodeableConcept.text [
-                fhir:value "Medication 1"
-            ]
-        ] ;
-        fhir:MedicationRequest.subject [
-            fhir:link <http://hl7.org/fhir/Patient/example> ;
-            fhir:Reference.reference [
-                fhir:value "Patient/example"
-            ]
-        ] ;
-        fhir:Resource.id [
-            fhir:value "medicationrequest-1"
-        ]
-    ],
-        [
         fhir:index "1"^^xsd:integer ;
         fhir:MedicationRequest.intent [
             fhir:value "proposal"
@@ -107,6 +90,26 @@ Subject http://hl7.org/fhir/RequestGroup/example DIFFERENCE: ===================
         ] ;
         fhir:Resource.id [
             fhir:value "medicationrequest-2"
+        ]
+    ],
+        [
+        fhir:index "0"^^xsd:integer ;
+        fhir:MedicationRequest.intent [
+            fhir:value "proposal"
+        ] ;
+        fhir:MedicationRequest.medicationCodeableConcept [
+            fhir:CodeableConcept.text [
+                fhir:value "Medication 1"
+            ]
+        ] ;
+        fhir:MedicationRequest.subject [
+            fhir:link <http://hl7.org/fhir/Patient/example> ;
+            fhir:Reference.reference [
+                fhir:value "Patient/example"
+            ]
+        ] ;
+        fhir:Resource.id [
+            fhir:value "medicationrequest-1"
         ]
     ] ;
     fhir:DomainResource.text [

@@ -20,6 +20,8 @@ Subject http://hl7.org/fhir/HealthcareService/example DIFFERENCE: ==============
 @prefix sct: <http://snomed.info/id/> .
 @prefix service-category: <http://hl7.org/fhir/service-category> .
 @prefix service-provision-conditions: <http://hl7.org/fhir/service-provision-conditions> .
+@prefix v2: <http://hl7.org/fhir/v2/> .
+@prefix v3: <http://hl7.org/fhir/v3/> .
 @prefix w5: <http://hl7.org/fhir/w5#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -67,16 +69,6 @@ Subject http://hl7.org/fhir/HealthcareService/example DIFFERENCE: ==============
         fhir:value "Reduced capacity is available during the Christmas period"
     ] ;
     fhir:HealthcareService.availableTime [
-        fhir:index "0"^^xsd:integer ;
-        fhir:HealthcareService.availableTime.allDay [
-            fhir:value "true"^^xsd:boolean
-        ] ;
-        fhir:HealthcareService.availableTime.daysOfWeek [
-            fhir:index "0"^^xsd:integer ;
-            fhir:value "wed"
-        ]
-    ],
-        [
         fhir:index "2"^^xsd:integer ;
         fhir:HealthcareService.availableTime.availableEndTime [
             fhir:value "04:30:00"
@@ -85,12 +77,12 @@ Subject http://hl7.org/fhir/HealthcareService/example DIFFERENCE: ==============
             fhir:value "09:30:00"
         ] ;
         fhir:HealthcareService.availableTime.daysOfWeek [
-            fhir:index "0"^^xsd:integer ;
-            fhir:value "sat"
-        ],
-            [
             fhir:index "1"^^xsd:integer ;
             fhir:value "fri"
+        ],
+            [
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "sat"
         ]
     ],
         [
@@ -110,12 +102,22 @@ Subject http://hl7.org/fhir/HealthcareService/example DIFFERENCE: ==============
             fhir:value "tue"
         ],
             [
-            fhir:index "2"^^xsd:integer ;
-            fhir:value "thu"
-        ],
-            [
             fhir:index "0"^^xsd:integer ;
             fhir:value "mon"
+        ],
+            [
+            fhir:index "2"^^xsd:integer ;
+            fhir:value "thu"
+        ]
+    ],
+        [
+        fhir:index "0"^^xsd:integer ;
+        fhir:HealthcareService.availableTime.allDay [
+            fhir:value "true"^^xsd:boolean
+        ] ;
+        fhir:HealthcareService.availableTime.daysOfWeek [
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "wed"
         ]
     ] ;
     fhir:HealthcareService.category [
@@ -239,14 +241,14 @@ Subject http://hl7.org/fhir/HealthcareService/example DIFFERENCE: ==============
         ]
     ] ;
     fhir:HealthcareService.referralMethod [
-        fhir:index "2"^^xsd:integer ;
+        fhir:index "3"^^xsd:integer ;
         fhir:CodeableConcept.coding [
             fhir:index "0"^^xsd:integer ;
             fhir:Coding.code [
-                fhir:value "elec"
+                fhir:value "semail"
             ] ;
             fhir:Coding.display [
-                fhir:value "Secure Messaging"
+                fhir:value "Secure Email"
             ]
         ]
     ],
@@ -263,14 +265,14 @@ Subject http://hl7.org/fhir/HealthcareService/example DIFFERENCE: ==============
         ]
     ],
         [
-        fhir:index "3"^^xsd:integer ;
+        fhir:index "2"^^xsd:integer ;
         fhir:CodeableConcept.coding [
             fhir:index "0"^^xsd:integer ;
             fhir:Coding.code [
-                fhir:value "semail"
+                fhir:value "elec"
             ] ;
             fhir:Coding.display [
-                fhir:value "Secure Email"
+                fhir:value "Secure Messaging"
             ]
         ]
     ],
@@ -319,18 +321,6 @@ Subject http://hl7.org/fhir/HealthcareService/example DIFFERENCE: ==============
         ]
     ] ;
     fhir:HealthcareService.telecom [
-        fhir:index "0"^^xsd:integer ;
-        fhir:ContactPoint.system [
-            fhir:value "phone"
-        ] ;
-        fhir:ContactPoint.use [
-            fhir:value "work"
-        ] ;
-        fhir:ContactPoint.value [
-            fhir:value "(555) silent"
-        ]
-    ],
-        [
         fhir:index "1"^^xsd:integer ;
         fhir:ContactPoint.system [
             fhir:value "email"
@@ -340,6 +330,18 @@ Subject http://hl7.org/fhir/HealthcareService/example DIFFERENCE: ==============
         ] ;
         fhir:ContactPoint.value [
             fhir:value "directaddress@example.com"
+        ]
+    ],
+        [
+        fhir:index "0"^^xsd:integer ;
+        fhir:ContactPoint.system [
+            fhir:value "phone"
+        ] ;
+        fhir:ContactPoint.use [
+            fhir:value "work"
+        ] ;
+        fhir:ContactPoint.value [
+            fhir:value "(555) silent"
         ]
     ] ;
     fhir:HealthcareService.type [
