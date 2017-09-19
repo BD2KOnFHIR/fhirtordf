@@ -29,7 +29,7 @@ from typing import Tuple
 
 from rdflib import URIRef
 
-from i2fhirb2.fhir.fhirspecific import FHIR_RESOURCE_RE, FHIR_RE_ID, FHIR_RE_BASE, FHIR_RE_RESOURCE
+from fhirtordf.rdfsupport.fhirresourcere import FHIR_RESOURCE_RE, FHIR_RE_ID, FHIR_RE_BASE, FHIR_RE_RESOURCE
 
 
 def uri_to_ide_and_source(uri: URIRef, include_resource: bool=False) -> Tuple[str, str]:

@@ -26,7 +26,7 @@
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
 # OF THE POSSIBILITY OF SUCH DAMAGE.
 
-from rdflib import Namespace, OWL, RDFS, RDF, XSD
+from rdflib import Namespace, OWL, RDFS, RDF, XSD, URIRef
 
 from fhirtordf.rdfsupport.dottednamespace import DottedNamespace
 
@@ -49,3 +49,22 @@ namespaces = {"fhir": FHIR,
               "v2": V2,
               "v3": V3,
               "sct": SCT}
+
+
+class AnonNS:
+    _nsnum = 0
+
+    def __init__(self):
+        self._nsnum += 1
+        self.ns = 'ns{}'.format(self._nsnum)
+
+
+def namespace_for(uri: URIRef) -> str:
+    """
+    Reverse namespace lookup.  Note that returned namespace may not be unique
+    :param uri: namespace URI
+    :return: namespace
+    """
+    if uri not in namespaces:
+        namespaces[AnonNS()] = uri
+    return [k for k, v in namespaces.items() if uri == v][0]
