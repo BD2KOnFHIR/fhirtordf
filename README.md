@@ -5,7 +5,7 @@ A tool to convert FHIR Resources from the JSON format to their equivalent in the
 Example:
 
 ```bash
-> fhirrdf -i http://hl7.org/fhir/Patient/f201 -nn
+> fhirtordf -i http://hl7.org/fhir/Patient/f201 -nn
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
