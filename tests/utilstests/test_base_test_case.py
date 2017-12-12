@@ -27,23 +27,10 @@
 # OF THE POSSIBILITY OF SUCH DAMAGE.
 
 import unittest
-from datetime import datetime, timedelta
-
 import os
 
-from tests.utils.base_test_case import BaseTestCase
 
-
-class BaseTestCaseTestCase(BaseTestCase):
-    def test_almostnow(self):
-        self.assertTrue(self.almostnow(str(datetime.now())))
-        self.assertTrue(self.almostnow(str(datetime.now() - timedelta(seconds=1))))
-        self.assertFalse(self.almostnow(str(datetime.now() - timedelta(seconds=5))))
-
-    def test_almostequal(self):
-        self.assertTrue(self.almostequal(str(datetime.now()), str(datetime.now())))
-        self.assertTrue(self.almostequal(str(datetime.now()), str(datetime.now() - timedelta(seconds=1))))
-        self.assertFalse(self.almostequal(str(datetime.now()), str(datetime.now() - timedelta(seconds=5))))
+class BaseTestCaseTestCase(unittest.TestCase):
 
     def test_fhir_graph(self):
         from tests.utils.base_test_case import FHIRGraph
