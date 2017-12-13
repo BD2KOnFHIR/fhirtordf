@@ -36,12 +36,21 @@ from tests.utils.base_test_case import FHIRGraph
 
 class FHIRTTLTestCase(unittest.TestCase):
 
-    def is_xsd_primitive(self, prim: URIRef, g: Graph) -> bool:
-        print("testing: {}".format(prim))
+    @staticmethod
+    def is_xsd_primitive(prim: URIRef, g: Graph) -> bool:
         for node in g.objects(prim, RDFS.subClassOf):
             if isinstance(node, BNode) and g.value(node, OWL.onProperty) == FHIR.value:
+                # Older versions of fhir.ttl used allValuesFrom (incorrect, btw)
                 base_type = g.value(node, OWL.allValuesFrom)
-                return str(base_type).startswith(str(XSD))
+                if not base_type:
+                    base_node = g.value(node, OWL.someValuesFrom)
+                    if isinstance(base_node, BNode):
+                        base_type = g.value(base_node, OWL.onDatatype)
+                if not str(base_type).startswith(str(XSD)):
+                    print("type failure - {} : {}".format(prim, base_type))
+                    return False
+                return True
+        print("No base type defined for {}".format(prim))
         return False
 
     def test_primitives(self):

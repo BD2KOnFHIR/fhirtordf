@@ -150,7 +150,12 @@ class FHIRMetaVocEntry:
             sco_type = self._o.value(sco, RDF.type)
             sco_prop = self._o.value(sco, OWL.onProperty)
             if sco_type == OWL.Restriction and sco_prop == FHIR.value:
-                return self._o.value(sco, OWL.allValuesFrom)
+                # The older versions of fhir.ttl (incorrectly) referenced the datatype directly
+                restriction_type = self._o.value(sco, OWL.allValuesFrom)
+                if not restriction_type:
+                    restriction_dt_entry = self._o.value(sco, OWL.someValuesFrom)
+                    restriction_type = self._o.value(restriction_dt_entry, OWL.onDatatype)
+                return restriction_type
         return None
 
     def primitive_datatype_nostring(self, t: URIRef, v: Optional[str] = None) -> Optional[URIRef]:
@@ -172,7 +177,7 @@ class FHIRMetaVocEntry:
 
 class FHIRMetaVoc:
 
-    def __init__(self, mv_file_loc: str="http://build.fhir.org/fhir.ttl", fmt: str="turtle", cache_mv_file=True):
+    def __init__(self, mv_file_loc: str="http://hl7.org/FHIR/fhir.ttl", fmt: str="turtle", cache_mv_file=True):
         """
         Load a FHIR Metadata Vocabulary image
         :param mv_file_loc: file name or URI of fhir.ttl image
