@@ -1,5 +1,7 @@
 @prefix ex-claimtype: <http://hl7.org/fhir/ex-claimtype> .
 @prefix fhir: <http://hl7.org/fhir/> .
+@prefix ns1: <http://example.org/> .
+@prefix ns2: <http://example.com/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -81,7 +83,7 @@
     ] ;
     fhir:Claim.item [
         fhir:index "0"^^xsd:integer ;
-        fhir:Claim.item.careTeamLinkId [
+        fhir:Claim.item.careTeamSequence [
             fhir:index "0"^^xsd:integer ;
             fhir:value "1"^^xsd:positiveInteger
         ] ;

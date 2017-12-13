@@ -1,4 +1,6 @@
 @prefix fhir: <http://hl7.org/fhir/> .
+@prefix ns1: <http://example.org/> .
+@prefix ns2: <http://example.com/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -254,6 +256,32 @@
         fhir:value "This activity definition is used as part of various suicide risk order sets"
     ] ;
     fhir:ActivityDefinition.useContext [
+        fhir:index "3"^^xsd:integer ;
+        fhir:UsageContext.code [
+            fhir:Coding.code [
+                fhir:value "focus"
+            ] ;
+            fhir:Coding.system [
+                fhir:value "http://hl7.org/fhir/usage-context-type"
+            ]
+        ] ;
+        fhir:UsageContext.valueCodeableConcept [
+            fhir:CodeableConcept.coding [
+                a sct:225444004 ;
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "225444004"
+                ] ;
+                fhir:Coding.display [
+                    fhir:value "At risk for suicide (finding)"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://snomed.info/sct"
+                ]
+            ]
+        ]
+    ],
+        [
         fhir:index "4"^^xsd:integer ;
         fhir:UsageContext.code [
             fhir:Coding.code [
@@ -306,58 +334,6 @@
         ]
     ],
         [
-        fhir:index "5"^^xsd:integer ;
-        fhir:UsageContext.code [
-            fhir:Coding.code [
-                fhir:value "user"
-            ] ;
-            fhir:Coding.system [
-                fhir:value "http://hl7.org/fhir/usage-context-type"
-            ]
-        ] ;
-        fhir:UsageContext.valueCodeableConcept [
-            fhir:CodeableConcept.coding [
-                a sct:309343006 ;
-                fhir:index "0"^^xsd:integer ;
-                fhir:Coding.code [
-                    fhir:value "309343006"
-                ] ;
-                fhir:Coding.display [
-                    fhir:value "Physician"
-                ] ;
-                fhir:Coding.system [
-                    fhir:value "http://snomed.info/sct"
-                ]
-            ]
-        ]
-    ],
-        [
-        fhir:index "3"^^xsd:integer ;
-        fhir:UsageContext.code [
-            fhir:Coding.code [
-                fhir:value "focus"
-            ] ;
-            fhir:Coding.system [
-                fhir:value "http://hl7.org/fhir/usage-context-type"
-            ]
-        ] ;
-        fhir:UsageContext.valueCodeableConcept [
-            fhir:CodeableConcept.coding [
-                a sct:225444004 ;
-                fhir:index "0"^^xsd:integer ;
-                fhir:Coding.code [
-                    fhir:value "225444004"
-                ] ;
-                fhir:Coding.display [
-                    fhir:value "At risk for suicide (finding)"
-                ] ;
-                fhir:Coding.system [
-                    fhir:value "http://snomed.info/sct"
-                ]
-            ]
-        ]
-    ],
-        [
         fhir:index "2"^^xsd:integer ;
         fhir:UsageContext.code [
             fhir:Coding.code [
@@ -376,6 +352,32 @@
                 ] ;
                 fhir:Coding.display [
                     fhir:value "Major depression, recurrent, mild"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://snomed.info/sct"
+                ]
+            ]
+        ]
+    ],
+        [
+        fhir:index "5"^^xsd:integer ;
+        fhir:UsageContext.code [
+            fhir:Coding.code [
+                fhir:value "user"
+            ] ;
+            fhir:Coding.system [
+                fhir:value "http://hl7.org/fhir/usage-context-type"
+            ]
+        ] ;
+        fhir:UsageContext.valueCodeableConcept [
+            fhir:CodeableConcept.coding [
+                a sct:309343006 ;
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "309343006"
+                ] ;
+                fhir:Coding.display [
+                    fhir:value "Physician"
                 ] ;
                 fhir:Coding.system [
                     fhir:value "http://snomed.info/sct"
@@ -438,6 +440,26 @@
         fhir:value "1.0.0"
     ] ;
     fhir:DomainResource.contained [
+        fhir:index "1"^^xsd:integer ;
+        fhir:Resource.id [
+            fhir:value "citalopramSubstance"
+        ] ;
+        fhir:Substance.code [
+            fhir:CodeableConcept.coding [
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "2556"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm"
+                ]
+            ] ;
+            fhir:CodeableConcept.text [
+                fhir:value "citalopram"
+            ]
+        ]
+    ],
+        [
         fhir:index "0"^^xsd:integer ;
         fhir:Medication.code [
             fhir:CodeableConcept.coding [
@@ -499,26 +521,6 @@
         ] ;
         fhir:Resource.id [
             fhir:value "citalopramMedication"
-        ]
-    ],
-        [
-        fhir:index "1"^^xsd:integer ;
-        fhir:Resource.id [
-            fhir:value "citalopramSubstance"
-        ] ;
-        fhir:Substance.code [
-            fhir:CodeableConcept.coding [
-                fhir:index "0"^^xsd:integer ;
-                fhir:Coding.code [
-                    fhir:value "2556"
-                ] ;
-                fhir:Coding.system [
-                    fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm"
-                ]
-            ] ;
-            fhir:CodeableConcept.text [
-                fhir:value "citalopram"
-            ]
         ]
     ] ;
     fhir:DomainResource.text [

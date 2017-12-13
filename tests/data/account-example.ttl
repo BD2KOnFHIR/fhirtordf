@@ -42,12 +42,6 @@
      fhir:Period.start [ fhir:value "2016-01-01"^^xsd:date ];
      fhir:Period.end [ fhir:value "2016-06-30"^^xsd:date ]
   ];
-  fhir:Account.balance [
-     fhir:Quantity.value [ fhir:value "-1200"^^xsd:decimal ];
-     fhir:Quantity.unit [ fhir:value "USD" ];
-     fhir:Quantity.system [ fhir:value "urn:iso:std:iso:4217" ];
-     fhir:Quantity.code [ fhir:value "USD" ]
-  ];
   fhir:Account.coverage [
      fhir:index 0;
      fhir:Account.coverage.coverage [

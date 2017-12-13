@@ -39,12 +39,6 @@
     "start": "2016-01-01",
     "end": "2016-06-30"
   },
-  "balance": {
-    "value": -1200,
-    "unit": "USD",
-    "system": "urn:iso:std:iso:4217",
-    "code": "USD"
-  },
   "coverage": [
     {
       "coverage": {

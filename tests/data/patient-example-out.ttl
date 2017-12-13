@@ -1,4 +1,6 @@
 @prefix fhir: <http://hl7.org/fhir/> .
+@prefix ns1: <http://example.org/> .
+@prefix ns2: <http://example.com/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -239,12 +241,12 @@
             fhir:value "Windsor"
         ] ;
         fhir:HumanName.given [
-            fhir:index "0"^^xsd:integer ;
-            fhir:value "Peter"
-        ],
-            [
             fhir:index "1"^^xsd:integer ;
             fhir:value "James"
+        ],
+            [
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "Peter"
         ] ;
         fhir:HumanName.period [
             fhir:Period.end [
@@ -281,23 +283,6 @@
         ]
     ],
         [
-        fhir:index "3"^^xsd:integer ;
-        fhir:ContactPoint.period [
-            fhir:Period.end [
-                fhir:value "2014-01-01"^^xsd:gYear
-            ]
-        ] ;
-        fhir:ContactPoint.system [
-            fhir:value "phone"
-        ] ;
-        fhir:ContactPoint.use [
-            fhir:value "old"
-        ] ;
-        fhir:ContactPoint.value [
-            fhir:value "(03) 5555 8834"
-        ]
-    ],
-        [
         fhir:index "2"^^xsd:integer ;
         fhir:ContactPoint.rank [
             fhir:value "2"^^xsd:positiveInteger
@@ -316,6 +301,23 @@
         fhir:index "0"^^xsd:integer ;
         fhir:ContactPoint.use [
             fhir:value "home"
+        ]
+    ],
+        [
+        fhir:index "3"^^xsd:integer ;
+        fhir:ContactPoint.period [
+            fhir:Period.end [
+                fhir:value "2014-01-01"^^xsd:gYear
+            ]
+        ] ;
+        fhir:ContactPoint.system [
+            fhir:value "phone"
+        ] ;
+        fhir:ContactPoint.use [
+            fhir:value "old"
+        ] ;
+        fhir:ContactPoint.value [
+            fhir:value "(03) 5555 8834"
         ]
     ] ;
     fhir:Resource.id [
