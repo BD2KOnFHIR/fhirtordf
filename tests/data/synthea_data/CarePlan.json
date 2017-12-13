@@ -1,0 +1,95 @@
+{
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "status": "active",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "698358001",
+                "display": "Angina self management plan"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "reference": "urn:uuid:49ed5129-4d47-4446-9957-a2ed311ba25e"
+        },
+        "context": {
+          "reference": "urn:uuid:80a9e1ea-ee2d-4be3-bc6b-51b03ac94c33"
+        },
+        "period": {
+          "start": "2008-06-02"
+        },
+        "addresses": [
+          {
+            "reference": "urn:uuid:81e36dda-c614-4354-9687-217e7ba5139a"
+          }
+        ],
+        "activity": [
+          {
+            "detail": {
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "229065009",
+                    "display": "Exercise therapy"
+                  }
+                ]
+              },
+              "status": "in-progress"
+            }
+          },
+          {
+            "detail": {
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "226060000",
+                    "display": "Stress management"
+                  }
+                ]
+              },
+              "status": "in-progress"
+            }
+          },
+          {
+            "detail": {
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "710081004",
+                    "display": "Smoking cessation therapy"
+                  }
+                ]
+              },
+              "status": "in-progress"
+            }
+          },
+          {
+            "detail": {
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "226234005",
+                    "display": "Healthy diet"
+                  }
+                ]
+              },
+              "status": "in-progress"
+            }
+          }
+        ],
+        "resourceType": "CarePlan"
+      }
+    }
+  ],
+  "resourceType": "Bundle"
+}
