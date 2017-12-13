@@ -1,0 +1,204 @@
+
+
+Subject http://hl7.org/fhir/OrganizationRole/example DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/OrganizationRole/example.OrganizationRole.availableTime_0.OrganizationRole.availableTime.availableEndTime> <http://hl7.org/fhir/value> "16:30:00"^^<http://www.w3.org/2001/XMLSchema#time> .
+<http://hl7.org/fhir/OrganizationRole/example.OrganizationRole.availableTime_0.OrganizationRole.availableTime.availableStartTime> <http://hl7.org/fhir/value> "09:00:00"^^<http://www.w3.org/2001/XMLSchema#time> .
+<http://hl7.org/fhir/OrganizationRole/example.OrganizationRole.availableTime_1.OrganizationRole.availableTime.availableEndTime> <http://hl7.org/fhir/value> "12:00:00"^^<http://www.w3.org/2001/XMLSchema#time> .
+<http://hl7.org/fhir/OrganizationRole/example.OrganizationRole.availableTime_1.OrganizationRole.availableTime.availableStartTime> <http://hl7.org/fhir/value> "09:00:00"^^<http://www.w3.org/2001/XMLSchema#time> .
+	----> Second: 
+<http://hl7.org/fhir/OrganizationRole/example.OrganizationRole.availableTime_0.OrganizationRole.availableTime.availableEndTime> <http://hl7.org/fhir/value> "16:30:00" .
+<http://hl7.org/fhir/OrganizationRole/example.OrganizationRole.availableTime_0.OrganizationRole.availableTime.availableStartTime> <http://hl7.org/fhir/value> "09:00:00" .
+<http://hl7.org/fhir/OrganizationRole/example.OrganizationRole.availableTime_1.OrganizationRole.availableTime.availableEndTime> <http://hl7.org/fhir/value> "12:00:00" .
+<http://hl7.org/fhir/OrganizationRole/example.OrganizationRole.availableTime_1.OrganizationRole.availableTime.availableStartTime> <http://hl7.org/fhir/value> "09:00:00" .----------------------------------------
+
+========================================
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix organization-role: <http://hl7.org/fhir/organization-role> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix v2: <http://hl7.org/fhir/v2/> .
+@prefix v3: <http://hl7.org/fhir/v3/> .
+@prefix w5: <http://hl7.org/fhir/w5#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://hl7.org/fhir/OrganizationRole/example> a fhir:OrganizationRole ;
+    fhir:nodeRole fhir:treeRoot ;
+    fhir:DomainResource.text [
+        fhir:Narrative.div """<div xmlns="http://www.w3.org/1999/xhtml">
+			<p>
+				HL7 Payer Network services for Acme Hospital from 1-Jan 2012 to 31-Mar 2012
+			</p>
+		</div>""" ;
+        fhir:Narrative.status [
+            fhir:value "generated"
+        ]
+    ] ;
+    fhir:OrganizationRole.active [
+        fhir:value "true"^^xsd:boolean
+    ] ;
+    fhir:OrganizationRole.availabilityExceptions [
+        fhir:value "Reduced Services on public holidays and during the Christmas/New Year break"
+    ] ;
+    fhir:OrganizationRole.availableTime [
+        fhir:index "1"^^xsd:integer ;
+        fhir:OrganizationRole.availableTime.availableEndTime [
+            fhir:value "12:00:00"
+        ] ;
+        fhir:OrganizationRole.availableTime.availableStartTime [
+            fhir:value "09:00:00"
+        ] ;
+        fhir:OrganizationRole.availableTime.daysOfWeek [
+            fhir:index "1"^^xsd:integer ;
+            fhir:value "fri"
+        ],
+            [
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "thu"
+        ]
+    ],
+        [
+        fhir:index "0"^^xsd:integer ;
+        fhir:OrganizationRole.availableTime.availableEndTime [
+            fhir:value "16:30:00"
+        ] ;
+        fhir:OrganizationRole.availableTime.availableStartTime [
+            fhir:value "09:00:00"
+        ] ;
+        fhir:OrganizationRole.availableTime.daysOfWeek [
+            fhir:index "2"^^xsd:integer ;
+            fhir:value "wed"
+        ],
+            [
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "mon"
+        ],
+            [
+            fhir:index "1"^^xsd:integer ;
+            fhir:value "tue"
+        ]
+    ] ;
+    fhir:OrganizationRole.code [
+        fhir:index "0"^^xsd:integer ;
+        fhir:CodeableConcept.coding [
+            a <http://hl7.org/fhir/organization-role/provider> ;
+            fhir:index "0"^^xsd:integer ;
+            fhir:Coding.code [
+                fhir:value "provider"
+            ] ;
+            fhir:Coding.system [
+                fhir:value "http://hl7.org/fhir/organization-role"
+            ]
+        ]
+    ] ;
+    fhir:OrganizationRole.endpoint [
+        fhir:index "0"^^xsd:integer ;
+        fhir:link <http://hl7.org/fhir/Endpoint/example> ;
+        fhir:Reference.reference [
+            fhir:value "Endpoint/example"
+        ]
+    ] ;
+    fhir:OrganizationRole.healthcareService [
+        fhir:index "0"^^xsd:integer ;
+        fhir:link <http://hl7.org/fhir/HealthcareService/example> ;
+        fhir:Reference.reference [
+            fhir:value "HealthcareService/example"
+        ]
+    ] ;
+    fhir:OrganizationRole.identifier [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Identifier.system [
+            fhir:value "http://www.acme.org/practitioners"
+        ] ;
+        fhir:Identifier.value [
+            fhir:value "23"
+        ]
+    ] ;
+    fhir:OrganizationRole.location [
+        fhir:index "0"^^xsd:integer ;
+        fhir:link <http://hl7.org/fhir/Location/1> ;
+        fhir:Reference.display [
+            fhir:value "South Wing, second floor"
+        ] ;
+        fhir:Reference.reference [
+            fhir:value "Location/1"
+        ]
+    ] ;
+    fhir:OrganizationRole.network [
+        fhir:index "0"^^xsd:integer ;
+        fhir:link <http://hl7.org/fhir/Organization/hl7pay> ;
+        fhir:Reference.display [
+            fhir:value "Dr Adam Careful"
+        ] ;
+        fhir:Reference.reference [
+            fhir:value "Organization/hl7pay"
+        ]
+    ] ;
+    fhir:OrganizationRole.organization [
+        fhir:link <http://hl7.org/fhir/Organization/hl7pay> ;
+        fhir:Reference.reference [
+            fhir:value "Organization/hl7pay"
+        ]
+    ] ;
+    fhir:OrganizationRole.participatingOrganization [
+        fhir:link <http://hl7.org/fhir/Organization/f001> ;
+        fhir:Reference.reference [
+            fhir:value "Organization/f001"
+        ]
+    ] ;
+    fhir:OrganizationRole.period [
+        fhir:Period.end [
+            fhir:value "2012-03-31"^^xsd:date
+        ] ;
+        fhir:Period.start [
+            fhir:value "2012-01-01"^^xsd:date
+        ]
+    ] ;
+    fhir:OrganizationRole.specialty [
+        fhir:index "0"^^xsd:integer ;
+        fhir:CodeableConcept.coding [
+            a sct:408443003 ;
+            fhir:index "0"^^xsd:integer ;
+            fhir:Coding.code [
+                fhir:value "408443003"
+            ] ;
+            fhir:Coding.display [
+                fhir:value "General medical practice"
+            ] ;
+            fhir:Coding.system [
+                fhir:value "http://snomed.info/sct"
+            ]
+        ]
+    ] ;
+    fhir:OrganizationRole.telecom [
+        fhir:index "0"^^xsd:integer ;
+        fhir:ContactPoint.system [
+            fhir:value "email"
+        ] ;
+        fhir:ContactPoint.use [
+            fhir:value "work"
+        ] ;
+        fhir:ContactPoint.value [
+            fhir:value "general.practice@example.org"
+        ]
+    ] ;
+    fhir:Resource.id [
+        fhir:value "example"
+    ] .
+
+<http://hl7.org/fhir/OrganizationRole/example.ttl> a owl:Ontology ;
+    owl:imports fhir:fhir.ttl .
+
+<http://hl7.org/fhir/Endpoint/example> a fhir:Endpoint .
+
+<http://hl7.org/fhir/HealthcareService/example> a fhir:HealthcareService .
+
+<http://hl7.org/fhir/Location/1> a fhir:Location .
+
+<http://hl7.org/fhir/Organization/f001> a fhir:Organization .
+
+<http://hl7.org/fhir/Organization/hl7pay> a fhir:Organization .
+

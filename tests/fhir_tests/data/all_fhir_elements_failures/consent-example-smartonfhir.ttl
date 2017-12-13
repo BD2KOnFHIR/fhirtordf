@@ -2,55 +2,70 @@
 
 Subject http://hl7.org/fhir/Consent/consent-example-smartonfhir DIFFERENCE: ==============================
 	----> First: 
-<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision_0.Consent.provision.provision_0.Consent.provision.action_0.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "access" .
-<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision_0.Consent.provision.provision_0.Consent.provision.action_0.CodeableConcept.coding_0.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/consentaction" .
-<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision_0.Consent.provision.provision_0.Consent.provision.action_0.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision_0.Consent.provision.provision_0.Consent.provision.action_0.CodeableConcept.coding_0.Coding.code> .
-<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision_0.Consent.provision.provision_0.Consent.provision.action_0.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision_0.Consent.provision.provision_0.Consent.provision.action_0.CodeableConcept.coding_0.Coding.system> .
-<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision_0.Consent.provision.provision_0.Consent.provision.action_0.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision_0.Consent.provision.provision_0.Consent.provision.action_0> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision_0.Consent.provision.provision_0.Consent.provision.action_0.CodeableConcept.coding_0> .
-<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision_0.Consent.provision.provision_0.Consent.provision.action_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision_0.Consent.provision.provision_0.Consent.provision.class_0.Coding.code> <http://hl7.org/fhir/value> "MedicationRequest" .
-<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision_0.Consent.provision.provision_0.Consent.provision.class_0.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/resource-types" .
-<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision_0.Consent.provision.provision_0.Consent.provision.class_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision_0.Consent.provision.provision_0.Consent.provision.class_0.Coding.code> .
-<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision_0.Consent.provision.provision_0.Consent.provision.class_0> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision_0.Consent.provision.provision_0.Consent.provision.class_0.Coding.system> .
-<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision_0.Consent.provision.provision_0.Consent.provision.class_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision_0.Consent.provision.provision_0.Consent.provision.type> <http://hl7.org/fhir/value> "permit" .
-<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision_0.Consent.provision.provision_0> <http://hl7.org/fhir/Consent.provision.action> <http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision_0.Consent.provision.provision_0.Consent.provision.action_0> .
-<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision_0.Consent.provision.provision_0> <http://hl7.org/fhir/Consent.provision.class> <http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision_0.Consent.provision.provision_0.Consent.provision.class_0> .
-<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision_0.Consent.provision.provision_0> <http://hl7.org/fhir/Consent.provision.type> <http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision_0.Consent.provision.provision_0.Consent.provision.type> .
+<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision.Consent.provision.provision_0.Consent.provision.action_0.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "access" .
+<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision.Consent.provision.provision_0.Consent.provision.action_0.CodeableConcept.coding_0.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/consentaction" .
+<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision.Consent.provision.provision_0.Consent.provision.action_0.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision.Consent.provision.provision_0.Consent.provision.action_0.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision.Consent.provision.provision_0.Consent.provision.action_0.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision.Consent.provision.provision_0.Consent.provision.action_0.CodeableConcept.coding_0.Coding.system> .
+<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision.Consent.provision.provision_0.Consent.provision.action_0.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision.Consent.provision.provision_0.Consent.provision.action_0> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision.Consent.provision.provision_0.Consent.provision.action_0.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision.Consent.provision.provision_0.Consent.provision.action_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision.Consent.provision.provision_0.Consent.provision.class_0.Coding.code> <http://hl7.org/fhir/value> "MedicationRequest" .
+<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision.Consent.provision.provision_0.Consent.provision.class_0.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/resource-types" .
+<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision.Consent.provision.provision_0.Consent.provision.class_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision.Consent.provision.provision_0.Consent.provision.class_0.Coding.code> .
+<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision.Consent.provision.provision_0.Consent.provision.class_0> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision.Consent.provision.provision_0.Consent.provision.class_0.Coding.system> .
+<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision.Consent.provision.provision_0.Consent.provision.class_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision.Consent.provision.provision_0.Consent.provision.type> <http://hl7.org/fhir/value> "permit" .
+<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision.Consent.provision.provision_0> <http://hl7.org/fhir/Consent.provision.action> <http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision.Consent.provision.provision_0.Consent.provision.action_0> .
+<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision.Consent.provision.provision_0> <http://hl7.org/fhir/Consent.provision.class> <http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision.Consent.provision.provision_0.Consent.provision.class_0> .
+<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision.Consent.provision.provision_0> <http://hl7.org/fhir/Consent.provision.type> <http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision.Consent.provision.provision_0.Consent.provision.type> .
 	----> Second: 
-<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.action_0.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "access" .
-<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.action_0.CodeableConcept.coding_0.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/consentaction" .
-<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.action_0.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.action_0.CodeableConcept.coding_0.Coding.code> .
-<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.action_0.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.action_0.CodeableConcept.coding_0.Coding.system> .
-<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.action_0.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.action_0> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.action_0.CodeableConcept.coding_0> .
-<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.action_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.class_0.Coding.code> <http://hl7.org/fhir/value> "MedicationRequest" .
-<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.class_0.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/resource-types" .
-<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.class_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.class_0.Coding.code> .
-<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.class_0> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.class_0.Coding.system> .
-<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.class_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.type> <http://hl7.org/fhir/value> "permit" .
-<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision_0.Consent.provision.provision_0> <http://hl7.org/fhir/Consent.provision.provision.action> <http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.action_0> .
-<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision_0.Consent.provision.provision_0> <http://hl7.org/fhir/Consent.provision.provision.class> <http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.class_0> .
-<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision_0.Consent.provision.provision_0> <http://hl7.org/fhir/Consent.provision.provision.type> <http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.type> .----------------------------------------
+<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.action_0.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "access" .
+<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.action_0.CodeableConcept.coding_0.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/consentaction" .
+<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.action_0.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.action_0.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.action_0.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.action_0.CodeableConcept.coding_0.Coding.system> .
+<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.action_0.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.action_0> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.action_0.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.action_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.class_0.Coding.code> <http://hl7.org/fhir/value> "MedicationRequest" .
+<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.class_0.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/resource-types" .
+<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.class_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.class_0.Coding.code> .
+<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.class_0> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.class_0.Coding.system> .
+<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.class_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.type> <http://hl7.org/fhir/value> "permit" .
+<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision.Consent.provision.provision_0> <http://hl7.org/fhir/Consent.provision.provision.action> <http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.action_0> .
+<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision.Consent.provision.provision_0> <http://hl7.org/fhir/Consent.provision.provision.class> <http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.class_0> .
+<http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision.Consent.provision.provision_0> <http://hl7.org/fhir/Consent.provision.provision.type> <http://hl7.org/fhir/Consent/consent-example-smartonfhir.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.type> .----------------------------------------
 
 ========================================
 @prefix consentaction: <http://hl7.org/fhir/consentaction> .
 @prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sct: <http://snomed.info/id/> .
 @prefix v2: <http://hl7.org/fhir/v2/> .
 @prefix v3: <http://hl7.org/fhir/v3/> .
+@prefix v3-ActCode: <http://hl7.org/fhir/v3/ActCode> .
 @prefix w5: <http://hl7.org/fhir/w5#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://hl7.org/fhir/Consent/consent-example-smartonfhir> a fhir:Consent ;
     fhir:nodeRole fhir:treeRoot ;
+    fhir:Consent.category [
+        fhir:index "0"^^xsd:integer ;
+        fhir:CodeableConcept.coding [
+            a loinc:59284-0 ;
+            fhir:index "0"^^xsd:integer ;
+            fhir:Coding.code [
+                fhir:value "59284-0"
+            ] ;
+            fhir:Coding.system [
+                fhir:value "http://loinc.org"
+            ]
+        ]
+    ] ;
     fhir:Consent.consentingParty [
         fhir:index "0"^^xsd:integer ;
         fhir:link <http://hl7.org/fhir/RelatedPerson/peter> ;
@@ -75,10 +90,18 @@ Subject http://hl7.org/fhir/Consent/consent-example-smartonfhir DIFFERENCE: ====
         ]
     ] ;
     fhir:Consent.policyRule [
-        fhir:value "http://hl7.org/fhir/ConsentPolicy/opt-in"
+        fhir:CodeableConcept.coding [
+            a <http://hl7.org/fhir/v3/ActCode/OPTIN> ;
+            fhir:index "0"^^xsd:integer ;
+            fhir:Coding.code [
+                fhir:value "OPTIN"
+            ] ;
+            fhir:Coding.system [
+                fhir:value "http://hl7.org/fhir/v3/ActCode"
+            ]
+        ]
     ] ;
     fhir:Consent.provision [
-        fhir:index "0"^^xsd:integer ;
         fhir:Consent.provision.period [
             fhir:Period.end [
                 fhir:value "2016-06-23T17:32:33+10:00"^^xsd:dateTime
@@ -116,11 +139,14 @@ Subject http://hl7.org/fhir/Consent/consent-example-smartonfhir DIFFERENCE: ====
             ]
         ]
     ] ;
+    fhir:Consent.scope [
+        fhir:value "privacy"
+    ] ;
     fhir:Consent.status [
         fhir:value "active"
     ] ;
     fhir:DomainResource.text [
-        fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: consent-example-smartonfhir</p><p><b>status</b>: active</p><p><b>patient</b>: <a>Patient/xcda</a></p><p><b>dateTime</b>: Jun 23, 2016 5:02:33 PM</p><p><b>consentingParty</b>: <a>RelatedPerson/peter</a></p><p><b>organization</b>: <a>Organization/f001</a></p><p><b>policyRule</b>: <a>http://hl7.org/fhir/ConsentPolicy/opt-in</a></p><blockquote><p><b>provision</b></p><p><b>period</b>: Jun 23, 2016 5:02:33 PM --&gt; Jun 23, 2016 5:32:33 PM</p><h3>Provisions</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></div>" ;
+        fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: consent-example-smartonfhir</p><p><b>status</b>: active</p><p><b>scope</b>: privacy</p><p><b>category</b>: Patient Consent <span>(Details : {LOINC code '59284-0' = 'Patient Consent)</span></p><p><b>patient</b>: <a>Patient/xcda</a></p><p><b>dateTime</b>: Jun 23, 2016 5:02:33 PM</p><p><b>consentingParty</b>: <a>RelatedPerson/peter</a></p><p><b>organization</b>: <a>Organization/f001</a></p><p><b>policyRule</b>: opt-in <span>(Details : {http://hl7.org/fhir/v3/ActCode code 'OPTIN' = 'opt-in)</span></p><blockquote><p><b>provision</b></p><p><b>period</b>: Jun 23, 2016 5:02:33 PM --&gt; Jun 23, 2016 5:32:33 PM</p><h3>Provisions</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></div>" ;
         fhir:Narrative.status [
             fhir:value "generated"
         ]

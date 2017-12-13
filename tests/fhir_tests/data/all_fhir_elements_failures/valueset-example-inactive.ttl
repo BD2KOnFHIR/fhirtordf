@@ -1,4 +1,4 @@
-
+# ***** expanson.contains.code vs. expanson.contains.contains.code> -- related to the GF#13594 issue *****
 
 Subject http://hl7.org/fhir/ValueSet/inactive DIFFERENCE: ==============================
 	----> First: 
@@ -54,6 +54,9 @@ Subject http://hl7.org/fhir/ValueSet/inactive DIFFERENCE: ======================
       <table class="codes">
         <tr>
           <td>
+            <b>Lvl</b>
+          </td>
+          <td style="white-space:nowrap">
             <b>Code</b>
           </td>
           <td>
@@ -65,7 +68,9 @@ Subject http://hl7.org/fhir/ValueSet/inactive DIFFERENCE: ======================
         </tr>
         <tr>
           <td>
-            <a name="http---hl7.org-fhir-v3-ActMood-CRT"> </a>
+            <a name="http---hl7.org-fhir-v3-ActMood-CRT"> </a>0
+          </td>
+          <td style="white-space:nowrap">
             <a href="v3/ActMood/cs.html#v3-ActMood-CRT">CRT</a>
           </td>
           <td>criterion</td>
@@ -77,7 +82,9 @@ Subject http://hl7.org/fhir/ValueSet/inactive DIFFERENCE: ======================
         </tr>
         <tr>
           <td>
-            <a name="http---hl7.org-fhir-v3-ActMood-EXPEC"> </a>
+            <a name="http---hl7.org-fhir-v3-ActMood-EXPEC"> </a>0
+          </td>
+          <td style="white-space:nowrap">
             <a href="v3/ActMood/cs.html#v3-ActMood-EXPEC">EXPEC</a>
           </td>
           <td>expectation</td>
@@ -91,7 +98,9 @@ Subject http://hl7.org/fhir/ValueSet/inactive DIFFERENCE: ======================
         </tr>
         <tr>
           <td>
-            <a name="http---hl7.org-fhir-v3-ActMood-GOL"> </a>  
+            <a name="http---hl7.org-fhir-v3-ActMood-GOL"> </a>1
+          </td>
+          <td style="white-space:nowrap">  
             <a href="v3/ActMood/cs.html#v3-ActMood-GOL">GOL</a>
           </td>
           <td>goal</td>
@@ -105,7 +114,9 @@ Subject http://hl7.org/fhir/ValueSet/inactive DIFFERENCE: ======================
         </tr>
         <tr>
           <td>
-            <a name="http---hl7.org-fhir-v3-ActMood-RSK"> </a>  
+            <a name="http---hl7.org-fhir-v3-ActMood-RSK"> </a>1
+          </td>
+          <td style="white-space:nowrap">  
             <a href="v3/ActMood/cs.html#v3-ActMood-RSK">RSK</a>
           </td>
           <td>risk</td>
@@ -119,7 +130,9 @@ Subject http://hl7.org/fhir/ValueSet/inactive DIFFERENCE: ======================
         </tr>
         <tr>
           <td>
-            <a name="http---hl7.org-fhir-v3-ActMood-OPT"> </a>
+            <a name="http---hl7.org-fhir-v3-ActMood-OPT"> </a>0
+          </td>
+          <td style="white-space:nowrap">
             <a href="v3/ActMood/cs.html#v3-ActMood-OPT">OPT</a>
           </td>
           <td>option</td>
@@ -182,24 +195,24 @@ Subject http://hl7.org/fhir/ValueSet/inactive DIFFERENCE: ======================
                 fhir:value "EXPEC"
             ] ;
             fhir:ValueSet.expansion.contains.contains [
-                fhir:index "0"^^xsd:integer ;
-                fhir:ValueSet.expansion.contains.contains.code [
-                    fhir:value "GOL"
-                ] ;
-                fhir:ValueSet.expansion.contains.contains.display [
-                    fhir:value "goal"
-                ] ;
-                fhir:ValueSet.expansion.contains.contains.system [
-                    fhir:value "http://hl7.org/fhir/v3/ActMood"
-                ]
-            ],
-                [
                 fhir:index "1"^^xsd:integer ;
                 fhir:ValueSet.expansion.contains.contains.code [
                     fhir:value "RSK"
                 ] ;
                 fhir:ValueSet.expansion.contains.contains.display [
                     fhir:value "risk"
+                ] ;
+                fhir:ValueSet.expansion.contains.contains.system [
+                    fhir:value "http://hl7.org/fhir/v3/ActMood"
+                ]
+            ],
+                [
+                fhir:index "0"^^xsd:integer ;
+                fhir:ValueSet.expansion.contains.contains.code [
+                    fhir:value "GOL"
+                ] ;
+                fhir:ValueSet.expansion.contains.contains.display [
+                    fhir:value "goal"
                 ] ;
                 fhir:ValueSet.expansion.contains.contains.system [
                     fhir:value "http://hl7.org/fhir/v3/ActMood"

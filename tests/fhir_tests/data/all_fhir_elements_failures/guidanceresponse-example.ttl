@@ -55,23 +55,15 @@ Subject http://hl7.org/fhir/GuidanceResponse/example DIFFERENCE: ===============
     fhir:DomainResource.contained [
         fhir:index "0"^^xsd:integer ;
         fhir:Parameters.parameter [
-            fhir:index "1"^^xsd:integer ;
-            fhir:Extension.valueCodeableConcept [
-                fhir:CodeableConcept.coding [
-                    fhir:index "0"^^xsd:integer ;
-                    fhir:Coding.code [
-                        fhir:value "70450"
-                    ] ;
-                    fhir:Coding.display [
-                        fhir:value "CT, head, wo iv contrast"
-                    ] ;
-                    fhir:Coding.system [
-                        fhir:value "http://www.ama-assn.org/go/cpt"
-                    ]
+            fhir:index "2"^^xsd:integer ;
+            fhir:Extension.valueReference [
+                fhir:link <http://hl7.org/fhir/Device/software> ;
+                fhir:Reference.reference [
+                    fhir:value "Device/software"
                 ]
             ] ;
             fhir:Parameters.parameter.name [
-                fhir:value "item-assessed"
+                fhir:value "device"
             ]
         ],
             [
@@ -93,15 +85,23 @@ Subject http://hl7.org/fhir/GuidanceResponse/example DIFFERENCE: ===============
             ]
         ],
             [
-            fhir:index "2"^^xsd:integer ;
-            fhir:Extension.valueReference [
-                fhir:link <http://hl7.org/fhir/Device/software> ;
-                fhir:Reference.reference [
-                    fhir:value "Device/software"
+            fhir:index "1"^^xsd:integer ;
+            fhir:Extension.valueCodeableConcept [
+                fhir:CodeableConcept.coding [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "70450"
+                    ] ;
+                    fhir:Coding.display [
+                        fhir:value "CT, head, wo iv contrast"
+                    ] ;
+                    fhir:Coding.system [
+                        fhir:value "http://www.ama-assn.org/go/cpt"
+                    ]
                 ]
             ] ;
             fhir:Parameters.parameter.name [
-                fhir:value "device"
+                fhir:value "item-assessed"
             ]
         ] ;
         fhir:Resource.id [

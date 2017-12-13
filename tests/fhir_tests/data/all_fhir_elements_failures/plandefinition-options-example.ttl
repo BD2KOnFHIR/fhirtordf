@@ -103,6 +103,20 @@ Subject http://hl7.org/fhir/PlanDefinition/options-example DIFFERENCE: =========
     fhir:PlanDefinition.action [
         fhir:index "0"^^xsd:integer ;
         fhir:PlanDefinition.action.action [
+            fhir:index "0"^^xsd:integer ;
+            fhir:Element.id [
+                fhir:value "medication-action-1"
+            ] ;
+            fhir:PlanDefinition.action.action.definition [
+                fhir:Reference.reference [
+                    fhir:value "#activitydefinition-medicationrequest-1"
+                ]
+            ] ;
+            fhir:PlanDefinition.action.action.title [
+                fhir:value "Administer Medication 1"
+            ]
+        ],
+            [
             fhir:index "1"^^xsd:integer ;
             fhir:Element.id [
                 fhir:value "medication-action-2"
@@ -131,20 +145,6 @@ Subject http://hl7.org/fhir/PlanDefinition/options-example DIFFERENCE: =========
             ] ;
             fhir:PlanDefinition.action.action.title [
                 fhir:value "Administer Medication 2"
-            ]
-        ],
-            [
-            fhir:index "0"^^xsd:integer ;
-            fhir:Element.id [
-                fhir:value "medication-action-1"
-            ] ;
-            fhir:PlanDefinition.action.action.definition [
-                fhir:Reference.reference [
-                    fhir:value "#activitydefinition-medicationrequest-1"
-                ]
-            ] ;
-            fhir:PlanDefinition.action.action.title [
-                fhir:value "Administer Medication 1"
             ]
         ] ;
         fhir:PlanDefinition.action.groupingBehavior [

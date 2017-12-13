@@ -1,0 +1,46 @@
+
+
+Subject http://hl7.org/fhir/EntryDefinition/example DIFFERENCE: ==============================
+	----> Second: 
+<http://hl7.org/fhir/EntryDefinition/example.EntryDefinition.referencedItem> <http://hl7.org/fhir/link> <http://hl7.org/fhir/device001.123> .----------------------------------------
+
+========================================
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix v2: <http://hl7.org/fhir/v2/> .
+@prefix v3: <http://hl7.org/fhir/v3/> .
+@prefix w5: <http://hl7.org/fhir/w5#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://hl7.org/fhir/EntryDefinition/example> a fhir:EntryDefinition ;
+    fhir:nodeRole fhir:treeRoot ;
+    fhir:DomainResource.text [
+        fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">[Put rendering here]</div>" ;
+        fhir:Narrative.status [
+            fhir:value "generated"
+        ]
+    ] ;
+    fhir:EntryDefinition.purpose [
+        fhir:CodeableConcept.text [
+            fhir:value "NoPurpose"
+        ]
+    ] ;
+    fhir:EntryDefinition.referencedItem [
+        fhir:link fhir:device001.123 ;
+        fhir:Reference.reference [
+            fhir:value "device001.123"
+        ]
+    ] ;
+    fhir:Resource.id [
+        fhir:value "example"
+    ] .
+
+<http://hl7.org/fhir/EntryDefinition/example.ttl> a owl:Ontology ;
+    owl:imports fhir:fhir.ttl .
+
+fhir:device001.123 a fhir:Resource .
+

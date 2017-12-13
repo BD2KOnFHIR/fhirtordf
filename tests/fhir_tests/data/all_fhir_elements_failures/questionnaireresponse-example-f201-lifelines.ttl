@@ -208,6 +208,36 @@ Subject http://hl7.org/fhir/QuestionnaireResponse/f201 DIFFERENCE: =============
         [
         fhir:index "1"^^xsd:integer ;
         fhir:QuestionnaireResponse.item.item [
+            fhir:index "1"^^xsd:integer ;
+            fhir:QuestionnaireResponse.item.item.answer [
+                fhir:index "0"^^xsd:integer ;
+                fhir:QuestionnaireResponse.item.item.answer.valueDate [
+                    fhir:value "1960-03-13"^^xsd:date
+                ]
+            ] ;
+            fhir:QuestionnaireResponse.item.item.linkId [
+                fhir:value "2.2"
+            ] ;
+            fhir:QuestionnaireResponse.item.item.text [
+                fhir:value "What is your date of birth?"
+            ]
+        ],
+            [
+            fhir:index "3"^^xsd:integer ;
+            fhir:QuestionnaireResponse.item.item.answer [
+                fhir:index "0"^^xsd:integer ;
+                fhir:QuestionnaireResponse.item.item.answer.valueString [
+                    fhir:value "married"
+                ]
+            ] ;
+            fhir:QuestionnaireResponse.item.item.linkId [
+                fhir:value "2.4"
+            ] ;
+            fhir:QuestionnaireResponse.item.item.text [
+                fhir:value "What is your marital status?"
+            ]
+        ],
+            [
             fhir:index "0"^^xsd:integer ;
             fhir:QuestionnaireResponse.item.item.answer [
                 fhir:index "0"^^xsd:integer ;
@@ -235,36 +265,6 @@ Subject http://hl7.org/fhir/QuestionnaireResponse/f201 DIFFERENCE: =============
             ] ;
             fhir:QuestionnaireResponse.item.item.text [
                 fhir:value "What is your country of birth?"
-            ]
-        ],
-            [
-            fhir:index "3"^^xsd:integer ;
-            fhir:QuestionnaireResponse.item.item.answer [
-                fhir:index "0"^^xsd:integer ;
-                fhir:QuestionnaireResponse.item.item.answer.valueString [
-                    fhir:value "married"
-                ]
-            ] ;
-            fhir:QuestionnaireResponse.item.item.linkId [
-                fhir:value "2.4"
-            ] ;
-            fhir:QuestionnaireResponse.item.item.text [
-                fhir:value "What is your marital status?"
-            ]
-        ],
-            [
-            fhir:index "1"^^xsd:integer ;
-            fhir:QuestionnaireResponse.item.item.answer [
-                fhir:index "0"^^xsd:integer ;
-                fhir:QuestionnaireResponse.item.item.answer.valueDate [
-                    fhir:value "1960-03-13"^^xsd:date
-                ]
-            ] ;
-            fhir:QuestionnaireResponse.item.item.linkId [
-                fhir:value "2.2"
-            ] ;
-            fhir:QuestionnaireResponse.item.item.text [
-                fhir:value "What is your date of birth?"
             ]
         ] ;
         fhir:QuestionnaireResponse.item.linkId [

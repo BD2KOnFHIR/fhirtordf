@@ -1,0 +1,222 @@
+
+
+Subject http://hl7.org/fhir/ImplementationGuideInput/example DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/ImplementationGuideInput/example.ImplementationGuideInput.page.ImplementationGuideInput.page.page_0.ImplementationGuideInput.page.format> <http://hl7.org/fhir/value> "text/html" .
+<http://hl7.org/fhir/ImplementationGuideInput/example.ImplementationGuideInput.page.ImplementationGuideInput.page.page_0.ImplementationGuideInput.page.kind> <http://hl7.org/fhir/value> "list" .
+<http://hl7.org/fhir/ImplementationGuideInput/example.ImplementationGuideInput.page.ImplementationGuideInput.page.page_0.ImplementationGuideInput.page.package_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ImplementationGuideInput/example.ImplementationGuideInput.page.ImplementationGuideInput.page.page_0.ImplementationGuideInput.page.package_0> <http://hl7.org/fhir/value> "test" .
+<http://hl7.org/fhir/ImplementationGuideInput/example.ImplementationGuideInput.page.ImplementationGuideInput.page.page_0.ImplementationGuideInput.page.sourceUri> <http://hl7.org/fhir/value> "list.html" .
+<http://hl7.org/fhir/ImplementationGuideInput/example.ImplementationGuideInput.page.ImplementationGuideInput.page.page_0.ImplementationGuideInput.page.title> <http://hl7.org/fhir/value> "Value Set Page" .
+<http://hl7.org/fhir/ImplementationGuideInput/example.ImplementationGuideInput.page.ImplementationGuideInput.page.page_0.ImplementationGuideInput.page.type_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ImplementationGuideInput/example.ImplementationGuideInput.page.ImplementationGuideInput.page.page_0.ImplementationGuideInput.page.type_0> <http://hl7.org/fhir/value> "ValueSet" .
+<http://hl7.org/fhir/ImplementationGuideInput/example.ImplementationGuideInput.page.ImplementationGuideInput.page.page_0> <http://hl7.org/fhir/ImplementationGuideInput.page.format> <http://hl7.org/fhir/ImplementationGuideInput/example.ImplementationGuideInput.page.ImplementationGuideInput.page.page_0.ImplementationGuideInput.page.format> .
+<http://hl7.org/fhir/ImplementationGuideInput/example.ImplementationGuideInput.page.ImplementationGuideInput.page.page_0> <http://hl7.org/fhir/ImplementationGuideInput.page.kind> <http://hl7.org/fhir/ImplementationGuideInput/example.ImplementationGuideInput.page.ImplementationGuideInput.page.page_0.ImplementationGuideInput.page.kind> .
+<http://hl7.org/fhir/ImplementationGuideInput/example.ImplementationGuideInput.page.ImplementationGuideInput.page.page_0> <http://hl7.org/fhir/ImplementationGuideInput.page.package> <http://hl7.org/fhir/ImplementationGuideInput/example.ImplementationGuideInput.page.ImplementationGuideInput.page.page_0.ImplementationGuideInput.page.package_0> .
+<http://hl7.org/fhir/ImplementationGuideInput/example.ImplementationGuideInput.page.ImplementationGuideInput.page.page_0> <http://hl7.org/fhir/ImplementationGuideInput.page.sourceUri> <http://hl7.org/fhir/ImplementationGuideInput/example.ImplementationGuideInput.page.ImplementationGuideInput.page.page_0.ImplementationGuideInput.page.sourceUri> .
+<http://hl7.org/fhir/ImplementationGuideInput/example.ImplementationGuideInput.page.ImplementationGuideInput.page.page_0> <http://hl7.org/fhir/ImplementationGuideInput.page.title> <http://hl7.org/fhir/ImplementationGuideInput/example.ImplementationGuideInput.page.ImplementationGuideInput.page.page_0.ImplementationGuideInput.page.title> .
+<http://hl7.org/fhir/ImplementationGuideInput/example.ImplementationGuideInput.page.ImplementationGuideInput.page.page_0> <http://hl7.org/fhir/ImplementationGuideInput.page.type> <http://hl7.org/fhir/ImplementationGuideInput/example.ImplementationGuideInput.page.ImplementationGuideInput.page.page_0.ImplementationGuideInput.page.type_0> .
+	----> Second: 
+<http://hl7.org/fhir/ImplementationGuideInput/example.ImplementationGuideInput.page.ImplementationGuideInput.page.page_0.ImplementationGuideInput.page.page.format> <http://hl7.org/fhir/value> "text/html" .
+<http://hl7.org/fhir/ImplementationGuideInput/example.ImplementationGuideInput.page.ImplementationGuideInput.page.page_0.ImplementationGuideInput.page.page.kind> <http://hl7.org/fhir/value> "list" .
+<http://hl7.org/fhir/ImplementationGuideInput/example.ImplementationGuideInput.page.ImplementationGuideInput.page.page_0.ImplementationGuideInput.page.page.package_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ImplementationGuideInput/example.ImplementationGuideInput.page.ImplementationGuideInput.page.page_0.ImplementationGuideInput.page.page.package_0> <http://hl7.org/fhir/value> "test" .
+<http://hl7.org/fhir/ImplementationGuideInput/example.ImplementationGuideInput.page.ImplementationGuideInput.page.page_0.ImplementationGuideInput.page.page.sourceUri> <http://hl7.org/fhir/value> "list.html" .
+<http://hl7.org/fhir/ImplementationGuideInput/example.ImplementationGuideInput.page.ImplementationGuideInput.page.page_0.ImplementationGuideInput.page.page.title> <http://hl7.org/fhir/value> "Value Set Page" .
+<http://hl7.org/fhir/ImplementationGuideInput/example.ImplementationGuideInput.page.ImplementationGuideInput.page.page_0.ImplementationGuideInput.page.page.type_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ImplementationGuideInput/example.ImplementationGuideInput.page.ImplementationGuideInput.page.page_0.ImplementationGuideInput.page.page.type_0> <http://hl7.org/fhir/value> "ValueSet" .
+<http://hl7.org/fhir/ImplementationGuideInput/example.ImplementationGuideInput.page.ImplementationGuideInput.page.page_0> <http://hl7.org/fhir/ImplementationGuideInput.page.page.format> <http://hl7.org/fhir/ImplementationGuideInput/example.ImplementationGuideInput.page.ImplementationGuideInput.page.page_0.ImplementationGuideInput.page.page.format> .
+<http://hl7.org/fhir/ImplementationGuideInput/example.ImplementationGuideInput.page.ImplementationGuideInput.page.page_0> <http://hl7.org/fhir/ImplementationGuideInput.page.page.kind> <http://hl7.org/fhir/ImplementationGuideInput/example.ImplementationGuideInput.page.ImplementationGuideInput.page.page_0.ImplementationGuideInput.page.page.kind> .
+<http://hl7.org/fhir/ImplementationGuideInput/example.ImplementationGuideInput.page.ImplementationGuideInput.page.page_0> <http://hl7.org/fhir/ImplementationGuideInput.page.page.package> <http://hl7.org/fhir/ImplementationGuideInput/example.ImplementationGuideInput.page.ImplementationGuideInput.page.page_0.ImplementationGuideInput.page.page.package_0> .
+<http://hl7.org/fhir/ImplementationGuideInput/example.ImplementationGuideInput.page.ImplementationGuideInput.page.page_0> <http://hl7.org/fhir/ImplementationGuideInput.page.page.sourceUri> <http://hl7.org/fhir/ImplementationGuideInput/example.ImplementationGuideInput.page.ImplementationGuideInput.page.page_0.ImplementationGuideInput.page.page.sourceUri> .
+<http://hl7.org/fhir/ImplementationGuideInput/example.ImplementationGuideInput.page.ImplementationGuideInput.page.page_0> <http://hl7.org/fhir/ImplementationGuideInput.page.page.title> <http://hl7.org/fhir/ImplementationGuideInput/example.ImplementationGuideInput.page.ImplementationGuideInput.page.page_0.ImplementationGuideInput.page.page.title> .
+<http://hl7.org/fhir/ImplementationGuideInput/example.ImplementationGuideInput.page.ImplementationGuideInput.page.page_0> <http://hl7.org/fhir/ImplementationGuideInput.page.page.type> <http://hl7.org/fhir/ImplementationGuideInput/example.ImplementationGuideInput.page.ImplementationGuideInput.page.page_0.ImplementationGuideInput.page.page.type_0> .----------------------------------------
+
+========================================
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix v2: <http://hl7.org/fhir/v2/> .
+@prefix v3: <http://hl7.org/fhir/v3/> .
+@prefix w5: <http://hl7.org/fhir/w5#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://hl7.org/fhir/ImplementationGuideInput/example> a fhir:ImplementationGuideInput ;
+    fhir:nodeRole fhir:treeRoot ;
+    fhir:DomainResource.text [
+        fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example</p><p><b>url</b>: <a>http://hl7.org/fhir/us/daf</a></p><p><b>version</b>: 0</p><p><b>name</b>: Data Access Framework (DAF)</p><p><b>status</b>: draft</p><p><b>experimental</b>: false</p><p><b>date</b>: Jan 1, 2015</p><p><b>publisher</b>: ONC / HL7 Joint project</p><p><b>contact</b>: , </p><p><b>description</b>: The Data Access Framework (DAF) Initiative leverages the HL7 FHIR standards to standardize access to Meaningful Use Stage 2 structured information both within the organization and from external organizations</p><p><b>jurisdiction</b>: United States of America (the) <span>(Details : {urn:iso:std:iso:3166 code 'US' = 'United States of America (the))</span></p><p><b>copyright</b>: Published by ONC under the standard FHIR license (CC0)</p><p><b>fhirVersion</b>: 1.0.0</p><h3>Dependencies</h3><table><tr><td>-</td><td><b>Type</b></td><td><b>Uri</b></td></tr><tr><td>*</td><td>reference</td><td><a>http://hl7.org/fhir/ImplementationGuide/uscore</a></td></tr></table><blockquote><p><b>package</b></p><p><b>name</b>: test</p><p><b>description</b>: Base package (not broken up into multiple packages)</p><h3>Resources</h3><table><tr><td>-</td><td><b>Reference</b></td><td><b>Name</b></td><td><b>Description</b></td><td><b>Example[x]</b></td></tr><tr><td>*</td><td><a>Patient/test</a></td><td>Test Example</td><td>A test example to show how a package works</td><td><a>StructureDefinition/daf-patient</a></td></tr></table></blockquote><h3>Globals</h3><table><tr><td>-</td><td><b>Type</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>Patient</td><td><a>StructureDefinition/daf-patient</a></td></tr></table><blockquote><p><b>page</b></p><p><b>source</b>: <a>patient-example.html</a></p><p><b>title</b>: Example Patient Page</p><p><b>kind</b>: page</p><h3>Pages</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></div>" ;
+        fhir:Narrative.status [
+            fhir:value "generated"
+        ]
+    ] ;
+    fhir:ImplementationGuideInput.contact [
+        fhir:index "0"^^xsd:integer ;
+        fhir:ContactDetail.name [
+            fhir:value "ONC"
+        ] ;
+        fhir:ContactDetail.telecom [
+            fhir:index "0"^^xsd:integer ;
+            fhir:ContactPoint.system [
+                fhir:value "url"
+            ] ;
+            fhir:ContactPoint.value [
+                fhir:value "http://www.healthit.gov"
+            ]
+        ]
+    ],
+        [
+        fhir:index "1"^^xsd:integer ;
+        fhir:ContactDetail.name [
+            fhir:value "HL7"
+        ] ;
+        fhir:ContactDetail.telecom [
+            fhir:index "0"^^xsd:integer ;
+            fhir:ContactPoint.system [
+                fhir:value "url"
+            ] ;
+            fhir:ContactPoint.value [
+                fhir:value "http://hl7.org/fhir"
+            ]
+        ]
+    ] ;
+    fhir:ImplementationGuideInput.copyright [
+        fhir:value "Published by ONC under the standard FHIR license (CC0)"
+    ] ;
+    fhir:ImplementationGuideInput.date [
+        fhir:value "2015-01-01"^^xsd:date
+    ] ;
+    fhir:ImplementationGuideInput.dependency [
+        fhir:index "0"^^xsd:integer ;
+        fhir:ImplementationGuideInput.dependency.type [
+            fhir:value "reference"
+        ] ;
+        fhir:ImplementationGuideInput.dependency.uri [
+            fhir:value "http://hl7.org/fhir/ImplementationGuide/uscore"
+        ]
+    ] ;
+    fhir:ImplementationGuideInput.description [
+        fhir:value "The Data Access Framework (DAF) Initiative leverages the HL7 FHIR standards to standardize access to Meaningful Use Stage 2 structured information both within the organization and from external organizations"
+    ] ;
+    fhir:ImplementationGuideInput.experimental [
+        fhir:value "false"^^xsd:boolean
+    ] ;
+    fhir:ImplementationGuideInput.fhirVersion [
+        fhir:value "1.0.0"
+    ] ;
+    fhir:ImplementationGuideInput.global [
+        fhir:index "0"^^xsd:integer ;
+        fhir:ImplementationGuideInput.global.profile [
+            fhir:link <http://hl7.org/fhir/StructureDefinition/daf-patient> ;
+            fhir:Reference.reference [
+                fhir:value "StructureDefinition/daf-patient"
+            ]
+        ] ;
+        fhir:ImplementationGuideInput.global.type [
+            fhir:value "Patient"
+        ]
+    ] ;
+    fhir:ImplementationGuideInput.jurisdiction [
+        fhir:index "0"^^xsd:integer ;
+        fhir:CodeableConcept.coding [
+            fhir:index "0"^^xsd:integer ;
+            fhir:Coding.code [
+                fhir:value "US"
+            ] ;
+            fhir:Coding.system [
+                fhir:value "urn:iso:std:iso:3166"
+            ]
+        ]
+    ] ;
+    fhir:ImplementationGuideInput.name [
+        fhir:value "Data Access Framework (DAF)"
+    ] ;
+    fhir:ImplementationGuideInput.package [
+        fhir:index "0"^^xsd:integer ;
+        fhir:ImplementationGuideInput.package.description [
+            fhir:value "Base package (not broken up into multiple packages)"
+        ] ;
+        fhir:ImplementationGuideInput.package.name [
+            fhir:value "test"
+        ] ;
+        fhir:ImplementationGuideInput.package.resource [
+            fhir:index "0"^^xsd:integer ;
+            fhir:ImplementationGuideInput.package.resource.description [
+                fhir:value "A test example to show how a package works"
+            ] ;
+            fhir:ImplementationGuideInput.package.resource.exampleReference [
+                fhir:link <http://hl7.org/fhir/StructureDefinition/daf-patient> ;
+                fhir:Reference.reference [
+                    fhir:value "StructureDefinition/daf-patient"
+                ]
+            ] ;
+            fhir:ImplementationGuideInput.package.resource.name [
+                fhir:value "Test Example"
+            ] ;
+            fhir:ImplementationGuideInput.package.resource.reference [
+                fhir:link <http://hl7.org/fhir/Patient/test> ;
+                fhir:Reference.reference [
+                    fhir:value "Patient/test"
+                ]
+            ]
+        ]
+    ] ;
+    fhir:ImplementationGuideInput.page [
+        fhir:ImplementationGuideInput.page.kind [
+            fhir:value "page"
+        ] ;
+        fhir:ImplementationGuideInput.page.page [
+            fhir:index "0"^^xsd:integer ;
+            fhir:ImplementationGuideInput.page.page.format [
+                fhir:value "text/html"
+            ] ;
+            fhir:ImplementationGuideInput.page.page.kind [
+                fhir:value "list"
+            ] ;
+            fhir:ImplementationGuideInput.page.page.package [
+                fhir:index "0"^^xsd:integer ;
+                fhir:value "test"
+            ] ;
+            fhir:ImplementationGuideInput.page.page.sourceUri [
+                fhir:value "list.html"
+            ] ;
+            fhir:ImplementationGuideInput.page.page.title [
+                fhir:value "Value Set Page"
+            ] ;
+            fhir:ImplementationGuideInput.page.page.type [
+                fhir:index "0"^^xsd:integer ;
+                fhir:value "ValueSet"
+            ]
+        ] ;
+        fhir:ImplementationGuideInput.page.sourceUri [
+            fhir:value "patient-example.html"
+        ] ;
+        fhir:ImplementationGuideInput.page.title [
+            fhir:value "Example Patient Page"
+        ]
+    ] ;
+    fhir:ImplementationGuideInput.publisher [
+        fhir:value "ONC / HL7 Joint project"
+    ] ;
+    fhir:ImplementationGuideInput.status [
+        fhir:value "draft"
+    ] ;
+    fhir:ImplementationGuideInput.url [
+        fhir:value "http://hl7.org/fhir/us/daf"
+    ] ;
+    fhir:ImplementationGuideInput.version [
+        fhir:value "0"
+    ] ;
+    fhir:Resource.id [
+        fhir:value "example"
+    ] .
+
+<http://hl7.org/fhir/ImplementationGuideInput/example.ttl> a owl:Ontology ;
+    owl:imports fhir:fhir.ttl .
+
+<http://hl7.org/fhir/Patient/test> a fhir:Patient .
+
+<http://hl7.org/fhir/StructureDefinition/daf-patient> a fhir:StructureDefinition .
+

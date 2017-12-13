@@ -216,6 +216,45 @@ Subject http://hl7.org/fhir/Questionnaire/3141 DIFFERENCE: =====================
         fhir:value "2012-01-01"^^xsd:gYearMonth
     ] ;
     fhir:Questionnaire.item [
+        fhir:index "1"^^xsd:integer ;
+        fhir:Questionnaire.item.code [
+            fhir:index "0"^^xsd:integer ;
+            fhir:Coding.code [
+                fhir:value "HISTOPATHOLOGY"
+            ] ;
+            fhir:Coding.system [
+                fhir:value "http://example.org/system/code/sections"
+            ]
+        ] ;
+        fhir:Questionnaire.item.item [
+            fhir:index "0"^^xsd:integer ;
+            fhir:Questionnaire.item.item.code [
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "ABDOMINAL"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://example.org/system/code/sections"
+                ]
+            ] ;
+            fhir:Questionnaire.item.item.item [
+                fhir:index "0"^^xsd:integer
+            ] ;
+            fhir:Questionnaire.item.item.linkId [
+                fhir:value "2.1"
+            ] ;
+            fhir:Questionnaire.item.item.type [
+                fhir:value "group"
+            ]
+        ] ;
+        fhir:Questionnaire.item.linkId [
+            fhir:value "2"
+        ] ;
+        fhir:Questionnaire.item.type [
+            fhir:value "group"
+        ]
+    ],
+        [
         fhir:index "0"^^xsd:integer ;
         fhir:Questionnaire.item.code [
             fhir:index "0"^^xsd:integer ;
@@ -258,45 +297,6 @@ Subject http://hl7.org/fhir/Questionnaire/3141 DIFFERENCE: =====================
         ] ;
         fhir:Questionnaire.item.linkId [
             fhir:value "1"
-        ] ;
-        fhir:Questionnaire.item.type [
-            fhir:value "group"
-        ]
-    ],
-        [
-        fhir:index "1"^^xsd:integer ;
-        fhir:Questionnaire.item.code [
-            fhir:index "0"^^xsd:integer ;
-            fhir:Coding.code [
-                fhir:value "HISTOPATHOLOGY"
-            ] ;
-            fhir:Coding.system [
-                fhir:value "http://example.org/system/code/sections"
-            ]
-        ] ;
-        fhir:Questionnaire.item.item [
-            fhir:index "0"^^xsd:integer ;
-            fhir:Questionnaire.item.item.code [
-                fhir:index "0"^^xsd:integer ;
-                fhir:Coding.code [
-                    fhir:value "ABDOMINAL"
-                ] ;
-                fhir:Coding.system [
-                    fhir:value "http://example.org/system/code/sections"
-                ]
-            ] ;
-            fhir:Questionnaire.item.item.item [
-                fhir:index "0"^^xsd:integer
-            ] ;
-            fhir:Questionnaire.item.item.linkId [
-                fhir:value "2.1"
-            ] ;
-            fhir:Questionnaire.item.item.type [
-                fhir:value "group"
-            ]
-        ] ;
-        fhir:Questionnaire.item.linkId [
-            fhir:value "2"
         ] ;
         fhir:Questionnaire.item.type [
             fhir:value "group"

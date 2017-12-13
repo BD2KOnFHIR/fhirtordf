@@ -1,0 +1,871 @@
+
+
+Subject http://hl7.org/fhir/ExampleScenario/example DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.description> <http://hl7.org/fhir/value> "Query for medication administration orders,\\n- For today's shifts\\n- For today's patients" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.initiator> <http://hl7.org/fhir/value> "MAP" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.name> <http://hl7.org/fhir/value> "2.Query for medication administration orders,\\n- For today's shifts\\n- For today's patients" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.number> <http://hl7.org/fhir/value> "2" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.receiver> <http://hl7.org/fhir/value> "OP" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.request.ExampleScenario.instance.containedInstance.resourceId> <http://hl7.org/fhir/value> "iherxqry" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.request> <http://hl7.org/fhir/ExampleScenario.instance.containedInstance.resourceId> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.request.ExampleScenario.instance.containedInstance.resourceId> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.response.ExampleScenario.instance.containedInstance.resourceId> <http://hl7.org/fhir/value> "iherx001bundle" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.response> <http://hl7.org/fhir/ExampleScenario.instance.containedInstance.resourceId> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.response.ExampleScenario.instance.containedInstance.resourceId> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation> <http://hl7.org/fhir/ExampleScenario.process.step.operation.initiator> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.initiator> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation> <http://hl7.org/fhir/ExampleScenario.process.step.operation.name> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.name> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation> <http://hl7.org/fhir/ExampleScenario.process.step.operation.number> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.number> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation> <http://hl7.org/fhir/ExampleScenario.process.step.operation.receiver> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.receiver> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation> <http://hl7.org/fhir/ExampleScenario.process.step.operation.request> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.request> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation> <http://hl7.org/fhir/ExampleScenario.process.step.operation.response> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.response> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0> <http://hl7.org/fhir/ExampleScenario.process.step.operation> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.title> <http://hl7.org/fhir/value> "P1. Query Administration Requests" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0> <http://hl7.org/fhir/ExampleScenario.process.description> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.description> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0> <http://hl7.org/fhir/ExampleScenario.process.step> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0> <http://hl7.org/fhir/ExampleScenario.process.title> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.title> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_12.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.initiator> <http://hl7.org/fhir/value> "Nurse" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_12.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.initiatorActive> <http://hl7.org/fhir/value> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_12.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.name> <http://hl7.org/fhir/value> "Nurse updates administration report" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_12.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.number> <http://hl7.org/fhir/value> "8" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_12.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.receiver> <http://hl7.org/fhir/value> "MAP" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_12.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.request.ExampleScenario.instance.containedInstance.resourceId> <http://hl7.org/fhir/value> "iheadm002" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_12.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.request> <http://hl7.org/fhir/ExampleScenario.instance.containedInstance.resourceId> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_12.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.request.ExampleScenario.instance.containedInstance.resourceId> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_12.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation> <http://hl7.org/fhir/ExampleScenario.process.step.operation.initiator> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_12.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.initiator> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_12.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation> <http://hl7.org/fhir/ExampleScenario.process.step.operation.initiatorActive> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_12.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.initiatorActive> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_12.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation> <http://hl7.org/fhir/ExampleScenario.process.step.operation.name> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_12.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.name> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_12.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation> <http://hl7.org/fhir/ExampleScenario.process.step.operation.number> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_12.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.number> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_12.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation> <http://hl7.org/fhir/ExampleScenario.process.step.operation.receiver> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_12.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.receiver> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_12.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation> <http://hl7.org/fhir/ExampleScenario.process.step.operation.request> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_12.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.request> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_12.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0> <http://hl7.org/fhir/ExampleScenario.process.step.operation> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_12.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_12.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_12.ExampleScenario.process.step.process_0.ExampleScenario.process.title> <http://hl7.org/fhir/value> "P2. Update administration reports" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_12.ExampleScenario.process.step.process_0> <http://hl7.org/fhir/ExampleScenario.process.step> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_12.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_12.ExampleScenario.process.step.process_0> <http://hl7.org/fhir/ExampleScenario.process.title> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_12.ExampleScenario.process.step.process_0.ExampleScenario.process.title> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_14.ExampleScenario.process.step.process_0.ExampleScenario.process.description> <http://hl7.org/fhir/value> "The nurse's system uploads the administration results to the server" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_14.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.initiator> <http://hl7.org/fhir/value> "MAP" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_14.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.name> <http://hl7.org/fhir/value> "Refresh" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_14.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.number> <http://hl7.org/fhir/value> "9" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_14.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.receiver> <http://hl7.org/fhir/value> "MAC" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_14.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.request.ExampleScenario.instance.containedInstance.resourceId> <http://hl7.org/fhir/value> "iheadm001" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_14.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.request> <http://hl7.org/fhir/ExampleScenario.instance.containedInstance.resourceId> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_14.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.request.ExampleScenario.instance.containedInstance.resourceId> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_14.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation> <http://hl7.org/fhir/ExampleScenario.process.step.operation.initiator> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_14.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.initiator> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_14.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation> <http://hl7.org/fhir/ExampleScenario.process.step.operation.name> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_14.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.name> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_14.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation> <http://hl7.org/fhir/ExampleScenario.process.step.operation.number> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_14.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.number> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_14.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation> <http://hl7.org/fhir/ExampleScenario.process.step.operation.receiver> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_14.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.receiver> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_14.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation> <http://hl7.org/fhir/ExampleScenario.process.step.operation.request> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_14.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.request> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_14.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0> <http://hl7.org/fhir/ExampleScenario.process.step.operation> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_14.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_14.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_14.ExampleScenario.process.step.process_0.ExampleScenario.process.title> <http://hl7.org/fhir/value> "P3. Upload administration reports" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_14.ExampleScenario.process.step.process_0> <http://hl7.org/fhir/ExampleScenario.process.description> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_14.ExampleScenario.process.step.process_0.ExampleScenario.process.description> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_14.ExampleScenario.process.step.process_0> <http://hl7.org/fhir/ExampleScenario.process.step> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_14.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_14.ExampleScenario.process.step.process_0> <http://hl7.org/fhir/ExampleScenario.process.title> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_14.ExampleScenario.process.step.process_0.ExampleScenario.process.title> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_0.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.initiator> <http://hl7.org/fhir/value> "Nurse" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_0.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.initiatorActive> <http://hl7.org/fhir/value> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_0.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.name> <http://hl7.org/fhir/value> "Register Meds taken" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_0.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.number> <http://hl7.org/fhir/value> "1a" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_0.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.receiver> <http://hl7.org/fhir/value> "MAP" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_0.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation> <http://hl7.org/fhir/ExampleScenario.process.step.operation.initiator> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_0.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.initiator> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_0.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation> <http://hl7.org/fhir/ExampleScenario.process.step.operation.initiatorActive> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_0.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.initiatorActive> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_0.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation> <http://hl7.org/fhir/ExampleScenario.process.step.operation.name> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_0.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.name> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_0.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation> <http://hl7.org/fhir/ExampleScenario.process.step.operation.number> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_0.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.number> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_0.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation> <http://hl7.org/fhir/ExampleScenario.process.step.operation.receiver> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_0.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.receiver> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_0.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0> <http://hl7.org/fhir/ExampleScenario.process.step.operation> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_0.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_0.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_0.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.process_0.ExampleScenario.process.title> <http://hl7.org/fhir/value> "Register Meds taken" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_0.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.process_0> <http://hl7.org/fhir/ExampleScenario.process.step> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_0.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_0.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.process_0> <http://hl7.org/fhir/ExampleScenario.process.title> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_0.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.process_0.ExampleScenario.process.title> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_0.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.process_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_0.ExampleScenario.process.step.alternative.option.step_0> <http://hl7.org/fhir/ExampleScenario.process.step.process> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_0.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.process_0> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_1.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.initiator> <http://hl7.org/fhir/value> "Nurse" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_1.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.initiatorActive> <http://hl7.org/fhir/value> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_1.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.name> <http://hl7.org/fhir/value> "Register Meds NOT taken" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_1.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.number> <http://hl7.org/fhir/value> "1b" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_1.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.receiver> <http://hl7.org/fhir/value> "MAP" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_1.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation> <http://hl7.org/fhir/ExampleScenario.process.step.operation.initiator> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_1.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.initiator> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_1.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation> <http://hl7.org/fhir/ExampleScenario.process.step.operation.initiatorActive> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_1.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.initiatorActive> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_1.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation> <http://hl7.org/fhir/ExampleScenario.process.step.operation.name> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_1.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.name> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_1.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation> <http://hl7.org/fhir/ExampleScenario.process.step.operation.number> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_1.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.number> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_1.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation> <http://hl7.org/fhir/ExampleScenario.process.step.operation.receiver> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_1.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation.ExampleScenario.process.step.operation.receiver> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_1.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0> <http://hl7.org/fhir/ExampleScenario.process.step.operation> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_1.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0.ExampleScenario.process.step.operation> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_1.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_1.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.process_0.ExampleScenario.process.title> <http://hl7.org/fhir/value> "Register Meds NOT taken" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_1.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.process_0> <http://hl7.org/fhir/ExampleScenario.process.step> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_1.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.process_0.ExampleScenario.process.step_0> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_1.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.process_0> <http://hl7.org/fhir/ExampleScenario.process.title> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_1.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.process_0.ExampleScenario.process.title> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_1.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.process_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_1.ExampleScenario.process.step.alternative.option.step_0> <http://hl7.org/fhir/ExampleScenario.process.step.process> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_1.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.process_0> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_2.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.pause> <http://hl7.org/fhir/value> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_2.ExampleScenario.process.step.alternative.option.step_0> <http://hl7.org/fhir/ExampleScenario.process.step.pause> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_2.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.pause> .
+	----> Second: 
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.description> <http://hl7.org/fhir/value> "Query for medication administration orders,\\n- For today's shifts\\n- For today's patients" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation.ExampleScenario.process.step.process.step.operation.initiator> <http://hl7.org/fhir/value> "MAP" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation.ExampleScenario.process.step.process.step.operation.name> <http://hl7.org/fhir/value> "2.Query for medication administration orders,\\n- For today's shifts\\n- For today's patients" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation.ExampleScenario.process.step.process.step.operation.number> <http://hl7.org/fhir/value> "2" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation.ExampleScenario.process.step.process.step.operation.receiver> <http://hl7.org/fhir/value> "OP" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation.ExampleScenario.process.step.process.step.operation.request.ExampleScenario.process.step.process.step.operation.request.resourceId> <http://hl7.org/fhir/value> "iherxqry" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation.ExampleScenario.process.step.process.step.operation.request> <http://hl7.org/fhir/ExampleScenario.process.step.process.step.operation.request.resourceId> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation.ExampleScenario.process.step.process.step.operation.request.ExampleScenario.process.step.process.step.operation.request.resourceId> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation.ExampleScenario.process.step.process.step.operation.response.ExampleScenario.process.step.process.step.operation.request.resourceId> <http://hl7.org/fhir/value> "iherx001bundle" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation.ExampleScenario.process.step.process.step.operation.response> <http://hl7.org/fhir/ExampleScenario.process.step.process.step.operation.request.resourceId> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation.ExampleScenario.process.step.process.step.operation.response.ExampleScenario.process.step.process.step.operation.request.resourceId> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation> <http://hl7.org/fhir/ExampleScenario.process.step.process.step.operation.initiator> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation.ExampleScenario.process.step.process.step.operation.initiator> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation> <http://hl7.org/fhir/ExampleScenario.process.step.process.step.operation.name> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation.ExampleScenario.process.step.process.step.operation.name> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation> <http://hl7.org/fhir/ExampleScenario.process.step.process.step.operation.number> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation.ExampleScenario.process.step.process.step.operation.number> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation> <http://hl7.org/fhir/ExampleScenario.process.step.process.step.operation.receiver> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation.ExampleScenario.process.step.process.step.operation.receiver> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation> <http://hl7.org/fhir/ExampleScenario.process.step.process.step.operation.request> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation.ExampleScenario.process.step.process.step.operation.request> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation> <http://hl7.org/fhir/ExampleScenario.process.step.process.step.operation.response> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation.ExampleScenario.process.step.process.step.operation.response> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0> <http://hl7.org/fhir/ExampleScenario.process.step.process.step.operation> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.title> <http://hl7.org/fhir/value> "P1. Query Administration Requests" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0> <http://hl7.org/fhir/ExampleScenario.process.step.process.description> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.description> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0> <http://hl7.org/fhir/ExampleScenario.process.step.process.step> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0> <http://hl7.org/fhir/ExampleScenario.process.step.process.title> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_1.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.title> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_12.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation.ExampleScenario.process.step.process.step.operation.initiator> <http://hl7.org/fhir/value> "Nurse" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_12.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation.ExampleScenario.process.step.process.step.operation.initiatorActive> <http://hl7.org/fhir/value> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_12.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation.ExampleScenario.process.step.process.step.operation.name> <http://hl7.org/fhir/value> "Nurse updates administration report" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_12.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation.ExampleScenario.process.step.process.step.operation.number> <http://hl7.org/fhir/value> "8" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_12.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation.ExampleScenario.process.step.process.step.operation.receiver> <http://hl7.org/fhir/value> "MAP" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_12.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation.ExampleScenario.process.step.process.step.operation.request.ExampleScenario.process.step.process.step.operation.request.resourceId> <http://hl7.org/fhir/value> "iheadm002" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_12.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation.ExampleScenario.process.step.process.step.operation.request> <http://hl7.org/fhir/ExampleScenario.process.step.process.step.operation.request.resourceId> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_12.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation.ExampleScenario.process.step.process.step.operation.request.ExampleScenario.process.step.process.step.operation.request.resourceId> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_12.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation> <http://hl7.org/fhir/ExampleScenario.process.step.process.step.operation.initiator> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_12.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation.ExampleScenario.process.step.process.step.operation.initiator> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_12.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation> <http://hl7.org/fhir/ExampleScenario.process.step.process.step.operation.initiatorActive> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_12.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation.ExampleScenario.process.step.process.step.operation.initiatorActive> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_12.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation> <http://hl7.org/fhir/ExampleScenario.process.step.process.step.operation.name> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_12.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation.ExampleScenario.process.step.process.step.operation.name> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_12.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation> <http://hl7.org/fhir/ExampleScenario.process.step.process.step.operation.number> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_12.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation.ExampleScenario.process.step.process.step.operation.number> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_12.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation> <http://hl7.org/fhir/ExampleScenario.process.step.process.step.operation.receiver> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_12.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation.ExampleScenario.process.step.process.step.operation.receiver> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_12.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation> <http://hl7.org/fhir/ExampleScenario.process.step.process.step.operation.request> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_12.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation.ExampleScenario.process.step.process.step.operation.request> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_12.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0> <http://hl7.org/fhir/ExampleScenario.process.step.process.step.operation> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_12.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_12.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_12.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.title> <http://hl7.org/fhir/value> "P2. Update administration reports" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_12.ExampleScenario.process.step.process_0> <http://hl7.org/fhir/ExampleScenario.process.step.process.step> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_12.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_12.ExampleScenario.process.step.process_0> <http://hl7.org/fhir/ExampleScenario.process.step.process.title> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_12.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.title> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_14.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.description> <http://hl7.org/fhir/value> "The nurse's system uploads the administration results to the server" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_14.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation.ExampleScenario.process.step.process.step.operation.initiator> <http://hl7.org/fhir/value> "MAP" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_14.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation.ExampleScenario.process.step.process.step.operation.name> <http://hl7.org/fhir/value> "Refresh" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_14.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation.ExampleScenario.process.step.process.step.operation.number> <http://hl7.org/fhir/value> "9" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_14.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation.ExampleScenario.process.step.process.step.operation.receiver> <http://hl7.org/fhir/value> "MAC" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_14.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation.ExampleScenario.process.step.process.step.operation.request.ExampleScenario.process.step.process.step.operation.request.resourceId> <http://hl7.org/fhir/value> "iheadm001" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_14.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation.ExampleScenario.process.step.process.step.operation.request> <http://hl7.org/fhir/ExampleScenario.process.step.process.step.operation.request.resourceId> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_14.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation.ExampleScenario.process.step.process.step.operation.request.ExampleScenario.process.step.process.step.operation.request.resourceId> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_14.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation> <http://hl7.org/fhir/ExampleScenario.process.step.process.step.operation.initiator> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_14.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation.ExampleScenario.process.step.process.step.operation.initiator> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_14.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation> <http://hl7.org/fhir/ExampleScenario.process.step.process.step.operation.name> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_14.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation.ExampleScenario.process.step.process.step.operation.name> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_14.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation> <http://hl7.org/fhir/ExampleScenario.process.step.process.step.operation.number> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_14.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation.ExampleScenario.process.step.process.step.operation.number> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_14.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation> <http://hl7.org/fhir/ExampleScenario.process.step.process.step.operation.receiver> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_14.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation.ExampleScenario.process.step.process.step.operation.receiver> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_14.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation> <http://hl7.org/fhir/ExampleScenario.process.step.process.step.operation.request> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_14.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation.ExampleScenario.process.step.process.step.operation.request> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_14.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0> <http://hl7.org/fhir/ExampleScenario.process.step.process.step.operation> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_14.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0.ExampleScenario.process.step.process.step.operation> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_14.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_14.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.title> <http://hl7.org/fhir/value> "P3. Upload administration reports" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_14.ExampleScenario.process.step.process_0> <http://hl7.org/fhir/ExampleScenario.process.step.process.description> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_14.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.description> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_14.ExampleScenario.process.step.process_0> <http://hl7.org/fhir/ExampleScenario.process.step.process.step> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_14.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.step_0> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_14.ExampleScenario.process.step.process_0> <http://hl7.org/fhir/ExampleScenario.process.step.process.title> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_14.ExampleScenario.process.step.process_0.ExampleScenario.process.step.process.title> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_0.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.alternative.option.step.process_0.ExampleScenario.process.step.alternative.option.step.process.step_0.ExampleScenario.process.step.alternative.option.step.process.step.operation.ExampleScenario.process.step.alternative.option.step.process.step.operation.initiator> <http://hl7.org/fhir/value> "Nurse" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_0.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.alternative.option.step.process_0.ExampleScenario.process.step.alternative.option.step.process.step_0.ExampleScenario.process.step.alternative.option.step.process.step.operation.ExampleScenario.process.step.alternative.option.step.process.step.operation.initiatorActive> <http://hl7.org/fhir/value> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_0.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.alternative.option.step.process_0.ExampleScenario.process.step.alternative.option.step.process.step_0.ExampleScenario.process.step.alternative.option.step.process.step.operation.ExampleScenario.process.step.alternative.option.step.process.step.operation.name> <http://hl7.org/fhir/value> "Register Meds taken" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_0.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.alternative.option.step.process_0.ExampleScenario.process.step.alternative.option.step.process.step_0.ExampleScenario.process.step.alternative.option.step.process.step.operation.ExampleScenario.process.step.alternative.option.step.process.step.operation.number> <http://hl7.org/fhir/value> "1a" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_0.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.alternative.option.step.process_0.ExampleScenario.process.step.alternative.option.step.process.step_0.ExampleScenario.process.step.alternative.option.step.process.step.operation.ExampleScenario.process.step.alternative.option.step.process.step.operation.receiver> <http://hl7.org/fhir/value> "MAP" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_0.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.alternative.option.step.process_0.ExampleScenario.process.step.alternative.option.step.process.step_0.ExampleScenario.process.step.alternative.option.step.process.step.operation> <http://hl7.org/fhir/ExampleScenario.process.step.alternative.option.step.process.step.operation.initiator> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_0.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.alternative.option.step.process_0.ExampleScenario.process.step.alternative.option.step.process.step_0.ExampleScenario.process.step.alternative.option.step.process.step.operation.ExampleScenario.process.step.alternative.option.step.process.step.operation.initiator> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_0.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.alternative.option.step.process_0.ExampleScenario.process.step.alternative.option.step.process.step_0.ExampleScenario.process.step.alternative.option.step.process.step.operation> <http://hl7.org/fhir/ExampleScenario.process.step.alternative.option.step.process.step.operation.initiatorActive> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_0.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.alternative.option.step.process_0.ExampleScenario.process.step.alternative.option.step.process.step_0.ExampleScenario.process.step.alternative.option.step.process.step.operation.ExampleScenario.process.step.alternative.option.step.process.step.operation.initiatorActive> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_0.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.alternative.option.step.process_0.ExampleScenario.process.step.alternative.option.step.process.step_0.ExampleScenario.process.step.alternative.option.step.process.step.operation> <http://hl7.org/fhir/ExampleScenario.process.step.alternative.option.step.process.step.operation.name> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_0.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.alternative.option.step.process_0.ExampleScenario.process.step.alternative.option.step.process.step_0.ExampleScenario.process.step.alternative.option.step.process.step.operation.ExampleScenario.process.step.alternative.option.step.process.step.operation.name> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_0.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.alternative.option.step.process_0.ExampleScenario.process.step.alternative.option.step.process.step_0.ExampleScenario.process.step.alternative.option.step.process.step.operation> <http://hl7.org/fhir/ExampleScenario.process.step.alternative.option.step.process.step.operation.number> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_0.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.alternative.option.step.process_0.ExampleScenario.process.step.alternative.option.step.process.step_0.ExampleScenario.process.step.alternative.option.step.process.step.operation.ExampleScenario.process.step.alternative.option.step.process.step.operation.number> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_0.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.alternative.option.step.process_0.ExampleScenario.process.step.alternative.option.step.process.step_0.ExampleScenario.process.step.alternative.option.step.process.step.operation> <http://hl7.org/fhir/ExampleScenario.process.step.alternative.option.step.process.step.operation.receiver> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_0.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.alternative.option.step.process_0.ExampleScenario.process.step.alternative.option.step.process.step_0.ExampleScenario.process.step.alternative.option.step.process.step.operation.ExampleScenario.process.step.alternative.option.step.process.step.operation.receiver> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_0.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.alternative.option.step.process_0.ExampleScenario.process.step.alternative.option.step.process.step_0> <http://hl7.org/fhir/ExampleScenario.process.step.alternative.option.step.process.step.operation> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_0.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.alternative.option.step.process_0.ExampleScenario.process.step.alternative.option.step.process.step_0.ExampleScenario.process.step.alternative.option.step.process.step.operation> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_0.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.alternative.option.step.process_0.ExampleScenario.process.step.alternative.option.step.process.step_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_0.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.alternative.option.step.process_0.ExampleScenario.process.step.alternative.option.step.process.title> <http://hl7.org/fhir/value> "Register Meds taken" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_0.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.alternative.option.step.process_0> <http://hl7.org/fhir/ExampleScenario.process.step.alternative.option.step.process.step> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_0.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.alternative.option.step.process_0.ExampleScenario.process.step.alternative.option.step.process.step_0> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_0.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.alternative.option.step.process_0> <http://hl7.org/fhir/ExampleScenario.process.step.alternative.option.step.process.title> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_0.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.alternative.option.step.process_0.ExampleScenario.process.step.alternative.option.step.process.title> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_0.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.alternative.option.step.process_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_0.ExampleScenario.process.step.alternative.option.step_0> <http://hl7.org/fhir/ExampleScenario.process.step.alternative.option.step.process> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_0.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.alternative.option.step.process_0> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_1.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.alternative.option.step.process_0.ExampleScenario.process.step.alternative.option.step.process.step_0.ExampleScenario.process.step.alternative.option.step.process.step.operation.ExampleScenario.process.step.alternative.option.step.process.step.operation.initiator> <http://hl7.org/fhir/value> "Nurse" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_1.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.alternative.option.step.process_0.ExampleScenario.process.step.alternative.option.step.process.step_0.ExampleScenario.process.step.alternative.option.step.process.step.operation.ExampleScenario.process.step.alternative.option.step.process.step.operation.initiatorActive> <http://hl7.org/fhir/value> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_1.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.alternative.option.step.process_0.ExampleScenario.process.step.alternative.option.step.process.step_0.ExampleScenario.process.step.alternative.option.step.process.step.operation.ExampleScenario.process.step.alternative.option.step.process.step.operation.name> <http://hl7.org/fhir/value> "Register Meds NOT taken" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_1.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.alternative.option.step.process_0.ExampleScenario.process.step.alternative.option.step.process.step_0.ExampleScenario.process.step.alternative.option.step.process.step.operation.ExampleScenario.process.step.alternative.option.step.process.step.operation.number> <http://hl7.org/fhir/value> "1b" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_1.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.alternative.option.step.process_0.ExampleScenario.process.step.alternative.option.step.process.step_0.ExampleScenario.process.step.alternative.option.step.process.step.operation.ExampleScenario.process.step.alternative.option.step.process.step.operation.receiver> <http://hl7.org/fhir/value> "MAP" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_1.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.alternative.option.step.process_0.ExampleScenario.process.step.alternative.option.step.process.step_0.ExampleScenario.process.step.alternative.option.step.process.step.operation> <http://hl7.org/fhir/ExampleScenario.process.step.alternative.option.step.process.step.operation.initiator> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_1.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.alternative.option.step.process_0.ExampleScenario.process.step.alternative.option.step.process.step_0.ExampleScenario.process.step.alternative.option.step.process.step.operation.ExampleScenario.process.step.alternative.option.step.process.step.operation.initiator> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_1.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.alternative.option.step.process_0.ExampleScenario.process.step.alternative.option.step.process.step_0.ExampleScenario.process.step.alternative.option.step.process.step.operation> <http://hl7.org/fhir/ExampleScenario.process.step.alternative.option.step.process.step.operation.initiatorActive> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_1.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.alternative.option.step.process_0.ExampleScenario.process.step.alternative.option.step.process.step_0.ExampleScenario.process.step.alternative.option.step.process.step.operation.ExampleScenario.process.step.alternative.option.step.process.step.operation.initiatorActive> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_1.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.alternative.option.step.process_0.ExampleScenario.process.step.alternative.option.step.process.step_0.ExampleScenario.process.step.alternative.option.step.process.step.operation> <http://hl7.org/fhir/ExampleScenario.process.step.alternative.option.step.process.step.operation.name> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_1.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.alternative.option.step.process_0.ExampleScenario.process.step.alternative.option.step.process.step_0.ExampleScenario.process.step.alternative.option.step.process.step.operation.ExampleScenario.process.step.alternative.option.step.process.step.operation.name> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_1.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.alternative.option.step.process_0.ExampleScenario.process.step.alternative.option.step.process.step_0.ExampleScenario.process.step.alternative.option.step.process.step.operation> <http://hl7.org/fhir/ExampleScenario.process.step.alternative.option.step.process.step.operation.number> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_1.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.alternative.option.step.process_0.ExampleScenario.process.step.alternative.option.step.process.step_0.ExampleScenario.process.step.alternative.option.step.process.step.operation.ExampleScenario.process.step.alternative.option.step.process.step.operation.number> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_1.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.alternative.option.step.process_0.ExampleScenario.process.step.alternative.option.step.process.step_0.ExampleScenario.process.step.alternative.option.step.process.step.operation> <http://hl7.org/fhir/ExampleScenario.process.step.alternative.option.step.process.step.operation.receiver> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_1.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.alternative.option.step.process_0.ExampleScenario.process.step.alternative.option.step.process.step_0.ExampleScenario.process.step.alternative.option.step.process.step.operation.ExampleScenario.process.step.alternative.option.step.process.step.operation.receiver> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_1.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.alternative.option.step.process_0.ExampleScenario.process.step.alternative.option.step.process.step_0> <http://hl7.org/fhir/ExampleScenario.process.step.alternative.option.step.process.step.operation> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_1.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.alternative.option.step.process_0.ExampleScenario.process.step.alternative.option.step.process.step_0.ExampleScenario.process.step.alternative.option.step.process.step.operation> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_1.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.alternative.option.step.process_0.ExampleScenario.process.step.alternative.option.step.process.step_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_1.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.alternative.option.step.process_0.ExampleScenario.process.step.alternative.option.step.process.title> <http://hl7.org/fhir/value> "Register Meds NOT taken" .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_1.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.alternative.option.step.process_0> <http://hl7.org/fhir/ExampleScenario.process.step.alternative.option.step.process.step> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_1.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.alternative.option.step.process_0.ExampleScenario.process.step.alternative.option.step.process.step_0> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_1.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.alternative.option.step.process_0> <http://hl7.org/fhir/ExampleScenario.process.step.alternative.option.step.process.title> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_1.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.alternative.option.step.process_0.ExampleScenario.process.step.alternative.option.step.process.title> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_1.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.alternative.option.step.process_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_1.ExampleScenario.process.step.alternative.option.step_0> <http://hl7.org/fhir/ExampleScenario.process.step.alternative.option.step.process> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_1.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.alternative.option.step.process_0> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_2.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.alternative.option.step.pause> <http://hl7.org/fhir/value> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_2.ExampleScenario.process.step.alternative.option.step_0> <http://hl7.org/fhir/ExampleScenario.process.step.alternative.option.step.pause> <http://hl7.org/fhir/ExampleScenario/example.ExampleScenario.process.ExampleScenario.process.step_7.ExampleScenario.process.step.alternative.ExampleScenario.process.step.alternative.option_2.ExampleScenario.process.step.alternative.option.step_0.ExampleScenario.process.step.alternative.option.step.pause> .----------------------------------------
+
+========================================
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix v2: <http://hl7.org/fhir/v2/> .
+@prefix v3: <http://hl7.org/fhir/v3/> .
+@prefix w5: <http://hl7.org/fhir/w5#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://hl7.org/fhir/ExampleScenario/example> a fhir:ExampleScenario ;
+    fhir:nodeRole fhir:treeRoot ;
+    fhir:DomainResource.text [
+        fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example</p><p><b>title</b>: Mobile Medication Administration</p><p><b>status</b>: draft</p><p><b>description</b>: This scenario demonstrates the process of getting the relevant medication instructions for a patient visit and reporting the results of administration. The scenario is as follows: After the prescription is issued, the institution schedules each individual administration event in the Medication Administration Record (MAR). When preparing for a visit, the nurse queries the MAR for the scheduled administrations, obtaining a bundle of records. The nurse then performs the care activities and registers the results in the device. Upon synchronization of the device and the institution, the results of administration are uploaded to the EHR, thus updating the MAR.</p><p><b>purpose</b>: Purpose: this serves to enable remote performing of medication administration, by using remote / mobile devices to a) Get the planned medication administrations and b) Record the performing of these administrations without a permanent connection to the EHR.</p><blockquote><p><b>actor</b></p><p><b>actorId</b>: Nurse</p><p><b>type</b>: person</p><p><b>name</b>: Nurse</p><p><b>description</b>: The Nurse</p></blockquote><blockquote><p><b>actor</b></p><p><b>actorId</b>: MAP</p><p><b>type</b>: entity</p><p><b>name</b>: Nurse's Tablet</p><p><b>description</b>: The entity that receives the Administration Requests to show the nurse to perform them</p></blockquote><blockquote><p><b>actor</b></p><p><b>actorId</b>: OP</p><p><b>type</b>: entity</p><p><b>name</b>: MAR / Scheduler</p><p><b>description</b>: The Medication Administration Order Placer</p></blockquote><blockquote><p><b>actor</b></p><p><b>actorId</b>: MAC</p><p><b>type</b>: entity</p><p><b>name</b>: MAR / EHR</p><p><b>description</b>: The entity that receives the Medication Administration reports</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: iherx001</p><p><b>resourceType</b>: MedicationRequest</p><p><b>name</b>: Initial Prescription</p><p><b>description</b>: The initial prescription which describes &quot;medication X, 3 times per day&quot; - the exact scheduling is not   in the initial prescription (it is left for the care teams to decide on the schedule).</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: iherx001.001</p><p><b>resourceType</b>: MedicationRequest</p><p><b>name</b>: Request for day 1, morning</p><p><b>description</b>: The administration request for day 1, morning</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: iherx001.002</p><p><b>resourceType</b>: MedicationRequest</p><p><b>name</b>: Request for day 1, lunch</p><p><b>description</b>: The administration request for day 1, lunch</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: iherx001.003</p><p><b>resourceType</b>: MedicationRequest</p><p><b>name</b>: Request for day 1, evening</p><p><b>description</b>: The administration request for day 1, evening</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: iherx001.004</p><p><b>resourceType</b>: MedicationRequest</p><p><b>name</b>: Request for day 2, morning</p><p><b>description</b>: The administration request for day 2, morning</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: iherx001.005</p><p><b>resourceType</b>: MedicationRequest</p><p><b>name</b>: Request for day 2, lunch</p><p><b>description</b>: The administration request for day 2, lunch</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: iherx001.006</p><p><b>resourceType</b>: MedicationRequest</p><p><b>name</b>: Request for day 2, evening</p><p><b>description</b>: The administration request for day 2, evening</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: iheadm001a</p><p><b>resourceType</b>: MedicationAdministration</p><p><b>name</b>: Morning meds - taken</p><p><b>description</b>: Administration report for day 1, morning: Taken</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: iheadm001b</p><p><b>resourceType</b>: MedicationAdministration</p><p><b>name</b>: Morning meds - not taken</p><p><b>description</b>: Administration report for day 1, morning: NOT Taken</p></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: iherx001bundle</p><p><b>resourceType</b>: MedicationRequest</p><p><b>name</b>: Bundle of Medication Requests</p><p><b>description</b>: All the medication Requests for Day 1</p><blockquote><p><b>containedInstance</b></p><p><b>resourceId</b>: iherx001.001</p></blockquote><blockquote><p><b>containedInstance</b></p><p><b>resourceId</b>: iherx001.002</p></blockquote><blockquote><p><b>containedInstance</b></p><p><b>resourceId</b>: iherx001.003</p></blockquote><blockquote><p><b>containedInstance</b></p><p><b>resourceId</b>: iherx001.004</p></blockquote><blockquote><p><b>containedInstance</b></p><p><b>resourceId</b>: iherx001.005</p></blockquote><blockquote><p><b>containedInstance</b></p><p><b>resourceId</b>: iherx001.006</p></blockquote></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: iheadm002</p><p><b>resourceType</b>: MedicationAdministration</p><p><b>name</b>: Lunch meds - taken</p><p><b>description</b>: Administration report for day 1, lunch: Taken</p><blockquote><p><b>version</b></p><p><b>versionId</b>: iheadm002v1</p><p><b>description</b>: Medication just taken</p></blockquote><blockquote><p><b>version</b></p><p><b>versionId</b>: iheadm002v2</p><p><b>description</b>: Medication rejected</p></blockquote></blockquote><blockquote><p><b>instance</b></p><p><b>resourceId</b>: iherxqry</p><p><b>resourceType</b>: SearchParameter</p><p><b>name</b>: Search query1</p><p><b>description</b>: The search administration request for day 1, morning</p></blockquote><blockquote><p><b>process</b></p><p><b>title</b>: Mobile Medication Administration</p><p><b>description</b>: Mobile Medication Administration</p><p><b>preConditions</b>: Medication administration requests are in the EHR / MAR, scheduled for each individual intake.</p><p><b>postConditions</b>: Medication administration Reports are submitted, EHR is updated.</p><blockquote><p><b>step</b></p><h3>Operations</h3><table><tr><td>-</td><td><b>Number</b></td><td><b>Name</b></td><td><b>Initiator</b></td><td><b>Receiver</b></td></tr><tr><td>*</td><td>1</td><td>1. Get today's schedule</td><td>Nurse</td><td>MAP</td></tr></table></blockquote><blockquote><p><b>step</b></p><h3>Processes</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>step</b></p><p><b>pause</b>: true</p></blockquote><blockquote><p><b>step</b></p><h3>Operations</h3><table><tr><td>-</td><td><b>Number</b></td><td><b>Name</b></td><td><b>Initiator</b></td><td><b>Receiver</b></td></tr><tr><td>*</td><td>4</td><td>Notify (alert)</td><td>MAP</td><td>Nurse</td></tr></table></blockquote><blockquote><p><b>step</b></p><h3>Operations</h3><table><tr><td>-</td><td><b>Number</b></td><td><b>Name</b></td><td><b>Initiator</b></td><td><b>Receiver</b></td></tr><tr><td>*</td><td>5</td><td>Read orders</td><td>Nurse</td><td>MAP</td></tr></table></blockquote><blockquote><p><b>step</b></p><p><b>pause</b>: true</p></blockquote><blockquote><p><b>step</b></p><h3>Operations</h3><table><tr><td>-</td><td><b>Number</b></td><td><b>Name</b></td><td><b>Initiator</b></td><td><b>Receiver</b></td></tr><tr><td>*</td><td>5</td><td>Ask if patient took meds</td><td>Nurse</td><td>Nurse</td></tr></table></blockquote><blockquote><p><b>step</b></p><blockquote><p><b>alternative</b></p><p><b>name</b>: Check if patient took drugs</p><blockquote><p><b>option</b></p><p><b>description</b>: Yes, patient took drugs</p><h3>Steps</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>option</b></p><p><b>description</b>: No, patient did not take drugs</p><h3>Steps</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>option</b></p><p><b>description</b>: Not clear</p><h3>Steps</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></blockquote></blockquote><blockquote><p><b>step</b></p><p><b>pause</b>: true</p></blockquote><blockquote><p><b>step</b></p><h3>Operations</h3><table><tr><td>-</td><td><b>Number</b></td><td><b>Name</b></td><td><b>Initiator</b></td><td><b>Receiver</b></td></tr><tr><td>*</td><td>6</td><td>Administer drug</td><td>Nurse</td><td>Nurse</td></tr></table></blockquote><blockquote><p><b>step</b></p><h3>Operations</h3><table><tr><td>-</td><td><b>Number</b></td><td><b>Name</b></td><td><b>Initiator</b></td><td><b>Receiver</b></td><td><b>InitiatorActive</b></td></tr><tr><td>*</td><td>7</td><td>Register administration</td><td>Nurse</td><td>MAP</td><td>true</td></tr></table></blockquote><blockquote><p><b>step</b></p><p><b>pause</b>: true</p></blockquote><blockquote><p><b>step</b></p><h3>Processes</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote><blockquote><p><b>step</b></p><p><b>pause</b>: true</p></blockquote><blockquote><p><b>step</b></p><h3>Processes</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></blockquote></div>" ;
+        fhir:Narrative.status [
+            fhir:value "generated"
+        ]
+    ] ;
+    fhir:ExampleScenario.actor [
+        fhir:index "2"^^xsd:integer ;
+        fhir:ExampleScenario.actor.actorId [
+            fhir:value "OP"
+        ] ;
+        fhir:ExampleScenario.actor.description [
+            fhir:value "The Medication Administration Order Placer"
+        ] ;
+        fhir:ExampleScenario.actor.name [
+            fhir:value "MAR / Scheduler"
+        ] ;
+        fhir:ExampleScenario.actor.type [
+            fhir:value "entity"
+        ]
+    ],
+        [
+        fhir:index "3"^^xsd:integer ;
+        fhir:ExampleScenario.actor.actorId [
+            fhir:value "MAC"
+        ] ;
+        fhir:ExampleScenario.actor.description [
+            fhir:value "The entity that receives the Medication Administration reports"
+        ] ;
+        fhir:ExampleScenario.actor.name [
+            fhir:value "MAR / EHR"
+        ] ;
+        fhir:ExampleScenario.actor.type [
+            fhir:value "entity"
+        ]
+    ],
+        [
+        fhir:index "1"^^xsd:integer ;
+        fhir:ExampleScenario.actor.actorId [
+            fhir:value "MAP"
+        ] ;
+        fhir:ExampleScenario.actor.description [
+            fhir:value "The entity that receives the Administration Requests to show the nurse to perform them"
+        ] ;
+        fhir:ExampleScenario.actor.name [
+            fhir:value "Nurse's Tablet"
+        ] ;
+        fhir:ExampleScenario.actor.type [
+            fhir:value "entity"
+        ]
+    ],
+        [
+        fhir:index "0"^^xsd:integer ;
+        fhir:ExampleScenario.actor.actorId [
+            fhir:value "Nurse"
+        ] ;
+        fhir:ExampleScenario.actor.description [
+            fhir:value "The Nurse"
+        ] ;
+        fhir:ExampleScenario.actor.name [
+            fhir:value "Nurse"
+        ] ;
+        fhir:ExampleScenario.actor.type [
+            fhir:value "person"
+        ]
+    ] ;
+    fhir:ExampleScenario.description [
+        fhir:value "This scenario demonstrates the process of getting the relevant medication instructions for a patient visit and reporting the results of administration. The scenario is as follows: After the prescription is issued, the institution schedules each individual administration event in the Medication Administration Record (MAR). When preparing for a visit, the nurse queries the MAR for the scheduled administrations, obtaining a bundle of records. The nurse then performs the care activities and registers the results in the device. Upon synchronization of the device and the institution, the results of administration are uploaded to the EHR, thus updating the MAR."
+    ] ;
+    fhir:ExampleScenario.instance [
+        fhir:index "1"^^xsd:integer ;
+        fhir:ExampleScenario.instance.description [
+            fhir:value "The administration request for day 1, morning"
+        ] ;
+        fhir:ExampleScenario.instance.name [
+            fhir:value "Request for day 1, morning"
+        ] ;
+        fhir:ExampleScenario.instance.resourceId [
+            fhir:value "iherx001.001"
+        ] ;
+        fhir:ExampleScenario.instance.resourceType [
+            fhir:value "MedicationRequest"
+        ]
+    ],
+        [
+        fhir:index "8"^^xsd:integer ;
+        fhir:ExampleScenario.instance.description [
+            fhir:value "Administration report for day 1, morning: NOT Taken"
+        ] ;
+        fhir:ExampleScenario.instance.name [
+            fhir:value "Morning meds - not taken"
+        ] ;
+        fhir:ExampleScenario.instance.resourceId [
+            fhir:value "iheadm001b"
+        ] ;
+        fhir:ExampleScenario.instance.resourceType [
+            fhir:value "MedicationAdministration"
+        ]
+    ],
+        [
+        fhir:index "5"^^xsd:integer ;
+        fhir:ExampleScenario.instance.description [
+            fhir:value "The administration request for day 2, lunch"
+        ] ;
+        fhir:ExampleScenario.instance.name [
+            fhir:value "Request for day 2, lunch"
+        ] ;
+        fhir:ExampleScenario.instance.resourceId [
+            fhir:value "iherx001.005"
+        ] ;
+        fhir:ExampleScenario.instance.resourceType [
+            fhir:value "MedicationRequest"
+        ]
+    ],
+        [
+        fhir:index "6"^^xsd:integer ;
+        fhir:ExampleScenario.instance.description [
+            fhir:value "The administration request for day 2, evening"
+        ] ;
+        fhir:ExampleScenario.instance.name [
+            fhir:value "Request for day 2, evening"
+        ] ;
+        fhir:ExampleScenario.instance.resourceId [
+            fhir:value "iherx001.006"
+        ] ;
+        fhir:ExampleScenario.instance.resourceType [
+            fhir:value "MedicationRequest"
+        ]
+    ],
+        [
+        fhir:index "9"^^xsd:integer ;
+        fhir:ExampleScenario.instance.containedInstance [
+            fhir:index "4"^^xsd:integer ;
+            fhir:ExampleScenario.instance.containedInstance.resourceId [
+                fhir:value "iherx001.005"
+            ]
+        ],
+            [
+            fhir:index "2"^^xsd:integer ;
+            fhir:ExampleScenario.instance.containedInstance.resourceId [
+                fhir:value "iherx001.003"
+            ]
+        ],
+            [
+            fhir:index "0"^^xsd:integer ;
+            fhir:ExampleScenario.instance.containedInstance.resourceId [
+                fhir:value "iherx001.001"
+            ]
+        ],
+            [
+            fhir:index "1"^^xsd:integer ;
+            fhir:ExampleScenario.instance.containedInstance.resourceId [
+                fhir:value "iherx001.002"
+            ]
+        ],
+            [
+            fhir:index "5"^^xsd:integer ;
+            fhir:ExampleScenario.instance.containedInstance.resourceId [
+                fhir:value "iherx001.006"
+            ]
+        ],
+            [
+            fhir:index "3"^^xsd:integer ;
+            fhir:ExampleScenario.instance.containedInstance.resourceId [
+                fhir:value "iherx001.004"
+            ]
+        ] ;
+        fhir:ExampleScenario.instance.description [
+            fhir:value "All the medication Requests for Day 1"
+        ] ;
+        fhir:ExampleScenario.instance.name [
+            fhir:value "Bundle of Medication Requests"
+        ] ;
+        fhir:ExampleScenario.instance.resourceId [
+            fhir:value "iherx001bundle"
+        ] ;
+        fhir:ExampleScenario.instance.resourceType [
+            fhir:value "MedicationRequest"
+        ]
+    ],
+        [
+        fhir:index "4"^^xsd:integer ;
+        fhir:ExampleScenario.instance.description [
+            fhir:value "The administration request for day 2, morning"
+        ] ;
+        fhir:ExampleScenario.instance.name [
+            fhir:value "Request for day 2, morning"
+        ] ;
+        fhir:ExampleScenario.instance.resourceId [
+            fhir:value "iherx001.004"
+        ] ;
+        fhir:ExampleScenario.instance.resourceType [
+            fhir:value "MedicationRequest"
+        ]
+    ],
+        [
+        fhir:index "2"^^xsd:integer ;
+        fhir:ExampleScenario.instance.description [
+            fhir:value "The administration request for day 1, lunch"
+        ] ;
+        fhir:ExampleScenario.instance.name [
+            fhir:value "Request for day 1, lunch"
+        ] ;
+        fhir:ExampleScenario.instance.resourceId [
+            fhir:value "iherx001.002"
+        ] ;
+        fhir:ExampleScenario.instance.resourceType [
+            fhir:value "MedicationRequest"
+        ]
+    ],
+        [
+        fhir:index "10"^^xsd:integer ;
+        fhir:ExampleScenario.instance.description [
+            fhir:value "Administration report for day 1, lunch: Taken"
+        ] ;
+        fhir:ExampleScenario.instance.name [
+            fhir:value "Lunch meds - taken"
+        ] ;
+        fhir:ExampleScenario.instance.resourceId [
+            fhir:value "iheadm002"
+        ] ;
+        fhir:ExampleScenario.instance.resourceType [
+            fhir:value "MedicationAdministration"
+        ] ;
+        fhir:ExampleScenario.instance.version [
+            fhir:index "1"^^xsd:integer ;
+            fhir:ExampleScenario.instance.version.description [
+                fhir:value "Medication rejected"
+            ] ;
+            fhir:ExampleScenario.instance.version.versionId [
+                fhir:value "iheadm002v2"
+            ]
+        ],
+            [
+            fhir:index "0"^^xsd:integer ;
+            fhir:ExampleScenario.instance.version.description [
+                fhir:value "Medication just taken"
+            ] ;
+            fhir:ExampleScenario.instance.version.versionId [
+                fhir:value "iheadm002v1"
+            ]
+        ]
+    ],
+        [
+        fhir:index "3"^^xsd:integer ;
+        fhir:ExampleScenario.instance.description [
+            fhir:value "The administration request for day 1, evening"
+        ] ;
+        fhir:ExampleScenario.instance.name [
+            fhir:value "Request for day 1, evening"
+        ] ;
+        fhir:ExampleScenario.instance.resourceId [
+            fhir:value "iherx001.003"
+        ] ;
+        fhir:ExampleScenario.instance.resourceType [
+            fhir:value "MedicationRequest"
+        ]
+    ],
+        [
+        fhir:index "11"^^xsd:integer ;
+        fhir:ExampleScenario.instance.description [
+            fhir:value "The search administration request for day 1, morning"
+        ] ;
+        fhir:ExampleScenario.instance.name [
+            fhir:value "Search query1"
+        ] ;
+        fhir:ExampleScenario.instance.resourceId [
+            fhir:value "iherxqry"
+        ] ;
+        fhir:ExampleScenario.instance.resourceType [
+            fhir:value "SearchParameter"
+        ]
+    ],
+        [
+        fhir:index "0"^^xsd:integer ;
+        fhir:ExampleScenario.instance.description [
+            fhir:value "The initial prescription which describes \"medication X, 3 times per day\" - the exact scheduling is not   in the initial prescription (it is left for the care teams to decide on the schedule)."
+        ] ;
+        fhir:ExampleScenario.instance.name [
+            fhir:value "Initial Prescription"
+        ] ;
+        fhir:ExampleScenario.instance.resourceId [
+            fhir:value "iherx001"
+        ] ;
+        fhir:ExampleScenario.instance.resourceType [
+            fhir:value "MedicationRequest"
+        ]
+    ],
+        [
+        fhir:index "7"^^xsd:integer ;
+        fhir:ExampleScenario.instance.description [
+            fhir:value "Administration report for day 1, morning: Taken"
+        ] ;
+        fhir:ExampleScenario.instance.name [
+            fhir:value "Morning meds - taken"
+        ] ;
+        fhir:ExampleScenario.instance.resourceId [
+            fhir:value "iheadm001a"
+        ] ;
+        fhir:ExampleScenario.instance.resourceType [
+            fhir:value "MedicationAdministration"
+        ]
+    ] ;
+    fhir:ExampleScenario.process [
+        fhir:ExampleScenario.process.description [
+            fhir:value "Mobile Medication Administration"
+        ] ;
+        fhir:ExampleScenario.process.postConditions [
+            fhir:value "Medication administration Reports are submitted, EHR is updated."
+        ] ;
+        fhir:ExampleScenario.process.preConditions [
+            fhir:value "Medication administration requests are in the EHR / MAR, scheduled for each individual intake."
+        ] ;
+        fhir:ExampleScenario.process.step [
+            fhir:index "13"^^xsd:integer ;
+            fhir:ExampleScenario.process.step.pause [
+                fhir:value "true"^^xsd:boolean
+            ]
+        ],
+            [
+            fhir:index "11"^^xsd:integer ;
+            fhir:ExampleScenario.process.step.pause [
+                fhir:value "true"^^xsd:boolean
+            ]
+        ],
+            [
+            fhir:index "0"^^xsd:integer ;
+            fhir:ExampleScenario.process.step.operation [
+                fhir:ExampleScenario.process.step.operation.initiator [
+                    fhir:value "Nurse"
+                ] ;
+                fhir:ExampleScenario.process.step.operation.name [
+                    fhir:value "1. Get today's schedule"
+                ] ;
+                fhir:ExampleScenario.process.step.operation.number [
+                    fhir:value "1"
+                ] ;
+                fhir:ExampleScenario.process.step.operation.receiver [
+                    fhir:value "MAP"
+                ]
+            ]
+        ],
+            [
+            fhir:index "5"^^xsd:integer ;
+            fhir:ExampleScenario.process.step.pause [
+                fhir:value "true"^^xsd:boolean
+            ]
+        ],
+            [
+            fhir:index "4"^^xsd:integer ;
+            fhir:ExampleScenario.process.step.operation [
+                fhir:ExampleScenario.process.step.operation.initiator [
+                    fhir:value "Nurse"
+                ] ;
+                fhir:ExampleScenario.process.step.operation.name [
+                    fhir:value "Read orders"
+                ] ;
+                fhir:ExampleScenario.process.step.operation.number [
+                    fhir:value "5"
+                ] ;
+                fhir:ExampleScenario.process.step.operation.receiver [
+                    fhir:value "MAP"
+                ]
+            ]
+        ],
+            [
+            fhir:index "3"^^xsd:integer ;
+            fhir:ExampleScenario.process.step.operation [
+                fhir:ExampleScenario.process.step.operation.initiator [
+                    fhir:value "MAP"
+                ] ;
+                fhir:ExampleScenario.process.step.operation.name [
+                    fhir:value "Notify (alert)"
+                ] ;
+                fhir:ExampleScenario.process.step.operation.number [
+                    fhir:value "4"
+                ] ;
+                fhir:ExampleScenario.process.step.operation.receiver [
+                    fhir:value "Nurse"
+                ]
+            ]
+        ],
+            [
+            fhir:index "2"^^xsd:integer ;
+            fhir:ExampleScenario.process.step.pause [
+                fhir:value "true"^^xsd:boolean
+            ]
+        ],
+            [
+            fhir:index "7"^^xsd:integer ;
+            fhir:ExampleScenario.process.step.alternative [
+                fhir:ExampleScenario.process.step.alternative.name [
+                    fhir:value "Check if patient took drugs"
+                ] ;
+                fhir:ExampleScenario.process.step.alternative.option [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:ExampleScenario.process.step.alternative.option.description [
+                        fhir:value "Yes, patient took drugs"
+                    ] ;
+                    fhir:ExampleScenario.process.step.alternative.option.step [
+                        fhir:index "0"^^xsd:integer ;
+                        fhir:ExampleScenario.process.step.alternative.option.step.process [
+                            fhir:index "0"^^xsd:integer ;
+                            fhir:ExampleScenario.process.step.alternative.option.step.process.step [
+                                fhir:index "0"^^xsd:integer ;
+                                fhir:ExampleScenario.process.step.alternative.option.step.process.step.operation [
+                                    fhir:ExampleScenario.process.step.alternative.option.step.process.step.operation.initiator [
+                                        fhir:value "Nurse"
+                                    ] ;
+                                    fhir:ExampleScenario.process.step.alternative.option.step.process.step.operation.initiatorActive [
+                                        fhir:value "true"^^xsd:boolean
+                                    ] ;
+                                    fhir:ExampleScenario.process.step.alternative.option.step.process.step.operation.name [
+                                        fhir:value "Register Meds taken"
+                                    ] ;
+                                    fhir:ExampleScenario.process.step.alternative.option.step.process.step.operation.number [
+                                        fhir:value "1a"
+                                    ] ;
+                                    fhir:ExampleScenario.process.step.alternative.option.step.process.step.operation.receiver [
+                                        fhir:value "MAP"
+                                    ]
+                                ]
+                            ] ;
+                            fhir:ExampleScenario.process.step.alternative.option.step.process.title [
+                                fhir:value "Register Meds taken"
+                            ]
+                        ]
+                    ]
+                ],
+                    [
+                    fhir:index "2"^^xsd:integer ;
+                    fhir:ExampleScenario.process.step.alternative.option.description [
+                        fhir:value "Not clear"
+                    ] ;
+                    fhir:ExampleScenario.process.step.alternative.option.step [
+                        fhir:index "0"^^xsd:integer ;
+                        fhir:ExampleScenario.process.step.alternative.option.step.pause [
+                            fhir:value "true"^^xsd:boolean
+                        ]
+                    ]
+                ],
+                    [
+                    fhir:index "1"^^xsd:integer ;
+                    fhir:ExampleScenario.process.step.alternative.option.description [
+                        fhir:value "No, patient did not take drugs"
+                    ] ;
+                    fhir:ExampleScenario.process.step.alternative.option.step [
+                        fhir:index "0"^^xsd:integer ;
+                        fhir:ExampleScenario.process.step.alternative.option.step.process [
+                            fhir:index "0"^^xsd:integer ;
+                            fhir:ExampleScenario.process.step.alternative.option.step.process.step [
+                                fhir:index "0"^^xsd:integer ;
+                                fhir:ExampleScenario.process.step.alternative.option.step.process.step.operation [
+                                    fhir:ExampleScenario.process.step.alternative.option.step.process.step.operation.initiator [
+                                        fhir:value "Nurse"
+                                    ] ;
+                                    fhir:ExampleScenario.process.step.alternative.option.step.process.step.operation.initiatorActive [
+                                        fhir:value "true"^^xsd:boolean
+                                    ] ;
+                                    fhir:ExampleScenario.process.step.alternative.option.step.process.step.operation.name [
+                                        fhir:value "Register Meds NOT taken"
+                                    ] ;
+                                    fhir:ExampleScenario.process.step.alternative.option.step.process.step.operation.number [
+                                        fhir:value "1b"
+                                    ] ;
+                                    fhir:ExampleScenario.process.step.alternative.option.step.process.step.operation.receiver [
+                                        fhir:value "MAP"
+                                    ]
+                                ]
+                            ] ;
+                            fhir:ExampleScenario.process.step.alternative.option.step.process.title [
+                                fhir:value "Register Meds NOT taken"
+                            ]
+                        ]
+                    ]
+                ]
+            ]
+        ],
+            [
+            fhir:index "12"^^xsd:integer ;
+            fhir:ExampleScenario.process.step.process [
+                fhir:index "0"^^xsd:integer ;
+                fhir:ExampleScenario.process.step.process.step [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:ExampleScenario.process.step.process.step.operation [
+                        fhir:ExampleScenario.process.step.process.step.operation.initiator [
+                            fhir:value "Nurse"
+                        ] ;
+                        fhir:ExampleScenario.process.step.process.step.operation.initiatorActive [
+                            fhir:value "true"^^xsd:boolean
+                        ] ;
+                        fhir:ExampleScenario.process.step.process.step.operation.name [
+                            fhir:value "Nurse updates administration report"
+                        ] ;
+                        fhir:ExampleScenario.process.step.process.step.operation.number [
+                            fhir:value "8"
+                        ] ;
+                        fhir:ExampleScenario.process.step.process.step.operation.receiver [
+                            fhir:value "MAP"
+                        ] ;
+                        fhir:ExampleScenario.process.step.process.step.operation.request [
+                            fhir:ExampleScenario.process.step.process.step.operation.request.resourceId [
+                                fhir:value "iheadm002"
+                            ]
+                        ]
+                    ]
+                ] ;
+                fhir:ExampleScenario.process.step.process.title [
+                    fhir:value "P2. Update administration reports"
+                ]
+            ]
+        ],
+            [
+            fhir:index "8"^^xsd:integer ;
+            fhir:ExampleScenario.process.step.pause [
+                fhir:value "true"^^xsd:boolean
+            ]
+        ],
+            [
+            fhir:index "10"^^xsd:integer ;
+            fhir:ExampleScenario.process.step.operation [
+                fhir:ExampleScenario.process.step.operation.initiator [
+                    fhir:value "Nurse"
+                ] ;
+                fhir:ExampleScenario.process.step.operation.initiatorActive [
+                    fhir:value "true"^^xsd:boolean
+                ] ;
+                fhir:ExampleScenario.process.step.operation.name [
+                    fhir:value "Register administration"
+                ] ;
+                fhir:ExampleScenario.process.step.operation.number [
+                    fhir:value "7"
+                ] ;
+                fhir:ExampleScenario.process.step.operation.receiver [
+                    fhir:value "MAP"
+                ]
+            ]
+        ],
+            [
+            fhir:index "9"^^xsd:integer ;
+            fhir:ExampleScenario.process.step.operation [
+                fhir:ExampleScenario.process.step.operation.initiator [
+                    fhir:value "Nurse"
+                ] ;
+                fhir:ExampleScenario.process.step.operation.name [
+                    fhir:value "Administer drug"
+                ] ;
+                fhir:ExampleScenario.process.step.operation.number [
+                    fhir:value "6"
+                ] ;
+                fhir:ExampleScenario.process.step.operation.receiver [
+                    fhir:value "Nurse"
+                ]
+            ]
+        ],
+            [
+            fhir:index "1"^^xsd:integer ;
+            fhir:ExampleScenario.process.step.process [
+                fhir:index "0"^^xsd:integer ;
+                fhir:ExampleScenario.process.step.process.description [
+                    fhir:value "Query for medication administration orders,\\n- For today's shifts\\n- For today's patients"
+                ] ;
+                fhir:ExampleScenario.process.step.process.step [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:ExampleScenario.process.step.process.step.operation [
+                        fhir:ExampleScenario.process.step.process.step.operation.initiator [
+                            fhir:value "MAP"
+                        ] ;
+                        fhir:ExampleScenario.process.step.process.step.operation.name [
+                            fhir:value "2.Query for medication administration orders,\\n- For today's shifts\\n- For today's patients"
+                        ] ;
+                        fhir:ExampleScenario.process.step.process.step.operation.number [
+                            fhir:value "2"
+                        ] ;
+                        fhir:ExampleScenario.process.step.process.step.operation.receiver [
+                            fhir:value "OP"
+                        ] ;
+                        fhir:ExampleScenario.process.step.process.step.operation.request [
+                            fhir:ExampleScenario.process.step.process.step.operation.request.resourceId [
+                                fhir:value "iherxqry"
+                            ]
+                        ] ;
+                        fhir:ExampleScenario.process.step.process.step.operation.response [
+                            fhir:ExampleScenario.process.step.process.step.operation.request.resourceId [
+                                fhir:value "iherx001bundle"
+                            ]
+                        ]
+                    ]
+                ] ;
+                fhir:ExampleScenario.process.step.process.title [
+                    fhir:value "P1. Query Administration Requests"
+                ]
+            ]
+        ],
+            [
+            fhir:index "14"^^xsd:integer ;
+            fhir:ExampleScenario.process.step.process [
+                fhir:index "0"^^xsd:integer ;
+                fhir:ExampleScenario.process.step.process.description [
+                    fhir:value "The nurse's system uploads the administration results to the server"
+                ] ;
+                fhir:ExampleScenario.process.step.process.step [
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:ExampleScenario.process.step.process.step.operation [
+                        fhir:ExampleScenario.process.step.process.step.operation.initiator [
+                            fhir:value "MAP"
+                        ] ;
+                        fhir:ExampleScenario.process.step.process.step.operation.name [
+                            fhir:value "Refresh"
+                        ] ;
+                        fhir:ExampleScenario.process.step.process.step.operation.number [
+                            fhir:value "9"
+                        ] ;
+                        fhir:ExampleScenario.process.step.process.step.operation.receiver [
+                            fhir:value "MAC"
+                        ] ;
+                        fhir:ExampleScenario.process.step.process.step.operation.request [
+                            fhir:ExampleScenario.process.step.process.step.operation.request.resourceId [
+                                fhir:value "iheadm001"
+                            ]
+                        ]
+                    ]
+                ] ;
+                fhir:ExampleScenario.process.step.process.title [
+                    fhir:value "P3. Upload administration reports"
+                ]
+            ]
+        ],
+            [
+            fhir:index "6"^^xsd:integer ;
+            fhir:ExampleScenario.process.step.operation [
+                fhir:ExampleScenario.process.step.operation.initiator [
+                    fhir:value "Nurse"
+                ] ;
+                fhir:ExampleScenario.process.step.operation.name [
+                    fhir:value "Ask if patient took meds"
+                ] ;
+                fhir:ExampleScenario.process.step.operation.number [
+                    fhir:value "5"
+                ] ;
+                fhir:ExampleScenario.process.step.operation.receiver [
+                    fhir:value "Nurse"
+                ]
+            ]
+        ] ;
+        fhir:ExampleScenario.process.title [
+            fhir:value "Mobile Medication Administration"
+        ]
+    ] ;
+    fhir:ExampleScenario.purpose [
+        fhir:value "Purpose: this serves to enable remote performing of medication administration, by using remote / mobile devices to a) Get the planned medication administrations and b) Record the performing of these administrations without a permanent connection to the EHR."
+    ] ;
+    fhir:ExampleScenario.status [
+        fhir:value "draft"
+    ] ;
+    fhir:ExampleScenario.title [
+        fhir:value "Mobile Medication Administration"
+    ] ;
+    fhir:Resource.id [
+        fhir:value "example"
+    ] .
+
+<http://hl7.org/fhir/ExampleScenario/example.ttl> a owl:Ontology ;
+    owl:imports fhir:fhir.ttl .
+

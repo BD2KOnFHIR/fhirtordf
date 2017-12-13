@@ -69,6 +69,16 @@ Subject http://hl7.org/fhir/HealthcareService/example DIFFERENCE: ==============
         fhir:value "Reduced capacity is available during the Christmas period"
     ] ;
     fhir:HealthcareService.availableTime [
+        fhir:index "0"^^xsd:integer ;
+        fhir:HealthcareService.availableTime.allDay [
+            fhir:value "true"^^xsd:boolean
+        ] ;
+        fhir:HealthcareService.availableTime.daysOfWeek [
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "wed"
+        ]
+    ],
+        [
         fhir:index "2"^^xsd:integer ;
         fhir:HealthcareService.availableTime.availableEndTime [
             fhir:value "04:30:00"
@@ -77,12 +87,12 @@ Subject http://hl7.org/fhir/HealthcareService/example DIFFERENCE: ==============
             fhir:value "09:30:00"
         ] ;
         fhir:HealthcareService.availableTime.daysOfWeek [
-            fhir:index "1"^^xsd:integer ;
-            fhir:value "fri"
-        ],
-            [
             fhir:index "0"^^xsd:integer ;
             fhir:value "sat"
+        ],
+            [
+            fhir:index "1"^^xsd:integer ;
+            fhir:value "fri"
         ]
     ],
         [
@@ -94,30 +104,20 @@ Subject http://hl7.org/fhir/HealthcareService/example DIFFERENCE: ==============
             fhir:value "08:30:00"
         ] ;
         fhir:HealthcareService.availableTime.daysOfWeek [
-            fhir:index "3"^^xsd:integer ;
-            fhir:value "fri"
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "mon"
         ],
             [
             fhir:index "1"^^xsd:integer ;
             fhir:value "tue"
         ],
             [
-            fhir:index "0"^^xsd:integer ;
-            fhir:value "mon"
-        ],
-            [
             fhir:index "2"^^xsd:integer ;
             fhir:value "thu"
-        ]
-    ],
-        [
-        fhir:index "0"^^xsd:integer ;
-        fhir:HealthcareService.availableTime.allDay [
-            fhir:value "true"^^xsd:boolean
-        ] ;
-        fhir:HealthcareService.availableTime.daysOfWeek [
-            fhir:index "0"^^xsd:integer ;
-            fhir:value "wed"
+        ],
+            [
+            fhir:index "3"^^xsd:integer ;
+            fhir:value "fri"
         ]
     ] ;
     fhir:HealthcareService.category [
@@ -200,20 +200,6 @@ Subject http://hl7.org/fhir/HealthcareService/example DIFFERENCE: ==============
         fhir:value "Consulting psychologists and/or psychology services"
     ] ;
     fhir:HealthcareService.notAvailable [
-        fhir:index "0"^^xsd:integer ;
-        fhir:HealthcareService.notAvailable.description [
-            fhir:value "Christmas/Boxing Day"
-        ] ;
-        fhir:HealthcareService.notAvailable.during [
-            fhir:Period.end [
-                fhir:value "2015-12-26"^^xsd:date
-            ] ;
-            fhir:Period.start [
-                fhir:value "2015-12-25"^^xsd:date
-            ]
-        ]
-    ],
-        [
         fhir:index "1"^^xsd:integer ;
         fhir:HealthcareService.notAvailable.description [
             fhir:value "New Years Day"
@@ -224,6 +210,20 @@ Subject http://hl7.org/fhir/HealthcareService/example DIFFERENCE: ==============
             ] ;
             fhir:Period.start [
                 fhir:value "2016-01-01"^^xsd:date
+            ]
+        ]
+    ],
+        [
+        fhir:index "0"^^xsd:integer ;
+        fhir:HealthcareService.notAvailable.description [
+            fhir:value "Christmas/Boxing Day"
+        ] ;
+        fhir:HealthcareService.notAvailable.during [
+            fhir:Period.end [
+                fhir:value "2015-12-26"^^xsd:date
+            ] ;
+            fhir:Period.start [
+                fhir:value "2015-12-25"^^xsd:date
             ]
         ]
     ] ;
@@ -253,6 +253,18 @@ Subject http://hl7.org/fhir/HealthcareService/example DIFFERENCE: ==============
         ]
     ],
         [
+        fhir:index "1"^^xsd:integer ;
+        fhir:CodeableConcept.coding [
+            fhir:index "0"^^xsd:integer ;
+            fhir:Coding.code [
+                fhir:value "fax"
+            ] ;
+            fhir:Coding.display [
+                fhir:value "Fax"
+            ]
+        ]
+    ],
+        [
         fhir:index "0"^^xsd:integer ;
         fhir:CodeableConcept.coding [
             fhir:index "0"^^xsd:integer ;
@@ -273,18 +285,6 @@ Subject http://hl7.org/fhir/HealthcareService/example DIFFERENCE: ==============
             ] ;
             fhir:Coding.display [
                 fhir:value "Secure Messaging"
-            ]
-        ]
-    ],
-        [
-        fhir:index "1"^^xsd:integer ;
-        fhir:CodeableConcept.coding [
-            fhir:index "0"^^xsd:integer ;
-            fhir:Coding.code [
-                fhir:value "fax"
-            ] ;
-            fhir:Coding.display [
-                fhir:value "Fax"
             ]
         ]
     ] ;
@@ -345,22 +345,6 @@ Subject http://hl7.org/fhir/HealthcareService/example DIFFERENCE: ==============
         ]
     ] ;
     fhir:HealthcareService.type [
-        fhir:index "1"^^xsd:integer ;
-        fhir:CodeableConcept.coding [
-            a sct:394587001 ;
-            fhir:index "0"^^xsd:integer ;
-            fhir:Coding.code [
-                fhir:value "394587001"
-            ] ;
-            fhir:Coding.display [
-                fhir:value "Psychiatry"
-            ] ;
-            fhir:Coding.system [
-                fhir:value "http://snomed.info/sct"
-            ]
-        ]
-    ],
-        [
         fhir:index "0"^^xsd:integer ;
         fhir:CodeableConcept.coding [
             a sct:394913002 ;
@@ -370,6 +354,22 @@ Subject http://hl7.org/fhir/HealthcareService/example DIFFERENCE: ==============
             ] ;
             fhir:Coding.display [
                 fhir:value "Psychotherapy"
+            ] ;
+            fhir:Coding.system [
+                fhir:value "http://snomed.info/sct"
+            ]
+        ]
+    ],
+        [
+        fhir:index "1"^^xsd:integer ;
+        fhir:CodeableConcept.coding [
+            a sct:394587001 ;
+            fhir:index "0"^^xsd:integer ;
+            fhir:Coding.code [
+                fhir:value "394587001"
+            ] ;
+            fhir:Coding.display [
+                fhir:value "Psychiatry"
             ] ;
             fhir:Coding.system [
                 fhir:value "http://snomed.info/sct"

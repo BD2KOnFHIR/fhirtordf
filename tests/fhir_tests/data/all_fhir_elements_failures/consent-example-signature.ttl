@@ -2,83 +2,93 @@
 
 Subject http://hl7.org/fhir/Consent/consent-example-signature DIFFERENCE: ==============================
 	----> First: 
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.actor_0.Consent.provision.actor.reference.Reference.reference> <http://hl7.org/fhir/value> "Practitioner/xcda-author" .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.actor_0.Consent.provision.actor.reference> <http://hl7.org/fhir/Reference.reference> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.actor_0.Consent.provision.actor.reference.Reference.reference> .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.actor_0.Consent.provision.actor.reference> <http://hl7.org/fhir/link> <http://hl7.org/fhir/Practitioner/xcda-author> .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.actor_0.Consent.provision.actor.role.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "AUT" .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.actor_0.Consent.provision.actor.role.CodeableConcept.coding_0.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/v3/ParticipationType" .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.actor_0.Consent.provision.actor.role.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.actor_0.Consent.provision.actor.role.CodeableConcept.coding_0.Coding.code> .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.actor_0.Consent.provision.actor.role.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.actor_0.Consent.provision.actor.role.CodeableConcept.coding_0.Coding.system> .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.actor_0.Consent.provision.actor.role.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.actor_0.Consent.provision.actor.role> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.actor_0.Consent.provision.actor.role.CodeableConcept.coding_0> .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.actor_0> <http://hl7.org/fhir/Consent.provision.actor.reference> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.actor_0.Consent.provision.actor.reference> .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.actor_0> <http://hl7.org/fhir/Consent.provision.actor.role> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.actor_0.Consent.provision.actor.role> .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.actor_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.class_0.Coding.code> <http://hl7.org/fhir/value> "application/hl7-cda+xml" .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.class_0.Coding.system> <http://hl7.org/fhir/value> "urn:ietf:bcp:13" .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.class_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.class_0.Coding.code> .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.class_0> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.class_0.Coding.system> .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.class_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.code_0.Coding.code> <http://hl7.org/fhir/value> "34133-9" .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.code_0.Coding.system> <http://hl7.org/fhir/value> "http://loinc.org" .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.code_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.code_0.Coding.code> .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.code_0> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.code_0.Coding.system> .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.code_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.code_1.Coding.code> <http://hl7.org/fhir/value> "18842-5" .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.code_1.Coding.system> <http://hl7.org/fhir/value> "http://loinc.org" .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.code_1> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.code_1.Coding.code> .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.code_1> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.code_1.Coding.system> .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.code_1> <http://hl7.org/fhir/index> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.type> <http://hl7.org/fhir/value> "permit" .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0> <http://hl7.org/fhir/Consent.provision.actor> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.actor_0> .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0> <http://hl7.org/fhir/Consent.provision.class> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.class_0> .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0> <http://hl7.org/fhir/Consent.provision.code> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.code_0> .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0> <http://hl7.org/fhir/Consent.provision.code> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.code_1> .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0> <http://hl7.org/fhir/Consent.provision.type> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.type> .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.actor_0.Consent.provision.actor.reference.Reference.reference> <http://hl7.org/fhir/value> "Practitioner/xcda-author" .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.actor_0.Consent.provision.actor.reference> <http://hl7.org/fhir/Reference.reference> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.actor_0.Consent.provision.actor.reference.Reference.reference> .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.actor_0.Consent.provision.actor.reference> <http://hl7.org/fhir/link> <http://hl7.org/fhir/Practitioner/xcda-author> .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.actor_0.Consent.provision.actor.role.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "AUT" .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.actor_0.Consent.provision.actor.role.CodeableConcept.coding_0.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/v3/ParticipationType" .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.actor_0.Consent.provision.actor.role.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.actor_0.Consent.provision.actor.role.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.actor_0.Consent.provision.actor.role.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.actor_0.Consent.provision.actor.role.CodeableConcept.coding_0.Coding.system> .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.actor_0.Consent.provision.actor.role.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.actor_0.Consent.provision.actor.role> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.actor_0.Consent.provision.actor.role.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.actor_0> <http://hl7.org/fhir/Consent.provision.actor.reference> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.actor_0.Consent.provision.actor.reference> .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.actor_0> <http://hl7.org/fhir/Consent.provision.actor.role> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.actor_0.Consent.provision.actor.role> .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.actor_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.class_0.Coding.code> <http://hl7.org/fhir/value> "application/hl7-cda+xml" .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.class_0.Coding.system> <http://hl7.org/fhir/value> "urn:ietf:bcp:13" .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.class_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.class_0.Coding.code> .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.class_0> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.class_0.Coding.system> .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.class_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.code_0.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "34133-9" .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.code_0.CodeableConcept.coding_0.Coding.system> <http://hl7.org/fhir/value> "http://loinc.org" .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.code_0.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.code_0.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.code_0.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.code_0.CodeableConcept.coding_0.Coding.system> .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.code_0.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.code_0> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.code_0.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.code_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.code_1.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "18842-5" .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.code_1.CodeableConcept.coding_0.Coding.system> <http://hl7.org/fhir/value> "http://loinc.org" .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.code_1.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.code_1.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.code_1.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.code_1.CodeableConcept.coding_0.Coding.system> .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.code_1.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.code_1> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.code_1.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.code_1> <http://hl7.org/fhir/index> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.type> <http://hl7.org/fhir/value> "permit" .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0> <http://hl7.org/fhir/Consent.provision.actor> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.actor_0> .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0> <http://hl7.org/fhir/Consent.provision.class> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.class_0> .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0> <http://hl7.org/fhir/Consent.provision.code> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.code_0> .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0> <http://hl7.org/fhir/Consent.provision.code> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.code_1> .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0> <http://hl7.org/fhir/Consent.provision.type> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.type> .
 	----> Second: 
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.actor_0.Consent.provision.provision.actor.reference.Reference.reference> <http://hl7.org/fhir/value> "Practitioner/xcda-author" .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.actor_0.Consent.provision.provision.actor.reference> <http://hl7.org/fhir/Reference.reference> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.actor_0.Consent.provision.provision.actor.reference.Reference.reference> .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.actor_0.Consent.provision.provision.actor.reference> <http://hl7.org/fhir/link> <http://hl7.org/fhir/Practitioner/xcda-author> .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.actor_0.Consent.provision.provision.actor.role.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "AUT" .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.actor_0.Consent.provision.provision.actor.role.CodeableConcept.coding_0.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/v3/ParticipationType" .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.actor_0.Consent.provision.provision.actor.role.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.actor_0.Consent.provision.provision.actor.role.CodeableConcept.coding_0.Coding.code> .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.actor_0.Consent.provision.provision.actor.role.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.actor_0.Consent.provision.provision.actor.role.CodeableConcept.coding_0.Coding.system> .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.actor_0.Consent.provision.provision.actor.role.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.actor_0.Consent.provision.provision.actor.role> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.actor_0.Consent.provision.provision.actor.role.CodeableConcept.coding_0> .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.actor_0> <http://hl7.org/fhir/Consent.provision.provision.actor.reference> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.actor_0.Consent.provision.provision.actor.reference> .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.actor_0> <http://hl7.org/fhir/Consent.provision.provision.actor.role> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.actor_0.Consent.provision.provision.actor.role> .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.actor_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.class_0.Coding.code> <http://hl7.org/fhir/value> "application/hl7-cda+xml" .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.class_0.Coding.system> <http://hl7.org/fhir/value> "urn:ietf:bcp:13" .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.class_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.class_0.Coding.code> .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.class_0> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.class_0.Coding.system> .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.class_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.code_0.Coding.code> <http://hl7.org/fhir/value> "34133-9" .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.code_0.Coding.system> <http://hl7.org/fhir/value> "http://loinc.org" .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.code_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.code_0.Coding.code> .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.code_0> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.code_0.Coding.system> .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.code_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.code_1.Coding.code> <http://hl7.org/fhir/value> "18842-5" .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.code_1.Coding.system> <http://hl7.org/fhir/value> "http://loinc.org" .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.code_1> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.code_1.Coding.code> .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.code_1> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.code_1.Coding.system> .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.code_1> <http://hl7.org/fhir/index> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.type> <http://hl7.org/fhir/value> "permit" .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0> <http://hl7.org/fhir/Consent.provision.provision.actor> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.actor_0> .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0> <http://hl7.org/fhir/Consent.provision.provision.class> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.class_0> .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0> <http://hl7.org/fhir/Consent.provision.provision.code> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.code_0> .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0> <http://hl7.org/fhir/Consent.provision.provision.code> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.code_1> .
-<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0> <http://hl7.org/fhir/Consent.provision.provision.type> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision_0.Consent.provision.provision_0.Consent.provision.provision.type> .----------------------------------------
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.actor_0.Consent.provision.provision.actor.reference.Reference.reference> <http://hl7.org/fhir/value> "Practitioner/xcda-author" .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.actor_0.Consent.provision.provision.actor.reference> <http://hl7.org/fhir/Reference.reference> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.actor_0.Consent.provision.provision.actor.reference.Reference.reference> .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.actor_0.Consent.provision.provision.actor.reference> <http://hl7.org/fhir/link> <http://hl7.org/fhir/Practitioner/xcda-author> .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.actor_0.Consent.provision.provision.actor.role.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "AUT" .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.actor_0.Consent.provision.provision.actor.role.CodeableConcept.coding_0.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/v3/ParticipationType" .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.actor_0.Consent.provision.provision.actor.role.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.actor_0.Consent.provision.provision.actor.role.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.actor_0.Consent.provision.provision.actor.role.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.actor_0.Consent.provision.provision.actor.role.CodeableConcept.coding_0.Coding.system> .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.actor_0.Consent.provision.provision.actor.role.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.actor_0.Consent.provision.provision.actor.role> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.actor_0.Consent.provision.provision.actor.role.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.actor_0> <http://hl7.org/fhir/Consent.provision.provision.actor.reference> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.actor_0.Consent.provision.provision.actor.reference> .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.actor_0> <http://hl7.org/fhir/Consent.provision.provision.actor.role> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.actor_0.Consent.provision.provision.actor.role> .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.actor_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.class_0.Coding.code> <http://hl7.org/fhir/value> "application/hl7-cda+xml" .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.class_0.Coding.system> <http://hl7.org/fhir/value> "urn:ietf:bcp:13" .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.class_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.class_0.Coding.code> .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.class_0> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.class_0.Coding.system> .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.class_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.code_0.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "34133-9" .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.code_0.CodeableConcept.coding_0.Coding.system> <http://hl7.org/fhir/value> "http://loinc.org" .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.code_0.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.code_0.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.code_0.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.code_0.CodeableConcept.coding_0.Coding.system> .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.code_0.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.code_0> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.code_0.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.code_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.code_1.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "18842-5" .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.code_1.CodeableConcept.coding_0.Coding.system> <http://hl7.org/fhir/value> "http://loinc.org" .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.code_1.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.code_1.CodeableConcept.coding_0.Coding.code> .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.code_1.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.code_1.CodeableConcept.coding_0.Coding.system> .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.code_1.CodeableConcept.coding_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.code_1> <http://hl7.org/fhir/CodeableConcept.coding> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.code_1.CodeableConcept.coding_0> .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.code_1> <http://hl7.org/fhir/index> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.type> <http://hl7.org/fhir/value> "permit" .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0> <http://hl7.org/fhir/Consent.provision.provision.actor> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.actor_0> .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0> <http://hl7.org/fhir/Consent.provision.provision.class> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.class_0> .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0> <http://hl7.org/fhir/Consent.provision.provision.code> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.code_0> .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0> <http://hl7.org/fhir/Consent.provision.provision.code> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.code_1> .
+<http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0> <http://hl7.org/fhir/Consent.provision.provision.type> <http://hl7.org/fhir/Consent/consent-example-signature.Consent.provision.Consent.provision.provision_0.Consent.provision.provision.type> .----------------------------------------
 
 ========================================
 @prefix consentcategorycodes: <http://hl7.org/fhir/consentcategorycodes> .
 @prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sct: <http://snomed.info/id/> .
 @prefix v2: <http://hl7.org/fhir/v2/> .
 @prefix v3: <http://hl7.org/fhir/v3/> .
+@prefix v3-ActCode: <http://hl7.org/fhir/v3/ActCode> .
 @prefix v3-ParticipationType: <http://hl7.org/fhir/v3/ParticipationType> .
 @prefix w5: <http://hl7.org/fhir/w5#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -131,10 +141,18 @@ Subject http://hl7.org/fhir/Consent/consent-example-signature DIFFERENCE: ======
         ]
     ] ;
     fhir:Consent.policyRule [
-        fhir:value "http://hl7.org/fhir/ConsentPolicy/opt-in"
+        fhir:CodeableConcept.coding [
+            a <http://hl7.org/fhir/v3/ActCode/OPTIN> ;
+            fhir:index "0"^^xsd:integer ;
+            fhir:Coding.code [
+                fhir:value "OPTIN"
+            ] ;
+            fhir:Coding.system [
+                fhir:value "http://hl7.org/fhir/v3/ActCode"
+            ]
+        ]
     ] ;
     fhir:Consent.provision [
-        fhir:index "0"^^xsd:integer ;
         fhir:Consent.provision.actor [
             fhir:index "0"^^xsd:integer ;
             fhir:Consent.provision.actor.reference [
@@ -197,21 +215,29 @@ Subject http://hl7.org/fhir/Consent/consent-example-signature DIFFERENCE: ======
                 ]
             ] ;
             fhir:Consent.provision.provision.code [
-                fhir:index "0"^^xsd:integer ;
-                fhir:Coding.code [
-                    fhir:value "34133-9"
-                ] ;
-                fhir:Coding.system [
-                    fhir:value "http://loinc.org"
+                fhir:index "1"^^xsd:integer ;
+                fhir:CodeableConcept.coding [
+                    a loinc:18842-5 ;
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "18842-5"
+                    ] ;
+                    fhir:Coding.system [
+                        fhir:value "http://loinc.org"
+                    ]
                 ]
             ],
                 [
-                fhir:index "1"^^xsd:integer ;
-                fhir:Coding.code [
-                    fhir:value "18842-5"
-                ] ;
-                fhir:Coding.system [
-                    fhir:value "http://loinc.org"
+                fhir:index "0"^^xsd:integer ;
+                fhir:CodeableConcept.coding [
+                    a loinc:34133-9 ;
+                    fhir:index "0"^^xsd:integer ;
+                    fhir:Coding.code [
+                        fhir:value "34133-9"
+                    ] ;
+                    fhir:Coding.system [
+                        fhir:value "http://loinc.org"
+                    ]
                 ]
             ] ;
             fhir:Consent.provision.provision.type [
@@ -219,11 +245,14 @@ Subject http://hl7.org/fhir/Consent/consent-example-signature DIFFERENCE: ======
             ]
         ]
     ] ;
+    fhir:Consent.scope [
+        fhir:value "privacy"
+    ] ;
     fhir:Consent.status [
         fhir:value "active"
     ] ;
     fhir:DomainResource.text [
-        fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: consent-example-signature</p><p><b>identifier</b>: 494e0c7a-a69e-4fb4-9d02-6aae747790d7</p><p><b>status</b>: active</p><p><b>category</b>: HIPAA Authorization <span>(Details : {http://hl7.org/fhir/consentcategorycodes code 'HIPAA-Auth' = 'HIPAA Authorization)</span></p><p><b>patient</b>: <a>Patient/72</a></p><p><b>dateTime</b>: May 26, 2016 12:41:10 AM</p><p><b>consentingParty</b>: <a>Patient/72</a></p><p><b>organization</b>: <a>Organization/f001</a></p><p><b>policyRule</b>: <a>http://hl7.org/fhir/ConsentPolicy/opt-in</a></p><blockquote><p><b>provision</b></p><p><b>period</b>: Oct 10, 2015 --&gt; Oct 10, 2016</p><h3>Actors</h3><table><tr><td>-</td><td><b>Role</b></td><td><b>Reference</b></td></tr><tr><td>*</td><td>primary information recipient <span>(Details : {http://hl7.org/fhir/v3/ParticipationType code 'PRCP' = 'primary information recipient)</span></td><td><a>Practitioner/13</a></td></tr></table><h3>Provisions</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></div>" ;
+        fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: consent-example-signature</p><p><b>identifier</b>: 494e0c7a-a69e-4fb4-9d02-6aae747790d7</p><p><b>status</b>: active</p><p><b>scope</b>: privacy</p><p><b>category</b>: HIPAA Authorization <span>(Details : {http://hl7.org/fhir/consentcategorycodes code 'HIPAA-Auth' = 'HIPAA Authorization)</span></p><p><b>patient</b>: <a>Patient/72</a></p><p><b>dateTime</b>: May 26, 2016 12:41:10 AM</p><p><b>consentingParty</b>: <a>Patient/72</a></p><p><b>organization</b>: <a>Organization/f001</a></p><p><b>policyRule</b>: opt-in <span>(Details : {http://hl7.org/fhir/v3/ActCode code 'OPTIN' = 'opt-in)</span></p><blockquote><p><b>provision</b></p><p><b>period</b>: Oct 10, 2015 --&gt; Oct 10, 2016</p><h3>Actors</h3><table><tr><td>-</td><td><b>Role</b></td><td><b>Reference</b></td></tr><tr><td>*</td><td>primary information recipient <span>(Details : {http://hl7.org/fhir/v3/ParticipationType code 'PRCP' = 'primary information recipient)</span></td><td><a>Practitioner/13</a></td></tr></table><h3>Provisions</h3><table><tr><td>-</td></tr><tr><td>*</td></tr></table></blockquote></div>" ;
         fhir:Narrative.status [
             fhir:value "generated"
         ]

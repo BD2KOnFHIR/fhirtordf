@@ -4,7 +4,7 @@ Subject http://hl7.org/fhir/Contract/pcd-example-notLabs DIFFERENCE: ===========
 	----> First: 
 <http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.offer.Contract.term.offer.text> <http://hl7.org/fhir/value> "Withhold orders from any provider." .
 <http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.offer> <http://hl7.org/fhir/Contract.term.offer.text> <http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.offer.Contract.term.offer.text> .
-<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.subType.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "ProcedureRequest" .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.subType.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "ServiceRequest" .
 <http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.subType.CodeableConcept.coding_0.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/resource-types" .
 <http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.subType.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.subType.CodeableConcept.coding_0.Coding.code> .
 <http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.subType.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.subType.CodeableConcept.coding_0.Coding.system> .
@@ -39,7 +39,7 @@ Subject http://hl7.org/fhir/Contract/pcd-example-notLabs DIFFERENCE: ===========
 	----> Second: 
 <http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.group.offer.Contract.term.group.offer.text> <http://hl7.org/fhir/value> "Withhold orders from any provider." .
 <http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.group.offer> <http://hl7.org/fhir/Contract.term.group.offer.text> <http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.group.offer.Contract.term.group.offer.text> .
-<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.group.subType.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "ProcedureRequest" .
+<http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.group.subType.CodeableConcept.coding_0.Coding.code> <http://hl7.org/fhir/value> "ServiceRequest" .
 <http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.group.subType.CodeableConcept.coding_0.Coding.system> <http://hl7.org/fhir/value> "http://hl7.org/fhir/resource-types" .
 <http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.group.subType.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.code> <http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.group.subType.CodeableConcept.coding_0.Coding.code> .
 <http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.group.subType.CodeableConcept.coding_0> <http://hl7.org/fhir/Coding.system> <http://hl7.org/fhir/Contract/pcd-example-notLabs.Contract.term_0.Contract.term.group_0.Contract.term.group.subType.CodeableConcept.coding_0.Coding.system> .
@@ -163,10 +163,10 @@ Subject http://hl7.org/fhir/Contract/pcd-example-notLabs DIFFERENCE: ===========
             ] ;
             fhir:Contract.term.group.subType [
                 fhir:CodeableConcept.coding [
-                    a <http://hl7.org/fhir/resource-types/ProcedureRequest> ;
+                    a <http://hl7.org/fhir/resource-types/ServiceRequest> ;
                     fhir:index "0"^^xsd:integer ;
                     fhir:Coding.code [
-                        fhir:value "ProcedureRequest"
+                        fhir:value "ServiceRequest"
                     ] ;
                     fhir:Coding.system [
                         fhir:value "http://hl7.org/fhir/resource-types"

@@ -60,21 +60,21 @@ Subject http://hl7.org/fhir/Bundle/bundle-example DIFFERENCE: ==================
         ]
     ] ;
     fhir:Bundle.link [
-        fhir:index "1"^^xsd:integer ;
-        fhir:Bundle.link.relation [
-            fhir:value "next"
-        ] ;
-        fhir:Bundle.link.url [
-            fhir:value "https://example.com/base/MedicationRequest?patient=347&searchId=ff15fd40-ff71-4b48-b366-09c706bed9d0&page=2"
-        ]
-    ],
-        [
         fhir:index "0"^^xsd:integer ;
         fhir:Bundle.link.relation [
             fhir:value "self"
         ] ;
         fhir:Bundle.link.url [
             fhir:value "https://example.com/base/MedicationRequest?patient=347&_include=MedicationRequest.medication"
+        ]
+    ],
+        [
+        fhir:index "1"^^xsd:integer ;
+        fhir:Bundle.link.relation [
+            fhir:value "next"
+        ] ;
+        fhir:Bundle.link.url [
+            fhir:value "https://example.com/base/MedicationRequest?patient=347&searchId=ff15fd40-ff71-4b48-b366-09c706bed9d0&page=2"
         ]
     ] ;
     fhir:Bundle.total [

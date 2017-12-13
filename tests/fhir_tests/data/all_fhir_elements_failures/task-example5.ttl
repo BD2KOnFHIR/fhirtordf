@@ -28,7 +28,7 @@ Subject http://hl7.org/fhir/Task/example5 DIFFERENCE: ==========================
 <http://hl7.org/fhir/Task/example5> a fhir:Task ;
     fhir:nodeRole fhir:treeRoot ;
     fhir:DomainResource.text [
-        fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example5</p><p><b>identifier</b>: 20170201-001 (OFFICIAL)</p><p><b>basedOn</b>: General Wellness Careplan</p><p><b>groupIdentifier</b>: G20170201-001 (OFFICIAL)</p><p><b>status</b>: in-progress</p><p><b>businessStatus</b>: specimen received, test in progress <span>(Details )</span></p><p><b>intent</b>: order</p><p><b>priority</b>: routine</p><p><b>code</b>: Lipid Panel <span>(Details )</span></p><p><b>description</b>: Create order for getting specimen, Set up inhouse testing,  generate order for any sendouts and submit with specimen</p><p><b>focus</b>: <a>Lipid Panel Request</a></p><p><b>for</b>: <a>Peter James Chalmers</a></p><p><b>context</b>: <a>Example In-Patient Encounter</a></p><p><b>executionPeriod</b>: Oct 31, 2016 8:25:05 AM --&gt; (ongoing)</p><p><b>authoredOn</b>: Oct 31, 2016 8:25:05 AM</p><p><b>lastModified</b>: Oct 31, 2016 4:45:05 PM</p><h3>Requesters</h3><table><tr><td>-</td><td><b>Agent</b></td><td><b>OnBehalfOf</b></td></tr><tr><td>*</td><td><a>Dr Adam Careful</a></td><td><a>Good Health Clinic</a></td></tr></table><p><b>performerType</b>: Performer <span>(Details : {http://hl7.org/fhir/task-performer-type code 'performer' = 'Performer', given as 'Performer'})</span></p><p><b>owner</b>: <a>Clinical Laboratory @ Acme Hospital</a></p><p><b>reason</b>: The Task.reason should only be included if there is no Task.focus or if it differs from the reason indicated on the focus <span>(Details )</span></p><p><b>note</b>: This is an example to demonstrate using task for actioning a procedurerequest and to illustrate how to populate many of the task elements - this is the parent task that will be broken into subtask to grab the specimen and a sendout lab test </p><h3>Restrictions</h3><table><tr><td>-</td><td><b>Repetitions</b></td><td><b>Period</b></td></tr><tr><td>*</td><td>1</td><td>?? --&gt; Nov 2, 2016 9:45:05 AM</td></tr></table><h3>Outputs</h3><table><tr><td>-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>collected specimen <span>(Details )</span></td><td><a>Specimen/101</a></td></tr></table></div>" ;
+        fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: example5</p><p><b>identifier</b>: 20170201-001 (OFFICIAL)</p><p><b>basedOn</b>: General Wellness Careplan</p><p><b>groupIdentifier</b>: G20170201-001 (OFFICIAL)</p><p><b>status</b>: in-progress</p><p><b>businessStatus</b>: specimen received, test in progress <span>(Details )</span></p><p><b>intent</b>: order</p><p><b>priority</b>: routine</p><p><b>code</b>: Lipid Panel <span>(Details )</span></p><p><b>description</b>: Create order for getting specimen, Set up inhouse testing,  generate order for any sendouts and submit with specimen</p><p><b>focus</b>: <a>Lipid Panel Request</a></p><p><b>for</b>: <a>Peter James Chalmers</a></p><p><b>context</b>: <a>Example In-Patient Encounter</a></p><p><b>executionPeriod</b>: Oct 31, 2016 8:25:05 AM --&gt; (ongoing)</p><p><b>authoredOn</b>: Oct 31, 2016 8:25:05 AM</p><p><b>lastModified</b>: Oct 31, 2016 4:45:05 PM</p><p><b>requester</b>: <a>Dr Adam Careful</a></p><p><b>performerType</b>: Performer <span>(Details : {http://hl7.org/fhir/task-performer-type code 'performer' = 'Performer', given as 'Performer'})</span></p><p><b>owner</b>: <a>Clinical Laboratory @ Acme Hospital</a></p><p><b>reasonCode</b>: The Task.reason should only be included if there is no Task.focus or if it differs from the reason indicated on the focus <span>(Details )</span></p><p><b>note</b>: This is an example to demonstrate using task for actioning a servicerequest and to illustrate how to populate many of the task elements - this is the parent task that will be broken into subtask to grab the specimen and a sendout lab test </p><h3>Restrictions</h3><table><tr><td>-</td><td><b>Repetitions</b></td><td><b>Period</b></td></tr><tr><td>*</td><td>1</td><td>?? --&gt; Nov 2, 2016 9:45:05 AM</td></tr></table><h3>Outputs</h3><table><tr><td>-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>collected specimen <span>(Details )</span></td><td><a>Specimen/101</a></td></tr></table></div>" ;
         fhir:Narrative.status [
             fhir:value "generated"
         ]
@@ -73,12 +73,12 @@ Subject http://hl7.org/fhir/Task/example5 DIFFERENCE: ==========================
         ]
     ] ;
     fhir:Task.focus [
-        fhir:link <http://hl7.org/fhir/ProcedureRequest/lipid> ;
+        fhir:link <http://hl7.org/fhir/ServiceRequest/lipid> ;
         fhir:Reference.display [
             fhir:value "Lipid Panel Request"
         ] ;
         fhir:Reference.reference [
-            fhir:value "ProcedureRequest/lipid"
+            fhir:value "ServiceRequest/lipid"
         ]
     ] ;
     fhir:Task.for [
@@ -122,7 +122,7 @@ Subject http://hl7.org/fhir/Task/example5 DIFFERENCE: ==========================
     fhir:Task.note [
         fhir:index "0"^^xsd:integer ;
         fhir:Annotation.text [
-            fhir:value "This is an example to demonstrate using task for actioning a procedurerequest and to illustrate how to populate many of the task elements - this is the parent task that will be broken into subtask to grab the specimen and a sendout lab test "
+            fhir:value "This is an example to demonstrate using task for actioning a servicerequest and to illustrate how to populate many of the task elements - this is the parent task that will be broken into subtask to grab the specimen and a sendout lab test "
         ]
     ] ;
     fhir:Task.output [
@@ -170,29 +170,18 @@ Subject http://hl7.org/fhir/Task/example5 DIFFERENCE: ==========================
     fhir:Task.priority [
         fhir:value "routine"
     ] ;
-    fhir:Task.reason [
+    fhir:Task.reasonCode [
         fhir:CodeableConcept.text [
             fhir:value "The Task.reason should only be included if there is no Task.focus or if it differs from the reason indicated on the focus"
         ]
     ] ;
     fhir:Task.requester [
-        fhir:Task.requester.agent [
-            fhir:link <http://hl7.org/fhir/Practitioner/example> ;
-            fhir:Reference.display [
-                fhir:value "Dr Adam Careful"
-            ] ;
-            fhir:Reference.reference [
-                fhir:value "Practitioner/example"
-            ]
+        fhir:link <http://hl7.org/fhir/Practitioner/example> ;
+        fhir:Reference.display [
+            fhir:value "Dr Adam Careful"
         ] ;
-        fhir:Task.requester.onBehalfOf [
-            fhir:link <http://hl7.org/fhir/Organization/2.16.840.1.113883.19.5> ;
-            fhir:Reference.display [
-                fhir:value "Good Health Clinic"
-            ] ;
-            fhir:Reference.reference [
-                fhir:value "Organization/2.16.840.1.113883.19.5"
-            ]
+        fhir:Reference.reference [
+            fhir:value "Practitioner/example"
         ]
     ] ;
     fhir:Task.restriction [
@@ -216,13 +205,11 @@ Subject http://hl7.org/fhir/Task/example5 DIFFERENCE: ==========================
 
 <http://hl7.org/fhir/Organization/1832473e-2fe0-452d-abe9-3cdb9879522f> a fhir:Organization .
 
-<http://hl7.org/fhir/Organization/2.16.840.1.113883.19.5> a fhir:Organization .
-
 <http://hl7.org/fhir/Patient/example> a fhir:Patient .
 
 <http://hl7.org/fhir/Practitioner/example> a fhir:Practitioner .
 
-<http://hl7.org/fhir/ProcedureRequest/lipid> a fhir:ProcedureRequest .
+<http://hl7.org/fhir/ServiceRequest/lipid> a fhir:ServiceRequest .
 
 <http://hl7.org/fhir/Specimen/101> a fhir:Specimen .
 

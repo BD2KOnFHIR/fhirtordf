@@ -1,0 +1,113 @@
+
+
+Subject http://hl7.org/fhir/Endpoint/example-iid DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/Endpoint/example-iid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/Endpoint> .----------------------------------------
+
+Subject http://hl7.org/fhir/Patient/dicom DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/Patient/dicom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/Patient> .----------------------------------------
+
+Subject http://hl7.org/fhir/Practitioner/example DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/Practitioner/example> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/Practitioner> .----------------------------------------
+
+Subject http://hl7.org/fhir/Endpoint/example-wadors DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/Endpoint/example-wadors> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/Endpoint> .----------------------------------------
+
+Subject http://hl7.org/fhir/ImagingStudy/example DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/ImagingStudy/example> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://hl7.org/fhir/ImagingStudy> .----------------------------------------
+
+Subject http://hl7.org/fhir/ImagingManifest/example DIFFERENCE: ==============================
+	----> First: 
+<http://hl7.org/fhir/ImagingManifest/example.DomainResource.text.Narrative.status> <http://hl7.org/fhir/value> "generated" .
+<http://hl7.org/fhir/ImagingManifest/example.DomainResource.text> <http://hl7.org/fhir/Narrative.div> "<div xmlns=\"http://www.w3.org/1999/xhtml\">A set of images to share accompanying an report document, including one SC image and two CT image</div>" .
+<http://hl7.org/fhir/ImagingManifest/example.DomainResource.text> <http://hl7.org/fhir/Narrative.status> <http://hl7.org/fhir/ImagingManifest/example.DomainResource.text.Narrative.status> .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.author.Reference.reference> <http://hl7.org/fhir/value> "Practitioner/example" .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.author> <http://hl7.org/fhir/Reference.reference> <http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.author.Reference.reference> .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.author> <http://hl7.org/fhir/link> <http://hl7.org/fhir/Practitioner/example> .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.authoringTime> <http://hl7.org/fhir/value> "2014-11-20T11:01:20-08:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.description> <http://hl7.org/fhir/value> "1 SC image (screen snapshot) and 2 CT images to share a chest CT exam" .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.identifier.Identifier.value> <http://hl7.org/fhir/value> "urn:oid:2.16.124.113543.6003.189642796.63084.16748.2599092901" .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.identifier> <http://hl7.org/fhir/Identifier.value> <http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.identifier.Identifier.value> .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.patient.Reference.reference> <http://hl7.org/fhir/value> "Patient/dicom" .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.patient> <http://hl7.org/fhir/Reference.reference> <http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.patient.Reference.reference> .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.patient> <http://hl7.org/fhir/link> <http://hl7.org/fhir/Patient/dicom> .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.endpoint_0.Reference.reference> <http://hl7.org/fhir/value> "Endpoint/example-iid" .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.endpoint_0> <http://hl7.org/fhir/Reference.reference> <http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.endpoint_0.Reference.reference> .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.endpoint_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.endpoint_0> <http://hl7.org/fhir/link> <http://hl7.org/fhir/Endpoint/example-iid> .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.endpoint_1.Reference.reference> <http://hl7.org/fhir/value> "Endpoint/example-wadors" .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.endpoint_1> <http://hl7.org/fhir/Reference.reference> <http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.endpoint_1.Reference.reference> .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.endpoint_1> <http://hl7.org/fhir/index> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.endpoint_1> <http://hl7.org/fhir/link> <http://hl7.org/fhir/Endpoint/example-wadors> .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.imagingStudy.Reference.reference> <http://hl7.org/fhir/value> "ImagingStudy/example" .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.imagingStudy> <http://hl7.org/fhir/Reference.reference> <http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.imagingStudy.Reference.reference> .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.imagingStudy> <http://hl7.org/fhir/link> <http://hl7.org/fhir/ImagingStudy/example> .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_0.ImagingManifest.study.series.endpoint_0.Reference.reference> <http://hl7.org/fhir/value> "Endpoint/example-wadors" .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_0.ImagingManifest.study.series.endpoint_0> <http://hl7.org/fhir/Reference.reference> <http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_0.ImagingManifest.study.series.endpoint_0.Reference.reference> .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_0.ImagingManifest.study.series.endpoint_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_0.ImagingManifest.study.series.endpoint_0> <http://hl7.org/fhir/link> <http://hl7.org/fhir/Endpoint/example-wadors> .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_0.ImagingManifest.study.series.instance_0.ImagingManifest.study.series.instance.sopClass> <http://hl7.org/fhir/value> "urn:oid:1.2.840.10008.5.1.4.1.1.7" .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_0.ImagingManifest.study.series.instance_0.ImagingManifest.study.series.instance.uid> <http://hl7.org/fhir/value> "urn:oid:2.16.124.113543.6003.189642796.63084.16748.2599092902" .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_0.ImagingManifest.study.series.instance_0> <http://hl7.org/fhir/ImagingManifest.study.series.instance.sopClass> <http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_0.ImagingManifest.study.series.instance_0.ImagingManifest.study.series.instance.sopClass> .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_0.ImagingManifest.study.series.instance_0> <http://hl7.org/fhir/ImagingManifest.study.series.instance.uid> <http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_0.ImagingManifest.study.series.instance_0.ImagingManifest.study.series.instance.uid> .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_0.ImagingManifest.study.series.instance_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_0.ImagingManifest.study.series.uid> <http://hl7.org/fhir/value> "urn:oid:2.16.124.113543.6003.189642796.63084.16750.2599092901" .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_0> <http://hl7.org/fhir/ImagingManifest.study.series.endpoint> <http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_0.ImagingManifest.study.series.endpoint_0> .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_0> <http://hl7.org/fhir/ImagingManifest.study.series.instance> <http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_0.ImagingManifest.study.series.instance_0> .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_0> <http://hl7.org/fhir/ImagingManifest.study.series.uid> <http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_0.ImagingManifest.study.series.uid> .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_1.ImagingManifest.study.series.instance_0.ImagingManifest.study.series.instance.sopClass> <http://hl7.org/fhir/value> "urn:oid:1.2.840.10008.5.1.4.1.1.2" .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_1.ImagingManifest.study.series.instance_0.ImagingManifest.study.series.instance.uid> <http://hl7.org/fhir/value> "urn:oid:2.16.124.113543.6003.189642796.63084.16748.2599092903" .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_1.ImagingManifest.study.series.instance_0> <http://hl7.org/fhir/ImagingManifest.study.series.instance.sopClass> <http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_1.ImagingManifest.study.series.instance_0.ImagingManifest.study.series.instance.sopClass> .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_1.ImagingManifest.study.series.instance_0> <http://hl7.org/fhir/ImagingManifest.study.series.instance.uid> <http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_1.ImagingManifest.study.series.instance_0.ImagingManifest.study.series.instance.uid> .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_1.ImagingManifest.study.series.instance_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_1.ImagingManifest.study.series.instance_1.ImagingManifest.study.series.instance.sopClass> <http://hl7.org/fhir/value> "urn:oid:1.2.840.10008.5.1.4.1.1.2" .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_1.ImagingManifest.study.series.instance_1.ImagingManifest.study.series.instance.uid> <http://hl7.org/fhir/value> "urn:oid:2.16.124.113543.6003.189642796.63084.16748.2599092904" .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_1.ImagingManifest.study.series.instance_1> <http://hl7.org/fhir/ImagingManifest.study.series.instance.sopClass> <http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_1.ImagingManifest.study.series.instance_1.ImagingManifest.study.series.instance.sopClass> .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_1.ImagingManifest.study.series.instance_1> <http://hl7.org/fhir/ImagingManifest.study.series.instance.uid> <http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_1.ImagingManifest.study.series.instance_1.ImagingManifest.study.series.instance.uid> .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_1.ImagingManifest.study.series.instance_1> <http://hl7.org/fhir/index> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_1.ImagingManifest.study.series.uid> <http://hl7.org/fhir/value> "urn:oid:2.16.124.113543.6003.189642796.63084.16750.2599092902" .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_1> <http://hl7.org/fhir/ImagingManifest.study.series.instance> <http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_1.ImagingManifest.study.series.instance_0> .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_1> <http://hl7.org/fhir/ImagingManifest.study.series.instance> <http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_1.ImagingManifest.study.series.instance_1> .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_1> <http://hl7.org/fhir/ImagingManifest.study.series.uid> <http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_1.ImagingManifest.study.series.uid> .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_1> <http://hl7.org/fhir/index> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.uid> <http://hl7.org/fhir/value> "urn:oid:2.16.124.113543.6003.189642796.63084.16749.2599092904" .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0> <http://hl7.org/fhir/ImagingManifest.study.endpoint> <http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.endpoint_0> .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0> <http://hl7.org/fhir/ImagingManifest.study.endpoint> <http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.endpoint_1> .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0> <http://hl7.org/fhir/ImagingManifest.study.imagingStudy> <http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.imagingStudy> .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0> <http://hl7.org/fhir/ImagingManifest.study.series> <http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_0> .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0> <http://hl7.org/fhir/ImagingManifest.study.series> <http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.series_1> .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0> <http://hl7.org/fhir/ImagingManifest.study.uid> <http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0.ImagingManifest.study.uid> .
+<http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0> <http://hl7.org/fhir/index> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://hl7.org/fhir/ImagingManifest/example.Resource.id> <http://hl7.org/fhir/value> "example" .
+<http://hl7.org/fhir/ImagingManifest/example> <http://hl7.org/fhir/DomainResource.text> <http://hl7.org/fhir/ImagingManifest/example.DomainResource.text> .
+<http://hl7.org/fhir/ImagingManifest/example> <http://hl7.org/fhir/ImagingManifest.author> <http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.author> .
+<http://hl7.org/fhir/ImagingManifest/example> <http://hl7.org/fhir/ImagingManifest.authoringTime> <http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.authoringTime> .
+<http://hl7.org/fhir/ImagingManifest/example> <http://hl7.org/fhir/ImagingManifest.description> <http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.description> .
+<http://hl7.org/fhir/ImagingManifest/example> <http://hl7.org/fhir/ImagingManifest.identifier> <http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.identifier> .
+<http://hl7.org/fhir/ImagingManifest/example> <http://hl7.org/fhir/ImagingManifest.patient> <http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.patient> .
+<http://hl7.org/fhir/ImagingManifest/example> <http://hl7.org/fhir/ImagingManifest.study> <http://hl7.org/fhir/ImagingManifest/example.ImagingManifest.study_0> .
+<http://hl7.org/fhir/ImagingManifest/example> <http://hl7.org/fhir/Resource.id> <http://hl7.org/fhir/ImagingManifest/example.Resource.id> .----------------------------------------
+
+========================================
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix v2: <http://hl7.org/fhir/v2/> .
+@prefix v3: <http://hl7.org/fhir/v3/> .
+@prefix w5: <http://hl7.org/fhir/w5#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://hl7.org/fhir/ImagingManifest/example> a fhir:ImagingManifest ;
+    fhir:nodeRole fhir:treeRoot .
+
+<http://hl7.org/fhir/ImagingManifest/example.ttl> a owl:Ontology ;
+    owl:imports fhir:fhir.ttl .
+

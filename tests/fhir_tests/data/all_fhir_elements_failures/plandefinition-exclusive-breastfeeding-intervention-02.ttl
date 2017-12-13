@@ -228,18 +228,18 @@ Subject http://hl7.org/fhir/PlanDefinition/exclusive-breastfeeding-intervention-
             ]
         ],
             [
-            fhir:index "3"^^xsd:integer ;
+            fhir:index "2"^^xsd:integer ;
             fhir:TriggerDefinition.name [
-                fhir:value "Transfer to Post-Partum"
+                fhir:value "Infant Transfer to Recovery"
             ] ;
             fhir:TriggerDefinition.type [
                 fhir:value "named-event"
             ]
         ],
             [
-            fhir:index "2"^^xsd:integer ;
+            fhir:index "3"^^xsd:integer ;
             fhir:TriggerDefinition.name [
-                fhir:value "Infant Transfer to Recovery"
+                fhir:value "Transfer to Post-Partum"
             ] ;
             fhir:TriggerDefinition.type [
                 fhir:value "named-event"

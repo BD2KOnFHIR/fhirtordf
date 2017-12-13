@@ -1,4 +1,4 @@
-
+# ***** note include/exclude -- this is the GF#13594 issue *****
 
 Subject http://hl7.org/fhir/ValueSet/example-intensional DIFFERENCE: ==============================
 	----> First: 

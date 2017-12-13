@@ -88,6 +88,15 @@ Subject http://hl7.org/fhir/QuestionnaireResponse/3141 DIFFERENCE: =============
             fhir:value "male"
         ] ;
         fhir:Patient.identifier [
+            fhir:index "0"^^xsd:integer ;
+            fhir:Identifier.system [
+                fhir:value "http://cancer.questionnaire.org/systems/id/patientnr"
+            ] ;
+            fhir:Identifier.value [
+                fhir:value "A34442332"
+            ]
+        ],
+            [
             fhir:index "1"^^xsd:integer ;
             fhir:Identifier.system [
                 fhir:value "urn:oid:2.16.840.1.113883.2.4.6.3"
@@ -99,15 +108,6 @@ Subject http://hl7.org/fhir/QuestionnaireResponse/3141 DIFFERENCE: =============
             ] ;
             fhir:Identifier.value [
                 fhir:value "188912345"
-            ]
-        ],
-            [
-            fhir:index "0"^^xsd:integer ;
-            fhir:Identifier.system [
-                fhir:value "http://cancer.questionnaire.org/systems/id/patientnr"
-            ] ;
-            fhir:Identifier.value [
-                fhir:value "A34442332"
             ]
         ] ;
         fhir:Resource.id [
@@ -136,27 +136,25 @@ Subject http://hl7.org/fhir/QuestionnaireResponse/3141 DIFFERENCE: =============
     ],
         [
         fhir:index "1"^^xsd:integer ;
-        fhir:ProcedureRequest.intent [
+        fhir:Resource.id [
             fhir:value "order"
         ] ;
-        fhir:ProcedureRequest.requester [
-            fhir:ProcedureRequest.requester.agent [
-                fhir:link <http://hl7.org/fhir/Practitioner/example> ;
-                fhir:Reference.reference [
-                    fhir:value "Practitioner/example"
-                ]
+        fhir:ServiceRequest.intent [
+            fhir:value "order"
+        ] ;
+        fhir:ServiceRequest.requester [
+            fhir:link <http://hl7.org/fhir/Practitioner/example> ;
+            fhir:Reference.reference [
+                fhir:value "Practitioner/example"
             ]
         ] ;
-        fhir:ProcedureRequest.status [
+        fhir:ServiceRequest.status [
             fhir:value "unknown"
         ] ;
-        fhir:ProcedureRequest.subject [
+        fhir:ServiceRequest.subject [
             fhir:Reference.reference [
                 fhir:value "#patsub"
             ]
-        ] ;
-        fhir:Resource.id [
-            fhir:value "order"
         ]
     ] ;
     fhir:DomainResource.text [
@@ -236,7 +234,7 @@ Subject http://hl7.org/fhir/QuestionnaireResponse/3141 DIFFERENCE: =============
             fhir:value "1"
         ]
     ] ;
-    fhir:QuestionnaireResponse.parent [
+    fhir:QuestionnaireResponse.partOf [
         fhir:index "0"^^xsd:integer ;
         fhir:link <http://hl7.org/fhir/Procedure/f201> ;
         fhir:Reference.reference [

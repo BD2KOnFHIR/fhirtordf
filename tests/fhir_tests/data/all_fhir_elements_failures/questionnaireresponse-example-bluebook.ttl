@@ -174,18 +174,30 @@ Subject http://hl7.org/fhir/QuestionnaireResponse/bb DIFFERENCE: ===============
     fhir:QuestionnaireResponse.item [
         fhir:index "0"^^xsd:integer ;
         fhir:QuestionnaireResponse.item.item [
-            fhir:index "1"^^xsd:integer ;
+            fhir:index "0"^^xsd:integer ;
             fhir:QuestionnaireResponse.item.item.item [
                 fhir:index "1"^^xsd:integer
+            ],
+                [
+                fhir:index "0"^^xsd:integer
+            ] ;
+            fhir:QuestionnaireResponse.item.item.linkId [
+                fhir:value "group"
+            ]
+        ],
+            [
+            fhir:index "1"^^xsd:integer ;
+            fhir:QuestionnaireResponse.item.item.item [
+                fhir:index "4"^^xsd:integer
             ],
                 [
                 fhir:index "2"^^xsd:integer
             ],
                 [
-                fhir:index "0"^^xsd:integer
+                fhir:index "1"^^xsd:integer
             ],
                 [
-                fhir:index "4"^^xsd:integer
+                fhir:index "0"^^xsd:integer
             ],
                 [
                 fhir:index "3"^^xsd:integer
@@ -195,18 +207,6 @@ Subject http://hl7.org/fhir/QuestionnaireResponse/bb DIFFERENCE: ===============
             ] ;
             fhir:QuestionnaireResponse.item.item.text [
                 fhir:value "Neonatal Information"
-            ]
-        ],
-            [
-            fhir:index "0"^^xsd:integer ;
-            fhir:QuestionnaireResponse.item.item.item [
-                fhir:index "0"^^xsd:integer
-            ],
-                [
-                fhir:index "1"^^xsd:integer
-            ] ;
-            fhir:QuestionnaireResponse.item.item.linkId [
-                fhir:value "group"
             ]
         ] ;
         fhir:QuestionnaireResponse.item.linkId [
