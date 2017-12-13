@@ -33,7 +33,7 @@ from rdflib import Graph
 from fhirtordf.fhir.fhirmetavoc import FHIRMetaVocEntry
 from fhirtordf.loaders.fhirresourceloader import FHIRResource
 from fhirtordf.rdfsupport.rdfcompare import rdf_compare
-from tests.utils.base_test_case import make_and_clear_directory, fhir_decimal_issue_filter
+from tests.utils.base_test_case import make_and_clear_directory, fhir_decimal_issue_filter, SKIP_ALL_FHIR_ELEMENTS
 from tests.utils.build_test_harness import ValidationTestCase
 
 
@@ -48,9 +48,10 @@ class FHIRInstanceTestCase(ValidationTestCase):
         from tests.utils.base_test_case import FHIRGraph
         cls.fhir_ontology = FHIRGraph()
 
-FHIRInstanceTestCase.no_tests = False           # Set this to True if you want to omit the batch tests
-FHIRInstanceTestCase.single_file = False         # True makes life simpler
+FHIRInstanceTestCase.no_tests = SKIP_ALL_FHIR_ELEMENTS            # Set this to True if you want to omit the batch tests
+FHIRInstanceTestCase.single_file = SKIP_ALL_FHIR_ELEMENTS         # True makes life simpler
 
+# To run this test, you need to check out an image of the STU3 build and point this directory at it
 FHIRInstanceTestCase.input_directory = "/Users/mrf7578/Development/fhir/build/publish"
 FHIRInstanceTestCase.output_directory = \
     os.path.join(os.path.split(os.path.abspath(__file__))[0], 'data', 'all_fhir_elements_failures')

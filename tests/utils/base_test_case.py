@@ -33,16 +33,36 @@ from typing import Union
 from dateutil.parser import parse
 from rdflib import Graph, Literal, XSD
 
-test_directory = os.path.join(os.path.split(os.path.abspath(__file__))[0], '..')
+test_directory = os.path.abspath(os.path.join(os.path.split(os.path.abspath(__file__))[0], '..'))
 test_data_directory = os.path.join(test_directory, 'data')
+USE_BUILD_SERVER = True
+USE_LOCAL_FMV = False
+if USE_BUILD_SERVER:
+    test_fhir_server = "http://build.fhir.org/"
+else:
+    test_fhir_server = "http://hl7.org/fhir/"
 
+if USE_LOCAL_FMV:
+    test_fmv_loc = os.path.join(test_data_directory, 'fhir_metadata_vocabulary', 'fhir.ttl')
+else:
+    test_fmv_loc = "{}fhir.ttl".format(test_fhir_server)
+
+SKIP_CONTINUATION_TESTS = False          # Skip the continuation test (takes a lot of time)
+SKIP_ALL_FHIR_ELEMENTS = True           # Skip the fhir server tests (takes a really big lot of time)
 
 class FHIRGraph(Graph):
+    message_printed = False
+
     def __init__(self, do_print=True):
         super().__init__()
+        if do_print and not FHIRGraph.message_printed:
+            print("***** Testing from fhir server: {}".format(test_fhir_server))
+            print("***** Using FMV: {}".format(test_fmv_loc))
+            FHIRGraph.message_printed = True
+
         if do_print:
             print("Loading graph...", end="")
-        self.load(os.path.join(test_data_directory, 'fhir_metadata_vocabulary', 'fhir.ttl'), format="turtle")
+        self.load(test_fmv_loc, format="turtle")
         if do_print:
             print("done\n")
 

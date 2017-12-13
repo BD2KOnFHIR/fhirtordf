@@ -46,7 +46,6 @@ class FHIRMetaVocTestCase(unittest.TestCase):
         m = FHIRMetaVocEntry(self.fhir_ontology, "Account")
         self.assertEqual({
              'active': rdflib.term.URIRef('http://hl7.org/fhir/Account.active'),
-             'balance': rdflib.term.URIRef('http://hl7.org/fhir/Account.balance'),
              'contained': rdflib.term.URIRef('http://hl7.org/fhir/DomainResource.contained'),
              'coverage': rdflib.term.URIRef('http://hl7.org/fhir/Account.coverage'),
              'description': rdflib.term.URIRef('http://hl7.org/fhir/Account.description'),
@@ -61,6 +60,7 @@ class FHIRMetaVocTestCase(unittest.TestCase):
              'name': rdflib.term.URIRef('http://hl7.org/fhir/Account.name'),
              'nodeRole': rdflib.term.URIRef('http://hl7.org/fhir/nodeRole'),
              'owner': rdflib.term.URIRef('http://hl7.org/fhir/Account.owner'),
+             'partOf': rdflib.term.URIRef('http://hl7.org/fhir/Account.partOf'),
              'period': rdflib.term.URIRef('http://hl7.org/fhir/Account.period'),
              'status': rdflib.term.URIRef('http://hl7.org/fhir/Account.status'),
              'subject': rdflib.term.URIRef('http://hl7.org/fhir/Account.subject'),
@@ -78,7 +78,6 @@ class FHIRMetaVocTestCase(unittest.TestCase):
             v.append((name, str(t), 'A' if m.is_atom(pred) else 'P' if m.is_primitive(t) else 'C'))
         self.assertEqual([
              ('active', 'http://hl7.org/fhir/Period', 'C'),
-             ('balance', 'http://hl7.org/fhir/Money', 'C'),
              ('contained', 'http://hl7.org/fhir/Resource', 'C'),
              ('coverage', 'http://hl7.org/fhir/Account.CoverageComponent', 'C'),
              ('description', 'http://hl7.org/fhir/string', 'P'),
@@ -93,6 +92,7 @@ class FHIRMetaVocTestCase(unittest.TestCase):
              ('name', 'http://hl7.org/fhir/string', 'P'),
              ('nodeRole', 'http://hl7.org/fhir/treeRoot', 'A'),
              ('owner', 'http://hl7.org/fhir/Reference', 'C'),
+             ('partOf', 'http://hl7.org/fhir/Reference', 'C'),
              ('period', 'http://hl7.org/fhir/Period', 'C'),
              ('status', 'http://hl7.org/fhir/code', 'P'),
              ('subject', 'http://hl7.org/fhir/Reference', 'C'),
@@ -132,10 +132,10 @@ class FHIRMetaVocTestCase(unittest.TestCase):
         self.assertEqual(XSD.anyURI, m.primitive_datatype(FHIR.oid))
         self.assertEqual(XSD.positiveInteger, m.primitive_datatype(FHIR.positiveInt))
         self.assertEqual(XSD.string, m.primitive_datatype(FHIR.string))
-        self.assertEqual(None, m.primitive_datatype(FHIR.time))
+        self.assertEqual(XSD.string, m.primitive_datatype(FHIR.time))
         self.assertEqual(XSD.nonNegativeInteger, m.primitive_datatype(FHIR.unsignedInt))
-        self.assertEqual(None, m.primitive_datatype(FHIR.uri))
-        self.assertEqual(None, m.primitive_datatype(FHIR.uuid))
+        self.assertEqual(XSD.anyURI, m.primitive_datatype(FHIR.uri))
+        self.assertEqual(XSD.anyURI, m.primitive_datatype(FHIR.uuid))
         self.assertEqual(None, m.primitive_datatype(FHIR.Quantity))
 
     def test_nostring_valuetype(self):

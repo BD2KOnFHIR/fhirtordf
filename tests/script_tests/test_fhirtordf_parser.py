@@ -25,17 +25,14 @@
 # LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
 # OF THE POSSIBILITY OF SUCH DAMAGE.
-import io
 import shutil
 import unittest
-
-import sys
-
 import os
 from rdflib import Graph
 
 from fhirtordf.rdfsupport.rdfcompare import rdf_compare
 from tests.utils.output_redirector import OutputRedirector
+from tests.utils.base_test_case import test_fhir_server, USE_BUILD_SERVER
 
 noargs_text = """usage: fhirtordf [-h] [-i [INFILE [INFILE ...]]] [-id INDIR]
                  [-o [OUTFILE [OUTFILE ...]]] [-od OUTDIR] [-f] [-s] [-v]
@@ -113,7 +110,7 @@ class FHIRToRDFParserTestCase(unittest.TestCase, OutputRedirector):
         fhirtordf(args.split(), default_exit=False)
         self._pop_stdout()
         self.maxDiff = None
-        print(help_text)
+        print(output.getvalue())
         self.assertEqual(help_text, output.getvalue())
 
     def bester_tester(self, args: str, test_fname: str):
@@ -137,12 +134,18 @@ class FHIRToRDFParserTestCase(unittest.TestCase, OutputRedirector):
 
     def test_narrative_text(self):
         test_fname = os.path.join(os.path.split(os.path.abspath(__file__))[0], '..', 'data', 'patient-example-2_nn.ttl')
-        args = "-i http://hl7.org/fhir/Patient/f201 -nn"
+        if USE_BUILD_SERVER:
+            args = "-i {}patient-example-f201-roel.json -nn".format(test_fhir_server)
+        else:
+            args = "-i {}Patient/f201 -nn".format(test_fhir_server)
         self.bester_tester(args, test_fname)
 
     def test_sample_patient(self):
         test_fname = os.path.join(os.path.split(os.path.abspath(__file__))[0], '..', 'data', 'patient-example-2.ttl')
-        args = "-i http://hl7.org/fhir/Patient/f201"
+        if USE_BUILD_SERVER:
+            args = "-i {}patient-example-f201-roel.json".format(test_fhir_server)
+        else:
+            args = "-i {}Patient/f201".format(test_fhir_server)
         self.bester_tester(args, test_fname)
 
     def test_version(self):

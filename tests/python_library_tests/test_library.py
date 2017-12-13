@@ -31,6 +31,7 @@ from rdflib import URIRef, Graph
 
 from fhirtordf.fhir.fhirmetavoc import FHIRMetaVoc
 from fhirtordf.loaders.fhirjsonloader import fhir_json_to_rdf
+from tests.utils.base_test_case import test_fhir_server, USE_BUILD_SERVER
 from tests.utils.output_redirector import OutputRedirector
 
 
@@ -58,13 +59,17 @@ class LibraryTestCase(unittest.TestCase, OutputRedirector):
                           URIRef('http://hl7.org/fhir/Observation/vitals-panel.ttl'),
                           URIRef('http://hl7.org/fhir/Patient/f201'),
                           URIRef('http://hl7.org/fhir/DiagnosticReport/f201'),
+                          URIRef('http://hl7.org/fhir/Organization/f203'),
                           URIRef('http://hl7.org/fhir/Observation/vitals-panel')},
                          set(s for s in g.subjects() if isinstance(s, URIRef)))
 
     def test_subjects(self):
         from fhirtordf.fhirtordf import fhirtordf
         output = self._push_stdout()
-        args = '-i http://hl7.org/fhir/Observation/vitals-panel'
+        if USE_BUILD_SERVER:
+            args = '-i {}/observation-example-vitals-panel.json'.format(test_fhir_server)
+        else:
+            args = "-i {}/Observation/vitals-panel".format(test_fhir_server)
         fhirtordf(args.split())
         self._pop_stdout()
         g = Graph()

@@ -26,16 +26,13 @@
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
 # OF THE POSSIBILITY OF SUCH DAMAGE.
 import os
-import io as sio
 import unittest
-
-import sys
-
 from rdflib import Graph, URIRef
 
 from fhirtordf.rdfsupport.rdfcompare import rdf_compare
 
 # If true, we're updating the target. Will always return a fail
+from tests.utils.base_test_case import test_fhir_server, USE_BUILD_SERVER, SKIP_CONTINUATION_TESTS
 from tests.utils.output_redirector import OutputRedirector
 
 save_output = False
@@ -76,11 +73,14 @@ class JSONToRDFTestCase(unittest.TestCase, OutputRedirector):
                   'patient-example']
 
         for fname in fnames:
-            in_url = "http://build.fhir.org/{}.json".format(fname)
-            test_url = "http://build.fhir.org/{}.ttl".format(fname)
+            in_url = "{}{}.json".format(test_fhir_server, fname)
+            test_url = "{}{}.ttl".format(test_fhir_server, fname)
+            # fmv_url = "{}/fhir.ttl".format(target_fhir_build)
+            fmv_url = os.path.join(os.path.split(os.path.abspath(__file__))[0],
+                                   '..', 'data', 'fhir_metadata_vocabulary', 'fhir.ttl')
             test_directory = os.path.join(os.path.split(os.path.abspath(__file__))[0], 'data')
             outfname = os.path.join(test_directory, "{}.ttl".format(fname))
-            args = "-i {} -o {} -s".format(in_url, outfname)
+            args = "-i {} -o {} -mv {} -s".format(in_url, outfname, fmv_url)
             self.assertTrue(fhirtordf(args.split()))
             out_graph = Graph()
             out_graph.load(outfname, format="turtle")
@@ -91,6 +91,7 @@ class JSONToRDFTestCase(unittest.TestCase, OutputRedirector):
                 print(comp_result)
             self.assertTrue(len(comp_result) == 0)
 
+    @unittest.skipIf(SKIP_CONTINUATION_TESTS, "Continuations not tested -- see base_test_case.py to enable")
     def test_continuations(self):
         from fhirtordf.fhirtordf import fhirtordf
 
@@ -124,11 +125,16 @@ class JSONToRDFTestCase(unittest.TestCase, OutputRedirector):
     def test_two_uris(self):
         from fhirtordf.fhirtordf import fhirtordf
 
-        args = "-i http://hl7.org/fhir/Patient/f201 http://hl7.org/fhir/Patient/pat1"
+        if USE_BUILD_SERVER:
+            args = "-i {}/patient-example-f201-roel.json {}/patient-example-f201-roel.json".\
+                format(test_fhir_server, test_fhir_server)
+        else:
+            args = "-i {}Patient/f201 {}/Patient/pat1".format(test_fhir_server, test_fhir_server)
         output = self._push_stdout()
         fhirtordf(args.split())
         self._pop_stdout()
         print(output.getvalue())
+
 
 if __name__ == '__main__':
     unittest.main()
