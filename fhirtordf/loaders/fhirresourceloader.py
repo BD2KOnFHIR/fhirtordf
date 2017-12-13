@@ -378,4 +378,4 @@ class FHIRResource:
         return self._g
 
     def __str__(self):
-        return self._g.serialize().decode()
+        return self._g.serialize()

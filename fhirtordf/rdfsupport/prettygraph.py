@@ -104,4 +104,4 @@ class PrettyGraph(Graph):
     def serialize(self, format='turtle', **args):
         assert len(args) == 0, "All arguments to serialize are fixed"
 
-        return super().serialize(format=format, spacious=False)
+        return super().serialize(format=format, spacious=False).decode('utf-8')
