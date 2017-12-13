@@ -8,3 +8,5 @@ The official copies of these resources can be found at:
 * w5.ttl
     * latest version: [http://build.fhir.org/w5.ttl](http://build.fhir.org/w5.ttl)
     * STU3 version: [http://hl7.org/fhir/STU3/w5.ttl](http://hl7.org/fhir/STU3/w5.ttl)
+
+The images in this directory are copies from the build server as of December 13, 2017.
