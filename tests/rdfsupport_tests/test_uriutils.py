@@ -1,4 +1,4 @@
-# Copyright (c) 2017, Mayo Clinic
+# Copyright (c) 2018, Mayo Clinic
 # All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without modification,
@@ -25,49 +25,39 @@
 # LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
 # OF THE POSSIBILITY OF SUCH DAMAGE.
-from typing import Union
 
-from rdflib import Namespace, OWL, RDFS, RDF, XSD, URIRef
+import unittest
 
-from fhirtordf.rdfsupport.dottednamespace import DottedNamespace
+from rdflib import URIRef, Namespace
 
-# TODO: Determine what these various namespaces should actually be
-W5 = DottedNamespace("http://hl7.org/fhir/w5#")
-FHIR = DottedNamespace("http://hl7.org/fhir/")
-LOINC = Namespace("http://loinc.org/rdf#")
-SNOMEDCT = Namespace("http://snomed.info/id/")
-RXNORM = Namespace("http://www.nlm.nih.gov/research/umls/rxnorm")
-V3 = Namespace("http://hl7.org/fhir/v3/")
-V2 = Namespace("http://hl7.org/fhir/v2/")
-SCT = Namespace("http://snomed.info/id/")
-
-namespaces = {"fhir": str(FHIR),
-              "owl": str(OWL),
-              "rdfs": str(RDFS),
-              "rdf": str(RDF),
-              "xsd": str(XSD),
-              "w5": str(W5),
-              "v2": str(V2),
-              "v3": str(V3),
-              "sct": str(SCT),
-              "loinc": str(LOINC)}
+from fhirtordf.rdfsupport.namespaces import FHIR
+from fhirtordf.rdfsupport.uriutils import parse_fhir_resource_uri
 
 
-class AnonNS:
-    _nsnum = 0
+class URIUtilsTestCase(unittest.TestCase):
+    def test_uri_to_ide_and_source(self):
+        r = parse_fhir_resource_uri(URIRef("http://hl7.org/fhir/Patient/f201"))
+        self.assertEqual('f201', r.resource)
+        self.assertEqual(FHIR, r.namespace)
+        self.assertEqual(FHIR.Patient, r.resource_type)
 
-    def __init__(self):
-        AnonNS._nsnum += 1
-        self.ns = 'ns{}'.format(self._nsnum)
+        EX = Namespace("http://example.org/some/path/")
+        r = parse_fhir_resource_uri("http://example.org/some/path/Observation/O123")
+        self.assertEqual('O123', r.resource)
+        self.assertEqual(EX, r.namespace)
+        self.assertEqual(FHIR.Observation, r.resource_type)
+
+        r = parse_fhir_resource_uri("http://example.org/some/path/Observation/O123/_history/stuff")
+        self.assertEqual('O123', r.resource)
+        self.assertEqual(EX, r.namespace)
+        self.assertEqual(FHIR.Observation, r.resource_type)
+
+        r = parse_fhir_resource_uri("http://example.org/some/path/Penguin/ABCD")
+        self.assertEqual('ABCD', r.resource)
+        self.assertEqual(EX.Penguin, r.namespace)
+        self.assertEqual(None, r.resource_type)
 
 
-def namespace_for(uri: Union[URIRef, Namespace, str]) -> str:
-    """
-    Reverse namespace lookup.  Note that returned namespace may not be unique
-    :param uri: namespace URI
-    :return: namespace
-    """
-    uri = str(uri)
-    if uri not in namespaces.values():
-        namespaces[AnonNS().ns] = uri
-    return [k for k, v in namespaces.items() if uri == v][0]
+
+if __name__ == '__main__':
+    unittest.main()

@@ -2,9 +2,19 @@
 
 A tool to convert FHIR Resources from the JSON format to their equivalent in the FHIR RDF format.  This tool can be used to convert FHIR queries, bundles and individual FHIR resources.  It can be used to load an `rdflib` instance of the resource(s) for further processing and/or to create RDF output files.
 
-Example:
 
-```bash
+[![PyPi](https://version-image.appspot.com/pypi/?name=fhirtordf)](https://pypi.python.org/pypi/fhirtordf)
+
+[![Pyversions](https://img.shields.io/pypi/pyversions/fhirtordf.svg)](https://pypi.python.org/pypi/fhirtordf)
+
+## History
+* 1.0.0 - Initial Drop
+* 1.1.0 - Remove uri_to_ide_and_source method from uriutils and add parse_fhir_resource_uri 
+* 1.2.0 - Fix error in LOINC namespace. FHIR uses http://loinc.org/rdf# (not good but...)
+
+## Example:
+
+```text
 > fhirtordf -i http://hl7.org/fhir/Patient/f201 -nn
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .

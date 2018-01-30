@@ -27,6 +27,6 @@ setup(
         'Intended Audience :: Healthcare Industry',
         'License :: OSI Approved :: Apache Software License',
         'Topic :: Database',
-        'Programming Language :: Python :: 3 :: Only'
+        'Programming Language :: Python :: 3'
     ]
 )

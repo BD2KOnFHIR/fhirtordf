@@ -1,4 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
 @prefix ns1: <http://example.org/> .
 @prefix ns2: <http://example.com/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -224,12 +225,12 @@
             fhir:value "Windsor"
         ] ;
         fhir:HumanName.given [
-            fhir:index "0"^^xsd:integer ;
-            fhir:value "Peter"
-        ],
-            [
             fhir:index "1"^^xsd:integer ;
             fhir:value "James"
+        ],
+            [
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "Peter"
         ] ;
         fhir:HumanName.period [
             fhir:Period.end [
@@ -241,23 +242,6 @@
         ]
     ],
         [
-        fhir:index "0"^^xsd:integer ;
-        fhir:HumanName.family [
-            fhir:value "Chalmers"
-        ] ;
-        fhir:HumanName.given [
-            fhir:index "0"^^xsd:integer ;
-            fhir:value "Peter"
-        ],
-            [
-            fhir:index "1"^^xsd:integer ;
-            fhir:value "James"
-        ] ;
-        fhir:HumanName.use [
-            fhir:value "official"
-        ]
-    ],
-        [
         fhir:index "1"^^xsd:integer ;
         fhir:HumanName.given [
             fhir:index "0"^^xsd:integer ;
@@ -266,29 +250,25 @@
         fhir:HumanName.use [
             fhir:value "usual"
         ]
-    ] ;
-    fhir:Patient.telecom [
-        fhir:index "1"^^xsd:integer ;
-        fhir:ContactPoint.rank [
-            fhir:value "1"^^xsd:positiveInteger
-        ] ;
-        fhir:ContactPoint.system [
-            fhir:value "phone"
-        ] ;
-        fhir:ContactPoint.use [
-            fhir:value "work"
-        ] ;
-        fhir:ContactPoint.value [
-            fhir:value "(03) 5555 6473"
-        ]
     ],
         [
         fhir:index "0"^^xsd:integer ;
-        fhir:ContactPoint.use [
-            fhir:value "home"
+        fhir:HumanName.family [
+            fhir:value "Chalmers"
+        ] ;
+        fhir:HumanName.given [
+            fhir:index "1"^^xsd:integer ;
+            fhir:value "James"
+        ],
+            [
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "Peter"
+        ] ;
+        fhir:HumanName.use [
+            fhir:value "official"
         ]
-    ],
-        [
+    ] ;
+    fhir:Patient.telecom [
         fhir:index "3"^^xsd:integer ;
         fhir:ContactPoint.period [
             fhir:Period.end [
@@ -303,6 +283,27 @@
         ] ;
         fhir:ContactPoint.value [
             fhir:value "(03) 5555 8834"
+        ]
+    ],
+        [
+        fhir:index "0"^^xsd:integer ;
+        fhir:ContactPoint.use [
+            fhir:value "home"
+        ]
+    ],
+        [
+        fhir:index "1"^^xsd:integer ;
+        fhir:ContactPoint.rank [
+            fhir:value "1"^^xsd:positiveInteger
+        ] ;
+        fhir:ContactPoint.system [
+            fhir:value "phone"
+        ] ;
+        fhir:ContactPoint.use [
+            fhir:value "work"
+        ] ;
+        fhir:ContactPoint.value [
+            fhir:value "(03) 5555 6473"
         ]
     ],
         [

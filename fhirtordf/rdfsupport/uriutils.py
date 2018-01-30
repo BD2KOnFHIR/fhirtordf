@@ -25,27 +25,36 @@
 # LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
 # OF THE POSSIBILITY OF SUCH DAMAGE.
-from typing import Tuple
+from typing import Tuple, NamedTuple, Union, Optional
 
 from rdflib import URIRef
 
 from fhirtordf.rdfsupport.fhirresourcere import FHIR_RESOURCE_RE, FHIR_RE_ID, FHIR_RE_BASE, FHIR_RE_RESOURCE
+from fhirtordf.rdfsupport.namespaces import FHIR
 
 
-def uri_to_ide_and_source(uri: URIRef, include_resource: bool=False) -> Tuple[str, str]:
+class FHIR_RESOURCE(NamedTuple):
+    namespace: Optional[URIRef]
+    resource_type: Optional[URIRef]
+    resource: str
+
+
+def parse_fhir_resource_uri(uri: Union[URIRef, str]) -> FHIR_RESOURCE:
     """
-    Convert a  URI into a identifier/ identifier source tuple
-    :param uri:  URI
-    :param include_resource: If true, resource type becomes part of the identifier
-    :return: ide, ide_source
+    Use the FHIR Regular Expression for Resource URI's to determine the namespace and type
+    of a given URI.  As an example, "http://hl7.org/fhir/Patient/p123" maps to the tuple
+    ``('Patient', 'http://hl7.org/fhir')
+
+    :param uri:  URI to parse
+    :return: FHIR_RESOURCE (namespace, type, resource)
     """
     uri_str = str(uri)
     m = FHIR_RESOURCE_RE.match(uri_str)
     if m:
-        ide = ((m.group(FHIR_RE_RESOURCE) + '/') if include_resource else '') + m.group(FHIR_RE_ID)
-        ide_source = m.group(FHIR_RE_BASE)
+        return FHIR_RESOURCE(URIRef(m.group(FHIR_RE_BASE)), FHIR[m.group(FHIR_RE_RESOURCE)], m.group(FHIR_RE_ID))
     else:
-        # Assume no history entry if not FHIR format...
-        ide_source, ide = uri_str.rsplit('#', 1) if '#' in uri_str \
-            else uri_str.rsplit('/', 1) if '/' in uri_str else ('UNKNOWN', uri_str)
-    return ide, ide_source
+        # Not in the FHIR format - we can only do namespace and name
+        namespace, name = uri_str.rsplit('#', 1) if '#' in uri_str \
+            else uri_str.rsplit('/', 1) if '/' in uri_str else (None, uri_str)
+
+        return FHIR_RESOURCE(URIRef(namespace), None, name)

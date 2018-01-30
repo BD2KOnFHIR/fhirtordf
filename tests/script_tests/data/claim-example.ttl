@@ -1,5 +1,6 @@
 @prefix ex-claimtype: <http://hl7.org/fhir/ex-claimtype> .
 @prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
 @prefix ns1: <http://example.org/> .
 @prefix ns2: <http://example.com/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .

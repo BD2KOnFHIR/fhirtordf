@@ -1,4 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
 @prefix ns1: <http://example.org/> .
 @prefix ns2: <http://example.com/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -113,24 +114,6 @@
         ]
     ] ;
     fhir:DomainResource.contained [
-        fhir:index "0"^^xsd:integer ;
-        fhir:CareTeam.participant [
-            fhir:index "0"^^xsd:integer ;
-            fhir:CareTeam.participant.member [
-                fhir:link <http://hl7.org/fhir/Practitioner/f002> ;
-                fhir:Reference.display [
-                    fhir:value "P. Voigt"
-                ] ;
-                fhir:Reference.reference [
-                    fhir:value "Practitioner/f002"
-                ]
-            ]
-        ] ;
-        fhir:Resource.id [
-            fhir:value "careteam"
-        ]
-    ],
-        [
         fhir:index "1"^^xsd:integer ;
         fhir:Goal.description [
             fhir:CodeableConcept.text [
@@ -157,6 +140,24 @@
         ] ;
         fhir:Resource.id [
             fhir:value "goal"
+        ]
+    ],
+        [
+        fhir:index "0"^^xsd:integer ;
+        fhir:CareTeam.participant [
+            fhir:index "0"^^xsd:integer ;
+            fhir:CareTeam.participant.member [
+                fhir:link <http://hl7.org/fhir/Practitioner/f002> ;
+                fhir:Reference.display [
+                    fhir:value "P. Voigt"
+                ] ;
+                fhir:Reference.reference [
+                    fhir:value "Practitioner/f002"
+                ]
+            ]
+        ] ;
+        fhir:Resource.id [
+            fhir:value "careteam"
         ]
     ] ;
     fhir:DomainResource.text [

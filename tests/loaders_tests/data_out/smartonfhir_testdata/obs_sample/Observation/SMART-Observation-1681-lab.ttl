@@ -1,5 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
-@prefix loinc: <http://loinc.org/owl#> .
+@prefix loinc: <http://loinc.org/rdf#> .
 @prefix observation-category: <http://hl7.org/fhir/observation-category> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
