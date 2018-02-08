@@ -32,6 +32,8 @@ from rdflib import Namespace, OWL, RDFS, RDF, XSD, URIRef
 from fhirtordf.rdfsupport.dottednamespace import DottedNamespace
 
 # TODO: Determine what these various namespaces should actually be
+from fhirtordf.rdfsupport.numericnamespace import NumericNamespace
+
 W5 = DottedNamespace("http://hl7.org/fhir/w5#")
 FHIR = DottedNamespace("http://hl7.org/fhir/")
 LOINC = Namespace("http://loinc.org/rdf#")
@@ -39,7 +41,7 @@ SNOMEDCT = Namespace("http://snomed.info/id/")
 RXNORM = Namespace("http://www.nlm.nih.gov/research/umls/rxnorm")
 V3 = Namespace("http://hl7.org/fhir/v3/")
 V2 = Namespace("http://hl7.org/fhir/v2/")
-SCT = Namespace("http://snomed.info/id/")
+SCT = NumericNamespace("http://snomed.info/id/")
 
 namespaces = {"fhir": str(FHIR),
               "owl": str(OWL),

@@ -1,4 +1,4 @@
-# Copyright (c) 2017, Mayo Clinic
+# Copyright (c) 2018, Mayo Clinic
 # All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without modification,
@@ -25,27 +25,19 @@
 # LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
 # OF THE POSSIBILITY OF SUCH DAMAGE.
-from typing import Optional, Any
 
-from rdflib import Namespace, URIRef
+import unittest
+
+from rdflib import URIRef
+
+from fhirtordf.rdfsupport.namespaces import SCT
 
 
-class NumericNamespace(Namespace):
-    """
-    An RDF namespace that supports numeric identifiers (e.g. sct:74400008).
-    Notation for use: SCT.C74400008
-    """
-    def __new__(cls, value):
-        return Namespace.__new__(cls, value)
+class Issue12TestCase(unittest.TestCase):
+    def test_sct_namespace(self):
+        self.assertEqual(URIRef("http://snomed.info/id/177460008"), SCT.C177460008)
+        self.assertEqual(URIRef("http://snomed.info/id/177460008"), SCT[177460008])
 
-    def __getattr__(self, item: str) -> "URIRef":
-        return URIRef(str(self) + item[1:])
 
-    def __getitem__(self, item, default=None) -> URIRef:
-        return super().__getitem__(str(item) if isinstance(item, int) else item)
-
-    def __eq__(self, other):
-        return super().__eq__(other)
-
-    def __hash__(self):
-        return super().__hash__()
+if __name__ == '__main__':
+    unittest.main()

@@ -11,6 +11,7 @@ A tool to convert FHIR Resources from the JSON format to their equivalent in the
 * 1.0.0 - Initial Drop
 * 1.1.0 - Remove uri_to_ide_and_source method from uriutils and add parse_fhir_resource_uri 
 * 1.2.0 - Fix error in LOINC namespace. FHIR uses http://loinc.org/rdf# (not good but...)
+* 1.2.1 - Fix issue #12 - SCT is a numeric namespace
 
 ## Example:
 
