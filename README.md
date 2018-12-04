@@ -129,7 +129,7 @@ The `fhirtordf` command line tool can:
 * **`-f, --flatten`**: Flatten the output directory.  Default is to preserve the nested heirarchy of the input directory
 * **`-s, --stoponerror`**: Stop on processing error.  Default is to continue processing if errors are encountered
 * **`-v, --version`**: print the version identifier of the `fhirtordf` converter
-* **`-u URIBASE, --uribase URIBASE`**: Base URI for the output RDF identifiers (default://hl7.org/fhir/)
+* **`-u URIBASE, --uribase URIBASE`**: Base URI for the output RDF identifiers (default: http://hl7.org/fhir/)
 * **`-mv METADATAVOC, --metadatavoc METADATAVOC`**: Location of the FHIR metadata vocabulary (fhir.ttl) (default: )
 * **`-no, --noontology`**: Do not emit the OWL ontology declaration for the target resources.
 * **`-nn, --nonarrative`**: Remove the content of the `fhir:narrative` text if it is greater than ?? bytes in length
