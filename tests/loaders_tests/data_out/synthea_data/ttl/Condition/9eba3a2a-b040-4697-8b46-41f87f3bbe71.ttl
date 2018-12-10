@@ -12,11 +12,8 @@
 
 <http://standardhealthrecord.org/fhir/Condition/9eba3a2a-b040-4697-8b46-41f87f3bbe71> a fhir:Condition ;
     fhir:nodeRole fhir:treeRoot ;
-    fhir:Condition.assertedDate [
-        fhir:value "1935-11-30"^^xsd:date
-    ] ;
     fhir:Condition.clinicalStatus [
-        fhir:value "active"
+        
     ] ;
     fhir:Condition.code [
         fhir:CodeableConcept.coding [
@@ -33,12 +30,6 @@
             ]
         ]
     ] ;
-    fhir:Condition.context [
-        fhir:link <http://standardhealthrecord.org/fhir/urn%3Auuid%3Aff4f9269-5036-45dc-b0fb-d8133ae13c76> ;
-        fhir:Reference.reference [
-            fhir:value "urn:uuid:ff4f9269-5036-45dc-b0fb-d8133ae13c76"
-        ]
-    ] ;
     fhir:Condition.onsetDateTime [
         fhir:value "1935-11-30T05:52:16-06:00"^^xsd:dateTime
     ] ;
@@ -49,7 +40,7 @@
         ]
     ] ;
     fhir:Condition.verificationStatus [
-        fhir:value "confirmed"
+        
     ] ;
     fhir:Resource.id [
         fhir:value "9eba3a2a-b040-4697-8b46-41f87f3bbe71"
@@ -65,6 +56,4 @@
     owl:imports fhir:fhir.ttl .
 
 <http://standardhealthrecord.org/fhir/urn%3Auuid%3A526238ef-dec3-401d-a1c1-2974962df23f> a fhir:Resource .
-
-<http://standardhealthrecord.org/fhir/urn%3Auuid%3Aff4f9269-5036-45dc-b0fb-d8133ae13c76> a fhir:Resource .
 

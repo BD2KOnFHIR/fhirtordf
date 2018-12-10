@@ -120,7 +120,8 @@ def file_filter(ifn: str, indir: str, opts: Namespace) -> bool:
     if not ifn.endswith('.json'):
         return False
 
-    if indir and (indir.startswith("_") or "/_" in indir or any(dn in indir for dn in opts.skipdirs)):
+    if indir and (indir.startswith("_") or "/_" in indir or
+                  (opts.skipdirs and any(dn in indir for dn in opts.skipdirs))):
         return False
 
     if opts.skipfns and any(sfn in ifn for sfn in opts.skipfns):

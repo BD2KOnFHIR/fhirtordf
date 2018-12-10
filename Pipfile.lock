@@ -1,0 +1,80 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "d2702311cbe53b06642b3aaed530606e332a59765c576dc5f89c3476004532a9"
+        },
+        "pipfile-spec": 6,
+        "requires": {
+            "python_version": "3.7"
+        },
+        "sources": [
+            {
+                "name": "pypi",
+                "url": "https://pypi.org/simple",
+                "verify_ssl": true
+            }
+        ]
+    },
+    "default": {
+        "dirlistproc": {
+            "hashes": [
+                "sha256:2a3918d79ffce1499a82b906aa2645981f2dac449eb324450537d6a3e84f55d6"
+            ],
+            "index": "pypi",
+            "version": "==1.4.5"
+        },
+        "isodate": {
+            "hashes": [
+                "sha256:2e364a3d5759479cdb2d37cce6b9376ea504db2ff90252a2e5b7cc89cc9ff2d8",
+                "sha256:aa4d33c06640f5352aca96e4b81afd8ab3b47337cc12089822d6f322ac772c81"
+            ],
+            "index": "pypi",
+            "version": "==0.6.0"
+        },
+        "jsonasobj": {
+            "hashes": [
+                "sha256:1ef4ee4752f2cbda6f166949d5ed75547e2a16acf007370898f42c37e6f048fa"
+            ],
+            "index": "pypi",
+            "version": "==1.2.1"
+        },
+        "pyparsing": {
+            "hashes": [
+                "sha256:40856e74d4987de5d01761a22d1621ae1c7f8774585acae358aa5c5936c6c90b",
+                "sha256:f353aab21fd474459d97b709e527b5571314ee5f067441dc9f88e33eecd96592"
+            ],
+            "version": "==2.3.0"
+        },
+        "python-dateutil": {
+            "hashes": [
+                "sha256:063df5763652e21de43de7d9e00ccf239f953a832941e37be541614732cdfc93",
+                "sha256:88f9287c0174266bb0d8cedd395cfba9c58e87e5ad86b2ce58859bc11be3cf02"
+            ],
+            "index": "pypi",
+            "version": "==2.7.5"
+        },
+        "rdflib": {
+            "hashes": [
+                "sha256:58d5994610105a457cff7fdfe3d683d87786c5028a45ae032982498a7e913d6f",
+                "sha256:da1df14552555c5c7715d8ce71c08f404c988c58a1ecd38552d0da4fc261280d"
+            ],
+            "index": "pypi",
+            "version": "==4.2.2"
+        },
+        "rdflib-jsonld": {
+            "hashes": [
+                "sha256:144774786a2fc7de09b24a9309cbcccc78bc48b152536d2ea1c1df2ad715bc2d"
+            ],
+            "index": "pypi",
+            "version": "==0.4.0"
+        },
+        "six": {
+            "hashes": [
+                "sha256:70e8a77beed4562e7f14fe23a786b54f6296e34344c23bc42f07b15018ff98e9",
+                "sha256:832dc0e10feb1aa2c68dcc57dbb658f1c7e65b9b61af69048abc87a2db00a0eb"
+            ],
+            "version": "==1.11.0"
+        }
+    },
+    "develop": {}
+}

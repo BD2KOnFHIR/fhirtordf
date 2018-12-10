@@ -1,0 +1,17 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+python-dateutil = "*"
+rdflib = ">=4.2.2"
+rdflib-jsonld = "*"
+jsonasobj = ">=1.1.1"
+dirlistproc = ">=1.4.5"
+isodate = "*"
+
+[requires]
+python_version = "3.7"

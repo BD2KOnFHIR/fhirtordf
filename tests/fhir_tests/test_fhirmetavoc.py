@@ -61,7 +61,7 @@ class FHIRMetaVocTestCase(unittest.TestCase):
              'nodeRole': rdflib.term.URIRef('http://hl7.org/fhir/nodeRole'),
              'owner': rdflib.term.URIRef('http://hl7.org/fhir/Account.owner'),
              'partOf': rdflib.term.URIRef('http://hl7.org/fhir/Account.partOf'),
-             'period': rdflib.term.URIRef('http://hl7.org/fhir/Account.period'),
+             'servicePeriod': rdflib.term.URIRef('http://hl7.org/fhir/Account.servicePeriod'),
              'status': rdflib.term.URIRef('http://hl7.org/fhir/Account.status'),
              'subject': rdflib.term.URIRef('http://hl7.org/fhir/Account.subject'),
              'text': rdflib.term.URIRef('http://hl7.org/fhir/DomainResource.text'),
@@ -77,7 +77,6 @@ class FHIRMetaVocTestCase(unittest.TestCase):
             t = m.predicate_type(pred)
             v.append((name, str(t), 'A' if m.is_atom(pred) else 'P' if m.is_primitive(t) else 'C'))
         self.assertEqual([
-             ('active', 'http://hl7.org/fhir/Period', 'C'),
              ('contained', 'http://hl7.org/fhir/Resource', 'C'),
              ('coverage', 'http://hl7.org/fhir/Account.CoverageComponent', 'C'),
              ('description', 'http://hl7.org/fhir/string', 'P'),
