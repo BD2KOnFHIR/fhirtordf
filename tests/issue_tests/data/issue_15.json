@@ -1,0 +1,49 @@
+{
+  "resourceType": "MedicationStatement",
+  "id": "0057ca24-1b14-3c23-975f-93378234da8c",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:uuid:0057ca24-1b14-3c23-975f-93378234da8c"
+    }
+  ],
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "code": "9394"
+      }
+    ],
+    "text": "RNA"
+  },
+  "reasonForUseCodeableConcept": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "5187006"
+        }
+      ],
+      "text": "Prune Belly Syndrome"
+    },
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "5187006"
+        }
+      ],
+      "text": "Prune Belly Syndrome"
+    }
+  ],
+  "dosage": [
+    {
+      "timing": {
+        "repeat": {
+          "duration": 5.0,
+          "durationUnit": "min"
+        }
+      }
+    }
+  ]
+}

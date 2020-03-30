@@ -1,0 +1,58 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix v2: <http://hl7.org/fhir/v2/> .
+@prefix v3: <http://hl7.org/fhir/v3/> .
+@prefix w5: <http://hl7.org/fhir/w5#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://hl7.org/fhir/MedicationStatement/0057ca24-1b14-3c23-975f-93378234da8c> a fhir:MedicationStatement ;
+    fhir:nodeRole fhir:treeRoot ;
+    fhir:MedicationStatement.dosage [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Dosage.timing [
+            fhir:Timing.repeat [
+                fhir:Timing.repeat.duration [
+                    fhir:value "5.0"^^xsd:decimal
+                ] ;
+                fhir:Timing.repeat.durationUnit [
+                    fhir:value "min"
+                ]
+            ]
+        ]
+    ] ;
+    fhir:MedicationStatement.identifier [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Identifier.system [
+            fhir:value "urn:ietf:rfc:3986"
+        ] ;
+        fhir:Identifier.value [
+            fhir:value "urn:uuid:0057ca24-1b14-3c23-975f-93378234da8c"
+        ]
+    ] ;
+    fhir:MedicationStatement.medicationCodeableConcept [
+        fhir:CodeableConcept.coding [
+            fhir:index "0"^^xsd:integer ;
+            fhir:Coding.code [
+                fhir:value "9394"
+            ] ;
+            fhir:Coding.system [
+                fhir:value "http://www.nlm.nih.gov/research/umls/rxnorm"
+            ]
+        ] ;
+        fhir:CodeableConcept.text [
+            fhir:value "RNA"
+        ]
+    ] ;
+    fhir:Resource.id [
+        fhir:value "0057ca24-1b14-3c23-975f-93378234da8c"
+    ] .
+
+<http://hl7.org/fhir/MedicationStatement/0057ca24-1b14-3c23-975f-93378234da8c.ttl> a owl:Ontology ;
+    owl:imports fhir:fhir.ttl .
+
+
