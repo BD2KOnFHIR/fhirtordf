@@ -7,6 +7,11 @@ A tool to convert FHIR Resources from the JSON format to their equivalent in the
 
 [![Pyversions](https://img.shields.io/pypi/pyversions/fhirtordf.svg)](https://pypi.python.org/pypi/fhirtordf)
 
+## Warning!!!
+The FHIR R4 Build (http://hl7.org/fhir) no longer has the FHIR Structured Vocabulary (fhir.ttl), which makes R4 conversions
+exceedingly difficult.  Anywhere that the text `http://hl7.org/fhir/fhir.ttl` appears below, you will need to use a local
+copy of fhir.ttl, which can be found in [tests/data/fhir_metadata_vocabulary/fhir.ttl]()
+
 ## History
 * 1.0.0 - Initial Drop
 * 1.1.0 - Remove uri_to_ide_and_source method from uriutils and add parse_fhir_resource_uri 
