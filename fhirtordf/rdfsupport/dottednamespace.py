@@ -69,5 +69,4 @@ class DottedURIRef(URIRef):
             return False
 
     def __hash__(self):
-        fqn = URIRef.__module__ + '.' + URIRef.__name__
-        return hash(fqn) ^ hash(str(self))
+        return super().__hash__()
