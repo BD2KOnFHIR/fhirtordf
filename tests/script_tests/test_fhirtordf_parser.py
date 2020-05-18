@@ -30,6 +30,7 @@ import unittest
 import os
 from rdflib import Graph
 
+from fhirtordf.fhirtordf import DEFAULT_FHIR_MV
 from fhirtordf.rdfsupport.rdfcompare import rdf_compare
 from tests.utils.output_redirector import OutputRedirector
 from tests.utils.base_test_case import test_fhir_server, USE_BUILD_SERVER
@@ -43,12 +44,12 @@ noargs_text = """usage: fhirtordf [-h] [-i [INFILE [INFILE ...]]] [-id INDIR]
 fhirtordf: error: Either an input file or an input directory must be supplied
 """
 
-help_text = """usage: fhirtordf [-h] [-i [INFILE [INFILE ...]]] [-id INDIR]
+help_text = f"""usage: fhirtordf [-h] [-i [INFILE [INFILE ...]]] [-id INDIR]
                  [-o [OUTFILE [OUTFILE ...]]] [-od OUTDIR] [-f] [-s] [-v]
                  [-u URIBASE] [-mv METADATAVOC] [-no] [-nn] [-nc] [--nocache]
                  [--fmvcache FMVCACHE] [--maxsize MAXSIZE]
                  [-sd [SKIPDIRS [SKIPDIRS ...]]] [-sf [SKIPFNS [SKIPFNS ...]]]
-                 [--format {json-ld,n3,nt,nt11,ntriples,pretty-xml,trig,ttl,turtle,xml}]
+                 [--format {{json-ld,n3,nt,nt11,ntriples,pretty-xml,trig,ttl,turtle,xml}}]
 
 Convert FHIR JSON into RDF
 
@@ -69,23 +70,22 @@ optional arguments:
                         Base URI for RDF identifiers (default:
                         http://hl7.org/fhir/)
   -mv METADATAVOC, --metadatavoc METADATAVOC
-                        FHIR metadata vocabulary (default: /Users/mrf7578/Deve
-                        lopment/git/BD2KOnFHIR/fhirtordf/tests/data/fhir_metad
-                        ata_vocabulary/fhir.ttl)
+                        FHIR metadata vocabulary (default:
+                        {DEFAULT_FHIR_MV})
   -no, --noontology     Omit owl ontology header
   -nn, --nonarrative    Omit narrative text on output
   -nc, --nocontinuation
                         Don't follow URL continuations
   --nocache             Do not use FMV Cache
   --fmvcache FMVCACHE   Metadata vocabluary cache directory (default:
-                        /Users/mrf7578/.cache)
+                        ~/.cache)
   --maxsize MAXSIZE     Maximum sensible file size in KB. 0 means no size
                         check (default: 800)
   -sd [SKIPDIRS [SKIPDIRS ...]], --skipdirs [SKIPDIRS [SKIPDIRS ...]]
                         Skip directories
   -sf [SKIPFNS [SKIPFNS ...]], --skipfns [SKIPFNS [SKIPFNS ...]]
                         Skip file names containing text
-  --format {json-ld,n3,nt,nt11,ntriples,pretty-xml,trig,ttl,turtle,xml}
+  --format {{json-ld,n3,nt,nt11,ntriples,pretty-xml,trig,ttl,turtle,xml}}
                         Output format (default: turtle)
 """
 

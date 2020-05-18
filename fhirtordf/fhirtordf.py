@@ -43,8 +43,10 @@ dirname, _ = os.path.split(os.path.abspath(__file__))
 
 DEFAULT_FHIR_URI = "http://hl7.org/fhir/"
 DEFAULT_RDF_DIR = "rdf"
-DEFAULT_FHIR_MV = os.path.abspath(os.path.join(dirname, '..', 'tests', 'data', 'fhir_metadata_vocabulary', 'fhir.ttl'))
-DEFAULT_FMV_CACHE_DIR = os.path.abspath(os.path.join(os.path.expanduser('~'), ".cache"))
+DEFAULT_FHIR_MV = os.path.relpath(os.path.join(dirname, '..', 'tests', 'data', 'fhir_metadata_vocabulary', 'fhir.ttl'),
+                                  os.getcwd())
+
+DEFAULT_FMV_CACHE_DIR = os.path.join('~', ".cache")     # For HELP
 
 output_formats = known_formats()
 output_formats.remove('nquads')         # Only makes sense for context-aware stores
