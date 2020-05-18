@@ -45,7 +45,6 @@ class FHIRMetaVocTestCase(unittest.TestCase):
 
         m = FHIRMetaVocEntry(self.fhir_ontology, "Account")
         self.assertEqual({
-             'active': rdflib.term.URIRef('http://hl7.org/fhir/Account.active'),
              'contained': rdflib.term.URIRef('http://hl7.org/fhir/DomainResource.contained'),
              'coverage': rdflib.term.URIRef('http://hl7.org/fhir/Account.coverage'),
              'description': rdflib.term.URIRef('http://hl7.org/fhir/Account.description'),
@@ -92,7 +91,7 @@ class FHIRMetaVocTestCase(unittest.TestCase):
              ('nodeRole', 'http://hl7.org/fhir/treeRoot', 'A'),
              ('owner', 'http://hl7.org/fhir/Reference', 'C'),
              ('partOf', 'http://hl7.org/fhir/Reference', 'C'),
-             ('period', 'http://hl7.org/fhir/Period', 'C'),
+             ('servicePeriod', 'http://hl7.org/fhir/Period', 'C'),
              ('status', 'http://hl7.org/fhir/code', 'P'),
              ('subject', 'http://hl7.org/fhir/Reference', 'C'),
              ('text', 'http://hl7.org/fhir/Narrative', 'C'),
