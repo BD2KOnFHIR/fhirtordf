@@ -170,7 +170,7 @@ class FHIRResource:
 
         val_meta = FHIRMetaVocEntry(self._vocabulary, pred_type)
         for k, p in val_meta.predicates().items():
-            if k in val:
+            if isinstance(val, dict) and k in val:
                 self.add_val(subj, p, val, k)
                 if pred == FHIR.CodeableConcept.coding:
                     self.add_type_arc(subj, val)
