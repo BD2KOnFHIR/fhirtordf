@@ -48,12 +48,12 @@ class FhirDataLoaderTestCase(unittest.TestCase):
         json_file = fname + ".json"
         turtle_file = fname + ".ttl"
 
-        source = FHIRResource(self.fhir_ontology, os.path.join(self.base_dir, json_file), "http://hl7.org/fhir/")
+        target = FHIRResource(self.fhir_ontology, os.path.join(self.base_dir, json_file), "http://hl7.org/fhir/")
         turtle_fname = os.path.join(self.base_dir, turtle_file)
-        target = PrettyGraph()
-        target.load(turtle_fname, format="turtle")
+        source = PrettyGraph()
+        source.load(turtle_fname, format="turtle")
         self.maxDiff = None
-        self.assertEqual('', rdf_compare(source.graph, target, ignore_owl_version=False))
+        self.assertEqual(*rdf_compare(source, target.graph, ignore_owl_version=False))
 
     def test_observation_example_bmd(self):
         self.do_test('observation-example-bmd')
