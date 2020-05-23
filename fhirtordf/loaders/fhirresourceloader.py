@@ -70,11 +70,16 @@ def hl7_fhir_uri(system: str, code: str, nsmap: Dict[str, Namespace]) -> Optiona
 
 
 # Map from FHIR codesystem URI to generator
+# NOTE: The "hl7.org/fhir" URI's were removed from FHIR sometime in the past couple of years.  We are not sure whether
+#       they still exist anywhere but, in any case, the tests remain for historical data
 codesystem_maps = {"http://loinc.org": loinc_uri,
                    "http://snomed.info/sct": snomed_uri,
                    re.compile(r"http://hl7.org/fhir/v3/*"): hl7_v3_uri,
                    re.compile(r"http://hl7.org/fhir/v2/*"): hl7_v2_uri,
-                   re.compile(r"http://hl7.org/fhir/[a-z-]+"): hl7_fhir_uri}
+                   re.compile(r"http://hl7.org/fhir/[a-z-]+"): hl7_fhir_uri,
+                   re.compile(r"http://terminology.hl7.org/CodeSystem/v3-*"): hl7_v3_uri,
+                   re.compile(r"http://terminology.hl7.org/CodeSystem/v2-*"): hl7_v2_uri,
+                   re.compile(r"http://terminology.hl7.org/CodeSystem/[a-z-]+"): hl7_fhir_uri}
 
 
 class FHIRResource:
@@ -141,7 +146,13 @@ class FHIRResource:
         self.add(ont_uri, RDF.type, OWL.Ontology)\
             .add(ont_uri, OWL.imports, FHIR['fhir.ttl'])
         if 'meta' in self.root and 'versionId' in self.root.meta:
-            self.add(ont_uri, OWL.versionIRI, URIRef(str(ont_uri) + '/_history/' + self.root.meta.versionId))
+            ont_uri_str = str(ont_uri)
+            if re.search(r'\.\w+$', ont_uri_str):
+                ont_uri_str, suffix = ont_uri_str.rsplit('.', 1)
+                suffix = '.' + suffix
+            else:
+                suffix = ''
+            self.add(ont_uri, OWL.versionIRI, URIRef(ont_uri_str + '/_history/' + self.root.meta.versionId + suffix))
 
     def add(self, subj: Node, pred: URIRef, obj: Node) -> "FHIRResource":
         """
@@ -170,7 +181,7 @@ class FHIRResource:
 
         val_meta = FHIRMetaVocEntry(self._vocabulary, pred_type)
         for k, p in val_meta.predicates().items():
-            if isinstance(val, dict) and k in val:
+            if isinstance(val, JsonObj) and k in val:
                 self.add_val(subj, p, val, k)
                 if pred == FHIR.CodeableConcept.coding:
                     self.add_type_arc(subj, val)
