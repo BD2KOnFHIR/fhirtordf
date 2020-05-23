@@ -32,8 +32,9 @@ from rdflib import Graph
 
 from fhirtordf.fhirtordf import DEFAULT_FHIR_MV
 from fhirtordf.rdfsupport.rdfcompare import rdf_compare
+from tests.utils import USE_BUILD_SERVER
 from tests.utils.output_redirector import OutputRedirector
-from tests.utils.base_test_case import test_fhir_server, USE_BUILD_SERVER
+from tests.utils.base_test_case import test_fhir_server
 
 noargs_text = """usage: fhirtordf [-h] [-i [INFILE [INFILE ...]]] [-id INDIR]
                  [-o [OUTFILE [OUTFILE ...]]] [-od OUTDIR] [-f] [-s] [-v]

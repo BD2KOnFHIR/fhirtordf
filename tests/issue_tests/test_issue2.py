@@ -32,7 +32,7 @@ import os
 from jsonasobj import loads
 from rdflib import Graph
 
-from fhirtordf.rdfsupport.rdfcompare import rdf_compare
+from fhirtordf.rdfsupport.rdfcompare import rdf_compare_split
 from tests.utils.base_test_case import FHIRGraph
 
 data = """{
@@ -153,8 +153,10 @@ class Issue2TestCase(unittest.TestCase):
         test_rdf = FHIRResource(FHIRGraph(), None, "http://hl7.org/fhir", test_json)
         g = test_rdf.graph
         expected_graph = Graph()
-        diffs = rdf_compare(expected_graph, test_rdf.graph, ignore_owl_version=True, ignore_type_arcs=True)
-        self.assertEqual("", diffs)
+        expected, actual = rdf_compare_split(expected_graph, test_rdf.graph, ignore_owl_version=True, ignore_type_arcs=True)
+        self.assertEqual('', expected)
+        self.assertEqual('', actual)
+
 
 if __name__ == '__main__':
     unittest.main()

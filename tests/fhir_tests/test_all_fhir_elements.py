@@ -33,7 +33,8 @@ from rdflib import Graph
 from fhirtordf.fhir.fhirmetavoc import FHIRMetaVocEntry
 from fhirtordf.loaders.fhirresourceloader import FHIRResource
 from fhirtordf.rdfsupport.rdfcompare import rdf_compare
-from tests.utils.base_test_case import make_and_clear_directory, fhir_decimal_issue_filter, SKIP_ALL_FHIR_ELEMENTS
+from tests.utils import SKIP_ALL_FHIR_ELEMENTS
+from tests.utils.base_test_case import make_and_clear_directory, fhir_decimal_issue_filter
 from tests.utils.build_test_harness import ValidationTestCase
 
 

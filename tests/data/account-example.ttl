@@ -21,8 +21,8 @@
   fhir:Account.type [
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       a <http://hl7.org/fhir/v3/ActCode/PBILLACCT>;
-       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/v3/ActCode" ];
+       a <http://terminology.hl7.org/CodeSystem/v3-ActCode/PBILLACCT>;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActCode" ];
        fhir:Coding.code [ fhir:value "PBILLACCT" ];
        fhir:Coding.display [ fhir:value "patient billing account" ]
      ];
@@ -30,15 +30,12 @@
   ];
   fhir:Account.name [ fhir:value "HACC Funded Billing for Peter James Chalmers"];
   fhir:Account.subject [
+     fhir:index 0;
      fhir:link <http://hl7.org/fhir/Patient/example>;
      fhir:Reference.reference [ fhir:value "Patient/example" ];
      fhir:Reference.display [ fhir:value "Peter James Chalmers" ]
   ];
-  fhir:Account.period [
-     fhir:Period.start [ fhir:value "2016-01-01"^^xsd:date ];
-     fhir:Period.end [ fhir:value "2016-06-30"^^xsd:date ]
-  ];
-  fhir:Account.active [
+  fhir:Account.servicePeriod [
      fhir:Period.start [ fhir:value "2016-01-01"^^xsd:date ];
      fhir:Period.end [ fhir:value "2016-06-30"^^xsd:date ]
   ];
@@ -54,9 +51,12 @@
      fhir:link <http://hl7.org/fhir/Organization/hl7>;
      fhir:Reference.reference [ fhir:value "Organization/hl7" ]
   ];
-  fhir:Account.description [ fhir:value "Hospital charges"];
-  fhir:Resource.meta [ fhir:Meta.lastUpdated [ fhir:value "2017-03-23T15:39:37+00:00"^^xsd:dateTime ] ;
-     fhir:Meta.versionId [ fhir:value "3" ] ] .
+  fhir:Account.description [ fhir:value "Hospital charges"] ;
+  fhir:Resource.meta [
+        fhir:Meta.versionId [
+            fhir:value "3"
+        ]
+    ] .
 
 <http://hl7.org/fhir/Patient/example> a fhir:Patient .
 
@@ -68,7 +68,7 @@
 
 <http://hl7.org/fhir/Account/example.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl;
-  owl:versionIRI <http://hl7.org/fhir/Account/example.ttl/_history/3> .
+  owl:versionIRI <http://hl7.org/fhir/Account/example/_history/3.ttl> .
 
 # -------------------------------------------------------------------------------------
 

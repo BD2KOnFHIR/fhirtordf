@@ -34,6 +34,7 @@ from rdflib import Graph, URIRef, Literal
 
 from fhirtordf.rdfsupport.namespaces import FHIR
 
+ACT_V3_CODESYSTEM = 'http://terminology.hl7.org/CodeSystem/v3-ActCode'
 
 class FHIRGraphUtilsTestCase(unittest.TestCase):
     @classmethod
@@ -48,9 +49,11 @@ class FHIRGraphUtilsTestCase(unittest.TestCase):
         self.assertEqual("example", value(g, s, FHIR.Resource.id))
         self.assertEqual(Literal("example"), value(g, s, FHIR.Resource.id, True))
         self.assertEqual(FHIR.treeRoot, value(g, s, FHIR.nodeRole))
-        period = g.value(s, FHIR.Account.period)
+        period = g.value(s, FHIR.Account.servicePeriod)
+        self.assertIsNotNone(period)
         self.assertEqual(date(2016, 1, 1), value(g, period, FHIR.Period.start))
         period_end = g.value(period, FHIR.Period.end)
+        self.assertIsNotNone(period_end)
         self.assertEqual(date(2016, 6, 30), value(g, period_end, FHIR.value))
         self.assertIsNone(value(g, s, FHIR.Account.type))
         self.assertIsNone(value(g, s, FHIR.foo))
@@ -74,7 +77,7 @@ class FHIRGraphUtilsTestCase(unittest.TestCase):
         g.load(os.path.join(self.base_dir, "account-example.ttl"), format="turtle")
         s = FHIR['Account/example']
         self.assertEqual("PBILLACCT", code(g, s, FHIR.Account.type))
-        self.assertEqual("PBILLACCT", code(g, s, FHIR.Account.type, 'http://terminology.hl7.org/CodeSystem/v3-ActCode'))
+        self.assertEqual("PBILLACCT", code(g, s, FHIR.Account.type, ACT_V3_CODESYSTEM))
         self.assertIsNone(code(g, s, FHIR.Account.type, "http://hl7.org/fhir/v3/foo"))
 
     def test_concept_uri(self):
@@ -82,10 +85,10 @@ class FHIRGraphUtilsTestCase(unittest.TestCase):
         g = Graph()
         g.load(os.path.join(self.base_dir, "account-example.ttl"), format="turtle")
         s = FHIR['Account/example']
-        self.assertEqual(URIRef("http://hl7.org/fhir/v3/ActCode/PBILLACCT"),
+        self.assertEqual(URIRef("http://terminology.hl7.org/CodeSystem/v3-ActCode/PBILLACCT'"),
                          concept_uri(g, s, FHIR.Account.type))
-        self.assertEqual(URIRef("http://hl7.org/fhir/v3/ActCode/PBILLACCT"),
-                         concept_uri(g, s, FHIR.Account.type, "http://hl7.org/fhir/v3/ActCode"))
+        self.assertEqual(URIRef("http://terminology.hl7.org/CodeSystem/v3-ActCode/PBILLACCT"),
+                         concept_uri(g, s, FHIR.Account.type, "http://terminology.hl7.org/CodeSystem/v3-ActCode"))
         self.assertIsNone(concept_uri(g, s, FHIR.Account.type, "http://hl7.org/fhir/v3/foo"))
 
     def test_link(self):

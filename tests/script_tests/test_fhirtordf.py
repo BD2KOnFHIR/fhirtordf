@@ -32,7 +32,8 @@ from rdflib import Graph, URIRef
 from fhirtordf.rdfsupport.rdfcompare import rdf_compare
 
 # If true, we're updating the target. Will always return a fail
-from tests.utils.base_test_case import test_fhir_server, USE_BUILD_SERVER, SKIP_CONTINUATION_TESTS
+from tests.utils import SKIP_CONTINUATION_TESTS, USE_BUILD_SERVER
+from tests.utils.base_test_case import test_fhir_server
 from tests.utils.output_redirector import OutputRedirector
 
 save_output = False
@@ -76,9 +77,10 @@ class JSONToRDFTestCase(unittest.TestCase, OutputRedirector):
             in_url = "{}{}.json".format(test_fhir_server, fname)
             test_url = "{}{}.ttl".format(test_fhir_server, fname)
             # fmv_url = "{}/fhir.ttl".format(target_fhir_build)
-            fmv_url = os.path.join(os.path.split(os.path.abspath(__file__))[0],
-                                   '..', 'data', 'fhir_metadata_vocabulary', 'fhir.ttl')
-            test_directory = os.path.join(os.path.split(os.path.abspath(__file__))[0], 'data')
+            fmv_url = os.path.relpath(os.path.join(os.path.split(os.path.abspath(__file__))[0], '..', 'data',
+                                                   'fhir_metadata_vocabulary', 'fhir.ttl'), os.getcwd())
+            test_directory = os.path.relpath(os.path.join(os.path.split(os.path.abspath(__file__))[0], 'data'),
+                                             os.getcwd())
             outfname = os.path.join(test_directory, "{}.ttl".format(fname))
             args = "-i {} -o {} -mv {} -s".format(in_url, outfname, fmv_url)
             self.assertTrue(fhirtordf(args.split()))
@@ -91,7 +93,7 @@ class JSONToRDFTestCase(unittest.TestCase, OutputRedirector):
                 print(comp_result)
             self.assertTrue(len(comp_result) == 0)
 
-    @unittest.skipIf(SKIP_CONTINUATION_TESTS, "Continuations not tested -- see base_test_case.py to enable")
+    @unittest.skipIf(SKIP_CONTINUATION_TESTS, "Continuations not tested. http://fhirtest.uhn.ca/ is inoperative   -- see utils/__init__.py to enable")
     def test_continuations(self):
         from fhirtordf.fhirtordf import fhirtordf
 

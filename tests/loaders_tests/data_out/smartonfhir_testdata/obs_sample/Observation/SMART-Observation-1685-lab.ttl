@@ -1,14 +1,6 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix loinc: <http://loinc.org/rdf#> .
-@prefix observation-category: <http://hl7.org/fhir/observation-category> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix sct: <http://snomed.info/id/> .
-@prefix v2: <http://hl7.org/fhir/v2/> .
-@prefix v3: <http://hl7.org/fhir/v3/> .
-@prefix w5: <http://hl7.org/fhir/w5#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://sb-fhir-dstu2.smarthealthit.org/api/smartdstu2/open/Observation/SMART-Observation-1685-lab> a fhir:Observation ;
@@ -123,7 +115,7 @@
 
 <https://sb-fhir-dstu2.smarthealthit.org/api/smartdstu2/open/Observation/SMART-Observation-1685-lab.ttl> a owl:Ontology ;
     owl:imports fhir:fhir.ttl ;
-    owl:versionIRI <https://sb-fhir-dstu2.smarthealthit.org/api/smartdstu2/open/Observation/SMART-Observation-1685-lab.ttl/_history/3> .
+    owl:versionIRI <https://sb-fhir-dstu2.smarthealthit.org/api/smartdstu2/open/Observation/SMART-Observation-1685-lab/_history/3.ttl> .
 
 <https://sb-fhir-dstu2.smarthealthit.org/api/smartdstu2/open/Patient/SMART-1134281> a fhir:Patient .
 

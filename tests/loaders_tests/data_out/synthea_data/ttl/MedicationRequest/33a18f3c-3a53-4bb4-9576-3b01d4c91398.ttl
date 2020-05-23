@@ -1,0 +1,25 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://standardhealthrecord.org/fhir/MedicationRequest/33a18f3c-3a53-4bb4-9576-3b01d4c91398> a fhir:MedicationRequest ;
+    fhir:nodeRole fhir:treeRoot ;
+    fhir:MedicationRequest.dosageInstruction [
+        fhir:index "0"^^xsd:integer
+    ] ;
+    fhir:MedicationRequest.status [
+        fhir:value "active"
+    ] ;
+    fhir:Resource.id [
+        fhir:value "33a18f3c-3a53-4bb4-9576-3b01d4c91398"
+    ] ;
+    fhir:Resource.meta [
+        fhir:Meta.profile [
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "http://standardhealthrecord.org/fhir/StructureDefinition/shr-medication-MedicationPrescription"
+        ]
+    ] .
+
+<http://standardhealthrecord.org/fhir/MedicationRequest/33a18f3c-3a53-4bb4-9576-3b01d4c91398.ttl> a owl:Ontology ;
+    owl:imports fhir:fhir.ttl .
+

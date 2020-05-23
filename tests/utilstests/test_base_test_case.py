@@ -29,6 +29,8 @@
 import unittest
 import os
 
+from tests.utils import test_data_directory
+
 
 class BaseTestCaseTestCase(unittest.TestCase):
 
@@ -40,7 +42,7 @@ class BaseTestCaseTestCase(unittest.TestCase):
         # self.assertTrue(W5.where in g.subjects())
 
     def test_make_and_clear_directory(self):
-        from tests.utils.base_test_case import test_data_directory, make_and_clear_directory
+        from tests.utils.base_test_case import make_and_clear_directory
         test_dir = os.path.join(test_data_directory, 'mcd_test')
         safety_file = os.path.join(test_dir, "generated")
         test_file = os.path.join(test_dir, "test.txt")

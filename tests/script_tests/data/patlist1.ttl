@@ -3,6 +3,7 @@
 @prefix ns1: <http://example.org/> .
 @prefix ns2: <http://example.com/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix patient-contact-relationship: <http://hl7.org/fhir/patient-contact-relationship> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sct: <http://snomed.info/id/> .
@@ -1084,6 +1085,21 @@
         fhir:value "2018-10-10"^^xsd:date
     ] ;
     fhir:Patient.contact [
+        fhir:index "1"^^xsd:integer ;
+        fhir:Patient.contact.name [
+            fhir:HumanName.given [
+                fhir:index "0"^^xsd:integer ;
+                fhir:value "Đá"
+            ]
+        ] ;
+        fhir:Patient.contact.telecom [
+            fhir:index "0"^^xsd:integer ;
+            fhir:ContactPoint.value [
+                fhir:value "54"
+            ]
+        ]
+    ],
+        [
         fhir:index "0"^^xsd:integer ;
         fhir:Patient.contact.address [
             fhir:Address.city [
@@ -1103,21 +1119,6 @@
             fhir:index "0"^^xsd:integer ;
             fhir:ContactPoint.value [
                 fhir:value "645"
-            ]
-        ]
-    ],
-        [
-        fhir:index "1"^^xsd:integer ;
-        fhir:Patient.contact.name [
-            fhir:HumanName.given [
-                fhir:index "0"^^xsd:integer ;
-                fhir:value "Đá"
-            ]
-        ] ;
-        fhir:Patient.contact.telecom [
-            fhir:index "0"^^xsd:integer ;
-            fhir:ContactPoint.value [
-                fhir:value "54"
             ]
         ]
     ] ;
@@ -1209,21 +1210,21 @@
         fhir:value "male"
     ] ;
     fhir:Patient.identifier [
-        fhir:index "0"^^xsd:integer ;
-        fhir:Identifier.system [
-            fhir:value "http://fhir.de/NamingSystem/gkv/kvid-10"
-        ] ;
-        fhir:Identifier.value [
-            fhir:value "17811781"
-        ]
-    ],
-        [
         fhir:index "1"^^xsd:integer ;
         fhir:Identifier.system [
             fhir:value "http://starfleet-hospital.ufp/NamingSystem/patient-identifer"
         ] ;
         fhir:Identifier.value [
             fhir:value "MM-NCC-1032"
+        ]
+    ],
+        [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Identifier.system [
+            fhir:value "http://fhir.de/NamingSystem/gkv/kvid-10"
+        ] ;
+        fhir:Identifier.value [
+            fhir:value "17811781"
         ]
     ] ;
     fhir:Patient.name [
@@ -1285,26 +1286,6 @@
         fhir:value "2018-10-11"^^xsd:date
     ] ;
     fhir:Patient.contact [
-        fhir:index "1"^^xsd:integer ;
-        fhir:Patient.contact.address [
-            fhir:Address.text [
-                fhir:value "sdsd"
-            ]
-        ] ;
-        fhir:Patient.contact.name [
-            fhir:HumanName.given [
-                fhir:index "0"^^xsd:integer ;
-                fhir:value "Hao"
-            ]
-        ] ;
-        fhir:Patient.contact.telecom [
-            fhir:index "0"^^xsd:integer ;
-            fhir:ContactPoint.value [
-                fhir:value "65465"
-            ]
-        ]
-    ],
-        [
         fhir:index "0"^^xsd:integer ;
         fhir:Patient.contact.address [
             fhir:Address.city [
@@ -1326,22 +1307,42 @@
                 fhir:value "4565"
             ]
         ]
+    ],
+        [
+        fhir:index "1"^^xsd:integer ;
+        fhir:Patient.contact.address [
+            fhir:Address.text [
+                fhir:value "sdsd"
+            ]
+        ] ;
+        fhir:Patient.contact.name [
+            fhir:HumanName.given [
+                fhir:index "0"^^xsd:integer ;
+                fhir:value "Hao"
+            ]
+        ] ;
+        fhir:Patient.contact.telecom [
+            fhir:index "0"^^xsd:integer ;
+            fhir:ContactPoint.value [
+                fhir:value "65465"
+            ]
+        ]
     ] ;
     fhir:Patient.gender [
         fhir:value "male"
     ] ;
     fhir:Patient.name [
-        fhir:index "0"^^xsd:integer ;
+        fhir:index "1"^^xsd:integer ;
+        fhir:HumanName.family [
+            fhir:value "Nhat"
+        ] ;
         fhir:HumanName.given [
             fhir:index "0"^^xsd:integer ;
             fhir:value "Nghia"
         ]
     ],
         [
-        fhir:index "1"^^xsd:integer ;
-        fhir:HumanName.family [
-            fhir:value "Nhat"
-        ] ;
+        fhir:index "0"^^xsd:integer ;
         fhir:HumanName.given [
             fhir:index "0"^^xsd:integer ;
             fhir:value "Nghia"
@@ -1390,6 +1391,21 @@
         fhir:value "2018-10-12"^^xsd:date
     ] ;
     fhir:Patient.contact [
+        fhir:index "1"^^xsd:integer ;
+        fhir:Patient.contact.name [
+            fhir:HumanName.given [
+                fhir:index "0"^^xsd:integer ;
+                fhir:value "Hao"
+            ]
+        ] ;
+        fhir:Patient.contact.telecom [
+            fhir:index "0"^^xsd:integer ;
+            fhir:ContactPoint.value [
+                fhir:value "654"
+            ]
+        ]
+    ],
+        [
         fhir:index "0"^^xsd:integer ;
         fhir:Patient.contact.address [
             fhir:Address.city [
@@ -1409,21 +1425,6 @@
             fhir:index "0"^^xsd:integer ;
             fhir:ContactPoint.value [
                 fhir:value "564"
-            ]
-        ]
-    ],
-        [
-        fhir:index "1"^^xsd:integer ;
-        fhir:Patient.contact.name [
-            fhir:HumanName.given [
-                fhir:index "0"^^xsd:integer ;
-                fhir:value "Hao"
-            ]
-        ] ;
-        fhir:Patient.contact.telecom [
-            fhir:index "0"^^xsd:integer ;
-            fhir:ContactPoint.value [
-                fhir:value "654"
             ]
         ]
     ] ;
@@ -1590,6 +1591,21 @@
         fhir:value "2018-10-09"^^xsd:date
     ] ;
     fhir:Patient.contact [
+        fhir:index "1"^^xsd:integer ;
+        fhir:Patient.contact.name [
+            fhir:HumanName.given [
+                fhir:index "0"^^xsd:integer ;
+                fhir:value "Dff"
+            ]
+        ] ;
+        fhir:Patient.contact.telecom [
+            fhir:index "0"^^xsd:integer ;
+            fhir:ContactPoint.value [
+                fhir:value "sdffdsf"
+            ]
+        ]
+    ],
+        [
         fhir:index "0"^^xsd:integer ;
         fhir:Patient.contact.address [
             fhir:Address.city [
@@ -1611,37 +1627,22 @@
                 fhir:value "63"
             ]
         ]
-    ],
-        [
-        fhir:index "1"^^xsd:integer ;
-        fhir:Patient.contact.name [
-            fhir:HumanName.given [
-                fhir:index "0"^^xsd:integer ;
-                fhir:value "Dff"
-            ]
-        ] ;
-        fhir:Patient.contact.telecom [
-            fhir:index "0"^^xsd:integer ;
-            fhir:ContactPoint.value [
-                fhir:value "sdffdsf"
-            ]
-        ]
     ] ;
     fhir:Patient.gender [
         fhir:value "male"
     ] ;
     fhir:Patient.name [
-        fhir:index "0"^^xsd:integer ;
+        fhir:index "1"^^xsd:integer ;
+        fhir:HumanName.family [
+            fhir:value "Nhat"
+        ] ;
         fhir:HumanName.given [
             fhir:index "0"^^xsd:integer ;
             fhir:value "Dsa"
         ]
     ],
         [
-        fhir:index "1"^^xsd:integer ;
-        fhir:HumanName.family [
-            fhir:value "Nhat"
-        ] ;
+        fhir:index "0"^^xsd:integer ;
         fhir:HumanName.given [
             fhir:index "0"^^xsd:integer ;
             fhir:value "Dsa"
@@ -2757,6 +2758,21 @@
         fhir:value "true"^^xsd:boolean
     ] ;
     fhir:Patient.address [
+        fhir:index "1"^^xsd:integer ;
+        fhir:Address.country [
+            fhir:value "BRA"
+        ] ;
+        fhir:Address.text [
+            fhir:value "Sao Paulo, Brasil"
+        ] ;
+        fhir:Address.type [
+            fhir:value "physical"
+        ] ;
+        fhir:Address.use [
+            fhir:value "old"
+        ]
+    ],
+        [
         fhir:index "0"^^xsd:integer ;
         fhir:Address.city [
             fhir:value "Santiago"
@@ -2772,21 +2788,6 @@
         ] ;
         fhir:Address.use [
             fhir:value "home"
-        ]
-    ],
-        [
-        fhir:index "1"^^xsd:integer ;
-        fhir:Address.country [
-            fhir:value "BRA"
-        ] ;
-        fhir:Address.text [
-            fhir:value "Sao Paulo, Brasil"
-        ] ;
-        fhir:Address.type [
-            fhir:value "physical"
-        ] ;
-        fhir:Address.use [
-            fhir:value "old"
         ]
     ] ;
     fhir:Patient.birthDate [
@@ -6876,6 +6877,26 @@
         fhir:value "2018-11-06"^^xsd:date
     ] ;
     fhir:Patient.contact [
+        fhir:index "1"^^xsd:integer ;
+        fhir:Patient.contact.address [
+            fhir:Address.text [
+                fhir:value "ss"
+            ]
+        ] ;
+        fhir:Patient.contact.name [
+            fhir:HumanName.given [
+                fhir:index "0"^^xsd:integer ;
+                fhir:value "ds"
+            ]
+        ] ;
+        fhir:Patient.contact.telecom [
+            fhir:index "0"^^xsd:integer ;
+            fhir:ContactPoint.value [
+                fhir:value "ds"
+            ]
+        ]
+    ],
+        [
         fhir:index "0"^^xsd:integer ;
         fhir:Patient.contact.address [
             fhir:Address.city [
@@ -6897,42 +6918,22 @@
                 fhir:value "22"
             ]
         ]
-    ],
-        [
-        fhir:index "1"^^xsd:integer ;
-        fhir:Patient.contact.address [
-            fhir:Address.text [
-                fhir:value "ss"
-            ]
-        ] ;
-        fhir:Patient.contact.name [
-            fhir:HumanName.given [
-                fhir:index "0"^^xsd:integer ;
-                fhir:value "ds"
-            ]
-        ] ;
-        fhir:Patient.contact.telecom [
-            fhir:index "0"^^xsd:integer ;
-            fhir:ContactPoint.value [
-                fhir:value "ds"
-            ]
-        ]
     ] ;
     fhir:Patient.gender [
         fhir:value "male"
     ] ;
     fhir:Patient.name [
-        fhir:index "0"^^xsd:integer ;
+        fhir:index "1"^^xsd:integer ;
+        fhir:HumanName.family [
+            fhir:value "Nhat"
+        ] ;
         fhir:HumanName.given [
             fhir:index "0"^^xsd:integer ;
             fhir:value "dsd"
         ]
     ],
         [
-        fhir:index "1"^^xsd:integer ;
-        fhir:HumanName.family [
-            fhir:value "Nhat"
-        ] ;
+        fhir:index "0"^^xsd:integer ;
         fhir:HumanName.given [
             fhir:index "0"^^xsd:integer ;
             fhir:value "dsd"
@@ -7201,6 +7202,26 @@
         fhir:value "2018-11-09"^^xsd:date
     ] ;
     fhir:Patient.contact [
+        fhir:index "1"^^xsd:integer ;
+        fhir:Patient.contact.address [
+            fhir:Address.text [
+                fhir:value "Â"
+            ]
+        ] ;
+        fhir:Patient.contact.name [
+            fhir:HumanName.given [
+                fhir:index "0"^^xsd:integer ;
+                fhir:value "SA"
+            ]
+        ] ;
+        fhir:Patient.contact.telecom [
+            fhir:index "0"^^xsd:integer ;
+            fhir:ContactPoint.value [
+                fhir:value "SA"
+            ]
+        ]
+    ],
+        [
         fhir:index "0"^^xsd:integer ;
         fhir:Patient.contact.address [
             fhir:Address.city [
@@ -7222,42 +7243,22 @@
                 fhir:value "565"
             ]
         ]
-    ],
-        [
-        fhir:index "1"^^xsd:integer ;
-        fhir:Patient.contact.address [
-            fhir:Address.text [
-                fhir:value "Â"
-            ]
-        ] ;
-        fhir:Patient.contact.name [
-            fhir:HumanName.given [
-                fhir:index "0"^^xsd:integer ;
-                fhir:value "SA"
-            ]
-        ] ;
-        fhir:Patient.contact.telecom [
-            fhir:index "0"^^xsd:integer ;
-            fhir:ContactPoint.value [
-                fhir:value "SA"
-            ]
-        ]
     ] ;
     fhir:Patient.gender [
         fhir:value "male"
     ] ;
     fhir:Patient.name [
-        fhir:index "1"^^xsd:integer ;
-        fhir:HumanName.family [
-            fhir:value "Nhat"
-        ] ;
+        fhir:index "0"^^xsd:integer ;
         fhir:HumanName.given [
             fhir:index "0"^^xsd:integer ;
             fhir:value "FSD"
         ]
     ],
         [
-        fhir:index "0"^^xsd:integer ;
+        fhir:index "1"^^xsd:integer ;
+        fhir:HumanName.family [
+            fhir:value "Nhat"
+        ] ;
         fhir:HumanName.given [
             fhir:index "0"^^xsd:integer ;
             fhir:value "FSD"
@@ -7516,6 +7517,26 @@
         fhir:value "2018-11-16"^^xsd:date
     ] ;
     fhir:Patient.contact [
+        fhir:index "1"^^xsd:integer ;
+        fhir:Patient.contact.address [
+            fhir:Address.text [
+                fhir:value "sa"
+            ]
+        ] ;
+        fhir:Patient.contact.name [
+            fhir:HumanName.given [
+                fhir:index "0"^^xsd:integer ;
+                fhir:value "sda"
+            ]
+        ] ;
+        fhir:Patient.contact.telecom [
+            fhir:index "0"^^xsd:integer ;
+            fhir:ContactPoint.value [
+                fhir:value "sda"
+            ]
+        ]
+    ],
+        [
         fhir:index "0"^^xsd:integer ;
         fhir:Patient.contact.address [
             fhir:Address.city [
@@ -7529,26 +7550,6 @@
             fhir:HumanName.given [
                 fhir:index "0"^^xsd:integer ;
                 fhir:value "dsad"
-            ]
-        ] ;
-        fhir:Patient.contact.telecom [
-            fhir:index "0"^^xsd:integer ;
-            fhir:ContactPoint.value [
-                fhir:value "sda"
-            ]
-        ]
-    ],
-        [
-        fhir:index "1"^^xsd:integer ;
-        fhir:Patient.contact.address [
-            fhir:Address.text [
-                fhir:value "sa"
-            ]
-        ] ;
-        fhir:Patient.contact.name [
-            fhir:HumanName.given [
-                fhir:index "0"^^xsd:integer ;
-                fhir:value "sda"
             ]
         ] ;
         fhir:Patient.contact.telecom [
@@ -7621,26 +7622,6 @@
         fhir:value "2018-11-16"^^xsd:date
     ] ;
     fhir:Patient.contact [
-        fhir:index "1"^^xsd:integer ;
-        fhir:Patient.contact.address [
-            fhir:Address.text [
-                fhir:value "sa"
-            ]
-        ] ;
-        fhir:Patient.contact.name [
-            fhir:HumanName.given [
-                fhir:index "0"^^xsd:integer ;
-                fhir:value "sda"
-            ]
-        ] ;
-        fhir:Patient.contact.telecom [
-            fhir:index "0"^^xsd:integer ;
-            fhir:ContactPoint.value [
-                fhir:value "sda"
-            ]
-        ]
-    ],
-        [
         fhir:index "0"^^xsd:integer ;
         fhir:Patient.contact.address [
             fhir:Address.city [
@@ -7662,22 +7643,42 @@
                 fhir:value "sda"
             ]
         ]
+    ],
+        [
+        fhir:index "1"^^xsd:integer ;
+        fhir:Patient.contact.address [
+            fhir:Address.text [
+                fhir:value "sa"
+            ]
+        ] ;
+        fhir:Patient.contact.name [
+            fhir:HumanName.given [
+                fhir:index "0"^^xsd:integer ;
+                fhir:value "sda"
+            ]
+        ] ;
+        fhir:Patient.contact.telecom [
+            fhir:index "0"^^xsd:integer ;
+            fhir:ContactPoint.value [
+                fhir:value "sda"
+            ]
+        ]
     ] ;
     fhir:Patient.gender [
         fhir:value "male"
     ] ;
     fhir:Patient.name [
-        fhir:index "0"^^xsd:integer ;
+        fhir:index "1"^^xsd:integer ;
+        fhir:HumanName.family [
+            fhir:value "sadas"
+        ] ;
         fhir:HumanName.given [
             fhir:index "0"^^xsd:integer ;
             fhir:value "dsad"
         ]
     ],
         [
-        fhir:index "1"^^xsd:integer ;
-        fhir:HumanName.family [
-            fhir:value "sadas"
-        ] ;
+        fhir:index "0"^^xsd:integer ;
         fhir:HumanName.given [
             fhir:index "0"^^xsd:integer ;
             fhir:value "dsad"
@@ -7726,6 +7727,26 @@
         fhir:value "2018-11-16"^^xsd:date
     ] ;
     fhir:Patient.contact [
+        fhir:index "1"^^xsd:integer ;
+        fhir:Patient.contact.address [
+            fhir:Address.text [
+                fhir:value "sa"
+            ]
+        ] ;
+        fhir:Patient.contact.name [
+            fhir:HumanName.given [
+                fhir:index "0"^^xsd:integer ;
+                fhir:value "sda"
+            ]
+        ] ;
+        fhir:Patient.contact.telecom [
+            fhir:index "0"^^xsd:integer ;
+            fhir:ContactPoint.value [
+                fhir:value "sda"
+            ]
+        ]
+    ],
+        [
         fhir:index "0"^^xsd:integer ;
         fhir:Patient.contact.address [
             fhir:Address.city [
@@ -7747,42 +7768,22 @@
                 fhir:value "sda"
             ]
         ]
-    ],
-        [
-        fhir:index "1"^^xsd:integer ;
-        fhir:Patient.contact.address [
-            fhir:Address.text [
-                fhir:value "sa"
-            ]
-        ] ;
-        fhir:Patient.contact.name [
-            fhir:HumanName.given [
-                fhir:index "0"^^xsd:integer ;
-                fhir:value "sda"
-            ]
-        ] ;
-        fhir:Patient.contact.telecom [
-            fhir:index "0"^^xsd:integer ;
-            fhir:ContactPoint.value [
-                fhir:value "sda"
-            ]
-        ]
     ] ;
     fhir:Patient.gender [
         fhir:value "male"
     ] ;
     fhir:Patient.name [
-        fhir:index "1"^^xsd:integer ;
-        fhir:HumanName.family [
-            fhir:value "sadas"
-        ] ;
+        fhir:index "0"^^xsd:integer ;
         fhir:HumanName.given [
             fhir:index "0"^^xsd:integer ;
             fhir:value "dsad"
         ]
     ],
         [
-        fhir:index "0"^^xsd:integer ;
+        fhir:index "1"^^xsd:integer ;
+        fhir:HumanName.family [
+            fhir:value "sadas"
+        ] ;
         fhir:HumanName.given [
             fhir:index "0"^^xsd:integer ;
             fhir:value "dsad"
@@ -7831,6 +7832,26 @@
         fhir:value "2018-11-16"^^xsd:date
     ] ;
     fhir:Patient.contact [
+        fhir:index "1"^^xsd:integer ;
+        fhir:Patient.contact.address [
+            fhir:Address.text [
+                fhir:value "sa"
+            ]
+        ] ;
+        fhir:Patient.contact.name [
+            fhir:HumanName.given [
+                fhir:index "0"^^xsd:integer ;
+                fhir:value "sda"
+            ]
+        ] ;
+        fhir:Patient.contact.telecom [
+            fhir:index "0"^^xsd:integer ;
+            fhir:ContactPoint.value [
+                fhir:value "sda"
+            ]
+        ]
+    ],
+        [
         fhir:index "0"^^xsd:integer ;
         fhir:Patient.contact.address [
             fhir:Address.city [
@@ -7852,42 +7873,22 @@
                 fhir:value "sda"
             ]
         ]
-    ],
-        [
-        fhir:index "1"^^xsd:integer ;
-        fhir:Patient.contact.address [
-            fhir:Address.text [
-                fhir:value "sa"
-            ]
-        ] ;
-        fhir:Patient.contact.name [
-            fhir:HumanName.given [
-                fhir:index "0"^^xsd:integer ;
-                fhir:value "sda"
-            ]
-        ] ;
-        fhir:Patient.contact.telecom [
-            fhir:index "0"^^xsd:integer ;
-            fhir:ContactPoint.value [
-                fhir:value "sda"
-            ]
-        ]
     ] ;
     fhir:Patient.gender [
         fhir:value "male"
     ] ;
     fhir:Patient.name [
-        fhir:index "0"^^xsd:integer ;
+        fhir:index "1"^^xsd:integer ;
+        fhir:HumanName.family [
+            fhir:value "sadas"
+        ] ;
         fhir:HumanName.given [
             fhir:index "0"^^xsd:integer ;
             fhir:value "dsad"
         ]
     ],
         [
-        fhir:index "1"^^xsd:integer ;
-        fhir:HumanName.family [
-            fhir:value "sadas"
-        ] ;
+        fhir:index "0"^^xsd:integer ;
         fhir:HumanName.given [
             fhir:index "0"^^xsd:integer ;
             fhir:value "dsad"
@@ -9339,12 +9340,12 @@
             fhir:value "Doe"
         ] ;
         fhir:HumanName.given [
-            fhir:index "0"^^xsd:integer ;
-            fhir:value "John"
-        ],
-            [
             fhir:index "1"^^xsd:integer ;
             fhir:value "Q"
+        ],
+            [
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "John"
         ]
     ] ;
     fhir:Resource.id [
@@ -10095,21 +10096,21 @@
         ]
     ] ;
     fhir:Patient.telecom [
-        fhir:index "0"^^xsd:integer ;
-        fhir:ContactPoint.system [
-            fhir:value "phone"
-        ] ;
-        fhir:ContactPoint.value [
-            fhir:value "+45(55)555-55-55"
-        ]
-    ],
-        [
         fhir:index "1"^^xsd:integer ;
         fhir:ContactPoint.system [
             fhir:value "email"
         ] ;
         fhir:ContactPoint.value [
             fhir:value "456456456"
+        ]
+    ],
+        [
+        fhir:index "0"^^xsd:integer ;
+        fhir:ContactPoint.system [
+            fhir:value "phone"
+        ] ;
+        fhir:ContactPoint.value [
+            fhir:value "+45(55)555-55-55"
         ]
     ] ;
     fhir:Resource.id [
@@ -10170,21 +10171,21 @@
         ]
     ] ;
     fhir:Patient.telecom [
-        fhir:index "1"^^xsd:integer ;
-        fhir:ContactPoint.system [
-            fhir:value "email"
-        ] ;
-        fhir:ContactPoint.value [
-            fhir:value "345345345345345"
-        ]
-    ],
-        [
         fhir:index "0"^^xsd:integer ;
         fhir:ContactPoint.system [
             fhir:value "phone"
         ] ;
         fhir:ContactPoint.value [
             fhir:value "+34(53)453-45-34"
+        ]
+    ],
+        [
+        fhir:index "1"^^xsd:integer ;
+        fhir:ContactPoint.system [
+            fhir:value "email"
+        ] ;
+        fhir:ContactPoint.value [
+            fhir:value "345345345345345"
         ]
     ] ;
     fhir:Resource.id [
@@ -10245,21 +10246,21 @@
         ]
     ] ;
     fhir:Patient.telecom [
-        fhir:index "0"^^xsd:integer ;
-        fhir:ContactPoint.system [
-            fhir:value "phone"
-        ] ;
-        fhir:ContactPoint.value [
-            fhir:value "+34(53)453-45-34"
-        ]
-    ],
-        [
         fhir:index "1"^^xsd:integer ;
         fhir:ContactPoint.system [
             fhir:value "email"
         ] ;
         fhir:ContactPoint.value [
             fhir:value "345345345345345"
+        ]
+    ],
+        [
+        fhir:index "0"^^xsd:integer ;
+        fhir:ContactPoint.system [
+            fhir:value "phone"
+        ] ;
+        fhir:ContactPoint.value [
+            fhir:value "+34(53)453-45-34"
         ]
     ] ;
     fhir:Resource.id [
@@ -11165,21 +11166,21 @@
         ]
     ] ;
     fhir:Patient.telecom [
-        fhir:index "1"^^xsd:integer ;
-        fhir:ContactPoint.system [
-            fhir:value "email"
-        ] ;
-        fhir:ContactPoint.value [
-            fhir:value "ваыаываыва"
-        ]
-    ],
-        [
         fhir:index "0"^^xsd:integer ;
         fhir:ContactPoint.system [
             fhir:value "phone"
         ] ;
         fhir:ContactPoint.value [
             fhir:value "+34(23)423-42-34"
+        ]
+    ],
+        [
+        fhir:index "1"^^xsd:integer ;
+        fhir:ContactPoint.system [
+            fhir:value "email"
+        ] ;
+        fhir:ContactPoint.value [
+            fhir:value "ваыаываыва"
         ]
     ] ;
     fhir:Resource.id [
@@ -11240,21 +11241,21 @@
         ]
     ] ;
     fhir:Patient.telecom [
-        fhir:index "0"^^xsd:integer ;
-        fhir:ContactPoint.system [
-            fhir:value "phone"
-        ] ;
-        fhir:ContactPoint.value [
-            fhir:value "+34(54)523-45-23"
-        ]
-    ],
-        [
         fhir:index "1"^^xsd:integer ;
         fhir:ContactPoint.system [
             fhir:value "email"
         ] ;
         fhir:ContactPoint.value [
             fhir:value "rtwertertwert"
+        ]
+    ],
+        [
+        fhir:index "0"^^xsd:integer ;
+        fhir:ContactPoint.system [
+            fhir:value "phone"
+        ] ;
+        fhir:ContactPoint.value [
+            fhir:value "+34(54)523-45-23"
         ]
     ] ;
     fhir:Resource.id [
@@ -11315,21 +11316,21 @@
         ]
     ] ;
     fhir:Patient.telecom [
-        fhir:index "1"^^xsd:integer ;
-        fhir:ContactPoint.system [
-            fhir:value "email"
-        ] ;
-        fhir:ContactPoint.value [
-            fhir:value "345вапвапвап"
-        ]
-    ],
-        [
         fhir:index "0"^^xsd:integer ;
         fhir:ContactPoint.system [
             fhir:value "phone"
         ] ;
         fhir:ContactPoint.value [
             fhir:value "+34(53)453-45-34"
+        ]
+    ],
+        [
+        fhir:index "1"^^xsd:integer ;
+        fhir:ContactPoint.system [
+            fhir:value "email"
+        ] ;
+        fhir:ContactPoint.value [
+            fhir:value "345вапвапвап"
         ]
     ] ;
     fhir:Resource.id [
@@ -11992,21 +11993,21 @@
         fhir:value "male"
     ] ;
     fhir:Patient.identifier [
-        fhir:index "0"^^xsd:integer ;
-        fhir:Identifier.system [
-            fhir:value "2.16.840.1.113883.2.23.1.9.1"
-        ] ;
-        fhir:Identifier.value [
-            fhir:value "123123"
-        ]
-    ],
-        [
         fhir:index "1"^^xsd:integer ;
         fhir:Identifier.system [
             fhir:value "2.16.840.1.113883.2.23.1.9.2"
         ] ;
         fhir:Identifier.value [
             fhir:value "1233434"
+        ]
+    ],
+        [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Identifier.system [
+            fhir:value "2.16.840.1.113883.2.23.1.9.1"
+        ] ;
+        fhir:Identifier.value [
+            fhir:value "123123"
         ]
     ] ;
     fhir:Patient.name [
@@ -12231,21 +12232,21 @@
         ]
     ] ;
     fhir:Patient.telecom [
-        fhir:index "0"^^xsd:integer ;
-        fhir:ContactPoint.system [
-            fhir:value "phone"
-        ] ;
-        fhir:ContactPoint.value [
-            fhir:value "+11(11)111-11-11"
-        ]
-    ],
-        [
         fhir:index "1"^^xsd:integer ;
         fhir:ContactPoint.system [
             fhir:value "email"
         ] ;
         fhir:ContactPoint.value [
             fhir:value "qqq"
+        ]
+    ],
+        [
+        fhir:index "0"^^xsd:integer ;
+        fhir:ContactPoint.system [
+            fhir:value "phone"
+        ] ;
+        fhir:ContactPoint.value [
+            fhir:value "+11(11)111-11-11"
         ]
     ] ;
     fhir:Resource.id [
@@ -14394,21 +14395,21 @@
         fhir:value "male"
     ] ;
     fhir:Patient.identifier [
-        fhir:index "0"^^xsd:integer ;
-        fhir:Identifier.system [
-            fhir:value "2.16.840.1.113883.2.23.1.9.1"
-        ] ;
-        fhir:Identifier.value [
-            fhir:value "360733199308053562"
-        ]
-    ],
-        [
         fhir:index "1"^^xsd:integer ;
         fhir:Identifier.system [
             fhir:value "2.16.840.1.113883.2.23.1.9.2"
         ] ;
         fhir:Identifier.value [
             fhir:value "sh12122"
+        ]
+    ],
+        [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Identifier.system [
+            fhir:value "2.16.840.1.113883.2.23.1.9.1"
+        ] ;
+        fhir:Identifier.value [
+            fhir:value "360733199308053562"
         ]
     ] ;
     fhir:Patient.name [
@@ -14590,21 +14591,21 @@
         fhir:value "male"
     ] ;
     fhir:Patient.identifier [
-        fhir:index "0"^^xsd:integer ;
-        fhir:Identifier.system [
-            fhir:value "2.16.840.1.113883.2.23.1.9.1"
-        ] ;
-        fhir:Identifier.value [
-            fhir:value "360733199308054523"
-        ]
-    ],
-        [
         fhir:index "1"^^xsd:integer ;
         fhir:Identifier.system [
             fhir:value "2.16.840.1.113883.2.23.1.9.2"
         ] ;
         fhir:Identifier.value [
             fhir:value "sass1212"
+        ]
+    ],
+        [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Identifier.system [
+            fhir:value "2.16.840.1.113883.2.23.1.9.1"
+        ] ;
+        fhir:Identifier.value [
+            fhir:value "360733199308054523"
         ]
     ] ;
     fhir:Patient.name [
@@ -14688,21 +14689,21 @@
         fhir:value "male"
     ] ;
     fhir:Patient.identifier [
-        fhir:index "0"^^xsd:integer ;
-        fhir:Identifier.system [
-            fhir:value "2.16.840.1.113883.2.23.1.9.1"
-        ] ;
-        fhir:Identifier.value [
-            fhir:value "360733199308054523"
-        ]
-    ],
-        [
         fhir:index "1"^^xsd:integer ;
         fhir:Identifier.system [
             fhir:value "2.16.840.1.113883.2.23.1.9.2"
         ] ;
         fhir:Identifier.value [
             fhir:value "sass1212"
+        ]
+    ],
+        [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Identifier.system [
+            fhir:value "2.16.840.1.113883.2.23.1.9.1"
+        ] ;
+        fhir:Identifier.value [
+            fhir:value "360733199308054523"
         ]
     ] ;
     fhir:Patient.name [
@@ -14786,21 +14787,21 @@
         fhir:value "male"
     ] ;
     fhir:Patient.identifier [
-        fhir:index "0"^^xsd:integer ;
-        fhir:Identifier.system [
-            fhir:value "2.16.840.1.113883.2.23.1.9.1"
-        ] ;
-        fhir:Identifier.value [
-            fhir:value "321"
-        ]
-    ],
-        [
         fhir:index "1"^^xsd:integer ;
         fhir:Identifier.system [
             fhir:value "2.16.840.1.113883.2.23.1.9.2"
         ] ;
         fhir:Identifier.value [
             fhir:value "212ad"
+        ]
+    ],
+        [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Identifier.system [
+            fhir:value "2.16.840.1.113883.2.23.1.9.1"
+        ] ;
+        fhir:Identifier.value [
+            fhir:value "321"
         ]
     ] ;
     fhir:Patient.name [
@@ -14884,21 +14885,21 @@
         fhir:value "male"
     ] ;
     fhir:Patient.identifier [
-        fhir:index "1"^^xsd:integer ;
-        fhir:Identifier.system [
-            fhir:value "2.16.840.1.113883.2.23.1.9.2"
-        ] ;
-        fhir:Identifier.value [
-            fhir:value "212ad"
-        ]
-    ],
-        [
         fhir:index "0"^^xsd:integer ;
         fhir:Identifier.system [
             fhir:value "2.16.840.1.113883.2.23.1.9.1"
         ] ;
         fhir:Identifier.value [
             fhir:value "321"
+        ]
+    ],
+        [
+        fhir:index "1"^^xsd:integer ;
+        fhir:Identifier.system [
+            fhir:value "2.16.840.1.113883.2.23.1.9.2"
+        ] ;
+        fhir:Identifier.value [
+            fhir:value "212ad"
         ]
     ] ;
     fhir:Patient.name [
@@ -14982,21 +14983,21 @@
         fhir:value "male"
     ] ;
     fhir:Patient.identifier [
-        fhir:index "1"^^xsd:integer ;
-        fhir:Identifier.system [
-            fhir:value "2.16.840.1.113883.2.23.1.9.2"
-        ] ;
-        fhir:Identifier.value [
-            fhir:value "1as"
-        ]
-    ],
-        [
         fhir:index "0"^^xsd:integer ;
         fhir:Identifier.system [
             fhir:value "2.16.840.1.113883.2.23.1.9.1"
         ] ;
         fhir:Identifier.value [
             fhir:value "360733199308054523"
+        ]
+    ],
+        [
+        fhir:index "1"^^xsd:integer ;
+        fhir:Identifier.system [
+            fhir:value "2.16.840.1.113883.2.23.1.9.2"
+        ] ;
+        fhir:Identifier.value [
+            fhir:value "1as"
         ]
     ] ;
     fhir:Patient.name [
@@ -15627,21 +15628,21 @@
         fhir:value "male"
     ] ;
     fhir:Patient.identifier [
-        fhir:index "0"^^xsd:integer ;
-        fhir:Identifier.system [
-            fhir:value "2.16.840.1.113883.2.23.1.9.1"
-        ] ;
-        fhir:Identifier.value [
-            fhir:value "1212121"
-        ]
-    ],
-        [
         fhir:index "1"^^xsd:integer ;
         fhir:Identifier.system [
             fhir:value "2.16.840.1.113883.2.23.1.9.2"
         ] ;
         fhir:Identifier.value [
             fhir:value "12222"
+        ]
+    ],
+        [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Identifier.system [
+            fhir:value "2.16.840.1.113883.2.23.1.9.1"
+        ] ;
+        fhir:Identifier.value [
+            fhir:value "1212121"
         ]
     ] ;
     fhir:Patient.name [
@@ -15876,6 +15877,474 @@
 <http://hl7.org/fhir/Patient/786332.ttl> a owl:Ontology ;
     owl:imports fhir:fhir.ttl ;
     owl:versionIRI <http://hl7.org/fhir/Patient/786332.ttl/_history/1> .
+
+<http://hl7.org/fhir/Patient/794915> a fhir:Patient ;
+    fhir:nodeRole fhir:treeRoot ;
+    fhir:DomainResource.text [
+        fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Phoenix Hall</div>" ;
+        fhir:Narrative.status [
+            fhir:value "generated"
+        ]
+    ] ;
+    fhir:Patient.birthDate [
+        fhir:value "2018-12-05"^^xsd:date
+    ] ;
+    fhir:Patient.gender [
+        fhir:value "male"
+    ] ;
+    fhir:Patient.identifier [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Identifier.system [
+            fhir:value "http://clinfhir.com/fhir/NamingSystem/identifier"
+        ] ;
+        fhir:Identifier.value [
+            fhir:value "6513"
+        ]
+    ] ;
+    fhir:Patient.name [
+        fhir:index "0"^^xsd:integer ;
+        fhir:HumanName.family [
+            fhir:value "Hall"
+        ] ;
+        fhir:HumanName.given [
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "Phoenix"
+        ] ;
+        fhir:HumanName.text [
+            fhir:value "Phoenix Hall"
+        ] ;
+        fhir:HumanName.use [
+            fhir:value "official"
+        ]
+    ] ;
+    fhir:Resource.id [
+        fhir:value "794915"
+    ] ;
+    fhir:Resource.meta [
+        fhir:Meta.lastUpdated [
+            fhir:value "2018-12-05T20:34:56.623000+00:00"^^xsd:dateTime
+        ] ;
+        fhir:Meta.versionId [
+            fhir:value "1"
+        ]
+    ] .
+
+<http://hl7.org/fhir/Patient/794915.ttl> a owl:Ontology ;
+    owl:imports fhir:fhir.ttl ;
+    owl:versionIRI <http://hl7.org/fhir/Patient/794915.ttl/_history/1> .
+
+<http://hl7.org/fhir/Patient/800840> a fhir:Patient ;
+    fhir:nodeRole fhir:treeRoot ;
+    fhir:DomainResource.extension [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Extension.url [
+            fhir:value "http://hapi.fhir.org/baseDstu3/patient-birthTime"
+        ] ;
+        fhir:Extension.valueTime [
+            fhir:value "2018-09-09"
+        ]
+    ] ;
+    fhir:DomainResource.text [
+        fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">d <b>D </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>43214321431431</td></tr><tr><td>Address</td><td><span>fdw </span><span>fdw </span></td></tr><tr><td>Date of birth</td><td><span>09 September 2018</span></td></tr></tbody></table></div>" ;
+        fhir:Narrative.status [
+            fhir:value "generated"
+        ]
+    ] ;
+    fhir:Patient.address [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Address.city [
+            fhir:value "fdw"
+        ] ;
+        fhir:Address.district [
+            fhir:value "fw"
+        ] ;
+        fhir:Address.state [
+            fhir:value "fdw"
+        ] ;
+        fhir:Address.text [
+            fhir:value "fdwfw"
+        ] ;
+        fhir:Address.use [
+            fhir:value "home"
+        ]
+    ] ;
+    fhir:Patient.birthDate [
+        fhir:value "2018-09-09"^^xsd:date
+    ] ;
+    fhir:Patient.contact [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Patient.contact.gender [
+            fhir:value "male"
+        ] ;
+        fhir:Patient.contact.relationship [
+            fhir:index "0"^^xsd:integer ;
+            fhir:CodeableConcept.coding [
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.system [
+                    fhir:value "http://hapi.fhir.org/baseDstu3/patient-contact-relationship"
+                ]
+            ]
+        ] ;
+        fhir:Patient.contact.telecom [
+            fhir:index "0"^^xsd:integer ;
+            fhir:ContactPoint.system [
+                fhir:value "phone"
+            ]
+        ]
+    ] ;
+    fhir:Patient.gender [
+        fhir:value "male"
+    ] ;
+    fhir:Patient.identifier [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Identifier.system [
+            fhir:value "2.16.840.1.113883.2.23.1.9.1"
+        ] ;
+        fhir:Identifier.value [
+            fhir:value "43214321431431"
+        ]
+    ],
+        [
+        fhir:index "1"^^xsd:integer ;
+        fhir:Identifier.system [
+            fhir:value "2.16.840.1.113883.2.23.1.9.2"
+        ] ;
+        fhir:Identifier.value [
+            fhir:value "43143141431431"
+        ]
+    ] ;
+    fhir:Patient.name [
+        fhir:index "0"^^xsd:integer ;
+        fhir:HumanName.family [
+            fhir:value "d"
+        ] ;
+        fhir:HumanName.given [
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "d"
+        ] ;
+        fhir:HumanName.text [
+            fhir:value "dd"
+        ]
+    ] ;
+    fhir:Patient.telecom [
+        fhir:index "0"^^xsd:integer ;
+        fhir:ContactPoint.system [
+            fhir:value "phone"
+        ] ;
+        fhir:ContactPoint.use [
+            fhir:value "mobile"
+        ] ;
+        fhir:ContactPoint.value [
+            fhir:value "3214321413"
+        ]
+    ] ;
+    fhir:Resource.id [
+        fhir:value "800840"
+    ] ;
+    fhir:Resource.meta [
+        fhir:Meta.lastUpdated [
+            fhir:value "2018-12-06T09:15:23.775000+00:00"^^xsd:dateTime
+        ] ;
+        fhir:Meta.versionId [
+            fhir:value "1"
+        ]
+    ] .
+
+<http://hl7.org/fhir/Patient/800840.ttl> a owl:Ontology ;
+    owl:imports fhir:fhir.ttl ;
+    owl:versionIRI <http://hl7.org/fhir/Patient/800840.ttl/_history/1> .
+
+<http://hl7.org/fhir/Patient/811891> a fhir:Patient ;
+    fhir:nodeRole fhir:treeRoot ;
+    fhir:DomainResource.text [
+        fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\"></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>210114199807071234</td></tr><tr><td>Address</td><td><span>江东南路 </span><br/><span>南京市 </span><span>江苏省 </span></td></tr><tr><td>Date of birth</td><td><span>07 December 2018</span></td></tr></tbody></table></div>" ;
+        fhir:Narrative.status [
+            fhir:value "generated"
+        ]
+    ] ;
+    fhir:Patient.address [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Address.city [
+            fhir:value "南京市"
+        ] ;
+        fhir:Address.district [
+            fhir:value "建邺区"
+        ] ;
+        fhir:Address.line [
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "江东南路"
+        ] ;
+        fhir:Address.postalCode [
+            fhir:value "111111"
+        ] ;
+        fhir:Address.state [
+            fhir:value "江苏省"
+        ] ;
+        fhir:Address.text [
+            fhir:value "南京市建邺区"
+        ] ;
+        fhir:Address.use [
+            fhir:value "home"
+        ]
+    ] ;
+    fhir:Patient.birthDate [
+        fhir:value "2018-12-07"^^xsd:date ;
+        fhir:Element.extension [
+            fhir:index "0"^^xsd:integer ;
+            fhir:Extension.url [
+                fhir:value "http://hl7.org/fhir/StructureDefinition/patient-birthTime"
+            ] ;
+            fhir:Extension.valueDateTime [
+                fhir:value "2018-12-07T14:04:54+08:00"^^xsd:dateTime
+            ]
+        ]
+    ] ;
+    fhir:Patient.contact [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Patient.contact.name [
+            fhir:HumanName.text [
+                fhir:value "张张"
+            ]
+        ] ;
+        fhir:Patient.contact.relationship [
+            fhir:index "0"^^xsd:integer ;
+            fhir:CodeableConcept.coding [
+                a <http://hl7.org/fhir/patient-contact-relationship/1> ;
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "1"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://hl7.org/fhir/patient-contact-relationship"
+                ]
+            ]
+        ] ;
+        fhir:Patient.contact.telecom [
+            fhir:index "0"^^xsd:integer ;
+            fhir:ContactPoint.system [
+                fhir:value "phone"
+            ] ;
+            fhir:ContactPoint.value [
+                fhir:value "13412345678"
+            ]
+        ]
+    ] ;
+    fhir:Patient.gender [
+        fhir:value "male"
+    ] ;
+    fhir:Patient.identifier [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Identifier.system [
+            fhir:value "2.16.840.1.113883.2.23.1.9.1"
+        ] ;
+        fhir:Identifier.value [
+            fhir:value "210114199807071234"
+        ]
+    ],
+        [
+        fhir:index "1"^^xsd:integer ;
+        fhir:Identifier.system [
+            fhir:value "2.16.840.1.113883.2.23.1.9.2"
+        ] ;
+        fhir:Identifier.value [
+            fhir:value "23456"
+        ]
+    ] ;
+    fhir:Patient.name [
+        fhir:index "0"^^xsd:integer ;
+        fhir:HumanName.text [
+            fhir:value "张三"
+        ]
+    ] ;
+    fhir:Patient.telecom [
+        fhir:index "0"^^xsd:integer ;
+        fhir:ContactPoint.system [
+            fhir:value "phone"
+        ] ;
+        fhir:ContactPoint.use [
+            fhir:value "mobile"
+        ] ;
+        fhir:ContactPoint.value [
+            fhir:value "13334567890"
+        ]
+    ] ;
+    fhir:Resource.id [
+        fhir:value "811891"
+    ] ;
+    fhir:Resource.meta [
+        fhir:Meta.lastUpdated [
+            fhir:value "2018-12-07T06:05:47.053000+00:00"^^xsd:dateTime
+        ] ;
+        fhir:Meta.versionId [
+            fhir:value "1"
+        ]
+    ] .
+
+<http://hl7.org/fhir/Patient/811891.ttl> a owl:Ontology ;
+    owl:imports fhir:fhir.ttl ;
+    owl:versionIRI <http://hl7.org/fhir/Patient/811891.ttl/_history/1> .
+
+<http://hl7.org/fhir/Patient/836949> a fhir:Patient ;
+    fhir:nodeRole fhir:treeRoot ;
+    fhir:DomainResource.text [
+        fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\">1 <b>1 </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>320322199912123201</td></tr><tr><td>Address</td><td><span>4 </span><br/><span>2 </span><span>1 </span></td></tr><tr><td>Date of birth</td><td><span>12 December 2018</span></td></tr></tbody></table></div>" ;
+        fhir:Narrative.status [
+            fhir:value "generated"
+        ]
+    ] ;
+    fhir:Patient.address [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Address.city [
+            fhir:value "2"
+        ] ;
+        fhir:Address.district [
+            fhir:value "3"
+        ] ;
+        fhir:Address.line [
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "4"
+        ] ;
+        fhir:Address.postalCode [
+            fhir:value "1"
+        ] ;
+        fhir:Address.state [
+            fhir:value "1"
+        ] ;
+        fhir:Address.text [
+            fhir:value "1234"
+        ] ;
+        fhir:Address.use [
+            fhir:value "home"
+        ]
+    ] ;
+    fhir:Patient.birthDate [
+        fhir:value "2018-12-12"^^xsd:date
+    ] ;
+    fhir:Patient.contact [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Patient.contact.gender [
+            fhir:value "female"
+        ] ;
+        fhir:Patient.contact.name [
+            fhir:HumanName.given [
+                fhir:index "0"^^xsd:integer ;
+                fhir:value "1"
+            ]
+        ] ;
+        fhir:Patient.contact.relationship [
+            fhir:index "0"^^xsd:integer ;
+            fhir:CodeableConcept.text [
+                fhir:value "1"
+            ]
+        ] ;
+        fhir:Patient.contact.telecom [
+            fhir:index "0"^^xsd:integer ;
+            fhir:ContactPoint.value [
+                fhir:value "13254569874"
+            ]
+        ]
+    ] ;
+    fhir:Patient.gender [
+        fhir:value "male"
+    ] ;
+    fhir:Patient.identifier [
+        fhir:index "1"^^xsd:integer ;
+        fhir:Identifier.system [
+            fhir:value "2.16.840.1.113883.2.23.1.9.2"
+        ] ;
+        fhir:Identifier.value [
+            fhir:value "320322199912123201"
+        ]
+    ],
+        [
+        fhir:index "0"^^xsd:integer ;
+        fhir:Identifier.system [
+            fhir:value "2.16.840.1.113883.2.23.1.9.1"
+        ] ;
+        fhir:Identifier.value [
+            fhir:value "320322199912123201"
+        ]
+    ] ;
+    fhir:Patient.name [
+        fhir:index "0"^^xsd:integer ;
+        fhir:HumanName.family [
+            fhir:value "1"
+        ] ;
+        fhir:HumanName.given [
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "1"
+        ] ;
+        fhir:HumanName.text [
+            fhir:value "1 1"
+        ]
+    ] ;
+    fhir:Patient.telecom [
+        fhir:index "0"^^xsd:integer ;
+        fhir:ContactPoint.value [
+            fhir:value "13254569874"
+        ]
+    ] ;
+    fhir:Resource.id [
+        fhir:value "836949"
+    ] ;
+    fhir:Resource.meta [
+        fhir:Meta.lastUpdated [
+            fhir:value "2018-12-10T12:58:44.202000+00:00"^^xsd:dateTime
+        ] ;
+        fhir:Meta.versionId [
+            fhir:value "1"
+        ]
+    ] .
+
+<http://hl7.org/fhir/Patient/836949.ttl> a owl:Ontology ;
+    owl:imports fhir:fhir.ttl ;
+    owl:versionIRI <http://hl7.org/fhir/Patient/836949.ttl/_history/1> .
+
+<http://hl7.org/fhir/Patient/840908> a fhir:Patient ;
+    fhir:nodeRole fhir:treeRoot ;
+    fhir:DomainResource.text [
+        fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Aliaga Quinteros Roberto Angel</div>" ;
+        fhir:Narrative.status [
+            fhir:value "generated"
+        ]
+    ] ;
+    fhir:Patient.birthDate [
+        fhir:value "2014-05-13"^^xsd:date
+    ] ;
+    fhir:Patient.gender [
+        fhir:value "male"
+    ] ;
+    fhir:Patient.name [
+        fhir:index "0"^^xsd:integer ;
+        fhir:HumanName.family [
+            fhir:value "Roberto Angel"
+        ] ;
+        fhir:HumanName.given [
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "Aliaga Quinteros"
+        ] ;
+        fhir:HumanName.text [
+            fhir:value "Aliaga Quinteros Roberto Angel"
+        ] ;
+        fhir:HumanName.use [
+            fhir:value "official"
+        ]
+    ] ;
+    fhir:Resource.id [
+        fhir:value "840908"
+    ] ;
+    fhir:Resource.meta [
+        fhir:Meta.lastUpdated [
+            fhir:value "2018-12-10T15:40:49.393000+00:00"^^xsd:dateTime
+        ] ;
+        fhir:Meta.versionId [
+            fhir:value "1"
+        ]
+    ] .
+
+<http://hl7.org/fhir/Patient/840908.ttl> a owl:Ontology ;
+    owl:imports fhir:fhir.ttl ;
+    owl:versionIRI <http://hl7.org/fhir/Patient/840908.ttl/_history/1> .
 
 <http://hl7.org/fhir/Patient/AXP0066908042014A> a fhir:Patient ;
     fhir:nodeRole fhir:treeRoot ;
@@ -16279,12 +16748,12 @@
             fhir:value "Test"
         ] ;
         fhir:HumanName.given [
-            fhir:index "0"^^xsd:integer ;
-            fhir:value "Test"
-        ],
-            [
             fhir:index "1"^^xsd:integer ;
             fhir:value "T"
+        ],
+            [
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "Test"
         ] ;
         fhir:HumanName.prefix [
             fhir:index "0"^^xsd:integer ;
@@ -16488,12 +16957,12 @@
             fhir:value "AMIA"
         ] ;
         fhir:HumanName.given [
-            fhir:index "0"^^xsd:integer ;
-            fhir:value "John"
-        ],
-            [
             fhir:index "1"^^xsd:integer ;
             fhir:value "Smith"
+        ],
+            [
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "John"
         ] ;
         fhir:HumanName.text [
             fhir:value "John Smith AMIA"
@@ -16548,12 +17017,12 @@
             fhir:value "AIA"
         ] ;
         fhir:HumanName.given [
-            fhir:index "1"^^xsd:integer ;
-            fhir:value "Doe"
-        ],
-            [
             fhir:index "0"^^xsd:integer ;
             fhir:value "John"
+        ],
+            [
+            fhir:index "1"^^xsd:integer ;
+            fhir:value "Doe"
         ] ;
         fhir:HumanName.text [
             fhir:value "John Doe AMIA"
@@ -16634,12 +17103,12 @@
             fhir:value "Skywalker"
         ] ;
         fhir:HumanName.given [
-            fhir:index "1"^^xsd:integer ;
-            fhir:value "Amia"
-        ],
-            [
             fhir:index "0"^^xsd:integer ;
             fhir:value "Luke"
+        ],
+            [
+            fhir:index "1"^^xsd:integer ;
+            fhir:value "Amia"
         ] ;
         fhir:HumanName.use [
             fhir:value "usual"
@@ -16745,12 +17214,12 @@
             fhir:value "Smith"
         ] ;
         fhir:HumanName.given [
-            fhir:index "0"^^xsd:integer ;
-            fhir:value "John"
-        ],
-            [
             fhir:index "1"^^xsd:integer ;
             fhir:value "Amia"
+        ],
+            [
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "John"
         ] ;
         fhir:HumanName.text [
             fhir:value "John Amia Smith"
@@ -16876,12 +17345,12 @@
             fhir:value "United States"
         ] ;
         fhir:Address.line [
-            fhir:index "0"^^xsd:integer ;
-            fhir:value "4321 E"
-        ],
-            [
             fhir:index "1"^^xsd:integer ;
             fhir:value "7654 S"
+        ],
+            [
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "4321 E"
         ] ;
         fhir:Address.postalCode [
             fhir:value "84125"

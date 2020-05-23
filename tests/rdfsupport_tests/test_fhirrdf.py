@@ -31,8 +31,7 @@ import unittest
 from jsonasobj import load
 
 from fhirtordf.rdfsupport.prettygraph import PrettyGraph
-from fhirtordf.rdfsupport.rdfcompare import rdf_compare
-from tests.utils.base_test_case import test_fhir_server
+from fhirtordf.rdfsupport.rdfcompare import rdf_compare, rdf_compare_split
 
 
 class FhirDataLoaderTestCase(unittest.TestCase):
@@ -53,13 +52,15 @@ class FhirDataLoaderTestCase(unittest.TestCase):
         source = PrettyGraph()
         source.load(turtle_fname, format="turtle")
         self.maxDiff = None
-        self.assertEqual(*rdf_compare(source, target.graph, ignore_owl_version=False))
+        self.assertEqual(*rdf_compare_split(source, target.graph, ignore_owl_version=False))
 
     def test_observation_example_bmd(self):
         self.do_test('observation-example-bmd')
 
     def test_account_example(self):
         # Note: trailing slash deliberately omitted to test FHIRResource constructor
+        # Note: The latest FHIR RDF no longer generates type arcs for FHIR RDF.  We've edited one in manually for this
+        #       example.
         self.do_test('account-example')
 
     def test_observation_example_f001_glucose(self):
