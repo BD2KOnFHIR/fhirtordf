@@ -25,7 +25,7 @@
 # LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
 # OF THE POSSIBILITY OF SUCH DAMAGE.
-from typing import Optional, List, Set, Callable
+from typing import Optional, List, Set, Callable, Tuple
 
 from rdflib import URIRef, Graph, OWL, RDF, BNode
 from rdflib.compare import graph_diff
@@ -72,7 +72,7 @@ def skolemize(gin: Graph) -> Graph:
     gout = Graph()
 
     # Emit any unreferenced subject BNodes (boxes)
-    anon_subjs = [s for s in gin.subjects() if isinstance(s, BNode) and len([gin.subject_predicates(s)]) == 0]
+    anon_subjs = set(s for s in set(gin.subjects()) if isinstance(s, BNode) and len([gin.subject_predicates(s)]) == 0)
     if anon_subjs:
         idx = None if len(anon_subjs) == 1 else 0
         for s in anon_subjs:
@@ -118,12 +118,27 @@ def rdf_compare(g1: Graph, g2: Graph, ignore_owl_version: bool=False, ignore_typ
                 compare_filter: Optional[Callable[[Graph, Graph, Graph], None]]=None) -> str:
     """
     Compare graph g1 and g2
-    :param g1: first graph
-    :param g2: second graph
+    :param g1: expected graph
+    :param g2: actual graph
     :param ignore_owl_version:
     :param ignore_type_arcs:
     :param compare_filter: Final adjustment for graph difference. Used, for example, to deal with FHIR decimal problems.
-    :return: List of differences as printable lines or blank if everything matches
+    :return: Difference summary
+    """
+    expected, actual = rdf_compare_split(g1, g2, ignore_owl_version, ignore_type_arcs, compare_filter)
+    return expected + actual
+
+
+def rdf_compare_split(g1: Graph, g2: Graph, ignore_owl_version: bool=False, ignore_type_arcs: bool = False,
+                      compare_filter: Optional[Callable[[Graph, Graph, Graph], None]]=None) -> Tuple[str, str]:
+    """
+    Compare graph g1 and g2
+    :param g1: expected graph
+    :param g2: actual graph
+    :param ignore_owl_version:
+    :param ignore_type_arcs:
+    :param compare_filter: Final adjustment for graph difference. Used, for example, to deal with FHIR decimal problems.
+    :return: Different elements in first (expected) graph, second (actual) graph
     """
     def graph_for_subject(g: Graph, subj: Node) -> Graph:
         subj_in_g = complete_definition(subj, g)
@@ -140,17 +155,16 @@ def rdf_compare(g1: Graph, g2: Graph, ignore_owl_version: bool=False, ignore_typ
                          if isinstance(anon_s, BNode) and len([g.subject_predicates(anon_s)]) == 0)
         return set(s_ for s_ in g1.subjects() if isinstance(s_, URIRef)).union(anon_subjs)
 
-    rval = ""
+    expected = ""
+    actual = ""
 
     # Step 1: Find any subjects in one graph that don't exist in the other
     g1_subjs = primary_subjects(g1)
     g2_subjs = primary_subjects(g2)
     for s in g1_subjs - g2_subjs:
-        rval += "\n===== Subjects in Graph 1 but not Graph 2: "
-        rval += PrettyGraph.strip_prefixes(complete_definition(s, g1))
+        expected += PrettyGraph.strip_prefixes(complete_definition(s, g1))
     for s in g2_subjs - g1_subjs:
-        rval += "\n===== Subjects in Graph 2 but not Graph 1: "
-        rval += PrettyGraph.strip_prefixes(complete_definition(s, g2))
+        actual += PrettyGraph.strip_prefixes(complete_definition(s, g2))
 
     # Step 2: Iterate over all of the remaining subjects comparing their contents
     for s in g1_subjs.intersection(g2_subjs):
@@ -160,10 +174,12 @@ def rdf_compare(g1: Graph, g2: Graph, ignore_owl_version: bool=False, ignore_typ
         if compare_filter:
             compare_filter(in_both, in_first, in_second)
         if len(list(in_first)) or len(list(in_second)):
-            rval += "\n\nSubject {} DIFFERENCE: ".format(s) + '=' * 30
+            expected += "\n\nSubject {} DIFFERENCE: ".format(s) + '=' * 30 + '\n'
+            actual += "\n\nSubject {} DIFFERENCE: ".format(s) + '=' * 30 + '\n'
             if len(in_first):
-                rval += "\n\t----> First: \n" + '\n'.join(dump_nt_sorted(in_first))
+                expected += '\n'.join(dump_nt_sorted(in_first))
             if len(in_second):
-                rval += "\n\t----> Second: \n" + '\n'.join(dump_nt_sorted(in_second))
-            rval += '-' * 40
-    return rval
+                actual += '\n'.join(dump_nt_sorted(in_second))
+            expected += '-' * 40
+            actual += '-' * 40
+    return expected, actual
