@@ -1,6 +1,10 @@
 CHANGES
 =======
 
+v1.3.2
+------
+
+* Typo in setup file
 * Fix issue in script load
 
 v1.3.1
