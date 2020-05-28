@@ -1,0 +1,52 @@
+CHANGES
+=======
+
+V1.3.0
+------
+
+* Fix numerous issues w/ change in code system URI's, date representation and RelatedArtifact.reference entries
+* Switch to CC0 License
+* Getting unit tests running again
+* Tweak RXNorm namespace and add to emitter
+* Adjust to support new FHIR code system representation
+* Update to latest R5 build
+* Switch source and target in test to conform to expected/actual idiom
+* Bypass integer64 datatype test until [FHIRCat issue#35](https://github.com/fhircat/FHIRCat/issues/35) gets fixed
+* Switch to new FHIR codesystem identifier scheme
+* Fix testing issue, where, when a JSON element key is embedded in a string we take the wrong path
+* Bypass integer64 datatype test until [FHIRCat issue#35](https://github.com/fhircat/FHIRCat/issues/35) gets fixed
+* Fix issue #20
+* Fix Issue #18
+* Add a warning message about FHIR V4 fhir.ttl disappearing
+* Test for issue #15
+* Fix for Issue 14
+* Update README.md
+* Make SCT a NumericNamespace
+* Changed namespace for loinc
+* Update version to 1.0.0
+* Current FHIR R4 elements failing unit tests
+* Tweaks to various test files to reflect the state of FHIR R4 and local updates
+* Test for issue #4 (not fixed at this point
+* Test for issue #6 (not fixed at this point)
+* Add a decode to PrettyGraph serialize function -- aways forget to do that..
+* Namespace package issues fixed
+* Multiple changes to allow changing build servers, fmv loc, etc
+* Updates to access the corrected data type definition in the new fhir.ttl
+* Add the latest (Dec 13, 2017) fhir.ttl and w5.ttl
+* Adds test to detect unmapped fhir Primitive types
+* Remove test cases that were included in every test and execute them only once
+* Update README.md
+* Fix undetected error in uriutils, add namespace\_for function
+* Completed factoring from i2FHIRb2 project
+* Fixes typo in Pypi category description
+* First candidate for alpha release
+* Corrects a problem where "0.0" didn't get omitted from the JSON presision test
+* Fix Issue #5
+* Test for issue #5
+* Fix for issue #2
+* Work-around for issue #4
+* Fix for Issue #2
+* Fix for Issue #1
+* Checkpoint
+* Initial alpha drop
+* Initial commit
