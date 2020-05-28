@@ -44,13 +44,13 @@ class LibraryTestCase(unittest.TestCase, OutputRedirector):
                          set(s for s in g.subjects() if isinstance(s, URIRef)))
 
     def test_subjects(self):
-        from fhirtordf.fhirtordf import fhirtordf
+        from fhirtordf.fhirtordf import main
         output = self._push_stdout()
         if USE_BUILD_SERVER:
             args = '-i {}/observation-example-vitals-panel.json'.format(test_fhir_server)
         else:
             args = "-i {}/Observation/vitals-panel".format(test_fhir_server)
-        fhirtordf(args.split())
+        main(args.split())
         self._pop_stdout()
         g = Graph()
         g.parse(data=output.getvalue(), format="turtle")

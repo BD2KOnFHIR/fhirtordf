@@ -271,6 +271,8 @@ class FHIRResource:
                 self.add(subj, pred, v)
                 if pred == FHIR.Reference.reference:
                     self.add_reference(subj, val)
+                elif pred == FHIR.RelatedArtifact.resource:
+                    self.add_reference(v, val)
                 self.add_extension_val(v, json_obj, json_key)
                 return v
         return None

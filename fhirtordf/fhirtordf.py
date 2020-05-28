@@ -135,7 +135,7 @@ def postparse(opts: Namespace) -> bool:
     return True
 
 
-def fhirtordf(argv: List[str], default_exit: bool = True) -> bool:
+def main(argv: List[str], default_exit: bool = True) -> bool:
     """ Entry point for command line utility """
     dlp = dirlistproc.DirectoryListProcessor(argv,
                                              description="Convert FHIR JSON into RDF",
@@ -180,4 +180,4 @@ def fhirtordf(argv: List[str], default_exit: bool = True) -> bool:
 
 if __name__ == "__main__":
     sys.path.append(os.path.join(os.path.join(os.getcwd(), os.path.dirname(__file__)), '..'))
-    fhirtordf(sys.argv[1:])
+    main(sys.argv[1:])

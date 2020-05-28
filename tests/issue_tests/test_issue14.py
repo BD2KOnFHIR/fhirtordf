@@ -4,10 +4,11 @@ from contextlib import redirect_stdout
 from io import StringIO
 from tempfile import mktemp
 
+from fhirtordf.fhirtordf import main
+
 
 class SDIssueUseCase(unittest.TestCase):
     def test_sd_issue(self):
-        from fhirtordf.fhirtordf import fhirtordf
 
         test_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data'))
         of = mktemp()
@@ -16,7 +17,7 @@ class SDIssueUseCase(unittest.TestCase):
         print(args)
         output = StringIO()
         with redirect_stdout(output):
-            fhirtordf(args.split())
+            main(args.split())
         print(output.getvalue())
         # passes if we get here
         self.assertTrue(True)

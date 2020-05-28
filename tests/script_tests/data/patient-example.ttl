@@ -1,17 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
-@prefix loinc: <http://loinc.org/rdf#> .
-@prefix ns1: <http://example.org/> .
-@prefix ns2: <http://example.com/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix sct: <http://snomed.info/id/> .
-@prefix v2: <http://hl7.org/fhir/v2/> .
-@prefix v2-0131: <http://hl7.org/fhir/v2/0131> .
-@prefix v2-0203: <http://hl7.org/fhir/v2/0203> .
-@prefix v3: <http://hl7.org/fhir/v3/> .
-@prefix w5: <http://hl7.org/fhir/w5#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://hl7.org/fhir/Patient/example> a fhir:Patient ;
@@ -153,13 +141,13 @@
         fhir:Patient.contact.relationship [
             fhir:index "0"^^xsd:integer ;
             fhir:CodeableConcept.coding [
-                a <http://hl7.org/fhir/v2/0131/N> ;
+                a <http://terminology.hl7.org/CodeSystem/v2-0131/N> ;
                 fhir:index "0"^^xsd:integer ;
                 fhir:Coding.code [
                     fhir:value "N"
                 ] ;
                 fhir:Coding.system [
-                    fhir:value "http://hl7.org/fhir/v2/0131"
+                    fhir:value "http://terminology.hl7.org/CodeSystem/v2-0131"
                 ]
             ]
         ] ;
@@ -196,13 +184,13 @@
         ] ;
         fhir:Identifier.type [
             fhir:CodeableConcept.coding [
-                a <http://hl7.org/fhir/v2/0203/MR> ;
+                a <http://terminology.hl7.org/CodeSystem/v2-0203/MR> ;
                 fhir:index "0"^^xsd:integer ;
                 fhir:Coding.code [
                     fhir:value "MR"
                 ] ;
                 fhir:Coding.system [
-                    fhir:value "http://hl7.org/fhir/v2/0203"
+                    fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203"
                 ]
             ]
         ] ;
@@ -220,6 +208,23 @@
         ]
     ] ;
     fhir:Patient.name [
+        fhir:index "0"^^xsd:integer ;
+        fhir:HumanName.family [
+            fhir:value "Chalmers"
+        ] ;
+        fhir:HumanName.given [
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "Peter"
+        ],
+            [
+            fhir:index "1"^^xsd:integer ;
+            fhir:value "James"
+        ] ;
+        fhir:HumanName.use [
+            fhir:value "official"
+        ]
+    ],
+        [
         fhir:index "2"^^xsd:integer ;
         fhir:HumanName.family [
             fhir:value "Windsor"
@@ -250,42 +255,8 @@
         fhir:HumanName.use [
             fhir:value "usual"
         ]
-    ],
-        [
-        fhir:index "0"^^xsd:integer ;
-        fhir:HumanName.family [
-            fhir:value "Chalmers"
-        ] ;
-        fhir:HumanName.given [
-            fhir:index "1"^^xsd:integer ;
-            fhir:value "James"
-        ],
-            [
-            fhir:index "0"^^xsd:integer ;
-            fhir:value "Peter"
-        ] ;
-        fhir:HumanName.use [
-            fhir:value "official"
-        ]
     ] ;
     fhir:Patient.telecom [
-        fhir:index "3"^^xsd:integer ;
-        fhir:ContactPoint.period [
-            fhir:Period.end [
-                fhir:value "2014-01-01"^^xsd:gYear
-            ]
-        ] ;
-        fhir:ContactPoint.system [
-            fhir:value "phone"
-        ] ;
-        fhir:ContactPoint.use [
-            fhir:value "old"
-        ] ;
-        fhir:ContactPoint.value [
-            fhir:value "(03) 5555 8834"
-        ]
-    ],
-        [
         fhir:index "0"^^xsd:integer ;
         fhir:ContactPoint.use [
             fhir:value "home"
@@ -319,6 +290,23 @@
         ] ;
         fhir:ContactPoint.value [
             fhir:value "(03) 3410 5613"
+        ]
+    ],
+        [
+        fhir:index "3"^^xsd:integer ;
+        fhir:ContactPoint.period [
+            fhir:Period.end [
+                fhir:value "2014-01-01"^^xsd:gYear
+            ]
+        ] ;
+        fhir:ContactPoint.system [
+            fhir:value "phone"
+        ] ;
+        fhir:ContactPoint.use [
+            fhir:value "old"
+        ] ;
+        fhir:ContactPoint.value [
+            fhir:value "(03) 5555 8834"
         ]
     ] ;
     fhir:Resource.id [

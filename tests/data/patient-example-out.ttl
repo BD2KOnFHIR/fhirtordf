@@ -208,17 +208,27 @@
         ]
     ] ;
     fhir:Patient.name [
+        fhir:index "1"^^xsd:integer ;
+        fhir:HumanName.given [
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "Jim"
+        ] ;
+        fhir:HumanName.use [
+            fhir:value "usual"
+        ]
+    ],
+        [
         fhir:index "2"^^xsd:integer ;
         fhir:HumanName.family [
             fhir:value "Windsor"
         ] ;
         fhir:HumanName.given [
-            fhir:index "1"^^xsd:integer ;
-            fhir:value "James"
-        ],
-            [
             fhir:index "0"^^xsd:integer ;
             fhir:value "Peter"
+        ],
+            [
+            fhir:index "1"^^xsd:integer ;
+            fhir:value "James"
         ] ;
         fhir:HumanName.period [
             fhir:Period.end [
@@ -235,40 +245,36 @@
             fhir:value "Chalmers"
         ] ;
         fhir:HumanName.given [
-            fhir:index "1"^^xsd:integer ;
-            fhir:value "James"
-        ],
-            [
             fhir:index "0"^^xsd:integer ;
             fhir:value "Peter"
+        ],
+            [
+            fhir:index "1"^^xsd:integer ;
+            fhir:value "James"
         ] ;
         fhir:HumanName.use [
             fhir:value "official"
         ]
-    ],
-        [
-        fhir:index "1"^^xsd:integer ;
-        fhir:HumanName.given [
-            fhir:index "0"^^xsd:integer ;
-            fhir:value "Jim"
-        ] ;
-        fhir:HumanName.use [
-            fhir:value "usual"
-        ]
     ] ;
     fhir:Patient.telecom [
-        fhir:index "1"^^xsd:integer ;
+        fhir:index "2"^^xsd:integer ;
         fhir:ContactPoint.rank [
-            fhir:value "1"^^xsd:positiveInteger
+            fhir:value "2"^^xsd:positiveInteger
         ] ;
         fhir:ContactPoint.system [
             fhir:value "phone"
         ] ;
         fhir:ContactPoint.use [
-            fhir:value "work"
+            fhir:value "mobile"
         ] ;
         fhir:ContactPoint.value [
-            fhir:value "(03) 5555 6473"
+            fhir:value "(03) 3410 5613"
+        ]
+    ],
+        [
+        fhir:index "0"^^xsd:integer ;
+        fhir:ContactPoint.use [
+            fhir:value "home"
         ]
     ],
         [
@@ -289,24 +295,18 @@
         ]
     ],
         [
-        fhir:index "0"^^xsd:integer ;
-        fhir:ContactPoint.use [
-            fhir:value "home"
-        ]
-    ],
-        [
-        fhir:index "2"^^xsd:integer ;
+        fhir:index "1"^^xsd:integer ;
         fhir:ContactPoint.rank [
-            fhir:value "2"^^xsd:positiveInteger
+            fhir:value "1"^^xsd:positiveInteger
         ] ;
         fhir:ContactPoint.system [
             fhir:value "phone"
         ] ;
         fhir:ContactPoint.use [
-            fhir:value "mobile"
+            fhir:value "work"
         ] ;
         fhir:ContactPoint.value [
-            fhir:value "(03) 3410 5613"
+            fhir:value "(03) 5555 6473"
         ]
     ] ;
     fhir:Resource.id [

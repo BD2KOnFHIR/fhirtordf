@@ -1,13 +1,15 @@
+import os
 import shutil
 import unittest
-import os
+
 from rdflib import Graph
 
 from fhirtordf.fhirtordf import DEFAULT_FHIR_MV
-from fhirtordf.rdfsupport.rdfcompare import rdf_compare
+from fhirtordf.rdfsupport.rdfcompare import rdf_compare_split
+from tests import TEST_DIR
 from tests.utils import USE_BUILD_SERVER
-from tests.utils.output_redirector import OutputRedirector
 from tests.utils.base_test_case import test_fhir_server
+from tests.utils.output_redirector import OutputRedirector
 
 noargs_text = """usage: fhirtordf [-h] [-i [INFILE [INFILE ...]]] [-id INDIR]
                  [-o [OUTFILE [OUTFILE ...]]] [-od OUTDIR] [-f] [-s] [-v]
@@ -69,28 +71,28 @@ save_sample_output = False           # True means create a fres text copy for sa
 class FHIRToRDFParserTestCase(unittest.TestCase, OutputRedirector):
 
     def test_no_args(self):
-        from fhirtordf.fhirtordf import fhirtordf
+        from fhirtordf.fhirtordf import main
         args = ""
         output = self._push_stderr()
-        fhirtordf(args.split(), default_exit=False)
+        main(args.split(), default_exit=False)
         self._pop_stderr()
         self.maxDiff = None
         self.assertEqual(noargs_text, output.getvalue())
 
     def test_help(self):
-        from fhirtordf.fhirtordf import fhirtordf
+        from fhirtordf.fhirtordf import main
         args = "-h"
         output = self._push_stdout()
-        fhirtordf(args.split(), default_exit=False)
+        main(args.split(), default_exit=False)
         self._pop_stdout()
         self.maxDiff = None
         print(output.getvalue())
         self.assertEqual(help_text, output.getvalue())
 
     def bester_tester(self, args: str, test_fname: str):
-        from fhirtordf.fhirtordf import fhirtordf
+        from fhirtordf.fhirtordf import main
         output = self._push_stdout()
-        fhirtordf(args.split(), default_exit=False)
+        main(args.split(), default_exit=False)
         g2 = Graph()
         g2.parse(data=output.getvalue(), format="turtle")
         self._pop_stdout()
@@ -99,11 +101,16 @@ class FHIRToRDFParserTestCase(unittest.TestCase, OutputRedirector):
                 f.write(output.getvalue())
         g1 = Graph()
         g1.parse(test_fname, format="turtle")
-        comp_result = rdf_compare(g1, g2)
+        expected, actual = rdf_compare_split(g1, g2)
 
-        if len(comp_result):
-            print(comp_result)
-        self.assertTrue(len(comp_result) == 0)
+        if len(expected) or len(actual):
+            test_fname = os.path.relpath(test_fname, TEST_DIR)
+            print(f"***** IN EXPECTED GRAPH BUT NOT ACTUAL {test_fname} *****")
+            print(expected.strip())
+            print()
+            print(f"***** IN ACTUAL GRAPH BUT NOT EXPECTED *****")
+            print(actual.strip())
+        self.assertTrue(len(expected) + len(actual) == 0)
         self.assertFalse(save_sample_output, "save_sample_output is True -- test not applied")
 
     def test_narrative_text(self):
@@ -123,19 +130,20 @@ class FHIRToRDFParserTestCase(unittest.TestCase, OutputRedirector):
         self.bester_tester(args, test_fname)
 
     def test_version(self):
-        from fhirtordf.fhirtordf import fhirtordf
+        from fhirtordf.fhirtordf import main
         from fhirtordf import __version__
         output = self._push_stdout()
-        fhirtordf(["-v"])
+        main(["-v"])
         self._pop_stdout()
         self.assertEqual("FHIR to RDF Conversion Tool -- Version {}".format(__version__), output.getvalue().strip())
 
+    @unittest.skipIf(True, "fhirtest.uhn.ca test server no longer responds")
     def test_output_directory(self):
-        from fhirtordf.fhirtordf import fhirtordf
+        from fhirtordf.fhirtordf import main
         output_directory = os.path.abspath(os.path.join(os.path.split(os.path.abspath(__file__))[0], 'data', 'patlist'))
         shutil.rmtree(output_directory, ignore_errors=True)
 
-        fhirtordf("-i http://fhirtest.uhn.ca/baseDstu3/Patient"
+        main("-i http://fhirtest.uhn.ca/baseDstu3/Patient"
                   "?_format=json&gender=male&birthdate=gt2013-01-01 -od {} -nn -nc".format(output_directory).split())
         self.assertTrue(os.path.exists(output_directory))
         self.assertTrue(os.path.exists(os.path.join(output_directory, '_url1.ttl')))
@@ -144,13 +152,13 @@ class FHIRToRDFParserTestCase(unittest.TestCase, OutputRedirector):
     @unittest.skip
     def test_big_fhir_convert(self):
         # This is a test of the complete FHIR directory conversion
-        from fhirtordf.fhirtordf import fhirtordf
+        from fhirtordf.fhirtordf import main
 
         input_directory = os.path.abspath('/Users/mrf7578/Development/fhir/build/publish')
         output_directory = os.path.abspath(os.path.join(os.path.split(os.path.abspath(__file__))[0], 'data', 'publish'))
         args = '-nc -nn -id {} -od {} -sd /v2/ /v3/ -sf .cs. .vs. .profile. .canonical. .schema. .diff.'.format(input_directory, output_directory)
 
-        fhirtordf(args.split(), default_exit=False)
+        main(args.split(), default_exit=False)
 
 
 if __name__ == '__main__':

@@ -3,20 +3,20 @@
 @prefix sct: <http://snomed.info/id/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://standardhealthrecord.org/fhir/CarePlan/e204f714-77ba-4ea4-9a50-c3ab6f256a00> a fhir:CarePlan ;
+<http://standardhealthrecord.org/fhir/CarePlan/fbc5df66-4ee2-4f4f-b56b-63f717d5260b> a fhir:CarePlan ;
     fhir:nodeRole fhir:treeRoot ;
     fhir:CarePlan.activity [
-        fhir:index "1"^^xsd:integer ;
+        fhir:index "0"^^xsd:integer ;
         fhir:CarePlan.activity.detail [
             fhir:CarePlan.activity.detail.code [
                 fhir:CodeableConcept.coding [
-                    a sct:426990007 ;
+                    a sct:710081004 ;
                     fhir:index "0"^^xsd:integer ;
                     fhir:Coding.code [
-                        fhir:value "426990007"
+                        fhir:value "710081004"
                     ] ;
                     fhir:Coding.display [
-                        fhir:value "Home oxygen therapy (procedure)"
+                        fhir:value "Smoking cessation therapy"
                     ] ;
                     fhir:Coding.system [
                         fhir:value "http://snomed.info/sct"
@@ -29,17 +29,17 @@
         ]
     ],
         [
-        fhir:index "0"^^xsd:integer ;
+        fhir:index "1"^^xsd:integer ;
         fhir:CarePlan.activity.detail [
             fhir:CarePlan.activity.detail.code [
                 fhir:CodeableConcept.coding [
-                    a sct:710081004 ;
+                    a sct:426990007 ;
                     fhir:index "0"^^xsd:integer ;
                     fhir:Coding.code [
-                        fhir:value "710081004"
+                        fhir:value "426990007"
                     ] ;
                     fhir:Coding.display [
-                        fhir:value "Smoking cessation therapy"
+                        fhir:value "Home oxygen therapy (procedure)"
                     ] ;
                     fhir:Coding.system [
                         fhir:value "http://snomed.info/sct"
@@ -88,10 +88,10 @@
         ]
     ] ;
     fhir:Resource.id [
-        fhir:value "e204f714-77ba-4ea4-9a50-c3ab6f256a00"
+        fhir:value "fbc5df66-4ee2-4f4f-b56b-63f717d5260b"
     ] .
 
-<http://standardhealthrecord.org/fhir/CarePlan/e204f714-77ba-4ea4-9a50-c3ab6f256a00.ttl> a owl:Ontology ;
+<http://standardhealthrecord.org/fhir/CarePlan/fbc5df66-4ee2-4f4f-b56b-63f717d5260b.ttl> a owl:Ontology ;
     owl:imports fhir:fhir.ttl .
 
 <http://standardhealthrecord.org/fhir/urn%3Auuid%3A526238ef-dec3-401d-a1c1-2974962df23f> a fhir:Resource .

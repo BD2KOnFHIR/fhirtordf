@@ -3,9 +3,9 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sct: <http://snomed.info/id/> .
-@prefix v2-0131: <http://hl7.org/fhir/v2/0131> .
-@prefix v3-MaritalStatus: <http://hl7.org/fhir/v3/MaritalStatus> .
-@prefix v3-RoleCode: <http://hl7.org/fhir/v3/RoleCode> .
+@prefix v2-0131: <http://terminology.hl7.org/CodeSystem/v2-0131/> .
+@prefix v3-MaritalStatus: <http://terminology.hl7.org/CodeSystem/v3-MaritalStatus/> .
+@prefix v3-RoleCode: <http://terminology.hl7.org/CodeSystem/v3-RoleCode/> .
 @prefix w5: <http://hl7.org/fhir/w5#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -76,23 +76,23 @@
         fhir:Patient.contact.relationship [
             fhir:index "0"^^xsd:integer ;
             fhir:CodeableConcept.coding [
-                a <http://hl7.org/fhir/v2/0131/N> ;
+                a v2-0131:N ;
                 fhir:index "1"^^xsd:integer ;
                 fhir:Coding.code [
                     fhir:value "N"
                 ] ;
                 fhir:Coding.system [
-                    fhir:value "http://hl7.org/fhir/v2/0131"
+                    fhir:value "http://terminology.hl7.org/CodeSystem/v2-0131"
                 ]
             ],
                 [
-                a <http://hl7.org/fhir/v3/RoleCode/WIFE> ;
+                a v3-RoleCode:WIFE ;
                 fhir:index "2"^^xsd:integer ;
                 fhir:Coding.code [
                     fhir:value "WIFE"
                 ] ;
                 fhir:Coding.system [
-                    fhir:value "http://hl7.org/fhir/v3/RoleCode"
+                    fhir:value "http://terminology.hl7.org/CodeSystem/v3-RoleCode"
                 ]
             ],
                 [
@@ -186,13 +186,13 @@
             ]
         ],
             [
-            a <http://hl7.org/fhir/v3/MaritalStatus/M> ;
+            a v3-MaritalStatus:M ;
             fhir:index "1"^^xsd:integer ;
             fhir:Coding.code [
                 fhir:value "M"
             ] ;
             fhir:Coding.system [
-                fhir:value "http://hl7.org/fhir/v3/MaritalStatus"
+                fhir:value "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"
             ]
         ]
     ] ;

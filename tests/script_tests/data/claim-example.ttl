@@ -1,16 +1,5 @@
-@prefix ex-claimtype: <http://hl7.org/fhir/ex-claimtype> .
 @prefix fhir: <http://hl7.org/fhir/> .
-@prefix loinc: <http://loinc.org/rdf#> .
-@prefix ns1: <http://example.org/> .
-@prefix ns2: <http://example.com/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix sct: <http://snomed.info/id/> .
-@prefix v2: <http://hl7.org/fhir/v2/> .
-@prefix v3: <http://hl7.org/fhir/v3/> .
-@prefix w5: <http://hl7.org/fhir/w5#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://hl7.org/fhir/Claim/100150> a fhir:Claim ;
@@ -89,20 +78,14 @@
             fhir:value "1"^^xsd:positiveInteger
         ] ;
         fhir:Claim.item.net [
-            fhir:Quantity.code [
+            fhir:Money.currency [
                 fhir:value "USD"
             ] ;
-            fhir:Quantity.system [
-                fhir:value "urn:iso:std:iso:4217"
-            ] ;
-            fhir:Quantity.value [
+            fhir:Money.value [
                 fhir:value "135.57"^^xsd:decimal
             ]
         ] ;
-        fhir:Claim.item.sequence [
-            fhir:value "1"^^xsd:positiveInteger
-        ] ;
-        fhir:Claim.item.service [
+        fhir:Claim.item.productOrService [
             fhir:CodeableConcept.coding [
                 fhir:index "0"^^xsd:integer ;
                 fhir:Coding.code [
@@ -110,25 +93,19 @@
                 ]
             ]
         ] ;
+        fhir:Claim.item.sequence [
+            fhir:value "1"^^xsd:positiveInteger
+        ] ;
         fhir:Claim.item.servicedDate [
             fhir:value "2014-08-16"^^xsd:date
         ] ;
         fhir:Claim.item.unitPrice [
-            fhir:Quantity.code [
+            fhir:Money.currency [
                 fhir:value "USD"
             ] ;
-            fhir:Quantity.system [
-                fhir:value "urn:iso:std:iso:4217"
-            ] ;
-            fhir:Quantity.value [
+            fhir:Money.value [
                 fhir:value "135.57"^^xsd:decimal
             ]
-        ]
-    ] ;
-    fhir:Claim.organization [
-        fhir:link <http://hl7.org/fhir/Organization/1> ;
-        fhir:Reference.reference [
-            fhir:value "Organization/1"
         ]
     ] ;
     fhir:Claim.patient [
@@ -155,23 +132,29 @@
             ]
         ]
     ] ;
+    fhir:Claim.provider [
+        fhir:link <http://hl7.org/fhir/Organization/1> ;
+        fhir:Reference.reference [
+            fhir:value "Organization/1"
+        ]
+    ] ;
     fhir:Claim.status [
         fhir:value "active"
     ] ;
     fhir:Claim.type [
         fhir:CodeableConcept.coding [
-            a <http://hl7.org/fhir/ex-claimtype/oral> ;
+            a <http://terminology.hl7.org/CodeSystem/claim-type/oral> ;
             fhir:index "0"^^xsd:integer ;
             fhir:Coding.code [
                 fhir:value "oral"
             ] ;
             fhir:Coding.system [
-                fhir:value "http://hl7.org/fhir/ex-claimtype"
+                fhir:value "http://terminology.hl7.org/CodeSystem/claim-type"
             ]
         ]
     ] ;
     fhir:Claim.use [
-        fhir:value "complete"
+        fhir:value "claim"
     ] ;
     fhir:DomainResource.text [
         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">A human-readable rendering of the Oral Health Claim</div>" ;

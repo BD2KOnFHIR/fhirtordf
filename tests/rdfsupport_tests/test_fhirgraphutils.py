@@ -58,7 +58,7 @@ class FHIRGraphUtilsTestCase(unittest.TestCase):
         g = Graph()
         g.load(os.path.join(self.base_dir, "account-example.ttl"), format="turtle")
         s = FHIR['Account/example']
-        self.assertEqual(URIRef("http://terminology.hl7.org/CodeSystem/v3-ActCode/PBILLACCT'"),
+        self.assertEqual(URIRef("http://terminology.hl7.org/CodeSystem/v3-ActCode/PBILLACCT"),
                          concept_uri(g, s, FHIR.Account.type))
         self.assertEqual(URIRef("http://terminology.hl7.org/CodeSystem/v3-ActCode/PBILLACCT"),
                          concept_uri(g, s, FHIR.Account.type, "http://terminology.hl7.org/CodeSystem/v3-ActCode"))
