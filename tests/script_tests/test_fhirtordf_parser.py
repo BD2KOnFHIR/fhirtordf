@@ -46,8 +46,9 @@ optional arguments:
                         Base URI for RDF identifiers (default:
                         http://hl7.org/fhir/)
   -mv METADATAVOC, --metadatavoc METADATAVOC
-                        FHIR metadata vocabulary (default:
-                        {DEFAULT_FHIR_MV})
+                        FHIR metadata vocabulary. Note: this is for the stable
+                        FHIR build. Use: 'http://build.fhir.org/fhir.ttl' for
+                        latest (default: http://hl7.org/fhir/fhir.ttl)
   -no, --noontology     Omit owl ontology header
   -nn, --nonarrative    Omit narrative text on output
   -nc, --nocontinuation

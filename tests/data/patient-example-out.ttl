@@ -208,27 +208,17 @@
         ]
     ] ;
     fhir:Patient.name [
-        fhir:index "1"^^xsd:integer ;
-        fhir:HumanName.given [
-            fhir:index "0"^^xsd:integer ;
-            fhir:value "Jim"
-        ] ;
-        fhir:HumanName.use [
-            fhir:value "usual"
-        ]
-    ],
-        [
         fhir:index "2"^^xsd:integer ;
         fhir:HumanName.family [
             fhir:value "Windsor"
         ] ;
         fhir:HumanName.given [
-            fhir:index "0"^^xsd:integer ;
-            fhir:value "Peter"
-        ],
-            [
             fhir:index "1"^^xsd:integer ;
             fhir:value "James"
+        ],
+            [
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "Peter"
         ] ;
         fhir:HumanName.period [
             fhir:Period.end [
@@ -237,6 +227,16 @@
         ] ;
         fhir:HumanName.use [
             fhir:value "maiden"
+        ]
+    ],
+        [
+        fhir:index "1"^^xsd:integer ;
+        fhir:HumanName.given [
+            fhir:index "0"^^xsd:integer ;
+            fhir:value "Jim"
+        ] ;
+        fhir:HumanName.use [
+            fhir:value "usual"
         ]
     ],
         [
@@ -257,6 +257,23 @@
         ]
     ] ;
     fhir:Patient.telecom [
+        fhir:index "3"^^xsd:integer ;
+        fhir:ContactPoint.period [
+            fhir:Period.end [
+                fhir:value "2014-01-01"^^xsd:gYear
+            ]
+        ] ;
+        fhir:ContactPoint.system [
+            fhir:value "phone"
+        ] ;
+        fhir:ContactPoint.use [
+            fhir:value "old"
+        ] ;
+        fhir:ContactPoint.value [
+            fhir:value "(03) 5555 8834"
+        ]
+    ],
+        [
         fhir:index "2"^^xsd:integer ;
         fhir:ContactPoint.rank [
             fhir:value "2"^^xsd:positiveInteger
@@ -275,23 +292,6 @@
         fhir:index "0"^^xsd:integer ;
         fhir:ContactPoint.use [
             fhir:value "home"
-        ]
-    ],
-        [
-        fhir:index "3"^^xsd:integer ;
-        fhir:ContactPoint.period [
-            fhir:Period.end [
-                fhir:value "2014-01-01"^^xsd:gYear
-            ]
-        ] ;
-        fhir:ContactPoint.system [
-            fhir:value "phone"
-        ] ;
-        fhir:ContactPoint.use [
-            fhir:value "old"
-        ] ;
-        fhir:ContactPoint.value [
-            fhir:value "(03) 5555 8834"
         ]
     ],
         [

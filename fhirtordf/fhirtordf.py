@@ -16,8 +16,9 @@ dirname, _ = os.path.split(os.path.abspath(__file__))
 
 DEFAULT_FHIR_URI = "http://hl7.org/fhir/"
 DEFAULT_RDF_DIR = "rdf"
-DEFAULT_FHIR_MV = os.path.relpath(os.path.join(dirname, '..', 'tests', 'data', 'fhir_metadata_vocabulary', 'fhir.ttl'),
-                                  os.getcwd())
+# DEFAULT_FHIR_MV = os.path.relpath(os.path.join(dirname, '..', 'tests', 'data', 'fhir_metadata_vocabulary', 'fhir.ttl'),
+#                                   os.getcwd())
+DEFAULT_FHIR_MV = DEFAULT_FHIR_URI + "fhir.ttl"
 
 DEFAULT_FMV_CACHE_DIR = os.path.join('~', ".cache")     # For HELP
 
@@ -113,7 +114,9 @@ def addargs(parser: ArgumentParser) -> None:
     parser.prog = os.path.basename(__file__).split(".")[0]
     add_argument(parser, "-v", "--version", help="Current version number", action="store_true")
     add_argument(parser, "-u", "--uribase", help="Base URI for RDF identifiers", default=DEFAULT_FHIR_URI)
-    add_argument(parser, "-mv", "--metadatavoc", help="FHIR metadata vocabulary", default=DEFAULT_FHIR_MV)
+    add_argument(parser, "-mv", "--metadatavoc",
+                 help="FHIR metadata vocabulary. Note: this is for the stable FHIR build. "
+                      "Use: 'http://build.fhir.org/fhir.ttl' for latest", default=DEFAULT_FHIR_MV)
     add_argument(parser, "-no", "--noontology", help="Omit owl ontology header", action="store_true")
     add_argument(parser, "-nn", "--nonarrative", help="Omit narrative text on output", action="store_true")
     add_argument(parser, "-nc", "--nocontinuation", help="Don't follow URL continuations", action="store_true")

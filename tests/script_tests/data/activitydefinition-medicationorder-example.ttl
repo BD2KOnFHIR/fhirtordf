@@ -14,18 +14,6 @@
             fhir:value "Motive Medical Intelligence"
         ] ;
         fhir:ContactDetail.telecom [
-            fhir:index "0"^^xsd:integer ;
-            fhir:ContactPoint.system [
-                fhir:value "phone"
-            ] ;
-            fhir:ContactPoint.use [
-                fhir:value "work"
-            ] ;
-            fhir:ContactPoint.value [
-                fhir:value "415-362-4007"
-            ]
-        ],
-            [
             fhir:index "1"^^xsd:integer ;
             fhir:ContactPoint.system [
                 fhir:value "email"
@@ -35,24 +23,24 @@
             ] ;
             fhir:ContactPoint.value [
                 fhir:value "info@motivemi.com"
+            ]
+        ],
+            [
+            fhir:index "0"^^xsd:integer ;
+            fhir:ContactPoint.system [
+                fhir:value "phone"
+            ] ;
+            fhir:ContactPoint.use [
+                fhir:value "work"
+            ] ;
+            fhir:ContactPoint.value [
+                fhir:value "415-362-4007"
             ]
         ]
     ] ;
     fhir:ActivityDefinition.contact [
         fhir:index "0"^^xsd:integer ;
         fhir:ContactDetail.telecom [
-            fhir:index "1"^^xsd:integer ;
-            fhir:ContactPoint.system [
-                fhir:value "email"
-            ] ;
-            fhir:ContactPoint.use [
-                fhir:value "work"
-            ] ;
-            fhir:ContactPoint.value [
-                fhir:value "info@motivemi.com"
-            ]
-        ],
-            [
             fhir:index "0"^^xsd:integer ;
             fhir:ContactPoint.system [
                 fhir:value "phone"
@@ -62,6 +50,18 @@
             ] ;
             fhir:ContactPoint.value [
                 fhir:value "415-362-4007"
+            ]
+        ],
+            [
+            fhir:index "1"^^xsd:integer ;
+            fhir:ContactPoint.system [
+                fhir:value "email"
+            ] ;
+            fhir:ContactPoint.use [
+                fhir:value "work"
+            ] ;
+            fhir:ContactPoint.value [
+                fhir:value "info@motivemi.com"
             ]
         ]
     ] ;
@@ -134,23 +134,6 @@
         ]
     ] ;
     fhir:ActivityDefinition.dynamicValue [
-        fhir:index "0"^^xsd:integer ;
-        fhir:ActivityDefinition.dynamicValue.expression [
-            fhir:Expression.description [
-                fhir:value "dispenseRequest.numberOfRepeatsAllowed is three (3)"
-            ] ;
-            fhir:Expression.expression [
-                fhir:value "3"
-            ] ;
-            fhir:Expression.language [
-                fhir:value "text/cql"
-            ]
-        ] ;
-        fhir:ActivityDefinition.dynamicValue.path [
-            fhir:value "dispenseRequest.numberOfRepeatsAllowed"
-        ]
-    ],
-        [
         fhir:index "1"^^xsd:integer ;
         fhir:ActivityDefinition.dynamicValue.expression [
             fhir:Expression.description [
@@ -165,6 +148,23 @@
         ] ;
         fhir:ActivityDefinition.dynamicValue.path [
             fhir:value "dispenseRequest.quantity"
+        ]
+    ],
+        [
+        fhir:index "0"^^xsd:integer ;
+        fhir:ActivityDefinition.dynamicValue.expression [
+            fhir:Expression.description [
+                fhir:value "dispenseRequest.numberOfRepeatsAllowed is three (3)"
+            ] ;
+            fhir:Expression.expression [
+                fhir:value "3"
+            ] ;
+            fhir:Expression.language [
+                fhir:value "text/cql"
+            ]
+        ] ;
+        fhir:ActivityDefinition.dynamicValue.path [
+            fhir:value "dispenseRequest.numberOfRepeatsAllowed"
         ]
     ] ;
     fhir:ActivityDefinition.effectivePeriod [
@@ -288,32 +288,6 @@
         ]
     ],
         [
-        fhir:index "2"^^xsd:integer ;
-        fhir:UsageContext.code [
-            fhir:Coding.code [
-                fhir:value "focus"
-            ] ;
-            fhir:Coding.system [
-                fhir:value "http://terminology.hl7.org/CodeSystem/usage-context-type"
-            ]
-        ] ;
-        fhir:UsageContext.valueCodeableConcept [
-            fhir:CodeableConcept.coding [
-                a sct:40379007 ;
-                fhir:index "0"^^xsd:integer ;
-                fhir:Coding.code [
-                    fhir:value "40379007"
-                ] ;
-                fhir:Coding.display [
-                    fhir:value "Major depression, recurrent, mild"
-                ] ;
-                fhir:Coding.system [
-                    fhir:value "http://snomed.info/sct"
-                ]
-            ]
-        ]
-    ],
-        [
         fhir:index "6"^^xsd:integer ;
         fhir:UsageContext.code [
             fhir:Coding.code [
@@ -366,32 +340,6 @@
         ]
     ],
         [
-        fhir:index "4"^^xsd:integer ;
-        fhir:UsageContext.code [
-            fhir:Coding.code [
-                fhir:value "focus"
-            ] ;
-            fhir:Coding.system [
-                fhir:value "http://terminology.hl7.org/CodeSystem/usage-context-type"
-            ]
-        ] ;
-        fhir:UsageContext.valueCodeableConcept [
-            fhir:CodeableConcept.coding [
-                a sct:306206005 ;
-                fhir:index "0"^^xsd:integer ;
-                fhir:Coding.code [
-                    fhir:value "306206005"
-                ] ;
-                fhir:Coding.display [
-                    fhir:value "Referral to service (procedure)"
-                ] ;
-                fhir:Coding.system [
-                    fhir:value "http://snomed.info/sct"
-                ]
-            ]
-        ]
-    ],
-        [
         fhir:index "0"^^xsd:integer ;
         fhir:UsageContext.code [
             fhir:Coding.code [
@@ -435,6 +383,58 @@
                 ] ;
                 fhir:Coding.display [
                     fhir:value "Physician"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://snomed.info/sct"
+                ]
+            ]
+        ]
+    ],
+        [
+        fhir:index "4"^^xsd:integer ;
+        fhir:UsageContext.code [
+            fhir:Coding.code [
+                fhir:value "focus"
+            ] ;
+            fhir:Coding.system [
+                fhir:value "http://terminology.hl7.org/CodeSystem/usage-context-type"
+            ]
+        ] ;
+        fhir:UsageContext.valueCodeableConcept [
+            fhir:CodeableConcept.coding [
+                a sct:306206005 ;
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "306206005"
+                ] ;
+                fhir:Coding.display [
+                    fhir:value "Referral to service (procedure)"
+                ] ;
+                fhir:Coding.system [
+                    fhir:value "http://snomed.info/sct"
+                ]
+            ]
+        ]
+    ],
+        [
+        fhir:index "2"^^xsd:integer ;
+        fhir:UsageContext.code [
+            fhir:Coding.code [
+                fhir:value "focus"
+            ] ;
+            fhir:Coding.system [
+                fhir:value "http://terminology.hl7.org/CodeSystem/usage-context-type"
+            ]
+        ] ;
+        fhir:UsageContext.valueCodeableConcept [
+            fhir:CodeableConcept.coding [
+                a sct:40379007 ;
+                fhir:index "0"^^xsd:integer ;
+                fhir:Coding.code [
+                    fhir:value "40379007"
+                ] ;
+                fhir:Coding.display [
+                    fhir:value "Major depression, recurrent, mild"
                 ] ;
                 fhir:Coding.system [
                     fhir:value "http://snomed.info/sct"
