@@ -1,7 +1,7 @@
 import os
 import sys
 from argparse import Namespace, ArgumentParser
-from typing import List
+from typing import List, Optional
 
 import dirlistproc
 from rdflib import Graph
@@ -135,7 +135,7 @@ def postparse(opts: Namespace) -> bool:
     return True
 
 
-def main(argv: List[str], default_exit: bool = True) -> bool:
+def main(argv: Optional[List[str]] = None, default_exit: bool = True) -> bool:
     """ Entry point for command line utility """
     dlp = dirlistproc.DirectoryListProcessor(argv,
                                              description="Convert FHIR JSON into RDF",
